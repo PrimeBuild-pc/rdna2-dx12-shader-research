@@ -13,6 +13,9 @@ GPU/driver, is the most useful thing you can add.
 
 ## Environment
 
+> **Windows:** some research paths exceed 260 characters. Run `git config --global core.longpaths true`
+> before cloning, or clone into a short folder such as `C:dna2`.
+
 The measurements were taken on Windows 11 + RX 6950 XT. Anything RDNA2 on Windows should reuse the
 methods; absolute numbers will differ.
 

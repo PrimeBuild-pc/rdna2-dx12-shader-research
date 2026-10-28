@@ -8,9 +8,13 @@ follow it step by step.
 
 ## 1. Restore the published data
 
+Some paths are longer than Windows' 260-character limit: enable long paths or clone into a short folder.
+
 ```powershell
-git clone https://github.com/PrimeBuild-pc/rdna2-dx12-shader-research
-cd rdna2-dx12-shader-research
+git config --global core.longpaths true
+git clone https://github.com/PrimeBuild-pc/rdna2-dx12-shader-research C:
+dna2
+cd C:dna2
 gh release download v1.0-archive          # or download the 5 assets from the release page
 # unzip/extract every asset at the repository root (paths inside start with research/ or preserved_temp_claude_20260909/)
 7z x large-measurement-data.zip; 7z x wpr-etw-event-exports.zip

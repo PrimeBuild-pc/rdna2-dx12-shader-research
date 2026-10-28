@@ -1,0 +1,22 @@
+{
+  "variant": "canary2",
+  "rep": 1,
+  "pid": 15788,
+  "draws": 34,
+  "image": {
+    "pid": 15788,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 2,
+    "format_name": "R32G32B32A32_FLOAT",
+    "bytes_per_pixel": 16,
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 30720,
+    "stored_row_bytes": 30720,
+    "padding_stored": false
+  },
+  "image_sha256": "8cef20b7e18aaa64f48ddabdb3eaeddf22e51263bd87d50df5e9074d3bd08f11",
+  "bytecode_sha256": "14873f2796b41fb64d39db6a8a659071341ca7bb50f18d69b26cd562209caf05"
+}

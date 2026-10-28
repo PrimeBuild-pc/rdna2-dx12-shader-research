@@ -1,0 +1,14 @@
+process,pid,tid,wait_reason,count
+dwm.exe,2012,2332,UserRequest,447
+dwm.exe,2012,2460,UserRequest,131
+dwm.exe,2012,15428,WrQueue,24
+dwm.exe,2012,2332,Executive,20
+dwm.exe,2012,2564,UserRequest,18
+dwm.exe,2012,1180,WrQueue,7
+dwm.exe,2012,2564,WrResource,6
+dwm.exe,2012,15428,Executive,3
+dwm.exe,2012,2564,Executive,2
+dwm.exe,2012,6012,WrQueue,1
+dwm.exe,2012,2464,WrQueue,1
+dwm.exe,2012,2468,UserRequest,1
+dwm.exe,2012,15428,WrPreempted,1

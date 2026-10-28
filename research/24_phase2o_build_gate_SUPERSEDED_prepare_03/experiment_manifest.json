@@ -1,0 +1,50 @@
+{
+  "expected_bytecode": {
+    "A": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "B": "f226996fb66cd174d93f8310a95e55efd741adae7b4d83099f707958631930c7"
+  },
+  "expected_artifacts": {
+    "A": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\24_phase2o_build_gate\\preregistered\\A\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+      "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+      "custom_hash": "52CE6C5E64AB2E82",
+      "bytecode_bytes": 12612
+    },
+    "B": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\24_phase2o_build_gate\\preregistered\\B\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "a6f21c25299fa133211b86d47ba522f3f02be26cc988baab3a1e10b896eaad4b",
+      "bytecode_sha256": "f226996fb66cd174d93f8310a95e55efd741adae7b4d83099f707958631930c7",
+      "custom_hash": "863C3DDA7C0BCD9A",
+      "bytecode_bytes": 12616
+    }
+  },
+  "experiment_id": "O1_20260906_005422",
+  "created_at": "2026-09-06T00:54:23.105989+02:00",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O1_20260906_005422",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "historical_custom_hash": "52CE6C5E64AB2E82",
+  "sequence": [
+    "A",
+    "B",
+    "A2"
+  ],
+  "capture_frame_index": 140,
+  "baseline_repeats": 3,
+  "canary": "mrt.Color = colorSum + float3(0.125, 0.0, 0.0);",
+  "workload": "Sponza 1920x1080; capture at frame 140 (after all 128 light shadow slices); no performance verdict",
+  "configuration": "Profile/x64/v145",
+  "oracle_policy": {
+    "baseline_repeats": 3,
+    "canary_min_changed_pixel_fraction": 0.1,
+    "canary_min_ratio_over_baseline_spread": 20.0,
+    "canary_min_positive_red_fraction": 0.1,
+    "canary_max_baseline_changed_pixel_fraction": 0.005,
+    "finite_only": true
+  },
+  "gpu_perf_api": false,
+  "timing_export": false,
+  "workspace_budget_bytes": 8000000000,
+  "source_modification_policy": "instrumented copy only; original clone and build unchanged"
+}

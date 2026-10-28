@@ -1,0 +1,20 @@
+Documentation and data license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 PrimeBuild
+
+The documentation (Markdown reports, plans, handoff notes) and the measurement
+data (CSV, JSON, logs and other research outputs) in this repository are
+licensed under the Creative Commons Attribution 4.0 International License.
+
+You are free to share and adapt this material for any purpose, including
+commercially, as long as you give appropriate credit, provide a link to the
+license, and indicate if changes were made.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:         https://creativecommons.org/licenses/by/4.0/
+
+Suggested attribution:
+  "rdna2-dx12-shader-research" by PrimeBuild,
+  https://github.com/PrimeBuild-pc/rdna2-dx12-shader-research, CC BY 4.0
+
+Third-party material keeps its own license (see THIRD_PARTY_NOTICES.md).

@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-16T23:19:15.421460+00:00",
+  "result": "READONLY_BACKBUFFER_CATALOG_INSTALLED_RUNTIME_PENDING",
+  "mode": "observe",
+  "added_file": {
+    "path": "C2077ShaderLab\\C2077BackbufferProbe.addon64",
+    "sha256": "0372836cc40401836190b225318cb4c345bad327640504e8b9a60b30b0a904a6",
+    "bytes": 323584,
+    "mutable": false,
+    "created": true,
+    "verified": true
+  },
+  "removed_owned_probe": {
+    "path": "C2077ShaderLab\\C2077ShaderProbe.addon64",
+    "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492",
+    "bytes": 329216,
+    "mutable": false,
+    "created": true,
+    "verified": true
+  },
+  "archive": "research\\68_c2077_backbuffer_catalog_20261016\\removed_probe\\C2077ShaderProbe.addon64",
+  "host_shaderlab_unchanged": true,
+  "game_started_by_agent": false
+}

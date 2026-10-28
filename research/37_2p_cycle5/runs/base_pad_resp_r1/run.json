@@ -1,0 +1,9 @@
+{
+  "variant": "base_pad",
+  "set": "resp",
+  "rep": 1,
+  "pid": 12808,
+  "samples": 32,
+  "bytecode_sha256": "ffba5121216bd7151eefa7742a1a3526be32be023e29ab40911ec028abd31799",
+  "executable_sha256": "0f49d7c5889f822ef92933b18f48b857e9eeb84a2e98e777db5c5212672adde8"
+}

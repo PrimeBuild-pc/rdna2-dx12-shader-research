@@ -1,0 +1,12 @@
+{
+  "control": "positive: the scalar check is made to fire on every finite value",
+  "pixels": 2073600,
+  "fired_pixels": 2073600,
+  "fired_fraction": 1.0,
+  "max_red": 1.0000000150474662e+30,
+  "distinct_masks": [
+    12,
+    28
+  ],
+  "verdict": "the detector reaches the capture: a violation DOES light the pixel up, so canary2's silence is evidence and not an artefact"
+}

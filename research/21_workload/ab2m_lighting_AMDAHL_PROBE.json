@@ -1,0 +1,13 @@
+{
+ "target": "lighting",
+ "tf": "AMDAHL_PROBE",
+ "runs": 5,
+ "frame_A": 1.0316329999999998,
+ "frame_B": 1.038297,
+ "frame_delta_pct": 0.6459661526919191,
+ "cpu_A": 0.17646700000000004,
+ "cpu_B": 0.17540699999999998,
+ "img_AA_max": 0.00013937114197530863,
+ "img_AB_max": 0.0006664737654320988,
+ "img_verdict": "DIVERSA oltre la variabilita' di A"
+}

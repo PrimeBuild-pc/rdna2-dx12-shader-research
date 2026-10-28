@@ -1,0 +1,65 @@
+{
+  "workload": "D3D12VariableRateShading / ShadowsFogScatteringSquidScene",
+  "verdict": "MISS",
+  "baseline": {
+    "region0_whole_frame_ns": 150360,
+    "region1_postprocess_ns": 13860,
+    "region2_scene_pass_ns": 40540,
+    "region3_refraction_pass_ns": 57400,
+    "aa_n95_pct": 0.44,
+    "acceptance_threshold_pct": 1.32,
+    "oracle": "the sample's own back buffer after 200 warm-up plus 500 fixed-timestep frames, byte-identical across 14 base processes in two sessions"
+  },
+  "hot_shader": {
+    "name": "ShadowsAndScenePass_PSMain",
+    "bytecode_sha256": "38a3891b012948731c1c912276f3b4247198e45c1538145288ec4058b0081054",
+    "used_by": "the scene pass (region 2) and the refraction pass (region 3), which together are 65 % of the frame; the same .cso is bound by both PSOs",
+    "isa_gfx1030": {
+      "instructions": 237,
+      "vgpr": 23,
+      "sgpr": 62,
+      "scratch_bytes": 0,
+      "image_sample": 6,
+      "transcendental": "4 v_rsq, 4 v_rcp, 1 v_sqrt",
+      "note": "the angle-falloff term is dead code the compiler already removes: fAngleFalloff is overwritten with 1.0f, and no dot with vLightDir survives into the ISA"
+    }
+  },
+  "amdahl_probe": {
+    "variant": "ablate_ps",
+    "what": "the whole lighting body of the hot pixel shader deleted; geometry, rasterisation and the one diffuse fetch kept",
+    "delta_region0_pct": -16.59,
+    "per_process_pct": [-16.59, -16.68, -16.53],
+    "reading": "unlike MiniEngine's Render Color in phase 2M, this pass does have real headroom: 16.6 % of the whole frame lives in this shader's body. The misses below are not a ceiling problem",
+    "counted_as": "diagnostic, not a transformation attempt - its image is deliberately wrong"
+  },
+  "transformations": 2,
+  "accepted": 0,
+  "detail": {
+    "gather_pcf": {
+      "from": "w4's own ISA: 4 of the shader's 6 image_sample are one cluster, the 2x2 PCF taps, and the C++ creates that sampler as D3D12_FILTER_MIN_MAG_MIP_POINT - four point samples of one texel quad is what a single gather4 returns",
+      "isa_effect": "6 image_sample -> 2 image_sample + 1 image_gather4_lz; 297 -> 291 instructions; 23 -> 22 VGPR",
+      "delta_region0_pct": -0.34,
+      "per_process_pct": [-0.29, -0.45, -0.32, -0.36],
+      "delta_region2_pct": -0.49,
+      "delta_region3_pct": -0.52,
+      "correctness": "FAILED: 43 pixels of 921 600 differ, 129 bytes of 3 686 400, max |delta| 41. Not the 1-LSB rounding class of phase 2Q - the half-texel-offset address rounds onto a different texel on some shadow-boundary pixels, so a tap flips between 0 and 1 and the weighted PCF result moves by up to a quarter",
+      "verdict": "REJECTED (correctness), and independently below the 1.32 % threshold",
+      "reading": "halving this shader's texture instructions is worth 0.5 % of the pass. Whatever the 16.6 % is, it is not texture-instruction throughput"
+    },
+    "zeroskip_shadow": {
+      "from": "the shadow term multiplies a lightPass that is exactly +0 wherever the light cannot reach the pixel, both factors coming out of a saturate",
+      "pattern_provenance": "TRANSFERRED FROM PHASE 2P, not derived from w4's ISA alone. Declared because the phase preregistration forbids proposing from memory; reported separately so a hit would not have been credited to the ISA-only pipeline",
+      "delta_region0_pct": 0.13,
+      "per_process_pct": [0.15, 0.17, -0.01, 0.11],
+      "correctness": "PASSED, byte-identical - the bit-exactness argument (0 * finite == 0) holds, and a non-finite shadow term would have shown up here as a changed pixel rather than passing unnoticed",
+      "verdict": "REJECTED (performance): slightly slower, inside the A/A band",
+      "reading": "the transformation is semantically sound and has no payload in this scene: one point light covers most of the visible geometry, so few whole waves are entirely unlit and the branch almost never skips. The 2P pattern transferred correctly and still bought nothing"
+    }
+  },
+  "stage_failed": "correctness (gather_pcf) and performance (zeroskip_shadow); not profiling, not hypothesis generation",
+  "cost": "4 cycles: baseline, gather_pcf, the Amdahl probe, zeroskip_shadow",
+  "defects_the_gate_caught": [
+    "the runner snapshotted and restored only shader entry-point files, never the headers listed in aux, so the workspace stayed dirty after a build that edited Common.hlsli. The next build was caught by its preregistered hash (Glass_PSMain 57cd15bf != 886d0b8a) before it produced a number. Fixed at the root in tools/run_2t.py: source_rels() now covers aux at all three snapshot and restore sites, and all three variants were rebuilt to their preregistered hashes afterwards",
+    "analyse() paired variant runs with base runs by rep number. This workload's base moved 1.2 % between the session that ran base_r1..r3 and the session that ran everything else, so index pairing would have scored gather_pcf at about -1.5 % and manufactured an acceptance. Fixed: each run is now paired with the base run nearest to it in wall-clock time, and the A/A control no longer mixes sessions"
+  ]
+}

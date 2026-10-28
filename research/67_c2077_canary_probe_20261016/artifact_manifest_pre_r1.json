@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\build.log",
+      "bytes": 729,
+      "sha256": "30ab0075689d35cafd58e07958020baf665b63b82092930841eed492fbd16f9a"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\final_build.log",
+      "bytes": 729,
+      "sha256": "30ab0075689d35cafd58e07958020baf665b63b82092930841eed492fbd16f9a"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\loader_selfcheck.log",
+      "bytes": 68,
+      "sha256": "5dc2ae0e92367004baa9874fe6d5b632f28aa67ca29855a4c15a0d8dfb493226"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\pe_review.txt",
+      "bytes": 10510,
+      "sha256": "a48fefed5755a570ab5614512048c107da20e4e7d99189d57f3390998198b38b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe.exp",
+      "bytes": 1039,
+      "sha256": "0fc652b2c38d23345f4bef1c06262a22e1933b9ab8ac713b3ee4f9fdc7f56087"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe.lib",
+      "bytes": 2424,
+      "sha256": "7ce27f104130a3f3a8bcf60221848edb5f86dd26b9403d3cb42a7673753a8f57"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe.obj",
+      "bytes": 767365,
+      "sha256": "8dbaa4e421c140dd94e5336a6b2c4b1a9955aee07022948f7cae7c7be97739d3"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.exe",
+      "bytes": 359936,
+      "sha256": "f8e8e1c2c53db4bb17c1c6d8c7116df9888c5be161388d107f7649458a040a5d"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.exp",
+      "bytes": 1034,
+      "sha256": "7fdbeeb0880adb6c647b5609d5a5e7e8d15633dee23340b864338a323426b998"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.lib",
+      "bytes": 2216,
+      "sha256": "3ca29f452340fd22a2dc87b76aaf4266a0ee9705c7ee7d79679cab9eb601315f"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.obj",
+      "bytes": 781499,
+      "sha256": "a02357f6be1d1a2fdfd6d2b0dcebcd03d36e632df429a6e986cafdc596b3d317"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build.cmd",
+      "bytes": 843,
+      "sha256": "62680bc0aa6c5fe720f7d2fe79ad61165a68a2ba249ec33642dd7829e36c362f"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\deployment.json",
+      "bytes": 655,
+      "sha256": "5fcafc3bb9a476056ede0b3beded3b9f3412bbc19963c3ec36b6981e3df4c0fc"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\environment.json",
+      "bytes": 166,
+      "sha256": "50d22e5c686d19c9cec954e46815710834d7cd2b44b3aeda25246f2efc3ef8ab"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\frozen_before\\c2077_shader_loader.py",
+      "bytes": 11778,
+      "sha256": "415e439122363b3574a7d035f4322248bdd053e7fb2e4cbdcd7cc06248da39ec"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\frozen_before\\deployment.json",
+      "bytes": 15637,
+      "sha256": "c8d7690b630e40f728d84728d972453a203cf9db0a23cdaa40c39d0bce83ed6b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\package.json",
+      "bytes": 466,
+      "sha256": "7357482048a5408a29e5107cffe7392f114b03f747a92c3d6764c067f4f9ccef"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\payload\\C2077ShaderProbe.addon64",
+      "bytes": 329216,
+      "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\PREREGISTRATION.md",
+      "bytes": 4574,
+      "sha256": "1169e3906bb758cc7b81165d97ba76ff8e278378d64b0f9b2da337e88c260de9"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\STATUS.md",
+      "bytes": 3523,
+      "sha256": "09ad2f1ab4ec42d884aa749db69e319698ee46d3ed59a401d79d4c6aa939638c"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\status_before_manual_run.json",
+      "bytes": 2057,
+      "sha256": "cf2c4880bbf8db4c896983f62ed0fa950957937543670f79afe7f03cea701112"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\verification.json",
+      "bytes": 618,
+      "sha256": "81d822a33b41ac45c6c20eb6dbcf16a004e7763a20e1e15e2890b5408d333454"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 25583,
+      "sha256": "19f9070ec0eac134ea905ec0f7b8b586e0cf5ae356c2fd606474defd706e9ac0"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 103430,
+      "sha256": "7fd8e9c209690e2e1a60b67f812bfebca739261cf9f8da802880ea8c2691228a"
+    },
+    {
+      "path": "tools\\c2077_shader_probe.cpp",
+      "bytes": 13786,
+      "sha256": "19ee10ca726ca10ddeb30f817d943774132c020a006082bf80ca6820af18fa44"
+    },
+    {
+      "path": "tools\\c2077_shader_loader.py",
+      "bytes": 12940,
+      "sha256": "7a681396361f91f0200d9d47518f3d9d67c50f0b7c8fdda0d05b4618bc974599"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\deployment.json",
+      "bytes": 16191,
+      "sha256": "a7c9d0ff0d46419a4265d5b5d35c26b29b02e69098400d443c99e71383b1149a"
+    }
+  ]
+}

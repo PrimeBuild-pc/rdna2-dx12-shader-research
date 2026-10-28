@@ -1,0 +1,1 @@
+prepare 1: fatto prima che le trasformazioni w2 esistessero, quindi il manifest preregistrava solo 'base'. Le misure di baseline che contiene restano valide e sono citate nel report; il ciclo con le varianti e' in 50_2t_w2.

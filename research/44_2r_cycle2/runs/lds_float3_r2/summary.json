@@ -1,0 +1,1 @@
+{"pid":7652,"warmup":100,"recorded":500,"timestamp_frequency":100000000,"dispatch_ns_median":158320.0,"dispatch_ns_mean":162294.3,"dispatch_ns_min":157560.0,"dispatch_ns_max":467800.0,"dispatch_ns_p05":157960.0,"dispatch_ns_p95":163240.0,"particle_bytes":320000}

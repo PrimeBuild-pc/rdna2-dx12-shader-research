@@ -1,0 +1,20 @@
+adapter,node,engine_type,friendly_name,state,ms,pct_of_window
+0xffff9a8c8a21a000,0,1,,empty_no_pending_dma_no_wait,9942.057,15.475443333108586
+0xffff9a8c8a21a000,0,1,,empty_pending_dma_no_wait,2331.2437,3.628728921491437
+0xffff9a8c8a21a000,0,1,,target_dma,48023.3076,74.75132916983306
+0xffff9a8c8a21a000,0,1,,empty_pending_dma_with_wait,2255.1709,3.510316775434449
+0xffff9a8c8a21a000,0,1,,other_dma,1328.6837,2.0681805894871705
+0xffff9a8c8a21a000,0,1,,empty_no_pending_dma_with_wait,363.6223,0.5660012106453031
+0xffff9a8c8a21a000,2,0,Compute 0,empty_no_pending_dma_no_wait,23931.0209,37.25015435350926
+0xffff9a8c8a21a000,2,0,Compute 0,target_dma,8263.0548,12.861969742858133
+0xffff9a8c8a21a000,2,0,Compute 0,empty_no_pending_dma_with_wait,6027.7246,9.382536277440838
+0xffff9a8c8a21a000,2,0,Compute 0,empty_pending_dma_with_wait,25663.9367,39.94754788725671
+0xffff9a8c8a21a000,2,0,Compute 0,empty_pending_dma_no_wait,358.3482,0.5577917389350576
+0xffff9a8c8a21a000,1,6,,empty_no_pending_dma_no_wait,63245.551,98.44571808145227
+0xffff9a8c8a21a000,1,6,,empty_pending_dma_no_wait,378.4724,0.5891163347127869
+0xffff9a8c8a21a000,1,6,,target_dma,562.6631,0.8758208607817487
+0xffff9a8c8a21a000,1,6,,empty_no_pending_dma_with_wait,9.6542,0.015027375625234991
+0xffff9a8c8a21a000,1,6,,empty_pending_dma_with_wait,47.7445,0.07431734742796213
+0xffff9a8c8a21a000,5,0,Timer 0,empty_no_pending_dma_no_wait,64244.0852,100.0
+0xffff9a8c8a21a000,4,6,,empty_no_pending_dma_no_wait,62105.2226,96.67072448250848
+0xffff9a8c8a21a000,4,6,,other_dma,2138.8626,3.329275517491531

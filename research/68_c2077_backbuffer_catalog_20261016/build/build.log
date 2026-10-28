@@ -1,0 +1,10 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.11.0
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+c2077_backbuffer_probe.cpp
+   Creating library research\68_c2077_backbuffer_catalog_20261016\build\test.lib and object research\68_c2077_backbuffer_catalog_20261016\build\test.exp
+Backbuffer catalog correlation/resize/reset/device/empty/hash/host selfcheck PASS
+c2077_backbuffer_probe.cpp
+   Creating library research\68_c2077_backbuffer_catalog_20261016\build\probe.lib and object research\68_c2077_backbuffer_catalog_20261016\build\probe.exp

@@ -1,0 +1,177 @@
+{
+  "experiment_id": "T_UB_20260907_123032",
+  "created_at": "2026-09-07T12:30:34.629796+02:00",
+  "phase": "2T",
+  "workload": "ub",
+  "workload_name": "D3D12Raytracing / ProceduralGeometry",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\T_UB_20260907_123032",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\t2\\D3D12RaytracingPG",
+  "dxc": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "msbuild": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "configuration": "Release/x64/v145",
+  "regions": {
+    "0": "the DispatchRays call: the whole raytracing pass"
+  },
+  "primary_region": 0,
+  "expected_bytecode": {
+    "base": {
+      "Raytracing.dxil": "31fc8d869d84a1cdb28b98badba803e33cfd65f867c2382e7749d1a226030f68"
+    },
+    "abl_phong": {
+      "Raytracing.dxil": "b71048da306b781fa61519f28d30597f048ce72199d0ba38acd410e74b52f1c4"
+    },
+    "abl_reflection": {
+      "Raytracing.dxil": "1bc0c960445f567ee16c32a72d098bae7226fa21221013cf93a615ce16995bcf"
+    },
+    "abl_shadowray": {
+      "Raytracing.dxil": "8b514c74bf87923bd11b95fd3de188a16de6948491cc283d1a50b986496398bc"
+    },
+    "ablate_ch": {
+      "Raytracing.dxil": "0adff75e8c15213c2650d1251215ff56c3559ba57e9ecd39174201271884c283"
+    },
+    "hitpos_reuse": {
+      "Raytracing.dxil": "e514a26e07fd5fabbc81cb6eed7a1b2b55237f46aa536d5811666e2ec11e0960"
+    },
+    "shadow_tmax": {
+      "Raytracing.dxil": "3d2a09cfc5609d45037ec7a35fb11e9c01de2576e2975eed6777303cc9032103"
+    }
+  },
+  "transforms": {
+    "abl_phong": {
+      "kind": "diagnostic_block",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "the Phong evaluation gone, both secondary rays kept"
+    },
+    "abl_reflection": {
+      "kind": "diagnostic_block",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "the recursive radiance ray removed"
+    },
+    "abl_shadowray": {
+      "kind": "diagnostic_block",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "one TraceRay per hit removed"
+    },
+    "ablate_ch": {
+      "kind": "diagnostic_ceiling",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "everything a source change to the shading could ever give up"
+    },
+    "hitpos_reuse": {
+      "kind": "cse_across_traceray",
+      "targets_block": "closest-hit arithmetic",
+      "block_share_of_ceiling_pct": 1,
+      "predicted_delta_pct": [
+        0.0,
+        2.0
+      ],
+      "predicted_correctness": "tier A PASS, bit-exact by construction",
+      "equivalence": "bit-exact: HitWorldPosition() is a pure function of intrinsics DXR restores after a TraceRay, so every evaluation returns the same value",
+      "expectation": "three redundant evaluations removed, more live state across TraceRay"
+    },
+    "shadow_tmax": {
+      "kind": "ray_extent_reduction",
+      "targets_block": "shadow ray",
+      "block_share_of_ceiling_pct": 55,
+      "predicted_delta_pct": [
+        -20.0,
+        -5.0
+      ],
+      "predicted_correctness": "tier A PASS; conditional on the scene, not algebraic",
+      "equivalence": "conditional, not algebraic: identical image if and only if no geometry lies between the light and t = 10000 along any shadow ray. abl_shadowray is the positive control that the oracle sees this flag at all.",
+      "expectation": "shadow-ray traversal bounded by the light distance instead of 10000"
+    }
+  },
+  "transform_edits": {
+    "abl_phong": [
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    float4 phongColor = CalculatePhongLighting(l_materialCB.albedo, triangleNormal, shadowRayHit, l_materialCB.diffuseCoef, l_materialCB.specularCoef, l_materialCB.specularPower);\n",
+        "    float4 phongColor = l_materialCB.albedo * (shadowRayHit ? 0.5f : 1.0f);\n"
+      ],
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    float4 phongColor = CalculatePhongLighting(l_materialCB.albedo, attr.normal, shadowRayHit, l_materialCB.diffuseCoef, l_materialCB.specularCoef, l_materialCB.specularPower);\n",
+        "    float4 phongColor = l_materialCB.albedo * (shadowRayHit ? 0.5f : 1.0f);\n"
+      ]
+    ],
+    "abl_reflection": [
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    if (l_materialCB.reflectanceCoef > 0.001 )\n",
+        "    if (false)\n"
+      ],
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    if (l_materialCB.reflectanceCoef > 0.001)\n",
+        "    if (false)\n"
+      ]
+    ],
+    "abl_shadowray": [
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    bool shadowRayHit = TraceShadowRayAndReportIfHit(shadowRay, rayPayload.recursionDepth);\n\n    float checkers",
+        "    bool shadowRayHit = false;\n\n    float checkers"
+      ],
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    bool shadowRayHit = TraceShadowRayAndReportIfHit(shadowRay, rayPayload.recursionDepth);\n\n    // Reflected component.",
+        "    bool shadowRayHit = false;\n\n    // Reflected component."
+      ]
+    ],
+    "ablate_ch": [
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "void MyClosestHitShader_Triangle(inout RayPayload rayPayload, in BuiltInTriangleIntersectionAttributes attr)\n{\n",
+        "void MyClosestHitShader_Triangle(inout RayPayload rayPayload, in BuiltInTriangleIntersectionAttributes attr)\n{\n    rayPayload.color = l_materialCB.albedo; return;\n"
+      ],
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "void MyClosestHitShader_AABB(inout RayPayload rayPayload, in ProceduralPrimitiveAttributes attr)\n{\n",
+        "void MyClosestHitShader_AABB(inout RayPayload rayPayload, in ProceduralPrimitiveAttributes attr)\n{\n    rayPayload.color = l_materialCB.albedo; return;\n"
+      ]
+    ],
+    "hitpos_reuse": [
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    float checkers = AnalyticalCheckersTexture(HitWorldPosition(), triangleNormal, g_sceneCB.cameraPosition.xyz, g_sceneCB.projectionToWorld);\n",
+        "    float checkers = AnalyticalCheckersTexture(hitPosition, triangleNormal, g_sceneCB.cameraPosition.xyz, g_sceneCB.projectionToWorld);\n"
+      ],
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "        Ray reflectionRay = { HitWorldPosition(), reflect(WorldRayDirection(), triangleNormal) };\n",
+        "        Ray reflectionRay = { hitPosition, reflect(WorldRayDirection(), triangleNormal) };\n"
+      ],
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "        Ray reflectionRay = { HitWorldPosition(), reflect(WorldRayDirection(), attr.normal) };\n",
+        "        Ray reflectionRay = { hitPosition, reflect(WorldRayDirection(), attr.normal) };\n"
+      ]
+    ],
+    "shadow_tmax": [
+      [
+        "Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingProceduralGeometry/Raytracing.hlsl",
+        "    rayDesc.TMin = 0;\n    rayDesc.TMax = 10000;\n\n    // Initialize shadow ray payload.\n",
+        "    rayDesc.TMin = 0;\n    // The shadow ray is aimed at the light and only asks whether anything blocks it, so nothing\n    // beyond the light can shadow this point. Its origin is the hit position, by construction at\n    // both call sites.\n    rayDesc.TMax = length(g_sceneCB.lightPosition.xyz - ray.origin);\n\n    // Initialize shadow ray payload.\n"
+      ]
+    ]
+  },
+  "preregistered_criteria": {
+    "provenance": "every build is gated on the preregistered SHA-256 of every shader the project compiles; the pristine sources are restored on every exit path",
+    "correctness": "the sample's own render target after a fixed frame count, compared byte for byte against the baseline's. Baseline vs baseline must be identical first or nothing is judged against it",
+    "performance": "median of the primary timestamp region, several independent processes, counterbalanced order, paired against base",
+    "acceptance": "median <= -max(1 %, 3 x N95) from this workload's own A/A control, every paired process negative, and correctness passing"
+  },
+  "preregistered_at": {
+    "abl_phong": "2026-09-07T12:31:49.671163+02:00",
+    "abl_reflection": "2026-09-07T12:31:49.880397+02:00",
+    "abl_shadowray": "2026-09-07T12:31:50.091709+02:00",
+    "ablate_ch": "2026-09-07T12:31:50.287551+02:00",
+    "hitpos_reuse": "2026-09-07T12:37:44.776123+02:00",
+    "shadow_tmax": "2026-09-07T12:37:44.989771+02:00"
+  }
+}

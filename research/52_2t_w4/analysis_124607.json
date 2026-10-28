@@ -1,0 +1,255 @@
+{
+  "workload": "D3D12VariableRateShading / ShadowsFogScatteringSquidScene",
+  "region": "whole GPU frame: shadow pass, refraction pass, scene pass on all worker lists, postprocess",
+  "medians_ns": {
+    "abl_lightmath": [
+      146920.0,
+      147040.0,
+      147100.0
+    ],
+    "abl_normalmap": [
+      144520.0,
+      144640.0,
+      144720.0
+    ],
+    "abl_shadow": [
+      132560.0,
+      132640.0,
+      132560.0
+    ],
+    "abl_shadow_taps": [
+      147080.0,
+      147220.0,
+      147160.0
+    ],
+    "ablate_ps": [
+      125320.0,
+      125280.0,
+      125500.0
+    ],
+    "base": [
+      152080.0,
+      151920.0,
+      152040.0,
+      150280.0,
+      150240.0,
+      150080.0,
+      150140.0,
+      150240.0,
+      150360.0,
+      150240.0,
+      150380.0,
+      150360.0,
+      150740.0,
+      150520.0,
+      150560.0,
+      150600.0,
+      150540.0,
+      150800.0,
+      150600.0,
+      150720.0,
+      150800.0,
+      150520.0
+    ],
+    "gather_pcf": [
+      149840.0,
+      149560.0,
+      149600.0,
+      149600.0
+    ],
+    "vs_lightspace": [
+      157100.0,
+      157200.0,
+      157280.0,
+      157120.0
+    ],
+    "zeroskip_shadow": [
+      150600.0,
+      150620.0,
+      150720.0,
+      150680.0
+    ]
+  },
+  "threshold_pct": 1.4357883541611276,
+  "verdicts": {
+    "abl_lightmath": {
+      "median_pct": -2.3249634648598376,
+      "per_process": [
+        -2.4176408076514346,
+        -2.3249634648598376,
+        -2.2851069483193833
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "abl_lightmath_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 1981929,
+        "max_abs_delta": 69,
+        "differing_fraction": 0.5376326497395834,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "abl_normalmap": {
+      "median_pct": -3.9192241264780123,
+      "per_process": [
+        -4.011689691817216,
+        -3.9192241264780123,
+        -3.8660821044240734
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "abl_normalmap_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 763170,
+        "max_abs_delta": 46,
+        "differing_fraction": 0.20702311197916667,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "abl_shadow": {
+      "median_pct": -11.97875166002656,
+      "per_process": [
+        -11.97875166002656,
+        -11.925630810092962,
+        -12.095490716180372
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "abl_shadow_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 617274,
+        "max_abs_delta": 63,
+        "differing_fraction": 0.1674462890625,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "abl_shadow_taps": {
+      "median_pct": -2.3373173970783534,
+      "per_process": [
+        -2.3373173970783534,
+        -2.244355909694555,
+        -2.413793103448276
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "abl_shadow_taps_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 626295,
+        "max_abs_delta": 63,
+        "differing_fraction": 0.16989339192708333,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "ablate_ps": {
+      "median_pct": -16.586794462193826,
+      "per_process": [
+        -16.586794462193826,
+        -16.679968076616124,
+        -16.53365256717212
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "ablate_ps_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 2665880,
+        "max_abs_delta": 98,
+        "differing_fraction": 0.7231662326388889,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "gather_pcf": {
+      "median_pct": -0.3397468688073079,
+      "per_process": [
+        -0.2927867979771094,
+        -0.45260915867944623,
+        -0.31982942430703626,
+        -0.3596643133075796
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "gather_pcf_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 129,
+        "max_abs_delta": 41,
+        "differing_fraction": 3.4993489583333335e-05,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "vs_lightspace": {
+      "median_pct": 4.307716057214877,
+      "per_process": [
+        4.316069057104914,
+        4.2993630573248405,
+        4.297082228116711,
+        4.384799362211002
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "vs_lightspace_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 112,
+        "max_abs_delta": 17,
+        "differing_fraction": 3.0381944444444444e-05,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "zeroskip_shadow": {
+      "median_pct": 0.12629710818164008,
+      "per_process": [
+        0.1462960500066498,
+        0.17291832934291035,
+        -0.013267878466233248,
+        0.10629816635663034
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "zeroskip_shadow_r1"
+        ],
+        "identical": true,
+        "bytes": 3686400,
+        "differing": 0,
+        "max_abs_delta": 0,
+        "differing_fraction": 0.0,
+        "passed": true
+      },
+      "final": "REJECTED (performance)"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+name,shader,variant,corr,combos,combos_neg,mean_worst,mean_best,max_mean_plus_2se,accepted
+bdiv__hoist_parity,bdiv,hoist_parity,riassociazione,3,3,-69.543,-70.509,-69.147,SI
+bdiv__hoist_parity_batch,bdiv,hoist_parity_batch,riassociazione,3,3,-49.722,-50.875,-49.056,SI
+trig__unroll,trig,unroll,strict,3,3,-25.448,-25.789,-25.364,SI
+ldsred__wave,ldsred,wave,riassociazione,3,3,-14.542,-15.596,-14.493,SI
+ldsred__tree,ldsred,tree,riassociazione,3,3,-14.413,-15.628,-14.329,SI
+mix__unroll,mix,unroll,riassociazione,3,3,-6.219,-8.178,-4.918,SI
+dot__unroll,dot,unroll,riassociazione,3,3,-5.817,-6.355,-5.788,SI
+dot__acc4,dot,acc4,riassociazione,3,3,-5.817,-6.254,-5.774,SI
+dot__acc4_unroll,dot,acc4_unroll,riassociazione,3,3,-1.228,-3.903,-0.948,SI
+p24__tg32,p24,tg32,riassociazione,3,3,-0.651,-0.842,-0.563,no
+bdiv__unroll,bdiv,unroll,riassociazione,3,0,1.485,0.046,2.958,no

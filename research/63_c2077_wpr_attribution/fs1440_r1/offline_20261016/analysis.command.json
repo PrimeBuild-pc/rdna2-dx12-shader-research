@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-B",
+    "tools/c2077_etw_offline.py",
+    "research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016\\events_v2",
+    "research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016\\analysis",
+    "--lo",
+    "324665928518",
+    "--hi",
+    "325308369370",
+    "--origin",
+    "324166830818"
+  ],
+  "pid": 15232,
+  "started": 1792151758.2099876
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016\\PresentMon-2.5.1-x64.exe",
+    "--etl_file",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\c2077_fs1440_attribution-run1-20260908-222856-633.etl",
+    "--process_name",
+    "Cyberpunk2077.exe",
+    "--output_file",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016\\pm251_relative.csv",
+    "--v2_metrics",
+    "--no_console_stats"
+  ],
+  "exit": 0,
+  "elapsed_s": 39.404001235961914
+}

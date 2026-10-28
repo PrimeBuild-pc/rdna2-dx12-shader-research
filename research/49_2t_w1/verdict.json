@@ -1,0 +1,19 @@
+{
+  "workload": "D3D12ExecuteIndirect",
+  "verdict": "MISS",
+  "reasons": [
+    "no shader-throughput-bound pass: the cull dispatch runs ~41 000 ALU operations in 5.76 us, about 0.03 % of this GPU's arithmetic peak - it is dispatch-latency bound, so no change to the shader can move it",
+    "the draw region is 1024 indirect draws of a single triangle each: command-processor bound, not shader bound",
+    "the workload is not frame-deterministic - the back-buffer capture differs on every run (60a068f9, 843fca9c, bbb2396e), because the triangles are animated from wall-clock time - so the correctness oracle cannot be established without modifying the workload"
+  ],
+  "measured": {
+    "compute_dispatch_ns": 5760,
+    "draw_region_ns": 54400,
+    "aa_n95_pct": 2.72,
+    "acceptance_threshold_pct": 8.15,
+    "note": "a transformation would have to be worth more than 8 % of the draw region to be detectable at all"
+  },
+  "transformations_attempted": 0,
+  "stage_failed": "profile / correctness oracle - before any hypothesis",
+  "cost": "1 cycle: pristine copy, instrumentation, gated build, 3 baseline processes"
+}

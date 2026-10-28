@@ -1,0 +1,22 @@
+{
+  "variant": "shadowskip",
+  "rep": 1,
+  "pid": 2180,
+  "draws": 34,
+  "image": {
+    "pid": 2180,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 2,
+    "format_name": "R32G32B32A32_FLOAT",
+    "bytes_per_pixel": 16,
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 30720,
+    "stored_row_bytes": 30720,
+    "padding_stored": false
+  },
+  "image_sha256": "91c76b8c7f066900f779d7a25168fe2da8e03823bab2a0f6edcf1b408bdc9e9c",
+  "bytecode_sha256": "a581387feff69a7eb92ac65ed48173aabb1e070a302d758c6e0a919b4630476d"
+}

@@ -1,0 +1,387 @@
+./
+  CLAUDE.md  (4,009 B)
+  PLAN.md  (4,835 B)
+  whql-amd-software-adrenalin-edition-26.9.1-win11-a.exe  (986,362,744 B)
+  ghidra_12.1.3_PUBLIC_20260817/
+    ghidra_12.1.3_PUBLIC/
+      GettingStarted.html  (38,438 B)
+      GettingStarted.md  (26,090 B)
+      LICENSE  (11,357 B)
+      bom.json  (157,386 B)
+      ghidraRun  (1,461 B)
+      ghidraRun.bat  (1,531 B)
+      Extensions/
+        Eclipse/
+        Ghidra/
+        IDAPro/
+      Ghidra/
+        .dbDirLock  (57 B)
+        application.properties  (659 B)
+        Configurations/
+        Debug/
+        Features/
+        Framework/
+      GPL/
+        nativeBuildProperties.gradle  (7,895 B)
+        nativePlatforms.gradle  (7,081 B)
+        settings.gradle  (368 B)
+        utils.gradle  (1,907 B)
+        vsconfig.gradle  (5,601 B)
+        DemanglerGnu/
+        DMG/
+        Icons/
+        licenses/
+  ProcessMonitor/
+    Eula.txt  (7,490 B)
+    Procmon.exe  (4,247,832 B)
+    Procmon64.exe  (2,232,136 B)
+    Procmon64a.exe  (2,316,576 B)
+  RadeonDeveloperToolSuite-2026-05-28-1806/
+    RadeonDeveloperToolSuite-2026-05-28-1806/
+      EULA.txt  (19,812 B)
+      GPUPerfAPICounters-x64.dll  (4,528,400 B)
+      LICENSE.txt  (1,113 B)
+      Qt6Core.dll  (6,394,584 B)
+      Qt6Gui.dll  (9,033,432 B)
+      Qt6Network.dll  (1,715,416 B)
+      Qt6Svg.dll  (500,952 B)
+      Qt6Widgets.dll  (6,573,272 B)
+      RDP_NOTICES.txt  (103,880 B)
+      RDP_RELEASE_NOTES.txt  (7,624 B)
+      RGA_NOTICES.txt  (19,148 B)
+      RGA_README.md  (16,681 B)
+      RGA_RELEASE_NOTES.txt  (11,652 B)
+      RGD_NOTICES.txt  (1,380 B)
+      RGD_README.md  (7,673 B)
+      RGD_RELEASE_NOTES.txt  (5,365 B)
+      RGP_NOTICES.txt  (69,048 B)
+      RGP_README.md  (3,395 B)
+      RGP_RELEASE_NOTES.txt  (37,072 B)
+      RMV_NOTICES.txt  (15,213 B)
+      RMV_README.md  (6,241 B)
+      RMV_RELEASE_NOTES.txt  (8,592 B)
+      RRA_NOTICES.txt  (24,878 B)
+      RRA_README.md  (5,883 B)
+      RRA_RELEASE_NOTES.txt  (8,959 B)
+      RadeonDeveloperPanel.exe  (5,682,440 B)
+      RadeonDeveloperPanelCLI.exe  (385,800 B)
+      RadeonDeveloperService.exe  (2,710,280 B)
+      RadeonDeveloperServiceCLI.exe  (1,997,064 B)
+      RadeonGPUAnalyzer.exe  (4,236,560 B)
+      RadeonGPUProfiler.exe  (20,201,232 B)
+      RadeonMemoryVisualizer.exe  (4,678,408 B)
+      RadeonRaytracingAnalyzer.exe  (6,262,024 B)
+      RdpCaptureApi.dll  (3,668,240 B)
+      amd_comgr_3.dll  (135,028,496 B)
+      amdgpu_dis.dll  (17,501,960 B)
+      concrt140.dll  (324,208 B)
+      msvcp140.dll  (557,728 B)
+      msvcp140_1.dll  (35,952 B)
+      msvcp140_2.dll  (280,200 B)
+      msvcp140_atomic_wait.dll  (50,304 B)
+      msvcp140_codecvt_ids.dll  (31,872 B)
+      rga.exe  (2,917,136 B)
+      rgd.exe  (1,977,608 B)
+      rtda.exe  (6,712,584 B)
+      vccorlib140.dll  (352,384 B)
+      vcruntime140.dll  (124,544 B)
+      vcruntime140_1.dll  (49,792 B)
+      help/
+        RDCInterop.htm  (1,546 B)
+        rdp/
+        rga/
+        rgd/
+        rgp/
+        rmv/
+        rra/
+      plugins/
+        iconengines/
+        imageformats/
+        platforms/
+        styles/
+      samples/
+        sample_crash_dump.rgd  (12,141,369 B)
+        sample_profile.rgp  (29,148,381 B)
+        sample_trace.rmv  (464,946 B)
+        sample_trace.rra  (19,493,195 B)
+        AmdDxExt/
+      scripts/
+        AddUserToGroup.bat  (3,335 B)
+        EnableSyncPrimitives.exe  (292,104 B)
+        concrt140.dll  (324,208 B)
+        msvcp140.dll  (557,728 B)
+        msvcp140_1.dll  (35,952 B)
+        msvcp140_2.dll  (280,200 B)
+        msvcp140_atomic_wait.dll  (50,304 B)
+        msvcp140_codecvt_ids.dll  (31,872 B)
+        vcruntime140.dll  (124,544 B)
+        vcruntime140_1.dll  (49,792 B)
+      shaders/
+        BoundingVolumeHierarchyWire.ps.spv  (376 B)
+        BoundingVolumeHierarchyWire.vs.spv  (7,300 B)
+        Clear.ps.spv  (968 B)
+        Clear.vs.spv  (588 B)
+        GeometryColorAllowCompactionFlag.ps.spv  (1,284 B)
+        GeometryColorAllowCompactionFlag.vs.spv  (5,448 B)
+        GeometryColorAllowUpdateFlag.ps.spv  (1,284 B)
+        GeometryColorAllowUpdateFlag.vs.spv  (5,448 B)
+        GeometryColorBlasAverageDepth.ps.spv  (6,016 B)
+        GeometryColorBlasAverageDepth.vs.spv  (5,192 B)
+        GeometryColorBlasAverageSAH.ps.spv  (5,944 B)
+        GeometryColorBlasAverageSAH.vs.spv  (5,192 B)
+        GeometryColorBlasInstanceCount.ps.spv  (6,076 B)
+        GeometryColorBlasInstanceCount.vs.spv  (5,204 B)
+        GeometryColorBlasInstanceId.ps.spv  (2,072 B)
+        GeometryColorBlasInstanceId.vs.spv  (5,196 B)
+        GeometryColorBlasMaxDepth.ps.spv  (6,016 B)
+        GeometryColorBlasMaxDepth.vs.spv  (5,192 B)
+        GeometryColorBlasMinSAH.ps.spv  (5,944 B)
+        GeometryColorBlasMinSAH.vs.spv  (5,192 B)
+        GeometryColorBlasTriangleCount.ps.spv  (6,076 B)
+        GeometryColorBlasTriangleCount.vs.spv  (5,204 B)
+        GeometryColorFinalOpacity.ps.spv  (1,292 B)
+        GeometryColorFinalOpacity.vs.spv  (5,936 B)
+        GeometryColorGeometryIndex.ps.spv  (6,080 B)
+        GeometryColorGeometryIndex.vs.spv  (5,500 B)
+        GeometryColorInstanceIndex.ps.spv  (2,244 B)
+        GeometryColorInstanceIndex.vs.spv  (5,396 B)
+        GeometryColorInstanceMask.ps.spv  (2,172 B)
+        GeometryColorInstanceMask.vs.spv  (5,196 B)
+        GeometryColorLit.ps.spv  (5,580 B)
+        GeometryColorLit.vs.spv  (6,240 B)
+        GeometryColorLowMemoryFlag.ps.spv  (1,292 B)
+        GeometryColorLowMemoryFlag.vs.spv  (5,456 B)
+        GeometryColorOpacity.ps.spv  (5,268 B)
+        GeometryColorOpacity.vs.spv  (5,716 B)
+        GeometryColorPreferFastBuildOrTrace.ps.spv  (1,292 B)
+        GeometryColorPreferFastBuildOrTrace.vs.spv  (5,872 B)
+        GeometryColorPrimitiveStructure.ps.spv  (6,080 B)
+        GeometryColorPrimitiveStructure.vs.spv  (5,496 B)
+        GeometryColorRebraiding.ps.spv  (1,288 B)
+        GeometryColorRebraiding.vs.spv  (5,432 B)
+        GeometryColorTechnical.ps.spv  (5,568 B)
+        GeometryColorTechnical.vs.spv  (6,048 B)
+        GeometryColorTreeLevel.ps.spv  (6,340 B)
+        GeometryColorTreeLevel.vs.spv  (5,544 B)
+        GeometryColorTriangleIndex.ps.spv  (5,468 B)
+        GeometryColorTriangleIndex.vs.spv  (5,496 B)
+        GeometryColorTriangleSAH.ps.spv  (6,224 B)
+        GeometryColorTriangleSAH.vs.spv  (5,428 B)
+        GeometryColorTriangleSplitting.ps.spv  (5,264 B)
+        GeometryColorTriangleSplitting.vs.spv  (5,732 B)
+        GeometryColorWireframe.ps.spv  (1,036 B)
+        GeometryColorWireframe.vs.spv  (5,012 B)
+        GeometryInstanceFacingCullDisable.ps.spv  (1,292 B)
+        GeometryInstanceFacingCullDisable.vs.spv  (5,456 B)
+        GeometryInstanceFlipFacing.ps.spv  (1,292 B)
+        GeometryInstanceFlipFacing.vs.spv  (5,456 B)
+        GeometryInstanceForceOpaqueOrNoOpaque.ps.spv  (1,292 B)
+        GeometryInstanceForceOpaqueOrNoOpaque.vs.spv  (5,872 B)
+        ... +16 altri file
+      utils/
+        amdllpc.exe  (71,119,624 B)
+        d3dcompiler_47.dll  (4,741,464 B)
+        dx11_adapter.exe  (40,720 B)
+        glc.exe  (45,828,368 B)
+        shae.exe  (2,129,672 B)
+        dx11/
+        dx12/
+        isa_spec/
+        lc/
+        vulkan/
+  research/
+    00_inventory/
+    01_driver_map/
+      _sigcheck.csv  (152,362 B)
+      _sigcheck_err.txt  (0 B)
+      _sigcheck_raw.csv  (355,760 B)
+      component_classification.csv  (158,962 B)
+      dependency_graph.json  (7,824 B)
+      driver_files.csv  (251,959 B)
+      driver_map.json  (32,870 B)
+      inf_map.json  (72,855 B)
+      pe_metadata.json  (681,746 B)
+    04_benchmarks/
+      analysis/
+        METHOD.md  (7,312 B)
+        baseline_comparison.md  (7,302 B)
+        correlations.csv  (20,014 B)
+        fortnite_baseline.md  (12,045 B)
+        fortnite_runs.csv  (11,454 B)
+        frametime_outliers.csv  (21,310 B)
+        parser_validation.csv  (3,815 B)
+        run_to_run_variance.csv  (7,145 B)
+        steelnomad_baseline.md  (8,922 B)
+        steelnomad_runs.csv  (11,325 B)
+        charts/
+    3DMark_SteelNomad_DX12/
+      1/
+        Screenshot 2026-09-03 214848.png  (475,038 B)
+        pmcap-3DMarkSteelNomad.exe-260903-214738-stats.csv  (216 B)
+        pmcap-3DMarkSteelNomad.exe-260903-214738.csv  (943,359 B)
+      2/
+        Screenshot 2026-09-03 215147.png  (486,172 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215034-stats.csv  (216 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215034.csv  (1,028,594 B)
+      3/
+        Screenshot 2026-09-03 215412.png  (488,240 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215258-stats.csv  (215 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215258.csv  (1,037,649 B)
+      4/
+        Screenshot 2026-09-03 215633.png  (484,239 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215520-stats.csv  (217 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215520.csv  (1,040,469 B)
+      5/
+        Screenshot 2026-09-03 215852.png  (483,051 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215738-stats.csv  (216 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215738.csv  (1,017,554 B)
+      6/
+        Screenshot 2026-09-03 220132.png  (484,351 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215958-stats.csv  (216 B)
+        pmcap-3DMarkSteelNomad.exe-260903-215958.csv  (1,034,185 B)
+      7/
+        Screenshot 2026-09-03 220606.png  (480,804 B)
+        pmcap-3DMarkSteelNomad.exe-260903-220450-stats.csv  (215 B)
+        pmcap-3DMarkSteelNomad.exe-260903-220450.csv  (1,024,755 B)
+    fortnite_DX12_PerformanceMode/
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212226-stats.csv  (216 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212226.csv  (15,451,221 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212334-stats.csv  (216 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212334.csv  (15,683,566 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212440-stats.csv  (217 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212440.csv  (15,616,459 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212547-stats.csv  (217 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212547.csv  (15,058,548 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212653-stats.csv  (215 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212653.csv  (15,653,902 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212801-stats.csv  (217 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212801.csv  (15,344,109 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212907-stats.csv  (217 B)
+      pmcap-FortniteClient-Win64-Shipping.exe-260903-212907.csv  (15,902,329 B)
+  Sigcheck/
+    Eula.txt  (7,490 B)
+    sigcheck.exe  (437,792 B)
+    sigcheck64.exe  (527,944 B)
+    sigcheck64a.exe  (526,408 B)
+  tools/
+    analyze.py  (8,461 B)
+    classify.py  (8,213 B)
+    drivermap.py  (7,980 B)
+    fn_probe.py  (870 B)
+    fn_probe2.py  (916 B)
+    inventory.py  (4,686 B)
+    pmparse.py  (6,995 B)
+    sn_probe.py  (720 B)
+    survey.py  (681 B)
+    validate.py  (1,832 B)
+  whql-amd-software-adrenalin-edition-26.9.1-win11-a/
+    Setup.exe  (1,116,432 B)
+    Bin64/
+      7z.dll  (1,917,704 B)
+      7z.exe  (587,024 B)
+      ADDL_COMMON.dll  (2,216,712 B)
+      AMDBugReportTool.exe  (3,079,280 B)
+      AMDCleanupUtility.exe  (2,613,520 B)
+      AMDInstallUEP.exe  (4,463,376 B)
+      AMDSoftwareCloud.ico  (163,166 B)
+      AMDSoftwareCompatibilityTool.exe  (1,226,448 B)
+      AMDSoftwareConsumer.ico  (562,718 B)
+      AMDSoftwareInstaller.exe  (51,238,672 B)
+      AMDSplashScreen.exe  (11,663,632 B)
+      ATISetup.exe  (3,972,360 B)
+      CombinedInstaller.ico  (562,718 B)
+      InstallManagerApp.exe  (1,041,160 B)
+      Setup.exe  (1,116,424 B)
+      amd_icon_pro.ico  (4,286 B)
+      amdicdxx.dat  (1,720,300 B)
+      cccmanifest_64.json  (214,254 B)
+      resources.rcc  (23,616,331 B)
+      localization/
+        cs/
+        da_DK/
+        de/
+        el_GR/
+        es_ES/
+        fi_FI/
+        fr_FR/
+        hu_HU/
+        it_IT/
+        ja/
+        ko_KR/
+        nl_NL/
+        no/
+        pl/
+        pt_BR/
+        ru_RU/
+        sv_SE/
+        th/
+        tr_TR/
+        uk_UA/
+        zh_CN/
+        zh_TW/
+    Config/
+      AMDAUEPInstaller.xml  (2,868 B)
+      AMDCOMPUTE.xml  (3,074 B)
+      AMDLinkDriverUpdate.xml  (2,920 B)
+      AMDRELAUNCHER.xml  (3,202 B)
+      AMDScoSupportTypeUpdate.xml  (3,518 B)
+      AMDUWPLauncher.xml  (1,590 B)
+      AMDUpdater.xml  (4,102 B)
+      BuildHighlights.xml  (21,084 B)
+      CIMTracker.JSON  (14,315 B)
+      EnableWindowsDriverSearch.xml  (3,290 B)
+      InstallLegacy.json  (210,300 B)
+      InstallManifest.json  (458,871 B)
+      InstallUEP.xml  (3,334 B)
+      ModifyLinkUpdate.xml  (3,308 B)
+      MonetCHS.xml  (10,774 B)
+      MonetCHT.xml  (10,774 B)
+      MonetCSY.xml  (11,186 B)
+      MonetDAN.xml  (11,244 B)
+      MonetDEU.xml  (11,260 B)
+      MonetENU.xml  (11,234 B)
+      MonetESP.xml  (11,354 B)
+      MonetFIN.xml  (11,292 B)
+      MonetFRA.xml  (11,364 B)
+      MonetGRK.xml  (11,398 B)
+      MonetHNG.xml  (11,252 B)
+      MonetITA.xml  (11,372 B)
+      MonetJPN.xml  (10,934 B)
+      MonetKOR.xml  (10,800 B)
+      MonetNLD.xml  (11,260 B)
+      MonetNOR.xml  (11,258 B)
+      MonetPLK.xml  (11,354 B)
+      MonetPTB.xml  (11,362 B)
+      MonetRSA.xml  (11,408 B)
+      MonetSVE.xml  (11,334 B)
+      MonetTHA.xml  (11,228 B)
+      MonetTRK.xml  (147,214 B)
+      cccmanifest_64.json  (214,254 B)
+      workaround.xml  (7,552 B)
+    Packages/
+      Apps/
+        AUEP64/
+        CCC2/
+        CNBranding/
+        RadeonLED/
+        RyzenMasterSDK/
+        VC22RTx64/
+      Drivers/
+        AMDISP/
+        AMDNPUMCDM/
+        AMDNPUWDF/
+        Audio/
+        Display/
+        RadeonLED/
+        SBDrv/
+    Setup/
+      .data  (6,144 B)
+      .pdata  (24,084 B)
+      .rdata  (99,860 B)
+      .reloc  (2,888 B)
+      .text  (387,496 B)
+      CERTIFICATE  (11,536 B)
+      _RDATA  (500 B)
+      .rsrc/
+        1033/
+        4105/

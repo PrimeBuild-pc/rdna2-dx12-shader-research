@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\abl_shadowray\\D3D12RaytracingProceduralGeometry.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\abl_shadowray\\D3D12RaytracingProceduralGeometry.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\abl_shadowray",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\abl_shadowray\\D3D12RaytracingProceduralGeometry.exe",
+  "executable_sha256": "d1a5632f7897c9ac97e846339d6808c74b24352be15aa2b297fbbda7d2677ce2",
+  "pid": 13796,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\abl_shadowray\\D3D12RaytracingProceduralGeometry.exe",
+  "returncode": 0
+}

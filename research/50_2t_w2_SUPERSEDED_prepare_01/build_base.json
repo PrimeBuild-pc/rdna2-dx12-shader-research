@@ -1,0 +1,9 @@
+{
+  "variant": "base",
+  "executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\base\\D3D12Multithreading.exe",
+  "executable_sha256": "e5a560c9f1ebe07e32a9ae763b5625ea07e0b3c749f17250f822aad4cdf33c92",
+  "shaders": {
+    "shaders_VSMain.cso": "90b16f8a6ab0897f9fb32555de4b08f1725a85479f7cf2decc4fa1ffbbb7cea9",
+    "shaders_PSMain.cso": "6e9f3e9c1702ddb71a08b11cd70c4b2d7eaf0b7a48d2122641e232efb93eb2ab"
+  }
+}

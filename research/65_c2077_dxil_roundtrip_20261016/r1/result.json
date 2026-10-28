@@ -1,0 +1,90 @@
+{
+  "experiment": "C2077-DXIL-CANARY-001",
+  "status": "PASS_OFFLINE",
+  "comparisons": [
+    {
+      "shader": "pixel",
+      "original_sha256": "efca2e4b6b69bb0ab7b4b01c9d915ed7cb5208809281afb8869706cb06757ca4",
+      "control_sha256": "b7bd8a8402dc0444610fad9c4912d9a5b947fba50e7e8f8cf2a95847f9a95f9d",
+      "original_bytes": 5702,
+      "control_bytes": 5642,
+      "module_ir_equal": true,
+      "interface_parts_equal": true,
+      "external_validator": "PASS"
+    },
+    {
+      "shader": "compute",
+      "original_sha256": "6bd7d8e2bb822542131c0b49639a8d131da8424a9f4784a60a665a4352abc5f1",
+      "control_sha256": "548f8e8703ebc9d8e429e17a8180e7a5d02407021c2021ed7f515dc6ada9e4c9",
+      "original_bytes": 6864,
+      "control_bytes": 6788,
+      "module_ir_equal": true,
+      "interface_parts_equal": true,
+      "external_validator": "PASS"
+    },
+    {
+      "shader": "glass",
+      "original_sha256": "c8755b8ac5d61f208d02e0fda1c3bbed2c7e0a15f59c9edbb0f8c559925828b9",
+      "control_sha256": "106559643f27e4c0716e542919d18857ad4f7caec0007e0d00c1b97929857f2b",
+      "original_bytes": 23102,
+      "control_bytes": 23042,
+      "module_ir_equal": true,
+      "interface_parts_equal": true,
+      "external_validator": "PASS"
+    }
+  ],
+  "canary_sha256": "9da6f87440e40e8d42a4f6bc2afba073a6675d0ddffec91805426142a4e085db",
+  "canary_changes": [
+    {
+      "line": 2466,
+      "before": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 0, float %2262)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)",
+      "after": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 0, float 1.000000e+00)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)"
+    },
+    {
+      "line": 2467,
+      "before": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 1, float %2263)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)",
+      "after": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 1, float 0.000000e+00)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)"
+    },
+    {
+      "line": 2468,
+      "before": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 2, float %2264)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)",
+      "after": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 2, float 1.000000e+00)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)"
+    },
+    {
+      "line": 2469,
+      "before": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 3, float %2270)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)",
+      "after": "  call void @dx.op.storeOutput.f32(i32 5, i32 0, i32 0, i8 3, float 1.000000e+00)  ; StoreOutput(outputSigId,rowIndex,colIndex,value)"
+    }
+  ],
+  "negative_controls": 3,
+  "command_count": 21,
+  "cache_noop_byte_identical": true,
+  "offline_repacks": [
+    {
+      "kind": "control",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\65_c2077_dxil_roundtrip_20261016\\r1\\shader_final.control.offline.cache",
+      "bytes": 161804633,
+      "sha256": "d96e4716621e27802bdd755a2f7eda1935ba68c2ed9e4da2bb2c01ad7879bf81",
+      "shader_records": 19037,
+      "compilation_records": 19647,
+      "changed_shader_guid": 15973390170752892218,
+      "other_shader_payloads_identical": 19036
+    },
+    {
+      "kind": "canary",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\65_c2077_dxil_roundtrip_20261016\\r1\\shader_final.canary.offline.cache",
+      "bytes": 161804641,
+      "sha256": "4be4f2d9b0ed2722ed96f2159824dfd50f88e2d353f64bfe9ed9c5fdc3bcff62",
+      "shader_records": 19037,
+      "compilation_records": 19647,
+      "changed_shader_guid": 15973390170752892218,
+      "other_shader_payloads_identical": 19036
+    }
+  ],
+  "installed_cache_unchanged": true,
+  "game_started": false,
+  "benchmarks_started": 0,
+  "game_writes": [],
+  "runtime_acceptance": "NOT TESTED",
+  "performance": "NOT MEASURED"
+}

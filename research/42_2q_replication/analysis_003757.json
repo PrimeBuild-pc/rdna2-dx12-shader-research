@@ -1,0 +1,144 @@
+{
+  "experiment_id": "P_20260907_003321",
+  "criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image. The rule that decides is the `correctness_rule` field of this manifest and nothing else. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, AT LEAST 3 and preferably 5 independent processes per variant, order counterbalanced. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND every paired process delta is negative, AND correctness passes. N95 here is the largest of the pairwise differences between the base processes, not a statistical percentile, and those pairs are not independent of each other.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build.",
+    "correctness_rule": "ulp1_0.05pct",
+    "correctness_rule_text": "every differing channel differs by at most 1 ULP of its stored R11G11B10 representation, at most 0.05 % of channels differ at all, and no channel is non-finite. One ULP is the smallest change this render target can represent, so this admits a different rounding and nothing more."
+  },
+  "n95": {
+    "GPUBusyCycles": 0.5575814075586062,
+    "GPUTime": 0.4087125554503314,
+    "TA_BUSY": 0.6095745200159358
+  },
+  "thresholds": {
+    "GPUBusyCycles": 1.6727442226758185,
+    "GPUTime": 1.2261376663509942,
+    "TA_BUSY": 1.8287235600478073
+  },
+  "medians": {
+    "base": {
+      "GPUBusyCycles": 1186528.0,
+      "GPUTime": 802180.0,
+      "TA_BUSY": 88412264.5,
+      "PS_tex": 6109992.0,
+      "PS_VALU": 70950479.0,
+      "PS_VALU_cycles": 183089041.0,
+      "PS_waves": 39170.5
+    },
+    "stack3_scalar": {
+      "GPUBusyCycles": 695926.5,
+      "GPUTime": 519380.0,
+      "TA_BUSY": 49381707.0,
+      "PS_tex": 2741782.0,
+      "PS_VALU": 38756243.5,
+      "PS_VALU_cycles": 91749710.0,
+      "PS_waves": 39114.5
+    },
+    "stack4_scalar": {
+      "GPUBusyCycles": 678953.0,
+      "GPUTime": 512559.99999999994,
+      "TA_BUSY": 48322493.0,
+      "PS_tex": 2712478.0,
+      "PS_VALU": 38683642.0,
+      "PS_VALU_cycles": 90650457.0,
+      "PS_waves": 39072.0
+    }
+  },
+  "verdicts": {
+    "stack3_scalar": {
+      "metrics": {
+        "GPUBusyCycles": {
+          "median": -41.426494249800086,
+          "per_process": [
+            -41.426494249800086,
+            -41.58622029224573,
+            -41.46539122731156,
+            -41.2088134563798,
+            -41.446219558240514,
+            -41.37433575835588,
+            -41.33830459559397
+          ]
+        },
+        "GPUTime": {
+          "median": -35.245533486375884,
+          "per_process": [
+            -46.57376885426031,
+            -35.0071056371388,
+            -34.693064375544765,
+            -35.32299870401754,
+            -35.245533486375884,
+            -35.209616679552084,
+            -35.413350576999605
+          ]
+        },
+        "TA_BUSY": {
+          "median": -44.17810042632716,
+          "per_process": [
+            -44.15717164062495,
+            -44.376836062851595,
+            -44.246533946664286,
+            -44.062085946278486,
+            -44.24631580577175,
+            -44.17810042632716,
+            -44.14512143163796
+          ]
+        }
+      },
+      "performance_accepted": true,
+      "baseline": "base",
+      "final": "incomplete",
+      "correctness": null
+    },
+    "stack4_scalar": {
+      "metrics": {
+        "GPUBusyCycles": {
+          "median": -42.76022232300115,
+          "per_process": [
+            -42.75225525489233,
+            -43.05042751142247,
+            -42.76022232300115,
+            -42.71759485769237,
+            -42.77817295504194,
+            -42.63496278225005,
+            -42.848226469737924
+          ]
+        },
+        "GPUTime": {
+          "median": -36.26144050935138,
+          "per_process": [
+            -35.7257017280991,
+            -35.97696277643422,
+            -36.43132860166853,
+            -34.0619080849367,
+            -36.87992813654056,
+            -36.63615731850263,
+            -36.26144050935138
+          ]
+        },
+        "TA_BUSY": {
+          "median": -45.3060251595614,
+          "per_process": [
+            -45.24585358119168,
+            -45.664116203090295,
+            -45.305755809850176,
+            -45.3060251595614,
+            -45.35821732981892,
+            -45.21521785023389,
+            -45.4032939123273
+          ]
+        }
+      },
+      "performance_accepted": true,
+      "baseline": "base",
+      "final": "incomplete",
+      "correctness": null
+    }
+  },
+  "correctness": {}
+}

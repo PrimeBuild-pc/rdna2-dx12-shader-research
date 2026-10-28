@@ -1,0 +1,10 @@
+{
+  "variant": "base",
+  "rep": 5,
+  "pid": 13792,
+  "frames": 1000,
+  "warm": 300,
+  "scopes": 32,
+  "frame_image_sha256": "cf5c3c4747ed7224cbe2f47ac57ea6db9c328b35b8dfb7b4d1cf6654053b7d92",
+  "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6"
+}

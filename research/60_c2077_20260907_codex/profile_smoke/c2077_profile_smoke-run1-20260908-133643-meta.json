@@ -1,0 +1,19 @@
+{
+  "run": 1,
+  "tag": "c2077_profile_smoke",
+  "process": "dwm.exe",
+  "started_utc": "2026-09-08T11:36:50.2815509Z",
+  "preroll_s": 1,
+  "capture_s": 3,
+  "profint_100ns": null,
+  "sampling_interval_preserved": true,
+  "etl": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\60_c2077_20260907_codex\\profile_smoke\\c2077_profile_smoke-run1-20260908-133643.etl",
+  "presentmon": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\60_c2077_20260907_codex\\profile_smoke\\c2077_profile_smoke-run1-20260908-133643-presentmon.csv",
+  "presentmon_rows": 180,
+  "background": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\60_c2077_20260907_codex\\profile_smoke\\c2077_profile_smoke-run1-20260908-133643-background.csv",
+  "presentmon_session": "c2077_profile_smoke",
+  "wpr_profiles": "CPU,GPU (filemode)",
+  "driver_version": "32.0.21045.5002",
+  "os_build": "10.0.26200",
+  "hags": 2
+}

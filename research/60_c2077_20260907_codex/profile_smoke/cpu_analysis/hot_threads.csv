@@ -1,0 +1,4 @@
+process,pid,tid,samples,pct_of_process,thread_start,context_switches_in,top_modules
+dwm.exe,2012,2332,239,95.6,dwmcore.dll!0x00007ffcde6ab2c0,467,ntoskrnl.exe:157; dwmcore.dll:29; ntdll.dll:8; amdxx64.dll:8; dxgkrnl.sys:8; d3d11.dll:6
+dwm.exe,2012,2460,7,2.8,dwmcore.dll!0x00007ffcde679be0,131,ntoskrnl.exe:6; dxgkrnl.sys:1
+dwm.exe,2012,15428,4,1.6,ntdll.dll!0x00007ffce4cd02d0,28,ntoskrnl.exe:3; iorate.sys:1

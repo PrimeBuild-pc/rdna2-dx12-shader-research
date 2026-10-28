@@ -1,0 +1,13 @@
+shader,variant,isa_changed,vgpr,d_vgpr,inst,d_inst,wave,ns_median,d_ns_pct,faster
+s2_alu,base,no,24,0,1994,0,32,56960.0,0.0,no
+s2_alu,w32,no,24,0,1994,0,32,56975.0,0.03,no
+s2_alu,w64,YES,16,-8,1995,1,64,66250.0,16.31,no
+s3_mem,base,no,40,0,215,0,32,121055.0,0.0,no
+s3_mem,w32,no,40,0,215,0,32,121030.0,-0.02,SI
+s3_mem,w64,YES,32,-8,215,0,64,143325.0,18.4,no
+s4_pressure,base,no,144,0,691,0,32,79400.0,0.0,no
+s4_pressure,w32,no,144,0,691,0,32,78620.0,-0.98,SI
+s4_pressure,w64,YES,116,-28,678,-13,64,85410.0,7.57,no
+s5_divergent,base,no,24,0,1037,0,32,6835.0,0.0,no
+s5_divergent,w32,no,24,0,1037,0,32,6840.0,0.07,no
+s5_divergent,w64,YES,20,-4,1037,0,64,7830.0,14.56,no

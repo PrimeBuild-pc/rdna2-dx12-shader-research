@@ -1,0 +1,45 @@
+{
+  "experiment_id": "R_20260907_004602",
+  "created_at": "2026-09-07T00:46:03.109718+02:00",
+  "phase": "2R",
+  "cycle": "r1",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\R_20260907_004602",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody",
+  "workload": "DirectX-Graphics-Samples / Samples/Desktop/D3D12nBodyGravity",
+  "selection": {
+    "written_before_choosing": true,
+    "criteria": [
+      "open source, D3D12, buildable with the toolchain already verified here (MSVC v145 and the Windows SDK 10.0.26100) without installing anything new",
+      "a repeatable workload: deterministic, or fixable to a deterministic step count",
+      "no anti-cheat, sources modifiable",
+      "GPU-bound enough that the pass under study is measurable on an RX 6950 XT",
+      "structurally different from ModelViewer/Sponza: NOT a forward-plus per-light pixel shading loop over a static mesh scene",
+      "small enough to build, instrument and measure inside this session's budget",
+      "chosen WITHOUT first checking whether it contains a shader already known to be easy to optimise"
+    ],
+    "rejected": {
+      "too_small_or_not_gpu_bound": "D3D12HelloWorld, Fullscreen, Bundles, DynamicIndexing, PipelineStateCache, PredicationQueries, SmallResources, ReservedResources, Residency, 11On12, On7, HDR, DepthBoundsTest, LinkedGpus, xGPU, HeterogeneousMultiadapter, StateObjectDatabase, AdvancedShaderDelivery, SM6WaveIntrinsics",
+      "not_structurally_different": "D3D12Raytracing/D3D12RaytracingMiniEngineSample - it is MiniEngine again",
+      "too_large_for_the_budget": "the other D3D12Raytracing samples, and the FidelityFX-SDK sample framework (the local clone is sparse and has no host)",
+      "closed_source": "3DMark Steel Nomad, which is installed and would otherwise qualify on GPU load"
+    },
+    "chosen": "Samples/Desktop/D3D12nBodyGravity",
+    "why": "an O(N^2) n-body simulation: one compute shader, 10 000 particles, LDS tiling, no textures, no lighting, no light grid. Deterministic given a fixed step count. The closest thing to the opposite of the workload 2O and 2P studied."
+  },
+  "dxc": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "msbuild": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "configuration": "Release/x64/v145",
+  "particle_count": 10000,
+  "threads_per_group": 128,
+  "expected_bytecode": {
+    "base": "643fdfdd24c2444e18b899bc1470eb95c45753852fa42bf0649586bf14137ce7"
+  },
+  "transforms": {},
+  "transform_edits": {},
+  "criteria": {
+    "provenance": "every build is gated on the compute shader's preregistered bytecode SHA-256; the pristine source is restored on every exit path",
+    "correctness": "the particle buffer after a fixed number of deterministic simulation steps, compared at float32 against the baseline's. Baseline vs baseline must be byte-identical first, or nothing can be judged",
+    "performance": "median dispatch time from a timestamp pair on the compute queue, recorded per iteration after a warm-up, with several independent processes and counterbalanced order",
+    "acceptance": "median delta <= -max(1 %, 3 x N95) with N95 from the baseline A/A control measured in the cycle, every paired process negative, and correctness passing"
+  }
+}

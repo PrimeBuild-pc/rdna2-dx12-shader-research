@@ -1,0 +1,28 @@
+{
+  "args": [
+    "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+    "-nologo",
+    "-E",
+    "main",
+    "-T",
+    "ps_6_2",
+    "-D",
+    "_GAMING_DESKTOP=1",
+    "-HV",
+    "2021",
+    "-Fh",
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O6_20260906_185359\\build\\L128.1\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+    "-Vn",
+    "g_pModelViewerPS",
+    "-Fo",
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O6_20260906_185359\\build\\L128.1\\ModelViewerPS.cso",
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O6_20260906_185359\\MiniEngine\\Model\\Shaders\\ModelViewerPS.hlsl"
+  ],
+  "command_line": "\"C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe\" -nologo -E main -T ps_6_2 -D _GAMING_DESKTOP=1 -HV 2021 -Fh C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O6_20260906_185359\\build\\L128.1\\Output\\Model\\CompiledShaders\\ModelViewerPS.h -Vn g_pModelViewerPS -Fo C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O6_20260906_185359\\build\\L128.1\\ModelViewerPS.cso C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O6_20260906_185359\\MiniEngine\\Model\\Shaders\\ModelViewerPS.hlsl",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O6_20260906_185359\\MiniEngine\\Model\\Shaders",
+  "requested_executable": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "executable_sha256": "854d5f29dbbe25b584942855e65d673db3164f7f68e20fb784be9cd747d14814",
+  "pid": 10848,
+  "actual_executable": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "returncode": 0
+}

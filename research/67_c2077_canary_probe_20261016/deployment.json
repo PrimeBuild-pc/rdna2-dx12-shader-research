@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-16T22:04:54.157621+00:00",
+  "result": "READONLY_PROBE_INSTALLED_RUNTIME_PENDING",
+  "added_file": {
+    "path": "C2077ShaderLab\\C2077ShaderProbe.addon64",
+    "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492",
+    "bytes": 329216,
+    "mutable": false,
+    "created": true,
+    "verified": true
+  },
+  "processes_before": [],
+  "canary_shader_unchanged": true,
+  "host_and_shaderlab_dlls_unchanged": true,
+  "mode": "canary",
+  "game_started_by_agent": false,
+  "ownership_manifest": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\deployment.json"
+}

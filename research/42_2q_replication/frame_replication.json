@@ -1,0 +1,166 @@
+{
+  "medians": {
+    "base": {
+      "GPU frame": 1.025625,
+      "Render Color": 0.511702,
+      "Scene Render": 0.937158,
+      "Resolve Image": 0.08066,
+      "Z PrePass": 0.039456,
+      "Generate SSAO": 0.076049
+    },
+    "stack3_scalar": {
+      "GPU frame": 0.7746919999999999,
+      "Render Color": 0.305798,
+      "Scene Render": 0.69348,
+      "Resolve Image": 0.067127,
+      "Z PrePass": 0.038313,
+      "Generate SSAO": 0.07302
+    },
+    "stack4_scalar": {
+      "GPU frame": 0.766873,
+      "Render Color": 0.30033,
+      "Scene Render": 0.685156,
+      "Resolve Image": 0.065985,
+      "Z PrePass": 0.038725,
+      "Generate SSAO": 0.072845
+    }
+  },
+  "per_process": {
+    "base": {
+      "GPU frame": [
+        1.025625,
+        1.025348,
+        1.0236790000000002,
+        1.0316800000000002,
+        1.0324959999999999
+      ],
+      "Render Color": [
+        0.509461,
+        0.510461,
+        0.511702,
+        0.512263,
+        0.512963
+      ],
+      "Scene Render": [
+        0.935596,
+        0.937158,
+        0.936505,
+        0.942667,
+        0.942692
+      ],
+      "Resolve Image": [
+        0.08066,
+        0.079756,
+        0.079614,
+        0.083528,
+        0.081591
+      ],
+      "Z PrePass": [
+        0.03958,
+        0.039456,
+        0.039476,
+        0.039059,
+        0.039404
+      ],
+      "Generate SSAO": [
+        0.076049,
+        0.075542,
+        0.077008,
+        0.075439,
+        0.076264
+      ]
+    },
+    "stack3_scalar": {
+      "GPU frame": [
+        0.772173,
+        0.774393,
+        0.7746919999999999,
+        0.7773969999999999,
+        0.779747
+      ],
+      "Render Color": [
+        0.303836,
+        0.304352,
+        0.305798,
+        0.30586,
+        0.306394
+      ],
+      "Scene Render": [
+        0.689732,
+        0.692284,
+        0.69348,
+        0.695228,
+        0.697271
+      ],
+      "Resolve Image": [
+        0.066151,
+        0.066727,
+        0.067484,
+        0.067674,
+        0.067127
+      ],
+      "Z PrePass": [
+        0.038336,
+        0.037891,
+        0.038313,
+        0.038116,
+        0.038432
+      ],
+      "Generate SSAO": [
+        0.072412,
+        0.073529,
+        0.07302,
+        0.073727,
+        0.072757
+      ]
+    },
+    "stack4_scalar": {
+      "GPU frame": [
+        0.765486,
+        0.763844,
+        0.766873,
+        0.7701979999999998,
+        0.7704150000000001
+      ],
+      "Render Color": [
+        0.298905,
+        0.29966,
+        0.30033,
+        0.300514,
+        0.30085
+      ],
+      "Scene Render": [
+        0.683033,
+        0.682446,
+        0.685156,
+        0.687896,
+        0.687752
+      ],
+      "Resolve Image": [
+        0.065867,
+        0.065537,
+        0.066017,
+        0.065985,
+        0.066342
+      ],
+      "Z PrePass": [
+        0.038032,
+        0.03884,
+        0.038356,
+        0.038725,
+        0.038933
+      ],
+      "Generate SSAO": [
+        0.072706,
+        0.072604,
+        0.072845,
+        0.073773,
+        0.073619
+      ]
+    }
+  },
+  "clock_probe_pct": -3.43992808300795,
+  "gpu_frame_measured_pct": -24.466349786715426,
+  "gpu_frame_clock_corrected_pct": -21.77548264647406,
+  "note": "MEASURED is the median of five independent processes. CLOCK-CORRECTED is an ESTIMATE: it removes the improvement seen in Z PrePass and Generate SSAO, passes this change cannot touch, on the assumption that it is a clock/power effect. The two are never mixed."
+}

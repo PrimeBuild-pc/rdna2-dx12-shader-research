@@ -1,0 +1,9 @@
+{
+  "variant": "ndotlskip",
+  "set": "sq_ps",
+  "rep": 2,
+  "pid": 8060,
+  "samples": 32,
+  "bytecode_sha256": "9c4a75b7b6fb928aca069ab5108813fcf4f2e9cad99ab3a0b59f81a02c2f8a38",
+  "executable_sha256": "0934c5988a0bc72209f4d876f822d9ce4d8ae498cc659191ff2216b6b30abcdd"
+}

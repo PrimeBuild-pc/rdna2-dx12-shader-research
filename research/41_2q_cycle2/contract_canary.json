@@ -1,0 +1,13 @@
+{
+  "canary_max": 56.3287467956543,
+  "canary_min": 0.0,
+  "base_max": 56.3287467956543,
+  "base_min": 0.0,
+  "pixels_at_or_above_1e3": 0,
+  "canary_fired": false,
+  "nonfinite": 0,
+  "negative": 0,
+  "negative_zero": 0,
+  "identical_to_base": false,
+  "max_ulp_vs_base": 3
+}

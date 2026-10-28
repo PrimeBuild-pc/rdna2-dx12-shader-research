@@ -1,0 +1,4 @@
+counters=881
+passes=6
+samples_per_pass=8
+first_frame=140

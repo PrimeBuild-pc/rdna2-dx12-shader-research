@@ -1,0 +1,13 @@
+TID 18844: 273,744 campioni; ntoskrnl 230,052; pagine kernel distinte 262
+   ntoskrnl+0x00233000   69,698  30.30%
+   ntoskrnl+0x00234000   30,455  13.24%
+   ntoskrnl+0x0034d000   30,363  13.20%
+   ntoskrnl+0x00235000   20,973   9.12%
+   ntoskrnl+0x00236000    5,285   2.30%
+   ntoskrnl+0x006bf000    4,727   2.05%
+   ntoskrnl+0x0027f000    4,633   2.01%
+   ntoskrnl+0x0027d000    4,159   1.81%
+   ntoskrnl+0x0031c000    3,875   1.68%
+   ntoskrnl+0x00232000    3,575   1.55%
+   ntoskrnl+0x002c6000    3,462   1.50%
+   ntoskrnl+0x002be000    3,460   1.50%

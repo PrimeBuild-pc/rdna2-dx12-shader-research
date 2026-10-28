@@ -1,0 +1,36 @@
+{
+  "variant": "abl_shadow_taps",
+  "rep": 1,
+  "pid": 10052,
+  "summary": {
+    "pid": 10052,
+    "warmup": 200,
+    "frames": 500,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 147080.0,
+    "region0_min_ns": 144640.0,
+    "region0_max_ns": 325140.0,
+    "region0_p95_ns": 150400.0,
+    "region1_median_ns": 13920.0,
+    "region1_min_ns": 13800.0,
+    "region1_max_ns": 15440.0,
+    "region1_p95_ns": 14200.0,
+    "region2_median_ns": 38880.0,
+    "region2_min_ns": 38280.0,
+    "region2_max_ns": 130750.0,
+    "region2_p95_ns": 39440.0,
+    "region3_median_ns": 55920.0,
+    "region3_min_ns": 55040.0,
+    "region3_max_ns": 212190.0,
+    "region3_p95_ns": 57520.0
+  },
+  "target_sha256": "8cae374646961c51946bc94815ccdfda191b9614c07de45255d047d21470ea01",
+  "shaders": {
+    "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+    "ShadowsAndScenePass_PSMain.cso": "1e399aa4f6f87bbcac862dd43d5f3f0dce468b6416e65518ca4134eec78ef698",
+    "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+    "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+    "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+    "Glass_PSMain.cso": "5b094b3707534a875a9e4cd4672b20ad4e639b0a87b887162740200cd42aecf9"
+  }
+}

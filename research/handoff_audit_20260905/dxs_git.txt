@@ -1,0 +1,56 @@
+HEAD
+commit 213dd4fd4918ea009dd8f35adee1aff1f2ecaba4
+Author:     alecardoso-tech <alecardoso@microsoft.com>
+AuthorDate: Fri Aug 14 11:48:24 2026 -0700
+Commit:     GitHub <noreply@github.com>
+CommitDate: Fri Aug 14 11:48:24 2026 -0700
+
+    Add ASD Runtime doc and update readme (#969)
+REMOTES
+origin	https://github.com/microsoft/DirectX-Graphics-Samples.git (fetch) [blob:none]
+origin	https://github.com/microsoft/DirectX-Graphics-Samples.git (push)
+STATUS
+ M MiniEngine/Core/BitonicSort.cpp
+ M MiniEngine/Core/CommandContext.cpp
+ M MiniEngine/Core/CommandContext.h
+ M MiniEngine/Core/Core.vcxproj
+ M MiniEngine/Core/Display.cpp
+ M MiniEngine/Core/EngineProfiling.cpp
+ M MiniEngine/Core/EngineProfiling.h
+ M MiniEngine/Core/GameCore.cpp
+ M MiniEngine/Core/PipelineState.cpp
+ M MiniEngine/Core/PipelineState.h
+?? MiniEngine/Core/GpaProfiler.cpp
+?? MiniEngine/Core/GpaProfiler.h
+?? MiniEngine/Core/ShaderInventory.cpp
+?? MiniEngine/Core/ShaderInventory.h
+?? MiniEngine/ModelViewer/GPUPerfAPICounters-x64.dll
+?? MiniEngine/ModelViewer/GPUPerfAPIDX12-x64.dll
+STAGED
+IGNORED
+ M MiniEngine/Core/BitonicSort.cpp
+ M MiniEngine/Core/CommandContext.cpp
+ M MiniEngine/Core/CommandContext.h
+ M MiniEngine/Core/Core.vcxproj
+ M MiniEngine/Core/Display.cpp
+ M MiniEngine/Core/EngineProfiling.cpp
+ M MiniEngine/Core/EngineProfiling.h
+ M MiniEngine/Core/GameCore.cpp
+ M MiniEngine/Core/PipelineState.cpp
+ M MiniEngine/Core/PipelineState.h
+?? MiniEngine/Core/GpaProfiler.cpp
+?? MiniEngine/Core/GpaProfiler.h
+?? MiniEngine/Core/ShaderInventory.cpp
+?? MiniEngine/Core/ShaderInventory.h
+?? MiniEngine/ModelViewer/GPUPerfAPICounters-x64.dll
+?? MiniEngine/ModelViewer/GPUPerfAPIDX12-x64.dll
+!! MiniEngine/Build/
+!! Packages/
+!! vcpkg_installed/
+SPARSE
+/MiniEngine/*
+/vcpkg*
+/*.json
+/*.props
+/*.targets
+/Libraries/*

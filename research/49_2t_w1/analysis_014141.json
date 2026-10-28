@@ -1,0 +1,13 @@
+{
+  "workload": "D3D12ExecuteIndirect",
+  "region": "indirect draw command list",
+  "medians_ns": {
+    "base": [
+      54400.0,
+      55240.0,
+      53760.0
+    ]
+  },
+  "threshold_pct": 8.146788990825689,
+  "verdicts": {}
+}

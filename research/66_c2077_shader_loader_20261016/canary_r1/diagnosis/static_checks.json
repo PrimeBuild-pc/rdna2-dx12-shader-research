@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-16T21:51:00.309184+00:00",
+  "result": "PASS_STATIC_PAYLOAD_CHECKS_NOT_VISUAL_GATE",
+  "target": "SV_Target0",
+  "rgba": [
+    1,
+    0,
+    1,
+    1
+  ],
+  "operands": [
+    [
+      "0",
+      "1.000000e+00"
+    ],
+    [
+      "1",
+      "0.000000e+00"
+    ],
+    [
+      "2",
+      "1.000000e+00"
+    ],
+    [
+      "3",
+      "1.000000e+00"
+    ]
+  ],
+  "payloads": [
+    {
+      "name": "original",
+      "sha256": "c8755b8ac5d61f208d02e0fda1c3bbed2c7e0a15f59c9edbb0f8c559925828b9",
+      "bytes": 23102,
+      "offset_in_compiled_addon": 180928
+    },
+    {
+      "name": "control",
+      "sha256": "106559643f27e4c0716e542919d18857ad4f7caec0007e0d00c1b97929857f2b",
+      "bytes": 23042,
+      "offset_in_compiled_addon": 204032
+    },
+    {
+      "name": "canary",
+      "sha256": "9da6f87440e40e8d42a4f6bc2afba073a6675d0ddffec91805426142a4e085db",
+      "bytes": 23050,
+      "offset_in_compiled_addon": 227088
+    }
+  ],
+  "installed_addon_matches_inspected_copy": true,
+  "limits": "Does not establish visible fragments, output routing or GPU execution; not an end-to-end regression test"
+}

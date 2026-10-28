@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\49_2t_w1\\builds\\base\\D3D12ExecuteIndirect.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\49_2t_w1\\builds\\base\\D3D12ExecuteIndirect.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\49_2t_w1\\builds\\base",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\49_2t_w1\\builds\\base\\D3D12ExecuteIndirect.exe",
+  "executable_sha256": "e9c9108234fbd705af29900ab2f59130d8a64012b467e5294736bf09b59ced3a",
+  "pid": 11196,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\49_2t_w1\\builds\\base\\D3D12ExecuteIndirect.exe",
+  "returncode": 0
+}

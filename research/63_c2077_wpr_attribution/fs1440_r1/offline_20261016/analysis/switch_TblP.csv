@@ -1,0 +1,8 @@
+process path Module!Function,pid,exclusivehits,hitpercent
+Cyberpunk2077.exe,16316,6873198,100.00%
+ntdll.dll!RtlUserThreadStart,,6870955,99.97%
+amdxc64.dll!***unknown***,,1151,0.02%
+ntkrnlmp.exe!KiSystemServiceExitPico,,518,0.01%
+***unknown***!***unknown*** (trimmed),,292,0.00%
+***unknown***!***unknown*** (trimmed),,281,0.00%
+ntdll.dll!RtlUserThreadStart,,1,0.00%

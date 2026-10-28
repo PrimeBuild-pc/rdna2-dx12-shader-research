@@ -1,0 +1,13 @@
+{
+  "particles": 10000,
+  "accel_magnitude_min": 0.07875045388936996,
+  "accel_magnitude_median": 2.4507203102111816,
+  "accel_magnitude_max": 154.05897521972656,
+  "rel_diff_median": 2.3830000372981885e-06,
+  "rel_diff_p95": 7.056548383843619e-06,
+  "rel_diff_max": 5.062462514615618e-05,
+  "float32_eps": 1.1920928955078125e-07,
+  "amplification_median_in_eps": 19.990053176879883,
+  "amplification_max_in_eps": 424.6701354980469,
+  "note": "|accel| after exactly ONE simulation step, base vs mass_hoist. The reassociation perturbs each of ~10000 addends by about one ULP; the ratio of the resulting relative error in the sum to float32 epsilon is the measured amplification of that sum."
+}

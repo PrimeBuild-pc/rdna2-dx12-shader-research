@@ -1,0 +1,9 @@
+{
+  "variant": "s_point",
+  "set": "l1l2",
+  "rep": 2,
+  "pid": 5200,
+  "samples": 32,
+  "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "executable_sha256": "3b9a8fc9ccf476ade4ec5637d424dcfe072c1417c08a6a2298ea0d67e21db47c"
+}

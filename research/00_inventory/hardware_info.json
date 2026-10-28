@@ -1,0 +1,68 @@
+{
+ "cpu": {
+  "Name": "AMD Ryzen 7 5800X3D 8-Core Processor           ",
+  "NumberOfCores": 8,
+  "NumberOfLogicalProcessors": 16,
+  "MaxClockSpeed": 3400,
+  "L3CacheSize": 98304,
+  "ProcessorId": "178BFBFF00A20F12"
+ },
+ "baseboard": {
+  "Manufacturer": "Micro-Star International Co., Ltd.",
+  "Product": "MPG X570 GAMING EDGE WIFI (MS-7C37)",
+  "Version": "1.0"
+ },
+ "bios": {
+  "Manufacturer": "American Megatrends International, LLC.",
+  "SMBIOSBIOSVersion": "1.S1",
+  "ReleaseDate": "/Date(1757548800000)/"
+ },
+ "memory_modules": [
+  {
+   "Capacity": 8589934592,
+   "Speed": 3600,
+   "ConfiguredClockSpeed": 3600,
+   "Manufacturer": "Unknown",
+   "PartNumber": "BL8G36C16U4B.M8FE1"
+  },
+  {
+   "Capacity": 8589934592,
+   "Speed": 3600,
+   "ConfiguredClockSpeed": 3600,
+   "Manufacturer": "Unknown",
+   "PartNumber": "BL8G36C16U4B.M8FE1"
+  },
+  {
+   "Capacity": 8589934592,
+   "Speed": 3600,
+   "ConfiguredClockSpeed": 3600,
+   "Manufacturer": "Unknown",
+   "PartNumber": "BL8G36C16U4B.M8FE1"
+  },
+  {
+   "Capacity": 8589934592,
+   "Speed": 3600,
+   "ConfiguredClockSpeed": 3600,
+   "Manufacturer": "Unknown",
+   "PartNumber": "BL8G36C16U4B.M8FE1"
+  }
+ ],
+ "total_ram_bytes": 34277306368,
+ "disks": [
+  {
+   "Model": "CT500P5SSD8",
+   "Size": 500105249280,
+   "InterfaceType": "SCSI"
+  },
+  {
+   "Model": "Samsung SSD 980 1TB",
+   "Size": 1000202273280,
+   "InterfaceType": "SCSI"
+  },
+  {
+   "Model": "Generic STORAGE DEVICE USB Device",
+   "Size": null,
+   "InterfaceType": "USB"
+  }
+ ]
+}

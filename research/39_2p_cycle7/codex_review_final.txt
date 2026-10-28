@@ -1,0 +1,300 @@
+
+      - Verdetto: equivalente sotto il contratto
+        degli input correnti e per il target
+        unsigned R11G11B10; non universalmente
+        IEEE-esatta.
+
+  3. Credibilità del −37,5%
+      - [Verificato] È un effetto reale del
+        percorso shader: bytecode/eseguibile
+        cambiano, le wave restano quasi costanti,
+        le istruzioni statiche dei loop aumentano
+        259→305→341, mentre le istruzioni
+        dinamicamente eseguite crollano. Non è uno
+        shader accidentalmente accorciato o un
+        pass saltato.
+
+      - [Giudizio] Il meccanismo è però fortemente
+        content-dependent. Il light grid opera a
+        granularità di tile: include molte luci
+        che intersecano il tile ma non
+        contribuiscono al singolo pixel.
+        falloffskip monetizza precisamente questa
+        sovrainclusione. Con luci grandi, poche
+        luci o clustering più preciso, il guadagno
+        può ridursi drasticamente.
+
+      - Le wave non sono identiche: −0,13%
+        falloffskip, −0,15% stack3, −0,29% stack4;
+        troppo poco per spiegare il risultato. Non
+        esiste invece un counter indipendente dei
+        pixel coperti.
+
+      - L’immagine identica prova lo stesso output
+        R11G11B10 per questa scena/frame. Non
+        prova generalità su altre scene, né
+        uguaglianza degli intermedi float32.
+
+  4. VGPR e occupancy
+      - [Verificato] L’ISA alloca, non solo usa:
+          - base: 61 usati → 64 allocati
+          - stack3: 55 → 56
+          - stack4: 47 → 48
+
+      - Con 1024 VGPR fisici per SIMD e wave64 che
+        consuma il doppio: floor(1024/(2×VGPR)) dà
+        teoricamente 8→9→10 wave/SIMD, cioè
+        50%→56,25%→62,5% dei 16 slot RDNA2. AMD
+        conferma che RDNA2 dispone di 16 slot/SIMD
+        e che occupancy e VGPR vanno verificati
+        sul profilo reale. AMD Occupancy Explained
+
+        (https://gpuopen.com/learn/occupancy-expla
+ined/),
+        architettura RDNA
+
+        (https://gpuopen.com/wp-content/uploads/20
+20/11/RDNA_Architecture_public-1.pdf).
+
+      - [Giudizio] L’occupancy può contribuire in
+        modo sostanziale, ma non spiega da sola il
+        calo del conteggio dinamico di VALU/
+        texture: il lavoro saltato è reale. Non è
+        possibile ripartire onestamente il −37,5%
+        fra meno lavoro e latency hiding usando
+        solo questi dati.
+
+      - Indizio: stack4 porta 9→10 wave teoriche e
+        migliora ancora del 3,16% rispetto a
+        stack3, mentre i counter dinamici calano
+        poco. È compatibile con un contributo
+        occupancy, non lo dimostra.
+
+      - Per separarlo servono RGP con occupancy
+        effettiva e PSLimitedByVgpr, più una
+        variante stack3 semanticamente identica ma
+        forzata nuovamente a 64 VGPR, verificata
+        nell’ISA.
+
+  5. Criterio ULP di P3
+      - [Verificato] P2 mantiene correttamente
+        ndotlskip come rifiutato. Il manifest P3
+        con ulp1_0.05pct è timestampato circa tre
+        minuti prima del primo run P3; il codice
+        usa effettivamente quella chiave.
+
+      - [Giudizio] È una correzione sequenziale
+        onesta, non una riqualificazione post-hoc
+        del risultato P2. Il precedente
+        max_rel<=1e-3 era di fatto un test di
+        identità binaria su R11G11B10, perché un
+        singolo passo rappresentabile vale circa
+        1,6% per R/G.
+
+      - La soglia massima di 1 ULP è ragionevole;
+        il limite dello 0,05% è relativamente
+        largo — circa 3.110 canali — rispetto ai
+        soli 3 osservati. Chiamerei quindi stack4
+        “equivalente entro l’oracolo ULP
+        preregistrato”, non “esattamente
+        equivalente”.
+
+      - Il manifest P3 conserva anche il vecchio
+        testo max_rel<=1e-3: l’esplicito
+        correctness_rule prevale nel codice, ma il
+        documento è internamente incoerente.
+
+  6. Statistica e ordine
+      - [Verificato] N95/threshold GPUBusyCycles:
+        P2 0,599% / 1,797%; P3 0,415% / 1,244%.
+        Gli effetti sono enormemente superiori e
+        tutti i 5 delta sono negativi.
+
+      - L’ordine è ampiamente controbilanciato, ma
+        non casuale né perfettamente bilanciato;
+        con 5 blocchi ciò è inevitabile. Nessuna
+        variante occupa sempre la stessa
+        posizione.
+
+      - [Giudizio] I 10 confronti A/A non sono
+        indipendenti: sono combinazioni degli
+        stessi 5 processi. “N95” è quindi il
+        massimo range pairwise, non una stima
+        statistica affidabile del 95° percentile.
+
+      - Cinque segni su cinque danno p=0,03125
+        unilaterale, prima di correzioni per
+        varianti/cicli adattivi. Più importante,
+        gli intervalli dei delta sono
+        strettissimi.
+
+      - I processi vengono eseguiti a pochi
+        secondi di distanza: sono indipendenti
+        come processi, non come stati termici. Il
+        controbilanciamento mitiga la deriva; non
+        elimina autocorrelazione, cache e
+        temperatura. Le grosse escursioni di
+        GPUTime, assenti in GPUBusyCycles,
+        confermano che la scelta della metrica
+        primaria era corretta.
+
+  7. Sei cicli rimanenti
+      - [Giudizio] Priorità:
+          - Misurare branch-hit e lane-mask
+            separatamente per point/cone/shadowed:
+            quante valutazioni e quante lane
+            vengono realmente saltate.
+
+          - Replicare stack3 su almeno tre regimi
+            preregistrati: poche/larghe luci,
+            molte/piccole luci, diverso tile size
+            o camera. È il test decisivo di
+            generalità.
+
+          - Fare un ciclo occupancy: stack3
+            riportato a 64 VGPR e/o base
+            ristrutturata a 56, con ISA verificata
+            e profilo RGP.
+
+          - Stress di correttezza con luce
+            coincidente, normali zero, colori
+            negativi/non finiti e target R32F
+            diagnostico.
+
+          - Misurare l’impatto end-to-end sul
+            frame, non soltanto Render Color.
+
+          - Solo dopo, valutare se stack4 vale il
+            margine aggiuntivo del 3,16% e la
+            semantica non bit-identica.
+
+      - Non vale la pena: altre micro-
+        ottimizzazioni guidate dal numero statico
+        di istruzioni, più sample nello stesso
+        processo, altri stack senza bracci
+        isolati, o ulteriori conclusioni da
+        TA_BUSY come counter di puro lavoro.
+
+  Verdetto: il −37,5% di stack3 è un risultato
+  principale solido per questa scena e questo
+  hardware. La parte sovradimensionata sarebbe
+  presentarlo come guadagno generale o attribuirlo
+  interamente agli early-out: il lavoro dinamico
+  diminuisce davvero, ma contenuto e salto di
+  occupancy restano co-cause non separate.
+
+⚠ Heads up, you have less than 5% of your 5h limit
+  left. Run /status for a breakdown.
+
+─ Worked for 11m 21s ─────────────────────────────
+
+
+› Review finale, breve, del candidato conclusivo
+  di Phase 2P. Non modificare nulla; script usa-
+  e-getta in %TEMP%.
+
+  Candidato: stack3_scalar = fresnel5 +
+  shadowskip + falloffskip + il percorso
+  SCALAR_BRANCH gia' presente in Lighting.hlsli
+  dietro `#if 0 // SM6.0` (abilitato). Dati in
+  research/39_2p_cycle7/ (P7) e
+  research/38_2p_cycle6/ (P6).
+
+  Risultati P7 (5 processi appaiati, ordine
+  controbilanciato, GPA):
+  - Render Color GPUBusyCycles -41.60% (per
+  processo -41.60/-41.53/-41.84/-41.69/-41.53),
+  TA_BUSY -44.40%.
+  - Immagine BIT-IDENTICA al baseline (SHA-256
+  uguale).
+  - Benchmark whole-frame indipendente (timer
+  tree di MiniEngine, 1000 frame dopo 300 di
+  warm-up, 3 processi): Render Color -40.34%, GPU
+  frame -24.39% (base 1.0295 ms -> 0.7784 ms).
+  - Controllo nullo in P5: base_pad, bytecode
+  diverso (+112 byte) e stesso lavoro, da +0.01%
+  (per processo +0.01/+0.12/+0.20/-0.07/-0.04).
+  - ISA: base VGPR 61 SGPR 54; stack3_scalar VGPR
+  54 SGPR 62.
+
+  Domande, rispondi solo a queste:
+  1. Ricalcola dai CSV di P7 la risposta di
+  stack3_scalar e il frame dal profile.csv.
+  Reggono?
+  2. SCALAR_BRANCH usa WaveReadLaneFirst/
+  Ballot64: l'ordine di accumulo cambia?
+  L'immagine bit-identica lo esclude o e' fortuna
+  della quantizzazione? C'e' un caso (wave che
+  copre piu' tile) in cui il risultato potrebbe
+  differire?
+  3. Il -24.39% sul frame include cali su Z
+  PrePass (-3.03%) e Generate SSAO (-4.08%) che
+  NON usano ModelViewerPS. Artefatto di clock/
+  boost o effetto reale? Come lo interpreteresti
+  onestamente nel report?
+  4. Una frase: qual e' la conclusione
+  difendibile e qual e' quella sovradimensionata.
+
+
+• Uso la skill Spreadsheets per il ricalcolo
+  indipendente di GPA e timer tree. Leggo P7/P6 in
+  sola lettura e creo soltanto un parser minimale
+  in %TEMP%; poi verifico il controllo di flusso
+  wave nel sorgente e nell’ISA.
+
+• Explored
+  └ Read SKILL.md (spreadsheets:Spreadsheets
+  skill),
+         API_QUICK_START.md, style_guidelines.md,
+         read_only_qna.md, scientific_research.md
+
+⚠ Skill descriptions were shortened to fit the
+  skills context budget. Codex can still see every
+  skill, but some descriptions are shorter.
+  Disable unused skills or plugins to leave more
+  room for the rest.
+
+• Context compacted
+
+↳ Hook · PONYTAIL:FULL
+
+• Explored
+  └ Read task_gatecheck.md
+
+• Ran rg --files research/39_2p_cycle7
+  │ research/38_2p_cycle6
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +759 lines (ctrl + t to view transcript)
+    lar\Output\Model\CompiledShaders\ModelViewerPS
+    .h
+
+• Ran $files = @('research/39_2p_cycle7/
+  │ experiment_manifest.json','research/39_2p_cy
+  │ cle7/
+  │ … +8 lines
+  └ FILE research/39_2p_cycle7/
+    experiment_manifest.json
+    … +286 lines (ctrl + t to view transcript)
+    0,2,TA78_PERF_SEL_TA_BUSY,u64,1128296
+    0,2,TA79_PERF_SEL_TA_BUSY,u64,1119603
+
+• Ran $p='research/39_2p_cycle7/runs/
+  │ base_bench_r1/profile.csv'; (Get-Content
+  │ -LiteralPath $p | Measure-Object
+  │ … +7 lines
+  └ 33
+    Particle
+    … +34 lines (ctrl + t to view transcript)
+    stack3_scalar_resp_r4
+    stack3_scalar_resp_r5
+
+■ You've hit your usage limit. Upgrade to Pro
+(https://chatgpt.com/explore/pro), visit
+https://chatgpt.com/codex/settings/usage to
+purchase more credits or try again at 10:52 PM.
+
+
+› Ask Codex to do anything
+
+  gpt-5.6-sol high · ~\Downloads\driver mod

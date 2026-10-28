@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\canary2_positive.1\\Output\\ModelViewer\\ModelViewer.exe"
+  ],
+  "command_line": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\canary2_positive.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\MiniEngine\\ModelViewer",
+  "requested_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\canary2_positive.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "executable_sha256": "60c4dfe197e97ef607ee385c63ff071eec78da9b824c8abdcfb108c8aa042440",
+  "pid": 14584,
+  "actual_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\canary2_positive.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "returncode": 0
+}

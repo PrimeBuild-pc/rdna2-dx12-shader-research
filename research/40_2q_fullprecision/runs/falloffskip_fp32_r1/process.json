@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\falloffskip.1\\Output\\ModelViewer\\ModelViewer.exe"
+  ],
+  "command_line": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\falloffskip.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\MiniEngine\\ModelViewer",
+  "requested_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\falloffskip.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "executable_sha256": "3c34f0a7f7f0d867f48d00627a699b08501aeb8224a99d9e1263e8dbc7949db0",
+  "pid": 14756,
+  "actual_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419\\build\\falloffskip.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "returncode": 0
+}

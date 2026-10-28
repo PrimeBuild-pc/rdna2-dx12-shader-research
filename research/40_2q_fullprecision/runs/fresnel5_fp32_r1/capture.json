@@ -1,0 +1,22 @@
+{
+  "variant": "fresnel5",
+  "rep": 1,
+  "pid": 12584,
+  "draws": 34,
+  "image": {
+    "pid": 12584,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 2,
+    "format_name": "R32G32B32A32_FLOAT",
+    "bytes_per_pixel": 16,
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 30720,
+    "stored_row_bytes": 30720,
+    "padding_stored": false
+  },
+  "image_sha256": "ef0a697e616f2d019ea694286f615ac3151d696ea7482516031161365b48f859",
+  "bytecode_sha256": "ff92e6680b1dac88a2c3af5ff2a285d40a036f9300cffe2b961cb5f7a6ad91f2"
+}

@@ -1,0 +1,1 @@
+{"pid":8340,"warmup":200,"frames":500,"timestamp_frequency":100000000,"region0_median_ns":76400.0,"region0_min_ns":74640.0,"region0_max_ns":85120.0,"region0_p95_ns":80800.0,"region1_median_ns":52400.0,"region1_min_ns":51320.0,"region1_max_ns":54600.0,"region1_p95_ns":53880.0,"region2_median_ns":0,"region3_median_ns":0}

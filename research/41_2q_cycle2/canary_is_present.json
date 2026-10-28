@@ -1,0 +1,9 @@
+{
+  "question": "is the canary actually in the compiled shader, or did the compiler remove it",
+  "isnan_isinf_calls": 60,
+  "negative_checks": 28,
+  "canary_constant_present": true,
+  "canary_constant_note": "DXIL prints float literals in double hex form; 0x46293E5940000000 is 1e30, and it appears in the one select of the shader",
+  "verdict": "present. 58 IsNaN/IsInf calls, the negative-value comparisons and the 1e30 select all survive into the bytecode the gate verified, so a canary that never fires means the condition never held, not that the check was optimised away.",
+  "limits": "measured on the BASE build and on one frame (140). It establishes the contract for the values the unmodified shader computes at that frame; the transformed builds run different code, and other frames were not examined."
+}

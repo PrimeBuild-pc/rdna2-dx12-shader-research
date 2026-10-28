@@ -1,0 +1,35 @@
+[
+  {
+    "argv": [
+      "python",
+      "-B",
+      "tools/c2077_shader_loader.py",
+      "install"
+    ],
+    "returncode": 0,
+    "stdout": "Installed in control mode; game not started\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python",
+      "-B",
+      "tools/c2077_shader_loader.py",
+      "uninstall"
+    ],
+    "returncode": 0,
+    "stdout": "{\n  \"state\": \"removed\",\n  \"changed_preexisting\": [],\n  \"lab_directory_remaining\": false\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python",
+      "-B",
+      "tools/c2077_shader_loader.py",
+      "install"
+    ],
+    "returncode": 0,
+    "stdout": "Installed in control mode; game not started\n",
+    "stderr": ""
+  }
+]

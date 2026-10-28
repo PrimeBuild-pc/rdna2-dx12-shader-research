@@ -1,0 +1,22 @@
+{
+  "variant": "hitpos_reuse",
+  "rep": 2,
+  "pid": 11088,
+  "summary": {
+    "pid": 11088,
+    "warmup": 200,
+    "frames": 500,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 1498140.0,
+    "region0_min_ns": 1362880.0,
+    "region0_max_ns": 1809600.0,
+    "region0_p95_ns": 1736760.0,
+    "region1_median_ns": 0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "5db24d9f2af3d1f8f4ef5f9aa6037b4f74d82e377495772c44116fa26e67f251",
+  "shaders": {
+    "Raytracing.dxil": "e514a26e07fd5fabbc81cb6eed7a1b2b55237f46aa536d5811666e2ec11e0960"
+  }
+}

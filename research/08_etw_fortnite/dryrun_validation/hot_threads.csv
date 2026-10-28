@@ -1,0 +1,201 @@
+process,pid,tid,samples,pct_of_process,thread_start,context_switches_in,top_modules
+python.exe,4264,16896,3224,26.156,ucrtbase.dll!0x00007ffab946cd00,1111,python311.dll:2680; ucrtbase.dll:436; ntdll.dll:39; ntoskrnl.exe:34; KernelBase.dll:19; kernel32.dll:10
+python.exe,4264,10528,3125,25.353,ucrtbase.dll!0x00007ffab946cd00,1096,python311.dll:2612; ucrtbase.dll:407; ntdll.dll:38; ntoskrnl.exe:33; KernelBase.dll:19; audientusbaudio.sys:6
+python.exe,4264,7748,3081,24.996,ucrtbase.dll!0x00007ffab946cd00,1090,python311.dll:2518; ucrtbase.dll:462; ntdll.dll:36; KernelBase.dll:31; ntoskrnl.exe:29; kernel32.dll:4
+python.exe,4264,17964,2809,22.789,ucrtbase.dll!0x00007ffab946cd00,1102,python311.dll:2291; ucrtbase.dll:409; ntdll.dll:39; ntoskrnl.exe:36; KernelBase.dll:27; kernel32.dll:6
+Idle,0,0,1238,99.919,Idle!Idle,103562,ntoskrnl.exe:968; USBXHCI.SYS:97; amdkmdag.sys:64; audientusbaudio.sys:40; Wdf01000.sys:23; WppRecorder.sys:16
+Discord.exe,7700,10984,1096,32.369,Discord.exe!0x00007ff6d16fb0c0,1128,"Discord.exe:915; ntoskrnl.exe:86; Unknown"":85; ntdll.dll:7; amdkmdag.sys:1; kernel32.dll:1"
+SystemSettings.exe,2796,12164,992,81.311,SHCore.dll!0x00007ffabaf950e0,3107,"ntoskrnl.exe:496; Windows.UI.Xaml.dll:135; ntdll.dll:62; DWrite.dll:47; Unknown"":38; dcomp.dll:32"
+dwm.exe,2000,2252,451,84.934,dwmcore.dll!0x00007ffab543b2c0,1150,"ntoskrnl.exe:217; dwmcore.dll:125; amdxx64.dll:50; dxgkrnl.sys:10; ntdll.dll:9; Unknown"":9"
+wpr.exe,2912,7632,278,66.988,wpr.exe!0x00007ff67c851810,32,ntoskrnl.exe:187; FLTMGR.SYS:24; Ntfs.sys:20; ntdll.dll:13; msxml6.dll:9; KernelBase.dll:5
+vmmem,7640,7568,256,100.0,Vid.sys!0xfffff804175cd900,238,"ntoskrnl.exe:164; USBXHCI.SYS:27; Unknown"":20; amdkmdag.sys:18; audientusbaudio.sys:14; Wdf01000.sys:4"
+Discord.exe,14004,7304,201,5.936,Discord.exe!0x00007ff6d16fb0c0,3616,ntoskrnl.exe:126; Discord.exe:34; win32kfull.sys:11; ntdll.dll:7; TextInputFramework.dll:4; win32kbase.sys:3
+Discord.exe,7700,10548,186,5.493,Discord.exe!0x00007ff6d00d73a0,420,"Discord.exe:176; ntoskrnl.exe:9; Unknown"":1"
+Discord.exe,6388,10228,174,5.139,Discord.exe!0x00007ff6d00d73a0,1865,"Discord.exe:90; ntoskrnl.exe:75; Npfs.SYS:3; win32kbase_rs.sys:1; dxgkrnl.sys:1; Unknown"":1"
+Discord.exe,7700,14812,173,5.109,discord_voice.node!0x00007ffa40c2cd50,1398,discord_voice.node:133; ntoskrnl.exe:34; win32kfull.sys:2; ntdll.dll:1; win32u.dll:1; kernel32.dll:1
+EVO.exe,12060,12064,162,61.364,EVO.exe!0x00007ff60be643a0,5133,ntoskrnl.exe:126; ntdll.dll:7; EVO.exe:7; win32kfull.sys:5; audientusbaudio.sys:3; USBXHCI.SYS:3
+Discord.exe,7700,4596,140,4.135,Discord.exe!0x00007ff6d00d73a0,246,"Discord.exe:135; ntoskrnl.exe:3; Unknown"":2"
+Discord.exe,7700,15816,136,4.017,Discord.exe!0x00007ff6d00d73a0,3040,"ntoskrnl.exe:68; Discord.exe:60; Unknown"":4; Npfs.SYS:2; ntdll.dll:1; KernelBase.dll:1"
+wpr.exe,18132,4556,134,32.289,wpr.exe!0x00007ff67c851810,163,ntoskrnl.exe:99; Ntfs.sys:17; msxml6.dll:7; FLTMGR.SYS:4; ucrtbase.dll:2; ntdll.dll:2
+Discord.exe,7700,15376,127,3.751,discord_voice.node!0x00007ffa40b0ebd0,1279,"discord_voice.node:71; ntoskrnl.exe:38; ntdll.dll:6; FLTMGR.SYS:3; Ntfs.sys:3; Unknown"":2"
+Discord.exe,7700,10896,126,3.721,Discord.exe!0x00007ff6d00d73a0,126,Discord.exe:121; ntoskrnl.exe:5
+Discord.exe,7700,15764,115,3.396,Discord.exe!0x00007ff6d00d73a0,126,"Discord.exe:111; ntoskrnl.exe:3; Unknown"":1"
+Discord.exe,7700,400,106,3.131,Discord.exe!0x00007ff6d00d73a0,44,Discord.exe:106
+Discord.exe,14004,4984,104,3.071,combase.dll!0x00007ffaba0a4a70,196,"MsSpellCheckingFacility.dll:90; ntoskrnl.exe:4; Unknown"":4; combase.dll:3; ntdll.dll:3"
+EOSOverlayRenderer-Win64-Shipping.exe,6424,14072,99,48.529,EOSOverlayRenderer-Win64-Shipping.exe!0x00007ff6a621fca0,861,ntoskrnl.exe:82; ntdll.dll:9; KernelBase.dll:3; devobj.dll:1; ucrtbase.dll:1; apphelp.dll:1
+System,4,1348,97,25.065,dxgmms2.sys!0xfffff804234d5ca0,3420,ntoskrnl.exe:67; amdkmdag.sys:22; dxgmms2.sys:7; Wdf01000.sys:1
+pwsh.exe,2140,14936,95,70.37,ntdll.dll!0x00007ffabba302d0,48,coreclr.dll:54; ntoskrnl.exe:20; ntdll.dll:13; ucrtbase.dll:3; System.Private.CoreLib.dll:2; FLTMGR.SYS:1
+SystemSettings.exe,2796,11936,89,7.295,Windows.UI.Xaml.dll!0x00007ffab09756c0,2640,ntoskrnl.exe:66; amdkmdag.sys:11; ntdll.dll:5; Windows.UI.Xaml.dll:3; win32kbase.sys:1; dcomp.dll:1
+Discord.exe,7700,7180,87,2.569,Discord.exe!0x00007ff6d00d73a0,44,Discord.exe:87
+svchost.exe,3628,16668,85,27.961,ntdll.dll!0x00007ffabba302d0,2334,ntoskrnl.exe:59; combase.dll:9; ntdll.dll:8; rpcrt4.dll:6; KernelBase.dll:1; bcryptprimitives.dll:1
+claude.exe,9948,17180,85,30.249,claude.exe!0x00007ff79164e1c8,512,"claude.exe:64; ntoskrnl.exe:14; ntdll.dll:4; Unknown"":3"
+svchost.exe,6644,15904,84,27.632,ntdll.dll!0x00007ffabba302d0,263,ntoskrnl.exe:61; ntdll.dll:9; CapabilityAccessManager.dll:3; combase.dll:3; KernelBase.dll:2; bfs.sys:2
+EVO.exe,12060,11276,82,31.061,EVO.exe!0x00007ff60be7706c,4994,ntoskrnl.exe:65; ntdll.dll:7; win32kbase.sys:3; win32kfull.sys:3; WppRecorder.sys:1; EVO.exe:1
+svchost.exe,3628,16524,78,25.658,ntdll.dll!0x00007ffabba302d0,2272,"ntoskrnl.exe:60; ntdll.dll:8; rpcrt4.dll:3; Unknown"":2; combase.dll:2; KernelBase.dll:1"
+audiodg.exe,14428,6608,78,32.911,audiodg.exe!0x00007ff724c3f040,1263,"ntoskrnl.exe:56; audiodg.exe:6; ntdll.dll:4; KernelBase.dll:3; Unknown"":2; ks.sys:2"
+Discord.exe,7700,13832,68,2.008,Discord.exe!0x00007ff6d00d73a0,41,Discord.exe:65; ntoskrnl.exe:3
+EpicGamesLauncher.exe,2076,16132,65,39.157,EpicGamesLauncher.exe!0x00007ff688ba1d74,770,ntoskrnl.exe:30; EpicGamesLauncher.exe:25; ntdll.dll:4; d3d11.dll:1; dxgkrnl.sys:1; rpcrt4.dll:1
+explorer.exe,7620,1572,58,84.058,SHCore.dll!0x00007ffabaf950e0,1512,ntoskrnl.exe:42; CoreMessaging.dll:4; Windows.UI.Xaml.dll:3; ntdll.dll:2; win32kbase.sys:2; KernelBase.dll:1
+audiodg.exe,14428,13568,57,24.051,audiodg.exe!0x00007ff724c3e8c0,1264,ntoskrnl.exe:35; AudioEng.dll:5; ucrtbase.dll:4; ntdll.dll:4; audiodg.exe:3; KernelBase.dll:2
+Discord.exe,7700,12496,55,1.624,discord_voice.node!0x00007ffa40b0ebd0,1262,"discord_voice.node:32; ntoskrnl.exe:11; ntdll.dll:7; AudioSes.dll:3; Unknown"":2"
+Discord.exe,7700,4680,55,1.624,discord_voice.node!0x00007ffa412c8400,1615,"ntoskrnl.exe:34; discord_voice.node:8; Discord.exe:5; Unknown"":4; ntdll.dll:3; kernel32.dll:1"
+ctfmon.exe,6072,6256,52,59.77,InputService.dll!0x00007ffa9ebea810,2374,ntoskrnl.exe:34; CoreMessaging.dll:8; ntdll.dll:4; win32kfull.sys:3; InputService.dll:2; win32kbase.sys:1
+python.exe,4264,13420,51,0.414,python.exe!0x00007ff7632012a0,115,python311.dll:21; ntoskrnl.exe:18; ntdll.dll:5; FLTMGR.SYS:4; Ntfs.sys:3
+pcssagent.exe,4296,9072,51,31.677,ucrtbase.dll!0x00007ffab946cd00,4564,"ntoskrnl.exe:42; jvm.dll:3; ntdll.dll:2; Unknown"":2; ucrtbase.dll:1; KernelBase.dll:1"
+EOSOverlayRenderer-Win64-Shipping.exe,6424,4764,51,25.0,EOSOverlayRenderer-Win64-Shipping.exe!0x00007ff6a628b1b0,814,libcef.dll:26; ntdll.dll:16; ntoskrnl.exe:8; KernelBase.dll:1
+SystemSettings.exe,2796,17192,50,4.098,ntdll.dll!0x00007ffabba302d0,1086,ntoskrnl.exe:43; ntdll.dll:3; rpcrt4.dll:2; ucrtbase.dll:1; Windows.UI.dll:1
+claude.exe,12328,7612,47,16.726,claude.exe!0x00007ff7d04e8150,148,"claude.exe:29; Unknown"":15; ntoskrnl.exe:3"
+SystemSettings.exe,2796,17536,42,3.443,ntdll.dll!0x00007ffabba302d0,1279,"ntoskrnl.exe:31; SystemSettingsViewModel.Desktop.dll:3; Unknown"":2; ntdll.dll:2; bcryptprimitives.dll:1; rpcrt4.dll:1"
+Discord.exe,7700,3096,41,1.211,Discord.exe!0x00007ff6d00d73a0,25,Discord.exe:41
+SystemSettings.exe,2796,14008,40,3.279,ntdll.dll!0x00007ffabba302d0,1129,ntoskrnl.exe:33; ntdll.dll:3; AudioHandlers.dll:2; KernelBase.dll:1; SystemSettingsViewModel.Desktop.dll:1
+Discord.exe,6388,16080,40,1.181,Discord.exe!0x00007ff6d00d73a0,2040,ntoskrnl.exe:33; Discord.exe:5; kernel32.dll:1; Npfs.SYS:1
+Discord.exe,7700,6968,40,1.181,discord_voice.node!0x00007ffa412c8400,728,ntoskrnl.exe:26; tcpip.sys:3; NETIO.SYS:3; mswsock.dll:2; ndis.sys:1; KernelBase.dll:1
+audiodg.exe,14428,16052,37,15.612,ntdll.dll!0x00007ffabba302d0,789,"ntoskrnl.exe:22; combase.dll:7; rpcrt4.dll:4; ntdll.dll:2; Unknown"":2"
+Discord.exe,7700,13288,37,1.093,Discord.exe!0x00007ff6d00d73a0,22,Discord.exe:36; ntoskrnl.exe:1
+pcssagent.exe,4296,7124,36,22.36,ucrtbase.dll!0x00007ffab946cd00,2301,ntoskrnl.exe:28; jvm.dll:6; KernelBase.dll:1; ntdll.dll:1
+Discord.exe,14004,6252,36,1.063,Discord.exe!0x00007ff6d00d73a0,1273,"ntoskrnl.exe:24; Discord.exe:9; ntdll.dll:2; Unknown"":1"
+audiodg.exe,14428,12324,35,14.768,AUDIOKSE.dll!0x00007ffa829477b0,2520,ntoskrnl.exe:33; ks.sys:1; KernelBase.dll:1
+ctfmon.exe,6072,10256,35,40.23,InputService.dll!0x00007ffa9ec5b1c0,1496,ntoskrnl.exe:23; CoreMessaging.dll:6; win32kfull.sys:2; user32.dll:1; KernelBase.dll:1; ntdll.dll:1
+pwsh.exe,2140,12588,35,25.926,coreclr.dll!0x00007ffa739eaa40,27,"clrjit.dll:31; coreclr.dll:2; ntoskrnl.exe:1; Unknown"":1"
+pcssagent.exe,4296,8244,34,21.118,ucrtbase.dll!0x00007ffab946cd00,764,"ntoskrnl.exe:17; jvm.dll:7; Unknown"":3; ApcUsb.dll:1; vcruntime140.dll:1; HIDCLASS.SYS:1"
+System,4,1352,33,8.527,dxgmms2.sys!0xfffff8042351cab0,21,ntoskrnl.exe:29; dxgmms2.sys:3; amdkmdag.sys:1
+csrss.exe,1408,1556,31,86.111,winsrvext.dll!0x00007ffab8b64240,456,"ntoskrnl.exe:14; win32kfull.sys:10; win32k.sys:3; Unknown"":2; Ntfs.sys:1; win32kbase.sys:1"
+dwm.exe,2000,4732,29,5.461,uDWM.dll!0x00007ffab57dc200,1121,"ntoskrnl.exe:14; dcomp.dll:3; win32kbase.sys:3; CoreMessaging.dll:3; Unknown"":2; ucrtbase.dll:1"
+System,4,248,29,7.494,ntoskrnl.exe!0xfffff804827c1e20,13,ntoskrnl.exe:29
+audiodg.exe,14428,2836,29,12.236,ntdll.dll!0x00007ffabba302d0,740,ntoskrnl.exe:19; combase.dll:5; rpcrt4.dll:3; ntdll.dll:2
+EpicGamesLauncher.exe,2076,1952,28,16.867,EpicGamesLauncher.exe!0x00007ff686b6fa30,856,EOSSDK-Win64-Shipping.dll:19; ntoskrnl.exe:8; EpicGamesLauncher.exe:1
+dwm.exe,2000,2324,27,5.085,dwmcore.dll!0x00007ffab5409be0,757,ntoskrnl.exe:24; USBXHCI.SYS:2; dxgkrnl.sys:1
+Discord.exe,7700,14352,27,0.797,Discord.exe!0x00007ff6d00d73a0,2045,ntoskrnl.exe:20; Discord.exe:7
+Discord.exe,7700,9872,26,0.768,discord_voice.node!0x00007ffa40b0ebd0,1260,"discord_voice.node:13; ntoskrnl.exe:11; AudioSes.dll:1; Unknown"":1"
+System,4,10320,24,6.202,ntoskrnl.exe!0xfffff80482524aa0,654,ntoskrnl.exe:24
+Discord.exe,7700,16836,23,0.679,discord_utils.node!0x00007ffa7507e2d0,136,ntoskrnl.exe:18; discord_utils.node:2; Discord.exe:1; kernel32.dll:1; FLTMGR.SYS:1
+System,4,8880,22,5.685,ntoskrnl.exe!0xfffff80482524aa0,875,ntoskrnl.exe:21; amdkmdag.sys:1
+Discord.exe,14004,13468,22,0.65,Discord.exe!0x00007ff6d00d73a0,967,ntoskrnl.exe:18; win32kfull.sys:2; combase.dll:1; win32kbase.sys:1
+MsMpEng.exe,4424,10392,20,16.667,MpRtp.dll!0x00007ffa85a76cd0,78,mpengine.dll:11; ntoskrnl.exe:4; ntdll.dll:2; MpSvc.dll:1; KernelBase.dll:1; MpRtp.dll:1
+System,4,288,19,4.91,ntoskrnl.exe!0xfffff804825ce100,13,ntoskrnl.exe:19
+svchost.exe,2484,3012,19,6.25,ntdll.dll!0x00007ffabba302d0,23,ntoskrnl.exe:13; KernelBase.dll:2; ucrtbase.dll:2; bfs.sys:1; NETIO.SYS:1
+Discord.exe,14004,16092,18,0.532,Discord.exe!0x00007ff6d00d73a0,198,ntoskrnl.exe:9; Discord.exe:9
+MsMpEng.exe,4424,10432,18,15.0,MpRtp.dll!0x00007ffa85a76cd0,38,mpengine.dll:12; ntoskrnl.exe:4; ntdll.dll:1; FLTMGR.SYS:1
+dwm.exe,2000,2332,18,3.39,dwmcore.dll!0x00007ffab542a800,266,ntoskrnl.exe:5; ntdll.dll:4; ISM.dll:4; CoreMessaging.dll:3; win32k.sys:1; ucrtbase.dll:1
+System,4,1204,17,4.393,ExecutionContext.sys!0xfffff804222e8f70,1436,ntoskrnl.exe:8; netadaptercx.sys:4; ndis.sys:4; afd.sys:1
+pcssagent.exe,4296,6612,17,10.559,ucrtbase.dll!0x00007ffab946cd00,1263,ntoskrnl.exe:13; jvm.dll:3; ntdll.dll:1
+Discord.exe,7700,5972,16,0.473,discord_desktop_overlay.node!0x00007ffa64052130,512,"ntoskrnl.exe:9; win32kfull.sys:4; ntdll.dll:1; win32u.dll:1; Unknown"":1"
+claude.exe,10452,8696,16,5.694,claude.exe!0x00007ff7d04e8150,107,"ntoskrnl.exe:5; libGLESv2.dll:4; claude.exe:2; Unknown"":2; ntdll.dll:1; win32u.dll:1"
+bash.exe,6740,3824,16,25.0,bash.exe!0x0000000100401000,22,ntoskrnl.exe:11; FLTMGR.SYS:2; ntdll.dll:1; msys-2.0.dll:1; volmgr.sys:1
+System,4,11988,15,3.876,ntoskrnl.exe!0xfffff80482bd3470,198,ntoskrnl.exe:11; Ntfs.sys:3; stornvme.sys:1
+System,4,18408,15,3.876,ntoskrnl.exe!0xfffff80482524aa0,620,ntoskrnl.exe:14; amdkmdag.sys:1
+python.exe,10044,17948,15,0.122,ucrtbase.dll!0x00007ffab946cd00,407,ntoskrnl.exe:8; _ctypes.pyd:2; ntdll.dll:2; KernelBase.dll:1; kernel32.dll:1; python313.dll:1
+bash.exe,11212,8808,15,23.438,bash.exe!0x0000000100401000,24,ntoskrnl.exe:10; ntdll.dll:2; FLTMGR.SYS:1; ahcache.sys:1; msys-2.0.dll:1
+System,4,15120,14,3.618,ntoskrnl.exe!0xfffff80482524aa0,890,ntoskrnl.exe:14
+System,4,24,14,3.618,ntoskrnl.exe!0xfffff804827cf7a0,724,ntoskrnl.exe:14
+System,4,1300,14,3.618,amdkmdag.sys!0xfffff80426713db0,30,amdkmdag.sys:8; ntoskrnl.exe:6
+Discord.exe,7700,9856,14,0.413,Discord.exe!0x00007ff6d00d73a0,16,Discord.exe:14
+System,4,14524,13,3.359,ntoskrnl.exe!0xfffff80482524aa0,832,ntoskrnl.exe:13
+bash.exe,2516,12640,13,20.312,bash.exe!0x0000000100401000,25,ntoskrnl.exe:11; ntdll.dll:1; msys-2.0.dll:1
+EpicGamesLauncher.exe,2076,16172,12,7.229,EOSOVH-Win64-Shipping.dll!0x00007ffab31c1730,847,ntoskrnl.exe:11; EOSOVH-Win64-Shipping.dll:1
+chrome.exe,3020,1652,12,25.0,chrome.dll!0x00007ffa4f179cd0,762,"ntoskrnl.exe:8; win32kfull.sys:2; win32kbase.sys:1; Unknown"":1"
+System,4,16600,12,3.101,ntoskrnl.exe!0xfffff80482524aa0,997,ntoskrnl.exe:10; amdkmdag.sys:1; FLTMGR.SYS:1
+EpicOnlineServicesUserHelper.exe,3640,18384,12,100.0,EpicOnlineServicesUserHelper.exe!0x00007ff777740140,42,"ntoskrnl.exe:4; Unknown"":3; EpicOnlineServicesUserHelper.exe:3; ntdll.dll:1; tcpip.sys:1"
+Discord.exe,7700,13748,11,0.325,discord_utils.node!0x00007ffa74fc3100,400,ntoskrnl.exe:10; win32kbase.sys:1
+bash.exe,244,5032,11,17.188,bash.exe!0x0000000100401000,32,ntoskrnl.exe:7; ahcache.sys:3; clipsp.sys:1
+MsMpEng.exe,4424,11316,11,9.167,ntdll.dll!0x00007ffabba302d0,52,mpengine.dll:8; ntoskrnl.exe:3
+Discord.exe,6388,11852,11,0.325,ntdll.dll!0x00007ffabba302d0,198,"Unknown"":6; ntoskrnl.exe:5"
+EpicGamesLauncher.exe,2076,6364,11,6.627,EpicGamesLauncher.exe!0x00007ff686b6fa30,184,ntoskrnl.exe:6; EpicGamesLauncher.exe:4; kernel32.dll:1
+claude.exe,7616,18120,11,3.915,claude.exe!0x00007ff7ce158770,751,ntoskrnl.exe:10; win32k.sys:1
+claude.exe,7616,6676,11,3.915,claude.exe!0x00007ff7d04e8150,180,"ntoskrnl.exe:9; ntdll.dll:1; Unknown"":1"
+Discord.exe,7700,18200,11,0.325,Discord.exe!0x00007ff6d00d73a0,20,"Discord.exe:9; Unknown"":2"
+SearchHost.exe,8860,18100,11,57.895,ntdll.dll!0x00007ffabba302d0,14,ntoskrnl.exe:7; Chakra.dll:3; storport.sys:1
+EpicGamesLauncher.exe,2076,7100,10,6.024,EOSSDK-Win64-Shipping.dll!0x00007ffa7ab2533c,439,ntoskrnl.exe:6; EOSSDK-Win64-Shipping.dll:3; EpicGamesLauncher.exe:1
+EOSOverlayRenderer-Win64-Shipping.exe,6424,9060,10,4.902,libcef.dll!0x00007ffa25660cc0,215,libcef.dll:5; ntoskrnl.exe:4; ntdll.dll:1
+SearchIndexer.exe,14748,14808,10,83.333,mssrch.dll!0x00007ffa96cb9730,24,"KernelBase.dll:5; mssrch.dll:2; ucrtbase.dll:1; Unknown"":1; ntdll.dll:1"
+python.exe,11492,1752,10,0.081,ucrtbase.dll!0x00007ffab946cd00,401,ntoskrnl.exe:8; python313.dll:1; ntdll.dll:1
+Discord.exe,7700,10952,10,0.295,Discord.exe!0x00007ff6d00d73a0,11,"Discord.exe:8; Unknown"":2"
+EVO.exe,12060,12116,10,3.788,EVO.exe!0x00007ff60be7706c,39,ntoskrnl.exe:6; tcpip.sys:1; ntdll.dll:1; NETIO.SYS:1; rpcrt4.dll:1
+EOSOverlayRenderer-Win64-Shipping.exe,8260,12232,10,4.902,libcef.dll!0x00007ffa25660cc0,10,libcef.dll:10
+System,4,168,9,2.326,ntoskrnl.exe!0xfffff80482859140,249,ntoskrnl.exe:9
+MsMpEng.exe,4424,4468,9,7.5,ntdll.dll!0x00007ffabba302d0,40,mpengine.dll:9
+EpicGamesLauncher.exe,2076,8172,9,5.422,EpicGamesLauncher.exe!0x00007ff686b6fa30,923,ntoskrnl.exe:8; EpicGamesLauncher.exe:1
+claude.exe,10452,13652,9,3.203,claude.exe!0x00007ff7ce158770,173,ntoskrnl.exe:6; claude.exe:3
+chrome.exe,3020,17068,9,18.75,chrome.exe!0x00007ff77196dd70,60,ntoskrnl.exe:5; chrome.dll:3; win32kbase.sys:1
+Discord.exe,7700,10884,9,0.266,Discord.exe!0x00007ff6d00d73a0,18,Discord.exe:9
+chrome.exe,8812,3936,9,18.75,chrome.exe!0x00007ff77196dd70,43,chrome.dll:8; ntdll.dll:1
+pcssagent.exe,4296,7128,9,5.59,ucrtbase.dll!0x00007ffab946cd00,1272,ntoskrnl.exe:8; ntdll.dll:1
+SearchHost.exe,8860,16744,8,42.105,ntdll.dll!0x00007ffabba302d0,16,ntoskrnl.exe:6; mswsock.dll:1; Chakra.dll:1
+MsMpEng.exe,4424,6180,8,6.667,ntdll.dll!0x00007ffabba302d0,63,mpengine.dll:6; ntoskrnl.exe:2
+System,4,12372,8,2.067,ntoskrnl.exe!0xfffff80482bd3470,143,ntoskrnl.exe:4; Ntfs.sys:1; CLASSPNP.SYS:1; disk.sys:1; stornvme.sys:1
+Discord.exe,6388,3148,8,0.236,ntdll.dll!0x00007ffabba302d0,207,"Unknown"":6; ntoskrnl.exe:2"
+atieclxx.exe,6356,6360,8,100.0,atieclxx.exe!0x00007ff6a32c89dc,309,ntoskrnl.exe:7; ntdll.dll:1
+claude.exe,12328,11072,8,2.847,claude.exe!0x00007ff7ce158770,171,"claude.exe:4; ntoskrnl.exe:2; Unknown"":1; ntdll.dll:1"
+System,4,17916,8,2.067,ntoskrnl.exe!0xfffff80482524aa0,358,ntoskrnl.exe:8
+MsMpEng.exe,4424,3876,7,5.833,ntdll.dll!0x00007ffabba302d0,24,mpengine.dll:5; ntoskrnl.exe:1; ntdll.dll:1
+System,4,1208,7,1.809,ExecutionContext.sys!0xfffff804222e8f70,200,"ntoskrnl.exe:2; netadaptercx.sys:1; USBXHCI.SYS:1; NETIO.SYS:1; Unknown"":1; tcpip.sys:1"
+claude.exe,9948,3308,7,2.491,claude.exe!0x00007ff7916730c4,249,ntoskrnl.exe:3; ntdll.dll:3; claude.exe:1
+AudientAppLauncher.exe,11964,12028,7,87.5,AudientAppLauncher.exe!0x0000000000b4dedb,618,ntoskrnl.exe:7
+claude.exe,9948,12320,7,2.491,claude.exe!0x00007ff7916730c4,271,ntoskrnl.exe:5; ntdll.dll:1; claude.exe:1
+EOSOverlayRenderer-Win64-Shipping.exe,15016,11916,7,3.431,libcef.dll!0x00007ffa25660cc0,44,libcef.dll:6; ntoskrnl.exe:1
+MsMpEng.exe,4424,14116,6,5.0,ntdll.dll!0x00007ffabba302d0,26,mpengine.dll:4; ntoskrnl.exe:1; ntdll.dll:1
+MsMpEng.exe,4424,16352,6,5.0,ntdll.dll!0x00007ffabba302d0,11,ntdll.dll:4; ntoskrnl.exe:2
+claude.exe,9948,2744,6,2.135,claude.exe!0x00007ff7916730c4,258,ntoskrnl.exe:4; ntdll.dll:2
+EVO.exe,12060,12100,6,2.273,EVO.exe!0x00007ff60be7706c,618,ntoskrnl.exe:6
+MsMpEng.exe,4424,12180,6,5.0,ntdll.dll!0x00007ffabba302d0,60,mpengine.dll:2; ntoskrnl.exe:2; MpRtp.dll:1; Ntfs.sys:1
+Discord.exe,7700,18068,6,0.177,Discord.exe!0x00007ff6d00d73a0,17,Discord.exe:6
+EpicGamesLauncher.exe,2076,17976,6,3.614,EpicGamesLauncher.exe!0x00007ff686b6fa30,151,ntoskrnl.exe:5; win32kfull.sys:1
+EpicGamesLauncher.exe,2076,16632,6,3.614,EOSSDK-Win64-Shipping.dll!0x00007ffa7b74e920,270,ntoskrnl.exe:6
+EOSOverlayRenderer-Win64-Shipping.exe,8260,11928,6,2.941,EOSOverlayRenderer-Win64-Shipping.exe!0x00007ff6a628b1b0,10,libcef.dll:6
+claude.exe,10452,13060,5,1.779,claude.exe!0x00007ff7ce158770,79,ntoskrnl.exe:5
+claude.exe,9948,15164,5,1.779,claude.exe!0x00007ff7916730c4,269,claude.exe:2; ntoskrnl.exe:2; ntdll.dll:1
+claude.exe,9948,13624,5,1.779,claude.exe!0x00007ff7916730c4,264,ntoskrnl.exe:3; claude.exe:2
+System,4,16348,5,1.292,ntoskrnl.exe!0xfffff80482524aa0,453,ntoskrnl.exe:5
+lsass.exe,1596,3644,5,55.556,ntdll.dll!0x00007ffabba302d0,106,ntoskrnl.exe:4; rpcrt4.dll:1
+claude.exe,9948,11980,5,1.779,claude.exe!0x00007ff7916730c4,256,ntoskrnl.exe:3; claude.exe:1; ntdll.dll:1
+EpicGamesLauncher.exe,2076,1712,5,3.012,EpicGamesLauncher.exe!0x00007ff686b6fa30,296,ntoskrnl.exe:2; KernelBase.dll:1; ntdll.dll:1; EpicGamesLauncher.exe:1
+EpicGamesLauncher.exe,2076,12612,5,3.012,EOSSDK-Win64-Shipping.dll!0x00007ffa7b74e920,273,ntoskrnl.exe:5
+explorer.exe,7620,8308,5,7.246,windows.immersiveshell.serviceprovider.dll!0x00007ffa92fa3b50,646,ntoskrnl.exe:5
+MsMpEng.exe,4424,10928,5,4.167,ntdll.dll!0x00007ffabba302d0,29,mpengine.dll:3; FLTMGR.SYS:1; ntoskrnl.exe:1
+dwm.exe,2000,5428,4,0.753,ntdll.dll!0x00007ffabba302d0,28,ntoskrnl.exe:3; ntdll.dll:1
+EpicGamesLauncher.exe,2076,11536,4,2.41,ntdll.dll!0x00007ffabba302d0,112,ntoskrnl.exe:4
+System,4,1364,4,1.034,dxgmms2.sys!0xfffff804234d5ca0,308,ntoskrnl.exe:3; dxgmms2.sys:1
+MsMpEng.exe,4424,15332,4,3.333,ntdll.dll!0x00007ffabba302d0,42,ntoskrnl.exe:3; mpengine.dll:1
+MsMpEng.exe,4424,14360,4,3.333,ntdll.dll!0x00007ffabba302d0,70,mpengine.dll:3; ntoskrnl.exe:1
+MsMpEng.exe,4424,5328,4,3.333,ntdll.dll!0x00007ffabba302d0,39,mpengine.dll:2; ntoskrnl.exe:1; Ntfs.sys:1
+svchost.exe,1852,6700,4,1.316,ntdll.dll!0x00007ffabba302d0,59,ntoskrnl.exe:2; combase.dll:1; ntdll.dll:1
+EVO.exe,12060,12108,4,1.515,EVO.exe!0x00007ff60be7706c,50,ntoskrnl.exe:3; mswsock.dll:1
+claude.exe,7616,2532,4,1.423,claude.exe!0x00007ff7d04f8b70,185,ntoskrnl.exe:4
+claude.exe,10452,15720,4,1.423,claude.exe!0x00007ff7ce158770,150,ntoskrnl.exe:4
+chrome.exe,3020,388,4,8.333,chrome.dll!0x00007ffa4f179cd0,40,"ntoskrnl.exe:2; Unknown"":1; ntdll.dll:1"
+chrome.exe,3892,12584,4,8.333,chrome.dll!0x00007ffa4f179cd0,23,chrome.dll:2; ntoskrnl.exe:2
+claude.exe,9948,9404,4,1.423,claude.exe!0x00007ff7916730c4,264,claude.exe:3; ntdll.dll:1
+SystemSettings.exe,2796,15028,4,0.328,ntdll.dll!0x00007ffabba302d0,12,ntdll.dll:4
+EOSOverlayRenderer-Win64-Shipping.exe,6424,14056,4,1.961,libcef.dll!0x00007ffa25660cc0,356,ntoskrnl.exe:3; libcef.dll:1
+svchost.exe,2732,2256,4,1.316,ntdll.dll!0x00007ffabba302d0,46,rpcrt4.dll:2; ntoskrnl.exe:2
+pcssagent.exe,4296,10888,4,2.484,ucrtbase.dll!0x00007ffab946cd00,7,"Unknown"":3; jvm.dll:1"
+python.exe,10044,12128,4,0.032,UIAutomationCore.dll!0x00007ffa957de6e0,297,ntoskrnl.exe:2; win32kfull.sys:1; win32kbase.sys:1
+services.exe,1520,2412,4,80.0,ntdll.dll!0x00007ffabba302d0,20,ntoskrnl.exe:2; ntdll.dll:2
+EOSOverlayRenderer-Win64-Shipping.exe,6424,9196,4,1.961,libcef.dll!0x00007ffa25660cc0,32,ntoskrnl.exe:4
+Discord.exe,7700,6928,4,0.118,Discord.exe!0x00007ff6d00d73a0,13,Discord.exe:3; ntoskrnl.exe:1
+claude.exe,9948,3060,4,1.423,claude.exe!0x00007ff7916730c4,2,claude.exe:4
+tail.exe,12908,17996,4,66.667,tail.exe!0x0000000100401000,13,ntoskrnl.exe:3; ntdll.dll:1
+Discord.exe,7700,13804,3,0.089,ntdll.dll!0x00007ffabba302d0,11,ntoskrnl.exe:3
+svchost.exe,3204,3312,3,0.987,sechost.dll!0x00007ffab9966960,9,ntoskrnl.exe:2; sysmain.dll:1
+Discord.exe,8788,7256,3,0.089,Discord.exe!0x00007ff6d00d73a0,24,Discord.exe:2; ntoskrnl.exe:1
+MsMpEng.exe,4424,15748,3,2.5,mpengine.dll!0x00007ffa60c5a990,8,mpengine.dll:2; ntoskrnl.exe:1
+EOSOverlayRenderer-Win64-Shipping.exe,15016,17248,3,1.471,libcef.dll!0x00007ffa25660cc0,9,ntoskrnl.exe:2; FLTMGR.SYS:1
+PresentMonService.exe,2416,16468,3,50.0,PresentMonService.exe!0x00007ff7c0f65fb0,25,PresentMonService.exe:2; ntoskrnl.exe:1
+claude.exe,12328,17852,3,1.068,claude.exe!0x00007ff7ce158770,142,ntoskrnl.exe:2; claude.exe:1
+pcssagent.exe,4296,7116,3,1.863,ucrtbase.dll!0x00007ffab946cd00,12,"Unknown"":2; ntoskrnl.exe:1"
+claude.exe,10452,13220,3,1.068,amdxx64.dll!0x00007ffaadd37bb0,51,ntoskrnl.exe:3
+SystemSettings.exe,2796,14668,3,0.246,AudioHandlers.dll!0x00007ffa43f93a70,26,AudioSes.dll:2; ntoskrnl.exe:1
+explorer.exe,7620,10040,3,4.348,Windows.UI.Xaml.dll!0x00007ffab09756c0,52,ntoskrnl.exe:2; amdkmdag.sys:1
+svchost.exe,17452,6104,3,0.987,svchost.exe!0x00007ff74c464fe0,6,ntoskrnl.exe:2; Ntfs.sys:1
+lsass.exe,1596,1676,3,33.333,ntdll.dll!0x00007ffabba302d0,70,rpcrt4.dll:2; ntoskrnl.exe:1
+pwsh.exe,2140,11036,3,2.222,coreclr.dll!0x00007ffa739eaa40,0,ntdll.dll:1; Ntfs.sys:1; clrjit.dll:1
+System,4,252,2,0.517,ntoskrnl.exe!0xfffff804827c20f0,243,ntoskrnl.exe:2
+uv.exe,14076,1472,2,100.0,ntdll.dll!0x00007ffabba302d0,2,ntoskrnl.exe:1; ntdll.dll:1
+claude.exe,9948,15868,2,0.712,claude.exe!0x00007ff78ea1b3a0,89,ntoskrnl.exe:1; ntdll.dll:1
+claude.exe,10452,16424,2,0.712,ntdll.dll!0x00007ffabba302d0,15,ntoskrnl.exe:2
+explorer.exe,7620,4236,2,2.899,ntdll.dll!0x00007ffabba302d0,18,amdxx64.dll:1; ntoskrnl.exe:1
+EpicWebHelper.exe,15840,4432,2,33.333,ntdll.dll!0x00007ffabba302d0,15,ntoskrnl.exe:1; d3d11.dll:1
+claude.exe,18276,15772,2,0.712,ntdll.dll!0x00007ffabba302d0,13,ntoskrnl.exe:2
+svchost.exe,2236,2272,2,0.658,CoreMessaging.dll!0x00007ffab56bce10,18,ntoskrnl.exe:2
+bash.exe,244,17812,2,3.125,msys-2.0.dll!0x0000000210045450,11,ntoskrnl.exe:2
+Discord.exe,6388,3044,2,0.059,Discord.exe!0x00007ff6d16fb0c0,23,ntoskrnl.exe:2

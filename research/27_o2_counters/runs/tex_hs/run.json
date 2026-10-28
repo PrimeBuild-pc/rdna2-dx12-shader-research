@@ -1,0 +1,15 @@
+{
+  "set": "tex_hs",
+  "tag": "tex_hs",
+  "pid": 10608,
+  "samples": 16,
+  "session": {
+    "counters": "8",
+    "passes": "1",
+    "samples_per_pass": "16",
+    "first_frame": "140"
+  },
+  "rows": 128,
+  "executable_sha256": "94566a1b0a50eceb178d21033bedb364ba8daa8905ad89cff86309d68df905ba",
+  "shader_custom_hash": "52CE6C5E64AB2E82"
+}

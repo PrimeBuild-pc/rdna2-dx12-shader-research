@@ -1,0 +1,2828 @@
+{
+ "inf": {
+  "Packages/Drivers/AMDISP/AMDCAMERA/WT64A/amdcamera.inf": {
+   "sections": [
+    "AMD.NTamd64",
+    "AmdCamera",
+    "AmdCamera.CopyDeviceMFT",
+    "AmdCamera.CopyFiles",
+    "AmdCamera.CopyMisc",
+    "AmdCamera.DeviceMFT.AddReg",
+    "AmdCamera.GC1029.AddReg",
+    "AmdCamera.HM1092.AddReg",
+    "AmdCamera.HW",
+    "AmdCamera.HW.AddReg",
+    "AmdCamera.Interfaces",
+    "AmdCamera.OG0VA1B.AddReg",
+    "AmdCamera.OV02C10.AddReg",
+    "AmdCamera.OV05C.AddReg",
+    "AmdCamera.OV08X.AddReg",
+    "AmdCamera.OV13B.AddReg",
+    "AmdCamera.OV2740.AddReg",
+    "AmdCamera.OV9234.AddReg",
+    "AmdCamera.ServiceInstall",
+    "AmdCamera.ServiceInstall.AddReg",
+    "AmdCamera.Services",
+    "AmdCamera.VD55G0.AddReg",
+    "CaptureInterfaceGC1029.NT",
+    "CaptureInterfaceHM1092.NT",
+    "CaptureInterfaceOG0VA1B.NT",
+    "CaptureInterfaceOV02C10.NT",
+    "CaptureInterfaceOV05C.NT",
+    "CaptureInterfaceOV08X.NT",
+    "CaptureInterfaceOV13B.NT",
+    "CaptureInterfaceOV2740.NT",
+    "CaptureInterfaceOV9234.NT",
+    "CaptureInterfaceVD55G0.NT",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 38,
+   "mentioned_files": [
+    "amdcamera.inf",
+    "amdcamera.sys",
+    "amdispdevicemft.dll",
+    "ks.inf",
+    "kscaptur.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdcamera.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "08/22/2025,11.04.02.1159"
+   ],
+   "classguid": [
+    "Camera",
+    "{ca3e7ab9-b4c3-4ae6-8251-579ef933890f}"
+   ]
+  },
+  "Packages/Drivers/AMDISP/AMDISP/WT64A/amdisp.inf": {
+   "sections": [
+    "AMD.NTamd64",
+    "AMD_SRX.NTamd64",
+    "Companion_Dir",
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SecureISPDriver_SRX_wdfsect",
+    "SecureISPDriver_wdfsect",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version",
+    "ispBridgeDevice_Device.NT",
+    "ispBridgeDevice_Device.NT.Services",
+    "ispBridgeDevice_Device.NT.Wdf",
+    "ispBridgeDevice_Device_SRX.NT",
+    "ispBridgeDevice_Device_SRX.NT.Services",
+    "ispBridgeDevice_Device_SRX.NT.Wdf",
+    "ispBridgeDevice_Service_Inst",
+    "ispBridgeDevice_wdfsect",
+    "ispBridge_SRX_companions",
+    "ispBridge_companions"
+   ],
+   "n_sections": 22,
+   "mentioned_files": [
+    "amdisp.inf",
+    "amdisp.sys",
+    "amdsecisp.dll",
+    "amdsecisp_srx.dll"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdisp.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "08/22/2025,11.04.02.1159"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/AMDISP/GC1029/WT64A/sensorGC1029.inf": {
+   "sections": [
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Standard.NTamd64",
+    "Strings",
+    "Version",
+    "sensorGC1029_Copy_Misc",
+    "sensorGC1029_Device.NT",
+    "sensorGC1029_Device.NT.CoInstallers",
+    "sensorGC1029_Device.NT.Services",
+    "sensorGC1029_Device.NT.Wdf",
+    "sensorGC1029_Device_CoInstaller_AddReg",
+    "sensorGC1029_Device_CoInstaller_CopyFiles",
+    "sensorGC1029_Service_Inst",
+    "sensorGC1029_wdfsect"
+   ],
+   "n_sections": 17,
+   "mentioned_files": [
+    "sensorgc1029.inf",
+    "sensorgc1029.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "sensorGC1029.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/22/2025,11.04.02.1159"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/AMDISP/HM1092/WT64A/sensorHM1092.inf": {
+   "sections": [
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Standard.NTamd64",
+    "Strings",
+    "Version",
+    "sensorHM1092_Copy_Misc",
+    "sensorHM1092_Device.NT",
+    "sensorHM1092_Device.NT.CoInstallers",
+    "sensorHM1092_Device.NT.Services",
+    "sensorHM1092_Device.NT.Wdf",
+    "sensorHM1092_Device_CoInstaller_AddReg",
+    "sensorHM1092_Device_CoInstaller_CopyFiles",
+    "sensorHM1092_Service_Inst",
+    "sensorHM1092_wdfsect"
+   ],
+   "n_sections": 17,
+   "mentioned_files": [
+    "sensorhm1092.inf",
+    "sensorhm1092.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "sensorHM1092.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/22/2025,11.04.02.1159"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/AMDISP/OV05C/WT64A/sensorOV05C.inf": {
+   "sections": [
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Standard.NTamd64",
+    "Strings",
+    "Version",
+    "sensorOV05C_Copy_Misc",
+    "sensorOV05C_Device.NT",
+    "sensorOV05C_Device.NT.CoInstallers",
+    "sensorOV05C_Device.NT.Services",
+    "sensorOV05C_Device.NT.Wdf",
+    "sensorOV05C_Device_CoInstaller_AddReg",
+    "sensorOV05C_Device_CoInstaller_CopyFiles",
+    "sensorOV05C_Service_Inst",
+    "sensorOV05C_wdfsect"
+   ],
+   "n_sections": 17,
+   "mentioned_files": [
+    "sensorov05c.inf",
+    "sensorov05c.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "sensorOV05C.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/22/2025,11.04.02.1159"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/AMDISP/OV08X/WT64A/sensorOV08X.inf": {
+   "sections": [
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Standard.NTamd64",
+    "Strings",
+    "Version",
+    "sensorOV08X_Copy_Misc",
+    "sensorOV08X_Device.NT",
+    "sensorOV08X_Device.NT.CoInstallers",
+    "sensorOV08X_Device.NT.Services",
+    "sensorOV08X_Device.NT.Wdf",
+    "sensorOV08X_Device_CoInstaller_AddReg",
+    "sensorOV08X_Device_CoInstaller_CopyFiles",
+    "sensorOV08X_Service_Inst",
+    "sensorOV08X_wdfsect"
+   ],
+   "n_sections": 17,
+   "mentioned_files": [
+    "sensorov08x.inf",
+    "sensorov08x.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "sensorOV08X.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/22/2025,11.04.02.1159"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/AMDISP/OV13B/WT64A/sensorOV13B.inf": {
+   "sections": [
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Standard.NTamd64",
+    "Strings",
+    "Version",
+    "sensorOV13B_Copy_Misc",
+    "sensorOV13B_Device.NT",
+    "sensorOV13B_Device.NT.CoInstallers",
+    "sensorOV13B_Device.NT.Services",
+    "sensorOV13B_Device.NT.Wdf",
+    "sensorOV13B_Device_CoInstaller_AddReg",
+    "sensorOV13B_Device_CoInstaller_CopyFiles",
+    "sensorOV13B_Service_Inst",
+    "sensorOV13B_wdfsect"
+   ],
+   "n_sections": 17,
+   "mentioned_files": [
+    "sensorov13b.inf",
+    "sensorov13b.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "sensorOV13B.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/22/2025,11.04.02.1159"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/AMDNPUMCDM/WT64A/kipudrv.inf": {
+   "sections": [
+    "ControlFlags",
+    "DestinationDirs",
+    "IPUHW.AddReg",
+    "IpuMcdmDriver.AddReg",
+    "IpuMcdmDriver.CopyMisc",
+    "IpuMcdmDriver.CopyXclbin",
+    "IpuMcdmDriver.Dpu",
+    "IpuMcdmDriver.Elf",
+    "IpuMcdmDriver.Mfg.NTamd64.10.0...22000",
+    "IpuMcdmDriver.Miniport",
+    "IpuMcdmDriver.Mobilenet",
+    "IpuMcdmDriver.NT",
+    "IpuMcdmDriver.NT.HW",
+    "IpuMcdmDriver.NT.Services",
+    "IpuMcdmDriver.UserMode",
+    "IpuMcdmDriver.UserModeAMD",
+    "IpuMcdmDriver_EventLog_AddReg",
+    "IpuMcdmDriver_EventLog_Inst",
+    "IpuMcdmDriver_Generic_Service_Inst",
+    "IpuMcdm_Service_Inst_AddReg",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 25,
+   "mentioned_files": [
+    "1x4.xclbin",
+    "1x4_2.5.0.0-518_ipu_2.xclbin",
+    "1x4_2.5.0.189-1.xclbin",
+    "1x4_2.5.0.259-365.xclbin",
+    "1x4_3.5.0.0-1482_ipu_2.xclbin",
+    "1x4_3.5.0.0-1505.xclbin",
+    "1x4_3.5.0.0-1791.xclbin",
+    "1x4_3.5.0.0-1793_ipu_2.xclbin",
+    "1x4_3.5.0.0-1990_ipu_2.xclbin",
+    "1x4_3.5.0.0-2044_ipu_2.xclbin",
+    "1x4_3.5.0.0-2145_ipu_2.xclbin",
+    "1x4_3.5.0.0-2351.xclbin",
+    "1x4_3.5.0.0-798.xclbin",
+    "1x4_3.5.0.0-947_ipu_2.xclbin",
+    "1x4_3.5.0.0-949.xclbin",
+    "1x4_3.5.0.050-650.xclbin",
+    "1x4_v0_122.xclbin",
+    "4x4_3.5.0.0-1483_ipu_2.xclbin",
+    "4x4_3.5.0.0-1506.xclbin",
+    "4x4_3.5.0.0-1792.xclbin",
+    "4x4_3.5.0.0-1794_ipu_2.xclbin",
+    "4x4_3.5.0.0-1987_ipu_2.xclbin",
+    "4x4_3.5.0.0-1989_ipu_2.xclbin",
+    "4x4_3.5.0.0-2046_ipu_2.xclbin",
+    "4x4_3.5.0.0-2160_ipu_2.xclbin",
+    "4x4_3.5.0.0-2352.xclbin",
+    "5x4_3.5.0.0-799.xclbin",
+    "5x4_3.5.0.0-950.xclbin",
+    "5x4_3.5.0.050-651.xclbin",
+    "aie2p_gemm_strix_4x2_bf16.json",
+    "aie2p_gemm_strix_4x2_bf16.xclbin",
+    "aie2p_gemm_vm_strix_4x4.json",
+    "aie2p_gemm_vm_strix_4x4.xclbin",
+    "aie_reconfig_overhead_17f0_10.elf",
+    "aie_reconfig_overhead_17f0_11.elf",
+    "aie_reconfig_overhead_17f0_20.elf",
+    "aieml_gemm_asr.json",
+    "aieml_gemm_asr.xclbin",
+    "aieml_gemm_asr_qdq.json",
+    "aieml_gemm_asr_qdq.xclbin",
+    "aieml_gemm_vm_phx_4x4.json",
+    "aieml_gemm_vm_phx_4x4.xclbin",
+    "aieml_gemm_vm_phx_4x4_bf16.json",
+    "aieml_gemm_vm_phx_4x4_bf16.xclbin",
+    "aks.dll",
+    "akskernels.dll",
+    "amd_aie2p_4x4_overlay_3.5.0.0-2354_ipu_2.xclbin",
+    "amd_aie2p_4x4_overlay_cfg0_3.5.0.0-2229_ipu_2.xclbin",
+    "amd_aie2p_nx4_overlay_3.5.0.0-2353_ipu_2.xclbin",
+    "amd_taau_ops.rml_plugin.dll",
+    "benchmark_17f0_10.json",
+    "benchmark_17f0_11.json",
+    "benchmark_17f0_20.json",
+    "buffer_sizes.json",
+    "df_bw_17f0_10.elf",
+    "df_bw_17f0_11.elf",
+    "df_bw_17f0_20.elf",
+    "gemm_17f0_10.xclbin",
+    "gemm_17f0_11.xclbin",
+    "gemm_17f0_20.xclbin",
+    "gemm_elf_17f0_10.xclbin",
+    "gemm_elf_17f0_11.xclbin",
+    "gemm_elf_17f0_20.xclbin",
+    "gemm_int8_17f0_10.elf",
+    "gemm_int8_17f0_11.elf",
+    "gemm_int8_17f0_20.elf",
+    "iologmsg.dll",
+    "ipustack.sys",
+    "kipudrv.inf",
+    "machine.inf",
+    "maize.dll",
+    "mobilenet_4col_17f0_10.elf",
+    "mobilenet_4col_17f0_11.elf",
+    "mobilenet_4col_17f0_20.elf",
+    "mobilenet_elf_17f0_10.xclbin",
+    "mobilenet_elf_17f0_11.xclbin",
+    "mobilenet_elf_17f0_20.xclbin",
+    "mobilenet_ifm.bin",
+    "mobilenet_param.bin",
+    "nop_17f0_10.elf",
+    "nop_17f0_11.elf",
+    "nop_17f0_20.elf",
+    "preemption_4x4_17f0.xclbin",
+    "preemption_4x8_17f0.xclbin",
+    "preemption_memtile_4x4.elf",
+    "preemption_memtile_4x8.elf",
+    "preemption_noop_4x4.elf",
+    "preemption_noop_4x8.elf",
+    "qdq.1x4_3.5.0.0-1481_ipu_2.xclbin",
+    "radeonml.dll",
+    "radeonml_aks.dll",
+    "radeonml_directml.dll",
+    "radeonml_ipu.dll",
+    "tct_1col_17f0_10.elf",
+    "tct_1col_17f0_11.elf",
+    "tct_1col_17f0_20.elf",
+    "tct_4col_17f0_10.elf",
+    "tct_4col_17f0_11.elf",
+    "tct_4col_17f0_20.elf",
+    "trace-logging-aks.dll",
+    "tvm_ipu.dll",
+    "tvm_ipu_runtime.dll",
+    "validate_1502_00.xclbin",
+    "validate_17f0_00.xclbin",
+    "validate_17f0_10.xclbin",
+    "validate_17f0_11.xclbin",
+    "validate_17f0_20.xclbin",
+    "validate_elf_17f0_10.xclbin",
+    "validate_elf_17f0_11.xclbin",
+    "validate_elf_17f0_20.xclbin",
+    "vitis-ai-runtime.dll",
+    "vitis-ai-runtime2.dll",
+    "xdp_core.dll",
+    "xdp_ml_timeline_plugin.dll",
+    "xdp_user_plugin.dll",
+    "xrt-smi.exe",
+    "xrt_core.dll",
+    "xrt_coreutil.dll"
+   ],
+   "binary_keys": {
+    "EventMessageFile": [
+     {
+      "section": "IpuMcdmDriver_EventLog_AddReg",
+      "subkey": "",
+      "data": "\"%%SystemRoot%%\\System32\\IoLogMsg.dll\""
+     }
+    ]
+   },
+   "catalog": [
+    "kipudrv.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "10/10/2025,32.00.0203.314"
+   ],
+   "classguid": [
+    "ComputeAccelerator",
+    "{F01A9D53-3FF6-48D2-9F97-C8A7004BE10C}"
+   ]
+  },
+  "Packages/Drivers/AMDNPUWDF/WT64A/kipudrv.inf": {
+   "sections": [
+    "AMD.NTamd64.10.0...14393",
+    "AMD.NTamd64.10.0...22000",
+    "DestinationDirs",
+    "Drivers_Dir",
+    "IPU.AddReg",
+    "IPUDriver.CopyMisc",
+    "IPUDriver.XRT",
+    "IPUHW.AddReg",
+    "IpuDriver.dpu",
+    "IpuDriver.phx",
+    "Manufacturer",
+    "NullDriverHW.AddReg",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version",
+    "kipudrv_Device.NT",
+    "kipudrv_Device.NT.HW",
+    "kipudrv_Device.NT.Services",
+    "kipudrv_Device.NT.Wdf",
+    "kipudrv_Service_Inst",
+    "kipudrv_Service_Inst_AddReg",
+    "kipudrv_null_driver.NT",
+    "kipudrv_null_driver.NT.HW",
+    "kipudrv_null_driver.NT.Services",
+    "kipudrv_wdfsect"
+   ],
+   "n_sections": 26,
+   "mentioned_files": [
+    "1x4.xclbin",
+    "1x4_2.5.0.189-1.xclbin",
+    "1x4_2.5.0.259-365.xclbin",
+    "1x4_3.5.0.0-1505.xclbin",
+    "1x4_3.5.0.0-1562.xclbin",
+    "1x4_3.5.0.0-1791.xclbin",
+    "1x4_3.5.0.0-2388.xclbin",
+    "1x4_3.5.0.0-949.xclbin",
+    "1x4_v0_122.xclbin",
+    "4x4_3.5.0.0-1506.xclbin",
+    "4x4_3.5.0.0-1561.xclbin",
+    "4x4_3.5.0.0-1792.xclbin",
+    "4x4_3.5.0.0-2384.xclbin",
+    "5x4_3.5.0.0-950.xclbin",
+    "aieml_gemm_asr.json",
+    "aieml_gemm_asr.xclbin",
+    "aieml_gemm_asr_qdq.json",
+    "aieml_gemm_asr_qdq.xclbin",
+    "aieml_gemm_vm_phx_4x4.json",
+    "aieml_gemm_vm_phx_4x4.xclbin",
+    "aieml_gemm_vm_phx_4x4_bf16.json",
+    "aieml_gemm_vm_phx_4x4_bf16.xclbin",
+    "aks.dll",
+    "akskernels.dll",
+    "amd_taau_ops.rml_plugin.dll",
+    "amd_xrt_core.dll",
+    "concrt140.dll",
+    "flexmlrt.dll",
+    "gemm_4x4_a16fw3acc32f.xclbin",
+    "gemm_4x4_a16fw4acc32f.xclbin",
+    "gemm_4x4_a8w8acc32.xclbin",
+    "graph-engine.dll",
+    "json-c.dll",
+    "kipudrv.inf",
+    "kipudrv.sys",
+    "libprotobuf.dll",
+    "machine.inf",
+    "maize.dll",
+    "mem-manager.dll",
+    "msvcp140.dll",
+    "onnxruntime.dll",
+    "onnxruntime_vitisai_ep.dll",
+    "radeonml.dll",
+    "radeonml_aks.dll",
+    "radeonml_directml.dll",
+    "radeonml_ipu.dll",
+    "radeonml_tvm.dll",
+    "runner.dll",
+    "target-factory.dll",
+    "trace-logging-aks.dll",
+    "trace-logging.dll",
+    "tvm_ipu.dll",
+    "tvm_ipu_runtime.dll",
+    "tvm_runtime.dll",
+    "unilog.dll",
+    "util.dll",
+    "validate.xclbin",
+    "validate_phx.xclbin",
+    "vart-trace.dll",
+    "vcruntime140_1.dll",
+    "xbutil.exe",
+    "xdp_core.dll",
+    "xdp_ml_timeline_plugin.dll",
+    "xir.dll",
+    "xrt_core.dll",
+    "xrt_coreutil.dll"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "kipudrv.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "07/18/2024,10.1109.0008.196"
+   ],
+   "classguid": [
+    "System",
+    "{4d36e97d-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/ACPBtAfd/WT64A/amdacpbt.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AMDAcpBtInstall",
+    "AMDAcpBtInstall.AddReg",
+    "AMDAcpBtInstall.CopyList",
+    "AMDAcpBtInstall.I.TopologyBtA2dpHpSpeaker",
+    "AMDAcpBtInstall.I.TopologyBtA2dpHpSpeaker.AddReg",
+    "AMDAcpBtInstall.I.TopologyBtHfpMic",
+    "AMDAcpBtInstall.I.TopologyBtHfpMic.AddReg",
+    "AMDAcpBtInstall.I.TopologyBtHfpSpeaker",
+    "AMDAcpBtInstall.I.TopologyBtHfpSpeaker.AddReg",
+    "AMDAcpBtInstall.I.WaveBtA2dpHpSpeaker",
+    "AMDAcpBtInstall.I.WaveBtA2dpHpSpeaker.AddReg",
+    "AMDAcpBtInstall.I.WaveBtHfpMic",
+    "AMDAcpBtInstall.I.WaveBtHfpMic.AddReg",
+    "AMDAcpBtInstall.I.WaveBtHfpSpeaker",
+    "AMDAcpBtInstall.I.WaveBtHfpSpeaker.AddReg",
+    "AMDAcpBtInstall.Interfaces",
+    "AMDAcpBtInstall.Services",
+    "AMDAcpBtInstall.Wdf",
+    "AcpBtAudio_Service_Install",
+    "AcpBt_Install_WdfSect",
+    "DestinationDirs",
+    "EPPropertiesBtA2dpHpSpk.AddReg",
+    "EPPropertiesBtMic0.AddReg",
+    "EPPropertiesBtSpk.AddReg",
+    "Manufacturer",
+    "MsApoFxProxy.I.Association0.AddReg",
+    "SignatureAttributes",
+    "SignatureAttributes.DRM",
+    "SignatureAttributes.PETrust",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 34,
+   "mentioned_files": [
+    "amdacpbt.inf",
+    "amdacpbt.sys",
+    "amdacpbtscoext.inf",
+    "ks.inf",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {
+    "Driver": [
+     {
+      "section": "AMDAcpBtInstall.AddReg",
+      "subkey": "",
+      "data": "amdacpbt.sys"
+     }
+    ]
+   },
+   "catalog": [
+    "amdacpbt.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/07/2025, 6.0.2.59"
+   ],
+   "classguid": [
+    "Media",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/ACPBtAfd/WT64A/amdacpbtscoext/amdacpbtscoext.inf": {
+   "sections": [
+    "AcpConfig.CopyList",
+    "DestinationDirs",
+    "Manufacturer",
+    "QCA.NTamd64.10.0...22000",
+    "QCABTEXT",
+    "QCABTEXT.HW",
+    "QCABTEXT.HW.AddReg",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "TargetComputers",
+    "Version"
+   ],
+   "n_sections": 12,
+   "mentioned_files": [],
+   "binary_keys": {},
+   "catalog": [
+    "amdacpbtscoext.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "02/15/2022,2.0.0.453"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Audio/ACPBus2/WT64A/amdacpbus2.inf": {
+   "sections": [
+    "ACP_7_0.NT",
+    "ACP_7_0.NT.HW",
+    "ACP_7_0.NT.Services",
+    "ACP_Device.CopyFiles",
+    "AMD.NTamd64.10.0...16299",
+    "AMD.NTx86.10.0...16299",
+    "AcpHW.AddReg",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version",
+    "amdacpbus2_Service_Inst"
+   ],
+   "n_sections": 14,
+   "mentioned_files": [
+    "aaf_graphs.dat",
+    "acpimg_7_0.dat",
+    "amdacpbus2.inf",
+    "amdacpbus2.sys",
+    "amdacpbusext.inf",
+    "amdacprgmext.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdacpbus2.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/26/2025,7.0.2.51"
+   ],
+   "classguid": [
+    "System",
+    "{4d36e97d-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/ACPBus2/WT64A/amdacpbusext/amdacpbusext.inf": {
+   "sections": [
+    "ACP_6_0.AddReg",
+    "ACP_6_0.NT",
+    "ACP_6_2.AddReg",
+    "ACP_6_2.NT",
+    "ACP_6_F.AddReg",
+    "ACP_6_F.NT",
+    "ACP_7_0.AddReg",
+    "ACP_7_0.NT",
+    "AMD.NTamd64.10.0...16299",
+    "AcpConfig.ACP_6_0_CopyList",
+    "AcpConfig.ACP_6_2_CopyList",
+    "AcpConfig.ACP_6_F_CopyList",
+    "AcpConfig.ACP_7_0_CopyList",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 19,
+   "mentioned_files": [
+    "acpcfg0001.dat",
+    "acpcfg0002.dat",
+    "acpcfg0003.dat",
+    "acpcfg0005.dat",
+    "amdacpbusext.inf"
+   ],
+   "binary_keys": {
+    "AcpConfigDatPath": [
+     {
+      "section": "ACP_6_0.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0001.dat\""
+     },
+     {
+      "section": "ACP_6_2.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0002.dat\""
+     },
+     {
+      "section": "ACP_6_F.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0003.dat\""
+     },
+     {
+      "section": "ACP_7_0.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0005.dat\""
+     }
+    ]
+   },
+   "catalog": [
+    "amdacpbusext.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "07/15/2026,6.0.0.132"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Audio/ACPBus2/WT64A/amdacprgmext/amdacprgmext.inf": {
+   "sections": [
+    "DestinationDirs",
+    "Device.AddReg",
+    "Device.CopyList",
+    "DeviceExtension_Install",
+    "DeviceExtensions.NTamd64.10.0...26100",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 10,
+   "mentioned_files": [
+    "amdacprgmext.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdacprgmext.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "09/15/2025,7.0.24.0"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Audio/HDABus/WT64A/amdhdaudbus.inf": {
+   "sections": [
+    "AMD.NTamd64",
+    "AMD.NTx86",
+    "AMDHDAudio_Device",
+    "AMDHDAudio_Device.AddReg",
+    "AMDHDAudio_Device.AddReg_HW",
+    "AMDHDAudio_Device.CopyList",
+    "AMDHDAudio_Device.HW",
+    "AMDHDAudio_Device.Services",
+    "AMDHDAudio_Device.Wdf",
+    "AMDHDAudio_Install_Wdfsect",
+    "AMDHDAudio_Service_Install",
+    "DestinationDirs",
+    "Manufacturer",
+    "SignatureAttributes",
+    "SignatureAttributes.DRM",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 19,
+   "mentioned_files": [
+    "amdhdaudbus.inf",
+    "amdhdaudbus.sys",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdhdaudbus.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "02/19/2019,10.0.0.35"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/I2S/WT64A/amdi2safd.inf": {
+   "sections": [
+    "AMD.NTamd64",
+    "AMD.NTx86",
+    "AZHAP_binaries.CopyList",
+    "AZHAP_dspimage.CopyList",
+    "DestinationDirs",
+    "EPPropertiesMic0.AddReg",
+    "EPPropertiesMic1.AddReg",
+    "EPPropertiesNonOffload.AddReg",
+    "EPPropertiesOffload.AddReg",
+    "EPPropertiesSpk.AddReg",
+    "HdAudSecurity.AddReg",
+    "I2SAudioBranding.AddProperty",
+    "I2SAudioInstall",
+    "I2SAudioInstall.AddReg",
+    "I2SAudioInstall.CopyList",
+    "I2SAudioInstall.HW",
+    "I2SAudioInstall.I.TopologyMicIn0",
+    "I2SAudioInstall.I.TopologyMicIn0.AddReg",
+    "I2SAudioInstall.I.TopologyMicIn1",
+    "I2SAudioInstall.I.TopologyMicIn1.AddReg",
+    "I2SAudioInstall.I.TopologySpeaker1",
+    "I2SAudioInstall.I.TopologySpeaker1.AddReg",
+    "I2SAudioInstall.I.TopologySpeakerNonOffload0",
+    "I2SAudioInstall.I.TopologySpeakerNonOffload0.AddReg",
+    "I2SAudioInstall.I.TopologySpeakerOffload0",
+    "I2SAudioInstall.I.TopologySpeakerOffload0.AddReg",
+    "I2SAudioInstall.I.WaveMicIn0",
+    "I2SAudioInstall.I.WaveMicIn0.AddReg",
+    "I2SAudioInstall.I.WaveMicIn1",
+    "I2SAudioInstall.I.WaveMicIn1.AddReg",
+    "I2SAudioInstall.I.WaveSpeaker1",
+    "I2SAudioInstall.I.WaveSpeaker1.AddReg",
+    "I2SAudioInstall.I.WaveSpeakerNonOffload0",
+    "I2SAudioInstall.I.WaveSpeakerNonOffload0.AddReg",
+    "I2SAudioInstall.I.WaveSpeakerOffload0",
+    "I2SAudioInstall.I.WaveSpeakerOffload0.AddReg",
+    "I2SAudioInstall.Interfaces",
+    "I2SAudioInstall.Services",
+    "I2SAudioInstall.SysFx.Capture",
+    "I2SAudioInstall.SysFx.Render",
+    "I2SAudioInstall.Wdf",
+    "I2SAudio_Install_WdfSect",
+    "I2SAudio_Service_Install",
+    "I2SKSL_Filter_Reg",
+    "KSL_Service_Install",
+    "Manufacturer",
+    "SignatureAttributes",
+    "SignatureAttributes.DRM",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 52,
+   "mentioned_files": [
+    "amdacpksl.sys",
+    "amdi2safd.inf",
+    "amdi2safd.sys",
+    "dspimage_2_2.bin",
+    "ks.inf",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {
+    "Driver": [
+     {
+      "section": "I2SAudioInstall.AddReg",
+      "subkey": "",
+      "data": "amdi2safd.sys"
+     }
+    ]
+   },
+   "catalog": [
+    "amdi2safd.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "12/18/2017,1.0.0.23"
+   ],
+   "classguid": [
+    "MEDIA",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/SDWS/WT64A/amdsdws.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AMDKEYWORDDETECTORADAPTER.AddReg",
+    "Audio_Child_Device.NT",
+    "Audio_Child_Device.NT.Interfaces",
+    "Audio_Child_Device.NT.Services",
+    "Audio_Device.I.Microphone",
+    "Audio_Device.I.Microphone.AddReg",
+    "Audio_Device.I.Speaker",
+    "Audio_Device.I.Speaker.AddReg",
+    "Audio_Device.I.UajHeadphone",
+    "Audio_Device.I.UajHeadphone.AddReg",
+    "Audio_Device.I.UajHeadsetMic",
+    "Audio_Device.I.UajHeadsetMic.AddReg",
+    "Audio_Device.I.UajHeadsetSpk",
+    "Audio_Device.I.UajHeadsetSpk.AddReg",
+    "Audio_Device.I.UajLineIn",
+    "Audio_Device.I.UajLineIn.AddReg",
+    "Audio_Device.I.UajLineOut",
+    "Audio_Device.I.UajLineOut.AddReg",
+    "Audio_Device.I.UajMicrophone",
+    "Audio_Device.I.UajMicrophone.AddReg",
+    "Audio_Device.NT",
+    "Audio_Device.NT.Copy",
+    "Audio_Device.NT.Services",
+    "Audio_Device.NT.Wdf",
+    "Audio_Service_Inst",
+    "Audio_wdfsect",
+    "ControlFlags",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 34,
+   "mentioned_files": [
+    "amdmvaoem.dll",
+    "amdsdws.inf",
+    "amdsdws.sys",
+    "amdsdwsext.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdsdws.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/07/2025, 1.0.2.60"
+   ],
+   "classguid": [
+    "MEDIA",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/SDWS/WT64A/amdsdwsext/amdsdwsext.inf": {
+   "sections": [
+    "AmdDeviceExtensions.NTamd64.10.0...16299",
+    "Apo_AddComponent",
+    "AudioExt_APO_Device.NTamd64",
+    "AudioExt_APO_Device.NTamd64.Components",
+    "AudioExt_APO_Device.NTamd64.Interfaces",
+    "DeviceExtensions.I.Microphone",
+    "DeviceExtensions.I.Microphone.AddReg",
+    "Manufacturer",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 10,
+   "mentioned_files": [
+    "amdsdwsext.inf",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdsdwsext.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "03/28/2024, 1.0.2.0"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Audio/acpafd/wt64a/amdacpafd.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AMDAfdBranding.AddProperty",
+    "AMDAfdInstall",
+    "AMDAfdInstall.AddReg",
+    "AMDAfdInstall.CopyList",
+    "AMDAfdInstall.I.TopologyBthHfpMic",
+    "AMDAfdInstall.I.TopologyBthHfpMic.AddReg",
+    "AMDAfdInstall.I.TopologyBthHfpSpeaker",
+    "AMDAfdInstall.I.TopologyBthHfpSpeaker.AddReg",
+    "AMDAfdInstall.I.TopologyMicIn0",
+    "AMDAfdInstall.I.TopologyMicIn0.AddReg",
+    "AMDAfdInstall.I.TopologyMicIn1",
+    "AMDAfdInstall.I.TopologyMicIn1.AddReg",
+    "AMDAfdInstall.I.TopologyMicInNonOffload1",
+    "AMDAfdInstall.I.TopologyMicInNonOffload1.AddReg",
+    "AMDAfdInstall.I.TopologySpeakerNonOffload0",
+    "AMDAfdInstall.I.TopologySpeakerNonOffload0.AddReg",
+    "AMDAfdInstall.I.WaveBthHfpMic",
+    "AMDAfdInstall.I.WaveBthHfpMic.AddReg",
+    "AMDAfdInstall.I.WaveBthHfpSpeaker",
+    "AMDAfdInstall.I.WaveBthHfpSpeaker.AddReg",
+    "AMDAfdInstall.I.WaveMicIn0",
+    "AMDAfdInstall.I.WaveMicIn0.AddReg",
+    "AMDAfdInstall.I.WaveMicIn1",
+    "AMDAfdInstall.I.WaveMicIn1.AddReg",
+    "AMDAfdInstall.I.WaveMicInNonOffload1",
+    "AMDAfdInstall.I.WaveMicInNonOffload1.AddReg",
+    "AMDAfdInstall.I.WaveSpeakerNonOffload0",
+    "AMDAfdInstall.I.WaveSpeakerNonOffload0.AddReg",
+    "AMDAfdInstall.Interfaces",
+    "AMDAfdInstall.Services",
+    "AMDAfdInstall.SysFx.CaptureEndpoint",
+    "AMDAfdInstall.SysFx.RenderEndpoint",
+    "AMDAfdInstall.Wdf",
+    "AMDKEYWORDDETECTORADAPTER.AddReg",
+    "AMDKEYWORDDETECTORADAPTER.CopyList",
+    "Afd_Install_WdfSect",
+    "Afd_Service_Install",
+    "DestinationDirs",
+    "EPPropertiesBtMic0.AddReg",
+    "EPPropertiesBtSpk.AddReg",
+    "EPPropertiesMic0.AddReg",
+    "EPPropertiesMic1.AddReg",
+    "EPPropertiesMicInNonOffload.AddReg",
+    "EPPropertiesNonOffload.AddReg",
+    "Manufacturer",
+    "MsApoFxProxy.I.Association0.AddReg",
+    "SignatureAttributes",
+    "SignatureAttributes.DRM",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Strings.0404",
+    "Strings.0804",
+    "Version"
+   ],
+   "n_sections": 55,
+   "mentioned_files": [
+    "amdacpafd.inf",
+    "amdacpafd.sys",
+    "amdmvaoem.dll",
+    "ks.inf",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {
+    "Driver": [
+     {
+      "section": "AMDAfdInstall.AddReg",
+      "subkey": "",
+      "data": "amdacpafd.sys"
+     }
+    ]
+   },
+   "catalog": [
+    "amdacpafd.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/07/2025,6.0.2.59"
+   ],
+   "classguid": [
+    "Media",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/acpafdsvc/wt64a/amdacpafdcomp.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AMDAfdDeviceComponent_CopyFiles",
+    "AMDAfdDeviceComponent_Install.NT",
+    "AMDAfdDeviceComponent_Install.NT.Services",
+    "AmdAfdComponent_EventLogging",
+    "AmdAfdComponent_ServiceInstall",
+    "DestinationDirs",
+    "EventLogAddReg",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 13,
+   "mentioned_files": [
+    "amdacpafdcomp.inf",
+    "amdafdapp.exe",
+    "amdafdsvc.exe",
+    "amdafdsvc_evtmsg.dll"
+   ],
+   "binary_keys": {
+    "EventMessageFile": [
+     {
+      "section": "EventLogAddReg",
+      "subkey": "",
+      "data": "\"%13%\\amdafdsvc_evtmsg.dll\""
+     }
+    ]
+   },
+   "catalog": [
+    "amdacpafdcomp.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "10/30/2024,1.0.0.7"
+   ],
+   "classguid": [
+    "SoftwareComponent",
+    "{5c4c3332-344d-483c-8739-259e934c9cc8}"
+   ]
+  },
+  "Packages/Drivers/Audio/acpafdsvc/wt64a/amdacpafdext.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AMDAfdDevice_ComponentInstall",
+    "AMDAfdExtension_Install.NTAMD64",
+    "AMDAfdExtension_Install.NTAMD64.Components",
+    "Manufacturer",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 7,
+   "mentioned_files": [
+    "amdacpafdcomp.inf",
+    "amdacpafdext.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdacpafdext.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "07/08/2025,1.0.0.11"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Audio/acpbtacx/wt64a/amdacpbtacx.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "Audio_Child_Device.NT",
+    "Audio_Child_Device.NT.Interfaces",
+    "Audio_Child_Device.NT.Services",
+    "Audio_Child_Device_Sideband.NT",
+    "Audio_Child_Device_Sideband.NT.Interfaces",
+    "Audio_Child_Device_Sideband.NT.Services",
+    "Audio_Device.I.Microphone",
+    "Audio_Device.I.Microphone.AddReg",
+    "Audio_Device.I.MicrophoneSideband",
+    "Audio_Device.I.MicrophoneSideband.AddReg",
+    "Audio_Device.I.Speaker",
+    "Audio_Device.I.Speaker.AddReg",
+    "Audio_Device.I.SpeakerSideband",
+    "Audio_Device.I.SpeakerSideband.AddReg",
+    "Audio_Device.NT",
+    "Audio_Device.NT.Copy",
+    "Audio_Device.NT.Services",
+    "Audio_Device.NT.Wdf",
+    "Audio_Service_Inst",
+    "Audio_wdfsect",
+    "ControlFlags",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 28,
+   "mentioned_files": [
+    "amdacpbtacx.inf",
+    "amdacpbtacx.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdacpbtacx.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/07/2025, 6.0.2.34"
+   ],
+   "classguid": [
+    "MEDIA",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/acpbus/wt64a/amdacpbus.inf": {
+   "sections": [
+    "ACP_6_0.NT",
+    "ACP_6_0.NT.HW",
+    "ACP_6_0.NT.Services",
+    "ACP_6_2.NT",
+    "ACP_6_2.NT.HW",
+    "ACP_6_2.NT.Services",
+    "ACP_6_3.NT",
+    "ACP_6_3.NT.HW",
+    "ACP_6_3.NT.Services",
+    "ACP_6_F.NT",
+    "ACP_6_F.NT.HW",
+    "ACP_6_F.NT.Services",
+    "ACP_Device.6_2_CopyFiles",
+    "ACP_Device.6_3_CopyFiles",
+    "ACP_Device.6_F_CopyFiles",
+    "ACP_Device.CopyFiles",
+    "AMD.NTamd64.10.0...16299",
+    "AMD.NTx86.10.0...16299",
+    "AcpHW.AddReg",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version",
+    "amdacpbus_Service_Inst"
+   ],
+   "n_sections": 26,
+   "mentioned_files": [
+    "acpcfg0001.dat",
+    "acpcfg0002.dat",
+    "acpcfg0003.dat",
+    "acpimg0001.dat",
+    "acpimg0002.dat",
+    "acpimg0003.dat",
+    "acpimg0004.dat",
+    "amdacpbus.inf",
+    "amdacpbus.sys",
+    "amdacpbusext.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdacpbus.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "12/23/2025,6.0.2.118"
+   ],
+   "classguid": [
+    "System",
+    "{4d36e97d-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/acpbus/wt64a/amdacpbusext/amdacpbusext.inf": {
+   "sections": [
+    "ACP_6_0.AddReg",
+    "ACP_6_0.NT",
+    "ACP_6_2.AddReg",
+    "ACP_6_2.NT",
+    "ACP_6_F.AddReg",
+    "ACP_6_F.NT",
+    "ACP_7_0.AddReg",
+    "ACP_7_0.NT",
+    "AMD.NTamd64.10.0...16299",
+    "AcpConfig.ACP_6_0_CopyList",
+    "AcpConfig.ACP_6_2_CopyList",
+    "AcpConfig.ACP_6_F_CopyList",
+    "AcpConfig.ACP_7_0_CopyList",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 19,
+   "mentioned_files": [
+    "acpcfg0001.dat",
+    "acpcfg0002.dat",
+    "acpcfg0003.dat",
+    "acpcfg0005.dat",
+    "amdacpbusext.inf"
+   ],
+   "binary_keys": {
+    "AcpConfigDatPath": [
+     {
+      "section": "ACP_6_0.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0001.dat\""
+     },
+     {
+      "section": "ACP_6_2.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0002.dat\""
+     },
+     {
+      "section": "ACP_6_F.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0003.dat\""
+     },
+     {
+      "section": "ACP_7_0.AddReg",
+      "subkey": "",
+      "data": "\"%13%\\acpcfg0005.dat\""
+     }
+    ]
+   },
+   "catalog": [
+    "amdacpbusext.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "07/15/2026,6.0.0.132"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Audio/acphpd/wt64a/amdacphpd.inf": {
+   "sections": [
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version",
+    "amdacphpdCopy",
+    "amdacphpd_Device.NTamd64.10.0...22000",
+    "amdacphpd_Inst.NT",
+    "amdacphpd_Inst.NT.HW",
+    "amdacphpd_Inst.NT.Services",
+    "amdacphpd_Inst.NT.Wdf",
+    "amdacphpd_Install",
+    "hpdaddregistry.AddReg"
+   ],
+   "n_sections": 14,
+   "mentioned_files": [
+    "amdacphpd.dll",
+    "amdacphpd.inf",
+    "wudfrd.inf"
+   ],
+   "binary_keys": {
+    "\"WinUsbPowerPolicyOwnershipDisabled\"": [
+     {
+      "section": "hpdaddregistry.AddReg",
+      "subkey": "",
+      "data": "0,,%13%\\amdacphpd.dll"
+     }
+    ],
+    "\"WdfDefaultIdleInWorkingState\"": [
+     {
+      "section": "hpdaddregistry.AddReg",
+      "subkey": "",
+      "data": "1,,%13%\\amdacphpd.dll"
+     }
+    ],
+    "\"WdfDefaultWakeFromSleepState\"": [
+     {
+      "section": "hpdaddregistry.AddReg",
+      "subkey": "",
+      "data": "1,,%13%\\amdacphpd.dll"
+     }
+    ]
+   },
+   "catalog": [
+    "amdacphpd.cat"
+   ],
+   "provider": [
+    "%PROVIDER%"
+   ],
+   "driverver": [
+    "08/07/2025,1.0.2.20"
+   ],
+   "classguid": [
+    "Sensor",
+    "{5175D334-C371-4806-B3BA-71FD53C9258D}"
+   ]
+  },
+  "Packages/Drivers/Audio/acphpd/wt64a/amdacphpdcomp.inf": {
+   "sections": [
+    "AMD.NTamd64.10.0...17134",
+    "AMDAcpHpdComponent_EventLogging",
+    "AMDAcpHpdComponent_ServiceInstall",
+    "AMDAcpHpdDeviceComponent_CopyFiles",
+    "AMDAcpHpdDeviceComponent_Install.NT",
+    "AMDAcpHpdDeviceComponent_Install.NT.Services",
+    "DestinationDirs",
+    "EventLogAddReg",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 13,
+   "mentioned_files": [
+    "amdacphpdapp.exe",
+    "amdacphpdcomp.inf",
+    "amdacphpdsvc.exe",
+    "amdacphpdsvc_evtmsg.dll"
+   ],
+   "binary_keys": {
+    "EventMessageFile": [
+     {
+      "section": "EventLogAddReg",
+      "subkey": "",
+      "data": "\"%13%\\amdacphpdsvc_evtmsg.dll\""
+     }
+    ]
+   },
+   "catalog": [
+    "amdacphpdcomp.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/07/2025,1.0.2.36"
+   ],
+   "classguid": [
+    "SoftwareComponent",
+    "{5c4c3332-344d-483c-8739-259e934c9cc8}"
+   ]
+  },
+  "Packages/Drivers/Audio/acphpd/wt64a/amdacphpdext.inf": {
+   "sections": [
+    "AMD.NTamd64.10.0...17134",
+    "AMDAcpHpdDevice_ComponentInstall",
+    "AMDAcpHpdExtension_Install.NTAMD64",
+    "AMDAcpHpdExtension_Install.NTAMD64.Components",
+    "Manufacturer",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 7,
+   "mentioned_files": [
+    "amdacphpd.inf",
+    "amdacphpdcomp.inf",
+    "amdacphpdext.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdacphpdext.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "02/06/2025,1.0.41.26"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Audio/acpusbafd/wt64a/amdacpusb.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AMDAcpUsbInstall",
+    "AMDAcpUsbInstall.AddReg",
+    "AMDAcpUsbInstall.CopyList",
+    "AMDAcpUsbInstall.I.TopologyUsbHsMic",
+    "AMDAcpUsbInstall.I.TopologyUsbHsMic.AddReg",
+    "AMDAcpUsbInstall.I.TopologyUsbHsSpeaker",
+    "AMDAcpUsbInstall.I.TopologyUsbHsSpeaker.AddReg",
+    "AMDAcpUsbInstall.I.WaveUsbHsMic",
+    "AMDAcpUsbInstall.I.WaveUsbHsMic.AddReg",
+    "AMDAcpUsbInstall.I.WaveUsbHsSpeaker",
+    "AMDAcpUsbInstall.I.WaveUsbHsSpeaker.AddReg",
+    "AMDAcpUsbInstall.Interfaces",
+    "AMDAcpUsbInstall.Services",
+    "AMDAcpUsbInstall.Wdf",
+    "AcpUsbAudio_Service_Install",
+    "AcpUsb_Install_WdfSect",
+    "DestinationDirs",
+    "Manufacturer",
+    "MsApoFxProxy.I.Association0.AddReg",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 24,
+   "mentioned_files": [
+    "amdacpusb.inf",
+    "amdacpusb.sys",
+    "ks.inf",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {
+    "Driver": [
+     {
+      "section": "AMDAcpUsbInstall.AddReg",
+      "subkey": "",
+      "data": "amdacpusb.sys"
+     }
+    ]
+   },
+   "catalog": [
+    "amdacpusb.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/07/2025, 6.0.2.37"
+   ],
+   "classguid": [
+    "Media",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/hdmi/wt64a/AtihdWT6.inf": {
+   "sections": [
+    "AMD.NTamd64.10.0.1",
+    "AMD.NTamd64.10.0.1..16299",
+    "AMD.NTamd64.10.0.1..22621",
+    "AMD.NTamd64.6.0.1",
+    "AMD.NTamd64.6.1.1",
+    "AMD.NTamd64.6.2.1",
+    "AMD.NTamd64.6.3.1",
+    "ControlFlags",
+    "DestinationDirs",
+    "EPProperties.AddReg",
+    "HDAudio.SysFx.Render",
+    "HDAudioCapx.SysFx.Render",
+    "HDAudioInstall",
+    "HDAudioInstall.AddReg",
+    "HDAudioInstall.CopyList",
+    "HDAudioInstall.CopyList_wNxt",
+    "HDAudioInstall.HW",
+    "HDAudioInstall.Services",
+    "HDAudioInstall.e0DPOutputTopo",
+    "HDAudioInstall.e0DPOutputTopo.AddReg",
+    "HDAudioInstall.e0DPOutputWave",
+    "HDAudioInstall.e0DPOutputWave.AddReg",
+    "HDAudioInstall.e0HDMIOutputTopo",
+    "HDAudioInstall.e0HDMIOutputTopo.AddReg",
+    "HDAudioInstall.e0HDMIOutputWave",
+    "HDAudioInstall.e0HDMIOutputWave.AddReg",
+    "HDAudioInstall.e0VirtualEPOutputTopo",
+    "HDAudioInstall.e0VirtualEPOutputTopo.AddReg",
+    "HDAudioInstall.e0VirtualEPOutputWave",
+    "HDAudioInstall.e0VirtualEPOutputWave.AddReg",
+    "HDAudioInstall.e1DPOutputTopo",
+    "HDAudioInstall.e1DPOutputTopo.AddReg",
+    "HDAudioInstall.e1DPOutputWave",
+    "HDAudioInstall.e1DPOutputWave.AddReg",
+    "HDAudioInstall.e1HDMIOutputTopo",
+    "HDAudioInstall.e1HDMIOutputTopo.AddReg",
+    "HDAudioInstall.e1HDMIOutputWave",
+    "HDAudioInstall.e1HDMIOutputWave.AddReg",
+    "HDAudioInstall.e2DPOutputTopo",
+    "HDAudioInstall.e2DPOutputTopo.AddReg",
+    "HDAudioInstall.e2DPOutputWave",
+    "HDAudioInstall.e2DPOutputWave.AddReg",
+    "HDAudioInstall.e2HDMIOutputTopo",
+    "HDAudioInstall.e2HDMIOutputTopo.AddReg",
+    "HDAudioInstall.e2HDMIOutputWave",
+    "HDAudioInstall.e2HDMIOutputWave.AddReg",
+    "HDAudioInstall.e3DPOutputTopo",
+    "HDAudioInstall.e3DPOutputTopo.AddReg",
+    "HDAudioInstall.e3DPOutputWave",
+    "HDAudioInstall.e3DPOutputWave.AddReg",
+    "HDAudioInstall.e3HDMIOutputTopo",
+    "HDAudioInstall.e3HDMIOutputTopo.AddReg",
+    "HDAudioInstall.e3HDMIOutputWave",
+    "HDAudioInstall.e3HDMIOutputWave.AddReg",
+    "HDAudioInstall.e4DPOutputTopo",
+    "HDAudioInstall.e4DPOutputTopo.AddReg",
+    "HDAudioInstall.e4DPOutputWave",
+    "HDAudioInstall.e4DPOutputWave.AddReg",
+    "HDAudioInstall.e4HDMIOutputTopo",
+    "HDAudioInstall.e4HDMIOutputTopo.AddReg",
+    "HDAudioInstall.e4HDMIOutputWave",
+    "HDAudioInstall.e4HDMIOutputWave.AddReg",
+    "HDAudioInstall.e5DPOutputTopo",
+    "HDAudioInstall.e5DPOutputTopo.AddReg",
+    "HDAudioInstall.e5DPOutputWave",
+    "HDAudioInstall.e5DPOutputWave.AddReg",
+    "HDAudioInstall.e5HDMIOutputTopo",
+    "HDAudioInstall.e5HDMIOutputTopo.AddReg",
+    "HDAudioInstall.e5HDMIOutputWave",
+    "HDAudioInstall.e5HDMIOutputWave.AddReg",
+    "HDAudioInstall.e6DPOutputTopo",
+    "HDAudioInstall.e6DPOutputTopo.AddReg",
+    "HDAudioInstall.e6DPOutputWave",
+    "HDAudioInstall.e6DPOutputWave.AddReg",
+    "HDAudioInstall.e6HDMIOutputTopo",
+    "HDAudioInstall.e6HDMIOutputTopo.AddReg",
+    "HDAudioInstall.e6HDMIOutputWave",
+    "HDAudioInstall.e6HDMIOutputWave.AddReg",
+    "HDAudioInstall_16299",
+    "HDAudioInstall_16299.HW",
+    "HDAudioInstall_16299.Interfaces",
+    "HDAudioInstall_16299.Services",
+    "HDAudioInstallwNxt",
+    "HDAudioInstallwNxt.HW",
+    "HDAudioInstallwNxt.Interfaces",
+    "HDAudioInstallwNxt.Services",
+    "HDAudioInstallwNxt.e0DPOutputTopo",
+    "HDAudioInstallwNxt.e0HDMIOutputTopo",
+    "HDAudioInstallwNxt.e0VirtualEPOutputTopo",
+    "HDAudioInstallwNxt.e1DPOutputTopo",
+    "HDAudioInstallwNxt.e1HDMIOutputTopo",
+    "HDAudioInstallwNxt.e2DPOutputTopo",
+    "HDAudioInstallwNxt.e2HDMIOutputTopo",
+    "HDAudioInstallwNxt.e3DPOutputTopo",
+    "HDAudioInstallwNxt.e3HDMIOutputTopo",
+    "HDAudioInstallwNxt.e4DPOutputTopo",
+    "HDAudioInstallwNxt.e4HDMIOutputTopo",
+    "HDAudioInstallwNxt.e5DPOutputTopo",
+    "HDAudioInstallwNxt.e5HDMIOutputTopo",
+    "HDAudioInstallwNxt.e6DPOutputTopo",
+    "HDAudioInstallwNxt.e6HDMIOutputTopo",
+    "HdAudBranding.AddProperty",
+    "HdAudSecurity.AddReg",
+    "HdAud_Service_Install",
+    "HdAud_Service_Install_wNxt",
+    "Manufacturer",
+    "SignatureAttributes",
+    "SignatureAttributes.DRM",
+    "SignatureAttributes.PETrust",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 113,
+   "mentioned_files": [
+    "atihdwt6.inf",
+    "atihdwt6.sys",
+    "ks.inf",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {
+    "Driver": [
+     {
+      "section": "HDAudioInstall.AddReg",
+      "subkey": "",
+      "data": "AtihdWT6.sys"
+     }
+    ]
+   },
+   "catalog": [
+    "AtihdWT6.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "11/04/2025,10.0.1.42"
+   ],
+   "classguid": [
+    "MEDIA",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/safd/wt64a/amdsafd.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AMDSAfdInstall",
+    "AMDSAfdInstall.AddReg",
+    "AMDSAfdInstall.CopyList",
+    "AMDSAfdInstall.I.TopologyMicIn",
+    "AMDSAfdInstall.I.TopologyMicIn.AddReg",
+    "AMDSAfdInstall.I.TopologySpeaker",
+    "AMDSAfdInstall.I.TopologySpeaker.AddReg",
+    "AMDSAfdInstall.I.WaveMicIn",
+    "AMDSAfdInstall.I.WaveMicIn.AddReg",
+    "AMDSAfdInstall.I.WaveSpeaker",
+    "AMDSAfdInstall.I.WaveSpeaker.AddReg",
+    "AMDSAfdInstall.Interfaces",
+    "AMDSAfdInstall.Services",
+    "AMDSAfdInstall.Wdf",
+    "DestinationDirs",
+    "Manufacturer",
+    "SAfdAudio_Service_Install",
+    "SAfd_Install_WdfSect",
+    "SignatureAttributes",
+    "SignatureAttributes.DRM",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 25,
+   "mentioned_files": [
+    "amdsafd.inf",
+    "amdsafd.sys",
+    "ks.inf",
+    "wdmaudio.inf"
+   ],
+   "binary_keys": {
+    "Driver": [
+     {
+      "section": "AMDSAfdInstall.AddReg",
+      "subkey": "",
+      "data": "amdsafd.sys"
+     }
+    ]
+   },
+   "catalog": [
+    "amdsafd.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "06/05/2024, 1.0.0.14"
+   ],
+   "classguid": [
+    "MEDIA",
+    "{4d36e96c-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Audio/sdwc/wt64a/amdsdwc.inf": {
+   "sections": [
+    "AMD.NTAMD64.10.0...16299",
+    "AmdController.AddReg",
+    "AmdController_Device.NT",
+    "AmdController_Device.NT.Services",
+    "AmdController_Device.NT.Wdf",
+    "AmdController_Service_Inst",
+    "AmdController_wdfsect",
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 14,
+   "mentioned_files": [
+    "amdsdwc.inf",
+    "amdsdwc.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdsdwc.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "08/07/2025,1.0.2.47"
+   ],
+   "classguid": [
+    "System",
+    "{4d36e97d-e325-11ce-bfc1-08002be10318}"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdafd/amdafd.inf": {
+   "sections": [
+    "AMD_KMAFD.NTAMD64",
+    "ControlFlags",
+    "Manufacturer",
+    "Strings",
+    "Version",
+    "amdafd_Install",
+    "amdafd_Install.HW",
+    "amdafd_Install.Services",
+    "amdafd_install_rs5_audio_d3cold_wa"
+   ],
+   "n_sections": 9,
+   "mentioned_files": [
+    "hdaudbus.inf",
+    "machine.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdafd.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "08/21/2025, 25.30.0.0001"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdfdans/AMDFDANS.inf": {
+   "sections": [
+    "AMD.Mfg.NTamd64.10.0",
+    "AMDFDANS.NT",
+    "AMDFDANS.NT.Copy",
+    "AMDFDANS.NT.Services",
+    "AMDFDANS.System32",
+    "AMDFDANSRegistry",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 12,
+   "mentioned_files": [
+    "amdnoisesuppression.exe",
+    "anr-bgproc-lib.dll",
+    "anronnxlib.dll",
+    "anrsvc.dll",
+    "directml.dll",
+    "ippans.dll",
+    "layout.inf",
+    "mdfaec.dll",
+    "onnxruntime.dll"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "AMDFDANS.CAT"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "03/04/2026, 1.4.40.0"
+   ],
+   "classguid": [
+    "{5c4c3332-344d-483c-8739-259e934c9cc8}",
+    "SoftwareComponent"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdfendr/amdfendr.inf": {
+   "sections": [
+    "AMDFENDR_INSTALL",
+    "AMDFENDR_INSTALL.CoInstallers",
+    "AMDFENDR_INSTALL.Services",
+    "AMDFENDR_INSTALL.Wdf",
+    "AMDFENDR_INSTALL_CoInstaller_AddReg",
+    "AMDFENDR_INSTALL_CoInstaller_CopyFiles",
+    "AMDFENDR_KM.NTAMD64.10.0...16299",
+    "AMDFENDR_RootDevices_Inst",
+    "AMDFENDR_wdfsect",
+    "ControlFlags",
+    "DestinationDirs",
+    "DeviceInstall32",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames.amd64",
+    "SourceDisksNames.x86",
+    "Strings",
+    "Utility_Dir",
+    "Version",
+    "amdfendr_ServiceInstallSection",
+    "amdfendrmgr_ServiceInstallSection",
+    "amdfendrsr_EventLog_Inst",
+    "amdfendrsr_Generic_Service_Inst"
+   ],
+   "n_sections": 24,
+   "mentioned_files": [
+    "amdfendr.sys",
+    "amdfendrmgr.sys",
+    "amdfendrsr.exe",
+    "amdlog.sys",
+    "amdlogsr.exe"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdfendr.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "02/06/2026, 25.10.0.7"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdocl/amdocl.inf": {
+   "sections": [
+    "AMD.Mfg.NTamd64.10.0...16299",
+    "AMDOCLDriver.NT",
+    "AMDOCLDriver.NT.Copy",
+    "AMDOCLDriver.NT.Services",
+    "AMDOCLDriver.NT.Software",
+    "AMDOCLDriverRegistry",
+    "AMDOCLSoftware",
+    "DestinationDirs",
+    "Manufacturer",
+    "OCL.System32",
+    "OCL.Syswow64",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 15,
+   "mentioned_files": [
+    "amd_comgr32.dll",
+    "amd_comgr_2.dll",
+    "amd_opencl32.dll",
+    "amd_opencl64.dll",
+    "amdhip64_6.dll",
+    "amdhsail32.dll",
+    "amdhsail64.dll",
+    "amdmmcl.dll",
+    "amdmmcl6.dll",
+    "amdocl32.dll",
+    "amdocl64.dll",
+    "clinfo.exe",
+    "hiprt0200064.dll",
+    "layout.inf",
+    "opencl.dll",
+    "regamdcomp.exe"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdocl.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "08/27/2026, 32.0.21045.9003"
+   ],
+   "classguid": [
+    "{5c4c3332-344d-483c-8739-259e934c9cc8}",
+    "SoftwareComponent"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdpcibridge/amdpcibridgeextension.inf": {
+   "sections": [
+    "DeviceDownstreamSwitchRegSettings_AddReg",
+    "DeviceExtension_DownstreamSwitch",
+    "DeviceExtension_DownstreamSwitch.HW",
+    "DeviceExtension_UpstreamSwitch",
+    "DeviceExtension_UpstreamSwitch.HW",
+    "DeviceExtensions.NTamd64",
+    "DeviceUpstreamSwitchRegSettings_AddReg",
+    "Manufacturer",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 10,
+   "mentioned_files": [],
+   "binary_keys": {},
+   "catalog": [
+    "amdpcibridgeextension.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "09/10/2025,25.20.0.0"
+   ],
+   "classguid": [
+    "Extension",
+    "{e2f84ce7-8efa-411c-aa69-97454ca4cb57}"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdwin/amdwin-u0203729.inf": {
+   "sections": [
+    "AMD.Mfg.NTamd64.10.0",
+    "AMDWINDriver.NT",
+    "AMDWINDriver.NT.Services",
+    "AMDWINDriverRegistry",
+    "DestinationDirs",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "Version",
+    "WIN.System32",
+    "WIN.Syswow64"
+   ],
+   "n_sections": 12,
+   "mentioned_files": [
+    "amdlogum.exe",
+    "dgtrayicon.exe",
+    "layout.inf",
+    "rapidfire.dll",
+    "rapidfire64.dll",
+    "rapidfireserver.dll",
+    "rapidfireserver64.dll"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdwin-u0203729.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "08/27/2026, 32.0.21045.9003"
+   ],
+   "classguid": [
+    "{5c4c3332-344d-483c-8739-259e934c9cc8}",
+    "SoftwareComponent"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdxe/amdxe.inf": {
+   "sections": [
+    "AMDXE.NT",
+    "AMDXE.NT.CoInstallers",
+    "AMDXE.NT.Services",
+    "AMDXE.NT.Wdf",
+    "AMDXE_CoInstaller_AddReg",
+    "AMDXE_CoInstaller_CopyFiles",
+    "AMDXE_RootDevices_Inst",
+    "AMDXE_Service_Inst",
+    "AMDXE_wdfsect",
+    "DestinationDirs",
+    "DeviceInstall32",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Standard.NTamd64",
+    "Strings",
+    "Version"
+   ],
+   "n_sections": 18,
+   "mentioned_files": [
+    "amdxe.sys"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdxe.cat"
+   ],
+   "provider": [
+    "%ManufacturerName%"
+   ],
+   "driverver": [
+    "09/23/2025, 25.10.0.0001"
+   ],
+   "classguid": [
+    "System",
+    "{4D36E97D-E325-11CE-BFC1-08002BE10318}"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/u0203729.inf": {
+   "sections": [
+    "AMDOCLComponent",
+    "AMDWINComponent",
+    "ATI.Mfg.NTamd64.10.0.1",
+    "ATI.Mfg.NTamd64.10.0.1..19044",
+    "ATI.Mfg.NTamd64.6.0.1",
+    "ATI.Mfg.NTamd64.6.1.1",
+    "ATI.Mfg.NTamd64.6.2.1",
+    "ATI.Mfg.NTamd64.6.3.1",
+    "Ati2evxx_EventLog_AddReg",
+    "Ati2evxx_EventLog_Inst",
+    "Ati2evxx_Generic_Service_Inst",
+    "ControlFlags",
+    "DS.Graphics",
+    "DS.Graphics2",
+    "DS.SysWow64",
+    "DS.System32",
+    "DestinationDirs",
+    "FDANSComponent",
+    "MFTDECRegister",
+    "MFTENCRegister",
+    "MFTHEVCRegister",
+    "MFTMJPEGRegister",
+    "Manufacturer",
+    "PowerSlider",
+    "R300.AMDKMPFD",
+    "R300_EventLog_AddReg",
+    "R300_EventLog_Inst",
+    "SignatureAttributes",
+    "SignatureAttributes.PETrust",
+    "SourceDisksFiles",
+    "SourceDisksNames.amd64",
+    "Strings",
+    "Version",
+    "ati2mtag_DSUMD",
+    "ati2mtag_DSUMD_GFX10_1",
+    "ati2mtag_DSUMD_GFX10_3Plus",
+    "ati2mtag_Desktop_SoftwareDeviceSettings",
+    "ati2mtag_DragonRange",
+    "ati2mtag_DragonRange.Components",
+    "ati2mtag_DragonRange.GeneralConfigData",
+    "ati2mtag_DragonRange.HW",
+    "ati2mtag_DragonRange.Services",
+    "ati2mtag_DragonRange.Software",
+    "ati2mtag_DragonRange_SoftwareDeviceSettings",
+    "ati2mtag_GraniteRidge",
+    "ati2mtag_GraniteRidge.Components",
+    "ati2mtag_GraniteRidge.GeneralConfigData",
+    "ati2mtag_GraniteRidge.HW",
+    "ati2mtag_GraniteRidge.Services",
+    "ati2mtag_GraniteRidge.Software",
+    "ati2mtag_GraniteRidge_SoftwareDeviceSettings",
+    "ati2mtag_KMD_DS",
+    "ati2mtag_Legacy",
+    "ati2mtag_Legacy.Services",
+    "ati2mtag_Manhattan_PX",
+    "ati2mtag_Mendocino",
+    "ati2mtag_Mendocino.Components",
+    "ati2mtag_Mendocino.GeneralConfigData",
+    "ati2mtag_Mendocino.HW",
+    "ati2mtag_Mendocino.Services",
+    "ati2mtag_Mendocino.Software",
+    "ati2mtag_Mendocino_SoftwareDeviceSettings",
+    "ati2mtag_Mobile_NONPX_SoftwareDeviceSettings",
+    "ati2mtag_Mobile_PXAA_SoftwareDeviceSettings",
+    "ati2mtag_Mobile_PX_SoftwareDeviceSettings",
+    "ati2mtag_Mobile_SoftwareDeviceSettings",
+    "ati2mtag_MultiUVD_SoftwareDeviceSettings",
+    "ati2mtag_NAVIA_SoftwareDeviceSettings",
+    "ati2mtag_NAVI_SoftwareDeviceSettings",
+    "ati2mtag_Navi10",
+    "ati2mtag_Navi10.Components",
+    "ati2mtag_Navi10.GeneralConfigData",
+    "ati2mtag_Navi10.HW",
+    "ati2mtag_Navi10.Services",
+    "ati2mtag_Navi10.Software",
+    "ati2mtag_Navi10_PX",
+    "ati2mtag_Navi10_SoftwareDeviceSettings",
+    "ati2mtag_Navi14",
+    "ati2mtag_Navi14.Components",
+    "ati2mtag_Navi14.GeneralConfigData",
+    "ati2mtag_Navi14.HW",
+    "ati2mtag_Navi14.Services",
+    "ati2mtag_Navi14.Software",
+    "ati2mtag_Navi14_PX",
+    "ati2mtag_Navi14_SoftwareDeviceSettings",
+    "ati2mtag_Navi21",
+    "ati2mtag_Navi21.Components",
+    "ati2mtag_Navi21.GeneralConfigData",
+    "ati2mtag_Navi21.HW",
+    "ati2mtag_Navi21.Services",
+    "ati2mtag_Navi21.Software",
+    "ati2mtag_Navi21_PX",
+    "ati2mtag_Navi21_SoftwareDeviceSettings",
+    "ati2mtag_Navi22",
+    "ati2mtag_Navi22.Components",
+    "ati2mtag_Navi22.GeneralConfigData",
+    "ati2mtag_Navi22.HW",
+    "ati2mtag_Navi22.Services",
+    "ati2mtag_Navi22.Software",
+    "ati2mtag_Navi22_PX",
+    "ati2mtag_Navi22_SoftwareDeviceSettings",
+    "ati2mtag_Navi23",
+    "ati2mtag_Navi23.Components",
+    "ati2mtag_Navi23.GeneralConfigData",
+    "ati2mtag_Navi23.HW",
+    "ati2mtag_Navi23.Services",
+    "ati2mtag_Navi23.Software",
+    "ati2mtag_Navi23_PX",
+    "ati2mtag_Navi23_SoftwareDeviceSettings",
+    "ati2mtag_Navi24",
+    "ati2mtag_Navi24.Components",
+    "ati2mtag_Navi24.GeneralConfigData",
+    "ati2mtag_Navi24.HW",
+    "ati2mtag_Navi24.Services",
+    "ati2mtag_Navi24.Software",
+    "ati2mtag_Navi24_PX",
+    "ati2mtag_Navi24_SoftwareDeviceSettings",
+    "ati2mtag_PXAA",
+    "ati2mtag_PXAA_IGPU_Only_2ID",
+    "ati2mtag_PX_DGPU_Only_2ID",
+    "ati2mtag_Post_EG",
+    "ati2mtag_Proxy",
+    "ati2mtag_Raphael",
+    "ati2mtag_Raphael.Components",
+    "ati2mtag_Raphael.GeneralConfigData",
+    "ati2mtag_Raphael.HW",
+    "ati2mtag_Raphael.Services",
+    "ati2mtag_Raphael.Software",
+    "ati2mtag_RaphaelDefault_SoftwareDeviceSettings",
+    "ati2mtag_Raphael_SoftwareDeviceSettings",
+    "ati2mtag_Rembrandt",
+    "ati2mtag_Rembrandt.Components",
+    "ati2mtag_Rembrandt.GeneralConfigData",
+    "ati2mtag_Rembrandt.HW",
+    "ati2mtag_Rembrandt.Services",
+    "ati2mtag_Rembrandt.Software",
+    "ati2mtag_RembrandtDefault_SoftwareDeviceSettings",
+    "ati2mtag_Rembrandt_SoftwareDeviceSettings",
+    "ati2mtag_RemoveDeviceSettings",
+    "ati2mtag_ServiceSettings",
+    "ati2mtag_SoftwareDeviceSettings",
+    "atikmdag_MSI_HardwareDeviceSettings"
+   ],
+   "n_sections": 142,
+   "mentioned_files": [
+    "amd-vulkan32.json",
+    "amd-vulkan64.json",
+    "amd_opencl32.dll",
+    "amd_opencl64.dll",
+    "amdadlx32.dll",
+    "amdadlx64.dll",
+    "amdadlxserv.exe",
+    "amdadlxservps.dll",
+    "amdadlxservps32.dll",
+    "amdafd.inf",
+    "amdave32.dll",
+    "amdave64.dll",
+    "amdefctb.dat",
+    "amdenc32.dll",
+    "amdenc64.dll",
+    "amdept.dat",
+    "amdfdans.inf",
+    "amdfendr.inf",
+    "amdgcf.dat",
+    "amdgfxinfo32.dll",
+    "amdgfxinfo64.dll",
+    "amdh264enc32.dll",
+    "amdh264enc64.dll",
+    "amdh265enc32.dll",
+    "amdh265enc64.dll",
+    "amdhdl32.dll",
+    "amdhdl64.dll",
+    "amdhwdecoder_32.dll",
+    "amdhwdecoder_64.dll",
+    "amdicdxx.dat",
+    "amdihk32.dll",
+    "amdihk64.dll",
+    "amdinstallmanager.msi",
+    "amdkmdag.sys",
+    "amdlvr32.dll",
+    "amdlvr64.dll",
+    "amdmiracast.dll",
+    "amdn1b32.dll",
+    "amdn1b64.dll",
+    "amdocl.inf",
+    "amdpcibridgeextension.inf",
+    "amdpcom32.dll",
+    "amdpcom64.dll",
+    "amdsacli32.dll",
+    "amdsacli64.dll",
+    "amdsasrv64.dll",
+    "amduve32.dll",
+    "amduve64.dll",
+    "amduw23e.inf",
+    "amdvlk32.dll",
+    "amdvlk64.dll",
+    "amdvlk_nexus.cab",
+    "amdwin-u0203729.inf",
+    "amdxc32.dll",
+    "amdxc32b.dat",
+    "amdxc32d.dat",
+    "amdxc32z.dll",
+    "amdxc64.dll",
+    "amdxc64.so",
+    "amdxc64b.dat",
+    "amdxc64d.dat",
+    "amdxc64z.dll",
+    "amdxcffx64.dll",
+    "amdxcstub32.dll",
+    "amdxcstub64.dll",
+    "amdxe.inf",
+    "amdxn32.dll",
+    "amdxn64.dll",
+    "amdxx32.dll",
+    "amdxx64.dll",
+    "amf-mft-mjpeg-decoder32.dll",
+    "amf-mft-mjpeg-decoder64.dll",
+    "amf-pa-ml32.dll",
+    "amf-pa-ml64.dll",
+    "amfrt32.dll",
+    "amfrt64.dll",
+    "amfrtdrv32.dll",
+    "amfrtdrv64.dll",
+    "ati2erec.dll",
+    "atiadlxx.dll",
+    "atiadlxy.dll",
+    "atidemgy.dll",
+    "atidx9loader32.dll",
+    "atidx9loader64.dll",
+    "atidxx32.dll",
+    "atidxx64.dll",
+    "atidxxstub32.dll",
+    "atidxxstub64.dll",
+    "atieah32.exe",
+    "atieah64.exe",
+    "atieclxx.exe",
+    "atiesrxx.exe",
+    "atig6pxx.dll",
+    "atiglpxx.dll",
+    "atiicdxx.dat",
+    "atimpc32.dll",
+    "atimpc64.dll",
+    "atimuixx.dll",
+    "atio6axx.dll",
+    "atioglxx.dll",
+    "atisamu32.dll",
+    "atisamu64.dll",
+    "ativvaxy_cik.dat",
+    "ativvaxy_cik_nd.dat",
+    "ativvaxy_cz_nd.dat",
+    "ativvaxy_el_nd.dat",
+    "ativvaxy_fj.dat",
+    "ativvaxy_fj_nd.dat",
+    "ativvaxy_gl_nd.dat",
+    "ativvaxy_nv.dat",
+    "ativvaxy_rv.dat",
+    "ativvaxy_stn_nd.dat",
+    "ativvaxy_vcn3.dat",
+    "ativvaxy_vcn3_1.dat",
+    "ativvaxy_vcn4.dat",
+    "ativvaxy_vcn4_0_a.dat",
+    "ativvaxy_vcn4_0_a_1.dat",
+    "ativvaxy_vcn5.dat",
+    "ativvaxy_vg.dat",
+    "ativvaxy_vg20.dat",
+    "ativvaxy_vg20_nd.dat",
+    "ativvaxy_vi.dat",
+    "ativvaxy_vi_nd.dat",
+    "ativvsva.dat",
+    "ativvsvl.dat",
+    "detoured.dll",
+    "detoured32.dll",
+    "detoured64.dll",
+    "eeurestart.exe",
+    "featuresync.dll",
+    "gamemanager32.dll",
+    "gamemanager64.dll",
+    "h9_easu_sx1_10_sy1_10.bin",
+    "h9_easu_sx1_20_sy1_20.bin",
+    "h9_easu_sx1_30_sy1_30.bin",
+    "h9_easu_sx1_40_sy1_40.bin",
+    "h9_easu_sx1_50_sy1_50.bin",
+    "h9_easu_sx1_60_sy1_60.bin",
+    "h9_easu_sx1_70_sy1_70.bin",
+    "h9_easu_sx1_80_sy1_80.bin",
+    "h9_easu_sx1_90_sy1_90.bin",
+    "h9_easu_sx2_00_sy2_00.bin",
+    "layout.inf",
+    "libamdenc64.so",
+    "opencl.dll",
+    "regamdcomp.exe",
+    "vulkan-1-999-0-0-0.dll",
+    "vulkan-1.dll",
+    "vulkan32.dll",
+    "vulkan64.dll",
+    "vulkaninfo-1-999-0-0-0.exe",
+    "vulkaninfo.exe",
+    "vulkaninfo32.exe",
+    "vulkaninfo64.exe"
+   ],
+   "binary_keys": {
+    "DXCTuningsFileName": [
+     {
+      "section": "ati2mtag_ServiceSettings",
+      "subkey": "Parameters",
+      "data": "\"amdxc64z.dll"
+     }
+    ],
+    "ABCDTuningsFileName": [
+     {
+      "section": "ati2mtag_ServiceSettings",
+      "subkey": "Parameters",
+      "data": "\"amdxc64d.dat"
+     }
+    ],
+    "EventMessageFile": [
+     {
+      "section": "Ati2evxx_EventLog_AddReg",
+      "subkey": "",
+      "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+     },
+     {
+      "section": "R300_EventLog_AddReg",
+      "subkey": "",
+      "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+     }
+    ],
+    "CategoryMessageFile": [
+     {
+      "section": "Ati2evxx_EventLog_AddReg",
+      "subkey": "",
+      "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+     },
+     {
+      "section": "R300_EventLog_AddReg",
+      "subkey": "",
+      "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+     }
+    ],
+    "OpenGLDriverName": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\atig6pxx.dll"
+     },
+     {
+      "section": "ati2mtag_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "atio6axx.dll"
+     }
+    ],
+    "UserModeDriverName": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\atidx9loader64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxc64.dll"
+     }
+    ],
+    "UserModeDriverNameWow": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\atidx9loader32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxc32.dll"
+     }
+    ],
+    "UserModeDListDriverName": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdhdl64.dll"
+     }
+    ],
+    "UserModeDListDriverNameWow": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdhdl32.dll"
+     }
+    ],
+    "OpenGLDriverNameWoW": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\atiglpxx.dll"
+     }
+    ],
+    "VulkanDriverName": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\amd-vulkan64.json"
+     }
+    ],
+    "VulkanImplicitLayers": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\amd-vulkan64.json"
+     }
+    ],
+    "VulkanDriverNameWow": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\amd-vulkan32.json"
+     }
+    ],
+    "VulkanImplicitLayersWow": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\amd-vulkan32.json"
+     }
+    ],
+    "OpenGLVendorName": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\atio6axx.dll,%13%\\B026432\\atio6axx.dll"
+     }
+    ],
+    "OpenGLVendorNameWoW": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\atioglxx.dll,%13%\\B026432\\atioglxx.dll"
+     }
+    ],
+    "AMDOpenGL": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "CopyToVmOverwrite",
+      "data": "\"B026432\\atio6axx.dll\",\"atio6axx.dll\""
+     },
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "CopyToVmOverwriteWow64",
+      "data": "\"B026432\\atioglxx.dll\",\"atioglxx.dll\""
+     }
+    ],
+    "UserModeDriverNameWsl": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc64.so"
+     }
+    ],
+    "AMDOpenCLLoader": [
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "CopyToVmOverwrite",
+      "data": "\"B026432\\amd_opencl64.dll\",\"opencl.dll\""
+     },
+     {
+      "section": "ati2mtag_DSUMD",
+      "subkey": "CopyToVmOverwriteWow64",
+      "data": "\"B026432\\amd_opencl32.dll\",\"opencl.dll\""
+     }
+    ],
+    "D3DVendorName": [
+     {
+      "section": "ati2mtag_DSUMD_GFX10_1",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxx64.dll"
+     },
+     {
+      "section": "ati2mtag_DSUMD_GFX10_3Plus",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxx64.dll"
+     }
+    ],
+    "D3DVendorNameWoW": [
+     {
+      "section": "ati2mtag_DSUMD_GFX10_1",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxx32.dll"
+     },
+     {
+      "section": "ati2mtag_DSUMD_GFX10_3Plus",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxx32.dll"
+     }
+    ],
+    "UserModeDriverCompiler": [
+     {
+      "section": "ati2mtag_Navi10_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc64.dll"
+     },
+     {
+      "section": "ati2mtag_Navi14_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc64.dll"
+     },
+     {
+      "section": "ati2mtag_Navi21_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc64.dll"
+     },
+     {
+      "section": "ati2mtag_Navi22_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc64.dll"
+     },
+     {
+      "section": "ati2mtag_Navi23_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc64.dll"
+     },
+     {
+      "section": "ati2mtag_Navi24_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc64.dll"
+     }
+    ],
+    "UserModeDriverCompilerWow": [
+     {
+      "section": "ati2mtag_Navi10_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc32.dll"
+     },
+     {
+      "section": "ati2mtag_Navi14_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc32.dll"
+     },
+     {
+      "section": "ati2mtag_Navi21_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc32.dll"
+     },
+     {
+      "section": "ati2mtag_Navi22_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc32.dll"
+     },
+     {
+      "section": "ati2mtag_Navi23_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc32.dll"
+     },
+     {
+      "section": "ati2mtag_Navi24_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdxc32.dll"
+     }
+    ],
+    "ContentProtectionDriverName": [
+     {
+      "section": "ati2mtag_Navi10_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     },
+     {
+      "section": "ati2mtag_Navi14_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     },
+     {
+      "section": "ati2mtag_Navi21_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     },
+     {
+      "section": "ati2mtag_Navi22_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     },
+     {
+      "section": "ati2mtag_Navi23_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     },
+     {
+      "section": "ati2mtag_Navi24_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     },
+     {
+      "section": "ati2mtag_NAVI_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     },
+     {
+      "section": "ati2mtag_NAVIA_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "amdmiracast.dll"
+     }
+    ],
+    "VulkanDriverNameNexus": [
+     {
+      "section": "ati2mtag_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "%13%\\B026432\\amdvlk_nexus.cab"
+     }
+    ],
+    "AMDAdvancedMediaFramework": [
+     {
+      "section": "ati2mtag_SoftwareDeviceSettings",
+      "subkey": "CopyToVmOverwrite",
+      "data": "\"B026432\\amfrt64.dll\",\"amfrt64.dll\""
+     },
+     {
+      "section": "ati2mtag_SoftwareDeviceSettings",
+      "subkey": "CopyToVmOverwriteWow64",
+      "data": "\"B026432\\amfrt32.dll\", \"amfrt32.dll\""
+     }
+    ],
+    "OpenGLDriverNameWow": [
+     {
+      "section": "ati2mtag_SoftwareDeviceSettings",
+      "subkey": "",
+      "data": "atioglxx.dll"
+     }
+    ]
+   },
+   "catalog": [
+    "u0203729.cat"
+   ],
+   "provider": [
+    "%ATI%"
+   ],
+   "driverver": [
+    "08/27/2026, 32.0.21045.9003"
+   ],
+   "classguid": [
+    "{4D36E968-E325-11CE-BFC1-08002BE10318}",
+    "Display"
+   ]
+  },
+  "Packages/Drivers/RadeonLED/WT64A/amdusbledfd.inf": {
+   "sections": [
+    "AMD_USBLEDFD.NTamd64",
+    "AMD_USBLEDFD.NTx86",
+    "Manufacturer",
+    "Strings",
+    "Version",
+    "amdusbledfd_Install.NT",
+    "amdusbledfd_Install.NT.HW",
+    "amdusbledfd_Install.NT.Services"
+   ],
+   "n_sections": 8,
+   "mentioned_files": [
+    "input.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amdusbledfd.cat"
+   ],
+   "provider": [
+    "%AMD%"
+   ],
+   "driverver": [
+    "07/15/2020,20.40.0.0"
+   ],
+   "classguid": [
+    "HIDClass",
+    "{745a17a0-74d3-11d0-b6fe-00a0c90f57da}"
+   ]
+  },
+  "Packages/Drivers/SBDrv/AMDUCSI/WT64A/amducsi.inf": {
+   "sections": [
+    "AMD.NTamd64",
+    "AMDUCSI_Device.NT",
+    "AMDUCSI_Device.NT.CoInstallers",
+    "AMDUCSI_Device.NT.HW",
+    "AMDUCSI_Device.NT.Services",
+    "AMDUCSI_Device.NT.Wdf",
+    "AMDUCSI_Device_CoInstaller_AddReg",
+    "AMDUCSI_Device_CoInstaller_CopyFiles",
+    "AMDUCSI_Service_Inst",
+    "AMDUCSI_wdfsect",
+    "DestinationDirs",
+    "Drivers_Dir",
+    "Manufacturer",
+    "SourceDisksFiles",
+    "SourceDisksNames",
+    "Strings",
+    "UCSIMSISupport_AddReg",
+    "Version"
+   ],
+   "n_sections": 18,
+   "mentioned_files": [
+    "amducsi.sys",
+    "machine.inf"
+   ],
+   "binary_keys": {},
+   "catalog": [
+    "amducsi.cat"
+   ],
+   "provider": [
+    "AMD"
+   ],
+   "driverver": [
+    "06/02/2022,1.0.0.33"
+   ],
+   "classguid": [
+    "UCM",
+    "{e6f1aa1c-7f3b-4473-b2e8-c97d8ac71d53}"
+   ]
+  }
+ }
+}

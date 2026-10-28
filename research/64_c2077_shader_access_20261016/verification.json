@@ -1,0 +1,9 @@
+{
+  "selfcheck": "PASS",
+  "copy_and_original_hashes": "PASS",
+  "extracted_hashes": "PASS",
+  "stage_count_total": 19950,
+  "disassembly": "PASS",
+  "game_writes": [],
+  "benchmarks_started": 0
+}

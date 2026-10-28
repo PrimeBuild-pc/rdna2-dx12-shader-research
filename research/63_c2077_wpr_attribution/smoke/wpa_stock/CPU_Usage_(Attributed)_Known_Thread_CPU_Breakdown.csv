@@ -1,0 +1,77 @@
+Thread Name,Thread Activity Tag,Process,Thread ID,Switch-In Time (s),CPU,CPU Usage (in view) (ms),% CPU Usage
+Idle Thread,Idle Thread,,,,,"110,319.425000",95.52
+Rendering Output Thread,Rendering Output Thread,,,,,823.577100,0.71
+.NET Tiered Compilation Worker,.NET Tiered Compilation Worker,,,,,595.909300,0.52
+main,main,,,,,471.256100,0.41
+tokio-rt-worker,tokio-rt-worker,,,,,287.429000,0.25
+DWM Compositor Thread,DWM Compositor Thread,,,,,260.341300,0.23
+codex-main,codex-main,,,,,237.958600,0.21
+Console Driver Message IO Thread,Console Driver Message IO Thread,,,,,138.367700,0.12
+PresentMon Consumer Thread,PresentMon Consumer Thread,,,,,68.721000,0.06
+ReadRowTimer,ReadRowTimer,,,,,61.493100,0.05
+MicroLinkSlaveHSM-EventDispatcher,MicroLinkSlaveHSM-EventDispatcher,,,,,44.749300,0.04
+Thread-9,Thread-9,,,,,31.160800,0.03
+Pipeline Execution Thread,Pipeline Execution Thread,,,,,19.164100,0.02
+Log4j2-TF-4-AsyncLoggerConfig-2,Log4j2-TF-4-AsyncLoggerConfig-2,,,,,16.517300,0.01
+MicroLinkSlave HSM Timer Ticker,MicroLinkSlave HSM Timer Ticker,,,,,12.703300,0.01
+notify-rs windows loop,notify-rs windows loop,,,,,12.001500,0.01
+Win32 Window Message Input Thread,Win32 Window Message Input Thread,,,,,9.352200,0.01
+sqlx-sqlite-worker-2,sqlx-sqlite-worker-2,,,,,9.028000,0.01
+DWM Token Thread,DWM Token Thread,,,,,6.034000,0.01
+reqwest-internal-sync-runtime,reqwest-internal-sync-runtime,,,,,5.502100,0.00
+PresentMon Output Thread,PresentMon Output Thread,,,,,5.095400,0.00
+.NET TP Worker,.NET TP Worker,,,,,4.398200,0.00
+GetRequestRunner,GetRequestRunner,,,,,4.074700,0.00
+OpenTelemetry.Metrics.PeriodicReader,OpenTelemetry.Metrics.PeriodicReader,,,,,3.700100,0.00
+VM Periodic Task Thread,VM Periodic Task Thread,,,,,3.366900,0.00
+MicroLinkSlaveMonitorClient #1,MicroLinkSlaveMonitorClient #1,,,,,3.310600,0.00
+WPR_initiated_WprApp_WPR System Collector,WPR_initiated_WprApp_WPR System Collector,,,,,3.267800,0.00
+Taskbar,Taskbar,,,,,2.568500,0.00
+WPR_initiated_WprApp_WPR Event Collector,WPR_initiated_WprApp_WPR Event Collector,,,,,2.284400,0.00
+Win32k Raw Input Thread,Win32k Raw Input Thread,,,,,1.305300,0.00
+DWM LPC Port Thread,DWM LPC Port Thread,,,,,1.120900,0.00
+ShutdownExecutor Thread-3,ShutdownExecutor Thread-3,,,,,1.099400,0.00
+DPC Delegate Thread,DPC Delegate Thread,,,,,1.097600,0.00
+C1 CompilerThread0,C1 CompilerThread0,,,,,0.966700,0.00
+log-flush,log-flush,,,,,0.932600,0.00
+G1 Refine#0,G1 Refine#0,,,,,0.913900,0.00
+OS Events thread,OS Events thread,,,,,0.878000,0.00
+c2077_profile_smoke,c2077_profile_smoke,,,,,0.806000,0.00
+mi-scavenger,mi-scavenger,,,,,0.773600,0.00
+Monitor Deflation Thread,Monitor Deflation Thread,,,,,0.764000,0.00
+ShutdownExecutor Thread-5,ShutdownExecutor Thread-5,,,,,0.700900,0.00
+log-chan,log-chan,,,,,0.621800,0.00
+VM Thread,VM Thread,,,,,0.542300,0.00
+sqlx-sqlite-worker-5,sqlx-sqlite-worker-5,,,,,0.511000,0.00
+sqlx-sqlite-worker-0,sqlx-sqlite-worker-0,,,,,0.494600,0.00
+.NET TP Gate,.NET TP Gate,,,,,0.464900,0.00
+Admin_PS_Provider,Admin_PS_Provider,,,,,0.447500,0.00
+sqlx-sqlite-worker-7,sqlx-sqlite-worker-7,,,,,0.427800,0.00
+G1 Service,G1 Service,,,,,0.356800,0.00
+libuv-worker,libuv-worker,,,,,0.326000,0.00
+sqlx-sqlite-worker-12,sqlx-sqlite-worker-12,,,,,0.275900,0.00
+sqlx-sqlite-worker-8,sqlx-sqlite-worker-8,,,,,0.268900,0.00
+sqlx-sqlite-worker-1,sqlx-sqlite-worker-1,,,,,0.234500,0.00
+Log4j2-TF-3-Scheduled-1,Log4j2-TF-3-Scheduled-1,,,,,0.229000,0.00
+ShutdownExecutor Thread-9,ShutdownExecutor Thread-9,,,,,0.203700,0.00
+pool-3-thread-1,pool-3-thread-1,,,,,0.195000,0.00
+PcbeHSM-EventDispatcher,PcbeHSM-EventDispatcher,,,,,0.178700,0.00
+ShutdownExecutor Thread-2,ShutdownExecutor Thread-2,,,,,0.172600,0.00
+Desktop,Desktop,,,,,0.172500,0.00
+ShutdownExecutor Thread-7,ShutdownExecutor Thread-7,,,,,0.170000,0.00
+C2 CompilerThread0,C2 CompilerThread0,,,,,0.169500,0.00
+WFP-IPsec Diagnostics,WFP-IPsec Diagnostics,,,,,0.161600,0.00
+ShutdownExecutor Thread-8,ShutdownExecutor Thread-8,,,,,0.154700,0.00
+Immersive Shell,Immersive Shell,,,,,0.138100,0.00
+ShutdownExecutor Thread-6,ShutdownExecutor Thread-6,,,,,0.129900,0.00
+.NET Timer,.NET Timer,pwsh.exe (6100),2972,5.846930100,11,0.122700,0.00
+Fetch Idle Worker,Fetch Idle Worker,,,,,0.120100,0.00
+HttpClient-1-SelectorManager,HttpClient-1-SelectorManager,,,,,0.118900,0.00
+ShutdownExecutor Thread-10,ShutdownExecutor Thread-10,,,,,0.117800,0.00
+DWM Master Input Thread,DWM Master Input Thread,dwm.exe (2012),2468,0.165402300,9,0.107600,0.00
+DefenderApiLogger,DefenderApiLogger,,,,,0.093800,0.00
+ShutdownExecutor Thread-4,ShutdownExecutor Thread-4,,,,,0.087800,0.00
+.NET Finalizer,.NET Finalizer,,,,,0.059400,0.00
+Service Thread,Service Thread,,,,,0.059300,0.00
+WINNETESP,WINNETESP,System (4),3384,7.138690000,10,0.050900,0.00
+DWM Kernel Sensor Thread,DWM Kernel Sensor Thread,dwm.exe (2012),2464,0.165370600,1,0.035800,0.00

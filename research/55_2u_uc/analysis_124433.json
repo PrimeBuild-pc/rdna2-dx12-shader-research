@@ -1,0 +1,49 @@
+{
+  "workload": "D3D12HDR",
+  "region": "the whole scene: gradients, palettes and the present pass",
+  "medians_ns": {
+    "ablate_present": [
+      76560.0,
+      76400.0,
+      76600.0,
+      76760.0
+    ],
+    "base": [
+      76360.0,
+      76320.0,
+      76380.0,
+      76480.0,
+      76320.0,
+      76320.0,
+      76440.0,
+      76380.0,
+      76360.0
+    ]
+  },
+  "threshold_pct": 1.0,
+  "verdicts": {
+    "ablate_present": {
+      "median_pct": 0.2225096939494875,
+      "per_process": [
+        0.15698587127158556,
+        0.02618486514794449,
+        0.2880335166273894,
+        0.5238344683080147
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "ablate_present_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 191784,
+        "max_abs_delta": 74,
+        "differing_fraction": 0.05202473958333333,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    }
+  }
+}

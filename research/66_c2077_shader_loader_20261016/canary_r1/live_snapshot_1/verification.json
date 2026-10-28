@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "utc": "2026-10-16T21:26:15.016973+00:00",
+  "result": "CANARY_PSO_ACCEPT_BIND_CONFIRMED_VISUAL_PENDING",
+  "pid": 14612,
+  "mode": "canary",
+  "counters": {
+    "schema": 1,
+    "experiment": "C2077-SHADER-LOADER-001",
+    "pid": 14612,
+    "event": "heartbeat",
+    "mode": "canary",
+    "dx12_pipeline_inits": 5239,
+    "matched_original": 5,
+    "cloned_pipelines": 5,
+    "clone_failures": 0,
+    "bound_calls": 544,
+    "presents": 31436
+  },
+  "immutable_payload_hashes_verified": true,
+  "guard_and_first_bind_events": true,
+  "host_warnings": [
+    "23:23:23:950 [ 8760] | WARN  | Reference count for IDXGIFactory2 object 0000022FECF396B0 (0000022FDDF177C0) is inconsistent (4)."
+  ],
+  "host_errors": [],
+  "visual_marker_observed": false,
+  "gpu_completion_proven": false,
+  "performance_claim": false,
+  "benchmark_started_by_agent": false
+}

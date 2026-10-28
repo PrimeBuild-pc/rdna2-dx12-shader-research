@@ -1,0 +1,250 @@
+{
+  "dose": {
+    "s_base": {
+      "buckets": {
+        "1": 9937801.0,
+        "2": 884028.0,
+        "4": 268862.0,
+        "6": 89707.0,
+        "8": 44056.0,
+        "10": 0.0,
+        "12": 0.0,
+        "14": 0.0,
+        "16": 0.0
+      },
+      "quads": 11224454.0,
+      "aniso_cycles": 13671995.0,
+      "mean_aniso": 1.218054348122412,
+      "tex_ave_anisotropy": 1.218054348122412,
+      "mip1": 10689152.0,
+      "mip2": 535302.0,
+      "mip_cycles": 11759756.0
+    },
+    "s_aniso1": {
+      "buckets": {
+        "1": 11217188.0,
+        "2": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "12": 0.0,
+        "14": 0.0,
+        "16": 0.0
+      },
+      "quads": 11217188.0,
+      "aniso_cycles": 11217188.0,
+      "mean_aniso": 1.0,
+      "tex_ave_anisotropy": 1.0,
+      "mip1": 9934499.0,
+      "mip2": 1282689.0,
+      "mip_cycles": 12499877.0
+    },
+    "s_aniso16": {
+      "buckets": {
+        "1": 9937753.0,
+        "2": 884028.0,
+        "4": 268856.0,
+        "6": 89701.0,
+        "8": 22517.0,
+        "10": 9387.0,
+        "12": 3526.0,
+        "14": 2579.0,
+        "16": 6039.0
+      },
+      "quads": 11224386.0,
+      "aniso_cycles": 13768487.0,
+      "mean_aniso": 1.2266583668808253,
+      "tex_ave_anisotropy": 1.2266583668808253,
+      "mip1": 10692781.0,
+      "mip2": 531605.0,
+      "mip_cycles": 11755991.0
+    },
+    "s_point": {
+      "buckets": {
+        "1": 11222924.0,
+        "2": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "12": 0.0,
+        "14": 0.0,
+        "16": 0.0
+      },
+      "quads": 11222924.0,
+      "aniso_cycles": 11222924.0,
+      "mean_aniso": 1.0,
+      "tex_ave_anisotropy": 1.0,
+      "mip1": 11222924.0,
+      "mip2": 0.0,
+      "mip_cycles": 11222924.0
+    },
+    "s_bilinear": {
+      "buckets": {
+        "1": 11218699.0,
+        "2": 0.0,
+        "4": 0.0,
+        "6": 0.0,
+        "8": 0.0,
+        "10": 0.0,
+        "12": 0.0,
+        "14": 0.0,
+        "16": 0.0
+      },
+      "quads": 11218699.0,
+      "aniso_cycles": 11218699.0,
+      "mean_aniso": 1.0,
+      "tex_ave_anisotropy": 1.0,
+      "mip1": 11218699.0,
+      "mip2": 0.0,
+      "mip_cycles": 11218699.0
+    }
+  },
+  "n95": {
+    "TA_BUSY": 0.19767970674423704,
+    "ANISO_1_QUADS": 0.0,
+    "GPUTime": 1.2928345022088001,
+    "GPUBusyCycles": 0.31601818764956535
+  },
+  "threshold_pct": {
+    "TA_BUSY": 2.0,
+    "ANISO_1_QUADS": 2.0,
+    "GPUTime": 3.8785035066264006,
+    "GPUBusyCycles": 2.0
+  },
+  "response_median": {
+    "s_base": {
+      "TA_BUSY": 88769501.5,
+      "ANISO_1_QUADS": 9937801.0,
+      "GPUTime": 804500.0,
+      "GPUBusyCycles": 1189003.0
+    },
+    "s_aniso1": {
+      "TA_BUSY": 86341804.5,
+      "ANISO_1_QUADS": 11217188.0,
+      "GPUTime": 785900.0,
+      "GPUBusyCycles": 1162824.0
+    },
+    "s_aniso16": {
+      "TA_BUSY": 88857621.5,
+      "ANISO_1_QUADS": 9937753.0,
+      "GPUTime": 803020.0,
+      "GPUBusyCycles": 1191995.5
+    },
+    "s_point": {
+      "TA_BUSY": 85660010.5,
+      "ANISO_1_QUADS": 11222924.0,
+      "GPUTime": 781460.0,
+      "GPUBusyCycles": 1157721.5
+    },
+    "s_bilinear": {
+      "TA_BUSY": 85630415.5,
+      "ANISO_1_QUADS": 11218699.0,
+      "GPUTime": 784220.0,
+      "GPUBusyCycles": 1155903.5
+    }
+  },
+  "response_per_rep": {
+    "s_base": {
+      "1": {
+        "TA_BUSY": 88835573.5,
+        "ANISO_1_QUADS": 9937801.0,
+        "GPUTime": 806520.0,
+        "GPUBusyCycles": 1189003.0
+      },
+      "2": {
+        "TA_BUSY": 88660137.0,
+        "ANISO_1_QUADS": 9937801.0,
+        "GPUTime": 796160.0,
+        "GPUBusyCycles": 1187609.0
+      },
+      "3": {
+        "TA_BUSY": 88769501.5,
+        "ANISO_1_QUADS": 9937801.0,
+        "GPUTime": 804500.0,
+        "GPUBusyCycles": 1191368.0
+      }
+    },
+    "s_aniso1": {
+      "1": {
+        "TA_BUSY": 86339619.5,
+        "ANISO_1_QUADS": 11217188.0,
+        "GPUTime": 781260.0,
+        "GPUBusyCycles": 1162824.0
+      },
+      "2": {
+        "TA_BUSY": 86341804.5,
+        "ANISO_1_QUADS": 11217188.0,
+        "GPUTime": 795920.0,
+        "GPUBusyCycles": 1161643.5
+      },
+      "3": {
+        "TA_BUSY": 86401844.5,
+        "ANISO_1_QUADS": 11217188.0,
+        "GPUTime": 785900.0,
+        "GPUBusyCycles": 1163450.0
+      }
+    },
+    "s_aniso16": {
+      "1": {
+        "TA_BUSY": 88747053.5,
+        "ANISO_1_QUADS": 9937753.0,
+        "GPUTime": 720620.0,
+        "GPUBusyCycles": 1190884.5
+      },
+      "2": {
+        "TA_BUSY": 88871215.0,
+        "ANISO_1_QUADS": 9937753.0,
+        "GPUTime": 805280.0,
+        "GPUBusyCycles": 1192185.5
+      },
+      "3": {
+        "TA_BUSY": 88857621.5,
+        "ANISO_1_QUADS": 9937753.0,
+        "GPUTime": 803020.0,
+        "GPUBusyCycles": 1191995.5
+      }
+    },
+    "s_point": {
+      "1": {
+        "TA_BUSY": 85643002.0,
+        "ANISO_1_QUADS": 11222924.0,
+        "GPUTime": 792100.0,
+        "GPUBusyCycles": 1158239.5
+      },
+      "2": {
+        "TA_BUSY": 85661027.5,
+        "ANISO_1_QUADS": 11222924.0,
+        "GPUTime": 779280.0,
+        "GPUBusyCycles": 1157721.5
+      },
+      "3": {
+        "TA_BUSY": 85660010.5,
+        "ANISO_1_QUADS": 11222924.0,
+        "GPUTime": 781460.0,
+        "GPUBusyCycles": 1156974.5
+      }
+    },
+    "s_bilinear": {
+      "1": {
+        "TA_BUSY": 85630415.5,
+        "ANISO_1_QUADS": 11218699.0,
+        "GPUTime": 777680.0,
+        "GPUBusyCycles": 1155903.5
+      },
+      "2": {
+        "TA_BUSY": 85613490.5,
+        "ANISO_1_QUADS": 11218699.0,
+        "GPUTime": 785560.0,
+        "GPUBusyCycles": 1156518.5
+      },
+      "3": {
+        "TA_BUSY": 85665354.0,
+        "ANISO_1_QUADS": 11218699.0,
+        "GPUTime": 784220.0,
+        "GPUBusyCycles": 1155151.0
+      }
+    }
+  }
+}

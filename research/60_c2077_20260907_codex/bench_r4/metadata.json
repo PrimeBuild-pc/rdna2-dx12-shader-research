@@ -1,0 +1,408 @@
+{
+  "label": "bench_r4",
+  "session": "60_c2077_20260907_codex",
+  "target_process": "Cyberpunk2077.exe",
+  "requested_seconds": 600,
+  "delay_seconds": 0,
+  "elapsed_seconds": 600.12,
+  "presentmon": "C:\\Program Files\\Intel\\PresentMon\\PresentMonConsoleApplication\\PresentMon-2.5.1-x64.exe",
+  "presentmon_returncode": 0,
+  "rows_in_csv": 113257,
+  "command": [
+    "C:\\Program Files\\Intel\\PresentMon\\PresentMonConsoleApplication\\PresentMon-2.5.1-x64.exe",
+    "--process_name",
+    "Cyberpunk2077.exe",
+    "--timed",
+    "600",
+    "--output_file",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\60_c2077_20260907_codex\\bench_r4\\presentmon.csv",
+    "--v2_metrics",
+    "--no_console_stats",
+    "--qpc_time_ms",
+    "--terminate_on_proc_exit",
+    "--terminate_after_timed",
+    "--stop_existing_session"
+  ],
+  "launched_by_this_tool": false,
+  "invasiveness": "ETW consumer only: no injection, no hooking, no file or registry change, no modification of the target process",
+  "before": {
+    "when": "before",
+    "timestamp": "2026-09-07T17:26:34.142175+02:00",
+    "gpu": {
+      "Name": "AMD Radeon RX 6950 XT",
+      "DriverVersion": "32.0.21045.5002",
+      "DriverDate": "/Date(1786924800000)/",
+      "VideoModeDescription": "2560 x 1440 x 4294967296 colors",
+      "CurrentRefreshRate": 360,
+      "AdapterRAM": 4293918720
+    },
+    "os": {
+      "Caption": "Microsoft Windows 11 Pro",
+      "Version": "10.0.26200",
+      "BuildNumber": "26200",
+      "FreePhysicalMemoryKB": 17498384
+    },
+    "power_plan": {
+      "scheme": "Power Scheme GUID: c0ae4f83-b24f-4216-ab0b-b94722f1e8dd  (zoic's ultimate performance(amd))"
+    },
+    "busy_processes": [
+      {
+        "Name": "Cyberpunk2077",
+        "Id": 4524,
+        "CPU": 9917.796875,
+        "WorkingSet64": 3906088960
+      },
+      {
+        "Name": "System",
+        "Id": 4,
+        "CPU": 1467.703125,
+        "WorkingSet64": 12742656
+      },
+      {
+        "Name": "dwm",
+        "Id": 2028,
+        "CPU": 942.515625,
+        "WorkingSet64": 819920896
+      },
+      {
+        "Name": "MsMpEng",
+        "Id": 4548,
+        "CPU": 865.28125,
+        "WorkingSet64": 490647552
+      },
+      {
+        "Name": "herdr",
+        "Id": 5916,
+        "CPU": 690.203125,
+        "WorkingSet64": 44396544
+      },
+      {
+        "Name": "SearchIndexer",
+        "Id": 12988,
+        "CPU": 335.421875,
+        "WorkingSet64": 51519488
+      },
+      {
+        "Name": "EVO",
+        "Id": 6056,
+        "CPU": 266.21875,
+        "WorkingSet64": 20836352
+      },
+      {
+        "Name": "pcssagent",
+        "Id": 4428,
+        "CPU": 254.453125,
+        "WorkingSet64": 166916096
+      },
+      {
+        "Name": "herdr",
+        "Id": 5832,
+        "CPU": 249.28125,
+        "WorkingSet64": 27328512
+      },
+      {
+        "Name": "vmmem",
+        "Id": 11000,
+        "CPU": 209.78125,
+        "WorkingSet64": 0
+      },
+      {
+        "Name": "conhost",
+        "Id": 7848,
+        "CPU": 128.96875,
+        "WorkingSet64": 21065728
+      },
+      {
+        "Name": "ChatGPT",
+        "Id": 7016,
+        "CPU": 90.0625,
+        "WorkingSet64": 298860544
+      },
+      {
+        "Name": "ChatGPT",
+        "Id": 3744,
+        "CPU": 79.859375,
+        "WorkingSet64": 384684032
+      },
+      {
+        "Name": "GalaxyClient",
+        "Id": 9444,
+        "CPU": 76.671875,
+        "WorkingSet64": 334618624
+      },
+      {
+        "Name": "explorer",
+        "Id": 4396,
+        "CPU": 58.578125,
+        "WorkingSet64": 260182016
+      },
+      {
+        "Name": "svchost",
+        "Id": 2568,
+        "CPU": 51.953125,
+        "WorkingSet64": 13365248
+      },
+      {
+        "Name": "ChatGPT",
+        "Id": 14860,
+        "CPU": 46.90625,
+        "WorkingSet64": 170532864
+      },
+      {
+        "Name": "codex",
+        "Id": 2968,
+        "CPU": 46.546875,
+        "WorkingSet64": 125587456
+      },
+      {
+        "Name": "codex",
+        "Id": 2248,
+        "CPU": 37.796875,
+        "WorkingSet64": 311226368
+      },
+      {
+        "Name": "lsass",
+        "Id": 1600,
+        "CPU": 35.6875,
+        "WorkingSet64": 34193408
+      },
+      {
+        "Name": "codex",
+        "Id": 8200,
+        "CPU": 29.71875,
+        "WorkingSet64": 202878976
+      },
+      {
+        "Name": "codex-computer-use",
+        "Id": 2844,
+        "CPU": 27.859375,
+        "WorkingSet64": 91926528
+      },
+      {
+        "Name": "svchost",
+        "Id": 1860,
+        "CPU": 23.171875,
+        "WorkingSet64": 17735680
+      },
+      {
+        "Name": "GalaxyClientService",
+        "Id": 13800,
+        "CPU": 21.453125,
+        "WorkingSet64": 26787840
+      },
+      {
+        "Name": "svchost",
+        "Id": 2636,
+        "CPU": 18.515625,
+        "WorkingSet64": 22315008
+      }
+    ],
+    "amd_cache": {
+      "DxCache": {
+        "files": 90,
+        "bytes": 4894720,
+        "newest_mtime": 1788793335.2661529
+      },
+      "DxcCache": {
+        "files": 120,
+        "bytes": 1101295616,
+        "newest_mtime": 1788783663.5039263
+      },
+      "DX9Cache": {
+        "files": 14,
+        "bytes": 233472,
+        "newest_mtime": 1788540443.6505153
+      }
+    }
+  },
+  "after": {
+    "when": "after",
+    "timestamp": "2026-09-07T17:36:40.781495+02:00",
+    "gpu": {
+      "Name": "AMD Radeon RX 6950 XT",
+      "DriverVersion": "32.0.21045.5002",
+      "DriverDate": "/Date(1786924800000)/",
+      "VideoModeDescription": "2560 x 1440 x 4294967296 colors",
+      "CurrentRefreshRate": 360,
+      "AdapterRAM": 4293918720
+    },
+    "os": {
+      "Caption": "Microsoft Windows 11 Pro",
+      "Version": "10.0.26200",
+      "BuildNumber": "26200",
+      "FreePhysicalMemoryKB": 16184168
+    },
+    "power_plan": {
+      "scheme": "Power Scheme GUID: c0ae4f83-b24f-4216-ab0b-b94722f1e8dd  (zoic's ultimate performance(amd))"
+    },
+    "busy_processes": [
+      {
+        "Name": "Cyberpunk2077",
+        "Id": 4524,
+        "CPU": 13848.09375,
+        "WorkingSet64": 3919634432
+      },
+      {
+        "Name": "System",
+        "Id": 4,
+        "CPU": 1494.828125,
+        "WorkingSet64": 12750848
+      },
+      {
+        "Name": "dwm",
+        "Id": 2028,
+        "CPU": 985.625,
+        "WorkingSet64": 833961984
+      },
+      {
+        "Name": "MsMpEng",
+        "Id": 4548,
+        "CPU": 869.421875,
+        "WorkingSet64": 469659648
+      },
+      {
+        "Name": "herdr",
+        "Id": 5916,
+        "CPU": 702.921875,
+        "WorkingSet64": 44822528
+      },
+      {
+        "Name": "SearchIndexer",
+        "Id": 12988,
+        "CPU": 339.296875,
+        "WorkingSet64": 51965952
+      },
+      {
+        "Name": "EVO",
+        "Id": 6056,
+        "CPU": 274,
+        "WorkingSet64": 20836352
+      },
+      {
+        "Name": "pcssagent",
+        "Id": 4428,
+        "CPU": 261.34375,
+        "WorkingSet64": 167047168
+      },
+      {
+        "Name": "herdr",
+        "Id": 5832,
+        "CPU": 250.46875,
+        "WorkingSet64": 27439104
+      },
+      {
+        "Name": "vmmem",
+        "Id": 11000,
+        "CPU": 212.140625,
+        "WorkingSet64": 0
+      },
+      {
+        "Name": "conhost",
+        "Id": 7848,
+        "CPU": 129.71875,
+        "WorkingSet64": 21090304
+      },
+      {
+        "Name": "GalaxyClient",
+        "Id": 9444,
+        "CPU": 99.015625,
+        "WorkingSet64": 334671872
+      },
+      {
+        "Name": "ChatGPT",
+        "Id": 7016,
+        "CPU": 91.21875,
+        "WorkingSet64": 307261440
+      },
+      {
+        "Name": "ChatGPT",
+        "Id": 3744,
+        "CPU": 81.234375,
+        "WorkingSet64": 386646016
+      },
+      {
+        "Name": "explorer",
+        "Id": 4396,
+        "CPU": 59.171875,
+        "WorkingSet64": 261160960
+      },
+      {
+        "Name": "svchost",
+        "Id": 2568,
+        "CPU": 52.8125,
+        "WorkingSet64": 13348864
+      },
+      {
+        "Name": "ChatGPT",
+        "Id": 14860,
+        "CPU": 47.15625,
+        "WorkingSet64": 170487808
+      },
+      {
+        "Name": "codex",
+        "Id": 2968,
+        "CPU": 46.625,
+        "WorkingSet64": 125693952
+      },
+      {
+        "Name": "codex",
+        "Id": 2248,
+        "CPU": 38.1875,
+        "WorkingSet64": 288927744
+      },
+      {
+        "Name": "lsass",
+        "Id": 1600,
+        "CPU": 36.34375,
+        "WorkingSet64": 34344960
+      },
+      {
+        "Name": "codex-computer-use",
+        "Id": 2844,
+        "CPU": 35.625,
+        "WorkingSet64": 92942336
+      },
+      {
+        "Name": "codex",
+        "Id": 8200,
+        "CPU": 30.015625,
+        "WorkingSet64": 202801152
+      },
+      {
+        "Name": "GalaxyClientService",
+        "Id": 13800,
+        "CPU": 28.65625,
+        "WorkingSet64": 26578944
+      },
+      {
+        "Name": "chrome",
+        "Id": 17428,
+        "CPU": 25.0625,
+        "WorkingSet64": 352108544
+      },
+      {
+        "Name": "svchost",
+        "Id": 1860,
+        "CPU": 23.78125,
+        "WorkingSet64": 17932288
+      }
+    ],
+    "amd_cache": {
+      "DxCache": {
+        "files": 90,
+        "bytes": 4894720,
+        "newest_mtime": 1788793335.2661529
+      },
+      "DxcCache": {
+        "files": 120,
+        "bytes": 1101295616,
+        "newest_mtime": 1788783663.5039263
+      },
+      "DX9Cache": {
+        "files": 14,
+        "bytes": 233472,
+        "newest_mtime": 1788540443.6505153
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "candidate": {
+      "schema": 1,
+      "experiment": "C2077-BACKBUFFER-PROBE-001",
+      "pid": 276,
+      "event": "candidate",
+      "serial": 243,
+      "shader_sha256": "1642c9e5c2f2bca229198fc354cf8e5bd712f26baa467a6392f7c5125abc9d4c",
+      "shader_bytes": 4995,
+      "backbuffer_resource": 2198779984032,
+      "rt0_write_mask": 15,
+      "blend_enable": 0,
+      "src_rgb": 1,
+      "dst_rgb": 0,
+      "depth_enable": 0,
+      "rt_count": 1,
+      "rt0_format": 28
+    },
+    "latest_stats": {
+      "schema": 1,
+      "experiment": "C2077-BACKBUFFER-PROBE-001",
+      "pid": 276,
+      "event": "candidate_stats",
+      "serial": 243,
+      "shader_sha256": "1642c9e5c2f2bca229198fc354cf8e5bd712f26baa467a6392f7c5125abc9d4c",
+      "direct": 27928,
+      "indexed": 0,
+      "indirect": 0,
+      "unknown_indirect": 0,
+      "empty": 0,
+      "fullscreen_triangle_calls": 27928,
+      "queued_list_references": 27928
+    },
+    "offline_matches": [
+      {
+        "copy": "staticshader_final.cache",
+        "offset": 10816877,
+        "bytes": 4995
+      }
+    ]
+  },
+  {
+    "candidate": {
+      "schema": 1,
+      "experiment": "C2077-BACKBUFFER-PROBE-001",
+      "pid": 276,
+      "event": "candidate",
+      "serial": 1169,
+      "shader_sha256": "1568bad5326feca720156e3067756445460f490a1cdd5e1adfb543d2d8b14608",
+      "shader_bytes": 672,
+      "backbuffer_resource": 2205232242720,
+      "rt0_write_mask": 15,
+      "blend_enable": 1,
+      "src_rgb": 6,
+      "dst_rgb": 7,
+      "depth_enable": 0,
+      "rt_count": 1,
+      "rt0_format": 28
+    },
+    "latest_stats": {
+      "schema": 1,
+      "experiment": "C2077-BACKBUFFER-PROBE-001",
+      "pid": 276,
+      "event": "candidate_stats",
+      "serial": 1169,
+      "shader_sha256": "1568bad5326feca720156e3067756445460f490a1cdd5e1adfb543d2d8b14608",
+      "direct": 1600,
+      "indexed": 0,
+      "indirect": 0,
+      "unknown_indirect": 0,
+      "empty": 0,
+      "fullscreen_triangle_calls": 0,
+      "queued_list_references": 1600
+    },
+    "offline_matches": []
+  }
+]

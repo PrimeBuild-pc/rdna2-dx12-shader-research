@@ -1,0 +1,25 @@
+shader,option,value,isa_changed,d_inst,d_vgpr,d_sgpr,d_code,wave,notes
+s1_simple,dump-all,1,no,0,0,0,0,32->32,codegen identico
+s2_alu,dump-all,1,no,0,0,0,0,32->32,codegen identico
+s3_mem,dump-all,1,no,0,0,0,0,32->32,codegen identico
+s4_pressure,dump-all,1,no,0,0,0,0,32->32,codegen identico
+s5_divergent,dump-all,1,no,0,0,0,0,32->32,codegen identico
+s6_texture,dump-all,1,no,0,0,0,0,32->32,codegen identico
+s1_simple,dump-il-text,1,no,0,0,0,0,32->32,codegen identico
+s2_alu,dump-il-text,1,no,0,0,0,0,32->32,codegen identico
+s3_mem,dump-il-text,1,no,0,0,0,0,32->32,codegen identico
+s4_pressure,dump-il-text,1,no,0,0,0,0,32->32,codegen identico
+s5_divergent,dump-il-text,1,no,0,0,0,0,32->32,codegen identico
+s6_texture,dump-il-text,1,no,0,0,0,0,32->32,codegen identico
+s1_simple,dump-input-xml,1,no,0,0,0,0,32->32,codegen identico
+s2_alu,dump-input-xml,1,no,0,0,0,0,32->32,codegen identico
+s3_mem,dump-input-xml,1,no,0,0,0,0,32->32,codegen identico
+s4_pressure,dump-input-xml,1,no,0,0,0,0,32->32,codegen identico
+s5_divergent,dump-input-xml,1,no,0,0,0,0,32->32,codegen identico
+s6_texture,dump-input-xml,1,no,0,0,0,0,32->32,codegen identico
+s1_simple,dump-separate,1,no,0,0,0,0,32->32,codegen identico
+s2_alu,dump-separate,1,no,0,0,0,0,32->32,codegen identico
+s3_mem,dump-separate,1,no,0,0,0,0,32->32,codegen identico
+s4_pressure,dump-separate,1,no,0,0,0,0,32->32,codegen identico
+s5_divergent,dump-separate,1,no,0,0,0,0,32->32,codegen identico
+s6_texture,dump-separate,1,no,0,0,0,0,32->32,codegen identico

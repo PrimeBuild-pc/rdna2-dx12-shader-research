@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-16T21:00:32.459521+00:00",
+  "result": "PASS_CANARY_CONFIGURATION",
+  "mode": "canary",
+  "immutable_payloads_unchanged": true,
+  "closed_control_snapshots_verified": true,
+  "local_links_checked": 62,
+  "current_processes": [],
+  "game_started_by_agent": false,
+  "canary_visual_marker_observed": false
+}

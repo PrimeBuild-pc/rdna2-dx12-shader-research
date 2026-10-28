@@ -1,0 +1,49 @@
+{
+  "experiment_id": "T_UA_20260907_122028",
+  "created_at": "2026-09-07T12:20:29.738167+02:00",
+  "phase": "2T",
+  "workload": "ua",
+  "workload_name": "D3D12DynamicIndexing",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\T_UA_20260907_122028",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\t2\\D3D12DynamicIndexing",
+  "dxc": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody\\src\\packages\\Microsoft.Direct3D.DXC.1.8.2505.32\\build\\native\\bin\\x64\\dxc.exe",
+  "msbuild": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "configuration": "Release/x64/v145",
+  "regions": {
+    "0": "the whole Draw cities region: every city mesh, one draw each"
+  },
+  "primary_region": 0,
+  "expected_bytecode": {
+    "base": {
+      "shader_mesh_dynamic_indexing_pixel.cso": "ad6c6b0d50c28780bd0629177d763256dac3690108418167aecd532746b2b57e",
+      "shader_mesh_simple_vert.cso": "d4779bcbee7d446130a4627648a99009a133021ee4c1d760f974ef479edd789b"
+    },
+    "ablate_ps": {
+      "shader_mesh_dynamic_indexing_pixel.cso": "f6a331a2a0cbf0c4a0274dd69130d2745eb5e468db742fa22e4d6f9b09a6aee2",
+      "shader_mesh_simple_vert.cso": "d4779bcbee7d446130a4627648a99009a133021ee4c1d760f974ef479edd789b"
+    }
+  },
+  "transforms": {
+    "ablate_ps": {
+      "kind": "diagnostic_ceiling",
+      "candidate": false,
+      "equivalence": "none: diagnostic, the image is deliberately wrong",
+      "expectation": "both texture samples and the multiply gone; the ceiling on anything this pixel shader could ever give up"
+    }
+  },
+  "transform_edits": {
+    "ablate_ps": [
+      [
+        "src/shader_mesh_dynamic_indexing_pixel.hlsl",
+        "    float3 diffuse = g_txDiffuse.Sample(g_sampler, input.uv).rgb;\n    float3 mat = g_txMats[materialConstants.matIndex].Sample(g_sampler, input.uv).rgb;\n    return float4(diffuse * mat, 1.0f);\n",
+        "    return float4(input.uv.x, input.uv.y, 0.5f, 1.0f);\n"
+      ]
+    ]
+  },
+  "preregistered_criteria": {
+    "provenance": "every build is gated on the preregistered SHA-256 of every shader the project compiles; the pristine sources are restored on every exit path",
+    "correctness": "the sample's own render target after a fixed frame count, compared byte for byte against the baseline's. Baseline vs baseline must be identical first or nothing is judged against it",
+    "performance": "median of the primary timestamp region, several independent processes, counterbalanced order, paired against base",
+    "acceptance": "median <= -max(1 %, 3 x N95) from this workload's own A/A control, every paired process negative, and correctness passing"
+  }
+}

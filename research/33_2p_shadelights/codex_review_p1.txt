@@ -1,0 +1,420 @@
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +232 lines (ctrl + t to view transcript)
+    &g_SceneColorBuffer.GetFormat(),
+    DXGI_FORMAT_UNKNOWN);
+
+• Ran python -c "b=88477808.5/(80*1185956)*100;
+  │ f=85699607.5/(80*1150675.5)*100;
+  │ s=77467711.5/(80*1121025)*100; print(b,f,s,
+  │ … +1 lines
+  └ 93.25578741960072 93.09706287741419
+    86.38044590887803 -0.17020342284211898
+    -7.372562819921691
+
+• Ran $rows=@(); Get-ChildItem -LiteralPath
+  │ 'research/33_2p_shadelights/runs' -Directory
+  │ | Where-Object Name -Match '^(base|fresnel5|
+  │ … +8 lines
+  └
+    Name                Started Ended   Pid
+    … +18 lines (ctrl + t to view transcript)
+    shadowskip_sq_ps_r3                9364
+
+
+• Ran Get-Content -LiteralPath
+  │ 'research/33_2p_shadelights/runs/
+  │ base_resp_r1/process.json'; Get-Item
+  │ … +3 lines
+  └ {
+      "args": [
+    … +18 lines (ctrl + t to view transcript)
+    9/6/2026 8:10:58 PM 9/6/2026 8:10:58 PM
+
+
+• Ran Get-ChildItem -LiteralPath
+  │ 'research/33_2p_shadelights/runs' -Directory
+  │ | Where-Object Name -Match '^(base|fresnel5|
+  │ … +6 lines
+  └
+    Time                Name
+    … +18 lines (ctrl + t to view transcript)
+    9/6/2026 8:11:09 PM shadowskip_resp_r3
+
+
+• Searching the web
+
+• Searched the web for site:learn.microsoft.com
+  HLSL saturate NaN returns 0 _sat modifier ...
+
+• Searching the web
+
+• Searched the web for site:learn.microsoft.com/
+  en-us/windows/win32/direct3dhlsl/dx-graphics-
+  hlsl-pow pow HLSL reference ...
+
+⚠ Skill descriptions were shortened to fit the
+  skills context budget. Codex can still see every
+  skill, but some descriptions are shorter.
+  Disable unused skills or plugins to leave more
+  room for the rest.
+
+• Context compacted
+
+↳ Hook · PONYTAIL:FULL
+
+──────────────────────────────────────────────────
+
+• Ho chiuso i ricalcoli; sto facendo l’ultimo
+  controllo avversariale su formato del probe,
+  semantica HLSL e risorse compilate, così da
+  separare nettamente ciò che i dati dimostrano da
+  ciò che resta un’ipotesi.
+
+• Explored
+  └ Read task_gatecheck.md
+
+• Searching the web
+
+• Searched the web for site:learn.microsoft.com
+  Direct3D R11G11B10_FLOAT 6 bit mantissa 5 bit
+  mantissa ...
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\p1_codex_a
+  │ udit\audit.py'
+  └ Traceback (most recent call last):
+      File "C:
+    … +3 lines (ctrl + t to view transcript)
+                    ~~~~~~~~^^^
+    IndexError: list index out of range
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\p1_codex_a
+  │ udit\audit.py' 'C:
+  │ … +2 lines
+  └ Traceback (most recent call last):
+      File "C:
+    … +31 lines (ctrl + t to view transcript)
+    \research\\33_2p_shadelights\\runs\
+    \base_resp_r1\\gpa_results.csv'
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\p1_codex_a
+  │ udit\audit.py' 'C:
+  │ … +1 lines
+  └ base
+      GPUBusyCycles   reps=[1185956.0, 1188537.0,
+    … +57 lines (ctrl + t to view transcript)
+    sha256=83a96ce982c68fc8219b6040b75af3e02cc658e
+    83cdb09d88c3a6c337b67fe84
+
+• Ran rg -n 'threshold|N95|response|dose|control|
+  │ image|order|semantic|fresnel|shadow'
+  │ 'research/33_2p_shadelights/
+  │ … +4 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +142 lines (ctrl + t to view transcript)
+    "thresholds_fixed_before": "yes - written into
+    this manifest by prepare, before any build."
+
+• Ran rg -n -i 'vgpr|sgpr|occup|scratch|spill|
+  │ resourceusage|numused'
+  │ 'research/33_2p_shadelights' 'C:
+  │ … +3 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +46 lines (ctrl + t to view transcript)
+    microbenchmark. The judge is Render Color in
+    the real workload.",
+
+• Ran Get-ChildItem -LiteralPath
+  │ 'research\33_2p_shadelights\runs' -Directory
+  │ | ForEach-Object { $p = Join-Path
+  │ … +6 lines
+  └
+    Run                 Started
+    … +22 lines (ctrl + t to view transcript)
+    shadowskip_sq_ps_r3
+
+
+• Explored
+  └ Read process.json
+
+• Ran Get-ChildItem -LiteralPath
+  │ 'research\33_2p_shadelights\runs' -Directory
+  │ | ForEach-Object { $p = Join-Path
+  │ … +6 lines
+  └
+    Run                 Created
+    … +22 lines (ctrl + t to view transcript)
+    shadowskip_resp_r3  9/6/2026 8:11:09 PM
+
+
+• Searching the web
+
+• Searched the web for site:learn.microsoft.com/
+  en-us/windows/win32/direct3dhlsl/dx-graphics-
+  hlsl-pow HLSL pow ...
+
+──────────────────────────────────────────────────
+
+• 1. Ricalcolo indipendente
+      - [Verificato dai CSV] Ho letto direttamente
+        i CSV con uno script Python usa-e-getta in
+        %TEMP%: 32 sample per processo, somma dei
+        counter sulle istanze, mediana dei sample,
+        poi mediana dei tre processi. Non ho usato
+        run_2p.py né gli analysis_*.json.
+
+      - I numeri pubblicati reggono:
+          - fresnel5: texture −0,0784%; VALU
+            instructions +0,5542%; VALU cycles
+            −5,8850%; GPUBusyCycles appaiati
+            −2,9749/−3,1689/−3,2416%, mediana
+            −3,1689%; TA_BUSY −3,2113%; GPUTime
+            −2,4939%.
+
+          - shadowskip: texture −20,2736%; VALU
+            instructions −3,5440%; VALU cycles
+            −3,4853%; GPUBusyCycles appaiati
+            −5,4754/−5,5737/−5,4224%, mediana
+            −5,4754%; TA_BUSY −12,3994%; GPUTime
+            −5,4468%.
+
+          - Tutte le immagini, inclusi i due
+            baseline, hanno SHA-256 identico:
+            83a96ce9…7fe84.
+
+      - [Nota metodologica] Le dosi sono delta fra
+        mediane aggregate; le risposte pubblicate
+        sono mediane dei tre delta appaiati. Per
+        esempio il delta fra mediane di
+        GPUBusyCycles per fresnel5 sarebbe
+        −2,975%, non −3,169%. L’appaiamento è
+        quello preregistrato, quindi non è un
+        errore, ma va dichiarata la differenza.
+
+  2. Equivalenza semantica
+      - fresnel5 — [Verificato] saturate produce
+        [0,1] e trasforma NaN in zero; quindi
+        NaN/±Inf nel dot non propagano oltre quel
+        punto. pow(0,5)=0 e pow(1,5)=1.
+        Documentazione HLSL saturate
+
+        (https://learn.microsoft.com/en-us/windows
+/win32/direct3dhlsl/saturate),
+        pow
+
+        (https://learn.microsoft.com/en-us/windows
+/win32/direct3dhlsl/dx-graphics-hlsl-pow).
+
+      - [Verificato/ragionamento numerico] Un f1
+        positivo denormale non è ottenibile da 1-
+        saturate(float32): il minimo positivo è
+        2^-24, e f1^5=2^-120, ancora normale. Il
+        caso denormale non crea quindi una
+        divergenza pratica qui.
+
+      - [Giudizio] Per 0<f1<1, intrinsic pow e tre
+        moltiplicazioni possono differire per
+        approssimazione e arrotondamenti. Sono
+        equivalenti algebricamente e
+        plausibilmente percettivamente, ma non
+        semanticamente/bitwise esatte. Anche
+        l’affermazione che la forma moltiplicativa
+        sia necessariamente “più accurata” non è
+        dimostrata.
+
+      - shadowskip — [Verificato] Se una
+        componente di lit è NaN, NaN != 0 è vero e
+        il campionamento non viene saltato. Se
+        tutte le componenti sono ±0, invece, il
+        ramo restituisce +0; l’originale può
+        produrre −0. È una differenza bitwise
+        reale, sebbene il formato R11G11B10 senza
+        segno la cancelli.
+
+      - [Verificato] Nel sorgente originale il
+        risultato è sempre shadow *
+        ApplyConeLight(...); non esistono altri
+        termini o side effect applicativi.
+        SampleCmpLevelZero non dipende da derivate
+        implicite.
+
+      - [Giudizio] La finitezza di
+        GetShadowConeLight vale per coordinate
+        valide: il confronto texture produce
+        valori finiti. Ma rcp(shadowCoord.w) può
+        generare NaN/Inf se w è zero o non finito;
+        il comportamento del sampling con
+        coordinate non finite non è qui provato.
+        Se l’originale producesse NaN * 0, il
+        nuovo ramo restituirebbe zero. Quindi
+        l’equivalenza esatta richiede un
+        invariante sulle coordinate che il
+        manifest afferma, ma non dimostra.
+
+  3. Immagine bit-identica
+      - [Verificato] È credibile, non sospetta:
+        shader bytecode ed eseguibili sono
+        distinti, i counter cambiano, mentre
+        baseline e varianti producono lo stesso
+        hash.
+
+      - [Giudizio] È però un oracolo poco
+        sensibile alle differenze interne:
+        R11G11B10 ha 6 bit di frazione per R/G ma
+        solo 5 per B, senza segno. Differenze
+        float32 dell’ordine di 1e-7 spariscono
+        facilmente nella quantizzazione. Regole
+        ufficiali dei formati float11/float10
+
+        (https://learn.microsoft.com/en-us/windows
+/win32/direct3d11/floating-point-rules).
+
+      - Quindi l’hash dimostra identità del render
+        target quantizzato, non identità dei
+        risultati float32 del pixel shader.
+
+      - Verifica minima senza rifare O1: valutare
+        entrambe le formule nello stesso shader
+        diagnostico e scrivere old-new, massimo
+        ULP e conteggi NaN/Inf/−0 in un target
+        R32_FLOAT o UAV. Per shadowskip, contare
+        anche i lane saltati e controllare
+        shadowCoord.w. Un test CPU non basta a
+        riprodurre l’approssimazione GPU di pow.
+
+  4. “Mirror di O4” e occupancy
+      - [Verificato] fresnel5 mantiene pressoché
+        fisse texture e wave (−0,08% e −0,075%) e
+        riduce VALU cycles e durata. Dimostra che
+        questa riscrittura ALU migliora realmente
+        il pass.
+
+      - [Verificato] I build log P1 non riportano
+        VGPR, SGPR, scratch o occupancy delle
+        varianti. L’unico dump RGA baseline
+        rintracciato indica 61 VGPR usati,
+        allocazione 64, 54 SGPR e zero scratch;
+        manca il confronto con fresnel5.
+
+      - [Giudizio] Non è quindi escluso un salto
+        di occupancy, una migliore schedulazione/
+        latency hiding, minore pressione
+        transcendental/SFU o un effetto di code
+        layout. I −72 byte di bytecode non
+        risolvono la questione.
+
+      - Conclusione sostenibile: sia una modifica
+        del percorso texture sia questa modifica
+        ALU possono accorciare il pass. Non segue
+        ancora che entrambe le unità siano
+        simultaneamente sul percorso critico, né
+        che “nessuna domini”: le due dosi non sono
+        comparabili.
+
+  5. Interpretazione di TA_BUSY
+      - [Verificato] Duty calcolato come ΣTA_BUSY/
+        (80×GPUBusyCycles):
+          - base: 93,26%
+          - fresnel5: 93,10%
+          - shadowskip: 86,38%
+
+      - fresnel5 lascia quasi invariato il duty,
+        mentre TA_BUSY integrato cala insieme alla
+        durata. Conferma che, in saturazione,
+        TA_BUSY misura anche il tempo durante il
+        quale il TA resta occupato, non una
+        quantità additiva di “lavoro texture”.
+
+      - [Giudizio] Impatto retroattivo:
+          - O5: hit rate, traffico e assenza di
+            stall evidenti restano informativi; il
+            valore “14,5 cicli per texture
+            instruction” perde però
+            l’interpretazione di costo di servizio
+            puro.
+
+          - O6: il fit TA_BUSY/texture e i 13
+            cicli per istruzione vengono
+            sostanzialmente indeboliti come
+            identificazione causale
+            dell’addresser. Possono riflettere la
+            durata comune del loop.
+
+          - Rimane valido che ridurre le luci
+            riduce il pass; non rimane dimostrato
+            che il meccanismo dominante sia
+            esclusivamente il texture addresser.
+
+  6. Soglie e statistica
+      - [Verificato] A/A GPUBusyCycles: differenze
+        0,217/0,056/0,273%, “N95” 0,273%, soglia
+        preregistrata 1%. Entrambe le varianti la
+        superano e hanno 3/3 delta negativi.
+        Nessun cherry-picking: GPUBusyCycles era
+        esplicitamente primario.
+
+      - GPUTime ha N95 1,262% e soglia 3,787%;
+        fresnel5 non la supera, ma questa metrica
+        era preregistrata come non decisiva.
+
+      - [Giudizio] È un positivo ingegneristico
+        credibile: fresnel5 è circa 11,6 volte il
+        massimo A/A e molto consistente. Non è
+        però forte evidenza inferenziale: con soli
+        3/3 segni concordi, un sign test
+        unilaterale ha minimo p=0,125; inoltre il
+        cosiddetto N95 è di fatto il massimo di
+        appena tre confronti, non una stima
+        stabile del 95° percentile.
+
+      - [Verificato] L’ordine è base–fresnel–
+        shadow, poi inverso, poi nuovamente
+        diretto. È interlacciato ma non
+        completamente controbilanciato: fresnel5 è
+        sempre centrale. Il risultato negativo
+        anche nel blocco inverso contrasta una
+        semplice deriva monotona, ma non esclude
+        deriva termica/clock. Servono più processi
+        con ordine randomizzato o Latin square e
+        logging di clock/temperatura.
+
+  7. Prossimo ciclo
+      - [Giudizio] Priorità: replicare fresnel5
+        con almeno 6–9 processi, ordine
+        randomizzato, telemetria termica/clock e
+        ISA nativa completa per tutte le varianti.
+        Accettare l’interpretazione ALU solo se
+        VGPR/SGPR, scratch e occupancy restano
+        uguali.
+
+      - In parallelo, fare il singolo shader
+        diagnostico R32_FLOAT/UAV per chiudere
+        equivalenza numerica e casi NaN/−0.
+
+      - Non vale la pena fare altre ablazioni di
+        light count, altri sampler, più sample
+        nello stesso processo o altri
+        microbenchmark: non risolvono
+        rispettivamente il confondente O6, il
+        punto già coperto da O4, la
+        pseudoreplicazione o il meccanismo nel
+        workload reale.
+
+  Verdetto: i risultati numerici e l’accettazione
+  preregistrata reggono; il positivo di
+  performance è reale e promettente. Sono invece
+  sovradimensionate sia l’“equivalenza esatta” di
+  shadowskip, sia la conclusione che P1+O4 abbiano
+  già identificato due unità parimenti critiche.
+
+─ Worked for 9m 02s ──────────────────────────────
+
+
+› Ask Codex to do anything
+
+  gpt-5.6-sol high · ~\Downloads\driver mod

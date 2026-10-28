@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+    "-dumpbin",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\68_c2077_backbuffer_catalog_20261016\\selected_fullscreen\\original.dxil"
+  ],
+  "returncode": 0,
+  "chunks": [
+    "SFI0",
+    "ISG1",
+    "OSG1",
+    "PSV0",
+    "HASH",
+    "DXIL"
+  ]
+}

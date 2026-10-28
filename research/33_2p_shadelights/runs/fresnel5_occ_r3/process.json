@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\fresnel5.1\\Output\\ModelViewer\\ModelViewer.exe"
+  ],
+  "command_line": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\fresnel5.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\MiniEngine\\ModelViewer",
+  "requested_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\fresnel5.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "executable_sha256": "15ea5c728fa0ef781da5ee49ad7e1f78c59eb3c5593af0856b0d31e0c71d3ad5",
+  "pid": 9364,
+  "actual_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\fresnel5.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "returncode": 0
+}

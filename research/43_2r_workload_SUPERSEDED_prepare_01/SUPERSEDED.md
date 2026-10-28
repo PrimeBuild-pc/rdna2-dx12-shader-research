@@ -1,0 +1,1 @@
+prepare 1: la copia di NbProbe.h nel workspace era la versione che non compilava (getenv trattato come errore C4996 dal progetto del sample). Corretto l'header e rifatto il prepare da zero, cosi' che instrumented_source_hashes.csv corrisponda ai file effettivamente compilati. Nessuna build riuscita, nessuna misura.

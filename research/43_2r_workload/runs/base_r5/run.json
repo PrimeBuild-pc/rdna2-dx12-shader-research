@@ -1,0 +1,22 @@
+{
+  "variant": "base",
+  "rep": 5,
+  "pid": 3916,
+  "iters": 500,
+  "warm": 100,
+  "summary": {
+    "pid": 3916,
+    "warmup": 100,
+    "recorded": 500,
+    "timestamp_frequency": 100000000,
+    "dispatch_ns_median": 156520.0,
+    "dispatch_ns_mean": 159859.6,
+    "dispatch_ns_min": 155920.0,
+    "dispatch_ns_max": 464000.0,
+    "dispatch_ns_p05": 156000.0,
+    "dispatch_ns_p95": 161360.0,
+    "particle_bytes": 320000
+  },
+  "particles_sha256": "ab719090606d29f973bd1a50d181090f411b43d70e940963a54b5e8b8d36f3c8",
+  "cs_sha256": "22a1836b12a7406276958f4b09e427e7cd8166056267385f11675c7c2ef7c711"
+}

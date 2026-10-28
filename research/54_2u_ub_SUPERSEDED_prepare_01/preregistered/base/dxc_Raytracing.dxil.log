@@ -1,0 +1,5 @@
+In file included from C:\Users\Lorenzo\Downloads\driver mod\research\54_2u_ub\preregistered\base\Raytracing.hlsl:16:
+C:\Users\Lorenzo\Downloads\driver mod\research\54_2u_ub\preregistered\base/RaytracingHlslCompat.h:24:10: fatal error: 'util\HlslCompat.h' file not found
+#include "util\HlslCompat.h"
+         ^
+

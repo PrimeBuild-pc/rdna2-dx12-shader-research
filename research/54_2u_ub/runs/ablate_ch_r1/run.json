@@ -1,0 +1,22 @@
+{
+  "variant": "ablate_ch",
+  "rep": 1,
+  "pid": 10336,
+  "summary": {
+    "pid": 10336,
+    "warmup": 200,
+    "frames": 500,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 312680.0,
+    "region0_min_ns": 298360.0,
+    "region0_max_ns": 432160.0,
+    "region0_p95_ns": 329360.0,
+    "region1_median_ns": 0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "0a480c9c66d87052161f8bbfbbdbf23452bde95732076e2e7354c14165bc85b6",
+  "shaders": {
+    "Raytracing.dxil": "0adff75e8c15213c2650d1251215ff56c3559ba57e9ecd39174201271884c283"
+  }
+}

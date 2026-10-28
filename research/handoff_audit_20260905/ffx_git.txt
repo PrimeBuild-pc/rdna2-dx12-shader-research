@@ -1,0 +1,17 @@
+HEAD
+commit 60f4ea81909200d8542eca14dccb2628b763a9a3
+Author:     Jablonski, Jakub <Jakub.Jablonski@amd.com>
+AuthorDate: Wed Jun 24 12:20:22 2026 +0200
+Commit:     GitHub <noreply@github.com>
+CommitDate: Wed Jun 24 11:20:22 2026 +0100
+
+    AMD FSR SDK 2.3.0
+REMOTES
+origin	https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK.git (fetch) [blob:none]
+origin	https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK.git (push)
+STATUS
+STAGED
+IGNORED
+SPARSE
+*.hlsl
+*.h

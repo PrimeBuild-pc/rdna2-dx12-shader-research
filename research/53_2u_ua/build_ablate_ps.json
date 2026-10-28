@@ -1,0 +1,9 @@
+{
+  "variant": "ablate_ps",
+  "executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\builds\\ablate_ps\\D3D12DynamicIndexing.exe",
+  "executable_sha256": "6b5e01037b1a987b8dee6ab04dec3809f2d11e2563bb82a61837b8627a8d698b",
+  "shaders": {
+    "shader_mesh_dynamic_indexing_pixel.cso": "f6a331a2a0cbf0c4a0274dd69130d2745eb5e468db742fa22e4d6f9b09a6aee2",
+    "shader_mesh_simple_vert.cso": "d4779bcbee7d446130a4627648a99009a133021ee4c1d760f974ef479edd789b"
+  }
+}

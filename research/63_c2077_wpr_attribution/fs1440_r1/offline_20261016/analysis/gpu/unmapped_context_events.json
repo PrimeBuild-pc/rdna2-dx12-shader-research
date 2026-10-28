@@ -1,0 +1,278 @@
+[
+  {
+    "qpc": 324667478870,
+    "event_pid": 16316,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Start",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 131,
+      "DmaBufferSize": 0,
+      "AllocationListSize": 0,
+      "PatchLocationListSize": 0,
+      "bPresent": 0,
+      "hDmaBuffer": 0,
+      "pQueuePacket": 18446632527477854224,
+      "ProgressFenceValue": 0
+    }
+  },
+  {
+    "qpc": 324667479064,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Info",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 131
+    }
+  },
+  {
+    "qpc": 324667479162,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Stop",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 131,
+      "bPreempted": 0,
+      "bTimeouted": 0,
+      "pQueuePacket": 18446632527477854224
+    }
+  },
+  {
+    "qpc": 324667552437,
+    "event_pid": 16316,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Start",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 132,
+      "DmaBufferSize": 0,
+      "AllocationListSize": 0,
+      "PatchLocationListSize": 0,
+      "bPresent": 0,
+      "hDmaBuffer": 0,
+      "pQueuePacket": 18446632527462465552,
+      "ProgressFenceValue": 0
+    }
+  },
+  {
+    "qpc": 324667552512,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Info",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 132
+    }
+  },
+  {
+    "qpc": 324667552650,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Stop",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 132,
+      "bPreempted": 0,
+      "bTimeouted": 0,
+      "pQueuePacket": 18446632527462465552
+    }
+  },
+  {
+    "qpc": 324667622700,
+    "event_pid": 16316,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Start",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 133,
+      "DmaBufferSize": 0,
+      "AllocationListSize": 0,
+      "PatchLocationListSize": 0,
+      "bPresent": 0,
+      "hDmaBuffer": 0,
+      "pQueuePacket": 18446632527537975376,
+      "ProgressFenceValue": 0
+    }
+  },
+  {
+    "qpc": 324667622884,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Info",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 133
+    }
+  },
+  {
+    "qpc": 324667623009,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Stop",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 133,
+      "bPreempted": 0,
+      "bTimeouted": 0,
+      "pQueuePacket": 18446632527537975376
+    }
+  },
+  {
+    "qpc": 324733739186,
+    "event_pid": 16316,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Start",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 134,
+      "DmaBufferSize": 0,
+      "AllocationListSize": 0,
+      "PatchLocationListSize": 0,
+      "bPresent": 0,
+      "hDmaBuffer": 0,
+      "pQueuePacket": 18446632527559487568,
+      "ProgressFenceValue": 0
+    }
+  },
+  {
+    "qpc": 324733739338,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Info",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 134
+    }
+  },
+  {
+    "qpc": 324733739424,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Stop",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 134,
+      "bPreempted": 0,
+      "bTimeouted": 0,
+      "pQueuePacket": 18446632527559487568
+    }
+  },
+  {
+    "qpc": 325057717908,
+    "event_pid": 16316,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Start",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 135,
+      "DmaBufferSize": 0,
+      "AllocationListSize": 0,
+      "PatchLocationListSize": 0,
+      "bPresent": 0,
+      "hDmaBuffer": 0,
+      "pQueuePacket": 18446632527526858832,
+      "ProgressFenceValue": 0
+    }
+  },
+  {
+    "qpc": 325057719488,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Info",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 135
+    }
+  },
+  {
+    "qpc": 325057719623,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Stop",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 135,
+      "bPreempted": 0,
+      "bTimeouted": 0,
+      "pQueuePacket": 18446632527526858832
+    }
+  },
+  {
+    "qpc": 325064283814,
+    "event_pid": 16316,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Start",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 136,
+      "DmaBufferSize": 0,
+      "AllocationListSize": 0,
+      "PatchLocationListSize": 0,
+      "bPresent": 0,
+      "hDmaBuffer": 0,
+      "pQueuePacket": 18446632527477854224,
+      "ProgressFenceValue": 0
+    }
+  },
+  {
+    "qpc": 325064284280,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Info",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 136
+    }
+  },
+  {
+    "qpc": 325064284375,
+    "event_pid": 4,
+    "context": "0xffff9a8c8cdbf920",
+    "task": "QueuePacket",
+    "opcode": "Stop",
+    "fields": {
+      "hContext": 18446632527182166304,
+      "PacketType": 6,
+      "SubmitSequence": 136,
+      "bPreempted": 0,
+      "bTimeouted": 0,
+      "pQueuePacket": 18446632527477854224
+    }
+  }
+]

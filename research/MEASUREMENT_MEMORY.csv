@@ -1,0 +1,40 @@
+phase,workload,shader,variant,kind,is_candidate,d_instructions,d_valu,d_image_instr,d_transcendental,d_vgpr,predicted_low_pct,predicted_high_pct,measured_pct,processes,all_negative,correctness_tier,verdict,note
+2T,D3D12Multithreading,shaders_VSMain.cso,both,stack,1,,,,,,,,-1.215,4,1,fail,REJECTED (correctness),
+2T,D3D12Multithreading,shaders_VSMain.cso,light_dir_norm,alu_strength_reduction,1,,,,,,,,-0.223,4,0,A,REJECTED (performance),
+2T,D3D12Multithreading,shaders_VSMain.cso,rsqrt_dist,alu_strength_reduction,1,,,,,,,,-0.995,4,1,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,abl_lightmath,diagnostic_block,0,-26,-23,0,-3,-4,,,-2.325,3,1,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,abl_normalmap,diagnostic_block,0,-43,-38,-1,-2,-5,,,-3.919,3,1,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,abl_shadow,diagnostic_block,0,-111,-78,-4,-3,-3,,,-11.979,3,1,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,abl_shadow_taps,diagnostic_block,0,-22,-9,-4,-2,-1,,,-2.337,3,1,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,ablate_ps,diagnostic_upper_bound,0,-205,-156,-5,0,-19,,,-16.587,3,1,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,gather_pcf,texture_instruction_reduction,1,-6,0,-3,0,-1,,,-0.34,4,1,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,vs_lightspace,hoist_uniform_transform_to_vertex_stage,1,-31,-26,0,0,-3,-3.0,-1.8,4.308,4,0,fail,REJECTED (correctness),
+2T,D3D12VariableRateShading / ShadowsFogScatteringSquidScene,ShadowsAndScenePass_VSMain.cso,zeroskip_shadow,early_out_on_exact_zero,1,10,4,0,0,0,,,0.126,4,0,A,REJECTED (performance),"transferred from phase 2P, not derived from w4's ISA alone; counted separately in the report for that reason"
+2U,D3D12DynamicIndexing,shader_mesh_dynamic_indexing_pixel.cso,ablate_ps,diagnostic_ceiling,0,,,,,,,,-0.376,6,0,fail,REJECTED (correctness),
+2U,D3D12Raytracing / ProceduralGeometry,Raytracing.dxil,abl_phong,diagnostic_block,0,,,,,,,,-0.904,3,1,fail,REJECTED (correctness),
+2U,D3D12Raytracing / ProceduralGeometry,Raytracing.dxil,abl_reflection,diagnostic_block,0,,,,,,,,-26.893,3,1,fail,REJECTED (correctness),
+2U,D3D12Raytracing / ProceduralGeometry,Raytracing.dxil,abl_shadowray,diagnostic_block,0,,,,,,,,-43.507,3,1,fail,REJECTED (correctness),
+2U,D3D12Raytracing / ProceduralGeometry,Raytracing.dxil,ablate_ch,diagnostic_ceiling,0,,,,,,,,-79.02,3,1,fail,REJECTED (correctness),
+2U,D3D12Raytracing / ProceduralGeometry,Raytracing.dxil,hitpos_reuse,cse_across_traceray,1,,,,,,0.0,2.0,-0.092,4,0,A,REJECTED (performance),
+2U,D3D12Raytracing / ProceduralGeometry,Raytracing.dxil,shadow_tmax,ray_extent_reduction,1,,,,,,-20.0,-5.0,-2.183,4,1,A,REJECTED (performance),
+2U,D3D12HDR,gradientPS.cso,ablate_present,diagnostic_ceiling,0,,,,,,,,0.223,4,0,fail,REJECTED (correctness),
+2P,MiniEngine ModelViewer,ModelViewerPS,fresnel5,alu_only,1,,,,,56,,,-3.169,3,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,shadowskip,texture_and_alu,1,,,,,54,,,-5.475,3,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,combo,alu_and_texture,1,,,,,55,,,-7.318,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,falloffskip,alu_only_dynamic,1,,,,,56,,,-27.593,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,ndotlskip,alu_only_dynamic,1,,,,,56,,,-9.764,5,,fail,REJECTED (correctness),pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack3,alu_and_texture,1,,,,,55,,,-37.505,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack4,alu_and_texture,1,,,,,47,,,-39.422,5,,fail,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack3,alu_and_texture,1,,,,,,,,-37.382,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack3_l32,alu_and_texture_in_sparse_regime,1,,,,,,,,-20.194,5,,fail,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,base_pad,occupancy_control,1,,,,,61,,,0.007,5,,A,REJECTED (performance),pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack3,alu_and_texture,1,,,,,55,,,-37.485,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack3_pad,occupancy_control,1,,,,,56,,,-37.545,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,scalar,wave_scalarisation,1,,,,,48,,,-3.842,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack3_scalar,wave_scalarisation_plus_stack,1,,,,,54,,,-41.553,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack3_scalar,final_candidate,1,,,,,,,,-41.602,5,,A,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2P,MiniEngine ModelViewer,ModelViewerPS,stack4_scalar,final_candidate_not_bit_identical,1,,,,,,,,-42.938,5,,fail,ACCEPTED,pass delta measured as d_GPUBusyCycles
+2R,D3D12nBodyGravity,nBodyGravityCS.hlsl CSMain,unroll4,,1,,,,,,,,0.0,,,,no-op: bytecode identical to base,"DXC fully unrolls both forms, so the source unroll factor is invisible"
+2R,D3D12nBodyGravity,nBodyGravityCS.hlsl CSMain,lds_float3,,1,,,,,,,,1.28,,,,REJECTED (performance),smaller LDS footprint did not pay for itself; measured slower
+2R,D3D12nBodyGravity,nBodyGravityCS.hlsl CSMain,mass_hoist,,1,,,,,,,,-3.582,,,,REJECTED (correctness),"reassociating a heavily cancelling sum of ~10000 terms: mathematically identical, numerically not. Measured amplification on |accel| after one step: ~20x float32 epsilon typically, 425x worst case (614 ULP). The larger per-component figures (velo.x 164301 ULP) come from components near zero, where the metric inflates."
+2R,D3D12nBodyGravity,nBodyGravityCS.hlsl CSMain,all3,,1,,,,,,,,-5.911,,,,REJECTED (correctness),"reassociating a heavily cancelling sum of ~10000 terms: mathematically identical, numerically not. Measured amplification on |accel| after one step: ~20x float32 epsilon typically, 425x worst case (614 ULP). The larger per-component figures (velo.x 164301 ULP) come from components near zero, where the metric inflates."

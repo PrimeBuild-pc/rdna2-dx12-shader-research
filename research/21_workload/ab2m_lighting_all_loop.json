@@ -1,0 +1,13 @@
+{
+ "target": "lighting",
+ "tf": "all_loop",
+ "runs": 7,
+ "frame_A": 1.037913,
+ "frame_B": 1.036887,
+ "frame_delta_pct": -0.09885221593719255,
+ "cpu_A": 0.177009,
+ "cpu_B": 0.175875,
+ "img_AA_max": 0.0010001929012345679,
+ "img_AB_max": 0.0010030864197530865,
+ "img_verdict": "indistinguibile dal rumore dell'app"
+}

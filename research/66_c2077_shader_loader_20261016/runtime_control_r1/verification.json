@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "utc": "2026-10-16T20:52:41.767426+00:00",
+  "result": "CONTROL_PSO_ACCEPT_BIND_CONFIRMED",
+  "source": "live snapshots, not final session logs",
+  "pid": 5396,
+  "mode": "control",
+  "counters": {
+    "schema": 1,
+    "experiment": "C2077-SHADER-LOADER-001",
+    "pid": 5396,
+    "event": "heartbeat",
+    "mode": "control",
+    "dx12_pipeline_inits": 5316,
+    "matched_original": 5,
+    "cloned_pipelines": 5,
+    "clone_failures": 0,
+    "bound_calls": 406,
+    "presents": 60230
+  },
+  "guard_and_first_bind_events_verified": true,
+  "immutable_payload_hashes_verified": true,
+  "host_warnings": [
+    "22:45:00:206 [ 1776] | WARN  | Reference count for IDXGIFactory2 object 000002077C0696C0 (00000207C0060A70) is inconsistent (4)."
+  ],
+  "host_errors": [],
+  "visual_confirmation": false,
+  "gpu_draw_or_visible_fragments_proven": false,
+  "canary_activated": false,
+  "benchmark_started_by_agent": false,
+  "performance_claim": false,
+  "next": "User confirms normal image and closes game; verify process absent before canary"
+}

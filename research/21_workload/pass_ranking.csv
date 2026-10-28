@@ -1,0 +1,14 @@
+rank,pass,gpu_ms,pct_frame_gpu,shader,nel_corpus_2K
+1,Render Color,0.5202,48.71,pixel/vertex,no
+2,Resolve Image,0.1017,9.53,TemporalBlendCS,"si, 0 accettate"
+3,Generate SSAO,0.0774,7.25,AoRender*/AoPrepareDepthBuffers*/AoBlur*,in parte
+4,Particle Render,0.0647,6.06,(contiene Culling & Sorting),
+5,HDR Tone Mapping,0.0558,5.22,ToneMapCS,"si, 0 accettate"
+6,Render Shadow Map,0.0485,4.54,grafica,no
+7,Culling & Sorting,0.0474,4.44,ParticleBinCullingCS/ParticleLargeBinCullingCS,si
+8,Z PrePass,0.04,3.75,grafica,no
+9,Sharpen or Copy Image,0.0349,3.26,ResolveTAACS/SharpenTAACS,"si, 0 accettate"
+10,Generate Bloom,0.0256,2.4,BloomExtract*/DownsampleBloom*/UpsampleAndBlur,si
+11,MotionBlur,0.0251,2.35,MotionBlurPrePass/FinalPass,si
+12,Particle Update,0.024,2.24,ParticleUpdateCS/ParticleSpawnCS,si
+13,Update Exposure,0.0122,1.15,AdaptExposureCS/ExtractLumaCS,si

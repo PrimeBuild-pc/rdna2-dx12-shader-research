@@ -1,0 +1,20 @@
+{
+  "host_exe": "sweep.exe",
+  "host_exe_sha256": "362fc8610eb15f291e4013c629af52f4639cce167c98fd3649eeb6606b9a4c45",
+  "host_source_sha256": "a2bac104afd87ed04ee4ef9adf39a5468d8f6a4e833731c80ed3422e783f747c",
+  "dxc": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "dxc_version": "dxcompiler.dll: 1.8 - 1.8.2502.11 (239921522); dxil.dll: 1.8(1.8.2502.11)",
+  "shaders": {
+    "sweep": {
+      "hlsl_sha256": "69b1d2227ac86b6e8aad310388f0ee34fc95d9082c72d675a6295d7541fb2e29",
+      "dxil_sha256": "673cc5c32737240b64660ff69aa8d11c150c1dbba66f2f0bcf45882c8fb21c56",
+      "disassembly_sha256": "dee3aabf7483aa6017d88966b27fbf3d4704bbb95eb998b11ab180f3659a11ac"
+    },
+    "sweep_ref": {
+      "hlsl_sha256": "b437a6b623589d48ed786ff465cca8104e5174fb291998c53b9edcfd161d4e64",
+      "dxil_sha256": "2c772036d245238be1f3d21445863e984af9c61820575bf4e05857313db851e7",
+      "disassembly_sha256": "9568798ffc4946712e5718d8d95a029f736dc3dffc69f4697470f8355dc8f5a2"
+    }
+  },
+  "note": "Recorded because the adversarial review found that the earliest sweep_*.json files predate the host's slots_raw field and therefore came from an earlier binary, with no hash tying a result to the shader that produced it."
+}

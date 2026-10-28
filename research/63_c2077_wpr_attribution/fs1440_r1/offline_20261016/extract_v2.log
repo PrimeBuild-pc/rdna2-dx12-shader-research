@@ -1,0 +1,15 @@
+frequency=10000000 start_filetime=134333729408681606 boot_filetime=134333405245000000 pointer_size=8 clock=1
+first_qpc=324166830818 first_ms=32416683.0818000
+status=0 events=439214592 kept=28018367 property_errors=0 ioerror=0 failure=
+perf_opcode=34 count=6
+perf_opcode=46 count=1368749
+perf_opcode=50 count=364636
+perf_opcode=51 count=117964063
+perf_opcode=52 count=117677107
+perf_opcode=67 count=487930
+perf_opcode=68 count=1286671
+perf_opcode=69 count=29080
+perf_opcode=73 count=1
+perf_opcode=74 count=1
+perf_opcode=96 count=487374
+perf_opcode=98 count=487423

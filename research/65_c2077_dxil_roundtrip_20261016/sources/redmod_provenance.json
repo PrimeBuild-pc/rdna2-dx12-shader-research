@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/0fbc19e625a3a6195bee66d6b500948e92a1d8f7/modding/frameworks/redmod/redmod_docs.md",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\redmod_docs.md",
+    "bytes": 135,
+    "sha256": "944c52d578b6c7890d02414412004c852180564bbf5f6f7b3553250ec7060d5d"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/0fbc19e625a3a6195bee66d6b500948e92a1d8f7/for-mod-creators/core-mods-explained/redmod/commands/deploy.md",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\redmod_deploy.md",
+    "bytes": 1803,
+    "sha256": "9da070aba5eaa9d24fecdda4c8af14af73aedce838eeb72232ceb97d179e0542"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/0fbc19e625a3a6195bee66d6b500948e92a1d8f7/for-mod-creators-theory/modding-tools/redmod/importing-raw-files-to-redengine/import.md",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\redmod_import.md",
+    "bytes": 2816,
+    "sha256": "d0cc574fd3cd7899b350ab20ca44fd70d293686ad8ee8918b72cfce651d34ea1"
+  }
+]

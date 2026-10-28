@@ -1,0 +1,22 @@
+{
+  "variant": "falloffskip",
+  "rep": 1,
+  "pid": 14756,
+  "draws": 34,
+  "image": {
+    "pid": 14756,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 2,
+    "format_name": "R32G32B32A32_FLOAT",
+    "bytes_per_pixel": 16,
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 30720,
+    "stored_row_bytes": 30720,
+    "padding_stored": false
+  },
+  "image_sha256": "3f154daef96019be158fde58dfdc1216b67b52eb84114466105d0f3dc91e4587",
+  "bytecode_sha256": "65b1569758c0a1c5c96937c949acdf1d83487767571c605c2248e90b1fc89149"
+}

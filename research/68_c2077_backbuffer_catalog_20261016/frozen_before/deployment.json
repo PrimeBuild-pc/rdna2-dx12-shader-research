@@ -1,0 +1,504 @@
+{
+  "schema": 1,
+  "experiment": "C2077-SHADER-LOADER-001",
+  "target": "E:\\GOG\\Cyberpunk 2077\\bin\\x64",
+  "created_utc": "2026-10-16T18:02:10.461002+00:00",
+  "state": "installed",
+  "mode": "observe",
+  "files": [
+    {
+      "path": "C2077ShaderLab\\C2077ShaderLab.addon64",
+      "sha256": "c8d32fbd94f09e4732f2bb77870f9e4290bca2ab9a7d59944124c09abe161176",
+      "bytes": 345088,
+      "mutable": false,
+      "created": true,
+      "verified": true
+    },
+    {
+      "path": "C2077ShaderLab\\mode.txt",
+      "sha256": "2e7f1f7a9dd3f82765d297d667234b91f8a68fa534bc7e6a6a04c77ffee12376",
+      "bytes": 8,
+      "mutable": true,
+      "created": true,
+      "verified": true
+    },
+    {
+      "path": "C2077ShaderLab\\preset.ini",
+      "sha256": "9ee7d2f1d02e614504a94fa620faf4d22346266a057639c1baee5f698f234aad",
+      "bytes": 55,
+      "mutable": true,
+      "created": true,
+      "verified": true
+    },
+    {
+      "path": "dxgi.dll",
+      "sha256": "0cee63f9c9f13f3ac909c5b4903f4dbb4b719a7ab3b4f13b0deaf83c814b94f7",
+      "bytes": 5592064,
+      "mutable": false,
+      "created": true,
+      "verified": true
+    },
+    {
+      "path": "ReShade.ini",
+      "sha256": "f274c185d3c8ea3e124d72a1ed3d19be6ec5b69b028ebd39ca0f3229eea343b3",
+      "bytes": 625,
+      "mutable": true,
+      "created": true,
+      "verified": true
+    },
+    {
+      "path": "C2077ShaderLab\\C2077ShaderProbe.addon64",
+      "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492",
+      "bytes": 329216,
+      "mutable": false,
+      "created": true,
+      "verified": true
+    }
+  ],
+  "preexisting": [
+    {
+      "path": "amd_ags_x64.dll",
+      "sha256": "c1f0bd493b470fa369d681c370bbd46e019a7196dbe03d91272ea0be214b3384",
+      "bytes": 176776
+    },
+    {
+      "path": "amd_fidelityfx_dx12.dll",
+      "sha256": "12a5081257ec95b0b53ad51b4a87fb3c03f97fe0bbb59f9496968f8d50ef93a6",
+      "bytes": 6675664
+    },
+    {
+      "path": "api-ms-win-downlevel-kernel32-l2-1-0.dll",
+      "sha256": "441fef8b3a203766c2ffcdf1aa0984c6cd66e6d8f6eb142cf9c4e0b1090b2b54",
+      "bytes": 17032
+    },
+    {
+      "path": "bink2w64.dll",
+      "sha256": "4f60fb1acd3cc03da501fadc378b093f5ec99f5c99a7bb9d1013603fb8e74334",
+      "bytes": 394960
+    },
+    {
+      "path": "CChromaEditorLibrary64.dll",
+      "sha256": "c661bd9ed3b82a3abd89bba0d8e3e143c2f629d022f71875c20bbf575d17c3ff",
+      "bytes": 437136
+    },
+    {
+      "path": "CrashReporter\\7za.exe",
+      "sha256": "c102941c65379a6e7aec5bff2501731773b9293442aaac616d0a2d61bcecddfa",
+      "bytes": 1162376
+    },
+    {
+      "path": "CrashReporter\\ar\\CrashReporter.resources.dll",
+      "sha256": "b91948920ef51602aea0d84e9a8bfb7b0e5f9c806fea45146d6af015a2748150",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\CrashReporter.exe",
+      "sha256": "f343888dd5109a2c738ea5cf80650365bbd330d9704d28661606e54a0bde1d5b",
+      "bytes": 89736
+    },
+    {
+      "path": "CrashReporter\\CrashReporter.exe.config",
+      "sha256": "1ce5c6779dc81ff7974664a9f652dbb08cb5abb7285170ecb80c20da23c7c9d6",
+      "bytes": 205
+    },
+    {
+      "path": "CrashReporter\\cs\\CrashReporter.resources.dll",
+      "sha256": "13a91b60aab907292b93ebbcf0ed34f550ab049a51125957cf6f6c6614be1223",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\de\\CrashReporter.resources.dll",
+      "sha256": "53041c17c1c17fb4a8f8def81abb714b88fba5abab1b84cd663034d30286e303",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\es\\CrashReporter.resources.dll",
+      "sha256": "c551ce85356a7c6cf0ab829650bcc05afc6dedac6c4091e24bc94ae8e95df707",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\es-es\\CrashReporter.resources.dll",
+      "sha256": "9fc7f65d01036ad46054f3e8aaca27bed8dcc0cc48b2d8eb0141cbf19114a107",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\fr\\CrashReporter.resources.dll",
+      "sha256": "8d5b8b9c12e7ed3b86af4d4848c8894d5a7330eac2ae71882a6f89e671fe4a2c",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\hu\\CrashReporter.resources.dll",
+      "sha256": "7765816bdc4fcb6edb7e16a42366a21aa829212eb984836ee328fdbe235a5a79",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\it\\CrashReporter.resources.dll",
+      "sha256": "afb0d2358240245e7258a1a8ed68c947a5937b5afde65179708d9687a353afac",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\ja\\CrashReporter.resources.dll",
+      "sha256": "c75fa24fc6472008ef2ffe4726b47b6002ea311616c3a35c9a86b884d93a7132",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\ko\\CrashReporter.resources.dll",
+      "sha256": "c629dc2c763ff9f36496a7b487757c93ee44dac2900207f9ec44683a80164d3e",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\pl\\CrashReporter.resources.dll",
+      "sha256": "bc48c3b9ec758d5bf9741a188685a72663627c3a5fcec419ad6c566563e6c96f",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\pt\\CrashReporter.resources.dll",
+      "sha256": "c5569bdac07d789a8b99973c4520c0ee29a86b5bf93c79a9b640c6ebacad98ab",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\ru\\CrashReporter.resources.dll",
+      "sha256": "d08a7ad5af01e23105a099b573536252202d93a8f0c79f732c2c8e7bfea36f32",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\th\\CrashReporter.resources.dll",
+      "sha256": "27f3a13092644e74ae84bac19d5ed1e203d860ad564e7b156c91b8404b4d42fd",
+      "bytes": 15496
+    },
+    {
+      "path": "CrashReporter\\ThirdPartyNotices.txt",
+      "sha256": "4aeceeb1237cddcc0db18595cffe553f74c17690ab38b6b1dcbc770aa3c21889",
+      "bytes": 1244
+    },
+    {
+      "path": "CrashReporter\\tr\\CrashReporter.resources.dll",
+      "sha256": "c182b686c6fe8a91f48b1d126d6a35bf8207549dde2bcce0d6c7f0a0154b595b",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\uk\\CrashReporter.resources.dll",
+      "sha256": "6279d359a7d8ec4fb5d556539599a27eff9c5e370b25e4721dfd20e533babec4",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\zh-hans\\CrashReporter.resources.dll",
+      "sha256": "7d87e9e499fc52a2aa5ebae1b8265449c19f02d22f848b5008b5cad7732447d3",
+      "bytes": 14984
+    },
+    {
+      "path": "CrashReporter\\zh-hant\\CrashReporter.resources.dll",
+      "sha256": "7028591c559b063d65fd49be13fbf7657d9f5b29f15b36d6173b8ff2527125de",
+      "bytes": 14984
+    },
+    {
+      "path": "Cyberpunk2077.exe",
+      "sha256": "a7de82945c03e041fc7339fcf9066224d98db2f5d80fea50f7947bb350a60991",
+      "bytes": 59945608
+    },
+    {
+      "path": "cyberpunk2077_addresses.json",
+      "sha256": "58da9e852fa519f851eb42fd36fd27c292c5c8585b1ec66cf34d4a2544a5689f",
+      "bytes": 132079509
+    },
+    {
+      "path": "D3D12\\D3D12Core.dll",
+      "sha256": "bcb57b06d4475f1716fc0788be1cbe1255d12ba2b687cb9f332a93e649d3dbb9",
+      "bytes": 3351584
+    },
+    {
+      "path": "D3D12\\d3d12SDKLayers.dll",
+      "sha256": "251823c48f08e3a48707e2782fe0e0f593a0506481385a3a09b0a6bad7f15f27",
+      "bytes": 5080096
+    },
+    {
+      "path": "d3d12on7\\d3d11on12.dll",
+      "sha256": "4a18ec60416f58ef2a4c5ce7a5f7f9b1d1577746dfbd50c3a348c8e40900263c",
+      "bytes": 1560144
+    },
+    {
+      "path": "d3d12on7\\d3d12.dll",
+      "sha256": "5f98349ac0e3b6d06d214303bf5b1644c8e6a7e1b3d590c6c5650492d32661ef",
+      "bytes": 1906768
+    },
+    {
+      "path": "d3d12on7\\LICENSE.txt",
+      "sha256": "1c29e1d87dac757a11cdf169107b95db11c4503436a4ea8bdb33e874a934f8cf",
+      "bytes": 9894
+    },
+    {
+      "path": "dbgcore.dll",
+      "sha256": "4aa03e8a3a89835d2fe52375f2032002d5fc468a38a885ba306eb1f154e2251f",
+      "bytes": 174536
+    },
+    {
+      "path": "dbghelp.dll",
+      "sha256": "9a02133854ff9f06c3b23a70f8c2a4814b2ed4eef613244b485e3737259ddf9e",
+      "bytes": 1868736
+    },
+    {
+      "path": "dxilconv7.dll",
+      "sha256": "20099a4aa1207f557a14cc8bab795a84c479a318929fc8c4ca1fc9deaef7fd3e",
+      "bytes": 1452616
+    },
+    {
+      "path": "ffx_backend_dx12_x64.dll",
+      "sha256": "bd2212b435cdd4b1bd66d36dde8e8f94de8cd728af8155848d86005a66a0657d",
+      "bytes": 12901512
+    },
+    {
+      "path": "ffx_frameinterpolation_x64.dll",
+      "sha256": "7f702b317fd411b6c529323937434041ed2d0544b1dd80a7d5ba00cefdfe5803",
+      "bytes": 173192
+    },
+    {
+      "path": "ffx_fsr3_x64.dll",
+      "sha256": "042e083248869e106059e0d08a753dc29ce82122096cbd2a582127c83ab2a793",
+      "bytes": 163464
+    },
+    {
+      "path": "ffx_fsr3upscaler_x64.dll",
+      "sha256": "fae7be78fe234ba2da3729fa7d9c65bdf513c31deeda5d95a28ac315fc1d7e0c",
+      "bytes": 195208
+    },
+    {
+      "path": "ffx_opticalflow_x64.dll",
+      "sha256": "df5c692a58519d82a488b5a551093ac48f5eb17498f211bea2e3fde148635c2b",
+      "bytes": 179848
+    },
+    {
+      "path": "freetype.dll",
+      "sha256": "bec244f9a51aa75d7c3eea239270d3306bd37689d854842d461ecdb5bb218712",
+      "bytes": 832136
+    },
+    {
+      "path": "Galaxy64.dll",
+      "sha256": "dcfe4b864b4ac6a48bf0b564ee42493ec645ef91f6a82d13059d425782f3cc31",
+      "bytes": 14208648
+    },
+    {
+      "path": "GameServicesGOG.dll",
+      "sha256": "c67c7be609df0e7eb4ab9213436bd479e92ddb47255ca305536f7e07e8ba1bc6",
+      "bytes": 40584
+    },
+    {
+      "path": "GfnRuntimeSdk.dll",
+      "sha256": "0b6a487ea1edd558d4cdcbce362abcf5f32ada5c610f56f08e2e6f4f07016397",
+      "bytes": 3745848
+    },
+    {
+      "path": "GFSDK_Aftermath_Lib.x64.dll",
+      "sha256": "512bc55312cb3f8596e2aea6458485ed84aaa55a8bc2a5a6e60d5e1db695fb07",
+      "bytes": 1244808
+    },
+    {
+      "path": "icudt.dll",
+      "sha256": "21addda47ec025f43f75c31ca1d437d718d1e8723b517fa06045f5d6849f06e9",
+      "bytes": 13448
+    },
+    {
+      "path": "icuin.dll",
+      "sha256": "376a23609952ae776337907ed1ae760d5b29fc1a0dfa026033c63c7c3f07f114",
+      "bytes": 2643080
+    },
+    {
+      "path": "icuio.dll",
+      "sha256": "b0cd07595ba20fa65f3fdcd33db7ee3b24cb1d9729e519f8334da94cbf619237",
+      "bytes": 71816
+    },
+    {
+      "path": "icuuc.dll",
+      "sha256": "af9eddd9a61712ab12992c7001b76f104c8eaec0169342de9edd7b0e896ce47d",
+      "bytes": 1901192
+    },
+    {
+      "path": "libcurl.dll",
+      "sha256": "b76d49c92d733703e1a6faf56d904614453a71208c493eb4a0005d413a6c3d50",
+      "bytes": 429704
+    },
+    {
+      "path": "libeay32.dll",
+      "sha256": "7353332374d99881c45456afc8ad44825f42b4c324f45c8a61757246b648ee80",
+      "bytes": 1710216
+    },
+    {
+      "path": "libxell.dll",
+      "sha256": "0b127d64483471795c02785e124746116b604c486a2c1cb3a10e0754792de018",
+      "bytes": 346984
+    },
+    {
+      "path": "libxess.dll",
+      "sha256": "23b3ebc802185f537423965c2ee9c8ad8adb5d137b004ce027a4088e629b5fd3",
+      "bytes": 77771112
+    },
+    {
+      "path": "libxess_dx11.dll",
+      "sha256": "9e0bb17d627306d7df07e16c0e08deef226332c6746631b7ad8095ac6f463d79",
+      "bytes": 147816
+    },
+    {
+      "path": "libxess_fg.dll",
+      "sha256": "d82d9adab239af4e49063d0c4d2e1134529f3963879998d7e0df43a32514ca84",
+      "bytes": 45557608
+    },
+    {
+      "path": "nvngx_dlss.dll",
+      "sha256": "ad3e9c07ee864e9702032459a59c6825166766c2cb75bd0318d5626595693bdb",
+      "bytes": 44609064
+    },
+    {
+      "path": "nvngx_dlssd.dll",
+      "sha256": "519c98e6d3b44d12671525f20e8fc46366a9fbf15aa5d4bc8446d6ba17699e22",
+      "bytes": 65630248
+    },
+    {
+      "path": "nvngx_dlssg.dll",
+      "sha256": "907b036e714a674aa53dba1ecbb251802a684cb684d1ac2d11da85742f2ea906",
+      "bytes": 7607336
+    },
+    {
+      "path": "nvToolsExt64_1.dll",
+      "sha256": "d3caf50e0a1a72ca27c5a89f4720436d74521ae218c20b3196040f4ad558e947",
+      "bytes": 52872
+    },
+    {
+      "path": "oo2ext_7_win64.dll",
+      "sha256": "4f73be5d986b2b11e04fc29ebe478cd38c03d4d3e51da7de5f7d705ea0968eff",
+      "bytes": 1234056
+    },
+    {
+      "path": "oodle_dictionary.bin",
+      "sha256": "b150712d48fdf017fe033edd07cadd28a58eb47667564e8cd847ba504202597b",
+      "bytes": 1809181
+    },
+    {
+      "path": "PhysX3_x64.dll",
+      "sha256": "2b376b3080ef842979f7c32178bb5443e0e1b2b84aa69be29ab970b38d43c64c",
+      "bytes": 2597512
+    },
+    {
+      "path": "PhysX3CharacterKinematic_x64.dll",
+      "sha256": "6c1f279a3a349d019470cb88756764f363626510e2bd3e83304c01f86ef90735",
+      "bytes": 576136
+    },
+    {
+      "path": "PhysX3Common_x64.dll",
+      "sha256": "568dcb9d9ef98c413277609ff3bdce680fcc514e0380a1abdf35a2cedc644431",
+      "bytes": 2041480
+    },
+    {
+      "path": "PhysX3Cooking_x64.dll",
+      "sha256": "a050c8789d5dcdb91b9c5807c80ba38a1a937ac03eae01c84a4562538f45a674",
+      "bytes": 662664
+    },
+    {
+      "path": "PxFoundation_x64.dll",
+      "sha256": "55572d6be04a9b6f520c0820532357a38a26da7817ff28bb637642fbe80387da",
+      "bytes": 557192
+    },
+    {
+      "path": "PxPvdSDK_x64.dll",
+      "sha256": "b77232bb9be5d2fdd6871129d01efc7fb666f2a746734a09280c604bcfe949b4",
+      "bytes": 606344
+    },
+    {
+      "path": "REDEngineErrorReporter.exe",
+      "sha256": "f3cba8150ca66fbdf1fb8c8621ba6db1257d2b644c65a58a2ade01c687bb686a",
+      "bytes": 262280
+    },
+    {
+      "path": "REDGalaxy64.dll",
+      "sha256": "a3f774f5c037e51cf87ab839599f532af6a06ac662b3fb280cfe596da74486d2",
+      "bytes": 14232712
+    },
+    {
+      "path": "redlexer_native.dll",
+      "sha256": "f1c68482a7471d7f432b7475883a34f3cfd9e899e6e695204ef30aae47b2d2bb",
+      "bytes": 99464
+    },
+    {
+      "path": "sl.common.dll",
+      "sha256": "f76bcee79b9383cb6b9889eeb40bb7cfe6545362f2fcaa7e465a7c30b1a3473b",
+      "bytes": 650736
+    },
+    {
+      "path": "sl.dlss.dll",
+      "sha256": "6b7adf54786072b7799c908dc1f2dc1310dede855463a5ad0111a66434ec7509",
+      "bytes": 237040
+    },
+    {
+      "path": "sl.dlss_d.dll",
+      "sha256": "f44c566543270fdd5d27f00f08c61999c19c71de6efb3bf841f2dbc58af3d967",
+      "bytes": 250352
+    },
+    {
+      "path": "sl.dlss_g.dll",
+      "sha256": "818dc3370f9bbd225e781be1af7097e8a98318eaa472204620a2848ef2139170",
+      "bytes": 461808
+    },
+    {
+      "path": "sl.interposer.dll",
+      "sha256": "e07ed41b17bc74aa7e62cc714e96a62b52be69b3ffb44a00c8baaa12393fe3fc",
+      "bytes": 541176
+    },
+    {
+      "path": "sl.nis.dll",
+      "sha256": "929628871975ecd9e2c56be354b04284eb91855bdf42b0d32ad3df60725016b8",
+      "bytes": 966128
+    },
+    {
+      "path": "sl.pcl.dll",
+      "sha256": "9d38b31ea265fa39eaf3e3a723496819a8971afb2eb68e8821ff5a79d2916459",
+      "bytes": 175096
+    },
+    {
+      "path": "sl.reflex.dll",
+      "sha256": "c6938a5a9600033444926b218f7dfccb99d4dea7043daef79f426fc227483c2e",
+      "bytes": 198128
+    },
+    {
+      "path": "ssleay32.dll",
+      "sha256": "06d5c398c1231ce954e1bdcac3156e786eb0a96cbd2dcc2825d598526fc2d95f",
+      "bytes": 370312
+    },
+    {
+      "path": "symsrv.dll",
+      "sha256": "db4d9a1a57c38ad2bcf329c58b7f35d8a90e54faf5464e8997bcfb917e21c704",
+      "bytes": 256456
+    },
+    {
+      "path": "Symsrv.ini",
+      "sha256": "8cb7f8d2ba214e33754a8be8cca9ad98685eb2f512cd41750fbe53afd9cb75ac",
+      "bytes": 69
+    },
+    {
+      "path": "WinPixEventRuntime.dll",
+      "sha256": "0b71e83dbe737c51ab7345541a4914790962e9a9466b74c4c076fc4920a66a65",
+      "bytes": 34896
+    }
+  ],
+  "history": [
+    {
+      "action": "install",
+      "utc": "2026-10-16T18:02:11.207004+00:00",
+      "mode": "control"
+    },
+    {
+      "action": "mode",
+      "mode": "canary",
+      "utc": "2026-10-16T20:56:24.282028+00:00"
+    },
+    {
+      "action": "install_readonly_probe",
+      "experiment": "C2077-SHADER-PROBE-001",
+      "utc": "2026-10-16T22:04:54.148620+00:00",
+      "file": "C2077ShaderLab\\C2077ShaderProbe.addon64",
+      "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492"
+    },
+    {
+      "action": "mode",
+      "mode": "observe",
+      "utc": "2026-10-16T22:47:34.874344+00:00"
+    }
+  ]
+}

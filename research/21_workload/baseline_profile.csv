@@ -1,0 +1,32 @@
+scope,depth,gpu_ms,cpu_ms,pct_frame_gpu,spread_pct,runs
+Scene Render,1,0.97721,0.1015,91.495,1.06,7
+Render Color,2,0.52023,0.006,48.709,0.76,7
+Temporal Resolve,2,0.13776,0.00387,12.898,5.17,7
+Resolve Image,3,0.10174,0.00179,9.526,6.62,7
+Generate SSAO,2,0.0774,0.017,7.247,2.44,7
+Particle Render,2,0.06468,0.01598,6.056,13.53,7
+Post Effects,1,0.05613,0.01679,5.255,4.35,7
+HDR Tone Mapping,2,0.05575,0.01576,5.22,4.37,7
+Render Shadow Map,2,0.04846,0.00644,4.537,2.37,7
+Culling & Sorting,3,0.04744,0.00788,4.442,11.26,7
+Z PrePass,2,0.04005,0.01448,3.75,1.61,7
+Sharpen or Copy Image,3,0.03487,0.00126,3.265,6.03,7
+Opaque,3,0.0319,0.01251,2.986,1.53,7
+Blur and upsample,3,0.02675,0.00429,2.504,1.32,7
+FillLightGrid,2,0.02648,0.00167,2.48,4.97,7
+Generate Bloom,3,0.02561,0.00992,2.398,7.0,7
+Decompress and downsample,3,0.02555,0.00524,2.393,8.82,7
+MotionBlur,2,0.02506,0.00256,2.346,5.95,7
+Analyze depth volumes,3,0.02483,0.00612,2.325,0.6,7
+Particle Update,2,0.02396,0.02116,2.243,15.84,7
+Present,1,0.02245,0.00571,2.102,6.88,7
+Render UI,1,0.01226,0.01336,1.148,7.98,7
+Update Exposure,3,0.01224,0.00359,1.146,4.82,7
+Main Render,2,0.01145,0.00424,1.072,21.38,7
+Compute Depth Bounds,3,0.00907,0.00163,0.849,6.12,7
+Cutout,3,0.00791,0.00141,0.74,2.28,7
+Tiled Rendering,3,0.00564,0.00214,0.528,58.97,7
+Generate Camera Velocity,2,0.00244,0.00142,0.229,64.17,7
+Scene Update,2,0.0001,0.0008,0.009,3.09,7
+RenderLightShadows,2,6e-05,0.00022,0.006,3.33,7
+Update State,1,0.0,0.01689,0.0,0.0,7

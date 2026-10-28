@@ -1,0 +1,1654 @@
+{
+  "created": "2026-09-08T13:38:59.112536+02:00",
+  "method": "research/04_benchmarks/analysis/METHOD.md section 6; sample SD ddof=1; MDD%=CV%*(t(.975,2n-2)+t(.80,2n-2))*sqrt(2/n)",
+  "mdd_n5_factor": 2.0206281650809057,
+  "mdd_interpretation": "Conditional planning estimate for future independent equal-sized groups; not a measured treatment effect, acceptance threshold, or assurance of power across restarts. Zero-mean metrics have undefined relative CV/MDD.",
+  "manual_five_descriptive_statistics": {
+    "full_benchmark": {
+      "avg_fps": {
+        "n": 5,
+        "values": [
+          113.02617550954463,
+          112.9794260309595,
+          112.90316208460395,
+          112.93148519019871,
+          113.09276531665398
+        ],
+        "mean": 112.98660282639216,
+        "sd_sample": 0.07564438048011106,
+        "variance_sample": 0.005722072298219807,
+        "cv_pct": 0.0669498671416303,
+        "minimum": 112.90316208460395,
+        "maximum": 113.09276531665398,
+        "range": 0.1896032320500325,
+        "range_pct": 0.16781036627976545,
+        "ci95_halfwidth": 0.09392490390858146,
+        "mdd_pct": 0.13528078719480285
+      },
+      "ft_avg_ms": {
+        "n": 5,
+        "values": [
+          8.848868681999724,
+          8.852484391789503,
+          8.858486047152903,
+          8.856228035837354,
+          8.843685370217452
+        ],
+        "mean": 8.851950505399387,
+        "sd_sample": 0.00589715402502784,
+        "variance_sample": 3.4776425594902054e-05,
+        "cv_pct": 0.0666198260081863,
+        "minimum": 8.843685370217452,
+        "maximum": 8.858486047152903,
+        "range": 0.014800676935450952,
+        "range_pct": 0.16720243664289633,
+        "ci95_halfwidth": 0.007322283844739488,
+        "mdd_pct": 0.1346138967849307
+      },
+      "ft_median_ms": {
+        "n": 5,
+        "values": [
+          8.8178,
+          8.8285,
+          8.8238,
+          8.8118,
+          8.80995
+        ],
+        "mean": 8.81837,
+        "sd_sample": 0.007849968152801564,
+        "variance_sample": 6.16219999999988e-05,
+        "cv_pct": 0.08901835773279602,
+        "minimum": 8.80995,
+        "maximum": 8.8285,
+        "range": 0.0185499999999994,
+        "range_pct": 0.2103563356946851,
+        "ci95_halfwidth": 0.009747022842379806,
+        "mdd_pct": 0.1798730008441353
+      },
+      "ft_p95_ms": {
+        "n": 5,
+        "values": [
+          10.7516,
+          10.81385,
+          10.90742,
+          10.856009999999998,
+          10.631725
+        ],
+        "mean": 10.792121,
+        "sd_sample": 0.1063210249903564,
+        "variance_sample": 0.011304160354999988,
+        "cv_pct": 0.9851726550356171,
+        "minimum": 10.631725,
+        "maximum": 10.90742,
+        "range": 0.2756950000000007,
+        "range_pct": 2.5545951532604265,
+        "ci95_halfwidth": 0.13201498898264824,
+        "mdd_pct": 1.990667614232503
+      },
+      "ft_p99_ms": {
+        "n": 5,
+        "values": [
+          11.787239999999994,
+          12.049448000000002,
+          11.98314,
+          12.128658,
+          11.710475
+        ],
+        "mean": 11.931792199999999,
+        "sd_sample": 0.17685606336001175,
+        "variance_sample": 0.03127806714720049,
+        "cv_pct": 1.4822254728842141,
+        "minimum": 11.710475,
+        "maximum": 12.128658,
+        "range": 0.4181829999999991,
+        "range_pct": 3.504779441264483,
+        "ci95_halfwidth": 0.21959580673817042,
+        "mdd_pct": 2.995026537510207
+      },
+      "fps_1pct_low_time": {
+        "n": 5,
+        "values": [
+          78.60112196166206,
+          76.6415548057627,
+          78.03030697122762,
+          75.43356596634554,
+          76.58176964846976
+        ],
+        "mean": 77.05766387069353,
+        "sd_sample": 1.2615083776142644,
+        "variance_sample": 1.5914033867909734,
+        "cv_pct": 1.637096577092106,
+        "minimum": 75.43356596634554,
+        "maximum": 78.60112196166206,
+        "range": 3.167555995316519,
+        "range_pct": 4.110630709791346,
+        "ci95_halfwidth": 1.5663695359160714,
+        "mdd_pct": 3.3079634526298536
+      },
+      "fps_01pct_low_time": {
+        "n": 5,
+        "values": [
+          68.68613048441581,
+          67.61361792355875,
+          71.88679842079081,
+          65.37366278172779,
+          62.21304234219662
+        ],
+        "mean": 67.15465039053795,
+        "sd_sample": 3.6242486952713557,
+        "variance_sample": 13.135178605176124,
+        "cv_pct": 5.396869277398562,
+        "minimum": 62.21304234219662,
+        "maximum": 71.88679842079081,
+        "range": 9.673756078594188,
+        "range_pct": 14.40519163205593,
+        "ci95_halfwidth": 4.5000991254554075,
+        "mdd_pct": 10.905066065171368
+      },
+      "spikes": {
+        "n": 5,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0,
+        "sd_sample": 0.0,
+        "variance_sample": 0.0,
+        "cv_pct": null,
+        "minimum": 0,
+        "maximum": 0,
+        "range": 0,
+        "range_pct": null,
+        "ci95_halfwidth": 0.0,
+        "mdd_pct": null
+      },
+      "severe_spikes": {
+        "n": 5,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0,
+        "sd_sample": 0.0,
+        "variance_sample": 0.0,
+        "cv_pct": null,
+        "minimum": 0,
+        "maximum": 0,
+        "range": 0,
+        "range_pct": null,
+        "ci95_halfwidth": 0.0,
+        "mdd_pct": null
+      },
+      "spike_time_lost_ms": {
+        "n": 5,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "sd_sample": 0.0,
+        "variance_sample": 0.0,
+        "cv_pct": null,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "range": 0.0,
+        "range_pct": null,
+        "ci95_halfwidth": 0.0,
+        "mdd_pct": null
+      }
+    },
+    "standard_trimmed_window": {
+      "avg_fps": {
+        "n": 5,
+        "values": [
+          113.15971764535604,
+          113.10757516277852,
+          113.05709030452537,
+          113.0658289504099,
+          113.21952404831569
+        ],
+        "mean": 113.1219472222771,
+        "sd_sample": 0.06802587403182336,
+        "variance_sample": 0.0046275195377935,
+        "cv_pct": 0.06013499210560533,
+        "minimum": 113.05709030452537,
+        "maximum": 113.21952404831569,
+        "range": 0.1624337437903165,
+        "range_pct": 0.1435917147634888,
+        "ci95_halfwidth": 0.0844652787316594,
+        "mdd_pct": 0.12151045875550405
+      },
+      "ft_avg_ms": {
+        "n": 5,
+        "values": [
+          8.838362238061297,
+          8.842529054343174,
+          8.846391425310316,
+          8.845722017694063,
+          8.833660051289357
+        ],
+        "mean": 8.841332957339642,
+        "sd_sample": 0.005338100255104252,
+        "variance_sample": 2.849531433354408e-05,
+        "cv_pct": 0.06037664547711465,
+        "minimum": 8.833660051289357,
+        "maximum": 8.846391425310316,
+        "range": 0.012731374020958697,
+        "range_pct": 0.14399835502620376,
+        "ci95_halfwidth": 0.006628126905565279,
+        "mdd_pct": 0.12199875036416255
+      },
+      "ft_median_ms": {
+        "n": 5,
+        "values": [
+          8.7923,
+          8.8074,
+          8.7992,
+          8.79495,
+          8.791
+        ],
+        "mean": 8.79697,
+        "sd_sample": 0.006619818728635925,
+        "variance_sample": 4.382199999999895e-05,
+        "cv_pct": 0.07525112315531285,
+        "minimum": 8.791,
+        "maximum": 8.8074,
+        "range": 0.016399999999999082,
+        "range_pct": 0.18642782685400863,
+        "ci95_halfwidth": 0.00821959058998224,
+        "mdd_pct": 0.15205453890159706
+      },
+      "ft_p95_ms": {
+        "n": 5,
+        "values": [
+          10.761479999999999,
+          10.82385,
+          10.91786,
+          10.878849999999998,
+          10.65323
+        ],
+        "mean": 10.807053999999999,
+        "sd_sample": 0.10422757950753662,
+        "variance_sample": 0.01086338832999987,
+        "cv_pct": 0.9644402582566594,
+        "minimum": 10.65323,
+        "maximum": 10.91786,
+        "range": 0.2646299999999986,
+        "range_pct": 2.448678427997108,
+        "ci95_halfwidth": 0.12941563309442863,
+        "mdd_pct": 1.9487751493713084
+      },
+      "ft_p99_ms": {
+        "n": 5,
+        "values": [
+          11.862404,
+          12.071589999999997,
+          11.989564,
+          12.135945000000001,
+          11.715651999999999
+        ],
+        "mean": 11.955031,
+        "sd_sample": 0.16836750780361426,
+        "variance_sample": 0.02834761768400011,
+        "cv_pct": 1.4083402025775948,
+        "minimum": 11.715651999999999,
+        "maximum": 12.135945000000001,
+        "range": 0.4202930000000027,
+        "range_pct": 3.5156161452028245,
+        "ci95_halfwidth": 0.20905587290703911,
+        "mdd_pct": 2.8457318793440365
+      },
+      "fps_1pct_low_time": {
+        "n": 5,
+        "values": [
+          78.43705994208142,
+          76.46384048878235,
+          77.89314618206744,
+          75.25876204140192,
+          76.33669124655113
+        ],
+        "mean": 76.87789998017685,
+        "sd_sample": 1.2794202259037561,
+        "variance_sample": 1.6369161144516184,
+        "cv_pct": 1.664223692678465,
+        "minimum": 75.25876204140192,
+        "maximum": 78.43705994208142,
+        "range": 3.178297900679496,
+        "range_pct": 4.134215296592425,
+        "ci95_halfwidth": 1.588610033078421,
+        "mdd_pct": 3.362777266421056
+      },
+      "fps_01pct_low_time": {
+        "n": 5,
+        "values": [
+          68.68613048441581,
+          67.61361792355875,
+          71.88679842079081,
+          65.37366278172779,
+          62.21304234219662
+        ],
+        "mean": 67.15465039053795,
+        "sd_sample": 3.6242486952713557,
+        "variance_sample": 13.135178605176124,
+        "cv_pct": 5.396869277398562,
+        "minimum": 62.21304234219662,
+        "maximum": 71.88679842079081,
+        "range": 9.673756078594188,
+        "range_pct": 14.40519163205593,
+        "ci95_halfwidth": 4.5000991254554075,
+        "mdd_pct": 10.905066065171368
+      },
+      "spikes": {
+        "n": 5,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0,
+        "sd_sample": 0.0,
+        "variance_sample": 0.0,
+        "cv_pct": null,
+        "minimum": 0,
+        "maximum": 0,
+        "range": 0,
+        "range_pct": null,
+        "ci95_halfwidth": 0.0,
+        "mdd_pct": null
+      },
+      "severe_spikes": {
+        "n": 5,
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mean": 0,
+        "sd_sample": 0.0,
+        "variance_sample": 0.0,
+        "cv_pct": null,
+        "minimum": 0,
+        "maximum": 0,
+        "range": 0,
+        "range_pct": null,
+        "ci95_halfwidth": 0.0,
+        "mdd_pct": null
+      },
+      "spike_time_lost_ms": {
+        "n": 5,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "sd_sample": 0.0,
+        "variance_sample": 0.0,
+        "cv_pct": null,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "range": 0.0,
+        "range_pct": null,
+        "ci95_halfwidth": 0.0,
+        "mdd_pct": null
+      }
+    }
+  },
+  "strata": {
+    "pid4524_first_four": {
+      "full_benchmark": {
+        "avg_fps": {
+          "n": 4,
+          "values": [
+            113.02617550954463,
+            112.9794260309595,
+            112.90316208460395,
+            112.93148519019871
+          ],
+          "mean": 112.9600622038267,
+          "sd_sample": 0.054160860005600525,
+          "variance_sample": 0.0029333987565462586,
+          "cv_pct": 0.047946910570810346,
+          "minimum": 112.90316208460395,
+          "maximum": 113.02617550954463,
+          "range": 0.12301342494068024,
+          "range_pct": 0.10889992670038824,
+          "ci95_halfwidth": 0.08618201440790577,
+          "mdd_pct": 0.11366567426351429
+        },
+        "ft_avg_ms": {
+          "n": 4,
+          "values": [
+            8.848868681999724,
+            8.852484391789503,
+            8.858486047152903,
+            8.856228035837354
+          ],
+          "mean": 8.854016789194871,
+          "sd_sample": 0.004231435056417304,
+          "variance_sample": 1.7905042636677316e-05,
+          "cv_pct": 0.04779113431974963,
+          "minimum": 8.848868681999724,
+          "maximum": 8.858486047152903,
+          "range": 0.009617365153179236,
+          "range_pct": 0.1086214921674412,
+          "ci95_halfwidth": 0.006733157430671604,
+          "mdd_pct": 0.11329638221945425
+        },
+        "ft_median_ms": {
+          "n": 4,
+          "values": [
+            8.8178,
+            8.8285,
+            8.8238,
+            8.8118
+          ],
+          "mean": 8.820475,
+          "sd_sample": 0.007254136750847854,
+          "variance_sample": 5.262250000000146e-05,
+          "cv_pct": 0.08224201928861942,
+          "minimum": 8.8118,
+          "maximum": 8.8285,
+          "range": 0.01670000000000016,
+          "range_pct": 0.18933220716571567,
+          "ci95_halfwidth": 0.011542950350379257,
+          "mdd_pct": 0.19496761029948217
+        },
+        "ft_p95_ms": {
+          "n": 4,
+          "values": [
+            10.7516,
+            10.81385,
+            10.90742,
+            10.856009999999998
+          ],
+          "mean": 10.83222,
+          "sd_sample": 0.0659748573321684,
+          "variance_sample": 0.004352681799999975,
+          "cv_pct": 0.6090612758249777,
+          "minimum": 10.7516,
+          "maximum": 10.90742,
+          "range": 0.1558200000000003,
+          "range_pct": 1.4384862936683367,
+          "ci95_halfwidth": 0.10498072047918953,
+          "mdd_pct": 1.4438753145982375
+        },
+        "ft_p99_ms": {
+          "n": 4,
+          "values": [
+            11.787239999999994,
+            12.049448000000002,
+            11.98314,
+            12.128658
+          ],
+          "mean": 11.987121499999999,
+          "sd_sample": 0.14592879521534094,
+          "variance_sample": 0.021295213273000914,
+          "cv_pct": 1.217379795602647,
+          "minimum": 11.787239999999994,
+          "maximum": 12.128658,
+          "range": 0.3414180000000062,
+          "range_pct": 2.8482067191861384,
+          "ci95_halfwidth": 0.2322052775837823,
+          "mdd_pct": 2.8859898094496863
+        },
+        "fps_1pct_low_time": {
+          "n": 4,
+          "values": [
+            78.60112196166206,
+            76.6415548057627,
+            78.03030697122762,
+            75.43356596634554
+          ],
+          "mean": 77.17663742624947,
+          "sd_sample": 1.4239053583638004,
+          "variance_sample": 2.0275064695771428,
+          "cv_pct": 1.8449953325894692,
+          "minimum": 75.43356596634554,
+          "maximum": 78.60112196166206,
+          "range": 3.167555995316519,
+          "range_pct": 4.104293865282039,
+          "ci95_halfwidth": 2.2657511733992752,
+          "mdd_pct": 4.373850911251204
+        },
+        "fps_01pct_low_time": {
+          "n": 4,
+          "values": [
+            68.68613048441581,
+            67.61361792355875,
+            71.88679842079081,
+            65.37366278172779
+          ],
+          "mean": 68.3900524026233,
+          "sd_sample": 2.7090189978055825,
+          "variance_sample": 7.338783930471563,
+          "cv_pct": 3.961130168254807,
+          "minimum": 65.37366278172779,
+          "maximum": 71.88679842079081,
+          "range": 6.513135639063023,
+          "range_pct": 9.523513157614122,
+          "ci95_halfwidth": 4.3106537502548745,
+          "mdd_pct": 9.390480555682252
+        },
+        "spikes": {
+          "n": 4,
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "sd_sample": 0.0,
+          "variance_sample": 0.0,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": 0.0,
+          "mdd_pct": null
+        },
+        "severe_spikes": {
+          "n": 4,
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "sd_sample": 0.0,
+          "variance_sample": 0.0,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": 0.0,
+          "mdd_pct": null
+        },
+        "spike_time_lost_ms": {
+          "n": 4,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd_sample": 0.0,
+          "variance_sample": 0.0,
+          "cv_pct": null,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "range": 0.0,
+          "range_pct": null,
+          "ci95_halfwidth": 0.0,
+          "mdd_pct": null
+        }
+      },
+      "standard_trimmed_window": {
+        "avg_fps": {
+          "n": 4,
+          "values": [
+            113.15971764535604,
+            113.10757516277852,
+            113.05709030452537,
+            113.0658289504099
+          ],
+          "mean": 113.09755301576746,
+          "sd_sample": 0.0469344646873631,
+          "variance_sample": 0.0022028439754893337,
+          "cv_pct": 0.04149909828802374,
+          "minimum": 113.05709030452537,
+          "maximum": 113.15971764535604,
+          "range": 0.10262734083066505,
+          "range_pct": 0.09074231766655225,
+          "ci95_halfwidth": 0.07468320686738367,
+          "mdd_pct": 0.09838012360086766
+        },
+        "ft_avg_ms": {
+          "n": 4,
+          "values": [
+            8.838362238061297,
+            8.842529054343174,
+            8.846391425310316,
+            8.845722017694063
+          ],
+          "mean": 8.843251183852212,
+          "sd_sample": 0.003669214187604726,
+          "variance_sample": 1.346313275451981e-05,
+          "cv_pct": 0.041491687969971,
+          "minimum": 8.838362238061297,
+          "maximum": 8.846391425310316,
+          "range": 0.008029187249018577,
+          "range_pct": 0.09079451756023715,
+          "ci95_halfwidth": 0.005838538567318611,
+          "mdd_pct": 0.09836255627926249
+        },
+        "ft_median_ms": {
+          "n": 4,
+          "values": [
+            8.7923,
+            8.8074,
+            8.7992,
+            8.79495
+          ],
+          "mean": 8.7984625,
+          "sd_sample": 0.006601436081136738,
+          "variance_sample": 4.3578958333333976e-05,
+          "cv_pct": 0.07502942793853742,
+          "minimum": 8.7923,
+          "maximum": 8.8074,
+          "range": 0.015100000000000335,
+          "range_pct": 0.17162089399142563,
+          "ci95_halfwidth": 0.010504357932990085,
+          "mdd_pct": 0.17786903086580827
+        },
+        "ft_p95_ms": {
+          "n": 4,
+          "values": [
+            10.761479999999999,
+            10.82385,
+            10.91786,
+            10.878849999999998
+          ],
+          "mean": 10.845509999999999,
+          "sd_sample": 0.06801047615380039,
+          "variance_sample": 0.004625424866666651,
+          "cv_pct": 0.627084168045582,
+          "minimum": 10.761479999999999,
+          "maximum": 10.91786,
+          "range": 0.1563800000000004,
+          "range_pct": 1.441887011306987,
+          "ci95_halfwidth": 0.10821984427812388,
+          "mdd_pct": 1.4866014083557944
+        },
+        "ft_p99_ms": {
+          "n": 4,
+          "values": [
+            11.862404,
+            12.071589999999997,
+            11.989564,
+            12.135945000000001
+          ],
+          "mean": 12.01487575,
+          "sd_sample": 0.11798670643304139,
+          "variance_sample": 0.01392086289491669,
+          "cv_pct": 0.9820052149356716,
+          "minimum": 11.862404,
+          "maximum": 12.135945000000001,
+          "range": 0.2735410000000016,
+          "range_pct": 2.2766860489589464,
+          "ci95_halfwidth": 0.18774317898021303,
+          "mdd_pct": 2.3279974362707705
+        },
+        "fps_1pct_low_time": {
+          "n": 4,
+          "values": [
+            78.43705994208142,
+            76.46384048878235,
+            77.89314618206744,
+            75.25876204140192
+          ],
+          "mean": 77.01320216358329,
+          "sd_sample": 1.4354477630244302,
+          "variance_sample": 2.0605102803718407,
+          "cv_pct": 1.8638982962627682,
+          "minimum": 75.25876204140192,
+          "maximum": 78.43705994208142,
+          "range": 3.178297900679496,
+          "range_pct": 4.126952017822207,
+          "ci95_halfwidth": 2.2841177149324308,
+          "mdd_pct": 4.418663352468476
+        },
+        "fps_01pct_low_time": {
+          "n": 4,
+          "values": [
+            68.68613048441581,
+            67.61361792355875,
+            71.88679842079081,
+            65.37366278172779
+          ],
+          "mean": 68.3900524026233,
+          "sd_sample": 2.7090189978055825,
+          "variance_sample": 7.338783930471563,
+          "cv_pct": 3.961130168254807,
+          "minimum": 65.37366278172779,
+          "maximum": 71.88679842079081,
+          "range": 6.513135639063023,
+          "range_pct": 9.523513157614122,
+          "ci95_halfwidth": 4.3106537502548745,
+          "mdd_pct": 9.390480555682252
+        },
+        "spikes": {
+          "n": 4,
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "sd_sample": 0.0,
+          "variance_sample": 0.0,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": 0.0,
+          "mdd_pct": null
+        },
+        "severe_spikes": {
+          "n": 4,
+          "values": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "sd_sample": 0.0,
+          "variance_sample": 0.0,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": 0.0,
+          "mdd_pct": null
+        },
+        "spike_time_lost_ms": {
+          "n": 4,
+          "values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "sd_sample": 0.0,
+          "variance_sample": 0.0,
+          "cv_pct": null,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "range": 0.0,
+          "range_pct": null,
+          "ci95_halfwidth": 0.0,
+          "mdd_pct": null
+        }
+      }
+    },
+    "pid12668_after_restart_one_run": {
+      "full_benchmark": {
+        "avg_fps": {
+          "n": 1,
+          "values": [
+            113.09276531665398
+          ],
+          "mean": 113.09276531665398,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 113.09276531665398,
+          "maximum": 113.09276531665398,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_avg_ms": {
+          "n": 1,
+          "values": [
+            8.843685370217452
+          ],
+          "mean": 8.843685370217452,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 8.843685370217452,
+          "maximum": 8.843685370217452,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_median_ms": {
+          "n": 1,
+          "values": [
+            8.80995
+          ],
+          "mean": 8.80995,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 8.80995,
+          "maximum": 8.80995,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_p95_ms": {
+          "n": 1,
+          "values": [
+            10.631725
+          ],
+          "mean": 10.631725,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 10.631725,
+          "maximum": 10.631725,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_p99_ms": {
+          "n": 1,
+          "values": [
+            11.710475
+          ],
+          "mean": 11.710475,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 11.710475,
+          "maximum": 11.710475,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "fps_1pct_low_time": {
+          "n": 1,
+          "values": [
+            76.58176964846976
+          ],
+          "mean": 76.58176964846976,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 76.58176964846976,
+          "maximum": 76.58176964846976,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "fps_01pct_low_time": {
+          "n": 1,
+          "values": [
+            62.21304234219662
+          ],
+          "mean": 62.21304234219662,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 62.21304234219662,
+          "maximum": 62.21304234219662,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "spikes": {
+          "n": 1,
+          "values": [
+            0
+          ],
+          "mean": 0,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "severe_spikes": {
+          "n": 1,
+          "values": [
+            0
+          ],
+          "mean": 0,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "spike_time_lost_ms": {
+          "n": 1,
+          "values": [
+            0.0
+          ],
+          "mean": 0.0,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "range": 0.0,
+          "range_pct": null,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        }
+      },
+      "standard_trimmed_window": {
+        "avg_fps": {
+          "n": 1,
+          "values": [
+            113.21952404831569
+          ],
+          "mean": 113.21952404831569,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 113.21952404831569,
+          "maximum": 113.21952404831569,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_avg_ms": {
+          "n": 1,
+          "values": [
+            8.833660051289357
+          ],
+          "mean": 8.833660051289357,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 8.833660051289357,
+          "maximum": 8.833660051289357,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_median_ms": {
+          "n": 1,
+          "values": [
+            8.791
+          ],
+          "mean": 8.791,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 8.791,
+          "maximum": 8.791,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_p95_ms": {
+          "n": 1,
+          "values": [
+            10.65323
+          ],
+          "mean": 10.65323,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 10.65323,
+          "maximum": 10.65323,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "ft_p99_ms": {
+          "n": 1,
+          "values": [
+            11.715651999999999
+          ],
+          "mean": 11.715651999999999,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 11.715651999999999,
+          "maximum": 11.715651999999999,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "fps_1pct_low_time": {
+          "n": 1,
+          "values": [
+            76.33669124655113
+          ],
+          "mean": 76.33669124655113,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 76.33669124655113,
+          "maximum": 76.33669124655113,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "fps_01pct_low_time": {
+          "n": 1,
+          "values": [
+            62.21304234219662
+          ],
+          "mean": 62.21304234219662,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 62.21304234219662,
+          "maximum": 62.21304234219662,
+          "range": 0.0,
+          "range_pct": 0.0,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "spikes": {
+          "n": 1,
+          "values": [
+            0
+          ],
+          "mean": 0,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "severe_spikes": {
+          "n": 1,
+          "values": [
+            0
+          ],
+          "mean": 0,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 0,
+          "maximum": 0,
+          "range": 0,
+          "range_pct": null,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        },
+        "spike_time_lost_ms": {
+          "n": 1,
+          "values": [
+            0.0
+          ],
+          "mean": 0.0,
+          "sd_sample": null,
+          "variance_sample": null,
+          "cv_pct": null,
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "range": 0.0,
+          "range_pct": null,
+          "ci95_halfwidth": null,
+          "mdd_pct": null
+        }
+      }
+    }
+  },
+  "restart_delta_pct": {
+    "avg_fps": 0.11747790346277043,
+    "ft_avg_ms": -0.11668623657938859,
+    "ft_median_ms": -0.11932463954604788,
+    "ft_p95_ms": -1.8509132938585027,
+    "ft_p99_ms": -2.307864319219577,
+    "fps_1pct_low_time": -0.7707873750630423,
+    "fps_01pct_low_time": -9.032030015215685,
+    "spikes": null,
+    "severe_spikes": null,
+    "spike_time_lost_ms": null
+  },
+  "runs": [
+    {
+      "run": "manual_r1",
+      "pid": 4524,
+      "capture_before": "2026-09-07T17:46:12.240428+02:00",
+      "capture_after": "2026-09-07T17:48:49.029084+02:00",
+      "native_source": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_17-46-23",
+      "frames": 7261,
+      "avg_fps": 113.02617550954463,
+      "alignment": {
+        "first_row": 4688,
+        "last_row": 11948,
+        "correlation": 0.8919905856031554,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "presentmon_row": 4688,
+            "correlation": 0.8726531586437131
+          },
+          {
+            "native_offset": 3130,
+            "presentmon_row": 7818,
+            "correlation": 0.8946886644536662
+          },
+          {
+            "native_offset": 6261,
+            "presentmon_row": 10949,
+            "correlation": 0.8324266873726608
+          }
+        ],
+        "game_fps_delta_pct": 0.014912388608445681,
+        "game_duration_delta_s": -0.009579044042610008
+      },
+      "configuration_equal_to_r1": true,
+      "gpu_busy_to_frame_pct": 98.59002188356746
+    },
+    {
+      "run": "manual_r2",
+      "pid": 4524,
+      "capture_before": "2026-09-07T17:52:56.369081+02:00",
+      "capture_after": "2026-09-07T17:55:33.026313+02:00",
+      "native_source": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_17-53-02",
+      "frames": 7259,
+      "avg_fps": 112.9794260309595,
+      "alignment": {
+        "first_row": 3892,
+        "last_row": 11150,
+        "correlation": 0.8914553962328328,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "presentmon_row": 3892,
+            "correlation": 0.8731866915209323
+          },
+          {
+            "native_offset": 3129,
+            "presentmon_row": 7021,
+            "correlation": 0.8649767367374375
+          },
+          {
+            "native_offset": 6259,
+            "presentmon_row": 10151,
+            "correlation": 0.8238491468680655
+          }
+        ],
+        "game_fps_delta_pct": 0.012807369889955567,
+        "game_duration_delta_s": -0.008229156445210606
+      },
+      "configuration_equal_to_r1": true,
+      "gpu_busy_to_frame_pct": 98.4991070100294
+    },
+    {
+      "run": "manual_r3",
+      "pid": 4524,
+      "capture_before": "2026-09-07T18:00:05.612715+02:00",
+      "capture_after": "2026-09-07T18:02:42.232779+02:00",
+      "native_source": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-00-11",
+      "frames": 7253,
+      "avg_fps": 112.90316208460395,
+      "alignment": {
+        "first_row": 3136,
+        "last_row": 10388,
+        "correlation": 0.8879999256364075,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "presentmon_row": 3136,
+            "correlation": 0.8835436709212945
+          },
+          {
+            "native_offset": 3126,
+            "presentmon_row": 6262,
+            "correlation": 0.8636699381946564
+          },
+          {
+            "native_offset": 6253,
+            "presentmon_row": 9389,
+            "correlation": 0.7959223065868761
+          }
+        ],
+        "game_fps_delta_pct": 0.013140005302658686,
+        "game_duration_delta_s": -0.008442842675464135
+      },
+      "configuration_equal_to_r1": true,
+      "gpu_busy_to_frame_pct": 98.47297844582128
+    },
+    {
+      "run": "manual_r4",
+      "pid": 4524,
+      "capture_before": "2026-09-07T18:08:52.189188+02:00",
+      "capture_after": "2026-09-07T18:11:28.880505+02:00",
+      "native_source": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-09-05",
+      "frames": 7255,
+      "avg_fps": 112.93148519019871,
+      "alignment": {
+        "first_row": 4859,
+        "last_row": 12113,
+        "correlation": 0.8898510247451648,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "presentmon_row": 4859,
+            "correlation": 0.8653949200194944
+          },
+          {
+            "native_offset": 3127,
+            "presentmon_row": 7986,
+            "correlation": 0.8642869920002342
+          },
+          {
+            "native_offset": 6255,
+            "presentmon_row": 11114,
+            "correlation": 0.8272050455123049
+          }
+        ],
+        "game_fps_delta_pct": 0.013139183284116562,
+        "game_duration_delta_s": -0.0084390861329382
+      },
+      "configuration_equal_to_r1": true,
+      "gpu_busy_to_frame_pct": 98.51326312753007
+    },
+    {
+      "run": "manual_r5",
+      "pid": 12668,
+      "capture_before": "2026-09-07T18:41:37.138701+02:00",
+      "capture_after": "2026-09-07T18:44:13.318192+02:00",
+      "native_source": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-41-48",
+      "frames": 7266,
+      "avg_fps": 113.09276531665398,
+      "alignment": {
+        "first_row": 6490,
+        "last_row": 13755,
+        "correlation": 0.8910659669727333,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "presentmon_row": 6490,
+            "correlation": 0.8558783015111958
+          },
+          {
+            "native_offset": 3133,
+            "presentmon_row": 9623,
+            "correlation": 0.7978494989950741
+          },
+          {
+            "native_offset": 6266,
+            "presentmon_row": 12756,
+            "correlation": 0.8502712748592354
+          }
+        ],
+        "game_fps_delta_pct": 0.013831061995595029,
+        "game_duration_delta_s": -0.008885072362872393
+      },
+      "configuration_equal_to_r1": true,
+      "gpu_busy_to_frame_pct": 98.58472810214673
+    }
+  ],
+  "configuration": {
+    "all_native_configs_equal": true,
+    "excluded_result_fields": [
+      "averageFps",
+      "minFps",
+      "maxFps",
+      "time",
+      "frameNumber"
+    ],
+    "diffs_vs_r1": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "native_config": {
+      "gameVersion": "2.31",
+      "benchmarkName": "base\\streaming\\test\\benchmark\\benchmark.gamedef",
+      "gpuName": "AMD Radeon RX 6950 XT",
+      "gpuMemory": 16337,
+      "gpuDriverVersion": "Radeon software 26.8.1",
+      "cpuName": "AMD Ryzen 7 5800X3D 8-Core Processor",
+      "systemMemory": 32768,
+      "osName": "Windows 11 Pro",
+      "osVersion": "10.0.26200",
+      "presetName": "Custom",
+      "presetLocalizedName": "UI-Settings-Video-QualitySetting-Custom",
+      "textureQualityPresetLocalizedName": "UI-Settings-Video-QualitySetting-High",
+      "renderWidth": 2560,
+      "renderHeight": 1440,
+      "windowMode": 1,
+      "verticalSync": false,
+      "fpsClamp": -1,
+      "upscalingType": 0,
+      "frameGenerationType": 0,
+      "DLAAEnabled": false,
+      "DLAASharpness": 0.0,
+      "DLSSEnabled": false,
+      "DLSSPreset": 0,
+      "DLSSDEnabled": false,
+      "DLSSQuality": 0,
+      "DLSSSharpness": 0.0,
+      "DLSSFrameGenEnabled": false,
+      "DLSSMultiFrameGenEnabled": false,
+      "DLSSMultiFrameGenFrameToGenerate": 1,
+      "FSR2Enabled": false,
+      "FSR2Quality": 1,
+      "FSR2Sharpness": 0.5,
+      "FSR3Enabled": false,
+      "FSR3Quality": 0,
+      "FSR3Sharpness": 0.5,
+      "FSR3FrameGenEnabled": false,
+      "FSR4Enabled": false,
+      "FSR4Quality": 2147483647,
+      "FSR4Sharpness": 3.4028234663852886e+38,
+      "XeSSEnabled": false,
+      "XeSSQuality": 0,
+      "XeSSSharpness": 0.5,
+      "XeSSFrameGenEnabled": false,
+      "DRSEnabled": false,
+      "DRSTargetFPS": 30,
+      "DRSMinimalResolutionPercentage": 65,
+      "DRSMaximalResolutionPercentage": 85,
+      "CASSharpeningEnabled": false,
+      "FSREnabled": false,
+      "FSRQuality": 0,
+      "rayTracingEnabled": false,
+      "rayTracedReflections": false,
+      "rayTracedSunShadows": false,
+      "rayTracedLocalShadows": false,
+      "rayTracedLightingQuality": 0,
+      "rayTracedPathTracingEnabled": false
+    },
+    "scope": "Only fields recorded in native benchmark summary; full graphics settings equality also needs preserved UserSettings evidence."
+  },
+  "chronology": {
+    "steel_nomad_pre_finish": "2026-09-07T13:46:35.150584+02:00",
+    "steel_nomad_post_finish": "2026-09-07T18:26:39.638935100+02:00",
+    "run5_capture_before": "2026-09-07T18:41:37.138701+02:00",
+    "steel_nomad_post_brackets_first_four": true,
+    "steel_nomad_post_brackets_run5": false,
+    "note": "Steel Nomad post at 18:26 precedes manual_r5 at 18:41. It is not a post-control for the restarted fifth run."
+  },
+  "source_hash_checks": [
+    {
+      "run": "manual_r1",
+      "path": "research\\60_c2077_20260907_codex\\manual_r1\\presentmon.csv",
+      "expected": "6d6f5a9c2f5755fd839fb111889d05611b6abc206779fcb28a791383af0537d0",
+      "actual": "6d6f5a9c2f5755fd839fb111889d05611b6abc206779fcb28a791383af0537d0",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r1",
+      "path": "research\\60_c2077_20260907_codex\\manual_r1\\metadata.json",
+      "expected": "df5c6845ee12c789eb1bb8c9fa7d7241d8b577ab853a7fbefbd6f665d54352f0",
+      "actual": "df5c6845ee12c789eb1bb8c9fa7d7241d8b577ab853a7fbefbd6f665d54352f0",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r1",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_17-46-23\\summary.json",
+      "expected": "fbc10342a5fae8800b1fdb4358d1c299229136867e6c394411258bf37a16a8ac",
+      "actual": "fbc10342a5fae8800b1fdb4358d1c299229136867e6c394411258bf37a16a8ac",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r1",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_17-46-23\\frames.csv",
+      "expected": "5b6e30cb0de27e41b20af9e3d4d786715f21409715ff1c6c425e37472a3d9d2f",
+      "actual": "5b6e30cb0de27e41b20af9e3d4d786715f21409715ff1c6c425e37472a3d9d2f",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r1",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\c2077_native.py",
+      "expected": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "actual": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r1",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\pmparse.py",
+      "expected": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "actual": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r2",
+      "path": "research\\60_c2077_20260907_codex\\manual_r2\\presentmon.csv",
+      "expected": "685393df6803b506d616bd88c97ae627030a26bb185352ba847232798e5b6924",
+      "actual": "685393df6803b506d616bd88c97ae627030a26bb185352ba847232798e5b6924",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r2",
+      "path": "research\\60_c2077_20260907_codex\\manual_r2\\metadata.json",
+      "expected": "113cbda07323489a19d3008d48290fb7390aa419163dbc35a20521b7d3f8be98",
+      "actual": "113cbda07323489a19d3008d48290fb7390aa419163dbc35a20521b7d3f8be98",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r2",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_17-53-02\\summary.json",
+      "expected": "320659227e02dc435da2dfd8560b2f3662f3535bee0841ae95dc6de0229ea015",
+      "actual": "320659227e02dc435da2dfd8560b2f3662f3535bee0841ae95dc6de0229ea015",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r2",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_17-53-02\\frames.csv",
+      "expected": "e169f45ff10255d1395ee733f5fc2afdb75fd15639e62721db3c6001030ee5dc",
+      "actual": "e169f45ff10255d1395ee733f5fc2afdb75fd15639e62721db3c6001030ee5dc",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r2",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\c2077_native.py",
+      "expected": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "actual": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r2",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\pmparse.py",
+      "expected": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "actual": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r3",
+      "path": "research\\60_c2077_20260907_codex\\manual_r3\\presentmon.csv",
+      "expected": "d895343904f9bd484e6451d2dc9e90435de42400b1e4514de16e0439c13bd280",
+      "actual": "d895343904f9bd484e6451d2dc9e90435de42400b1e4514de16e0439c13bd280",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r3",
+      "path": "research\\60_c2077_20260907_codex\\manual_r3\\metadata.json",
+      "expected": "e7e94092832e4c8213bfb85cb00e9e5d134852a316926e3a594b8fa6985430af",
+      "actual": "e7e94092832e4c8213bfb85cb00e9e5d134852a316926e3a594b8fa6985430af",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r3",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-00-11\\summary.json",
+      "expected": "4d1011269661eec01cacea24070e049da4c714fb263c4b73ea5bc0b3c2c32062",
+      "actual": "4d1011269661eec01cacea24070e049da4c714fb263c4b73ea5bc0b3c2c32062",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r3",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-00-11\\frames.csv",
+      "expected": "7518e272d7753a40d9261a13816988756c18e8908d6177a5036d6e051bc3bb5b",
+      "actual": "7518e272d7753a40d9261a13816988756c18e8908d6177a5036d6e051bc3bb5b",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r3",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\c2077_native.py",
+      "expected": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "actual": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r3",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\pmparse.py",
+      "expected": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "actual": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r4",
+      "path": "research\\60_c2077_20260907_codex\\manual_r4\\presentmon.csv",
+      "expected": "78d851f412e33259a1bdeac3b125d48b7634db3dd2f1db760c49067e34de6d6d",
+      "actual": "78d851f412e33259a1bdeac3b125d48b7634db3dd2f1db760c49067e34de6d6d",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r4",
+      "path": "research\\60_c2077_20260907_codex\\manual_r4\\metadata.json",
+      "expected": "7ff16fc50543105d1d933f0251723648395a92eabc43935e44211f5d298e6f5c",
+      "actual": "7ff16fc50543105d1d933f0251723648395a92eabc43935e44211f5d298e6f5c",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r4",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-09-05\\summary.json",
+      "expected": "cf9d2db70022182737b5080a45e1982b01570ac20a959d3de28a3e5afb1bea98",
+      "actual": "cf9d2db70022182737b5080a45e1982b01570ac20a959d3de28a3e5afb1bea98",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r4",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-09-05\\frames.csv",
+      "expected": "7ee91aa4e440ea6506d3ac44e29366b1c9a3a8d1102a9207fa8e2e34f0e32f23",
+      "actual": "7ee91aa4e440ea6506d3ac44e29366b1c9a3a8d1102a9207fa8e2e34f0e32f23",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r4",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\c2077_native.py",
+      "expected": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "actual": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r4",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\pmparse.py",
+      "expected": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "actual": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r5",
+      "path": "research\\60_c2077_20260907_codex\\manual_r5\\presentmon.csv",
+      "expected": "6349c70679dd516cf3c4e2d8e932266958e266c8d55aa146b21dcfe70ba55b55",
+      "actual": "6349c70679dd516cf3c4e2d8e932266958e266c8d55aa146b21dcfe70ba55b55",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r5",
+      "path": "research\\60_c2077_20260907_codex\\manual_r5\\metadata.json",
+      "expected": "296ba559ddc76415553f5ee857d11d2cdc1da74ccd900bc750792a1ce97c852f",
+      "actual": "296ba559ddc76415553f5ee857d11d2cdc1da74ccd900bc750792a1ce97c852f",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r5",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-41-48\\summary.json",
+      "expected": "09268e9aa316209ccb3938b441f1e3affe40a9d5e978631c2f2c1a895e8c4c6a",
+      "actual": "09268e9aa316209ccb3938b441f1e3affe40a9d5e978631c2f2c1a895e8c4c6a",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r5",
+      "path": "C:\\Users\\Lorenzo\\Documents\\CD Projekt Red\\Cyberpunk 2077\\benchmarkResults\\benchmark_2026-09-07_18-41-48\\frames.csv",
+      "expected": "7946cc0db3203495724dfc88efbb68e8b353fda5a1bdace6c75847d13e1a742f",
+      "actual": "7946cc0db3203495724dfc88efbb68e8b353fda5a1bdace6c75847d13e1a742f",
+      "match": true,
+      "kind": "raw_or_metadata"
+    },
+    {
+      "run": "manual_r5",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\c2077_native.py",
+      "expected": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "actual": "65ecec71df91f26235b094090addd4644a204f8a654ca0bdfdfb4a4116ea8242",
+      "match": true,
+      "kind": "tool"
+    },
+    {
+      "run": "manual_r5",
+      "path": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\tools\\pmparse.py",
+      "expected": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "actual": "15bff3ecac2f8ab572a3ec54cfccbb9660270e2e678b4d304c4804394177094f",
+      "match": true,
+      "kind": "tool"
+    }
+  ],
+  "all_recorded_source_hashes_match": true,
+  "source_analysis_sha256": {
+    "research\\60_c2077_20260907_codex\\manual_r1\\native_analysis\\analysis.json": "d08de4239e6ca69f4f302f07dacd1287bc6fcb9f4572b7a287e9a19cc0406a85",
+    "research\\60_c2077_20260907_codex\\manual_r2\\native_analysis\\analysis.json": "6aad374684e2c71232fb66bac37003d622e452b84fa3833e0dca8d5ed152747a",
+    "research\\60_c2077_20260907_codex\\manual_r3\\native_analysis\\analysis.json": "3998b61140fb448d1b8d38c563a9769104ffbbbddb342defc142d5b962698a39",
+    "research\\60_c2077_20260907_codex\\manual_r4\\native_analysis\\analysis.json": "a5de6934bedf3dad0c53470bbfb7fd2bd039515470b8111ba1e0d3bd8ef48ee2",
+    "research\\60_c2077_20260907_codex\\manual_r5\\native_analysis\\analysis.json": "7aec992be8c05a6c5f217731a33b89e833391eedf1a66ff6da2e50420951188d"
+  },
+  "limitations": [
+    "Five valid manual captures, but fifth is a separate process/restart stratum with n=1; comparable means do not establish identical conditions or within-stratum variance.",
+    "No optimization intervention or shader headroom demonstrated.",
+    "No deletion as outlier; initial GUI-controlled bench_r2 excluded from this manual-five aggregation and retained elsewhere."
+  ]
+}

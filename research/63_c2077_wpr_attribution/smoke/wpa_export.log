@@ -1,0 +1,19 @@
+Cannot use file stream for [C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\wpaexporter.deps.json]: No such file or directory
+[Microsoft.Performance.SDK.Runtime.Discovery.AssemblyExtensionDiscovery]: Verbose - Process assemblies: successfully parsed C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\CustomDataSources\XPerf\PluginLoadExclusions with 69 exclusions.
+[Microsoft.Performance.SDK.Runtime.Discovery.AssemblyExtensionDiscovery]: Verbose - Process assemblies: excluding file 'C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\CustomDataSources\XPerf\SimpleInjector.dll'.
+[Microsoft.Performance.SDK.Runtime.Discovery.AssemblyExtensionDiscovery]: Information - Loaded all in 416ms
+Microsoft (R) Windows Performance Analyzer Version 11.7.395.48728
+Copyright (C) 2026 Microsoft Corporation.  All rights reserved.
+
+
+Unhandled exception. System.IO.FileNotFoundException: Unable to load the specified profile: 'C:\Users\Lorenzo\Downloads\driver mod\research\63_c2077_wpr_attribution\cpu_stacks.wpaProfile'
+File name: 'C:\Users\Lorenzo\Downloads\driver mod\research\63_c2077_wpr_attribution\cpu_stacks.wpaProfile'
+   at Microsoft.Performance.Exporter.ProfileExportData..ctor(String profilePath, IEnumerable`1 tracePaths)
+   at Microsoft.Performance.Analyzer.Program.CreateProfileExportData(ParsedCommandLine parsedCommandLine)+MoveNext()
+   at Microsoft.Performance.Analyzer.Program.CreateExportDataObjects(IEnumerable`1 processingSources, ParsedCommandLine parsedCommandLine)+MoveNext()
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at Microsoft.Performance.Analyzer.Program.CreateExportContext(IRequestHandler`2 wpaAppFactory, ICommandHandler`1 openMainWindowCommand, IEnumerable`1 loadedProcessingSources, ParsedCommandLine parsedCommandLine)
+   at Microsoft.Performance.Analyzer.Program.RunProcessingSourceAsync(ParsedCommandLine parsedCommandLine, IRequestHandler`2 getLoadedPluginsData, IRequestHandler`2 wpaAppFactory, ICommandHandler`1 openMainWindowCommand)
+   at Microsoft.Performance.Analyzer.Program.RunAsync(String[] args)
+   at Microsoft.Performance.Analyzer.Program.MainAsync(String[] args)
+   at Microsoft.Performance.Analyzer.Program.Main(String[] args)

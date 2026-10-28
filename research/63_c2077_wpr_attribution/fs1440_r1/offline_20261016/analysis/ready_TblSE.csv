@@ -1,0 +1,12 @@
+function name,exclusivehits,totalpercent,inclusivehits,base,limit,size
+ntkrnlmp.exe!KeReleaseSemaphoreEx,6518355,97.01%,6523888,0x0038e0fc,0x0038e305,0x00000209
+ntkrnlmp.exe!EtwpTraceStackWalk,133123,1.98%,133123,0x003dd770,0x003ddd62,0x000005f2
+ntkrnlmp.exe!KeSetEvent,38565,0.57%,152933,0x00227340,0x00227aca,0x0000078a
+ntkrnlmp.exe!ExpReleaseFastResourceExclusiveSlow,10810,0.16%,18106,0x00283560,0x00283a51,0x000004f1
+ntkrnlmp.exe!ExReleaseFastResource,10081,0.15%,28507,0x00281bf0,0x0028240f,0x0000081f
+ntkrnlmp.exe!KeAlertThreadByThreadIdEx,7483,0.11%,7484,0x002d3d68,0x002d3deb,0x00000083
+ntkrnlmp.exe!ExReleaseResourceLite,555,0.01%,1067,0x002801f0,0x00281be1,0x000019f1
+ntkrnlmp.exe!AlpcpSignalAndWait,65,0.00%,65,0x002c3170,0x002c37f3,0x00000683
+ntkrnlmp.exe!AlpcpSignal,26,0.00%,5330,0x002b9ec0,0x002ba975,0x00000ab5
+ntkrnlmp.exe!ExReleaseResourceAndLeaveCriticalRegion,3,0.00%,3,0x0027dc00,0x0027f33a,0x0000173a
+ntkrnlmp.exe!ExpQueueWorkItem,1,0.00%,17,0x002c2870,0x002c2c44,0x000003d4

@@ -1,0 +1,55 @@
+{
+  "footer": {
+    "shaderCount": 19037,
+    "extraCount": 19647,
+    "notherCount": 1019,
+    "uk1": 1514048811,
+    "uk2": 4040168244,
+    "uk3": 47441236,
+    "onemorePostfix": 2123555840,
+    "struct2Count": 173,
+    "shadersSize": 156774196,
+    "extrasSize": 4930975,
+    "notherSize": 88804,
+    "struct2Size": 5862,
+    "onemoreSize": 4744,
+    "extraOffset": 156774196,
+    "notherOffset": 161705171,
+    "onemoreOffset": 161793975,
+    "struct2Offset": 161798719,
+    "rdhs": 1397245010,
+    "ten": 10
+  },
+  "shader_records": 19037,
+  "compilation_records": 19647,
+  "stage_token_counts_by_slot": {
+    "shader_a_guid": {
+      "1": 19647
+    },
+    "shader_b_guid": {
+      "0": 17083,
+      "zero/no-shader": 2564
+    }
+  },
+  "stage_enum": {
+    "0": "pixel",
+    "1": "vertex"
+  },
+  "target_guid": "15973390170752892218",
+  "target_guid_hex": "0xddace1baca713d3a",
+  "target_matches": [
+    {
+      "info": "glass CompiledTechnique [Index: 0, Pass 'renderstage_transparent', PassIndex: 0, Fallback: 0, RenderStageContext: [ID: 18, VF: MeshStatic; Discarded]",
+      "shader_a_guid": 3757279649945394311,
+      "shader_b_guid": 15973390170752892218,
+      "material_guid": 4737044088447651087,
+      "flags": [
+        [],
+        [
+          131330
+        ]
+      ]
+    }
+  ],
+  "upstream_slot_names_rejected": true
+}

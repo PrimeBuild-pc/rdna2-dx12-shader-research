@@ -1,0 +1,9 @@
+{
+  "variant": "stack4",
+  "set": "resp",
+  "rep": 2,
+  "pid": 11944,
+  "samples": 32,
+  "bytecode_sha256": "83621c5d0315d0f23bf97efebeb56f1fed8d6b5d634d25f528a16c7bef787253",
+  "executable_sha256": "831869fe9e93df598b41b96e6556034621aa9fa3039f7cbacd689867232fec60"
+}

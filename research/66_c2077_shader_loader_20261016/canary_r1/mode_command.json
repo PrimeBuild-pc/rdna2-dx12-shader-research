@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "python",
+    "-B",
+    "tools/c2077_shader_loader.py",
+    "mode",
+    "canary"
+  ],
+  "returncode": 0,
+  "stdout": "Mode set; applies only on next manual game start\n",
+  "stderr": ""
+}

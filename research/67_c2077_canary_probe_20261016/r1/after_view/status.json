@@ -1,0 +1,131 @@
+{
+  "state": "installed",
+  "mode": "canary",
+  "processes": [],
+  "runtime": [
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-5396-134366570938610954.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 5396,
+        "event": "heartbeat",
+        "mode": "control",
+        "dx12_pipeline_inits": 5360,
+        "matched_original": 5,
+        "cloned_pipelines": 5,
+        "clone_failures": 0,
+        "bound_calls": 1044,
+        "presents": 87017
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593936547692.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 14612,
+        "event": "unloaded",
+        "mode": "canary",
+        "dx12_pipeline_inits": 0,
+        "matched_original": 0,
+        "cloned_pipelines": 0,
+        "clone_failures": 0,
+        "bound_calls": 0,
+        "presents": 0
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593937887710.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 14612,
+        "event": "heartbeat",
+        "mode": "canary",
+        "dx12_pipeline_inits": 7883,
+        "matched_original": 5,
+        "cloned_pipelines": 5,
+        "clone_failures": 0,
+        "bound_calls": 2033,
+        "presents": 164704
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-11348-134366633063428551.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 11348,
+        "event": "unloaded",
+        "mode": "canary",
+        "dx12_pipeline_inits": 0,
+        "matched_original": 0,
+        "cloned_pipelines": 0,
+        "clone_failures": 0,
+        "bound_calls": 0,
+        "presents": 0
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-11348-134366633065553540.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 11348,
+        "event": "heartbeat",
+        "mode": "canary",
+        "dx12_pipeline_inits": 5907,
+        "matched_original": 4,
+        "cloned_pipelines": 4,
+        "clone_failures": 0,
+        "bound_calls": 0,
+        "presents": 118506
+      }
+    }
+  ],
+  "probe": [
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\probe-11348-134366633064138541.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-PROBE-001",
+        "pid": 11348,
+        "event": "unloaded",
+        "pipeline_inits": 0,
+        "target_psos": 0,
+        "target_binds": 0,
+        "all_draw_callbacks": 0,
+        "target_direct_calls": 0,
+        "target_indexed_calls": 0,
+        "target_indirect_calls": 0,
+        "target_unknown_indirect_calls": 0,
+        "target_empty_calls": 0,
+        "target_bundle_potential_calls": 0,
+        "queue_list_submissions": 0,
+        "target_work_list_submissions": 0
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\probe-11348-134366633066223538.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-PROBE-001",
+        "pid": 11348,
+        "event": "heartbeat",
+        "pipeline_inits": 5907,
+        "target_psos": 4,
+        "target_binds": 0,
+        "all_draw_callbacks": 404319289,
+        "target_direct_calls": 0,
+        "target_indexed_calls": 0,
+        "target_indirect_calls": 0,
+        "target_unknown_indirect_calls": 0,
+        "target_empty_calls": 0,
+        "target_bundle_potential_calls": 0,
+        "queue_list_submissions": 7040339,
+        "target_work_list_submissions": 0
+      }
+    }
+  ]
+}

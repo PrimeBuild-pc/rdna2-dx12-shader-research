@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-16T22:37:57.045778+00:00",
+  "result": "PASS_PARTIAL_OBSERVATION_CHECKS",
+  "pid": 11348,
+  "snapshots_verified": true,
+  "metadata_decoding_verified": true,
+  "target_bind_observed": false,
+  "root_cause_identified": false,
+  "local_links_checked": 51,
+  "live_files_modified": false
+}

@@ -1,0 +1,97 @@
+{
+  "stage_counts": [
+    {
+      "stage": "pixel",
+      "model": "6.0",
+      "count": 5238
+    },
+    {
+      "stage": "vertex",
+      "model": "6.0",
+      "count": 13983
+    },
+    {
+      "stage": "compute",
+      "model": "6.0",
+      "count": 603
+    },
+    {
+      "stage": "library",
+      "model": "6.3",
+      "count": 68
+    },
+    {
+      "stage": "compute",
+      "model": "6.2",
+      "count": 56
+    },
+    {
+      "stage": "compute",
+      "model": "6.5",
+      "count": 2
+    }
+  ],
+  "extracted": [
+    {
+      "file": "research\\64_c2077_shader_access_20261016\\extracted\\pixel_efca2e4b6b69bb0a.dxil",
+      "source_copy": "shader_final.cache",
+      "offset": 20,
+      "bytes": 5702,
+      "sha256": "efca2e4b6b69bb0ab7b4b01c9d915ed7cb5208809281afb8869706cb06757ca4",
+      "stage": "pixel",
+      "model": "6.0"
+    },
+    {
+      "file": "research\\64_c2077_shader_access_20261016\\extracted\\vertex_816865ef59666a14.dxil",
+      "source_copy": "shader_final.cache",
+      "offset": 5742,
+      "bytes": 5770,
+      "sha256": "816865ef59666a1414e7fe17008dab05380c65ce642cbba11d8a959dd91a843d",
+      "stage": "vertex",
+      "model": "6.0"
+    },
+    {
+      "file": "research\\64_c2077_shader_access_20261016\\extracted\\compute_6bd7d8e2bb822542.dxil",
+      "source_copy": "staticshader_final.cache",
+      "offset": 174625,
+      "bytes": 6864,
+      "sha256": "6bd7d8e2bb822542131c0b49639a8d131da8424a9f4784a60a665a4352abc5f1",
+      "stage": "compute",
+      "model": "6.0"
+    },
+    {
+      "file": "research\\64_c2077_shader_access_20261016\\extracted\\library_1f2e5bbc776ec195.dxil",
+      "source_copy": "staticshader_final.cache",
+      "offset": 338370,
+      "bytes": 101620,
+      "sha256": "1f2e5bbc776ec19538484cdf5a83fe966c6f96cfa4cdae107a4022674667258c",
+      "stage": "library",
+      "model": "6.3"
+    }
+  ],
+  "dxc": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "dxc_sha256": "854d5f29dbbe25b584942855e65d673db3164f7f68e20fb784be9cd747d14814",
+  "disassembly_runs": [
+    {
+      "command": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+        "-dumpbin",
+        "research\\64_c2077_shader_access_20261016\\extracted\\pixel_efca2e4b6b69bb0a.dxil"
+      ],
+      "exit": 0,
+      "stdout_bytes": 27432,
+      "stderr_bytes": 0
+    },
+    {
+      "command": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+        "-dumpbin",
+        "research\\64_c2077_shader_access_20261016\\extracted\\compute_6bd7d8e2bb822542.dxil"
+      ],
+      "exit": 0,
+      "stdout_bytes": 47677,
+      "stderr_bytes": 0
+    }
+  ],
+  "limits": "DXC readability only; not bytecode equivalence, runtime provenance, rewrite acceptance, or performance."
+}

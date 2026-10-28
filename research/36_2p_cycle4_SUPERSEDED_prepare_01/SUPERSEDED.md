@@ -1,0 +1,1 @@
+prepare ereditava baseline_sources dal ciclo P1, che contiene solo Lighting.hlsli; P4 modifica anche LightManager.cpp e il restore falliva prima di ogni build. Il gate ha fermato tutte e quattro le build. Nessuna misura. Corretto: prepare copia ora anche i file che nessun ciclo precedente toccava, verificandoli byte-identici al clone pristino.

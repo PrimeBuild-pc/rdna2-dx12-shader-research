@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-16T22:35:59.694841+00:00",
+  "result": "PARTIAL_NO_TARGET_BIND_IN_SNAPSHOT",
+  "pid": 11348,
+  "pso_states": [
+    {
+      "pso": 2684090759296,
+      "rt_count": 1,
+      "formats": [
+        "r16g16b16a16_float"
+      ],
+      "rt0_write_mask": 15,
+      "rt0_rgb_writes_enabled": true,
+      "source_rgb_factor": "one",
+      "dest_rgb_factor": "source1_color",
+      "color_op": "add"
+    },
+    {
+      "pso": 2684029164176,
+      "rt_count": 1,
+      "formats": [
+        "r11g11b10_float"
+      ],
+      "rt0_write_mask": 15,
+      "rt0_rgb_writes_enabled": true,
+      "source_rgb_factor": "one",
+      "dest_rgb_factor": "source1_color",
+      "color_op": "add"
+    },
+    {
+      "pso": 2684372164784,
+      "rt_count": 3,
+      "formats": [
+        "r11g11b10_float",
+        "unknown",
+        "r8_unorm"
+      ],
+      "rt0_write_mask": 15,
+      "rt0_rgb_writes_enabled": true,
+      "source_rgb_factor": "one",
+      "dest_rgb_factor": "source1_color",
+      "color_op": "add"
+    },
+    {
+      "pso": 2684374203744,
+      "rt_count": 3,
+      "formats": [
+        "r11g11b10_float",
+        "unknown",
+        "r8_unorm"
+      ],
+      "rt0_write_mask": 15,
+      "rt0_rgb_writes_enabled": true,
+      "source_rgb_factor": "one",
+      "dest_rgb_factor": "source1_color",
+      "color_op": "add"
+    }
+  ],
+  "counters": {
+    "schema": 1,
+    "experiment": "C2077-SHADER-PROBE-001",
+    "pid": 11348,
+    "event": "heartbeat",
+    "pipeline_inits": 5445,
+    "target_psos": 4,
+    "target_binds": 0,
+    "all_draw_callbacks": 29015889,
+    "target_direct_calls": 0,
+    "target_indexed_calls": 0,
+    "target_indirect_calls": 0,
+    "target_unknown_indirect_calls": 0,
+    "target_empty_calls": 0,
+    "target_bundle_potential_calls": 0,
+    "queue_list_submissions": 1274897,
+    "target_work_list_submissions": 0
+  },
+  "facts": [
+    "Four target PSOs have RGB write mask enabled and source RGB factor one",
+    "Destination factor source1_color is dual-source blending; shader SV_Target1 is not necessarily a second independent render target",
+    "No target bind/draw/submission in this initial snapshot; no attribution to the previously bound fifth PSO is justified"
+  ],
+  "root_cause_identified": false,
+  "next": "Operator returns to unpaused scene and briefly moves view without restarting"
+}

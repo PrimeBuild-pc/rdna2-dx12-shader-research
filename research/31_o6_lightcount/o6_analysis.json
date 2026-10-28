@@ -1,0 +1,148 @@
+{
+  "experiment_id": "O6_20260906_185359",
+  "criteria": {
+    "question": "does TA_BUSY in Render Color follow the count of pixel-stage texture instructions, as O5 concluded, or not",
+    "lever": "number of lights surviving tile culling, set in C++ data only. The pixel shader bytecode must stay 52CE6C5E64AB2E82 in every variant and the build gate enforces it, so instruction selection, register pressure and scheduling are fixed by construction.",
+    "dose": "SQ_PS INSTS_TEX_LOAD per pixel-shader wave, measured, never inferred from the stride. Culling by radius is not assumed to be perfect - whatever it actually removes is what the dose reports.",
+    "confounder": "SQ_PS INSTS_VALU and INST_CYCLES_VALU fall as well, since each removed light removes its shading arithmetic. Measured in the same single-pass session as the dose and reported beside it. This cycle cannot separate the two by itself; O4 already separated them in the other direction (TA_BUSY -3.5 % at fixed ALU).",
+    "response_mechanistic": "sum of TA_PERF_SEL_TA_BUSY over the 80 CUs (set tcp_ta, 1 pass)",
+    "response_outcome": "GPUTime and GPUBusyCycles of the Render Color sample (set resp)",
+    "replication_band": "the model predicts d TA_BUSY / d (PS texture instructions) in [0.75, 1.25] on every arm, and an implied marginal cost per removed instruction in [10, 19] cycles, i.e. 14.5 +- 30 %. Bands fixed before measuring.",
+    "falsification": "a ratio below 0.5 on the arms falsifies O5's conclusion: TA_BUSY would not be following the instruction count. Above 1.5 the model is incomplete - something else scales with the lights as well.",
+    "statistic": "median over >= 32 samples per run, 3 independent processes per variant, order interleaved and reversed; threshold max(2 %, 3 x N95) per metric from the L128 A/A control measured here, as in O4",
+    "ablation_kind": "diagnostic_only - fewer lights, so the image changes; no variant here is an accepted optimisation",
+    "o5_numbers_under_test": {
+      "ta_busy_cycles_per_tex_instruction": 14.51,
+      "ps_tex_instructions_per_wave": 156.0,
+      "stall_over_busy_pct": 0.24,
+      "l0_hit_pct": 97.66
+    }
+  },
+  "dose": {
+    "L128": {
+      "tex": 6109436.5,
+      "valu": 70943913.0,
+      "valu_cyc": 183084538.5,
+      "waves": 39166.0
+    },
+    "L64": {
+      "tex": 3948375.0,
+      "valu": 45414577.5,
+      "valu_cyc": 116546138.0,
+      "waves": 39146.5
+    },
+    "L32": {
+      "tex": 1952172.0,
+      "valu": 23733275.5,
+      "valu_cyc": 60221894.0,
+      "waves": 39103.0
+    },
+    "L16": {
+      "tex": 1305722.0,
+      "valu": 16569101.5,
+      "valu_cyc": 41668140.5,
+      "waves": 39089.5
+    }
+  },
+  "n95": {
+    "ta_busy": 0.011382014920928324,
+    "stall": 1.273077391481547,
+    "tcp_req": 0.0026587416311233706,
+    "GPUTime": 13.988517482332039,
+    "GPUBusyCycles": 0.6575167033170723
+  },
+  "threshold_pct": {
+    "ta_busy": 2.0,
+    "stall": 3.819232174444641,
+    "tcp_req": 2.0,
+    "GPUTime": 41.965552446996114,
+    "GPUBusyCycles": 2.0
+  },
+  "rows": [
+    {
+      "variant": "L128",
+      "d_tex": 0.0,
+      "d_ta": 0.0,
+      "d_busy": 0.0,
+      "d_time": 0.0,
+      "ratio": NaN,
+      "marginal_cycles_per_instr": NaN
+    },
+    {
+      "variant": "L64",
+      "d_tex": -35.37251757997648,
+      "d_ta": -33.0871359115025,
+      "d_busy": -32.475416606490874,
+      "d_time": -32.60950101165541,
+      "ratio": 0.9353910373128861,
+      "marginal_cycles_per_instr": 13.575763808665325
+    },
+    {
+      "variant": "L32",
+      "d_tex": -68.04661117273254,
+      "d_ta": -61.570911448848896,
+      "d_busy": -60.20078866178334,
+      "d_time": -60.317460317460316,
+      "ratio": 0.9048343538013166,
+      "marginal_cycles_per_instr": 13.13228049357937
+    },
+    {
+      "variant": "L16",
+      "d_tex": -78.62778342978113,
+      "d_ta": -71.06234868140541,
+      "d_busy": -69.37297249818629,
+      "d_time": -69.76147730187228,
+      "ratio": 0.9037816606501179,
+      "marginal_cycles_per_instr": 13.117002269806001
+    }
+  ],
+  "verdict": "REPLICATED",
+  "duty": {
+    "L128": {
+      "ta": 93.60933592532628,
+      "valu": 96.64260189344705,
+      "ta_per_tex": 14.513463639404387,
+      "valucyc_per_tex": 29.967500030485628
+    },
+    "L64": {
+      "ta": 92.76130939873323,
+      "valu": 91.10724573239676,
+      "ta_per_tex": 15.026694272960395,
+      "valucyc_per_tex": 29.517494665526957
+    },
+    "L32": {
+      "ta": 90.38675236347046,
+      "valu": 79.87242830010504,
+      "ta_per_tex": 17.454773964589187,
+      "valucyc_per_tex": 30.848661900693177
+    },
+    "L16": {
+      "ta": 88.44587751821052,
+      "valu": 71.81517375669925,
+      "ta_per_tex": 19.651005727099644,
+      "valucyc_per_tex": 31.911954075982482
+    }
+  },
+  "ols_all_arms": {
+    "TA_BUSY": {
+      "slope_per_tex_instruction": 13.079658804652418,
+      "intercept": 8392173.829191595,
+      "r_squared": 0.9997145065425812,
+      "intercept_ci95": [
+        5821756.522297526,
+        10962591.136085665
+      ],
+      "slope_share_at_baseline_pct": 90.5354003861497
+    },
+    "GPUBusyCycles": {
+      "slope_per_tex_instruction": 0.17052261030322258,
+      "intercept": 136695.66002775566,
+      "r_squared": 0.9996250936011194,
+      "intercept_ci95": [
+        98292.0578441718,
+        175099.26221133952
+      ],
+      "slope_share_at_baseline_pct": 88.4550607181944
+    }
+  }
+}

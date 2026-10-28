@@ -1,0 +1,16 @@
+{
+  "verified": "2026-09-05",
+  "hashed_preexisting_artifacts_checked": 96,
+  "changed_preexisting_hashed_files": [
+    "PLAN.md"
+  ],
+  "upstream_diff_unchanged": [
+    "dxs",
+    "ffx"
+  ],
+  "new_markdown_links": "PASS",
+  "source_snapshot_hashes": "PASS",
+  "builds_executed": 0,
+  "gpu_runs_executed": 0,
+  "experimental_cycles_executed": 0
+}

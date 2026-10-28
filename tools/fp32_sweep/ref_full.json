@@ -1,0 +1,20 @@
+{
+  "gpu": "AMD Radeon RX 6950 XT",
+  "shader_bytes": 3712,
+  "first_pattern": "0x00000000",
+  "last_pattern": "0x3F800000",
+  "values_swept": 1065353217,
+  "first_value": 0,
+  "last_value": 1,
+  "differing": 4852143,
+  "max_ulp": 196984236,
+  "max_rel_error": 5.77935211e-08,
+  "max_abs_error": 0,
+  "nan": 8388608,
+  "posinf": 3,
+  "neginf": 924638088,
+  "negative_zero": 881269736,
+  "zero_mismatch": 0,
+  "slots_raw": [4852143,196984236,863516838,8388608,3,924638088,881269736,0,0,1065353217],
+  "slots_as_float": [6.79930053e-39,7.30855384e-32,5.77935211e-08,1.17549435e-38,4.20389539e-45,9.34943819e-06,2.5166014e-07,0,0,1.00000012]
+}

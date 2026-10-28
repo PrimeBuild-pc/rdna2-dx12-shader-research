@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/0fbc19e625a3a6195bee66d6b500948e92a1d8f7/for-mod-creators-theory/materials/shaders/README.md",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\modding_shaders_readme.md",
+    "sha256": "e6353bb3f977a76fda07ab3aa24d98a6ec854885e7552bdd5b826f7492d5562c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/0fbc19e625a3a6195bee66d6b500948e92a1d8f7/for-mod-creators-theory/materials/shaders/shader-docs.md",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\modding_shader_docs.md",
+    "sha256": "85321d0025059a0cf9e4210448371eb35c6aff98e984c95d741f888556d201b5"
+  }
+]

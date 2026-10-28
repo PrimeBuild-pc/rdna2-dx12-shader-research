@@ -1,0 +1,273 @@
+option,index,category,arch_hint,rdna2,stato
+SCOption_AVOID_LDS_BANK_CONFLICT_ONCHIP_GS,70,memory_lds_cache,,generica,sempre_attiva
+SCOption_AVOID_LDS_BANK_CONFLICT_ONCHIP_TESS,71,memory_lds_cache,,generica,sempre_attiva
+SCOption_C2,2,other,,generica,sempre_attiva
+SCOption_D3D12_APPEND_BUF_PER_WAVE_ATOMIC,100,other,,generica,sempre_attiva
+SCOption_DISABLE_IMAGE_SAMPLE_WQM,226,other,,generica,sempre_attiva
+SCOption_DISABLE_PEEPHOLE_ON_SMALL_SHADERS,55,optimization_pass,,generica,sempre_attiva
+SCOption_DISABLE_TRUNC_COORD_FOR_GATHER,255,other,,generica,sempre_attiva
+SCOption_EMBED_IMMEDIATE_CONST_ARRAYS,140,other,,generica,sempre_attiva
+SCOption_GFX10_DEGGIGXX0_8374_WORKAROUND,157,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX0_8448_NSA_AND_CLAUSE_CAN_HANG,174,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX0_8602_NSA_CANNOT_FOLLOW_WRITELANE,175,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX0_8666_PREFETCH_0_BRANCH_HANG,168,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX0_8877_WORKAROUND,171,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX0_8925_LDS_VMEM_NOT_WAITING_VM_VSRC,172,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX0_9010_NO_FLAT_OFFSET,183,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,sempre_attiva
+SCOption_GFX10_DEGGIGXX0_9088_PREFETCH_FWD64_BRANCH,197,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX0_9122_DEGGIGXX2_3298_FP_ATOMIC_DENORM_HAZARD,200,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX2_1116_CHECK_IMAGE_SRD_TYPE,182,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,dipende_dallo_shader
+SCOption_GFX10_DEGGIGXX2_4051_INCONSISTENT_GL2_CACHE_POLICY,205,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,sempre_attiva
+SCOption_GFX10_DEGGIGXX2_5096_MIMG_NSA_WORKAROUND,225,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,sempre_attiva
+SCOption_GFX92_ENABLE_DL_OPS,133,other,GFX9 (Vega),no,dipende_dallo_shader
+SCOption_GFX9_ADD_SCRATCH_BOUNDS_CHECK,134,memory_lds_cache,GFX9 (Vega),no,sempre_attiva
+SCOption_GFX9_TRANSFORM_FOR_POPS,105,other,GFX9 (Vega),no,dipende_dallo_shader
+SCOption_GFX9_USE_SCRATCH_INST,153,memory_lds_cache,GFX9 (Vega),no,sempre_attiva
+SCOption_R1000_DISABLE_INDEXED_RESOURCE_TYPE_CHECK,5,other,GFX10 (RDNA1/2) - inferenza,si,sempre_attiva
+SCOption_R1000_DS_OFFSET_FOLDING,50,optimization_pass,GFX10 (RDNA1/2) - inferenza,si,sempre_attiva
+SCOption_R600_SAMPLEG_CUBEMAP_GRAD,24,other,R600,no,sempre_attiva
+SCOption_REASSOCIATE_AGGRESSIVELY,124,optimization_pass,,generica,sempre_attiva
+SCOption_SCHEDULE_EXPORTS,92,scheduling,,generica,sempre_attiva
+SCOption_SKIP_BOUNDS_CHECK_FOR_IDIV_AND_F16LN,121,float_precision,,generica,sempre_attiva
+SCOption_SUPPRESS_DUMMY_PARAMETER_EXPORT,112,other,,generica,sempre_attiva
+SCOption_UNPATCHABLE_EXPORTS,94,other,,generica,dipende_dallo_shader
+SCOption_USE_F16FMA_FOR_F16MAD,117,float_precision,,generica,sempre_attiva
+SCOption_USE_GETPC_FOR_HIGH_32_BITS_OF_32_BIT_POINTER,143,other,,generica,sempre_attiva
+SCOption_A16_COMBINE_CVT_AND_MIMG,195,other,,generica,mai_vista_attiva
+SCOption_ADD_S_CBRANCH_EXECZ_AT_SHADER_START_TO_SUPPORT_ICACHE_PREFETCH,123,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_AGGRESSIVE_HOIST,21,optimization_pass,,generica,mai_vista_attiva
+SCOption_AGGRESSIVE_PREFETCH,259,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_AGGRESSIVE_REMAT,108,optimization_pass,,generica,mai_vista_attiva
+SCOption_ALLOW_RE_Z,77,other,,generica,mai_vista_attiva
+SCOption_BUFFER_LOAD_TO_LDS,169,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_BULK_CODE_MOTION,155,scheduling,,generica,mai_vista_attiva
+SCOption_C0,0,other,,generica,mai_vista_attiva
+SCOption_C1,1,other,,generica,mai_vista_attiva
+SCOption_C3,3,other,,generica,mai_vista_attiva
+SCOption_C4,4,other,,generica,mai_vista_attiva
+SCOption_CAN_REMOVE_F32_F16_F32,68,float_precision,,generica,mai_vista_attiva
+SCOption_CHOOSE_PADDING_USING_LDS_REF_COUNT,166,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_CLAUSE_DISREGARDING_COORDS,139,scheduling,,generica,mai_vista_attiva
+SCOption_COMBINE_BUFFER_AND_CVT,135,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_COMPUTE_MIN_MAX_EXECUTION_PATHS,122,other,,generica,mai_vista_attiva
+SCOption_DGPU_SYSTEM_ATOMICS,18,other,,generica,mai_vista_attiva
+SCOption_DISABLE_ADD_CBRANCH_EXECZ_AROUND_WATERFALL,165,float_precision,,generica,mai_vista_attiva
+SCOption_DISABLE_BLOCKING,222,other,,generica,mai_vista_attiva
+SCOption_DISABLE_BLOCK_REORDERING,239,scheduling,,generica,mai_vista_attiva
+SCOption_DISABLE_BULK_CODE_MOTION,181,scheduling,,generica,mai_vista_attiva
+SCOption_DISABLE_CONST_BUFF_TABLE_PREFETCH,265,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_EMBED_IMMEDIATE_CONST_ARRAYS,158,other,,generica,mai_vista_attiva
+SCOption_DISABLE_FMA,219,float_precision,,generica,mai_vista_attiva
+SCOption_DISABLE_GCM_MEMORY,229,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_IF_END_PREFETCH,263,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_IMAGE_MIP_ZERO_OPTIMIZATION,118,other,,generica,mai_vista_attiva
+SCOption_DISABLE_IMPLICIT_INVARIANT_EXPORTS,241,other,,generica,mai_vista_attiva
+SCOption_DISABLE_INDIRECT_CALL_PREFETCH,260,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_KILL_HOISTING,149,optimization_pass,,generica,mai_vista_attiva
+SCOption_DISABLE_LOOP_CF_PREFETCH,264,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_LOOP_INVARIANT_CODE_MOTION,209,scheduling,,generica,mai_vista_attiva
+SCOption_DISABLE_LOOP_UNROLLING,59,optimization_pass,,generica,mai_vista_attiva
+SCOption_DISABLE_MERGE_MEMORY,78,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_POST_RA_INSTRUCTION_SCHEDULING,230,scheduling,,generica,mai_vista_attiva
+SCOption_DISABLE_REDUCE_UNIFORM_IMAGE,236,other,,generica,mai_vista_attiva
+SCOption_DISABLE_REFACTORING,217,optimization_pass,,generica,mai_vista_attiva
+SCOption_DISABLE_SCRATCH_TO_ARRAY,17,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_S_BUFFER_LOAD_PREFETCH,262,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_S_LOAD_PREFETCH,261,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_DISABLE_TRANSFORM_DESCRIPTOR,252,other,,generica,mai_vista_attiva
+SCOption_DISABLE_USELESS_PHI_FROM_UNDEF,258,other,,generica,mai_vista_attiva
+SCOption_DISABLE_WATERFALL_LOOP_MERGING,150,other,,generica,mai_vista_attiva
+SCOption_DISPATCH_DRAW,98,other,,generica,mai_vista_attiva
+SCOption_DONT_COMPLAIN_ABOUT_UNDCLD_RESOURCES,44,other,,generica,mai_vista_attiva
+SCOption_DONT_SCHEDULE_ACROSS_BARRIERS,129,scheduling,,generica,mai_vista_attiva
+SCOption_DO_NOT_REQUIRE_INTR_INTERNAL_GLOBAL_TABLE,199,other,,generica,mai_vista_attiva
+SCOption_DS_COMBINE_DISABLE_LOAD_B128,152,other,,generica,mai_vista_attiva
+SCOption_DS_COMBINE_UNALIGNED,151,other,,generica,mai_vista_attiva
+SCOption_EARLY_DISABLE_INACTIVE_LANES,245,other,,generica,mai_vista_attiva
+SCOption_EARLY_TRANSFORM_SCRATCH,201,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_EARLY_WQM_DISABLE,72,other,,generica,mai_vista_attiva
+SCOption_EMIT_SQTT_FUNCTION_CRC,216,other,,generica,mai_vista_attiva
+SCOption_ENABLE_ATOMIC_WITH_RETURN_OPTIMIZATION,227,other,,generica,mai_vista_attiva
+SCOption_ENABLE_AUTO_DISCARD,235,other,,generica,mai_vista_attiva
+SCOption_ENABLE_BLOCKING,196,other,,generica,mai_vista_attiva
+SCOption_ENABLE_BLOCK_REORDERING,238,scheduling,,generica,mai_vista_attiva
+SCOption_ENABLE_EXPERT_DEPENDENCY_CHECKING,237,other,,generica,mai_vista_attiva
+SCOption_ENABLE_FMA,218,float_precision,,generica,mai_vista_attiva
+SCOption_ENABLE_INTEGER_EXCEPTION_FOR_DIVIDE,67,other,,generica,mai_vista_attiva
+SCOption_ENABLE_LATENCY2,145,scheduling,,generica,mai_vista_attiva
+SCOption_ENABLE_REFACTORING,93,optimization_pass,,generica,mai_vista_attiva
+SCOption_ENABLE_SCRATCH_OFFSET_FOR_DVGPR_CWSR,271,register_allocation,,generica,mai_vista_attiva
+SCOption_ENABLE_SPILL_OPTIMIZATION,272,other,,generica,mai_vista_attiva
+SCOption_ENABLE_UNROLL_UNKNOWN_TRIP_COUNT,270,optimization_pass,,generica,mai_vista_attiva
+SCOption_FETCH4_USE_DX9_RULE,40,other,,generica,mai_vista_attiva
+SCOption_FLUSH_F64_DENORMS,107,float_precision,,generica,mai_vista_attiva
+SCOption_FORCE_FRACT_RTZ,57,float_precision,,generica,mai_vista_attiva
+SCOption_FRACT_R800R900R1000_BUG301460_WORKAROUND,42,hw_workaround,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_FUNCTION_USES_VPM,249,other,,generica,mai_vista_attiva
+SCOption_GDS_UNIFIED_MEMORY_AND_COUNTER_RANGE,101,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_GFX101_HALF_VGPR_LDS,203,register_allocation,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX103_DEGGIGXX2_4383_ADJUST_DEPTH_IMPORT_FOR_VRS,208,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX103_DEGGIGXX2_5076_RESET_WRITE_COMPRESS_ENABLE_FOR_LOADS,224,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX104_FORCE_PACKED_MATH,232,other,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX104_USE_NORMALIZED_COORD_INPUT,212,other,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_CS_DEFAULT_WAVE64_FOR_64_THREADS,178,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_DEGGIGXX0_6037_NSA_CANNOT_BE_LAST_IN_CLAUSE,173,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_DEGGIGXX0_8619_XNACK_BARRIER_PC_MISMATCH,160,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_DEGGIGXX0_8637_PREFETCH_123_FWD_BRANCH,167,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_DEGGIGXX0_8654_BACK_COMPAT_MTYPE,161,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_DEGGIGXX0_8758_THROTTLE_IN_MULTI_DW_NSA,177,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_DISABLE_CLAUSES,190,scheduling,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_DISABLE_INST_PREFETCHING,176,memory_lds_cache,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_ML_MODEL_FOR_PS_WAVESIZE_CHOICE,192,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_SCML_COUNTERS,207,other,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_SCML_CULLING_HEURISTIC,221,other,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_SCML_PHASE3_FOR_INSTRUCTION_SCHEDULING,213,scheduling,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_SCML_PHASE_FOR_WAVE_SIZE_DECISION,206,other,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_SUBVECTOR,179,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_SUBVECTOR_SHARED_VGPRS,180,register_allocation,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_ENABLE_TID_OR_POSITION_CACHE_POLICY_HEURISTIC,223,memory_lds_cache,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_FORCE_WAVE32_SCHEDULING,184,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_FORCE_WAVE32_SCHEDULING_FOR_PS,186,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_FORCE_WAVE64_FOR_LIKELY_INCORRECT_SHADERS,193,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_FORCE_WAVE64_SCHEDULING,185,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_FORCE_WAVE64_SCHEDULING_FOR_CS,187,wave_size_occupancy,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_MODE2_INST_PREFETCHING,211,memory_lds_cache,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_REVISE_TESSFACTOR_WORKAROUND_BUGDEGGIGXX0_8489,159,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_RTGPLAT_59_SUBGROUP_CULLING_WORKAROUND,188,hw_workaround,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_SWIZZLE_FLAT_SCRATCH,250,memory_lds_cache,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX10_WFS_TEST_OPPOSITE,194,other,GFX10.x -> include RDNA2 (gfx10.3),si,mai_vista_attiva
+SCOption_GFX11_DIDT_WORKAROUND,254,hw_workaround,,generica,mai_vista_attiva
+SCOption_GFX11_DISABLE_VOPD,243,other,,generica,mai_vista_attiva
+SCOption_GFX11_ENABLE_DUAL_SOURCE_BLEND,220,other,,generica,mai_vista_attiva
+SCOption_GFX11_ENABLE_FSR_SELECT,233,other,,generica,mai_vista_attiva
+SCOption_GFX11_ENABLE_IMAGE_MSAA_LOAD_OPTIMIZATION,257,other,,generica,mai_vista_attiva
+SCOption_GFX11_ENABLE_SCML_FOR_INSTRUCTION_SCHEDULING,267,scheduling,,generica,mai_vista_attiva
+SCOption_GFX11_FORCE_1024_VGPRS_WITH_GRANULARITY_16,266,register_allocation,,generica,mai_vista_attiva
+SCOption_GFX11_MESSAGE_TESS_FACTOR,246,other,,generica,mai_vista_attiva
+SCOption_GFX11_SCHEDULE_FOR_VOPD,240,scheduling,,generica,mai_vista_attiva
+SCOption_GFX12_ENABLE_DYNAMIC_VGPR,251,register_allocation,,generica,mai_vista_attiva
+SCOption_GFX12_ENABLE_TRIANGLE_PAIR_OPTIMIZATION,247,other,,generica,mai_vista_attiva
+SCOption_GFX81_DEGGI___IMAGE_STORE_D16_WORKAROUND,138,hw_workaround,GFX8.1,no,mai_vista_attiva
+SCOption_GFX8_DEGGIGX80_444_IMAGE_GATHER4_WORKAROUND,146,hw_workaround,GFX8,no,mai_vista_attiva
+SCOption_GFX9_DEGGIGX90_1441_1D_DEPTH_TEXTURES,114,hw_workaround,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_DEGGIGX90_1552_IMAGE_GATHER4_WORKAROUND,147,hw_workaround,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_DEGGIGX90_1641_CACHE_LINE_STRADDLING_BUG,127,hw_workaround,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_DEGGIGX90_864_IMAGE_GATHER_H_PCK_WORKAROUND,137,hw_workaround,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_DISABLE_D16_HI,132,float_precision,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_DS_OPTIMIZE_DATA_FETCH,110,other,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_ENABLE_F16_OVERFLOW_CLAMP,103,float_precision,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_EXPERIMENTAL_USE_MORE_D16,113,float_precision,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_LS_VGPR_RESTORE_WORKAROUND_BUGDEGGIGX90_1415,111,hw_workaround,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_SET_OUT_OF_BOUND_VIEWPORT_INDEX_ZERO,130,other,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_SPLIT_USER_DATA_SGPRS,104,register_allocation,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GFX9_UNSAFE_MAD_MIX,115,float_precision,GFX9 (Vega),no,mai_vista_attiva
+SCOption_GRA_COALESCE_REG_WAVE_LIMIT,120,other,,generica,mai_vista_attiva
+SCOption_HALT_AT_START,231,other,,generica,mai_vista_attiva
+SCOption_HALT_FOR_OUT_OF_BOUNDS_SCRATCH,242,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_HSA_WAITCNT_AFTER_RELEASE,95,other,HSA/compute,generica,mai_vista_attiva
+SCOption_HS_ICP_NUM_BY_USER_DATA,99,other,,generica,mai_vista_attiva
+SCOption_HS_IDENTIFY_PASS_THROUGH,144,other,,generica,mai_vista_attiva
+SCOption_HS_NO_PASS_THROUGH_OGL,91,other,,generica,mai_vista_attiva
+SCOption_HS_OFFCHIP_COPY_ALL_AT_END,90,other,,generica,mai_vista_attiva
+SCOption_HS_OFFCHIP_COPY_BY_ELEMENT,83,other,,generica,mai_vista_attiva
+SCOption_HS_OFFCHIP_COPY_BY_MULTI_ELEMENTS,84,other,,generica,mai_vista_attiva
+SCOption_HS_OFFCHIP_COPY_FULL_WAVE,87,other,,generica,mai_vista_attiva
+SCOption_HS_OFFCHIP_COPY_INTERLEAVE,82,other,,generica,mai_vista_attiva
+SCOption_HS_OFFCHIP_COPY_MULTI_WAVES,170,other,,generica,mai_vista_attiva
+SCOption_HS_OFFCHIP_SKIP_DATA_COPYING_FOR_CULLED_PATCHES,125,other,,generica,mai_vista_attiva
+SCOption_HS_REMOVE_TESS_FACTOR_WRITES,119,other,,generica,mai_vista_attiva
+SCOption_IF_CONVERSION_ALWAYS,30,optimization_pass,,generica,mai_vista_attiva
+SCOption_IF_CONVERSION_CONSERVATIVE,27,optimization_pass,,generica,mai_vista_attiva
+SCOption_IF_CONVERSION_HEURISTIC,28,optimization_pass,,generica,mai_vista_attiva
+SCOption_IF_CONVERSION_HEURISTIC_OGL,29,optimization_pass,,generica,mai_vista_attiva
+SCOption_IGNORE_CONSERVATIVE_DEPTH_CLAMP,39,other,,generica,mai_vista_attiva
+SCOption_IGNORE_FETCH_IN_CF,38,other,,generica,mai_vista_attiva
+SCOption_IGNORE_IF_COHERENCE_WHEN_PUSHING_FETCHES_INTO_CF,210,other,,generica,mai_vista_attiva
+SCOption_IGNORE_UNBOUND_RESOURCE,49,other,,generica,mai_vista_attiva
+SCOption_INITIALIZE_VGPRS_AT_SHADER_ENTRY_EXCEPT_LIVE_ONES,234,register_allocation,,generica,mai_vista_attiva
+SCOption_INSTRUMENT_SHADER_WITH_TTRACEDATA,198,other,,generica,mai_vista_attiva
+SCOption_KEEP_CALLS,36,other,,generica,mai_vista_attiva
+SCOption_KEEP_F32_DENORMS,106,float_precision,,generica,mai_vista_attiva
+SCOption_LATENCY_CODE_MOTION,156,scheduling,,generica,mai_vista_attiva
+SCOption_LATE_POSITION_EXPORT,81,other,,generica,mai_vista_attiva
+SCOption_LATE_TRANSFORM_SCRATCH,204,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_LIVENESS_BASED_INSTRUCTION_SCHEDULING,76,scheduling,,generica,mai_vista_attiva
+SCOption_MEMORY_FOR_VEGA10,116,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_METAL_DONT_GENERATE_F16,228,float_precision,Metal,no,mai_vista_attiva
+SCOption_METAL_PRECISE_FLOAT_RECIPROCAL_SQRT,131,other,Metal,no,mai_vista_attiva
+SCOption_MINIMIZE_MEMORY,52,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_MINIMIZE_VGPRS,20,register_allocation,,generica,mai_vista_attiva
+SCOption_MIN_MAX_DENORM_WORKAROUND,142,hw_workaround,,generica,mai_vista_attiva
+SCOption_MOVE_ALL_DERIV_OUT_OF_CF,268,other,,generica,mai_vista_attiva
+SCOption_NO_IF_CONVERSION,26,optimization_pass,,generica,mai_vista_attiva
+SCOption_PACK_LDS,253,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_PACK_VSPS_ATTRS,214,other,,generica,mai_vista_attiva
+SCOption_PBQP_REGISTER_ALLOCATION,136,other,,generica,mai_vista_attiva
+SCOption_POST_RA_INSTRUCTION_SCHEDULING,86,scheduling,,generica,mai_vista_attiva
+SCOption_PS_INPUT_SWIZZLE_DISABLE,25,other,,generica,mai_vista_attiva
+SCOption_R1000R1100_VCCZ_CLOBBER_WORKAROUND_BUG457939,7,hw_workaround,GFX11 (RDNA3?) - inferenza,si,mai_vista_attiva
+SCOption_R1000_ANISO_CONTROL_FILTERING,48,other,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_BARRIER_WORKAROUND_BUG405404,53,hw_workaround,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_BYTE_SHORT_WRITE_WORKAROUND_BUG317611,43,hw_workaround,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_ENABLE_CALL_STACK,80,other,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_ENABLE_DYNAMIC_REFERENCED_CB,60,other,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_ENABLE_IMAGE_SAMPLE_OR_GATHER4_RESOURCE_TYPE_CHECK,189,other,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_ENABLE_RESOURCE_TYPE_CHECK,23,other,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_FETCH4_DX9_NO_OUTPUT_SWIZZLE,63,other,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_GS_MAX_EMIT_VERTEX_CONTROL,58,other,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_IFORK_BACKJUMP_WORKAROUND_BUG368004,54,hw_workaround,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_READLANE_SMRD_WORKAROUND_BUG343479,47,hw_workaround,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_SGPR_TRAP_REGISTERS,11,register_allocation,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_SPI_NULL_WAVE_WORKAROUND_BUG335260,45,hw_workaround,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_USE_MUBUF_FOR_RAW_BUFFERS,65,memory_lds_cache,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1000_ZEXP_BUG337892,46,hw_workaround,GFX10 (RDNA1/2) - inferenza,si,mai_vista_attiva
+SCOption_R1100_FLAT_SCRATCH_OOB_WORKAROUND_BUG379895,8,hw_workaround,GFX11 (RDNA3?) - inferenza,no,mai_vista_attiva
+SCOption_R1100_FORCE_FLAT_64,12,other,GFX11 (RDNA3?) - inferenza,no,mai_vista_attiva
+SCOption_R1100_LDSMEM_FENCE_CHICKEN_BIT,66,hw_workaround,GFX11 (RDNA3?) - inferenza,no,mai_vista_attiva
+SCOption_R1100_STORE_COALESCE_WORKAROUND_BUG452151,6,hw_workaround,GFX11 (RDNA3?) - inferenza,no,mai_vista_attiva
+SCOption_R1200_DISABLE_INPUTOUTPUT_D16_PACKING,89,float_precision,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_DISABLE_PACKED_MATH,75,other,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_DISABLE_REGISTER_PACKING,74,register_allocation,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_ENABLE_XNACK,15,other,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_EXPORT_D16,85,float_precision,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_FLUSH_F16_DENORMS,79,float_precision,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_RELAXED_MULTIPLY_ZERO,88,other,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_UBTS502672_SGPR_WRAP,14,hw_workaround,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_R1200_UBTS523206_SMEM_RANGE_CHECK,13,hw_workaround,GFX12 (RDNA4?) - inferenza dal prefisso,no,mai_vista_attiva
+SCOption_RELEASE_PATTERNS_MEMORY,51,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_REMAP_INT_REG,34,other,,generica,mai_vista_attiva
+SCOption_REPACK_FETCH_INPUTS_BY_FOUR,215,other,,generica,mai_vista_attiva
+SCOption_ROUND_DOUBLE_TO_ZERO,162,float_precision,,generica,mai_vista_attiva
+SCOption_ROUND_FLOAT_TO_ZERO,163,float_precision,,generica,mai_vista_attiva
+SCOption_ROUND_HALF_TO_ZERO,164,float_precision,,generica,mai_vista_attiva
+SCOption_RT_EXPORT_TO_UAV,202,other,,generica,mai_vista_attiva
+SCOption_SAMPLEC_FULL_DMASK,69,other,,generica,mai_vista_attiva
+SCOption_SCHEDULE_NO_REORDER,35,scheduling,,generica,mai_vista_attiva
+SCOption_SELECTIVE_INLINE,62,optimization_pass,,generica,mai_vista_attiva
+SCOption_SEPARATE_LDS_INSTRUCTIONS,141,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_SIMPLIFY_DS_USING_KNOWN_PATCH_INFO,126,other,,generica,mai_vista_attiva
+SCOption_SPLIT_IFS,148,optimization_pass,,generica,mai_vista_attiva
+SCOption_SUPPRESS_PIREDUCE_F16,96,float_precision,,generica,mai_vista_attiva
+SCOption_SUPPRESS_PIREDUCE_F32,97,float_precision,,generica,mai_vista_attiva
+SCOption_TEST_MODE_0,31,debug,,generica,mai_vista_attiva
+SCOption_TEST_MODE_1,32,debug,,generica,mai_vista_attiva
+SCOption_TEST_MODE_2,33,debug,,generica,mai_vista_attiva
+SCOption_UBTS460287_FILL_SIMD_WITH_VGPRS,102,hw_workaround,,generica,mai_vista_attiva
+SCOption_UBTS463071_RANGE_CHECK_FOR_SMRD,10,hw_workaround,,generica,mai_vista_attiva
+SCOption_UBTS463396_RANGE_CHECK_FOR_VMEMOP,9,hw_workaround,,generica,mai_vista_attiva
+SCOption_UBTS484126_VINTERP_READLANE_DEPENDENCY,61,hw_workaround,,generica,mai_vista_attiva
+SCOption_UBTS507363_SGPR_COUNTER_SRC1_FORWARDING,64,hw_workaround,,generica,mai_vista_attiva
+SCOption_UNDEF_ZERO,73,other,,generica,mai_vista_attiva
+SCOption_UNSAFE_LOAD_HOISTING,248,optimization_pass,,generica,mai_vista_attiva
+SCOption_USE_BUFFER_FOR_HSA_GLOBAL,16,memory_lds_cache,HSA/compute,generica,mai_vista_attiva
+SCOption_USE_FMA_FOR_MAD,41,float_precision,,generica,mai_vista_attiva
+SCOption_USE_GROUPS_FOR_LATENCY_SCHEDULING,109,scheduling,,generica,mai_vista_attiva
+SCOption_USE_ID_INPUTS_FROM_FETCH_SHADER,128,other,,generica,mai_vista_attiva
+SCOption_USE_LEGACY_LOG_EXP,56,other,,generica,mai_vista_attiva
+SCOption_USE_NONIEEE_OP,37,float_precision,,generica,mai_vista_attiva
+SCOption_USE_OLD_LOOP_UNROLLER,256,optimization_pass,,generica,mai_vista_attiva
+SCOption_USE_OLD_WAY_FETCH_SHADER_CALL,154,other,,generica,mai_vista_attiva
+SCOption_VERTEX_BUFFER_LOAD_USES_OFFSET_MODE,191,memory_lds_cache,,generica,mai_vista_attiva
+SCOption_VGPR_FORWARDING_FOR_POWER,19,register_allocation,,generica,mai_vista_attiva
+SCOption_W64_MINIMIZE_REG_BANK_CONFLICTS,269,register_allocation,,generica,mai_vista_attiva
+SCOption_WAVE_PRIO_ON_STARTUP,22,wave_size_occupancy,,generica,mai_vista_attiva

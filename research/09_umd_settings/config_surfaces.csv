@@ -1,0 +1,11 @@
+name,kind,string_rva,xref,meaning,confidence
+AMD_SC_OPTIONS,env var,0x4714db8,0x58c286 lea rcx,opzioni compilatore shader; cluster boost::program_options,strong
+AMD_SC_CFG_FILE,env var,0x4714da8,0x58bbfb lea rcx -> helper getenv-like 0x79b844,path del file di config del compilatore,strong
+amdsc.ini,file (default),0x4714dc8,"0x58bc07 lea rbx; cmovne rbx,rax",fallback quando AMD_SC_CFG_FILE non e' impostata,strong
+AMD_SC_ (prefisso),env prefix,0x4714cd8,-,prefisso per opzioni singole da environment,probable
+AMD_DXCP_TEST_OPTIONS,env var,0x3bd62d0,0x26c11f lea rcx -> stesso helper; parser key=value (0x3d),test options del driver DX12,strong
+EnableGlobalSettingsDumping,settings key,0x3bd6288,0x26acc9 lea rdx -> vcall [rax+0x20],abilita il dump di tutte le global settings,strong
+GlobalSettingsDumpFile,settings key,0x3bd62a8,"0x26ad47 lea rdx -> vcall [rax+0x20], buffer 0x100",file di destinazione del dump,strong
+AMD_CONFIG_DIR,env var,0x26c25d0,0x2f4c1a lea rcx,directory dei file di configurazione,strong
+amdPalSettings.cfg,file,0x2620800,nessun lea diretto trovato,config PAL embedded nel UMD,probable
+DXCTuningsFileName,registry service key,assente in amdxc64.dll,-,stringa presente SOLO in amdkmdag.sys (UTF-16): la legge il KMD,confirmed

@@ -1,0 +1,16 @@
+{
+  "workload": "D3D12MeshShaders / MeshletRender",
+  "verdict": "MISS",
+  "reasons": [
+    "no measurable GPU pass: the whole draw - every mesh-shader dispatch over the model - takes 480 ns, which is 48 ticks of this queue's 100 MHz timestamp counter. Even halving it would be at the edge of what the instrument resolves",
+    "the correctness oracle is fine (the capture is byte-identical across three processes); there is simply nothing to optimise"
+  ],
+  "measured": {
+    "draw_ns": 480,
+    "aa_n95_pct": 0.0,
+    "timestamp_tick_ns": 10
+  },
+  "transformations_attempted": 0,
+  "stage_failed": "profile - the pass is below the noise floor",
+  "cost": "1 cycle, two of which were superseded prepares caught by the gate (probe header in the wrong directory, output directory assumed at the solution level)"
+}

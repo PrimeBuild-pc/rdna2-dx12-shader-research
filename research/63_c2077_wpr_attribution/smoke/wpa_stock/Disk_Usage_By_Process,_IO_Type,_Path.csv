@@ -1,0 +1,62 @@
+Process,IO Type,Path Name,Complete Time (s),IO Time (µs),Priority,Size (B),QD/I - Queue Depth at Init Time,Disk Service Time (µs)
+System (4),,,,"130,826.700",,"222,040,064",,"108,956.600"
+SearchHost.exe <CortanaUI> (8876),Read,,,"59,900.700",,"338,944",,"36,933.200"
+wpr.exe (13740),Read,,,"13,375.200",,"1,359,872",,"11,346.200"
+codex-code-mode-host.exe (14644),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@openai\codex\node_modules\@openai\codex-win32-x64\vendor\x86_64-pc-windows-msvc\bin\codex-code-mode-host.exe,,"14,583.800",,"1,200,128",,"10,524.100"
+services.exe (1528),Read,,,"9,616.000",,"421,888",,"9,616.000"
+pwsh.exe (9600),Read,,,"7,169.700",,"611,840",,"6,948.600"
+pwsh.exe (6100),,,,"7,420.300",,"540,672",,"6,930.000"
+claude.exe (18368),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\bin\claude.exe,,"8,055.200",,"882,688",,"6,839.700"
+pcssagent.exe (4344),Read,C:\Program Files\APC\PowerChute Serial Shutdown\jre\bin\server\jvm.dll,,"8,655.100",,"487,424",,"6,202.300"
+dwm.exe (2012),Read,,,"4,021.600",,"286,720",,"3,500.500"
+CrossDeviceResume.exe <CrossDeviceResumeApp> (6628),Read,,,"3,703.500",,"222,208",,"3,356.900"
+MsMpEng.exe (4472),Read,,,"4,209.900",,"344,064",,"3,094.100"
+PresentMon-2.5.1-x64.exe (9892),,,,"2,555.900",,"178,688",,"2,516.000"
+EVO.exe (9264),Read,,,"2,869.100",,"212,992",,"2,438.700"
+wpr.exe (6524),,,,"2,641.900",,"1,253,376",,"2,336.600"
+svchost.exe (4352),Read,,,"1,449.900",,"98,304",,"1,449.900"
+claude.exe (5212),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@anthropic-ai\claude-code\bin\claude.exe,,"1,342.000",,"163,840",,"1,342.000"
+PresentMonService.exe (4440),Read,C:\Program Files\Intel\PresentMonSharedService\PresentMonService.exe,,"1,820.200",,"168,960",,"1,230.900"
+svchost.exe (4080),Read,C:\WINDOWS\system32\wlansvc.dll,,"1,698.300",,"106,496",,906.000
+AudientAppLauncher.exe (12224),Read,,,924.600,,"102,400",,836.900
+lsass.exe (1588),Read,,,728.200,,"36,864",,728.200
+conhost.exe (8260),Read,,,"1,121.100",,"94,208",,706.500
+gamingservices.exe <GamingServices> (7068),Read,C:\Program Files\WindowsApps\Microsoft.GamingServices_38.116.6003.0_x64__8wekyb3d8bbwe\gamingservices.dll,,668.400,,"61,440",,668.400
+node.exe (17012),Read,C:\WINDOWS\system32\dbghelp.dll,,"1,249.300",,"77,824",,612.000
+vmwp.exe (11384),Read,C:\WINDOWS\system32\vmiccore.dll,,600.100,,"24,576",,600.100
+conhost.exe (10480),Read,,,489.500,,"24,576",,489.500
+conhost.exe (2276),Read,,,444.200,,"32,768",,444.200
+svchost.exe (3172),Read,,,410.400,,"36,864",,410.400
+node.exe (17156),Read,C:\Users\Lorenzo\AppData\Local\OpenAI\codex\runtimes\cua_node\426e88130fe66c7e\bin\node.exe,,594.500,,"49,152",,375.600
+powershell.exe (7676),Read,,,726.300,,"12,288",,371.900
+codex.exe (12332),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@openai\codex\node_modules\@openai\codex-win32-x64\vendor\x86_64-pc-windows-msvc\bin\codex.exe,,718.200,,"8,192",,368.900
+svchost.exe (2512),Read,,,365.100,,"32,768",,365.100
+sihost.exe (4280),Read,C:\WINDOWS\system32\windows.storage.dll,6.871164500,353.900,Normal,"16,384",0,353.900
+codex.exe (12308),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@openai\codex\node_modules\@openai\codex-win32-x64\vendor\x86_64-pc-windows-msvc\bin\codex.exe,,681.300,,"8,192",,312.600
+codex.exe (12300),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@openai\codex\node_modules\@openai\codex-win32-x64\vendor\x86_64-pc-windows-msvc\bin\codex.exe,2.120264300,296.400,Normal,"4,096",3,296.400
+StartMenuExperienceHost.exe <FullTrustApp> (8884),Read,C:\WINDOWS\system32\d3d11.dll,,573.100,,"24,576",,283.400
+svchost.exe (2116),Read,C:\WINDOWS\system32\netprofmsvc.dll,,247.500,,"8,192",,247.500
+svchost.exe (1844),Read,C:\WINDOWS\system32\RpcEpMap.dll,6.133603100,234.900,Normal,"8,192",0,234.900
+fontdrvhost.exe (1764),Read,C:\WINDOWS\system32\fontdrvhost.exe,,214.800,,"24,576",,214.800
+svchost.exe (2580),Read,C:\WINDOWS\system32\wbem\fastprox.dll,4.668837600,165.500,Normal,"12,288",0,165.500
+ShellHost.exe (7976),Read,C:\WINDOWS\system32\d3d11.dll,,421.700,,"12,288",,155.300
+codex.exe (12324),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@openai\codex\node_modules\@openai\codex-win32-x64\vendor\x86_64-pc-windows-msvc\bin\codex.exe,,"1,251.200",,"16,384",,139.600
+herdr.exe (6508),Read,C:\Users\Lorenzo\herdr\herdr.exe,0.237502900,120.000,Normal,"4,096",0,120.000
+svchost.exe (3048),Write,,,116.500,,"16,384",,116.500
+node.exe (1140),Read,C:\WINDOWS\system32\dbghelp.dll,,360.400,,"32,768",,115.000
+svchost.exe (2836),Read,C:\WINDOWS\system32\dnsapi.dll,6.134934600,102.000,Normal,"4,096",0,102.000
+taskhostw.exe (7484),Read,C:\WINDOWS\system32\PlaySndSrv.dll,0.151814800,100.900,Normal,"4,096",0,100.900
+powershell.exe (6996),Read,C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\clr.dll,,446.800,,"8,192",,86.400
+codex.exe (12316),Read,C:\Users\Lorenzo\AppData\Roaming\npm\node_modules\@openai\codex\node_modules\@openai\codex-win32-x64\vendor\x86_64-pc-windows-msvc\bin\codex.exe,,"1,075.300",,"12,288",,83.800
+svchost.exe (1724),Read,C:\WINDOWS\system32\psmsrv.dll,0.055570000,215.800,Normal,"12,288",1,79.200
+explorer.exe (7956),Read,,,689.600,,"36,864",,74.200
+node.exe (14948),Read,C:\Program Files\nodejs\node.exe,0.054206800,186.900,Normal,"8,192",6,72.000
+powershell.exe (11228),Read,C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26080.3-0\MpOAV.dll,0.054277400,268.800,Normal,"16,384",3,37.900
+node.exe (17128),Read,C:\Users\Lorenzo\AppData\Local\OpenAI\codex\runtimes\cua_node\426e88130fe66c7e\bin\node.exe,,266.000,,"12,288",,32.200
+csrss.exe (1416),Read,C:\WINDOWS\system32\winsrvext.dll,0.055490800,90.200,Normal,"4,096",3,31.400
+powershell.exe (2364),Read,C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\clr.dll,0.054472500,226.500,Normal,"4,096",9,22.500
+powershell.exe (1152),Read,C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\clr.dll,,550.200,,"32,768",,22.400
+powershell.exe (12160),Read,C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\clr.dll,,447.800,,"8,192",,19.500
+herdr.exe (6104),Read,C:\Users\Lorenzo\herdr\herdr.exe,0.003675600,99.400,Normal,"4,096",1,9.800
+powershell.exe (12212),Read,C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\clr.dll,0.054481700,100.700,Normal,"4,096",8,9.200
+powershell.exe (10912),Read,C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\clr.dll,0.054450000,239.300,Normal,"4,096",9,3.600

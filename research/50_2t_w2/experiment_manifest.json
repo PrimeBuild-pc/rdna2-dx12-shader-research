@@ -1,0 +1,95 @@
+{
+  "experiment_id": "T_W2_20260907_014458",
+  "created_at": "2026-09-07T01:44:59.218020+02:00",
+  "phase": "2T",
+  "workload": "w2",
+  "workload_name": "D3D12Multithreading",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\T_W2_20260907_014458",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\t2\\D3D12Multithreading",
+  "dxc": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody\\src\\packages\\Microsoft.Direct3D.DXC.1.8.2505.32\\build\\native\\bin\\x64\\dxc.exe",
+  "msbuild": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "configuration": "Release/x64/v145",
+  "regions": {
+    "0": "whole frame: shadow pass + shadowed scene, all worker lists"
+  },
+  "primary_region": 0,
+  "expected_bytecode": {
+    "base": {
+      "shaders_VSMain.cso": "90b16f8a6ab0897f9fb32555de4b08f1725a85479f7cf2decc4fa1ffbbb7cea9",
+      "shaders_PSMain.cso": "6e9f3e9c1702ddb71a08b11cd70c4b2d7eaf0b7a48d2122641e232efb93eb2ab"
+    },
+    "both": {
+      "shaders_VSMain.cso": "90b16f8a6ab0897f9fb32555de4b08f1725a85479f7cf2decc4fa1ffbbb7cea9",
+      "shaders_PSMain.cso": "7d5b3d731c4dfe1b4e70ca5e165918caa4769835b4cc659f6ca02d468988c472"
+    },
+    "light_dir_norm": {
+      "shaders_VSMain.cso": "90b16f8a6ab0897f9fb32555de4b08f1725a85479f7cf2decc4fa1ffbbb7cea9",
+      "shaders_PSMain.cso": "b7d65b24c2c1093a2f79c381082b77550858379f17684cf838beb8c6c7f9b74a"
+    },
+    "rsqrt_dist": {
+      "shaders_VSMain.cso": "90b16f8a6ab0897f9fb32555de4b08f1725a85479f7cf2decc4fa1ffbbb7cea9",
+      "shaders_PSMain.cso": "49f3af95ee23a3289ab299791c11b144ba000c56ee4e3e7a55d1a35831de71df"
+    }
+  },
+  "transforms": {
+    "rsqrt_dist": {
+      "kind": "alu_strength_reduction",
+      "equivalence": "sqrt(x) and x/sqrt(x) replaced by rsqrt(x) and x*rsqrt(x). Mathematically identical; not bitwise identical, since the rounding differs.",
+      "expectation": "one sqrt and one divide fewer per light"
+    },
+    "light_dir_norm": {
+      "kind": "alu_strength_reduction",
+      "equivalence": "dot(a, b/|b|) == dot(a,b)/|b| == dot(a,b) * rsqrt(dot(b,b)). Mathematically identical, not bitwise.",
+      "expectation": "one sqrt and a three-component divide fewer per light"
+    },
+    "both": {
+      "kind": "stack",
+      "equivalence": "the two above together; measured, not assumed to compose",
+      "expectation": "not assumed to be the sum"
+    }
+  },
+  "transform_edits": {
+    "rsqrt_dist": [
+      [
+        "src/shaders.hlsl",
+        "    float fDist = length(vLightToPixelUnNormalized);\n",
+        "    float fDistSq = dot(vLightToPixelUnNormalized, vLightToPixelUnNormalized);\n    float fInvDist = rsqrt(fDistSq);\n    float fDist = fDistSq * fInvDist;\n"
+      ],
+      [
+        "src/shaders.hlsl",
+        "    float3 vLightToPixelNormalized = vLightToPixelUnNormalized / fDist;\n",
+        "    float3 vLightToPixelNormalized = vLightToPixelUnNormalized * fInvDist;\n"
+      ]
+    ],
+    "light_dir_norm": [
+      [
+        "src/shaders.hlsl",
+        "    float fCosAngle = dot(vLightToPixelNormalized, vLightDir / length(vLightDir));\n",
+        "    float fCosAngle = dot(vLightToPixelNormalized, vLightDir)\n                    * rsqrt(dot(vLightDir, vLightDir));\n"
+      ]
+    ],
+    "both": [
+      [
+        "src/shaders.hlsl",
+        "    float fDist = length(vLightToPixelUnNormalized);\n",
+        "    float fDistSq = dot(vLightToPixelUnNormalized, vLightToPixelUnNormalized);\n    float fInvDist = rsqrt(fDistSq);\n    float fDist = fDistSq * fInvDist;\n"
+      ],
+      [
+        "src/shaders.hlsl",
+        "    float3 vLightToPixelNormalized = vLightToPixelUnNormalized / fDist;\n",
+        "    float3 vLightToPixelNormalized = vLightToPixelUnNormalized * fInvDist;\n"
+      ],
+      [
+        "src/shaders.hlsl",
+        "    float fCosAngle = dot(vLightToPixelNormalized, vLightDir / length(vLightDir));\n",
+        "    float fCosAngle = dot(vLightToPixelNormalized, vLightDir)\n                    * rsqrt(dot(vLightDir, vLightDir));\n"
+      ]
+    ]
+  },
+  "preregistered_criteria": {
+    "provenance": "every build is gated on the preregistered SHA-256 of every shader the project compiles; the pristine sources are restored on every exit path",
+    "correctness": "the sample's own render target after a fixed frame count, compared byte for byte against the baseline's. Baseline vs baseline must be identical first or nothing is judged against it",
+    "performance": "median of the primary timestamp region, several independent processes, counterbalanced order, paired against base",
+    "acceptance": "median <= -max(1 %, 3 x N95) from this workload's own A/A control, every paired process negative, and correctness passing"
+  }
+}

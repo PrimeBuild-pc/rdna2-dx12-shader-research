@@ -1,0 +1,9 @@
+{
+  "variant": "s_aniso16",
+  "set": "resp",
+  "rep": 1,
+  "pid": 4544,
+  "samples": 32,
+  "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "executable_sha256": "fd7655b4e8acb8bb70940dfd42850c09b22c6117b950b62e1d933af18ca5d3d9"
+}

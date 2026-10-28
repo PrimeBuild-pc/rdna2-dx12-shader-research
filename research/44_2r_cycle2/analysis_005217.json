@@ -1,0 +1,135 @@
+{
+  "experiment_id": "R_20260907_005138",
+  "dispatch_ns": {
+    "all3": [
+      146840.0,
+      147080.0,
+      147120.0,
+      147120.0,
+      147080.0
+    ],
+    "base": [
+      156280.0,
+      156320.0,
+      156360.0,
+      156360.0,
+      156360.0
+    ],
+    "lds_float3": [
+      158280.0,
+      158320.0,
+      158400.0,
+      158440.0,
+      158360.0
+    ],
+    "mass_hoist": [
+      150760.0,
+      150720.0,
+      150840.0,
+      150680.0,
+      150680.0
+    ]
+  },
+  "n95": 0.0511770726714432,
+  "threshold": 1.0,
+  "verdicts": {
+    "all3": {
+      "median_pct": -5.9109518935516885,
+      "per_process": [
+        -6.040440235474788,
+        -5.9109518935516885,
+        -5.909439754412894,
+        -5.909439754412894,
+        -5.935021744691737
+      ],
+      "performance_accepted": true
+    },
+    "lds_float3": {
+      "median_pct": 1.2797542871768621,
+      "per_process": [
+        1.2797542871768621,
+        1.2794268167860798,
+        1.3046815042210285,
+        1.3302634944998721,
+        1.2790995139421846
+      ],
+      "performance_accepted": false
+    },
+    "mass_hoist": {
+      "median_pct": -3.5823950870010237,
+      "per_process": [
+        -3.5321218326081394,
+        -3.5823950870010237,
+        -3.5303146584804295,
+        -3.632642619595804,
+        -3.632642619595804
+      ],
+      "performance_accepted": true
+    }
+  },
+  "correctness": {
+    "base_vs_base": {
+      "pair": [
+        "base_r1",
+        "base_r2"
+      ],
+      "identical": true,
+      "values": 80000,
+      "differing": 0,
+      "max_ulp": 0,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "rms": 0.0,
+      "nonfinite_a": 0,
+      "nonfinite_b": 0
+    },
+    "all3": {
+      "pair": [
+        "base_r1",
+        "all3_r1"
+      ],
+      "identical": false,
+      "values": 80000,
+      "differing": 69975,
+      "max_ulp": 2349489324,
+      "max_abs": 192454.5625,
+      "max_rel": 162067.375,
+      "rms": 1565.019737210244,
+      "nonfinite_a": 0,
+      "nonfinite_b": 0,
+      "passed": false
+    },
+    "lds_float3": {
+      "pair": [
+        "base_r1",
+        "lds_float3_r1"
+      ],
+      "identical": true,
+      "values": 80000,
+      "differing": 0,
+      "max_ulp": 0,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "rms": 0.0,
+      "nonfinite_a": 0,
+      "nonfinite_b": 0,
+      "passed": true
+    },
+    "mass_hoist": {
+      "pair": [
+        "base_r1",
+        "mass_hoist_r1"
+      ],
+      "identical": false,
+      "values": 80000,
+      "differing": 69975,
+      "max_ulp": 2349489324,
+      "max_abs": 192454.5625,
+      "max_rel": 162067.375,
+      "rms": 1565.019737210244,
+      "nonfinite_a": 0,
+      "nonfinite_b": 0,
+      "passed": false
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "experiment_id": "R_20260907_004621",
+  "dispatch_ns": {
+    "base": [
+      156400.0,
+      156360.0,
+      156360.0,
+      156480.0,
+      156520.0
+    ]
+  },
+  "n95": 0.10227563283047815,
+  "threshold": 1.0,
+  "verdicts": {},
+  "correctness": {
+    "base_vs_base": {
+      "pair": [
+        "base_r1",
+        "base_r2"
+      ],
+      "identical": true,
+      "values": 80000,
+      "differing": 0,
+      "max_ulp": 0,
+      "max_abs": 0.0,
+      "max_rel": 0.0,
+      "rms": 0.0,
+      "nonfinite_a": 0,
+      "nonfinite_b": 0
+    }
+  }
+}

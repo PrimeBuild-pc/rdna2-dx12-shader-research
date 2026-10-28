@@ -1,0 +1,100 @@
+{
+  "full_benchmark": {
+    "frames": 7220,
+    "duration_s": 64.2533854,
+    "avg_fps": 112.3676200880771,
+    "ft_avg_ms": 8.899360858725762,
+    "ft_median_ms": 8.8564,
+    "ft_p95_ms": 10.717319999999999,
+    "ft_p99_ms": 11.775597,
+    "fps_1pct_low_time": 75.12508710293899,
+    "fps_01pct_low_time": 60.68145271397797,
+    "fps_1pct_low_p99": 84.92138445294961,
+    "fps_01pct_low_p999": 71.33645262910706,
+    "spikes": 1,
+    "spikes_per_min": 0.9338029370200314,
+    "severe_spikes": 0,
+    "spike_time_lost_ms": 8.099499999999999
+  },
+  "alignment": {
+    "first_row": 2859,
+    "last_row": 10078,
+    "correlation": 0.9206623505538503,
+    "peak_margin": 0.3465652349437506,
+    "block_checks": [
+      {
+        "native_offset": 0,
+        "frames": 2406,
+        "presentmon_row": 2859,
+        "lag_frames": 0,
+        "correlation": 0.9095583801743645,
+        "peak_margin": 0.43778958155432657
+      },
+      {
+        "native_offset": 2406,
+        "frames": 2407,
+        "presentmon_row": 5265,
+        "lag_frames": 0,
+        "correlation": 0.9366556857406283,
+        "peak_margin": 0.462323676512759
+      },
+      {
+        "native_offset": 4813,
+        "frames": 2407,
+        "presentmon_row": 7672,
+        "lag_frames": 0,
+        "correlation": 0.8830349997903145,
+        "peak_margin": 0.4434997818257098
+      }
+    ],
+    "max_block_lag": 0,
+    "exact_block_agreement": true,
+    "row_index_basis": "zero-based data rows, CSV header excluded",
+    "game_fps_delta_pct": -0.0010068971902255086,
+    "game_duration_delta_s": 0.0006464473632803447,
+    "duration_basis": "sum of the window's N frame intervals",
+    "qpc": {
+      "first_ms": 27108813.7164,
+      "last_ms": 27173057.5695,
+      "end_ms": 27173067.1018,
+      "interval_max_error_ms": 3.7074086023380914e-09,
+      "native_span_delta_ms": 0.16309999796794727,
+      "native_elapsed_max_error_ms": 6.298299999602023,
+      "duration_s": 64.25338539999808,
+      "policy": "Continuity check only; cannot exclude upstream ETW loss or establish frame identity."
+    },
+    "boundary_sensitivity": [
+      {
+        "first_row": 2859,
+        "avg_fps": 112.3676200880771,
+        "MsBetweenPresents": 8.899360858725762,
+        "MsGPUBusy": 8.774748213296398,
+        "MsCPUBusy": 8.742990747922438,
+        "MsGPUWait": 0.0987922022160665,
+        "MsCPUWait": 0.1563701108033241
+      }
+    ]
+  },
+  "signals": {
+    "MsGPUBusy": {
+      "mean_ms": 8.774748213296398,
+      "median_ms": 8.7735,
+      "populated": 7220
+    },
+    "MsCPUBusy": {
+      "mean_ms": 8.742990747922438,
+      "median_ms": 8.70125,
+      "populated": 7220
+    },
+    "MsGPUWait": {
+      "mean_ms": 0.0987922022160665,
+      "median_ms": 0.0846,
+      "populated": 7220
+    },
+    "MsCPUWait": {
+      "mean_ms": 0.1563701108033241,
+      "median_ms": 0.1463,
+      "populated": 7220
+    }
+  }
+}

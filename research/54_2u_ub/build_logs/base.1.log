@@ -1,0 +1,15 @@
+
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(561,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\Lorenzo\AppData\Local\Temp\claude\T_UB_20260907_123032\Samples\Desktop\D3D12Raytracing\src\D3D12RaytracingProceduralGeometry\D3D12RaytracingProceduralGeometry.vcxproj]
+  stdafx.cpp
+  D3D12RaytracingProceduralGeometry.cpp
+  Main.cpp
+  DeviceResources.cpp
+  DXSample.cpp
+  PerformanceTimers.cpp
+  Win32Application.cpp
+     Creating library bin\x64\Release\D3D12RaytracingProceduralGeometry.lib and object bin\x64\Release\D3D12RaytracingProceduralGeometry.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1909 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  D3D12RaytracingProceduralGeometry.vcxproj -> C:\Users\Lorenzo\AppData\Local\Temp\claude\T_UB_20260907_123032\Samples\Desktop\D3D12Raytracing\src\D3D12RaytracingProceduralGeometry\bin\x64\Release\D3D12RaytracingProceduralGeometry.exe

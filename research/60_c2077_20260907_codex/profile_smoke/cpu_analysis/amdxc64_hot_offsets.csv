@@ -1,0 +1,9 @@
+process,module,module_base,abs_pc,rva,samples,pct_of_module,module_path
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd5f4c165,0x30c165,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd608fbe8,0x44fbe8,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd5fc6eb6,0x386eb6,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd6097412,0x457412,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd5f55da3,0x315da3,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd5ce17d0,0xa17d0,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd60d315a,0x49315a,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll
+dwm.exe,amdxx64.dll,0x7ffcd5c40000,0x00007ffcd60d2fb5,0x492fb5,1,12.5,C:\Windows\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\amdxx64.dll

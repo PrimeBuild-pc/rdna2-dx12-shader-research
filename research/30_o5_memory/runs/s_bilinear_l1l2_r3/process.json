@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_bilinear.1\\Output\\ModelViewer\\ModelViewer.exe"
+  ],
+  "command_line": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_bilinear.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\MiniEngine\\ModelViewer",
+  "requested_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_bilinear.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "executable_sha256": "bbf6ea07f85785932c5bb940853ee0e693ddb0b7ad6cc5c11fc6dc0302200ad3",
+  "pid": 2116,
+  "actual_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_bilinear.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "returncode": 0
+}

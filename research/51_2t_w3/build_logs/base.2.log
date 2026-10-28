@@ -1,0 +1,5 @@
+
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(561,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\Lorenzo\AppData\Local\Temp\claude\T_W3_20260907_014702\src\MeshletRender\D3D12MeshletRender.vcxproj]
+  MeshletMS.hlsl
+  MeshletPS.hlsl
+  D3D12MeshletRender.vcxproj -> C:\Users\Lorenzo\AppData\Local\Temp\claude\T_W3_20260907_014702\src\MeshletRender\bin\x64\Release\D3D12MeshletRender.exe

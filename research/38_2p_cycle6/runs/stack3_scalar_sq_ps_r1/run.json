@@ -1,0 +1,9 @@
+{
+  "variant": "stack3_scalar",
+  "set": "sq_ps",
+  "rep": 1,
+  "pid": 7296,
+  "samples": 32,
+  "bytecode_sha256": "e02177c10114d31a30102b405285262ac6aab68b091b85edb988d1b91307f9bc",
+  "executable_sha256": "dd2545ba3510126a358e5e9a1f7514a5da26fa6842d4d6ebfc687a6ac49c1ab3"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "original",
+    "sha256": "c8755b8ac5d61f208d02e0fda1c3bbed2c7e0a15f59c9edbb0f8c559925828b9",
+    "bytes": 23102,
+    "dxbc_digest": "8199dfea2512515e4ce2740d366a0e9d",
+    "shader_hash_part": "000000001dade95ef43acec275c7964b01b08f89",
+    "dxil_sha256": "f8385cd3da3055a492fa9fbdddc11fa3639a7c02b95031867e8315b1cab7da9c"
+  },
+  {
+    "name": "control",
+    "sha256": "106559643f27e4c0716e542919d18857ad4f7caec0007e0d00c1b97929857f2b",
+    "bytes": 23042,
+    "dxbc_digest": "150304f8aec95d33ac9af53da2c913ed",
+    "shader_hash_part": "00000000dfa8926bd82b9a55fd7d8b2bb0d61fea",
+    "dxil_sha256": "f6237c255ac03a8966a2b100787efa2558040c2f40db572a81237e6f41c69e65"
+  },
+  {
+    "name": "canary",
+    "sha256": "9da6f87440e40e8d42a4f6bc2afba073a6675d0ddffec91805426142a4e085db",
+    "bytes": 23050,
+    "dxbc_digest": "b4e2a65a9663215d54ff673201e2d6d1",
+    "shader_hash_part": "00000000f4e91e427c66c752a0ea782bf27c1d84",
+    "dxil_sha256": "afcd6c701397e072808c44a6a503e8ed89b6fac1a03eb5788a000214f77591a8"
+  }
+]

@@ -1,0 +1,19 @@
+
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(561,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\Lorenzo\AppData\Local\Temp\claude\R_20260907_004459\src\D3D12nBodyGravity.vcxproj]
+  nBodyGravityCS.hlsl
+  ParticleDraw.hlsl
+  stdafx.cpp
+  Win32Application.cpp
+  D3D12nBodyGravity.cpp
+  DXSample.cpp
+  Main.cpp
+  SimpleCamera.cpp
+C:\Users\Lorenzo\AppData\Local\Temp\claude\R_20260907_004459\src\NbProbe.h(25,36): error C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\Lorenzo\AppData\Local\Temp\claude\R_20260907_004459\src\D3D12nBodyGravity.vcxproj]
+  (compiling source file '/D3D12nBodyGravity.cpp')
+  
+C:\Users\Lorenzo\AppData\Local\Temp\claude\R_20260907_004459\src\NbProbe.h(30,25): error C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\Lorenzo\AppData\Local\Temp\claude\R_20260907_004459\src\D3D12nBodyGravity.vcxproj]
+  (compiling source file '/D3D12nBodyGravity.cpp')
+  
+C:\Users\Lorenzo\AppData\Local\Temp\claude\R_20260907_004459\src\NbProbe.h(95,40): error C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\Users\Lorenzo\AppData\Local\Temp\claude\R_20260907_004459\src\D3D12nBodyGravity.vcxproj]
+  (compiling source file '/D3D12nBodyGravity.cpp')
+  

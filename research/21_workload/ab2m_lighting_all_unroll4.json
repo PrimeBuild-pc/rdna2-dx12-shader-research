@@ -1,0 +1,13 @@
+{
+ "target": "lighting",
+ "tf": "all_unroll4",
+ "runs": 7,
+ "frame_A": 1.0286549999999999,
+ "frame_B": 1.034403,
+ "frame_delta_pct": 0.5587879318138819,
+ "cpu_A": 0.17491299999999999,
+ "cpu_B": 0.176149,
+ "img_AA_max": 8.873456790123456e-05,
+ "img_AB_max": 0.0005198688271604938,
+ "img_verdict": "DIVERSA oltre la variabilita' di A"
+}

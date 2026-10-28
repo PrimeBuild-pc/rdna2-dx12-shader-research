@@ -1,0 +1,9 @@
+{
+  "variant": "rsqrt_dist",
+  "executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\rsqrt_dist\\D3D12Multithreading.exe",
+  "executable_sha256": "037f1ca6a093bead0ec061b0fa513a34cce40e284f3c2170d4250c47194a2388",
+  "shaders": {
+    "shaders_VSMain.cso": "90b16f8a6ab0897f9fb32555de4b08f1725a85479f7cf2decc4fa1ffbbb7cea9",
+    "shaders_PSMain.cso": "49f3af95ee23a3289ab299791c11b144ba000c56ee4e3e7a55d1a35831de71df"
+  }
+}

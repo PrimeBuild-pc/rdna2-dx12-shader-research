@@ -1,0 +1,5 @@
+
+Building for gfx1030...
+Error: failed to invoke the DX12 backend.
+Error: cannot retrieve the list of targets supported by the driver. Consider adding --offline to the rga command to use the AMD driver (amdxc64.dll) that is bundled with the tool.
+failed.

@@ -1,0 +1,33 @@
+{
+  "historical_csvs_identical_after_mapping": 14,
+  "schema_probe_rows": 3820,
+  "schema_probe_columns": [
+    "Application",
+    "ProcessID",
+    "SwapChainAddress",
+    "PresentRuntime",
+    "SyncInterval",
+    "PresentFlags",
+    "AllowsTearing",
+    "PresentMode",
+    "CPUStartQPCTime",
+    "MsBetweenPresents",
+    "MsCPUBusy",
+    "MsCPUWait",
+    "MsGPULatency",
+    "MsGPUTime",
+    "MsGPUBusy",
+    "MsGPUWait",
+    "MsUntilDisplayed",
+    "MsBetweenDisplayChange",
+    "MsAnimationError",
+    "AnimationTime",
+    "MsFlipDelay",
+    "MsAllInputToPhotonLatency",
+    "MsClickToPhotonLatency",
+    "TimeInSeconds"
+  ],
+  "selfcheck": "PASS",
+  "definitions_changed": false,
+  "preliminary_regression_glob_failure": "First glob only found 7; corrected directory depth, all 14 checked."
+}

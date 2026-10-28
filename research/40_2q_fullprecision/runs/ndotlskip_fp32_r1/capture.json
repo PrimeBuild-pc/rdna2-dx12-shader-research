@@ -1,0 +1,22 @@
+{
+  "variant": "ndotlskip",
+  "rep": 1,
+  "pid": 8212,
+  "draws": 34,
+  "image": {
+    "pid": 8212,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 2,
+    "format_name": "R32G32B32A32_FLOAT",
+    "bytes_per_pixel": 16,
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 30720,
+    "stored_row_bytes": 30720,
+    "padding_stored": false
+  },
+  "image_sha256": "33f1cf2ed60a6341fee5bc1b3a61451b8ce1770a28882c5eaa31ff6720dfe17b",
+  "bytecode_sha256": "9c4a75b7b6fb928aca069ab5108813fcf4f2e9cad99ab3a0b59f81a02c2f8a38"
+}

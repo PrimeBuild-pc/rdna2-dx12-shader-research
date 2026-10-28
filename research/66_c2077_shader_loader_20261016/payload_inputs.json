@@ -1,0 +1,24 @@
+{
+  "game_path": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\Cyberpunk2077.exe",
+  "game_sha256": "a7de82945c03e041fc7339fcf9066224d98db2f5d80fea50f7947bb350a60991",
+  "payloads": [
+    {
+      "name": "kOriginal",
+      "input": "research\\65_c2077_dxil_roundtrip_20261016\\glass_original.dxil",
+      "bytes": 23102,
+      "sha256": "c8755b8ac5d61f208d02e0fda1c3bbed2c7e0a15f59c9edbb0f8c559925828b9"
+    },
+    {
+      "name": "kControl",
+      "input": "research\\65_c2077_dxil_roundtrip_20261016\\r1\\glass_control.dxil",
+      "bytes": 23042,
+      "sha256": "106559643f27e4c0716e542919d18857ad4f7caec0007e0d00c1b97929857f2b"
+    },
+    {
+      "name": "kCanary",
+      "input": "research\\65_c2077_dxil_roundtrip_20261016\\r1\\glass_canary.dxil",
+      "bytes": 23050,
+      "sha256": "9da6f87440e40e8d42a4f6bc2afba073a6675d0ddffec91805426142a4e085db"
+    }
+  ]
+}

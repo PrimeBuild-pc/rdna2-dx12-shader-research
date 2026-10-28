@@ -1,0 +1,8 @@
+variant,d_pct_vs_default,se_pct,ns_median,s_cbranch,exec_ops,v_sin,v_cos,valu_static,clause,note
+default,0.00,,235714,32,95,128,128,863,0,riferimento reale DXC/AMD
+pair_branch,-27.64,0.141,170808,32,95,128,128,830,15,2 load per iterazione ma ramo per elemento
+hoist_seq,-67.00,0.204,77532,2,2,128,128,709,6,ramo sollevato 1 load per iterazione
+hoist_parity4,-67.52,0.184,76362,2,2,128,128,723,6,ramo sollevato 4 load per iterazione
+hoist_parity,-70.86,0.114,68575,6,2,48,48,289,6,ramo sollevato 2 load per iterazione (vincitore)
+loadonly_seq,-47.79,0.106,123345,0,0,0,0,,2,controllo: sole load sequenziali
+loadonly_pair,-45.25,0.222,128685,0,0,0,0,,3,controllo: sole load a coppie

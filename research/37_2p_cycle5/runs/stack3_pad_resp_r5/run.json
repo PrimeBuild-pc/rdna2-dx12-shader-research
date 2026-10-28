@@ -1,0 +1,9 @@
+{
+  "variant": "stack3_pad",
+  "set": "resp",
+  "rep": 5,
+  "pid": 12504,
+  "samples": 32,
+  "bytecode_sha256": "722ee9db6f0abe17b62d3c0d5c262b87a117e151412956a5d3dafdca73a338fc",
+  "executable_sha256": "91e4bdc5b658a09dc77fabc07cfe6c2b942395f6acf69b59688fc864cad63c3b"
+}

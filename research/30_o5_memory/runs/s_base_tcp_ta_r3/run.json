@@ -1,0 +1,9 @@
+{
+  "variant": "s_base",
+  "set": "tcp_ta",
+  "rep": 3,
+  "pid": 11176,
+  "samples": 32,
+  "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "executable_sha256": "6840bae3d627925a1489df41af6806d418ea8cb9896e6f6e5778fd41a849f86d"
+}

@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\build.log",
+      "bytes": 747,
+      "sha256": "104db0150c40ac54b63cd588f398fea2fded82a0bf89fd1bda806f3bb61173a5"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\final_build.log",
+      "bytes": 747,
+      "sha256": "104db0150c40ac54b63cd588f398fea2fded82a0bf89fd1bda806f3bb61173a5"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\loader_selfcheck.log",
+      "bytes": 68,
+      "sha256": "5dc2ae0e92367004baa9874fe6d5b632f28aa67ca29855a4c15a0d8dfb493226"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\pe_review.txt",
+      "bytes": 10524,
+      "sha256": "aa8cc09dea0a9ea5ac942c1bc1e1a4aa3dd8652b2f5d066cf0836f302f92a98e"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\probe.exp",
+      "bytes": 1049,
+      "sha256": "7c962b2730f5868df60984fdb922d99f7c2e84a86a34a4c1e1e9bb8cfe48535f"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\probe.lib",
+      "bytes": 2488,
+      "sha256": "89e303cfb8fa2f729ed8d8dbc95bbec194afa5833687d39ddabeb95e7e61f9a8"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\probe.obj",
+      "bytes": 1206804,
+      "sha256": "517ece9201ca31d5ab1ba0790ec588ae95f17e31b5a2b620cabbc4b77122fe11"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\test.exe",
+      "bytes": 352768,
+      "sha256": "f9afc3652c41b35249fb8bbc0af3399f3423cb303d9f41f99756b108d011afc7"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\test.exp",
+      "bytes": 1028,
+      "sha256": "41fc2aa3fc44d2adb719454f8fda92898b7933387671dd681631ca185869db1e"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\test.lib",
+      "bytes": 2126,
+      "sha256": "46867529cac90cba1982cc679656838811be20b80243b9d48efff32cf5d4782d"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build\\test.obj",
+      "bytes": 1251314,
+      "sha256": "8df372dbf246b73bf3aa72dfa8d2a6f6d439f2062bf753209779cc51669f5f9d"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\build.cmd",
+      "bytes": 841,
+      "sha256": "0fc96fc1bb6a0566819eaa871e8f7c11bf29703e0f917cde74710b731e69add6"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\deployment.json",
+      "bytes": 839,
+      "sha256": "2dfd5b0d9435f4c1c15fde9714fb897989340ac374ce1454ca03289f32e3abb3"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\frozen_before\\c2077_shader_loader.py",
+      "bytes": 12940,
+      "sha256": "7a681396361f91f0200d9d47518f3d9d67c50f0b7c8fdda0d05b4618bc974599"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\frozen_before\\deployment.json",
+      "bytes": 16307,
+      "sha256": "26050daa5c168a196934fd2e31ca717e972a989178ccdea92e6d9bd4363b327c"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\offline_shader_index.json",
+      "bytes": 2894546,
+      "sha256": "4dbfc98e9823608cd6ba45c8ddeccb5153ff7aff0d1f3ae07ece426bffd012eb"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\package.json",
+      "bytes": 467,
+      "sha256": "0e0d1d9d8f6f5319ad8bbd3ddb8c586865041309d1cb98fc11fdcbf378d2dbd5"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\payload\\C2077BackbufferProbe.addon64",
+      "bytes": 323584,
+      "sha256": "0372836cc40401836190b225318cb4c345bad327640504e8b9a60b30b0a904a6"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\PREREGISTRATION.md",
+      "bytes": 3360,
+      "sha256": "2b28b6988cce92d426ced431d254d6d6250cb1412afb38f64fb868d7c784e0fa"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\removed_probe\\C2077ShaderProbe.addon64",
+      "bytes": 329216,
+      "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\STATUS.md",
+      "bytes": 3619,
+      "sha256": "708e96721bc3eb5b2b76bc782f76285d04dd39e63c3c8d25aef16e08122c8244"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\status_before_manual_run.json",
+      "bytes": 4002,
+      "sha256": "33341e6ad6c0342dcf2ac594d4011647a739ffdd98127034f7e47dbe53322125"
+    },
+    {
+      "path": "research\\68_c2077_backbuffer_catalog_20261016\\verification.json",
+      "bytes": 541,
+      "sha256": "5215168b235cb698763fc057302b405d297beb5132b0707b7ba118408faca9e8"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 25945,
+      "sha256": "e1519f996007bebcad4594c2e6a68a3a5e614c24fed38dbce4d53a8ad28452d0"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 105380,
+      "sha256": "2003c85b976aebeeb92fb05b8501b3d850e69766e3fdb1735198d15aecc3c370"
+    },
+    {
+      "path": "tools\\c2077_shader_loader.py",
+      "bytes": 13475,
+      "sha256": "bf36d410484cbe34caea046cc527131388defe490bc8299db8edb93d3af0e544"
+    },
+    {
+      "path": "tools\\c2077_backbuffer_probe.cpp",
+      "bytes": 15532,
+      "sha256": "a5d661f7d71db88e8c91d2ee66db6011d1cbe88edfbc14b9437a6e048f8fafca"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\deployment.json",
+      "bytes": 16954,
+      "sha256": "a22f4e95c30d802bf09297dc88e39c0c5531d2a667f9df3386bca0a80e9179ac"
+    }
+  ]
+}

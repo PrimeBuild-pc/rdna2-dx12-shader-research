@@ -1,0 +1,66 @@
+{
+ "video_controllers": {
+  "Name": "AMD Radeon RX 6950 XT",
+  "DriverVersion": "32.0.21045.5002",
+  "DriverDate": "/Date(1786924800000)/",
+  "VideoProcessor": "AMD Radeon Graphics Processor (0x73A5)",
+  "AdapterRAM": 4293918720,
+  "VideoModeDescription": "2560 x 1440 x 4294967296 colors",
+  "PNPDeviceID": "PCI\\VEN_1002&DEV_73A5&SUBSYS_05041043&REV_C0\\6&E5C6FD0&0&00000019",
+  "Status": "OK"
+ },
+ "driverstore": {
+  "Name": "u0203303.inf_amd64_e5876a26758f154c",
+  "FullName": "C:\\Windows\\System32\\DriverStore\\FileRepository\\u0203303.inf_amd64_e5876a26758f154c",
+  "LastWriteTime": "/Date(1787354196678)/"
+ },
+ "monitors": [
+  {
+   "InstanceName": "DISPLAY\\AUS27F4\\7&2b7373c2&4&UID264_0",
+   "MaxHorizontalImageSize": 59,
+   "MaxVerticalImageSize": 33
+  },
+  {
+   "InstanceName": "DISPLAY\\SKG2418\\7&2b7373c2&4&UID268_0",
+   "MaxHorizontalImageSize": 53,
+   "MaxVerticalImageSize": 30
+  }
+ ],
+ "installed_binaries": [
+  {
+   "path": "C:/Windows/System32/DriverStore/FileRepository/u0203303.inf_amd64_e5876a26758f154c/B026363/amdkmdag.sys",
+   "size": 102772744,
+   "sha256": "f7783eb8081203149f42102afd86a05098b0730d8fc2de99a7645eb0e4bc96a3"
+  },
+  {
+   "path": "C:/Windows/System32/DriverStore/FileRepository/u0203303.inf_amd64_e5876a26758f154c/B026363/amdvlk64.dll",
+   "size": 102732296,
+   "sha256": "d4a9e509e02d7b262abd2facef122f4b949b063166217297daf4637ae5df8010"
+  },
+  {
+   "path": "C:/Windows/System32/DriverStore/FileRepository/u0203303.inf_amd64_e5876a26758f154c/B026363/amdxc64.dll",
+   "size": 82422960,
+   "sha256": "6aaade81651ffcdd19849fb3355aca5e4e7de5392a2120927e6defffb529b4b4"
+  },
+  {
+   "path": "C:/Windows/System32/DriverStore/FileRepository/u0203303.inf_amd64_e5876a26758f154c/B026363/amdxcffx64.dll",
+   "size": 14509352,
+   "sha256": "32faef8521fa5fc1895277c85d04323714bc02561b03f583c8a9cf92a354ba0d"
+  },
+  {
+   "path": "C:/Windows/System32/DriverStore/FileRepository/u0203303.inf_amd64_e5876a26758f154c/B026363/amdxcstub64.dll",
+   "size": 142736,
+   "sha256": "a4cbb621180c131e1d5970ce599eccb8192043598ca11a2e54ec49e8c21b8c05"
+  },
+  {
+   "path": "C:/Windows/System32/DriverStore/FileRepository/u0203303.inf_amd64_e5876a26758f154c/B026363/amdxx64.dll",
+   "size": 50424200,
+   "sha256": "9931c1db9a91e11dec1d89e7405668ada9d94a706f4fd818b87b6c1ac0db9d43"
+  },
+  {
+   "path": "C:/Windows/System32/DriverStore/FileRepository/u0203303.inf_amd64_e5876a26758f154c/B026363/atio6axx.dll",
+   "size": 64289808,
+   "sha256": "e70a5a327a558bf5e69366f3eeeec3b931840afc1bff726bd1ec82ba8ef1b90b"
+  }
+ ]
+}

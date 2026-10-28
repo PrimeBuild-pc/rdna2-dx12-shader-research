@@ -1,0 +1,37 @@
+{
+  "experiment_id": "O4_20260906_185143",
+  "created_at": "2026-09-06T18:51:43.666326+02:00",
+  "cycle": "O4",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_185143",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_file": "MiniEngine/Model/LightManager.cpp",
+  "variants": {
+    "L128": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));",
+    "L64": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));\n        if (n % 2 != 0) m_LightData[n].radiusSq = 0.0f;",
+    "L32": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));\n        if (n % 4 != 0) m_LightData[n].radiusSq = 0.0f;",
+    "L16": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));\n        if (n % 8 != 0) m_LightData[n].radiusSq = 0.0f;"
+  },
+  "expected_bytecode": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "expected_artifact": {
+    "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\31_o6_lightcount\\preregistered\\A\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+    "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+    "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "custom_hash": "52CE6C5E64AB2E82",
+    "bytecode_bytes": 12612
+  },
+  "ablation_kind": "diagnostic_only - filtering quality changes, so the image changes; no variant here is an accepted optimisation",
+  "preregistered_criteria": {
+    "invariant": "every variant must produce the SAME pixel shader bytecode as the O1 baseline (52CE6C5E64AB2E82). The build gate rejects anything else, so instruction count, ALU and scheduling are held fixed by construction.",
+    "dose": "the aniso sample histogram and TexAveAnisotropy, which are exact work counters",
+    "response_mechanistic": "sum of TA_BUSY over the 80 CUs",
+    "response_outcome": "GPUTime and GPUBusyCycles of the Render Color sample",
+    "statistic": "median over >=32 samples per run, >=3 independent processes per variant, order interleaved and reversed between repetitions",
+    "threshold": "max(2%, 3 x N95) with N95 from the s_base A/A control measured here",
+    "conclusion_rule": "if Render Color time moves with filtering cost while the shader bytecode is unchanged, texture filtering is on its critical path, and the slope quantifies by how much. A null result with a verified filtering dose falsifies the filtering-throughput hypothesis.",
+    "bidirectional": "the dose goes both down (aniso1, bilinear, point) and up (aniso16), so a one-sided artefact cannot mimic the effect"
+  },
+  "workspace_budget_bytes": 8000000000
+}

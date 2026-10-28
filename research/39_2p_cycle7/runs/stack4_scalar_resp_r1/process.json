@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\stack4_scalar.1\\Output\\ModelViewer\\ModelViewer.exe"
+  ],
+  "command_line": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\stack4_scalar.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\MiniEngine\\ModelViewer",
+  "requested_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\stack4_scalar.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "executable_sha256": "9e720fc6e3d4179bec38cbe4ea84331ff7a5f59f9879bb97be2436729d4290d4",
+  "pid": 15964,
+  "actual_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\stack4_scalar.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "returncode": 0
+}

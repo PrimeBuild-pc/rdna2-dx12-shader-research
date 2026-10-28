@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "experiment": "C2077-SHADER-LOADER-001",
+  "host": "ReShade 6.8.0 Full Add-on x64",
+  "sdk_commit": "18deaa52de0c425a78b329e9cb3c497281cd00ec",
+  "default_mode": "control",
+  "files": [
+    {
+      "path": "C2077ShaderLab\\C2077ShaderLab.addon64",
+      "bytes": 345088,
+      "sha256": "b2d94454572a1ab7b4a2081ac8c31f7bd84685d8128b6965e64a48277f0d0d26"
+    },
+    {
+      "path": "C2077ShaderLab\\mode.txt",
+      "bytes": 8,
+      "sha256": "2e7f1f7a9dd3f82765d297d667234b91f8a68fa534bc7e6a6a04c77ffee12376"
+    },
+    {
+      "path": "C2077ShaderLab\\preset.ini",
+      "bytes": 55,
+      "sha256": "9ee7d2f1d02e614504a94fa620faf4d22346266a057639c1baee5f698f234aad"
+    },
+    {
+      "path": "dxgi.dll",
+      "bytes": 5592064,
+      "sha256": "0cee63f9c9f13f3ac909c5b4903f4dbb4b719a7ab3b4f13b0deaf83c814b94f7"
+    },
+    {
+      "path": "ReShade.ini",
+      "bytes": 625,
+      "sha256": "f274c185d3c8ea3e124d72a1ed3d19be6ec5b69b028ebd39ca0f3229eea343b3"
+    }
+  ],
+  "notes": "No installer executed, no original files overwritten, no effects/upscalers/HDR changes configured."
+}

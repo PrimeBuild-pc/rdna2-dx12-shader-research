@@ -1,0 +1,17 @@
+name,kind,status,correct,max_rel_err,note,ns_median,d_pct,accepted,runs,run_spread_pct,vgpr,sgpr,wave,inst,isa_sha,src_sha
+baseline,baseline,ok,SI,0.000e+00,riferimento,78900.0,0.0,no,3,1.876,144,14,32,691,f10ecf2ce8d9,6020b6f1f435
+tg32,numthreads,ok,SI,0.000e+00,,76565.0,-2.96,SI,3,4.421,144,14,32,691,e24c76b80e39,45b2538c67ba
+tg128,numthreads,ok,SI,0.000e+00,,97625.0,23.73,no,3,3.309,144,14,32,691,cf9d4178a748,404e1a6446c7
+tg256,numthreads,ok,SI,0.000e+00,,117500.0,48.92,no,3,0.166,144,14,32,691,5e6e54426cb7,a6edab42dafd
+L1_loop,loop_attr,ok,SI,1.144e-05,,76675.0,-2.82,SI,3,3.071,144,14,32,707,39843b72b8eb,87ac70c030a6
+L2_loop,loop_attr,ok,SI,1.144e-05,,67430.0,-14.54,SI,3,0.193,152,14,32,716,70d70d5efa92,109a67ffa1e8
+L3_loop,loop_attr,ok,SI,4.411e-06,,55205.0,-30.03,SI,3,0.145,136,14,32,719,5b1d7fcdf5d4,4be0a97c60a4
+all_loop,loop_attr,ok,SI,4.411e-06,,55335.0,-29.87,SI,3,0.262,136,14,32,705,597ac6dc89ac,40eb785ddd2b
+L2_unroll4,unroll_factor,ok,NO,1.502e+00,,33690.0,-57.3,no,3,16.682,112,14,32,347,385246a92762,c54457455698
+L2_unroll8,unroll_factor,ok,NO,1.561e+00,,30720.0,-61.06,no,3,33.854,104,14,32,418,1bfcd0455dfe,29eba72277cb
+L2_unroll12,unroll_factor,ok,NO,1.996e+00,,93005.0,17.88,no,3,1.656,104,14,32,497,136b87a51ac1,2f15837d7729
+L2_temps,temporaries,ok,SI,0.000e+00,,79770.0,1.1,no,3,2.319,144,14,32,691,f10ecf2ce8d9,3ced6bf9775b
+acc2,ilp_accum,ok,SI,0.000e+00,,79140.0,0.3,no,3,0.543,144,14,32,691,f10ecf2ce8d9,728e6a8d1433
+acc4,ilp_accum,ok,SI,8.880e-07,,78860.0,-0.05,no,3,1.49,144,14,32,691,b85f4f3e1c97,40bf524f6597
+wave32,wave,ok,SI,0.000e+00,,80245.0,1.7,no,3,2.81,144,14,32,691,f10ecf2ce8d9,ff6e3aed0779
+wave64,wave,ok,SI,0.000e+00,,84465.0,7.05,no,3,1.379,116,14,64,678,225cdb3fdb17,b420650e135a

@@ -1,0 +1,179 @@
+{
+  "experiment_id": "P_20260906_200700",
+  "criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image decoded to float32. Accept only if the maximum relative channel error over all 1920x1080x3 channels is <= 1e-3 and no channel is non-finite. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, 3 independent processes per variant, order interleaved and reversed. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND all three paired process deltas are negative, AND correctness passes.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build."
+  },
+  "n95": {
+    "GPUBusyCycles": 0.27297612217198003,
+    "GPUTime": 1.2622002274459816,
+    "TA_BUSY": 0.19735640120992984
+  },
+  "thresholds": {
+    "GPUBusyCycles": 1.0,
+    "GPUTime": 3.786600682337945,
+    "TA_BUSY": 1.0
+  },
+  "medians": {
+    "base": {
+      "GPUBusyCycles": 1185956.0,
+      "GPUTime": 797140.0,
+      "TA_BUSY": 88477808.5,
+      "PS_tex": 6110270.5,
+      "PS_VALU": 70955813.5,
+      "PS_VALU_cycles": 183102476.0,
+      "PS_waves": 39173.5
+    },
+    "fresnel5": {
+      "GPUBusyCycles": 1150675.5,
+      "GPUTime": 780960.0,
+      "TA_BUSY": 85699607.5,
+      "PS_tex": 6105477.5,
+      "PS_VALU": 71349039.0,
+      "PS_VALU_cycles": 172326937.0,
+      "PS_waves": 39144.0
+    },
+    "shadowskip": {
+      "GPUBusyCycles": 1121025.0,
+      "GPUTime": 759780.0,
+      "TA_BUSY": 77467711.5,
+      "PS_tex": 4871496.5,
+      "PS_VALU": 68441158.5,
+      "PS_VALU_cycles": 176720716.5,
+      "PS_waves": 39135.0
+    }
+  },
+  "verdicts": {
+    "fresnel5": {
+      "metrics": {
+        "GPUBusyCycles": {
+          "median": -3.168853809347122,
+          "per_process": [
+            -2.974857414608974,
+            -3.168853809347122,
+            -3.2415504299766216
+          ]
+        },
+        "GPUTime": {
+          "median": -2.493915748801967,
+          "per_process": [
+            -2.493915748801967,
+            -1.7833337525467212,
+            -2.9953802593015744
+          ]
+        },
+        "TA_BUSY": {
+          "median": -3.211305477265121,
+          "per_process": [
+            -3.0629731295842393,
+            -3.211305477265121,
+            -3.274698680395674
+          ]
+        }
+      },
+      "performance_accepted": true,
+      "final": "ACCEPTED",
+      "correctness": {
+        "pair": [
+          "base_image_r1",
+          "fresnel5_image_r1"
+        ],
+        "identical": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0,
+        "max_abs_error": 0.0,
+        "max_rel_error": 0.0,
+        "nonfinite_channels": 0,
+        "passed": true
+      }
+    },
+    "shadowskip": {
+      "metrics": {
+        "GPUBusyCycles": {
+          "median": -5.475413927666794,
+          "per_process": [
+            -5.475413927666794,
+            -5.5736590446910785,
+            -5.422438426824669
+          ]
+        },
+        "GPUTime": {
+          "median": -5.446823307336944,
+          "per_process": [
+            -6.189627919813333,
+            -4.447015619890837,
+            -5.446823307336944
+          ]
+        },
+        "TA_BUSY": {
+          "median": -12.399422710061906,
+          "per_process": [
+            -12.44390789810306,
+            -12.319988932834082,
+            -12.399422710061906
+          ]
+        }
+      },
+      "performance_accepted": true,
+      "final": "ACCEPTED",
+      "correctness": {
+        "pair": [
+          "base_image_r1",
+          "shadowskip_image_r1"
+        ],
+        "identical": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0,
+        "max_abs_error": 0.0,
+        "max_rel_error": 0.0,
+        "nonfinite_channels": 0,
+        "passed": true
+      }
+    }
+  },
+  "correctness": {
+    "base_vs_base": {
+      "pair": [
+        "base_image_r1",
+        "base_image_r2"
+      ],
+      "identical": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "nonfinite_channels": 0
+    },
+    "fresnel5": {
+      "pair": [
+        "base_image_r1",
+        "fresnel5_image_r1"
+      ],
+      "identical": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "nonfinite_channels": 0,
+      "passed": true
+    },
+    "shadowskip": {
+      "pair": [
+        "base_image_r1",
+        "shadowskip_image_r1"
+      ],
+      "identical": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "nonfinite_channels": 0,
+      "passed": true
+    }
+  }
+}

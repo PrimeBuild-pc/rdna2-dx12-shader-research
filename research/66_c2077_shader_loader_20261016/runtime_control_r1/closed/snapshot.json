@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-16T20:54:04.980176+00:00",
+  "processes": [],
+  "operator_confirmation": "chiuso, immagine normale",
+  "files": [
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\mode.txt",
+      "copy": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\closed\\mode.txt",
+      "bytes": 8,
+      "sha256": "2e7f1f7a9dd3f82765d297d667234b91f8a68fa534bc7e6a6a04c77ffee12376"
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-5396-134366570937045601.jsonl",
+      "copy": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\closed\\runtime-5396-134366570937045601.jsonl",
+      "bytes": 439,
+      "sha256": "fd487ec76168a50b7fa4ec3bfbe1a0994e5bddd0e8b18f8f71fbaf2a7efa1ca3"
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-5396-134366570938610954.jsonl",
+      "copy": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\closed\\runtime-5396-134366570938610954.jsonl",
+      "bytes": 22933,
+      "sha256": "effaaa1886d223669949ec811f085d38006eca0c25fdd381cf10dabbb731d5d5"
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\ReShade.ini",
+      "copy": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\closed\\ReShade.ini",
+      "bytes": 1962,
+      "sha256": "2f57e503ea1b1e9f6247369e2c87cc83cc28b3cd094beb8955b87da8048d6004"
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\ReShade.log",
+      "copy": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\closed\\ReShade.log",
+      "bytes": 33179,
+      "sha256": "aff71e862e8b10cec213c6a6a6d6e01ac88a81bb8e4ee33f8a06d0e36c43b4f4"
+    }
+  ]
+}

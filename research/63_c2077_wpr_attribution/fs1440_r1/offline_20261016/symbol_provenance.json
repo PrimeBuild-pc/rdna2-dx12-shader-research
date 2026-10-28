@@ -1,0 +1,82 @@
+{
+  "ntkrnlmp.pdb": {
+    "guid": "72c69e72-6c64-8bc1-8257-af38fa78a2f2",
+    "age": 1,
+    "base": "0xfffff80095400000",
+    "url": "https://msdl.microsoft.com/download/symbols/ntkrnlmp.pdb/72C69E726C648BC18257AF38FA78A2F21/ntkrnlmp.pdb",
+    "bytes": 11390976,
+    "sha256": "522bcca703a7f5036a5c0b01080bd1a65a25f006a84da6cebd20cd59f3526722"
+  },
+  "dxgkrnl.pdb": {
+    "guid": "1f088b62-fa95-99a1-fdf5-4b8d730bb4d8",
+    "age": 1,
+    "base": "0xfffff80027730000",
+    "url": "https://msdl.microsoft.com/download/symbols/dxgkrnl.pdb/1F088B62FA9599A1FDF54B8D730BB4D81/dxgkrnl.pdb",
+    "bytes": 2961408,
+    "sha256": "12ae369db3c706b647c42f6fc36ca03295f07f651b942cb323661e536fe32933"
+  },
+  "win32kbase.pdb": {
+    "guid": "9c9fbfdf-1146-c843-ec97-2355304e9ff8",
+    "age": 1,
+    "base": "0xfffff80036ef0000",
+    "url": "https://msdl.microsoft.com/download/symbols/win32kbase.pdb/9C9FBFDF1146C843EC972355304E9FF81/win32kbase.pdb",
+    "bytes": 2756608,
+    "sha256": "348f9ffb2452f6bdee43d8481e02654f3d85859f542d0f91b7f234e55bbd3f32"
+  },
+  "win32kfull.pdb": {
+    "guid": "669fc53c-9730-aecb-4422-db5f4bce964e",
+    "age": 1,
+    "base": "0xfffff8003df20000",
+    "url": "https://msdl.microsoft.com/download/symbols/win32kfull.pdb/669FC53C9730AECB4422DB5F4BCE964E1/win32kfull.pdb",
+    "bytes": 2691072,
+    "sha256": "b5bc86ce2012ed749db5a9b7c05dad0fb54e990fb09dbe583af52276db3ce8bc"
+  },
+  "dxgmms2.pdb": {
+    "guid": "2ddc129b-02a5-637f-66e3-12eaada0d722",
+    "age": 1,
+    "base": "0xfffff8003dd30000",
+    "url": "https://msdl.microsoft.com/download/symbols/dxgmms2.pdb/2DDC129B02A5637F66E312EAADA0D7221/dxgmms2.pdb",
+    "bytes": 806912,
+    "sha256": "8b3d26cf5ef1686886c9f6d55170acd777c1a15ac51d9001413bfc88af4426e4"
+  },
+  "d3d12core.pdb": {
+    "guid": "113742a1-2193-4f52-48d0-b4737638cea5",
+    "age": 1,
+    "base": "0x00007ffcb5b80000",
+    "url": "https://msdl.microsoft.com/download/symbols/d3d12core.pdb/113742A121934F5248D0B4737638CEA51/d3d12core.pdb",
+    "bytes": 7663616,
+    "sha256": "9f2ef78ad6f5e9a7e626e23c42cecf75a6a0362775d2f35f4c6a3cc9ab65364a"
+  },
+  "d3d12.pdb": {
+    "guid": "7f72d5e1-0fc6-c45b-4e51-6ecbf8cf4a8b",
+    "age": 1,
+    "base": "0x00007ffcc1eb0000",
+    "url": "https://msdl.microsoft.com/download/symbols/d3d12.pdb/7F72D5E10FC6C45B4E516ECBF8CF4A8B1/d3d12.pdb",
+    "bytes": 348160,
+    "sha256": "b7cc6235615943af3b92f2bab8ad47f02d75332ad01bc8a52187b89e9b439648"
+  },
+  "dxgi.pdb": {
+    "guid": "6da56020-23b4-63ad-ae47-1230e40830fd",
+    "age": 1,
+    "base": "0x00007ffcdf0f0000",
+    "url": "https://msdl.microsoft.com/download/symbols/dxgi.pdb/6DA5602023B463ADAE471230E40830FD1/dxgi.pdb",
+    "bytes": 1822720,
+    "sha256": "80a041ff9235ba1883aa507322f26c91639c03daa9a414a893565618e9881a78"
+  },
+  "kernelbase.pdb": {
+    "guid": "6874f830-1c0b-c013-515c-d96b5b0474ba",
+    "age": 1,
+    "base": "0x00007ffce21c0000",
+    "url": "https://msdl.microsoft.com/download/symbols/kernelbase.pdb/6874F8301C0BC013515CD96B5B0474BA1/kernelbase.pdb",
+    "bytes": 12505088,
+    "sha256": "1efefed9e678e0ea7c5bda667f0bf7fbbdfd9b03f3cc7f13cfd56f87c24f708f"
+  },
+  "ntdll.pdb": {
+    "guid": "1df9db46-d55d-6b86-9568-c9f6e9287de4",
+    "age": 1,
+    "base": "0x00007ffce4c80000",
+    "url": "https://msdl.microsoft.com/download/symbols/ntdll.pdb/1DF9DB46D55D6B869568C9F6E9287DE41/ntdll.pdb",
+    "bytes": 1912832,
+    "sha256": "91a8ba9192b923e7676600650ecf50625498165bb80e001967f357e3999966ff"
+  }
+}

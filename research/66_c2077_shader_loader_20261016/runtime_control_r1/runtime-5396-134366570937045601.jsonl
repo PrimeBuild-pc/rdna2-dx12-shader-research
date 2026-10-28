@@ -1,0 +1,2 @@
+{"schema":1,"experiment":"C2077-SHADER-LOADER-001","pid":5396,"event":"loaded_exe_guard_pass","mode":"control","dx12_pipeline_inits":0,"matched_original":0,"cloned_pipelines":0,"clone_failures":0,"bound_calls":0,"presents":0}
+{"schema":1,"experiment":"C2077-SHADER-LOADER-001","pid":5396,"event":"unloaded","mode":"control","dx12_pipeline_inits":0,"matched_original":0,"cloned_pipelines":0,"clone_failures":0,"bound_calls":0,"presents":0}

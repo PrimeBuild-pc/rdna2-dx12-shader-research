@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/clshortfuse/renodx/a7059b86db03bc03300dc88463ece45eeb3d4875/README.md",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\renodx_README.md",
+    "bytes": 1716,
+    "sha256": "a4497fc204ddc628a89bb275abc1879dfec4695998ce3de8149b4e24e64ec309"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/clshortfuse/renodx/a7059b86db03bc03300dc88463ece45eeb3d4875/src/mods/shader.hpp",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\renodx_shader.hpp",
+    "bytes": 117121,
+    "sha256": "549061e18e52eb6f8aa0a3c6f30c7f8d1f77ed749ac25701a3762f2de8a77243"
+  }
+]

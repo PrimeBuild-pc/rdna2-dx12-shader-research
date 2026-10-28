@@ -1,0 +1,17 @@
+[
+  {
+    "path": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\Cyberpunk2077.exe",
+    "sha256": "a7de82945c03e041fc7339fcf9066224d98db2f5d80fea50f7947bb350a60991",
+    "bytes": 59945608
+  },
+  {
+    "path": "E:\\GOG\\Cyberpunk 2077\\engine\\shader_final.cache",
+    "sha256": "339145371a3b5aaa08eb4ef82d558f445b632e28603ee0f3b4860270dfc3ccfa",
+    "bytes": 161804693
+  },
+  {
+    "path": "E:\\GOG\\Cyberpunk 2077\\engine\\staticshader_final.cache",
+    "sha256": "bff160947aba8df144200247adc39b44c26322360628d875f7c7218ad26c59ff",
+    "bytes": 14966384
+  }
+]

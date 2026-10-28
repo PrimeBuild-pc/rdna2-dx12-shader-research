@@ -1,0 +1,10 @@
+{
+  "experiment": "C2077-BACKBUFFER-PROBE-001",
+  "file": "C2077BackbufferProbe.addon64",
+  "sha256": "0372836cc40401836190b225318cb4c345bad327640504e8b9a60b30b0a904a6",
+  "bytes": 323584,
+  "source_sha256": "a5d661f7d71db88e8c91d2ee66db6011d1cbe88edfbc14b9437a6e048f8fafca",
+  "header_sha256": "fdc83567fb44cd3f18c3cefe6cd09ea44c193abc037ac45418dfb389e4cb2db4",
+  "sdk_commit": "18deaa52de0c425a78b329e9cb3c497281cd00ec",
+  "read_only_gpu_api_check": true
+}

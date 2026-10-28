@@ -1,0 +1,10 @@
+scope,gpu_ms_A,gpu_ms_B,delta_pct,spread_A_pct,spread_B_pct
+Culling & Sorting,0.043905,0.044449,1.239,8.32,6.95
+Particle Render,0.060198,0.060134,-0.106,8.49,9.71
+Particle Update,0.023611,0.023698,0.368,4.35,5.04
+Scene Render,0.947539,0.947345,-0.02,0.95,0.79
+Render Color,0.520035,0.521431,0.268,0.26,0.7
+Temporal Resolve,0.115527,0.115328,-0.172,5.08,4.7
+Post Effects,0.05455,0.054379,-0.313,4.45,3.93
+__FRAME__,1.035543,1.032794,-0.265,,
+__IMG__,c502099f7eadd831,d9d52bd06e1e8d63,DIVERSA,,

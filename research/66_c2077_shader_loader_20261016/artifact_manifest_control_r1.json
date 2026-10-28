@@ -1,0 +1,415 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\artifact_manifest_install.json",
+      "bytes": 15915,
+      "sha256": "4bdccbfe7e88b6e3fbd66fecfbcb137e1bd6a0cee87305c718662ef77c96a9f6"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\addon_pe_review.txt",
+      "bytes": 10558,
+      "sha256": "35ae045c88956fc9786f88ffedf11669066be189d71ae22f015f9f258d9bd21b"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\build.log",
+      "bytes": 735,
+      "sha256": "56544e2f222091876dd16c6c0ad7e9eb5f110392f21fd55c1f561aa4539abda7"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\cng_probe_correction.json",
+      "bytes": 758,
+      "sha256": "117be7e9d0e5eef25fdeff26a3976d6096076e374717365a977bc025acaef973"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\deployment_selfcheck.log",
+      "bytes": 68,
+      "sha256": "5dc2ae0e92367004baa9874fe6d5b632f28aa67ca29855a4c15a0d8dfb493226"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\final_build.log",
+      "bytes": 735,
+      "sha256": "56544e2f222091876dd16c6c0ad7e9eb5f110392f21fd55c1f561aa4539abda7"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\initial_package.json",
+      "bytes": 1137,
+      "sha256": "3562e31c7c55842c24fff9f5e863c46da4aef6359b1917d16ef480a3712cfbee"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_lab.exp",
+      "bytes": 1043,
+      "sha256": "13ae019580690f2cea16c1cca146fede7221c9b02d0c2fe9c13fb384bdc649f8"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_lab.lib",
+      "bytes": 2392,
+      "sha256": "2c810c90c033e2858508851ebcd5e0af735286c754cf519b2a5ffd39dbeeb1e5"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_lab_addon.obj",
+      "bytes": 594792,
+      "sha256": "6c765261177e700b53870b46918a21491c006d0d98c24a1aff4548c1117ac63b"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_lab_test.exe",
+      "bytes": 373248,
+      "sha256": "ea52495862db3f22d9194c94ed44316d6ea9bc9ebfa0569773d4960deb3e39c4"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_lab_test.exp",
+      "bytes": 1046,
+      "sha256": "86be5bf114841965838a14e204902894ffdfd503f95a0582e9bcd232a53a1e83"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_lab_test.lib",
+      "bytes": 2368,
+      "sha256": "ec70e209f6837a380b87c33d7fc4366b5be8b25aaccfe0e109053b131dc9d88a"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_lab_test.obj",
+      "bytes": 613047,
+      "sha256": "f4326be25afbc53ae5640d3ac5e7e174d69a2b62d1f024553f0c708f27930447"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build\\shader_payloads.hpp",
+      "bytes": 355223,
+      "sha256": "fdc83567fb44cd3f18c3cefe6cd09ea44c193abc037ac45418dfb389e4cb2db4"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\build.cmd",
+      "bytes": 822,
+      "sha256": "f115b758ccf756947529a69e3d812d7ef20b076fd9c2b6d50e7199c46c89d060"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\deployment.json",
+      "bytes": 15524,
+      "sha256": "4ebd6fa92d4998a7e20d44f64c29fc97c978a032d90b84349ceb3a320c7cdf62"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\deployment_r0_removed.json",
+      "bytes": 15786,
+      "sha256": "767a7ee50b56aa84782b45ba3644f9e1035c533ed7915098d51a800ffc94b64d"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\downloads\\extraction.json",
+      "bytes": 190,
+      "sha256": "41a2b88c45053c295358c9ab9b48ed8712b4f3b441fadd8ed6a2b1f4853a4964"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\downloads\\provenance.json",
+      "bytes": 249,
+      "sha256": "a34237fb73bafd206cf84459c374baca91b63079be042d2956be54d104963b03"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\downloads\\ReShade_Setup_6.8.0_Addon.exe",
+      "bytes": 4318424,
+      "sha256": "afe4c8f13048306307983b8b3d41d5bf00a86820440b0e57dea10950e1176445"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\filesystem_commands.json",
+      "bytes": 735,
+      "sha256": "d52ee912cd789f33e00c7b6207e0c8bb04d80afdb26e2c935743361d57020bfd"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\filesystem_roundtrip.json",
+      "bytes": 203,
+      "sha256": "cd89390feb69f3f6ee538107cfad9b23b6c1b1ede58350122ff4abe8a455fd43"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\inputs_before.json",
+      "bytes": 566,
+      "sha256": "ca22b92630690b869d1f47a97419a11bf463e5fc32fdfb4f204d53adfb6f174a"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\package.json",
+      "bytes": 1373,
+      "sha256": "5936eb516a44e1d88723a6ee6262bc94cf325bd03724126c9a18ae56fa438967"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\payload\\ReShade64.dll",
+      "bytes": 5592064,
+      "sha256": "0cee63f9c9f13f3ac909c5b4903f4dbb4b719a7ab3b4f13b0deaf83c814b94f7"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\payload_inputs.json",
+      "bytes": 884,
+      "sha256": "86944036a1b23273f0c33cbc6ee7c0d45725852d63f6bd16e96650eff8bd721f"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\preflight_windows.json",
+      "bytes": 2044,
+      "sha256": "ac16b3febfdbc22a5b71b90414f0c9aebe1f9f8d4330435d93c5049e5e4ddd51"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\PREREGISTRATION.md",
+      "bytes": 4998,
+      "sha256": "78d663ee3280155b7ee68ab4612e63b7e788ab2a0343baff8e787202aa093835"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\README.md",
+      "bytes": 3403,
+      "sha256": "7cb5915cb70dc7a1efe994c49704f2c2a721f0eeada4ff6c6878eb443525d419"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\rollback-20261016-200209-298002\\C2077ShaderLab\\C2077ShaderLab.addon64",
+      "bytes": 345088,
+      "sha256": "c8d32fbd94f09e4732f2bb77870f9e4290bca2ab9a7d59944124c09abe161176"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\rollback-20261016-200209-298002\\C2077ShaderLab\\mode.txt",
+      "bytes": 8,
+      "sha256": "2e7f1f7a9dd3f82765d297d667234b91f8a68fa534bc7e6a6a04c77ffee12376"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\rollback-20261016-200209-298002\\C2077ShaderLab\\preset.ini",
+      "bytes": 55,
+      "sha256": "9ee7d2f1d02e614504a94fa620faf4d22346266a057639c1baee5f698f234aad"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\rollback-20261016-200209-298002\\dxgi.dll",
+      "bytes": 5592064,
+      "sha256": "0cee63f9c9f13f3ac909c5b4903f4dbb4b719a7ab3b4f13b0deaf83c814b94f7"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\rollback-20261016-200209-298002\\ReShade.ini",
+      "bytes": 625,
+      "sha256": "f274c185d3c8ea3e124d72a1ed3d19be6ec5b69b028ebd39ca0f3229eea343b3"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\ReShade.log",
+      "bytes": 32511,
+      "sha256": "7531e8ecdd6fc40a9ab8e2ef7d0ac0ee52034373765917e3cfb7f1aa8341538f"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\RESULT.md",
+      "bytes": 2425,
+      "sha256": "f7d1ae9b8fd2e061198b05ac16ff6b2fb5a067dc8f1cb29f3578fccc573c3543"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\runtime-5396-134366570937045601.jsonl",
+      "bytes": 439,
+      "sha256": "fd487ec76168a50b7fa4ec3bfbe1a0994e5bddd0e8b18f8f71fbaf2a7efa1ca3"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\runtime-5396-134366570938610954.jsonl",
+      "bytes": 12193,
+      "sha256": "04849cc6a71c65aa7b69d628b0c6dd57aec2818248dd6f9151dcb764c774a261"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\snapshots.json",
+      "bytes": 1251,
+      "sha256": "895e6f03a81cf791543b36ea2e7c6ceb3d0d1e8689e7d1ed4292d415c5847bf7"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\status.json",
+      "bytes": 1172,
+      "sha256": "ef2063a5c7f619b336961a8cf9f53ff5bdad40360d9ce3778510f2574693f7cc"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\runtime_control_r1\\verification.json",
+      "bytes": 1087,
+      "sha256": "09b877c843818293d6ff387fd77cb63bd9201e1f38abd6ab158f3b8445dd692e"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\settings_provenance.json",
+      "bytes": 186,
+      "sha256": "22bdbfa2ce09ce8860dfd8b5b4df223468c40dbfc79000e7f031c3053d1ce468"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\skill_discovery.json",
+      "bytes": 1013,
+      "sha256": "c0391a608d50cd27bd0e7b6648e6d7ebbc6fc216e01da02cb61e707820a6056e"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\OptiScaler_README.md",
+      "bytes": 12380,
+      "sha256": "bbeb7eab65b3c3d0ac95a59371f26182ea65e11050d91f103ef6584422cc82e6"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\OptiScaler_revision.json",
+      "bytes": 157,
+      "sha256": "1381d077ed862bac6db1b4c9291943cc4dbff89c5356e2e6bd256eb37f538c14"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\examples\\05-shader_dump\\shader_dump_addon.cpp",
+      "bytes": 3654,
+      "sha256": "16fe5e3052e82c5b09d0086691fca667225b17aacff4e12469ffa8ffef9d7aaf"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\examples\\06-shader_replace\\shader_replace_addon.cpp",
+      "bytes": 4797,
+      "sha256": "c93cb622978374782efb89a3d7ba94b2bde0d5b1ce5db1dadf83e38c46e04b89"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade.hpp",
+      "bytes": 19416,
+      "sha256": "cf3cd150920ea310b4b1e2e4f11ab8d7221a9fc18755f4891a026563311b524c"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade_api.hpp",
+      "bytes": 58030,
+      "sha256": "8d83ec8a620c48da7a20d975bd27b3345b24d3f0d5b78ae4c4fe633d61b804eb"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade_api_device.hpp",
+      "bytes": 87997,
+      "sha256": "a716c44b6fbb064dbbb0826687728f21aa71ed45e13564e4dc1cdf36da5bdfa0"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade_api_format.hpp",
+      "bytes": 18134,
+      "sha256": "68caa17fef712043e810ab88770c15af009aa3c7693e5c115ddc324f2d0809a7"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade_api_pipeline.hpp",
+      "bytes": 49493,
+      "sha256": "5bda8e07260c2c60f0fd18a78b11782aed8f69e5d24b5757874614caafdf416f"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade_api_resource.hpp",
+      "bytes": 28761,
+      "sha256": "32cdafe6d783813f3ac72ad43e426638d8d0fef56bcb558fad218a14cfb75ee3"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade_events.hpp",
+      "bytes": 124513,
+      "sha256": "2717f56e2bd89af6d708c9c316353d6581c5a41d4526629fadba51d13be57a89"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\include\\reshade_overlay.hpp",
+      "bytes": 95106,
+      "sha256": "ed914b12fbc41ed038287b0163c0bc934772afcff2c22392044c6008adc5ae79"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\LICENSE.md",
+      "bytes": 1481,
+      "sha256": "237ded5b8344f820113efab1e65e91e1f159d9202c5b4856606a0590d3ffdab0"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\REFERENCE.md",
+      "bytes": 25684,
+      "sha256": "b7f764ad082e55baa69fc2441e0401ffa11fe9fb31091bd1b44d8edf8e74f798"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\addon_manager.cpp",
+      "bytes": 28870,
+      "sha256": "8153d0be1f8804f6ef5b88b76a6866fdc5c4fd730ece6af6a27447760a89feea"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\d3d12\\d3d12_command_list.cpp",
+      "bytes": 56118,
+      "sha256": "b8922823d804c14000e92695f644f04ec967bfbe003bbb2990bf606efe1b60ef"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\d3d12\\d3d12_impl_command_list.cpp",
+      "bytes": 51883,
+      "sha256": "1432203032430e9db5bf9207b9dab4e48cb9f13da415d8b830eb6f0a15dc0487"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\d3d12\\d3d12_pipeline_library.cpp",
+      "bytes": 6611,
+      "sha256": "c2c3b0b45dad8aefa3ade17fd3527ee4e548a558ac2cf658ee9ff7f4f6934145"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\dll_main.cpp",
+      "bytes": 18170,
+      "sha256": "5f269fe1e2f4365c5c9a50c4f153c5351108b5dc32e0edf445431ec21e8aecb9"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\runtime.cpp",
+      "bytes": 208137,
+      "sha256": "9352d84d2ef8582544d693acb2f0fd861cfe973b52d5da148b1027d30231fc2d"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\runtime_gui.cpp",
+      "bytes": 203748,
+      "sha256": "07eb37496e76eae7044f2d75bc2061f2e0d8c6aec63a445d5126d01d105b880f"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade_home.html",
+      "bytes": 68734,
+      "sha256": "8efe88dc63032056ef2aa348459e6192a1dfbca5d2f1dd63926e1386d61e7ef6"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade_pso_review_provenance.json",
+      "bytes": 1089,
+      "sha256": "bd363a0a68f1e6a763154b0f083905ccc43b709fa140302e8eabfcca96754213"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade_README.md",
+      "bytes": 3995,
+      "sha256": "7e9635153b5c74d18d6a10ae2968b2ec5180e127911b6e3ff1a32d8091bd5775"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade_revision.json",
+      "bytes": 151,
+      "sha256": "29e7d89a3ea2012729fb6341fb9bbd13f75688f613ff7c81e3ea97904a5f00c4"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade_sdk_provenance.json",
+      "bytes": 4587,
+      "sha256": "282fcfa7bb048d85c4a52dbf52ec8940ceb9a93a15816cb3747a381a15f38ba0"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\stage\\C2077ShaderLab\\C2077ShaderLab.addon64",
+      "bytes": 345088,
+      "sha256": "c8d32fbd94f09e4732f2bb77870f9e4290bca2ab9a7d59944124c09abe161176"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\stage\\C2077ShaderLab\\mode.txt",
+      "bytes": 8,
+      "sha256": "2e7f1f7a9dd3f82765d297d667234b91f8a68fa534bc7e6a6a04c77ffee12376"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\stage\\C2077ShaderLab\\preset.ini",
+      "bytes": 55,
+      "sha256": "9ee7d2f1d02e614504a94fa620faf4d22346266a057639c1baee5f698f234aad"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\stage\\dxgi.dll",
+      "bytes": 5592064,
+      "sha256": "0cee63f9c9f13f3ac909c5b4903f4dbb4b719a7ab3b4f13b0deaf83c814b94f7"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\stage\\ReShade.ini",
+      "bytes": 625,
+      "sha256": "f274c185d3c8ea3e124d72a1ed3d19be6ec5b69b028ebd39ca0f3229eea343b3"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\STATUS.md",
+      "bytes": 4333,
+      "sha256": "cb4772e6de99aba4ee2255a2361bf8237c29cba912f4258c2cd0c8682957168f"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\UserSettings.before.json",
+      "bytes": 91688,
+      "sha256": "e996a4183f5cdde530f4fb463e2356e11a8fc26fb81723a867782ab518806fce"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\verification.json",
+      "bytes": 1875,
+      "sha256": "c635ac4ab73f6de3a0a67d7798eb1ffc4ae2438700e1085ea5931a9973c67e44"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 24836,
+      "sha256": "fe525b70037a5121fdcda476dcf387c3f7df142acbbb878b3f292998bde62f8b"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 100172,
+      "sha256": "e87a12a15b0f58122bfdd387489e2582d37e4a658c04669c41bbd4eed6966064"
+    },
+    {
+      "path": "tools\\c2077_shader_addon.cpp",
+      "bytes": 11951,
+      "sha256": "2432dc12483171787d849c218ca76e089a8cea3de25a9541f33c534d6423e173"
+    },
+    {
+      "path": "tools\\c2077_shader_loader.py",
+      "bytes": 11778,
+      "sha256": "415e439122363b3574a7d035f4322248bdd053e7fb2e4cbdcd7cc06248da39ec"
+    }
+  ]
+}

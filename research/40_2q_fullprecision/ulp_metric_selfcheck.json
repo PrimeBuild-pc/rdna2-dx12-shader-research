@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "case": "+0 vs -0",
+      "expected": 0,
+      "got": 0
+    },
+    {
+      "case": "1.0 vs next(1.0)",
+      "expected": 1,
+      "got": 1
+    },
+    {
+      "case": "0 vs min denormal",
+      "expected": 1,
+      "got": 1
+    },
+    {
+      "case": "-1ulp vs +1ulp",
+      "expected": 2,
+      "got": 2
+    },
+    {
+      "case": "1.0 vs 1.0",
+      "expected": 0,
+      "got": 0
+    },
+    {
+      "case": "56.33 vs next",
+      "expected": 1,
+      "got": 1
+    }
+  ],
+  "all_passed": true,
+  "zero_baseline_channels": 19,
+  "zero_baseline_but_variant_nonzero": 0,
+  "note": "+0 and -0 are one ULP apart in value terms (they are equal), so the metric reports 0; the separate differing_channels count is on raw bit patterns and would still catch a sign-of-zero change."
+}

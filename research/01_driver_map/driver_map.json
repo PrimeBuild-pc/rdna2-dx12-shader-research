@@ -1,0 +1,918 @@
+{
+ "package": {
+  "root": "whql-amd-software-adrenalin-edition-26.9.1-win11-a",
+  "files": 724,
+  "pe_files": 219,
+  "signed": 322,
+  "infs": 41
+ },
+ "display_inf": {
+  "path": "Packages/Drivers/Display/WT6A_INF/u0203729.inf",
+  "driverver": [
+   "08/27/2026, 32.0.21045.9003"
+  ],
+  "catalog": [
+   "u0203729.cat"
+  ],
+  "registry_binary_keys": {
+   "DXCTuningsFileName": [
+    {
+     "section": "ati2mtag_ServiceSettings",
+     "subkey": "Parameters",
+     "data": "\"amdxc64z.dll"
+    }
+   ],
+   "ABCDTuningsFileName": [
+    {
+     "section": "ati2mtag_ServiceSettings",
+     "subkey": "Parameters",
+     "data": "\"amdxc64d.dat"
+    }
+   ],
+   "EventMessageFile": [
+    {
+     "section": "Ati2evxx_EventLog_AddReg",
+     "subkey": "",
+     "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+    },
+    {
+     "section": "R300_EventLog_AddReg",
+     "subkey": "",
+     "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+    }
+   ],
+   "CategoryMessageFile": [
+    {
+     "section": "Ati2evxx_EventLog_AddReg",
+     "subkey": "",
+     "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+    },
+    {
+     "section": "R300_EventLog_AddReg",
+     "subkey": "",
+     "data": "%%SystemRoot%%\\System32\\drivers\\ati2erec.dll"
+    }
+   ],
+   "OpenGLDriverName": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\atig6pxx.dll"
+    },
+    {
+     "section": "ati2mtag_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "atio6axx.dll"
+    }
+   ],
+   "UserModeDriverName": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\atidx9loader64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxc64.dll"
+    }
+   ],
+   "UserModeDriverNameWow": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\atidx9loader32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxc32.dll"
+    }
+   ],
+   "UserModeDListDriverName": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdhdl64.dll"
+    }
+   ],
+   "UserModeDListDriverNameWow": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdhdl32.dll"
+    }
+   ],
+   "OpenGLDriverNameWoW": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\atiglpxx.dll"
+    }
+   ],
+   "VulkanDriverName": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\amd-vulkan64.json"
+    }
+   ],
+   "VulkanImplicitLayers": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\amd-vulkan64.json"
+    }
+   ],
+   "VulkanDriverNameWow": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\amd-vulkan32.json"
+    }
+   ],
+   "VulkanImplicitLayersWow": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\amd-vulkan32.json"
+    }
+   ],
+   "OpenGLVendorName": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\atio6axx.dll,%13%\\B026432\\atio6axx.dll"
+    }
+   ],
+   "OpenGLVendorNameWoW": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\atioglxx.dll,%13%\\B026432\\atioglxx.dll"
+    }
+   ],
+   "AMDOpenGL": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "CopyToVmOverwrite",
+     "data": "\"B026432\\atio6axx.dll\",\"atio6axx.dll\""
+    },
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "CopyToVmOverwriteWow64",
+     "data": "\"B026432\\atioglxx.dll\",\"atioglxx.dll\""
+    }
+   ],
+   "UserModeDriverNameWsl": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc64.so"
+    }
+   ],
+   "AMDOpenCLLoader": [
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "CopyToVmOverwrite",
+     "data": "\"B026432\\amd_opencl64.dll\",\"opencl.dll\""
+    },
+    {
+     "section": "ati2mtag_DSUMD",
+     "subkey": "CopyToVmOverwriteWow64",
+     "data": "\"B026432\\amd_opencl32.dll\",\"opencl.dll\""
+    }
+   ],
+   "D3DVendorName": [
+    {
+     "section": "ati2mtag_DSUMD_GFX10_1",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxx64.dll"
+    },
+    {
+     "section": "ati2mtag_DSUMD_GFX10_3Plus",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxn64.dll,%13%\\B026432\\amdxx64.dll,%13%\\B026432\\amdxx64.dll"
+    }
+   ],
+   "D3DVendorNameWoW": [
+    {
+     "section": "ati2mtag_DSUMD_GFX10_1",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxx32.dll"
+    },
+    {
+     "section": "ati2mtag_DSUMD_GFX10_3Plus",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxn32.dll,%13%\\B026432\\amdxx32.dll,%13%\\B026432\\amdxx32.dll"
+    }
+   ],
+   "UserModeDriverCompiler": [
+    {
+     "section": "ati2mtag_Navi10_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc64.dll"
+    },
+    {
+     "section": "ati2mtag_Navi14_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc64.dll"
+    },
+    {
+     "section": "ati2mtag_Navi21_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc64.dll"
+    },
+    {
+     "section": "ati2mtag_Navi22_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc64.dll"
+    },
+    {
+     "section": "ati2mtag_Navi23_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc64.dll"
+    },
+    {
+     "section": "ati2mtag_Navi24_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc64.dll"
+    }
+   ],
+   "UserModeDriverCompilerWow": [
+    {
+     "section": "ati2mtag_Navi10_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc32.dll"
+    },
+    {
+     "section": "ati2mtag_Navi14_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc32.dll"
+    },
+    {
+     "section": "ati2mtag_Navi21_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc32.dll"
+    },
+    {
+     "section": "ati2mtag_Navi22_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc32.dll"
+    },
+    {
+     "section": "ati2mtag_Navi23_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc32.dll"
+    },
+    {
+     "section": "ati2mtag_Navi24_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdxc32.dll"
+    }
+   ],
+   "ContentProtectionDriverName": [
+    {
+     "section": "ati2mtag_Navi10_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    },
+    {
+     "section": "ati2mtag_Navi14_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    },
+    {
+     "section": "ati2mtag_Navi21_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    },
+    {
+     "section": "ati2mtag_Navi22_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    },
+    {
+     "section": "ati2mtag_Navi23_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    },
+    {
+     "section": "ati2mtag_Navi24_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    },
+    {
+     "section": "ati2mtag_NAVI_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    },
+    {
+     "section": "ati2mtag_NAVIA_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "amdmiracast.dll"
+    }
+   ],
+   "VulkanDriverNameNexus": [
+    {
+     "section": "ati2mtag_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "%13%\\B026432\\amdvlk_nexus.cab"
+    }
+   ],
+   "AMDAdvancedMediaFramework": [
+    {
+     "section": "ati2mtag_SoftwareDeviceSettings",
+     "subkey": "CopyToVmOverwrite",
+     "data": "\"B026432\\amfrt64.dll\",\"amfrt64.dll\""
+    },
+    {
+     "section": "ati2mtag_SoftwareDeviceSettings",
+     "subkey": "CopyToVmOverwriteWow64",
+     "data": "\"B026432\\amfrt32.dll\", \"amfrt32.dll\""
+    }
+   ],
+   "OpenGLDriverNameWow": [
+    {
+     "section": "ati2mtag_SoftwareDeviceSettings",
+     "subkey": "",
+     "data": "atioglxx.dll"
+    }
+   ]
+  }
+ },
+ "classified": {
+  "Packages/Drivers/AMDISP/AMDCAMERA/WT64A/amdcamera.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "234ab1d5fe82fd212c5a7227fe95e7695fc65ca11e7d92d325d25d26444300e7",
+   "size": 850312,
+   "evidence": [
+    "PE version-info: AMD Camera Driver | AMD Camera Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/AMDISP/AMDISP/WT64A/amdisp.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "e74985e2d14ac31d4ea1ef1c4cc89eefdd2ca7736e83a6367efa26a0fd69458f",
+   "size": 50032,
+   "evidence": [
+    "PE version-info: AMD ISP Bridge Driver | AMD ISP Bridge Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/AMDISP/GC1029/WT64A/sensorGC1029.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "9690c5fb9cb19ad4b9ff01f8064ec3663ce29afcfc3e09e2527bbc3e130dcd52",
+   "size": 52080,
+   "evidence": [
+    "PE version-info: Camera Sensor GC1029 Driver | Camera Sensor GC1029 Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/AMDISP/HM1092/WT64A/sensorHM1092.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "746a69d1314825b49c609a074eb915d12c419019379960fa9bdb4d173c5508b9",
+   "size": 66416,
+   "evidence": [
+    "PE version-info: Camera Sensor HM1092 Driver | Camera Sensor HM1092 Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/AMDISP/OV05C/WT64A/sensorOV05C.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "def06bc8561676f861cf5e7a273e8eee8b69ac191cec3808ba9190e08a04afba",
+   "size": 57728,
+   "evidence": [
+    "PE version-info: Camera Sensor OV05C Driver | Camera Sensor OV05C Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/AMDISP/OV08X/WT64A/sensorOV08X.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "dae4c2ba151ddc9ce09ce22cbb747d2ea155f880831c95da8279899cb25b0ae4",
+   "size": 122776,
+   "evidence": [
+    "PE version-info: Camera Sensor OV08X Driver | Camera Sensor OV08X Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/AMDISP/OV13B/WT64A/sensorOV13B.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "6322a322c67edab12f894cbf2459a033ce6bfe137d08f727b82a812b04303f21",
+   "size": 58248,
+   "evidence": [
+    "PE version-info: Camera Sensor OV13B Driver | Camera Sensor OV13B Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/AMDNPUMCDM/WT64A/ipustack.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "accdf7ca749059d16ea85adf5ae59f554c1d3bd57d1dd1367e18efbe7da091ad",
+   "size": 433432,
+   "evidence": [
+    "PE version-info: AMD IPU Driver | AMD IPU Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Microsoft Windows Hardware Compatibility Publisher"
+   ]
+  },
+  "Packages/Drivers/AMDNPUWDF/WT64A/kipudrv.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "17cf66628e8a148755e3dcb432cb25faa5185277dfedf101af0b8b41c7cf7011",
+   "size": 1022536,
+   "evidence": [
+    "PE version-info: AMD IPU Driver | AMD IPU Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Microsoft Windows Hardware Compatibility Publisher"
+   ]
+  },
+  "Packages/Drivers/Audio/acpafd/wt64a/amdacpafd.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "confirmed",
+   "tags": "kernel_mode",
+   "sha256": "9a5722947ef73c6272cbf5502b853e69d5a41c0f54ccff92426398297313ac9c",
+   "size": 399256,
+   "evidence": [
+    "INF amdacpafd.inf: Driver -> Driver",
+    "PE version-info: AMD AFD Audio Function Driver | AMD AFD Audio Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/acpbtacx/wt64a/amdacpbtacx.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "6c9c599aae60720422cbef8491858fac55958124020c9acc2ac26367f6ee695a",
+   "size": 636288,
+   "evidence": [
+    "PE version-info: AMD Bluetooth Audio Driver | AMD Bluetooth Audio Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/ACPBtAfd/WT64A/amdacpbt.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "confirmed",
+   "tags": "kernel_mode",
+   "sha256": "44fff40a381ebeb530f2f53f630f9d93729cf21716314c08ab22294687deb313",
+   "size": 445296,
+   "evidence": [
+    "INF amdacpbt.inf: Driver -> Driver",
+    "PE version-info: AMD BT Audio Function Driver | AMD BT Audio Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/acpbus/wt64a/amdacpbus.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "374185484c0a0a54da9a51adc323b639cbf910a1c145ca5a310773476dd2e186",
+   "size": 6365592,
+   "evidence": [
+    "PE version-info: AMD Audio CoProcessor | AMD Audio CoProcessor",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/ACPBus2/WT64A/amdacpbus2.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "b28459051d715d563904a0ba4de987dce3be76c37f394f663844c415684078b7",
+   "size": 529280,
+   "evidence": [
+    "PE version-info: AMD Audio CoProcessor | AMD Audio CoProcessor",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/acpusbafd/wt64a/amdacpusb.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "confirmed",
+   "tags": "kernel_mode",
+   "sha256": "4c3926a75d3cd90c92b2a71f8d2c7dcd9020a429a62395151f91704f04841645",
+   "size": 591256,
+   "evidence": [
+    "INF amdacpusb.inf: Driver -> Driver",
+    "PE version-info: AMD USB Audio Function Driver | AMD USB Audio Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/HDABus/WT64A/amdhdaudbus.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "d3fcd936c7556eccb37d433f5bac030c73b14730814276fba03ba2db70e07035",
+   "size": 76704,
+   "evidence": [
+    "PE version-info: AMD High Definition Audio Bus Driver | AMD High Definition Audio Bus Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Microsoft Windows Hardware Compatibility Publisher"
+   ]
+  },
+  "Packages/Drivers/Audio/hdmi/wt64a/AtihdWT6.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "confirmed",
+   "tags": "kernel_mode",
+   "sha256": "1c2cc65d95969206710a0b671ef50c74ff5cea89873778362ecc76975490b2ed",
+   "size": 259992,
+   "evidence": [
+    "INF AtihdWT6.inf: Driver -> Driver",
+    "PE version-info: AMD High Definition Audio Function Driver | AMD HD Audio Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/safd/wt64a/amdsafd.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "confirmed",
+   "tags": "kernel_mode",
+   "sha256": "6edd94a6773eb5cfb8958008580119c66a6f18647bb1442c7dac03558b410694",
+   "size": 117104,
+   "evidence": [
+    "INF amdsafd.inf: Driver -> Driver",
+    "PE version-info: AMD Streaming Audio Function Driver | AMD Streaming Audio Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/sdwc/wt64a/amdsdwc.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "75faf77fcc2ea9d47d79a8363d89a88928bb3a44003bc4b187ed8a0e6a62078b",
+   "size": 606064,
+   "evidence": [
+    "PE version-info: AMD Soundwire Audio Controller Driver | AMD Soundwire Audio Controller Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Audio/SDWS/WT64A/amdsdws.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "2e067ba19d22c4423b5359248aa977eaa63f4484b24a1693043d455942934bb4",
+   "size": 710512,
+   "evidence": [
+    "PE version-info: AMD Soundwire Audio Streaming Driver | AMD Soundwire Audio Streaming Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdfendr/amdfendr.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "2f502a09ecc269765bf630adc80e6948fcc0164aac94bef391566b41d22ffaff",
+   "size": 377240,
+   "evidence": [
+    "PE version-info: AMD Crash Defender | AMD Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdfendr/amdfendrmgr.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "6e0b22ef6a7c2fee40ff980699eef6cf94320bd14cadf6e01a557369cd46600f",
+   "size": 37272,
+   "evidence": [
+    "PE version-info: AMD Crash Defender Manager Driver | AMD Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/amdxe/amdxe.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "96777e433f0015b3332a01b94cabb80a3da5e4872094801d200f058b4ee44a3d",
+   "size": 63872,
+   "evidence": [
+    "PE version-info: AMD Controller Emulation | AMD Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amd-vulkan32.json": {
+   "component": "vulkan_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "vulkan_icd",
+   "sha256": "30241a2bded36010d0f1ed8f46a6cd2cd5f11f20c9be2a0c4f8121c43b541c5c",
+   "size": 703,
+   "evidence": [
+    "INF u0203729.inf: VulkanDriverNameWow -> Vulkan ICD manifest",
+    "INF u0203729.inf: VulkanImplicitLayersWow -> VulkanImplicitLayersWow",
+    "Authenticode: Signed by Microsoft Windows Hardware Compatibility Publisher"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amd-vulkan64.json": {
+   "component": "vulkan_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "vulkan_icd",
+   "sha256": "679c7810205b86a301931addca47ccf77c687f11897120a78a561e72bc2bf15e",
+   "size": 703,
+   "evidence": [
+    "INF u0203729.inf: VulkanDriverName -> Vulkan ICD manifest",
+    "INF u0203729.inf: VulkanImplicitLayers -> VulkanImplicitLayers",
+    "Authenticode: Signed by Microsoft Windows Hardware Compatibility Publisher"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdkmdag.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "1b6d668b63494bfabdda69d6ec9163824dd9e40cb0e03e0e360f300eb11d39ec",
+   "size": 102772744,
+   "evidence": [
+    "PE version-info: ATI Radeon Kernel Mode Driver | ATI Radeon Family",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdn1b32.dll": {
+   "component": "dx10_11_user_mode_driver",
+   "confidence": "strong",
+   "tags": "d3d10_11_umd|shader_compiler_api",
+   "sha256": "b6b840c921f7fce34f6fc49da6a4015f2dd591a22d6cd9b81dd1572eff21ebca",
+   "size": 17082472,
+   "evidence": [
+    "PE: esporta OpenAdapter10/OpenAdapter10_2",
+    "PE: esporta AmdDxGsaCompileShader (GSA: compilazione shader)",
+    "PE version-info: amdn1b32.dll | Advanced Micro Devices, Inc. Radeon DirectX 11 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdn1b64.dll": {
+   "component": "dx10_11_user_mode_driver",
+   "confidence": "strong",
+   "tags": "d3d10_11_umd|shader_compiler_api",
+   "sha256": "02ab657956f5f3cb31560c67b49231cba02b53def0fbdf56174b2796ecb4439f",
+   "size": 20250368,
+   "evidence": [
+    "PE: esporta OpenAdapter10/OpenAdapter10_2",
+    "PE: esporta AmdDxGsaCompileShader (GSA: compilazione shader)",
+    "PE version-info: amdn1b64.dll | Advanced Micro Devices, Inc. Radeon DirectX 11 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdvlk_nexus.cab": {
+   "component": "vulkan_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "vulkan_icd",
+   "sha256": "7b1ceb798493216ba9232c7857c1c56a810058f110187ae164990b65e86a6597",
+   "size": 71502522,
+   "evidence": [
+    "INF u0203729.inf: VulkanDriverNameNexus -> Vulkan ICD manifest",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxc32.dll": {
+   "component": "dx12_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "d3d12_umd",
+   "sha256": "2616264c0421ff5c06732faa228536f739629b625ab6b62cc022489b4eab579b",
+   "size": 73950368,
+   "evidence": [
+    "INF u0203729.inf: UserModeDriverNameWow -> UMD d3d12",
+    "INF u0203729.inf: UserModeDriverCompilerWow -> UserModeDriverCompilerWow",
+    "INF u0203729.inf: UserModeDriverCompilerWow -> UserModeDriverCompilerWow",
+    "INF u0203729.inf: UserModeDriverCompilerWow -> UserModeDriverCompilerWow",
+    "INF u0203729.inf: UserModeDriverCompilerWow -> UserModeDriverCompilerWow",
+    "INF u0203729.inf: UserModeDriverCompilerWow -> UserModeDriverCompilerWow",
+    "INF u0203729.inf: UserModeDriverCompilerWow -> UserModeDriverCompilerWow",
+    "PE version-info: AMD DX12 UMD | Advanced Micro Devices, Inc. Radeon DirectX 12 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxc64.dll": {
+   "component": "dx12_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "d3d12_umd",
+   "sha256": "6c42f438658e61cd5953732147959b0104a13c5131e237d3999aa61595dea9b9",
+   "size": 82422960,
+   "evidence": [
+    "INF u0203729.inf: UserModeDriverName -> UMD d3d12",
+    "INF u0203729.inf: UserModeDriverCompiler -> UserModeDriverCompiler",
+    "INF u0203729.inf: UserModeDriverCompiler -> UserModeDriverCompiler",
+    "INF u0203729.inf: UserModeDriverCompiler -> UserModeDriverCompiler",
+    "INF u0203729.inf: UserModeDriverCompiler -> UserModeDriverCompiler",
+    "INF u0203729.inf: UserModeDriverCompiler -> UserModeDriverCompiler",
+    "INF u0203729.inf: UserModeDriverCompiler -> UserModeDriverCompiler",
+    "PE version-info: AMD DX12 UMD | Advanced Micro Devices, Inc. Radeon DirectX 12 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxc64.so": {
+   "component": "dx12_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "d3d12_umd",
+   "sha256": "997fe40a873b2c66969fdf879c22d1526a0c9a722abf458d000ecbb1b2203bd0",
+   "size": 125655976,
+   "evidence": [
+    "INF u0203729.inf: UserModeDriverNameWsl -> UMD d3d12 (WSL)"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxcffx64.dll": {
+   "component": "dx12_fidelityfx",
+   "confidence": "strong",
+   "tags": "ffx_provider",
+   "sha256": "7ffc9d3060688f99706c6ef1358c943367c56bde86736470f860a83be30ff8a0",
+   "size": 14509352,
+   "evidence": [
+    "PE: esporta UpdateFfxApiProvider (provider FidelityFX API)",
+    "PE version-info: DX12 AMD Driver Based FidelityFX Library | AMD Driver Based FidelityFX",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxcstub32.dll": {
+   "component": "d3d_extension_stub",
+   "confidence": "strong",
+   "tags": "amd_d3d_ext",
+   "sha256": "235e3e18000db55c0d1a74a7fb759bb5f90c35e57549b8f20d17932f7cda7b88",
+   "size": 118752,
+   "evidence": [
+    "PE: esporta AmdExtD3DCreateInterface (estensioni AMD per D3D)",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxcstub64.dll": {
+   "component": "d3d_extension_stub",
+   "confidence": "strong",
+   "tags": "amd_d3d_ext",
+   "sha256": "8960b192f673d2431f183f247063571b39f77e94da0530e6ed9ff63b3da457f6",
+   "size": 142728,
+   "evidence": [
+    "PE: esporta AmdExtD3DCreateInterface (estensioni AMD per D3D)",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxx32.dll": {
+   "component": "dx10_11_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "d3d10_11_umd",
+   "sha256": "da63af6903bb58571a241c1588bc3f6a2756bdaefdcf01b0611bb6e0797a5ef8",
+   "size": 44805080,
+   "evidence": [
+    "INF u0203729.inf: UserModeDriverNameWow -> UMD d3d10",
+    "INF u0203729.inf: UserModeDriverNameWow -> UMD d3d11",
+    "INF u0203729.inf: D3DVendorNameWoW -> D3DVendorNameWoW",
+    "INF u0203729.inf: D3DVendorNameWoW -> D3DVendorNameWoW",
+    "INF u0203729.inf: D3DVendorNameWoW -> D3DVendorNameWoW",
+    "INF u0203729.inf: D3DVendorNameWoW -> D3DVendorNameWoW",
+    "PE version-info: AMD DX10/DX11 UMD | Advanced Micro Devices, Inc. Radeon DirectX 10/11 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/amdxx64.dll": {
+   "component": "dx10_11_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "d3d10_11_umd",
+   "sha256": "78980bcb9534d49ab04c9d1c2dd0e111ca561808750a72a30fbc95a4f19ed10f",
+   "size": 50423688,
+   "evidence": [
+    "INF u0203729.inf: UserModeDriverName -> UMD d3d10",
+    "INF u0203729.inf: UserModeDriverName -> UMD d3d11",
+    "INF u0203729.inf: D3DVendorName -> D3DVendorName idx2",
+    "INF u0203729.inf: D3DVendorName -> D3DVendorName idx3",
+    "INF u0203729.inf: D3DVendorName -> D3DVendorName idx2",
+    "INF u0203729.inf: D3DVendorName -> D3DVendorName idx3",
+    "PE version-info: AMD DX10/DX11 UMD | Advanced Micro Devices, Inc. Radeon DirectX 10/11 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atidx9loader32.dll": {
+   "component": "dx9_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "d3d9_umd",
+   "sha256": "1611561fa1aefdd2fc1cf1584f6734647269aa7fcedffa0bfe7f8bdc61de2274",
+   "size": 118288,
+   "evidence": [
+    "INF u0203729.inf: UserModeDriverNameWow -> UMD d3d9",
+    "PE version-info: AMD DX9 LOADER | Advanced Micro Devices, Inc. Radeon DirectX 9 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atidx9loader64.dll": {
+   "component": "dx9_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "d3d9_umd",
+   "sha256": "324725982117809de7c4659442404cce12dbf6931b9462e874de354987527895",
+   "size": 141832,
+   "evidence": [
+    "INF u0203729.inf: UserModeDriverName -> UMD d3d9",
+    "PE version-info: AMD DX9 LOADER | Advanced Micro Devices, Inc. Radeon DirectX 9 Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atidxxstub32.dll": {
+   "component": "shader_compiler_helper",
+   "confidence": "strong",
+   "tags": "shader_compiler_api",
+   "sha256": "0e4f01c0a42340b9a6374338327156de8ea362595fbca348135441c67e5efe22",
+   "size": 102520,
+   "evidence": [
+    "PE: esporta AmdDxGsaCompileShader (GSA: compilazione shader)",
+    "PE version-info: AMD DX11 STUB | Advanced Micro Devices, Inc. Radeon DirectX 10/11 Driver",
+    "Authenticode: Signed by Microsoft Windows Hardware Compatibility Publisher"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atidxxstub64.dll": {
+   "component": "shader_compiler_helper",
+   "confidence": "strong",
+   "tags": "shader_compiler_api",
+   "sha256": "8f18c9da9996713f1ee08fd1c1318544e39b63e3402f60f155351ac9dedbfd6e",
+   "size": 129432,
+   "evidence": [
+    "PE: esporta AmdDxGsaCompileShader (GSA: compilazione shader)",
+    "PE version-info: AMD DX11 STUB | Advanced Micro Devices, Inc. Radeon DirectX 10/11 Driver",
+    "Authenticode: Signed by Microsoft Windows Hardware Compatibility Publisher"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atig6pxx.dll": {
+   "component": "opengl_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "opengl_icd",
+   "sha256": "099e358951a5a31b8e920706eacbb268bf3f620204542d80f4d06a7f1fbcfc96",
+   "size": 201232,
+   "evidence": [
+    "INF u0203729.inf: OpenGLDriverName -> OpenGL ICD",
+    "PE: esporta DrvPresentBuffers/DrvSwapBuffers (ICD OpenGL)",
+    "PE version-info: atiglpxx.dll | Advanced Micro Devices, Inc PowerXpress Vista OpenGL Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atiglpxx.dll": {
+   "component": "opengl_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "opengl_icd",
+   "sha256": "07bc50db3202377cacf764ac6dd7f29294008b65968cdb9194894d4f40fe849f",
+   "size": 166928,
+   "evidence": [
+    "INF u0203729.inf: OpenGLDriverNameWoW -> OpenGL ICD",
+    "PE: esporta DrvPresentBuffers/DrvSwapBuffers (ICD OpenGL)",
+    "PE version-info: atiglpxx.dll | Advanced Micro Devices, Inc PowerXpress Vista OpenGL Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atio6axx.dll": {
+   "component": "opengl_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "opengl_icd",
+   "sha256": "dd86e51129cf56c0b27c477c6068e5c763962a57039d1646ed1c16d38c655e60",
+   "size": 64289808,
+   "evidence": [
+    "INF u0203729.inf: OpenGLDriverName -> OpenGL ICD",
+    "INF u0203729.inf: OpenGLVendorName -> OpenGLVendorName",
+    "INF u0203729.inf: OpenGLVendorName -> OpenGLVendorName",
+    "PE version-info: AMD OpenGL Driver | AMD OpenGL Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/Display/WT6A_INF/B026432/atioglxx.dll": {
+   "component": "opengl_user_mode_driver",
+   "confidence": "confirmed",
+   "tags": "opengl_icd",
+   "sha256": "93f2736d296d9e62b9cdc0326d9f0dde869e8c6c6137515f25fe64481eaca00d",
+   "size": 54843920,
+   "evidence": [
+    "INF u0203729.inf: OpenGLVendorNameWoW -> OpenGLVendorNameWoW",
+    "INF u0203729.inf: OpenGLVendorNameWoW -> OpenGLVendorNameWoW",
+    "INF u0203729.inf: OpenGLDriverNameWow -> OpenGL ICD",
+    "PE version-info: AMD OpenGL Driver | AMD OpenGL Driver",
+    "Authenticode: Signed by Advanced Micro Devices"
+   ]
+  },
+  "Packages/Drivers/SBDrv/AMDUCSI/WT64A/amducsi.sys": {
+   "component": "kernel_mode_driver",
+   "confidence": "strong",
+   "tags": "kernel_mode",
+   "sha256": "b518e8d68946125014d37ad875d31ed2290313c0603ab1baeddee61bd54bd070",
+   "size": 91440,
+   "evidence": [
+    "PE version-info: AMD UCM-UCSI Controller Driver | AMD UCM-UCSI Controller Driver",
+    "estensione .sys + SERVICE_ nel INF",
+    "Authenticode: Signed by Advanced Micro Devices Inc."
+   ]
+  }
+ }
+}

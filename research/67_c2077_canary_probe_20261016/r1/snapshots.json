@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-16T22:30:52.117502+00:00",
+  "pid": 11348,
+  "files": [
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\probe-11348-134366633064138541.jsonl",
+      "snapshot": "research\\67_c2077_canary_probe_20261016\\r1\\probe-11348-134366633064138541.jsonl",
+      "bytes": 779,
+      "sha256": "32498216e2352e457b5571e83ece066b1e57d40c7623b4af6c3dc986e2b8f70a",
+      "live": true
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\probe-11348-134366633066223538.jsonl",
+      "snapshot": "research\\67_c2077_canary_probe_20261016\\r1\\probe-11348-134366633066223538.jsonl",
+      "bytes": 16710,
+      "sha256": "0e540feff393811c6ef6749827a23d1558d263776e0a1d11bd37635179a70b34",
+      "live": true
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-11348-134366633063428551.jsonl",
+      "snapshot": "research\\67_c2077_canary_probe_20261016\\r1\\runtime-11348-134366633063428551.jsonl",
+      "bytes": 439,
+      "sha256": "5abe94878da8ad34b632af76267ff6e5fcb60cdf006a2ebafac8078dd9ee468b",
+      "live": true
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-11348-134366633065553540.jsonl",
+      "snapshot": "research\\67_c2077_canary_probe_20261016\\r1\\runtime-11348-134366633065553540.jsonl",
+      "bytes": 7516,
+      "sha256": "6eca7a05bdb1f9019a83767db72bceeaece69ca2503b3ad7e8b91458740bbc8b",
+      "live": true
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\ReShade.log",
+      "snapshot": "research\\67_c2077_canary_probe_20261016\\r1\\ReShade.log",
+      "bytes": 33175,
+      "sha256": "797766565e2011606e7bd2af2037f02b869c7c9ef660e00b1d1f08a641b2b927",
+      "live": true
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+lines=824,474,809 samples=1,188,781 duration=74.78s processes=1 images=8756
+  FortniteClient-Win64-Shipping.exe          1,188,781 samples

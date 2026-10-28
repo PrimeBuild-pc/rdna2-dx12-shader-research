@@ -1,0 +1,61 @@
+{
+  "method": "RGA reports the used VGPR count and numPhysicalVgprs=1024 for every variant. On gfx1030 the allocation granularity is 8 and a wave64 register consumes two of the 1024 wave32-sized slots, so waves per SIMD = 1024 // (2 * ceil(used/8)*8). Wave64 is not assumed: cycle O2 measured SQ_PS WAVES_32 = 0.",
+  "variants": {
+    "base": {
+      "vgpr": 61,
+      "sgpr": 54,
+      "waves_per_simd": 8,
+      "delta_gpubusycycles_pct": null
+    },
+    "fresnel5": {
+      "vgpr": 56,
+      "sgpr": 54,
+      "waves_per_simd": 9,
+      "delta_gpubusycycles_pct": -3.17
+    },
+    "shadowskip": {
+      "vgpr": 54,
+      "sgpr": 54,
+      "waves_per_simd": 9,
+      "delta_gpubusycycles_pct": -5.48
+    },
+    "stack3": {
+      "vgpr": 55,
+      "sgpr": 54,
+      "waves_per_simd": 9,
+      "delta_gpubusycycles_pct": -37.49
+    },
+    "stack3_pad": {
+      "vgpr": 56,
+      "sgpr": 54,
+      "waves_per_simd": 9,
+      "delta_gpubusycycles_pct": -37.55
+    },
+    "stack3_scalar": {
+      "vgpr": 54,
+      "sgpr": 62,
+      "waves_per_simd": 9,
+      "delta_gpubusycycles_pct": -41.6
+    },
+    "scalar": {
+      "vgpr": 48,
+      "sgpr": 62,
+      "waves_per_simd": 10,
+      "delta_gpubusycycles_pct": -3.84
+    },
+    "stack4": {
+      "vgpr": 47,
+      "sgpr": 46,
+      "waves_per_simd": 10,
+      "delta_gpubusycycles_pct": -39.42
+    },
+    "base_pad": {
+      "vgpr": 61,
+      "sgpr": 54,
+      "waves_per_simd": 8,
+      "delta_gpubusycycles_pct": 0.01
+    }
+  },
+  "argument": "Five variants sit at exactly 9 waves per SIMD and span -3.17 % to -41.60 %. The decisive counterexample is `scalar`, which reaches 10 waves per SIMD - MORE occupancy than stack3 - and delivers only -3.84 %, while stack3 at 9 waves delivers -37.49 %. Occupancy therefore cannot be what orders these results.",
+  "limits": "This is THEORETICAL occupancy derived from register allocation. Achieved occupancy was not measured: the only counter that would have shown it, SQ_PS LEVEL_WAVES, returns an impossible constant on this ASIC (cycle P5). LDS is zero for every variant, so it is not a second limiter here. What this argument establishes is that occupancy does not EXPLAIN the ordering; it does not establish that occupancy contributes nothing to the first few points."
+}

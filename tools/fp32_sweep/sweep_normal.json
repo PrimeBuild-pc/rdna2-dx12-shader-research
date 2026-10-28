@@ -1,0 +1,18 @@
+{
+  "gpu": "AMD Radeon RX 6950 XT",
+  "shader_bytes": 3956,
+  "first_pattern": "0x33000000",
+  "last_pattern": "0x3F800000",
+  "values_swept": 209715201,
+  "first_value": 2.98023224e-08,
+  "last_value": 1,
+  "differing": 202327965,
+  "max_ulp": 156,
+  "max_rel_error": 9.43395753e-06,
+  "max_abs_error": 1.1920929e-07,
+  "nan": 0,
+  "posinf": 0,
+  "neginf": 0,
+  "negative_zero": 0,
+  "zero_mismatch": 0
+}

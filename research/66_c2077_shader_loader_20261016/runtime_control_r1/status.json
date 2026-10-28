@@ -1,0 +1,44 @@
+{
+  "state": "installed",
+  "mode": "control",
+  "processes": [
+    {
+      "Id": 5396,
+      "Path": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\Cyberpunk2077.exe"
+    }
+  ],
+  "runtime": [
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-5396-134366570937045601.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 5396,
+        "event": "unloaded",
+        "mode": "control",
+        "dx12_pipeline_inits": 0,
+        "matched_original": 0,
+        "cloned_pipelines": 0,
+        "clone_failures": 0,
+        "bound_calls": 0,
+        "presents": 0
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-5396-134366570938610954.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 5396,
+        "event": "heartbeat",
+        "mode": "control",
+        "dx12_pipeline_inits": 5316,
+        "matched_original": 5,
+        "cloned_pipelines": 5,
+        "clone_failures": 0,
+        "bound_calls": 406,
+        "presents": 60230
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+"Name","Id","CPU","WorkingSet64","Path"
+"vmmem","7640","28074.28125","0",
+"System","4","5563.890625","12828672",
+"FortniteClient-Win64-Shipping","2980","2999.1875","3025285120",
+"dwm","2000","2451.65625","842698752","C:\WINDOWS\system32\dwm.exe"
+"MsMpEng","4424","750.234375","439418880",
+"EVO","12060","329.4375","21491712","C:\Program Files\Audient\EVO\EVO.exe"
+"PresentMonService","2416","316.609375","17190912","C:\Program Files\Intel\PresentMonSharedService\PresentMonService.exe"
+"pcssagent","4296","277.21875","167251968","C:\Program Files\APC\PowerChute Serial Shutdown\agent\pcssagent.exe"
+"explorer","7620","235.046875","339263488","C:\WINDOWS\Explorer.EXE"
+"SearchIndexer","14748","159.78125","50884608","C:\WINDOWS\system32\SearchIndexer.exe"
+"atieclxx","6356","145.125","20463616","C:\WINDOWS\System32\DriverStore\FileRepository\u0203303.inf_amd64_e5876a26758f154c\B026363\atieclxx.exe"
+"svchost","2476","121.171875","24231936","C:\WINDOWS\system32\svchost.exe"
+"svchost","6644","59.875","29949952","C:\WINDOWS\system32\svchost.exe"
+"svchost","2484","55.078125","14356480","C:\WINDOWS\system32\svchost.exe"
+"svchost","1852","34.828125","18776064","C:\WINDOWS\system32\svchost.exe"
+"svchost","3628","28.1875","19968000","C:\WINDOWS\System32\svchost.exe"
+"EpicGamesLauncher","16864","25.765625","330752000","C:\Program Files\Epic Games\Launcher\Portal\Binaries\Win64\EpicGamesLauncher.exe"
+"csrss","1408","24.8125","274219008",
+"audiodg","11128","21.640625","17313792","C:\WINDOWS\system32\AUDIODG.EXE"
+"SearchHost","8860","17.03125","296751104","C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe"
+"svchost","3204","16.25","18210816","C:\WINDOWS\system32\svchost.exe"
+"lsass","1596","14.484375","31498240",
+"EOSOverlayRenderer-Win64-Shipping","3688","13.5625","118829056","C:\Program Files (x86)\Epic Games\Epic Online Services\managedArtifacts\98bc04bc842e4906993fd6d6644ffb8d\EOSOverlayRenderer-Win64-Shipping.exe"
+"ctfmon","6072","13.078125","34586624","C:\WINDOWS\system32\ctfmon.exe"
+"services","1520","12.203125","19173376",
+"conhost","16932","11.796875","28315648","C:\WINDOWS\system32\conhost.exe"
+"svchost","3912","11.546875","25407488","C:\WINDOWS\system32\svchost.exe"
+"svchost","10704","10.984375","43294720","C:\WINDOWS\System32\svchost.exe"
+"Notepad","2556","10.625","143323136","C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2606.15.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe"
+"gamingservices","7004","10.03125","43253760","C:\Program Files\WindowsApps\Microsoft.GamingServices_38.116.6003.0_x64__8wekyb3d8bbwe\GamingServices.exe"
+"StartMenuExperienceHost","8976","8.78125","129318912","C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe"
+"svchost","1732","8.71875","33792000","C:\WINDOWS\system32\svchost.exe"
+"vmwp","11136","6.15625","20963328","C:\WINDOWS\System32\vmwp.exe"
+"svchost","3504","5.78125","16498688","C:\WINDOWS\system32\svchost.exe"
+"svchost","2948","5.59375","21729280","C:\WINDOWS\System32\svchost.exe"
+"AudientAppLauncher","11964","5.578125","17313792","C:\Program Files\Audient\USBAudioDriver\x64\AudientAppLauncher.exe"
+"svchost","2732","4.671875","10801152","C:\WINDOWS\system32\svchost.exe"
+"RuntimeBroker","9268","4.390625","74256384","C:\Windows\System32\RuntimeBroker.exe"
+"svchost","2196","3.9375","21225472","C:\WINDOWS\System32\svchost.exe"
+"powershell","8004","3.578125","104673280","C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"

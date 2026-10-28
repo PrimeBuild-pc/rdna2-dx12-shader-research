@@ -1,0 +1,30 @@
+{
+  "variant": "ablate_present",
+  "rep": 1,
+  "pid": 7024,
+  "summary": {
+    "pid": 7024,
+    "warmup": 200,
+    "frames": 500,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 76560.0,
+    "region0_min_ns": 74680.0,
+    "region0_max_ns": 85120.0,
+    "region0_p95_ns": 80920.0,
+    "region1_median_ns": 52480.0,
+    "region1_min_ns": 51280.0,
+    "region1_max_ns": 55160.0,
+    "region1_p95_ns": 53880.0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "4a6caadf533fb682c550ba2766f335afe9c2272aed3aa51947ee30bec4c1e4c3",
+  "shaders": {
+    "gradientPS.cso": "8a838bd0e3c1f8b02c0a0384d9cf5471adfef4aa0ad36b9d6caf7e0f982bdd95",
+    "gradientVS.cso": "f89c069dcbbd1dd61d3858d51b3a264d55fb76d50e812ed2aefe23ac4e2ebd46",
+    "palettePS.cso": "a29450635ff6959ec14b1d939aad01d537f53b7cc5f1068f2e732a2858cd6763",
+    "paletteVS.cso": "ced58c66d4a2552cc8856ae77135c718f255c90efcf4af67449d7896efcda30a",
+    "presentPS.cso": "839e15783546998980db117d66b3808e4683897b458652456904fe50522bfae6",
+    "presentVS.cso": "ced58c66d4a2552cc8856ae77135c718f255c90efcf4af67449d7896efcda30a"
+  }
+}

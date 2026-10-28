@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\xperf.exe",
+    "-i",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\c2077_fs1440_attribution-run1-20260908-222856-633.etl",
+    "-o",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016\\schema_probe.txt",
+    "-a",
+    "dumper",
+    "-range",
+    "0",
+    "200000",
+    "-stacktimeshifting"
+  ],
+  "pid": 12388,
+  "started": 1792150927.0140557
+}

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-16T21:38:36.674538+00:00",
+  "result": "VISUAL_CANARY_NOT_OBSERVED",
+  "operator_report": "no, nessuna superficie rosa rispetto a prima. immagine invariata",
+  "visual_gate_passed": false,
+  "root_cause": "not established",
+  "files": [
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593936547692.jsonl",
+      "snapshot": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\canary_r1\\negative_snapshot\\runtime-14612-134366593936547692.jsonl",
+      "bytes": 439,
+      "sha256": "0ea13d774042d987933cae57a74fa31dc94711224f61d1e72267edeea0231702",
+      "live": true
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593937887710.jsonl",
+      "snapshot": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\canary_r1\\negative_snapshot\\runtime-14612-134366593937887710.jsonl",
+      "bytes": 42815,
+      "sha256": "30ef67a781322d64b8727c75e9b5977342459bb0cac8743a789ac4faf292eed2",
+      "live": true
+    },
+    {
+      "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\ReShade.log",
+      "snapshot": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\canary_r1\\negative_snapshot\\ReShade.log",
+      "bytes": 35945,
+      "sha256": "2ae99c3ecd8094811b4ba83164772076f2ab5922c07890e92819c4410a613cc6",
+      "live": true
+    }
+  ]
+}

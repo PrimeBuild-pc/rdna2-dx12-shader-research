@@ -1,0 +1,76 @@
+{
+  "state": "installed",
+  "mode": "canary",
+  "processes": [
+    {
+      "Id": 14612,
+      "Path": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\Cyberpunk2077.exe"
+    }
+  ],
+  "runtime": [
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593936547692.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 14612,
+        "event": "unloaded",
+        "mode": "canary",
+        "dx12_pipeline_inits": 0,
+        "matched_original": 0,
+        "cloned_pipelines": 0,
+        "clone_failures": 0,
+        "bound_calls": 0,
+        "presents": 0
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593937887710.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 14612,
+        "event": "heartbeat",
+        "mode": "canary",
+        "dx12_pipeline_inits": 5239,
+        "matched_original": 5,
+        "cloned_pipelines": 5,
+        "clone_failures": 0,
+        "bound_calls": 544,
+        "presents": 32000
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-5396-134366570937045601.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 5396,
+        "event": "unloaded",
+        "mode": "control",
+        "dx12_pipeline_inits": 0,
+        "matched_original": 0,
+        "cloned_pipelines": 0,
+        "clone_failures": 0,
+        "bound_calls": 0,
+        "presents": 0
+      }
+    },
+    {
+      "file": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-5396-134366570938610954.jsonl",
+      "latest": {
+        "schema": 1,
+        "experiment": "C2077-SHADER-LOADER-001",
+        "pid": 5396,
+        "event": "heartbeat",
+        "mode": "control",
+        "dx12_pipeline_inits": 5360,
+        "matched_original": 5,
+        "cloned_pipelines": 5,
+        "clone_failures": 0,
+        "bound_calls": 1044,
+        "presents": 87017
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+ "bdiv__hoist_parity",
+ "bdiv__hoist_parity_batch",
+ "trig__unroll",
+ "ldsred__wave",
+ "ldsred__tree",
+ "mix__unroll",
+ "dot__unroll",
+ "dot__acc4",
+ "dot__acc4_unroll",
+ "bdiv__unroll",
+ "p24__tg32"
+]

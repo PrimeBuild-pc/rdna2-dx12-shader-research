@@ -1,0 +1,52 @@
+{
+  "experiment_id": "O6_20260906_185253",
+  "created_at": "2026-09-06T18:52:54.180076+02:00",
+  "cycle": "O6",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_185253",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_file": "MiniEngine/Model/LightManager.cpp",
+  "variants": {
+    "L128": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));",
+    "L64": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));\n        if (n % 2 != 0) m_LightData[n].radiusSq = 0.0f;",
+    "L32": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));\n        if (n % 4 != 0) m_LightData[n].radiusSq = 0.0f;",
+    "L16": "        std::memcpy(m_LightData[n].shadowTextureMatrix, &shadowTextureMatrix, sizeof(shadowTextureMatrix));\n        if (n % 8 != 0) m_LightData[n].radiusSq = 0.0f;"
+  },
+  "expected_bytecode": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "expected_artifact": {
+    "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\31_o6_lightcount\\preregistered\\A\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+    "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+    "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "custom_hash": "52CE6C5E64AB2E82",
+    "bytecode_bytes": 12612
+  },
+  "ablation_kind": "diagnostic_only - fewer lights, so the image changes; no variant here is an accepted optimisation",
+  "preregistered_criteria": {
+    "question": "does TA_BUSY in Render Color follow the count of pixel-stage texture instructions, as O5 concluded, or not",
+    "lever": "number of lights surviving tile culling, set in C++ data only. The pixel shader bytecode must stay 52CE6C5E64AB2E82 in every variant and the build gate enforces it, so instruction selection, register pressure and scheduling are fixed by construction.",
+    "dose": "SQ_PS INSTS_TEX_LOAD per pixel-shader wave, measured, never inferred from the stride. Culling by radius is not assumed to be perfect - whatever it actually removes is what the dose reports.",
+    "confounder": "SQ_PS INSTS_VALU and INST_CYCLES_VALU fall as well, since each removed light removes its shading arithmetic. Measured in the same single-pass session as the dose and reported beside it. This cycle cannot separate the two by itself; O4 already separated them in the other direction (TA_BUSY -3.5 % at fixed ALU).",
+    "response_mechanistic": "sum of TA_PERF_SEL_TA_BUSY over the 80 CUs (set tcp_ta, 1 pass)",
+    "response_outcome": "GPUTime and GPUBusyCycles of the Render Color sample (set resp)",
+    "replication_band": "the model predicts d TA_BUSY / d (PS texture instructions) in [0.75, 1.25] on every arm, and an implied marginal cost per removed instruction in [10, 19] cycles, i.e. 14.5 +- 30 %. Bands fixed before measuring.",
+    "falsification": "a ratio below 0.5 on the arms falsifies O5's conclusion: TA_BUSY would not be following the instruction count. Above 1.5 the model is incomplete - something else scales with the lights as well.",
+    "statistic": "median over >= 32 samples per run, 3 independent processes per variant, order interleaved and reversed; threshold max(2 %, 3 x N95) per metric from the L128 A/A control measured here, as in O4",
+    "ablation_kind": "diagnostic_only - fewer lights, so the image changes; no variant here is an accepted optimisation",
+    "o5_numbers_under_test": {
+      "ta_busy_cycles_per_tex_instruction": 14.51,
+      "ps_tex_instructions_per_wave": 156.0,
+      "stall_over_busy_pct": 0.24,
+      "l0_hit_pct": 97.66
+    }
+  },
+  "workspace_budget_bytes": 8000000000,
+  "light_stride": {
+    "L128": 1,
+    "L64": 2,
+    "L32": 4,
+    "L16": 8
+  },
+  "reuses_analysis_from": "research/30_o5_memory"
+}

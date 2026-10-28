@@ -1,0 +1,14 @@
+{
+  "args": [
+    "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+    "-dumpbin",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\64_c2077_shader_access_20261016\\extracted\\pixel_efca2e4b6b69bb0a.dxil"
+  ],
+  "command_line": "\"C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe\" -dumpbin \"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\64_c2077_shader_access_20261016\\extracted\\pixel_efca2e4b6b69bb0a.dxil\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod",
+  "requested_executable": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "executable_sha256": "854d5f29dbbe25b584942855e65d673db3164f7f68e20fb784be9cd747d14814",
+  "pid": 15508,
+  "actual_executable": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "returncode": 0
+}

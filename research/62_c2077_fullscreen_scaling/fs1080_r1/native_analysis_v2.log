@@ -1,0 +1,100 @@
+{
+  "full_benchmark": {
+    "frames": 10536,
+    "duration_s": 64.25777670000001,
+    "avg_fps": 163.9645898299497,
+    "ft_avg_ms": 6.098877818906606,
+    "ft_median_ms": 5.9814,
+    "ft_p95_ms": 8.069375,
+    "ft_p99_ms": 9.032399999999999,
+    "fps_1pct_low_time": 99.0944931022491,
+    "fps_01pct_low_time": 84.56230550669734,
+    "fps_1pct_low_p99": 110.71254594570658,
+    "fps_01pct_low_p999": 92.3247013584416,
+    "spikes": 0,
+    "spikes_per_min": 0.0,
+    "severe_spikes": 0,
+    "spike_time_lost_ms": 0.0
+  },
+  "alignment": {
+    "first_row": 10058,
+    "last_row": 20593,
+    "correlation": 0.8895443221949002,
+    "peak_margin": 0.32089687311265,
+    "block_checks": [
+      {
+        "native_offset": 0,
+        "frames": 3512,
+        "presentmon_row": 10058,
+        "lag_frames": 0,
+        "correlation": 0.8071763592379102,
+        "peak_margin": 0.5420901689452029
+      },
+      {
+        "native_offset": 3512,
+        "frames": 3512,
+        "presentmon_row": 13570,
+        "lag_frames": 0,
+        "correlation": 0.8378741863571236,
+        "peak_margin": 0.5862253807148627
+      },
+      {
+        "native_offset": 7024,
+        "frames": 3512,
+        "presentmon_row": 17082,
+        "lag_frames": 0,
+        "correlation": 0.8996679012133281,
+        "peak_margin": 0.3022539487029132
+      }
+    ],
+    "max_block_lag": 0,
+    "exact_block_agreement": true,
+    "row_index_basis": "zero-based data rows, CSV header excluded",
+    "game_fps_delta_pct": -0.001811324451495011,
+    "game_duration_delta_s": 0.0011620149414142134,
+    "duration_basis": "sum of the window's N frame intervals",
+    "qpc": {
+      "first_ms": 27401265.2327,
+      "last_ms": 27465516.8478,
+      "end_ms": 27465523.009400003,
+      "interval_max_error_ms": 3.695488359767296e-09,
+      "native_span_delta_ms": 1.445099999946251,
+      "native_elapsed_max_error_ms": 6.241199999720266,
+      "duration_s": 64.25777670000005,
+      "policy": "Continuity check only; cannot exclude upstream ETW loss or establish frame identity."
+    },
+    "boundary_sensitivity": [
+      {
+        "first_row": 10058,
+        "avg_fps": 163.96458982994972,
+        "MsBetweenPresents": 6.098877818906606,
+        "MsGPUBusy": 5.854328635155657,
+        "MsCPUBusy": 5.9392216211085795,
+        "MsGPUWait": 0.19595992786636296,
+        "MsCPUWait": 0.15965619779802584
+      }
+    ]
+  },
+  "signals": {
+    "MsGPUBusy": {
+      "mean_ms": 5.854328635155657,
+      "median_ms": 5.9101,
+      "populated": 10536
+    },
+    "MsCPUBusy": {
+      "mean_ms": 5.9392216211085795,
+      "median_ms": 5.8252,
+      "populated": 10536
+    },
+    "MsGPUWait": {
+      "mean_ms": 0.19595992786636296,
+      "median_ms": 0.0848,
+      "populated": 10536
+    },
+    "MsCPUWait": {
+      "mean_ms": 0.15965619779802584,
+      "median_ms": 0.1476,
+      "populated": 10536
+    }
+  }
+}

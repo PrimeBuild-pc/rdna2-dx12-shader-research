@@ -1,0 +1,3711 @@
+{
+  "broad_profile_not_validated_cpu_sampling": {
+    "source": "stacks_retry_profile.html",
+    "process_rows": [
+      [
+        "Cyberpunk2077.exe",
+        "16316",
+        "2732383",
+        "100.00%"
+      ],
+      [
+        "ntdll.dll!RtlUserThreadStart",
+        "",
+        "2512164",
+        "91.94%"
+      ],
+      [
+        "ntkrnlmp.exe!KiInterruptDispatch",
+        "",
+        "104533",
+        "3.83%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "85725",
+        "3.14%"
+      ],
+      [
+        "ntkrnlmp.exe!KiInterruptDispatch",
+        "",
+        "19193",
+        "0.70%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceUser",
+        "",
+        "2163",
+        "0.08%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "1570",
+        "0.06%"
+      ],
+      [
+        "ntkrnlmp.exe!KiApcInterrupt",
+        "",
+        "1267",
+        "0.05%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "1263",
+        "0.05%"
+      ],
+      [
+        "ntkrnlmp.exe!KiInterruptDispatchNoLockNoEtw",
+        "",
+        "897",
+        "0.03%"
+      ],
+      [
+        "ntkrnlmp.exe!KiInterruptDispatchNoLockNoEtw",
+        "",
+        "519",
+        "0.02%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "350",
+        "0.01%"
+      ],
+      [
+        "amdxc64.dll!***unknown***",
+        "",
+        "133",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiDpcInterrupt",
+        "",
+        "100",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "81",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiPageFault",
+        "",
+        "77",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceRepeat",
+        "",
+        "49",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiApcInterrupt",
+        "",
+        "44",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiPageFault",
+        "",
+        "31",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "29",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "29",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "26",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "24",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExit",
+        "",
+        "24",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "24",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "24",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "23",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "21",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "20",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "19",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "19",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "19",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "18",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "18",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiIpiInterrupt (trimmed)",
+        "",
+        "18",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "18",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "17",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "17",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "17",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "17",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "17",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "16",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "16",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "16",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "16",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "16",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "16",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "15",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "14",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "13",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "13",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExit",
+        "",
+        "13",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "13",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceRepeat",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "12",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "11",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "11",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "10",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "10",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "10",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "10",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "10",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "10",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "10",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "9",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceCopyEnd (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceRepeat",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "8",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "7",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "7",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "7",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "7",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "7",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "6",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExit",
+        "",
+        "6",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "6",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "6",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "6",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "6",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "5",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "WdFilter.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "3",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "2",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdxc64.dll!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "kernel32.dll!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Win32u.DLL!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "amdfendr.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ],
+      [
+        "atikmdag.sys!***unknown*** (trimmed)",
+        "",
+        "1",
+        "0.00%"
+      ]
+    ],
+    "function_rows": 3224
+  },
+  "switch": {
+    "source": "stacks_CSwitch.txt",
+    "process_rows": [
+      [
+        "Cyberpunk2077.exe",
+        "16316",
+        "6873198",
+        "100.00%"
+      ],
+      [
+        "ntdll.dll!RtlUserThreadStart",
+        "",
+        "6870955",
+        "99.97%"
+      ],
+      [
+        "amdxc64.dll!***unknown***",
+        "",
+        "1151",
+        "0.02%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "518",
+        "0.01%"
+      ],
+      [
+        "***unknown***!***unknown*** (trimmed)",
+        "",
+        "292",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown*** (trimmed)",
+        "",
+        "281",
+        "0.00%"
+      ],
+      [
+        "ntdll.dll!RtlUserThreadStart",
+        "",
+        "1",
+        "0.00%"
+      ]
+    ],
+    "function_rows": 349
+  },
+  "ready": {
+    "source": "stacks_ReadyThread.txt",
+    "process_rows": [
+      [
+        "Cyberpunk2077.exe",
+        "16316",
+        "6719067",
+        "100.00%"
+      ],
+      [
+        "ntdll.dll!RtlUserThreadStart",
+        "",
+        "6714580",
+        "99.93%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "1502",
+        "0.02%"
+      ],
+      [
+        "amdxc64.dll!***unknown***",
+        "",
+        "1019",
+        "0.02%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "749",
+        "0.01%"
+      ],
+      [
+        "ntkrnlmp.exe!KiSystemServiceExitPico",
+        "",
+        "719",
+        "0.01%"
+      ],
+      [
+        "***unknown***!***unknown*** (trimmed)",
+        "",
+        "251",
+        "0.00%"
+      ],
+      [
+        "***unknown***!***unknown*** (trimmed)",
+        "",
+        "242",
+        "0.00%"
+      ],
+      [
+        "ntkrnlmp.exe!KiPageFault (trimmed)",
+        "",
+        "4",
+        "0.00%"
+      ],
+      [
+        "Cyberpunk2077.exe!***unknown***",
+        "",
+        "1",
+        "0.00%"
+      ]
+    ],
+    "function_rows": 1116
+  },
+  "scheduler_crosscheck": {
+    "target_threads": 34,
+    "max_running_time_error_us": 0.5
+  },
+  "target_weighted_cpu_us": 446933787,
+  "explicit_etw_symbol_samples": {
+    "weight_us": 13936894,
+    "pct_of_game_cpu": 3.118335289338955,
+    "functions": {
+      "ntoskrnl.exe!EtwEventEnabled": 2000,
+      "ntoskrnl.exe!EtwpBuffersFlushRequired": 1000,
+      "ntoskrnl.exe!EtwpTraceStackWalk": 814646,
+      "ntoskrnl.exe!EtwpLogKernelEvent": 3396939,
+      "ntoskrnl.exe!EtwTraceReadyThread": 191314,
+      "ntoskrnl.exe!EtwpReserveTraceBuffer": 2662876,
+      "ntoskrnl.exe!EtwpEventWriteFull": 885654,
+      "ntoskrnl.exe!EtwWriteEx": 86745,
+      "ntoskrnl.exe!EtwWriteTransfer": 9000,
+      "ntoskrnl.exe!EtwpTraceStackKey": 3436266,
+      "ntoskrnl.exe!EtwpApcPoolThunk": 531497,
+      "ntoskrnl.exe!EtwpWriteUserEvent": 14044,
+      "ntoskrnl.exe!EtwTraceKernelEvent": 1000,
+      "ntoskrnl.exe!EtwpTraceWdf": 1000,
+      "ntoskrnl.exe!EtwTraceSiloKernelEvent": 1006,
+      "ntoskrnl.exe!EtwTracePageFault": 2000,
+      "ntoskrnl.exe!EtwpStackTraceDispatcher": 67371,
+      "ntoskrnl.exe!EtwpLogContextSwapEvent": 662218,
+      "ntoskrnl.exe!EtwTraceContextSwap": 99622,
+      "ntoskrnl.exe!EtwpExpandedStackWalk": 45384,
+      "ntoskrnl.exe!EtwpGetStackExtendedHeaderItem": 115695,
+      "ntoskrnl.exe!EtwpGetStackLookasideListEntry": 9088,
+      "ntoskrnl.exe!EtwpLevelKeywordEnabled": 60001,
+      "ntoskrnl.exe!EtwpApplyEventIdPayloadFilter": 74713,
+      "ntoskrnl.exe!EtwpQueueApc": 533554,
+      "ntoskrnl.exe!EtwpExpandStackAndWalkFrameChain": 54352,
+      "ntoskrnl.exe!EtwpReleaseStackLookasideListEntry": 44378,
+      "ntoskrnl.exe!EtwpDereferenceStackEntry": 8020,
+      "ntoskrnl.exe!EtwpGetLoggerTimeStamp": 93302,
+      "ntoskrnl.exe!EtwGetKernelTraceTimestamp": 5073,
+      "ntoskrnl.exe!EtwpFinalizePendingStackwalkApc": 25136,
+      "ntoskrnl.exe!EtwpUnlockBufferList": 2000
+    }
+  },
+  "explicit_stackwalk_helper_samples": {
+    "weight_us": 27277162,
+    "pct_of_game_cpu": 6.1031774265927226,
+    "functions": {
+      "ntoskrnl.exe!RtlpWalkFrameChain": 5785236,
+      "ntoskrnl.exe!RtlpLookupFunctionEntryForStackWalks": 21491926
+    },
+    "limit": "Caller stacks are not validated for CPU sampling; not every generic unwind routine is assigned to ETW."
+  },
+  "sampled_caller_stacks_validated": false,
+  "broad_profile_filter_limit": "Profile matches an ambiguous family with more hits than CPU samples and different exclusive distribution; excluded from CPU cost/caller attribution. SampledProfile and SampleProf filters returned empty tables.",
+  "gpu_crosscheck": {
+    "status": "PASS",
+    "fifo_union_ms": 48678.8322,
+    "online_frame_gpu_busy_sum_ms": 48679.95279999991,
+    "delta_ms": -1.1205999999147025,
+    "limitation": "Window-clipped union and per-frame busy attribution have different boundaries; agreement is a decoder check, not independent hardware occupancy."
+  }
+}

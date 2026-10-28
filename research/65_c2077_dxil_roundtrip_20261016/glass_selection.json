@@ -1,0 +1,25 @@
+{
+  "source_cache_sha256": "339145371a3b5aaa08eb4ef82d558f445b632e28603ee0f3b4860270dfc3ccfa",
+  "record": {
+    "guid": 15973390170752892218,
+    "params_guid": 17452373088299669938,
+    "record_offset": 69985475,
+    "blob_offset": 69985495,
+    "bytes": 23102
+  },
+  "compilation_info": {
+    "info": "glass CompiledTechnique [Index: 0, Pass 'renderstage_transparent', PassIndex: 0, Fallback: 0, RenderStageContext: [ID: 18, VF: MeshStatic; Discarded]",
+    "shader_a_guid": 3757279649945394311,
+    "shader_b_guid": 15973390170752892218,
+    "material_guid": 4737044088447651087,
+    "flags": [
+      [],
+      [
+        131330
+      ]
+    ]
+  },
+  "blob_sha256": "c8755b8ac5d61f208d02e0fda1c3bbed2c7e0a15f59c9edbb0f8c559925828b9",
+  "stage_check": "DXC disassembly required; slot names not trusted",
+  "dump_exit": 0
+}

@@ -1,0 +1,406 @@
+
+--------------------------
+DPC Info
+
+--------------------------
+CPU Usage Summing By Module For the Whole Trace
+
+CPU Usage from 49909770 us to 114153855 us:
+
+     CPU 0 Usage,      CPU 1 Usage,      CPU 2 Usage,      CPU 3 Usage,      CPU 4 Usage,      CPU 5 Usage,      CPU 6 Usage,      CPU 7 Usage,      CPU 8 Usage,      CPU 9 Usage,      CPU 10 Usage,      CPU 11 Usage,      CPU 12 Usage,      CPU 13 Usage,      CPU 14 Usage,      CPU 15 Usage, 
+     usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %, Module
+     1300   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, CLASSPNP.SYS
+       65   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, Ntfs.sys
+  2311101   3.60,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, USBXHCI.SYS
+       12   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, UnionFS.sys
+        9   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, WdFilter.sys
+    34534   0.05,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, afd.sys
+     6838   0.01,        14   0.00,        12   0.00,         6   0.00,        11   0.00,         5   0.00,         7   0.00,         2   0.00,        25   0.00,         4   0.00,         6   0.00,         6   0.00,         5   0.00,         3   0.00,         6   0.00,         2   0.00, amdfendr.sys
+        0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, amdkmdag.sys
+      488   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, audientusbaudio.sys
+ 10525325  16.38,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, dxgkrnl.sys
+     1707   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, dxgmms2.sys
+     8634   0.01,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, e2fn.sys
+        0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, gameflt.sys
+       16   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, hvservice.sys
+        0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, kbdhid.sys
+       47   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, mslldp.sys
+     1290   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, ndis.sys
+    98414   0.15,      7633   0.01,     13416   0.02,      9890   0.02,     13536   0.02,      9802   0.02,     13534   0.02,     10582   0.02,     14522   0.02,     10760   0.02,     15249   0.02,     11817   0.02,     19718   0.03,     14598   0.02,     38988   0.06,     56460   0.09, ntoskrnl.exe
+        0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, rdbss.sys
+      606   0.00,      1332   0.00,      1661   0.00,      1640   0.00,      4299   0.01,      1262   0.00,      3031   0.00,      1098   0.00,      2614   0.00,      1338   0.00,      2851   0.00,      1439   0.00,      1687   0.00,       422   0.00,      1084   0.00,       356   0.00, stornvme.sys
+     7904   0.01,      5114   0.01,      8980   0.01,      5039   0.01,     28213   0.04,      9841   0.02,     23976   0.04,      8644   0.01,     20337   0.03,     10885   0.02,     23671   0.04,     12651   0.02,     14113   0.02,      5859   0.01,     12461   0.02,      4904   0.01, storport.sys
+       42   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, storvsp.sys
+      894   0.00,       207   0.00,       202   0.00,       192   0.00,       198   0.00,       203   0.00,       207   0.00,       193   0.00,       238   0.00,       207   0.00,       216   0.00,       192   0.00,       235   0.00,       217   0.00,       214   0.00,       237   0.00, symcryptk.dll
+      575   0.00,       144   0.00,       141   0.00,       125   0.00,       509   0.00,       122   0.00,       131   0.00,       167   0.00,       108   0.00,       185   0.00,       337   0.00,       180   0.00,        60   0.00,        24   0.00,        20   0.00,        50   0.00, tcpip.sys
+       47   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, vhdmp.sys
+        0   0.00,         4   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, vmbkmclr.sys
+     1538   0.00,      2338   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, vmbusr.sys
+      561   0.00,       708   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, vmswitch.sys
+      673   0.00,       418   0.00,      1139   0.00,       621   0.00,       699   0.00,       299   0.00,       548   0.00,       374   0.00,       368   0.00,       166   0.00,       345   0.00,       116   0.00,       244   0.00,        98   0.00,       258   0.00,        69   0.00, winhvr.sys
+        8   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, winnat.sys
+
+Total = 515388
+Elapsed Time, >        0 usecs AND <=        1 usecs,  33603, or   6.52%
+Elapsed Time, >        1 usecs AND <=        2 usecs,  15358, or   2.98%
+Elapsed Time, >        2 usecs AND <=        4 usecs, 115778, or  22.46%
+Elapsed Time, >        4 usecs AND <=        8 usecs,  75138, or  14.58%
+Elapsed Time, >        8 usecs AND <=       16 usecs,  94935, or  18.42%
+Elapsed Time, >       16 usecs AND <=       32 usecs,  64991, or  12.61%
+Elapsed Time, >       32 usecs AND <=       64 usecs,  55905, or  10.85%
+Elapsed Time, >       64 usecs AND <=      128 usecs,  36016, or   6.99%
+Elapsed Time, >      128 usecs AND <=      256 usecs,  15460, or   3.00%
+Elapsed Time, >      256 usecs AND <=      512 usecs,   7946, or   1.54%
+Elapsed Time, >      512 usecs AND <=     1024 usecs,    258, or   0.05%
+Total,                                                515388
+
+Total = 87 for module CLASSPNP.SYS
+Elapsed Time, >        0 usecs AND <=        1 usecs,     29, or  33.33%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      7, or   8.05%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      6, or   6.90%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      1, or   1.15%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      8, or   9.20%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     21, or  24.14%
+Elapsed Time, >       32 usecs AND <=       64 usecs,     10, or  11.49%
+Elapsed Time, >       64 usecs AND <=      128 usecs,      5, or   5.75%
+Total,                                                    87
+
+Total = 13 for module Ntfs.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      3, or  23.08%
+Elapsed Time, >        4 usecs AND <=        8 usecs,     10, or  76.92%
+Total,                                                    13
+
+Total = 161399 for module USBXHCI.SYS
+Elapsed Time, >        0 usecs AND <=        1 usecs,    106, or   0.07%
+Elapsed Time, >        1 usecs AND <=        2 usecs,   5400, or   3.35%
+Elapsed Time, >        2 usecs AND <=        4 usecs,   4935, or   3.06%
+Elapsed Time, >        4 usecs AND <=        8 usecs,  19552, or  12.11%
+Elapsed Time, >        8 usecs AND <=       16 usecs,  76647, or  47.49%
+Elapsed Time, >       16 usecs AND <=       32 usecs,  42787, or  26.51%
+Elapsed Time, >       32 usecs AND <=       64 usecs,   9732, or   6.03%
+Elapsed Time, >       64 usecs AND <=      128 usecs,   2075, or   1.29%
+Elapsed Time, >      128 usecs AND <=      256 usecs,    163, or   0.10%
+Elapsed Time, >      256 usecs AND <=      512 usecs,      2, or   0.00%
+Total,                                                161399
+
+Total = 1 for module UnionFS.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      0, or   0.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      0, or   0.00%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      1, or 100.00%
+Total,                                                     1
+
+Total = 2 for module WdFilter.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      0, or   0.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      2, or 100.00%
+Total,                                                     2
+
+Total = 5460 for module afd.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,     98, or   1.79%
+Elapsed Time, >        4 usecs AND <=        8 usecs,   4671, or  85.55%
+Elapsed Time, >        8 usecs AND <=       16 usecs,    583, or  10.68%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     48, or   0.88%
+Elapsed Time, >       32 usecs AND <=       64 usecs,     50, or   0.92%
+Elapsed Time, >       64 usecs AND <=      128 usecs,     10, or   0.18%
+Total,                                                  5460
+
+Total = 30848 for module amdfendr.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,  30756, or  99.70%
+Elapsed Time, >        1 usecs AND <=        2 usecs,     49, or   0.16%
+Elapsed Time, >        2 usecs AND <=        4 usecs,     13, or   0.04%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      7, or   0.02%
+Elapsed Time, >        8 usecs AND <=       16 usecs,     11, or   0.04%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     11, or   0.04%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      1, or   0.00%
+Total,                                                 30848
+
+Total = 0 for module amdkmdag.sys
+
+Total = 583 for module audientusbaudio.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,    517, or  88.68%
+Elapsed Time, >        1 usecs AND <=        2 usecs,     61, or  10.46%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      4, or   0.69%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      0, or   0.00%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      1, or   0.17%
+Total,                                                   583
+
+Total = 224727 for module dxgkrnl.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,  60064, or  26.73%
+Elapsed Time, >        4 usecs AND <=        8 usecs,  45170, or  20.10%
+Elapsed Time, >        8 usecs AND <=       16 usecs,   5703, or   2.54%
+Elapsed Time, >       16 usecs AND <=       32 usecs,  11299, or   5.03%
+Elapsed Time, >       32 usecs AND <=       64 usecs,  45237, or  20.13%
+Elapsed Time, >       64 usecs AND <=      128 usecs,  33761, or  15.02%
+Elapsed Time, >      128 usecs AND <=      256 usecs,  15291, or   6.80%
+Elapsed Time, >      256 usecs AND <=      512 usecs,   7944, or   3.53%
+Elapsed Time, >      512 usecs AND <=     1024 usecs,    258, or   0.11%
+Total,                                                224727
+
+Total = 344 for module dxgmms2.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,     88, or  25.58%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    241, or  70.06%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      9, or   2.62%
+Elapsed Time, >       16 usecs AND <=       32 usecs,      3, or   0.87%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      3, or   0.87%
+Total,                                                   344
+
+Total = 1155 for module e2fn.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,     76, or   6.58%
+Elapsed Time, >        1 usecs AND <=        2 usecs,     10, or   0.87%
+Elapsed Time, >        2 usecs AND <=        4 usecs,     91, or   7.88%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    530, or  45.89%
+Elapsed Time, >        8 usecs AND <=       16 usecs,    399, or  34.55%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     25, or   2.16%
+Elapsed Time, >       32 usecs AND <=       64 usecs,     21, or   1.82%
+Elapsed Time, >       64 usecs AND <=      128 usecs,      3, or   0.26%
+Total,                                                  1155
+
+Total = 0 for module gameflt.sys
+
+Total = 2 for module hvservice.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      0, or   0.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      1, or  50.00%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      1, or  50.00%
+Total,                                                     2
+
+Total = 0 for module kbdhid.sys
+
+Total = 2 for module mslldp.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      0, or   0.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      0, or   0.00%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      1, or  50.00%
+Elapsed Time, >       16 usecs AND <=       32 usecs,      0, or   0.00%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      1, or  50.00%
+Total,                                                     2
+
+Total = 95 for module ndis.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      1, or   1.05%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      3, or   3.16%
+Elapsed Time, >        4 usecs AND <=        8 usecs,     12, or  12.63%
+Elapsed Time, >        8 usecs AND <=       16 usecs,     54, or  56.84%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     23, or  24.21%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      0, or   0.00%
+Elapsed Time, >       64 usecs AND <=      128 usecs,      2, or   2.11%
+Total,                                                    95
+
+Total = 60938 for module ntoskrnl.exe
+Elapsed Time, >        0 usecs AND <=        1 usecs,   1571, or   2.58%
+Elapsed Time, >        1 usecs AND <=        2 usecs,    543, or   0.89%
+Elapsed Time, >        2 usecs AND <=        4 usecs,  45816, or  75.18%
+Elapsed Time, >        4 usecs AND <=        8 usecs,   3487, or   5.72%
+Elapsed Time, >        8 usecs AND <=       16 usecs,   1977, or   3.24%
+Elapsed Time, >       16 usecs AND <=       32 usecs,   6750, or  11.08%
+Elapsed Time, >       32 usecs AND <=       64 usecs,    662, or   1.09%
+Elapsed Time, >       64 usecs AND <=      128 usecs,    131, or   0.21%
+Elapsed Time, >      128 usecs AND <=      256 usecs,      1, or   0.00%
+Total,                                                 60938
+
+Total = 0 for module rdbss.sys
+
+Total = 13464 for module stornvme.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,    454, or   3.37%
+Elapsed Time, >        1 usecs AND <=        2 usecs,   9061, or  67.30%
+Elapsed Time, >        2 usecs AND <=        4 usecs,   3664, or  27.21%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    232, or   1.72%
+Elapsed Time, >        8 usecs AND <=       16 usecs,     37, or   0.27%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     15, or   0.11%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      0, or   0.00%
+Elapsed Time, >       64 usecs AND <=      128 usecs,      1, or   0.01%
+Total,                                                 13464
+
+Total = 13554 for module storport.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,     32, or   0.24%
+Elapsed Time, >        1 usecs AND <=        2 usecs,     66, or   0.49%
+Elapsed Time, >        2 usecs AND <=        4 usecs,     65, or   0.48%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    348, or   2.57%
+Elapsed Time, >        8 usecs AND <=       16 usecs,   8958, or  66.09%
+Elapsed Time, >       16 usecs AND <=       32 usecs,   3911, or  28.85%
+Elapsed Time, >       32 usecs AND <=       64 usecs,    153, or   1.13%
+Elapsed Time, >       64 usecs AND <=      128 usecs,     19, or   0.14%
+Elapsed Time, >      128 usecs AND <=      256 usecs,      2, or   0.01%
+Total,                                                 13554
+
+Total = 6 for module storvsp.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      0, or   0.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      6, or 100.00%
+Total,                                                     6
+
+Total = 1263 for module symcryptk.dll
+Elapsed Time, >        0 usecs AND <=        1 usecs,     10, or   0.79%
+Elapsed Time, >        1 usecs AND <=        2 usecs,    155, or  12.27%
+Elapsed Time, >        2 usecs AND <=        4 usecs,    874, or  69.20%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    204, or  16.15%
+Elapsed Time, >        8 usecs AND <=       16 usecs,     16, or   1.27%
+Elapsed Time, >       16 usecs AND <=       32 usecs,      4, or   0.32%
+Total,                                                  1263
+
+Total = 291 for module tcpip.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,     52, or  17.87%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      2, or   0.69%
+Elapsed Time, >        2 usecs AND <=        4 usecs,     44, or  15.12%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    139, or  47.77%
+Elapsed Time, >        8 usecs AND <=       16 usecs,     11, or   3.78%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     18, or   6.19%
+Elapsed Time, >       32 usecs AND <=       64 usecs,     19, or   6.53%
+Elapsed Time, >       64 usecs AND <=      128 usecs,      5, or   1.72%
+Elapsed Time, >      128 usecs AND <=      256 usecs,      1, or   0.34%
+Total,                                                   291
+
+Total = 7 for module vhdmp.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      0, or   0.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      6, or  85.71%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      1, or  14.29%
+Total,                                                     7
+
+Total = 2 for module vmbkmclr.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      2, or 100.00%
+Total,                                                     2
+
+Total = 345 for module vmbusr.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      1, or   0.29%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      6, or   1.74%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    136, or  39.42%
+Elapsed Time, >        8 usecs AND <=       16 usecs,    141, or  40.87%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     54, or  15.65%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      7, or   2.03%
+Total,                                                   345
+
+Total = 34 for module vmswitch.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      0, or   0.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      5, or  14.71%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      2, or   5.88%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     13, or  38.24%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      8, or  23.53%
+Elapsed Time, >       64 usecs AND <=      128 usecs,      4, or  11.76%
+Elapsed Time, >      128 usecs AND <=      256 usecs,      2, or   5.88%
+Total,                                                    34
+
+Total = 764 for module winhvr.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      3, or   0.39%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    377, or  49.35%
+Elapsed Time, >        8 usecs AND <=       16 usecs,    374, or  48.95%
+Elapsed Time, >       16 usecs AND <=       32 usecs,      9, or   1.18%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      1, or   0.13%
+Total,                                                   764
+
+Total = 2 for module winnat.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      1, or  50.00%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      1, or  50.00%
+Total,                                                     2
+
+All Module = 515388,  Total = 515388,   EQUAL
+
+--------------------------
+Interrupt Info
+
+--------------------------
+CPU Usage Summing By Module For the Whole Trace
+
+CPU Usage from 49909770 us to 114153855 us:
+
+     CPU 0 Usage,      CPU 1 Usage,      CPU 2 Usage,      CPU 3 Usage,      CPU 4 Usage,      CPU 5 Usage,      CPU 6 Usage,      CPU 7 Usage,      CPU 8 Usage,      CPU 9 Usage,      CPU 10 Usage,      CPU 11 Usage,      CPU 12 Usage,      CPU 13 Usage,      CPU 14 Usage,      CPU 15 Usage, 
+     usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %,      usec      %, Module
+   116796   0.18,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, USBXHCI.SYS
+  4121311   6.42,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, dxgkrnl.sys
+     1553   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, e2fn.sys
+      143   0.00,        82   0.00,       249   0.00,       118   0.00,       133   0.00,        60   0.00,       107   0.00,        57   0.00,        79   0.00,        25   0.00,        66   0.00,        19   0.00,        48   0.00,        20   0.00,        50   0.00,         9   0.00, ntoskrnl.exe
+      354   0.00,       622   0.00,       896   0.00,       742   0.00,      2640   0.00,       827   0.00,      2022   0.00,       746   0.00,      1717   0.00,       911   0.00,      1818   0.00,       987   0.00,      1131   0.00,       283   0.00,       698   0.00,       236   0.00, storport.sys
+       60   0.00,       173   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00,         0   0.00, vmbusr.sys
+
+Total = 341114
+Elapsed Time, >        0 usecs AND <=        1 usecs, 144121, or  42.25%
+Elapsed Time, >        1 usecs AND <=        2 usecs,  23935, or   7.02%
+Elapsed Time, >        2 usecs AND <=        4 usecs,   8731, or   2.56%
+Elapsed Time, >        4 usecs AND <=        8 usecs,   2262, or   0.66%
+Elapsed Time, >        8 usecs AND <=       16 usecs,  31680, or   9.29%
+Elapsed Time, >       16 usecs AND <=       32 usecs,  91353, or  26.78%
+Elapsed Time, >       32 usecs AND <=       64 usecs,  37906, or  11.11%
+Elapsed Time, >       64 usecs AND <=      128 usecs,   1114, or   0.33%
+Elapsed Time, >      128 usecs AND <=      256 usecs,     12, or   0.00%
+Total,                                                341114
+
+Total = 161399 for module USBXHCI.SYS
+Elapsed Time, >        0 usecs AND <=        1 usecs, 138621, or  85.89%
+Elapsed Time, >        1 usecs AND <=        2 usecs,  14506, or   8.99%
+Elapsed Time, >        2 usecs AND <=        4 usecs,   7757, or   4.81%
+Elapsed Time, >        4 usecs AND <=        8 usecs,    292, or   0.18%
+Elapsed Time, >        8 usecs AND <=       16 usecs,    125, or   0.08%
+Elapsed Time, >       16 usecs AND <=       32 usecs,     68, or   0.04%
+Elapsed Time, >       32 usecs AND <=       64 usecs,     30, or   0.02%
+Total,                                                161399
+
+Total = 164033 for module dxgkrnl.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,      0, or   0.00%
+Elapsed Time, >        1 usecs AND <=        2 usecs,      0, or   0.00%
+Elapsed Time, >        2 usecs AND <=        4 usecs,    331, or   0.20%
+Elapsed Time, >        4 usecs AND <=        8 usecs,   1898, or   1.16%
+Elapsed Time, >        8 usecs AND <=       16 usecs,  31528, or  19.22%
+Elapsed Time, >       16 usecs AND <=       32 usecs,  91275, or  55.64%
+Elapsed Time, >       32 usecs AND <=       64 usecs,  37875, or  23.09%
+Elapsed Time, >       64 usecs AND <=      128 usecs,   1114, or   0.68%
+Elapsed Time, >      128 usecs AND <=      256 usecs,     12, or   0.01%
+Total,                                                164033
+
+Total = 1208 for module e2fn.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,    624, or  51.66%
+Elapsed Time, >        1 usecs AND <=        2 usecs,    439, or  36.34%
+Elapsed Time, >        2 usecs AND <=        4 usecs,    131, or  10.84%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      4, or   0.33%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      3, or   0.25%
+Elapsed Time, >       16 usecs AND <=       32 usecs,      6, or   0.50%
+Elapsed Time, >       32 usecs AND <=       64 usecs,      1, or   0.08%
+Total,                                                  1208
+
+Total = 764 for module ntoskrnl.exe
+Elapsed Time, >        0 usecs AND <=        1 usecs,     69, or   9.03%
+Elapsed Time, >        1 usecs AND <=        2 usecs,    583, or  76.31%
+Elapsed Time, >        2 usecs AND <=        4 usecs,    109, or  14.27%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      3, or   0.39%
+Total,                                                   764
+
+Total = 13492 for module storport.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,   4695, or  34.80%
+Elapsed Time, >        1 usecs AND <=        2 usecs,   8305, or  61.55%
+Elapsed Time, >        2 usecs AND <=        4 usecs,    402, or   2.98%
+Elapsed Time, >        4 usecs AND <=        8 usecs,     63, or   0.47%
+Elapsed Time, >        8 usecs AND <=       16 usecs,     23, or   0.17%
+Elapsed Time, >       16 usecs AND <=       32 usecs,      4, or   0.03%
+Total,                                                 13492
+
+Total = 218 for module vmbusr.sys
+Elapsed Time, >        0 usecs AND <=        1 usecs,    112, or  51.38%
+Elapsed Time, >        1 usecs AND <=        2 usecs,    102, or  46.79%
+Elapsed Time, >        2 usecs AND <=        4 usecs,      1, or   0.46%
+Elapsed Time, >        4 usecs AND <=        8 usecs,      2, or   0.92%
+Elapsed Time, >        8 usecs AND <=       16 usecs,      1, or   0.46%
+Total,                                                   218
+
+All Module = 341114,  Total = 341114,   EQUAL

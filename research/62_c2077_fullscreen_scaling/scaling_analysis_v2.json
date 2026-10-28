@@ -1,0 +1,668 @@
+{
+  "gates": {
+    "fs1440_r1": {
+      "present_modes": {
+        "Hardware: Independent Flip": 22204
+      },
+      "streams": [
+        {
+          "ProcessID": 5356,
+          "SwapChainAddress": "0x2013655DFE0"
+        }
+      ],
+      "refresh_hz": [
+        360,
+        360
+      ],
+      "window_mode": 2,
+      "rows": 22204
+    },
+    "fs1080_r1": {
+      "present_modes": {
+        "Hardware: Independent Flip": 26894
+      },
+      "streams": [
+        {
+          "ProcessID": 5356,
+          "SwapChainAddress": "0x2013655DFE0"
+        }
+      ],
+      "refresh_hz": [
+        360,
+        360
+      ],
+      "window_mode": 2,
+      "rows": 26894
+    },
+    "fs720_r1": {
+      "present_modes": {
+        "Hardware: Independent Flip": 28690
+      },
+      "streams": [
+        {
+          "ProcessID": 5356,
+          "SwapChainAddress": "0x2013655DFE0"
+        }
+      ],
+      "refresh_hz": [
+        360,
+        360
+      ],
+      "window_mode": 2,
+      "rows": 28690
+    },
+    "fs1440_r2": {
+      "present_modes": {
+        "Hardware: Independent Flip": 22283
+      },
+      "streams": [
+        {
+          "ProcessID": 5356,
+          "SwapChainAddress": "0x2013655DFE0"
+        }
+      ],
+      "refresh_hz": [
+        360,
+        360
+      ],
+      "window_mode": 2,
+      "rows": 22283
+    }
+  },
+  "native_summary_settings_equal_except_resolution_and_results": true,
+  "diagnostics": {
+    "fs1440_r1": {
+      "original_global_row": 2859,
+      "original_correlation": 0.9206623505538503,
+      "original_block_checks": [
+        {
+          "native_offset": 0,
+          "row": 2859,
+          "lag": 0,
+          "correlation": 0.8752122570119202
+        },
+        {
+          "native_offset": 3110,
+          "row": 5969,
+          "lag": 0,
+          "correlation": 0.9460367813965087
+        },
+        {
+          "native_offset": 6220,
+          "row": 9079,
+          "lag": 0,
+          "correlation": 0.8877473810792146
+        }
+      ],
+      "proposed_duration_only_locator_row": 2815,
+      "proposed_locator_error_ms": -0.01000000030035153
+    },
+    "fs1080_r1": {
+      "original_global_row": 10058,
+      "original_correlation": 0.8895443221949002,
+      "original_block_checks": [
+        {
+          "native_offset": 0,
+          "row": 10058,
+          "lag": 0,
+          "correlation": 0.7825319533395538
+        },
+        {
+          "native_offset": 4768,
+          "row": 14826,
+          "lag": 0,
+          "correlation": 0.8486465192401469
+        },
+        {
+          "native_offset": 9536,
+          "row": 19594,
+          "lag": 0,
+          "correlation": 0.8387125955712459
+        }
+      ],
+      "proposed_duration_only_locator_row": 10056,
+      "proposed_locator_error_ms": -0.1223000009340467
+    },
+    "fs720_r1": {
+      "original_global_row": 6415,
+      "original_correlation": 0.9470023321404893,
+      "original_block_checks": [
+        {
+          "native_offset": 0,
+          "row": 6414,
+          "lag": -1,
+          "correlation": 0.8143087122763429
+        },
+        {
+          "native_offset": 5471,
+          "row": 11886,
+          "lag": 0,
+          "correlation": 0.6727663586706922
+        },
+        {
+          "native_offset": 10942,
+          "row": 17357,
+          "lag": 0,
+          "correlation": 0.8272133097344907
+        }
+      ],
+      "proposed_duration_only_locator_row": 6414,
+      "proposed_locator_error_ms": -0.8380999997243634
+    },
+    "fs1440_r2": {
+      "original_global_row": 7360,
+      "original_correlation": 0.8872772039494455,
+      "original_block_checks": [
+        {
+          "native_offset": 0,
+          "row": 7360,
+          "lag": 0,
+          "correlation": 0.8573706429644634
+        },
+        {
+          "native_offset": 3095,
+          "row": 10455,
+          "lag": 0,
+          "correlation": 0.8915605270757724
+        },
+        {
+          "native_offset": 6191,
+          "row": 13551,
+          "lag": 0,
+          "correlation": 0.825167590720604
+        }
+      ],
+      "proposed_duration_only_locator_row": 7237,
+      "proposed_locator_error_ms": -0.0977999989700038
+    }
+  },
+  "predictions_720": {
+    "MsGPUBusy": {
+      "predicted_ms": 3.76,
+      "measured_ms": 4.171984793166974,
+      "error_ms": 0.41198479316697423,
+      "error_pct": 10.957042371462089
+    },
+    "MsCPUBusy": {
+      "predicted_ms": 5.22,
+      "measured_ms": 5.2296897253391394,
+      "error_ms": 0.009689725339139699,
+      "error_pct": 0.1856269222057394
+    },
+    "MsGPUWait": {
+      "predicted_above_ms": 0.196,
+      "measured_ms": 1.1068915592028137,
+      "direction_pass": true
+    },
+    "mapping": {
+      "predicted_first_row": 6416,
+      "measured_first_row": 6415,
+      "predicted_last_row": 18357,
+      "measured_last_row": 18356,
+      "exact_prediction_pass": false,
+      "note": "Global optimum with explicit +/-1 frame uncertainty; not exact identity"
+    }
+  },
+  "descriptive_statistics": {
+    "drift_fps_pct": -0.4113204803482873,
+    "fps_gain_720_vs_1440_pct": 65.37331379585432,
+    "fps_gain_720_vs_1080_pct": 13.333041704865888,
+    "gpu_busy_over_frametime": {
+      "fs1440_r1": 0.985997573600223,
+      "fs1080_r1": 0.9599025933930265,
+      "fs720_r1": 0.7752634838663248,
+      "fs1440_r2": 0.9848415809649808
+    },
+    "gpu_wait_720_vs_1080_ratio": 5.648560760635055
+  },
+  "fits": {
+    "frametime": {
+      "intercept_ms": 3.8929080964405043,
+      "slope_ms_per_Mpx": 1.3022166871731713,
+      "residual_ms": [
+        0.2059611666900789,
+        -0.49430680005618566,
+        0.2883456333661112
+      ],
+      "endpoint_1080_prediction_ms": 6.84720339121389,
+      "endpoint_1080_residual_ms": -0.7483255723072837,
+      "endpoint_1080_residual_pct": -10.92892279594777
+    },
+    "MsGPUBusy": {
+      "intercept_ms": 2.5383558657751957,
+      "slope_ms_per_Mpx": 1.6741490128552208,
+      "residual_ms": [
+        0.06480942653171695,
+        -0.1555426236761246,
+        0.09073319714440675
+      ],
+      "endpoint_1080_prediction_ms": 6.089802884887567,
+      "endpoint_1080_residual_ms": -0.23547424973191067,
+      "endpoint_1080_residual_pct": -3.866697398634411
+    }
+  },
+  "immutable_inputs_verified": 33,
+  "policy": "Post-diagnosis bounded window uncertainty only at 720p. No frame-level or ETW-loss proof.",
+  "verdict": "1440p: strong GPU-dominant evidence. 720p: strong non-GPU pacing/feeding evidence, probable CPU/submission limit. CPU vs driver not identified. No measured hard FPS ceiling or shader speedup bound.",
+  "runs": {
+    "fs1440_r1": {
+      "full_benchmark": {
+        "frames": 7220,
+        "duration_s": 64.2533854,
+        "avg_fps": 112.3676200880771,
+        "ft_avg_ms": 8.899360858725762,
+        "ft_median_ms": 8.8564,
+        "ft_p95_ms": 10.717319999999999,
+        "ft_p99_ms": 11.775597,
+        "fps_1pct_low_time": 75.12508710293899,
+        "fps_01pct_low_time": 60.68145271397797,
+        "fps_1pct_low_p99": 84.92138445294961,
+        "fps_01pct_low_p999": 71.33645262910706,
+        "spikes": 1,
+        "spikes_per_min": 0.9338029370200314,
+        "severe_spikes": 0,
+        "spike_time_lost_ms": 8.099499999999999
+      },
+      "signals": {
+        "MsGPUBusy": {
+          "mean_ms": 8.774748213296398,
+          "median_ms": 8.7735,
+          "populated": 7220
+        },
+        "MsCPUBusy": {
+          "mean_ms": 8.742990747922438,
+          "median_ms": 8.70125,
+          "populated": 7220
+        },
+        "MsGPUWait": {
+          "mean_ms": 0.0987922022160665,
+          "median_ms": 0.0846,
+          "populated": 7220
+        },
+        "MsCPUWait": {
+          "mean_ms": 0.1563701108033241,
+          "median_ms": 0.1463,
+          "populated": 7220
+        }
+      },
+      "alignment": {
+        "first_row": 2859,
+        "last_row": 10078,
+        "correlation": 0.9206623505538503,
+        "peak_margin": 0.3465652349437506,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "frames": 2406,
+            "presentmon_row": 2859,
+            "lag_frames": 0,
+            "correlation": 0.9095583801743645,
+            "peak_margin": 0.43778958155432657
+          },
+          {
+            "native_offset": 2406,
+            "frames": 2407,
+            "presentmon_row": 5265,
+            "lag_frames": 0,
+            "correlation": 0.9366556857406283,
+            "peak_margin": 0.462323676512759
+          },
+          {
+            "native_offset": 4813,
+            "frames": 2407,
+            "presentmon_row": 7672,
+            "lag_frames": 0,
+            "correlation": 0.8830349997903145,
+            "peak_margin": 0.4434997818257098
+          }
+        ],
+        "max_block_lag": 0,
+        "exact_block_agreement": true,
+        "row_index_basis": "zero-based data rows, CSV header excluded",
+        "game_fps_delta_pct": -0.0010068971902255086,
+        "game_duration_delta_s": 0.0006464473632803447,
+        "duration_basis": "sum of the window's N frame intervals",
+        "qpc": {
+          "first_ms": 27108813.7164,
+          "last_ms": 27173057.5695,
+          "end_ms": 27173067.1018,
+          "interval_max_error_ms": 3.7074086023380914e-09,
+          "native_span_delta_ms": 0.16309999796794727,
+          "native_elapsed_max_error_ms": 6.298299999602023,
+          "duration_s": 64.25338539999808,
+          "policy": "Continuity check only; cannot exclude upstream ETW loss or establish frame identity."
+        },
+        "boundary_sensitivity": [
+          {
+            "first_row": 2859,
+            "avg_fps": 112.3676200880771,
+            "MsBetweenPresents": 8.899360858725762,
+            "MsGPUBusy": 8.774748213296398,
+            "MsCPUBusy": 8.742990747922438,
+            "MsGPUWait": 0.0987922022160665,
+            "MsCPUWait": 0.1563701108033241
+          }
+        ]
+      }
+    },
+    "fs1080_r1": {
+      "full_benchmark": {
+        "frames": 10536,
+        "duration_s": 64.25777670000001,
+        "avg_fps": 163.9645898299497,
+        "ft_avg_ms": 6.098877818906606,
+        "ft_median_ms": 5.9814,
+        "ft_p95_ms": 8.069375,
+        "ft_p99_ms": 9.032399999999999,
+        "fps_1pct_low_time": 99.0944931022491,
+        "fps_01pct_low_time": 84.56230550669734,
+        "fps_1pct_low_p99": 110.71254594570658,
+        "fps_01pct_low_p999": 92.3247013584416,
+        "spikes": 0,
+        "spikes_per_min": 0.0,
+        "severe_spikes": 0,
+        "spike_time_lost_ms": 0.0
+      },
+      "signals": {
+        "MsGPUBusy": {
+          "mean_ms": 5.854328635155657,
+          "median_ms": 5.9101,
+          "populated": 10536
+        },
+        "MsCPUBusy": {
+          "mean_ms": 5.9392216211085795,
+          "median_ms": 5.8252,
+          "populated": 10536
+        },
+        "MsGPUWait": {
+          "mean_ms": 0.19595992786636296,
+          "median_ms": 0.0848,
+          "populated": 10536
+        },
+        "MsCPUWait": {
+          "mean_ms": 0.15965619779802584,
+          "median_ms": 0.1476,
+          "populated": 10536
+        }
+      },
+      "alignment": {
+        "first_row": 10058,
+        "last_row": 20593,
+        "correlation": 0.8895443221949002,
+        "peak_margin": 0.32089687311265,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "frames": 3512,
+            "presentmon_row": 10058,
+            "lag_frames": 0,
+            "correlation": 0.8071763592379102,
+            "peak_margin": 0.5420901689452029
+          },
+          {
+            "native_offset": 3512,
+            "frames": 3512,
+            "presentmon_row": 13570,
+            "lag_frames": 0,
+            "correlation": 0.8378741863571236,
+            "peak_margin": 0.5862253807148627
+          },
+          {
+            "native_offset": 7024,
+            "frames": 3512,
+            "presentmon_row": 17082,
+            "lag_frames": 0,
+            "correlation": 0.8996679012133281,
+            "peak_margin": 0.3022539487029132
+          }
+        ],
+        "max_block_lag": 0,
+        "exact_block_agreement": true,
+        "row_index_basis": "zero-based data rows, CSV header excluded",
+        "game_fps_delta_pct": -0.001811324451495011,
+        "game_duration_delta_s": 0.0011620149414142134,
+        "duration_basis": "sum of the window's N frame intervals",
+        "qpc": {
+          "first_ms": 27401265.2327,
+          "last_ms": 27465516.8478,
+          "end_ms": 27465523.009400003,
+          "interval_max_error_ms": 3.695488359767296e-09,
+          "native_span_delta_ms": 1.445099999946251,
+          "native_elapsed_max_error_ms": 6.241199999720266,
+          "duration_s": 64.25777670000005,
+          "policy": "Continuity check only; cannot exclude upstream ETW loss or establish frame identity."
+        },
+        "boundary_sensitivity": [
+          {
+            "first_row": 10058,
+            "avg_fps": 163.96458982994972,
+            "MsBetweenPresents": 6.098877818906606,
+            "MsGPUBusy": 5.854328635155657,
+            "MsCPUBusy": 5.9392216211085795,
+            "MsGPUWait": 0.19595992786636296,
+            "MsCPUWait": 0.15965619779802584
+          }
+        ]
+      }
+    },
+    "fs720_r1": {
+      "full_benchmark": {
+        "frames": 11942,
+        "duration_s": 64.2643997,
+        "avg_fps": 185.82605697318917,
+        "ft_avg_ms": 5.38137662870541,
+        "ft_median_ms": 4.87925,
+        "ft_p95_ms": 8.138239999999998,
+        "ft_p99_ms": 9.392733000000002,
+        "fps_1pct_low_time": 95.6138680204768,
+        "fps_01pct_low_time": 82.41531826048735,
+        "fps_1pct_low_p99": 106.4652854499324,
+        "fps_01pct_low_p999": 92.01074729693578,
+        "spikes": 2,
+        "spikes_per_min": 1.8672857843562802,
+        "severe_spikes": 0,
+        "spike_time_lost_ms": 14.174900000000001
+      },
+      "signals": {
+        "MsGPUBusy": {
+          "mean_ms": 4.171984793166974,
+          "median_ms": 4.1429,
+          "populated": 11942
+        },
+        "MsCPUBusy": {
+          "mean_ms": 5.2296897253391394,
+          "median_ms": 4.7398,
+          "populated": 11942
+        },
+        "MsGPUWait": {
+          "mean_ms": 1.1068915592028137,
+          "median_ms": 0.8331999999999999,
+          "populated": 11942
+        },
+        "MsCPUWait": {
+          "mean_ms": 0.15168690336627028,
+          "median_ms": 0.1398,
+          "populated": 11942
+        }
+      },
+      "alignment": {
+        "first_row": 6415,
+        "last_row": 18356,
+        "correlation": 0.9470023321404893,
+        "peak_margin": 0.10673122832913295,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "frames": 3980,
+            "presentmon_row": 6414,
+            "lag_frames": -1,
+            "correlation": 0.9097369924319807,
+            "peak_margin": 0.36867470753140363
+          },
+          {
+            "native_offset": 3980,
+            "frames": 3981,
+            "presentmon_row": 10395,
+            "lag_frames": 0,
+            "correlation": 0.7215370889300837,
+            "peak_margin": 0.3653981100045489
+          },
+          {
+            "native_offset": 7961,
+            "frames": 3981,
+            "presentmon_row": 14376,
+            "lag_frames": 0,
+            "correlation": 0.9099910056357956,
+            "peak_margin": 0.24010446379819295
+          }
+        ],
+        "max_block_lag": 1,
+        "exact_block_agreement": false,
+        "row_index_basis": "zero-based data rows, CSV header excluded",
+        "game_fps_delta_pct": 0.0019910389207122847,
+        "game_duration_delta_s": -0.001278705761720289,
+        "duration_basis": "sum of the window's N frame intervals",
+        "qpc": {
+          "first_ms": 27615570.4396,
+          "last_ms": 27679827.4585,
+          "end_ms": 27679834.839300003,
+          "interval_max_error_ms": 3.713369167712699e-09,
+          "native_span_delta_ms": 1.668900003300223,
+          "native_elapsed_max_error_ms": 5.529400003513729,
+          "duration_s": 64.26439970000328,
+          "policy": "Continuity check only; cannot exclude upstream ETW loss or establish frame identity."
+        },
+        "boundary_sensitivity": [
+          {
+            "first_row": 6414,
+            "avg_fps": 185.83467545666238,
+            "MsBetweenPresents": 5.381127055769553,
+            "MsGPUBusy": 4.171919251381679,
+            "MsCPUBusy": 5.229440085412829,
+            "MsGPUWait": 1.1066541450343326,
+            "MsCPUWait": 0.15168697035672415
+          },
+          {
+            "first_row": 6415,
+            "avg_fps": 185.82605697318914,
+            "MsBetweenPresents": 5.38137662870541,
+            "MsGPUBusy": 4.171984793166974,
+            "MsCPUBusy": 5.2296897253391394,
+            "MsGPUWait": 1.1068915592028137,
+            "MsCPUWait": 0.15168690336627028
+          },
+          {
+            "first_row": 6416,
+            "avg_fps": 185.82350171352394,
+            "MsBetweenPresents": 5.381450628035505,
+            "MsGPUBusy": 4.172028563054765,
+            "MsCPUBusy": 5.2297639591358225,
+            "MsGPUWait": 1.106898341986267,
+            "MsCPUWait": 0.1516866688996818
+          }
+        ]
+      }
+    },
+    "fs1440_r2": {
+      "full_benchmark": {
+        "frames": 7191,
+        "duration_s": 64.2596169,
+        "avg_fps": 111.90542905337489,
+        "ft_avg_ms": 8.936116937838966,
+        "ft_median_ms": 8.9096,
+        "ft_p95_ms": 11.0451,
+        "ft_p99_ms": 12.210570000000002,
+        "fps_1pct_low_time": 74.84563469709208,
+        "fps_01pct_low_time": 65.53973280761728,
+        "fps_1pct_low_p99": 81.89625873321228,
+        "fps_01pct_low_p999": 70.53737203991656,
+        "spikes": 0,
+        "spikes_per_min": 0.0,
+        "severe_spikes": 0,
+        "spike_time_lost_ms": 0.0
+      },
+      "signals": {
+        "MsGPUBusy": {
+          "mean_ms": 8.80065953274927,
+          "median_ms": 8.8183,
+          "populated": 7191
+        },
+        "MsCPUBusy": {
+          "mean_ms": 8.780122486441384,
+          "median_ms": 8.7575,
+          "populated": 7191
+        },
+        "MsGPUWait": {
+          "mean_ms": 0.10762771519955501,
+          "median_ms": 0.086,
+          "populated": 7191
+        },
+        "MsCPUWait": {
+          "mean_ms": 0.1559944513975803,
+          "median_ms": 0.1467,
+          "populated": 7191
+        }
+      },
+      "alignment": {
+        "first_row": 7360,
+        "last_row": 14550,
+        "correlation": 0.8872772039494455,
+        "peak_margin": 0.4314235513115794,
+        "block_checks": [
+          {
+            "native_offset": 0,
+            "frames": 2397,
+            "presentmon_row": 7360,
+            "lag_frames": 0,
+            "correlation": 0.8630623486062566,
+            "peak_margin": 0.5588741351737854
+          },
+          {
+            "native_offset": 2397,
+            "frames": 2397,
+            "presentmon_row": 9757,
+            "lag_frames": 0,
+            "correlation": 0.8734985140839396,
+            "peak_margin": 0.5662095470982736
+          },
+          {
+            "native_offset": 4794,
+            "frames": 2397,
+            "presentmon_row": 12154,
+            "lag_frames": 0,
+            "correlation": 0.8635660712942252,
+            "peak_margin": 0.486359165886422
+          }
+        ],
+        "max_block_lag": 0,
+        "exact_block_agreement": true,
+        "row_index_basis": "zero-based data rows, CSV header excluded",
+        "game_fps_delta_pct": -0.0007881430217904217,
+        "game_duration_delta_s": 0.0005074029296849858,
+        "duration_basis": "sum of the window's N frame intervals",
+        "qpc": {
+          "first_ms": 27842798.9311,
+          "last_ms": 27907048.3165,
+          "end_ms": 27907058.548,
+          "interval_max_error_ms": 3.713369167712699e-09,
+          "native_span_delta_ms": 1.165400000878435,
+          "native_elapsed_max_error_ms": 5.337999999090243,
+          "duration_s": 64.25961690000096,
+          "policy": "Continuity check only; cannot exclude upstream ETW loss or establish frame identity."
+        },
+        "boundary_sensitivity": [
+          {
+            "first_row": 7360,
+            "avg_fps": 111.90542905337489,
+            "MsBetweenPresents": 8.936116937838966,
+            "MsGPUBusy": 8.80065953274927,
+            "MsCPUBusy": 8.780122486441384,
+            "MsGPUWait": 0.10762771519955501,
+            "MsCPUWait": 0.1559944513975803
+          }
+        ]
+      }
+    }
+  },
+  "script_sha256": "fa3770be55a78b447dad6910e6a2d867263a7190f3b586abdcc9d50f6a0762d6"
+}

@@ -1,0 +1,1 @@
+manifest incompleto: mancava expected_bytecode, che il runner usa per riverificare il bytecode a ogni run. Nessuna misura era stata presa. Sostituito.

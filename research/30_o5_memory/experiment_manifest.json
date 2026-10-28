@@ -1,0 +1,56 @@
+{
+  "experiment_id": "O5_20260906_184151",
+  "created_at": "2026-09-06T18:41:51.181582+02:00",
+  "cycle": "O5",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_file": "MiniEngine/Model/Renderer.cpp",
+  "reuses_builds_from": "research/29_o4_sampler",
+  "variants": {
+    "s_base": "    SamplerDesc DefaultSamplerDesc;\n    DefaultSamplerDesc.MaxAnisotropy = 8;",
+    "s_aniso1": "    SamplerDesc DefaultSamplerDesc;\n    DefaultSamplerDesc.MaxAnisotropy = 1;",
+    "s_point": "    SamplerDesc DefaultSamplerDesc;\n    DefaultSamplerDesc.MaxAnisotropy = 1;\n    DefaultSamplerDesc.Filter = D3D12_FILTER_MIN_MAG_MIP_POINT;",
+    "s_bilinear": "    SamplerDesc DefaultSamplerDesc;\n    DefaultSamplerDesc.MaxAnisotropy = 1;\n    DefaultSamplerDesc.Filter = D3D12_FILTER_MIN_MAG_LINEAR_MIP_POINT;"
+  },
+  "expected_bytecode": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "expected_artifact": {
+    "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\29_o4_sampler\\preregistered\\A\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+    "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+    "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "custom_hash": "52CE6C5E64AB2E82",
+    "bytecode_bytes": 12612
+  },
+  "set_sizes": {
+    "stage_tex": 16,
+    "tcp_ta": 320,
+    "l1l2": 96,
+    "dram": 144
+  },
+  "set_passes_measured_offline": {
+    "stage_tex": 2,
+    "tcp_ta": 1,
+    "l1l2": 1,
+    "dram": 1
+  },
+  "ablation_kind": "classification - no image claim, no accepted optimisation",
+  "preregistered_criteria": {
+    "A_question": "what fraction of the texture instructions issued inside the Render Color scope comes from the vertex stage rather than the pixel stage",
+    "A_prediction": "< 1 %. ModelViewerVS.hlsl contains no Texture object and no Sample call, so the vertex stage should issue zero texture instructions.",
+    "A_consequence": "if the vertex share exceeds 5 %, every texture ratio in O2, O3 and O4 that divided a whole-block TA counter by SQ_PS INSTS_TEX_LOAD is biased and must be restated with the corrected denominator.",
+    "A_caveat": "the PS and VS masks of one SQ event cannot share a hardware pass, so this comparison is inherently cross-pass. O2 established that aggregate work counters are reproducible across passes and that INSTS_TEX_LOAD carries an emulation band of +-0.4 %; both are reported alongside the result.",
+    "B_question": "is the texture addresser's busy time work, or waiting on the L0 cache",
+    "B_metric": "sum over the 80 CUs of TCP_PERF_SEL_TCP_TA_REQ_STALL divided by the sum of TA_PERF_SEL_TA_BUSY, both read in the same single pass",
+    "B_bands": "stall/busy >= 30 % -> the addresser is predominantly held back by the L0 vector cache, so the 94 % TexUnitBusy of 2N is a cache symptom; <= 10 % -> the L0 cache is not what keeps the addresser busy; in between -> inconclusive and O6 must discriminate. Bands fixed before any measurement.",
+    "B_unit_caveat": "TCP and TA counters are cycle counters of two different blocks. Their ratio is treated as an indicator, not an identity, unless the sampler intervention moves it in the direction its meaning predicts.",
+    "C_question": "where do the texture fetches land - L0, L1, L2 or DRAM",
+    "C_metrics": "hit rate at each level (1 - miss/req), DRAM read bytes computed as 32*EA_RDREQ_32B + 64*EA_RDREQ_64B + 96*EA_RDREQ_96B + 128*EA_RDREQ_128B, and misses per pixel-stage texture instruction",
+    "D_intervention": "the four O4 sampler builds are a memory-traffic lever at byte-identical bytecode: point filtering reads one texel per quad where bilinear reads four. Dose = TCP REQ and L0 misses; response = TA_BUSY and the stall ratio. A cache-bound pass must show the stall ratio fall when the traffic falls.",
+    "statistic": "median over >= 32 samples per run, >= 3 independent processes for the baseline profile, order interleaved; work counters are reported with their across-process spread and no single-run value is used alone",
+    "timing_source": "GPUTime and GPUBusyCycles are NOT re-measured here. Mixing a derived counter into a raw set costs an extra pass, and O4 already measured them on these exact executables. O4's response table is the timing reference and is cited as such.",
+    "o6_rule": "O6 replicates or falsifies whichever cause O5 ranks first, with a fresh fixed-bytecode intervention chosen to make that cause's prediction fail if it is wrong. The intervention is written down before it is run."
+  },
+  "workspace_budget_bytes": 8000000000
+}

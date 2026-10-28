@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-16T22:13:23.567841+00:00",
+  "result": "PASS_READONLY_PROBE_PREPARATION",
+  "unit_checks_passed": true,
+  "installed_probe_hash_verified": true,
+  "original_host_shader_addon_unchanged": true,
+  "mode": "canary",
+  "ownership_manifest_updated": true,
+  "local_links_checked": 77,
+  "game_processes": [],
+  "probe_runtime_tested": false,
+  "visual_canary_gate_passed": false,
+  "root_cause_identified": false,
+  "end_to_end_visual_regression_available": false,
+  "performance_claim": false,
+  "loader_tool_sha256": "7a681396361f91f0200d9d47518f3d9d67c50f0b7c8fdda0d05b4618bc974599"
+}

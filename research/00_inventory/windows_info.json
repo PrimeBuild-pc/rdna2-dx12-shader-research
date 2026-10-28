@@ -1,0 +1,16 @@
+{
+ "os": {
+  "Caption": "Microsoft Windows 11 Pro",
+  "Version": "10.0.26200",
+  "BuildNumber": "26200",
+  "OSArchitecture": "64-bit",
+  "InstallDate": "/Date(1764571696000)/",
+  "LastBootUpTime": "/Date(1788454949500)/"
+ },
+ "ubr": "9168",
+ "display_version": "25H2",
+ "hags": "2",
+ "game_dvr": "0",
+ "power_plan": "zoic's ultimate performance(amd)",
+ "defender_rtp": "False"
+}

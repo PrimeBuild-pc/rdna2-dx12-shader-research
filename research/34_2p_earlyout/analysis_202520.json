@@ -1,0 +1,262 @@
+{
+  "experiment_id": "P_20260906_201451",
+  "criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image decoded to float32. Accept only if the maximum relative channel error over all 1920x1080x3 channels is <= 1e-3 and no channel is non-finite. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, 3 independent processes per variant, order interleaved and reversed. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND all three paired process deltas are negative, AND correctness passes.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build."
+  },
+  "n95": {
+    "GPUBusyCycles": 0.5988863509573382,
+    "GPUTime": 13.048060708263067,
+    "TA_BUSY": 0.4677432162168149
+  },
+  "thresholds": {
+    "GPUBusyCycles": 1.7966590528720148,
+    "GPUTime": 39.144182124789204,
+    "TA_BUSY": 1.4032296486504447
+  },
+  "medians": {
+    "base": {
+      "GPUBusyCycles": 1186365.0,
+      "GPUTime": 802680.0,
+      "TA_BUSY": 88362486.5,
+      "PS_tex": 6111022.5,
+      "PS_VALU": 70964095.5,
+      "PS_VALU_cycles": 183102272.0,
+      "PS_waves": 39183.5
+    },
+    "combo": {
+      "GPUBusyCycles": 1099545.5,
+      "GPUTime": 744780.0,
+      "TA_BUSY": 76401091.0,
+      "PS_tex": 4871290.0,
+      "PS_VALU": 68891869.5,
+      "PS_VALU_cycles": 166026682.0,
+      "PS_waves": 39137.0
+    },
+    "falloffskip": {
+      "GPUBusyCycles": 858146.0,
+      "GPUTime": 611360.0,
+      "TA_BUSY": 65654636.5,
+      "PS_tex": 5263241.5,
+      "PS_VALU": 42135253.0,
+      "PS_VALU_cycles": 101383173.5,
+      "PS_waves": 39132.5
+    },
+    "ndotlskip": {
+      "GPUBusyCycles": 1070704.0,
+      "GPUTime": 734620.0,
+      "TA_BUSY": 81133150.5,
+      "PS_tex": 5735749.5,
+      "PS_VALU": 63060189.0,
+      "PS_VALU_cycles": 154258432.0,
+      "PS_waves": 39137.0
+    }
+  },
+  "verdicts": {
+    "combo": {
+      "metrics": {
+        "GPUBusyCycles": {
+          "median": -7.318110362325254,
+          "per_process": [
+            -7.2347559987183425,
+            -7.163498753992356,
+            -7.398983468719066,
+            -7.639450639265516,
+            -7.318110362325254
+          ]
+        },
+        "GPUTime": {
+          "median": -7.888097358266548,
+          "per_process": [
+            -9.697542063275096,
+            -6.61425996394953,
+            -9.146858025614192,
+            5.192242642913519,
+            -7.888097358266548
+          ]
+        },
+        "TA_BUSY": {
+          "median": -13.543201955956729,
+          "per_process": [
+            -13.61857114961179,
+            -13.499000156565808,
+            -13.527261864624526,
+            -13.658462177334288,
+            -13.543201955956729
+          ]
+        }
+      },
+      "performance_accepted": true,
+      "final": "ACCEPTED",
+      "correctness": {
+        "pair": [
+          "base_image_r1",
+          "combo_image_r1"
+        ],
+        "identical": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0,
+        "max_abs_error": 0.0,
+        "max_rel_error": 0.0,
+        "nonfinite_channels": 0,
+        "passed": true
+      }
+    },
+    "falloffskip": {
+      "metrics": {
+        "GPUBusyCycles": {
+          "median": -27.59293048700078,
+          "per_process": [
+            -27.736564592983132,
+            -27.534805231331738,
+            -27.59293048700078,
+            -28.085410591192044,
+            -27.563776746616764
+          ]
+        },
+        "GPUTime": {
+          "median": -23.54612049633727,
+          "per_process": [
+            -24.62907274399185,
+            -23.47286200680953,
+            -23.54612049633727,
+            -14.223700529935732,
+            -24.314831305036115
+          ]
+        },
+        "TA_BUSY": {
+          "median": -25.638865246459375,
+          "per_process": [
+            -25.895871997504997,
+            -25.609558572573967,
+            -25.638865246459375,
+            -26.048337599516213,
+            -25.517177473270852
+          ]
+        }
+      },
+      "performance_accepted": true,
+      "final": "ACCEPTED",
+      "correctness": {
+        "pair": [
+          "base_image_r1",
+          "falloffskip_image_r1"
+        ],
+        "identical": true,
+        "changed_pixels": 0,
+        "changed_fraction": 0.0,
+        "max_abs_error": 0.0,
+        "max_rel_error": 0.0,
+        "nonfinite_channels": 0,
+        "passed": true
+      }
+    },
+    "ndotlskip": {
+      "metrics": {
+        "GPUBusyCycles": {
+          "median": -9.76371434863028,
+          "per_process": [
+            -9.76371434863028,
+            -9.567505911198781,
+            -9.58166736088041,
+            -10.164735178220685,
+            -9.813505961487401
+          ]
+        },
+        "GPUTime": {
+          "median": -8.476867614660524,
+          "per_process": [
+            -8.855033924000297,
+            -8.476867614660524,
+            -8.396870483879006,
+            4.758146352463637,
+            -9.144652221232809
+          ]
+        },
+        "TA_BUSY": {
+          "median": -8.27228214821885,
+          "per_process": [
+            -8.405975971285882,
+            -8.27228214821885,
+            -8.090816560535629,
+            -8.669488436195442,
+            -8.18145378921631
+          ]
+        }
+      },
+      "performance_accepted": true,
+      "final": "REJECTED (correctness)",
+      "correctness": {
+        "pair": [
+          "base_image_r1",
+          "ndotlskip_image_r1"
+        ],
+        "identical": false,
+        "changed_pixels": 2,
+        "changed_fraction": 9.645061728395062e-07,
+        "max_abs_error": 0.0625,
+        "max_rel_error": 0.01315789483487606,
+        "nonfinite_channels": 0,
+        "passed": false
+      }
+    }
+  },
+  "correctness": {
+    "base_vs_base": {
+      "pair": [
+        "base_image_r1",
+        "base_image_r2"
+      ],
+      "identical": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "nonfinite_channels": 0
+    },
+    "combo": {
+      "pair": [
+        "base_image_r1",
+        "combo_image_r1"
+      ],
+      "identical": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "nonfinite_channels": 0,
+      "passed": true
+    },
+    "falloffskip": {
+      "pair": [
+        "base_image_r1",
+        "falloffskip_image_r1"
+      ],
+      "identical": true,
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_abs_error": 0.0,
+      "max_rel_error": 0.0,
+      "nonfinite_channels": 0,
+      "passed": true
+    },
+    "ndotlskip": {
+      "pair": [
+        "base_image_r1",
+        "ndotlskip_image_r1"
+      ],
+      "identical": false,
+      "changed_pixels": 2,
+      "changed_fraction": 9.645061728395062e-07,
+      "max_abs_error": 0.0625,
+      "max_rel_error": 0.01315789483487606,
+      "nonfinite_channels": 0,
+      "passed": false
+    }
+  }
+}

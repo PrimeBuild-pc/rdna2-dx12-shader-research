@@ -1,0 +1,53 @@
+{
+  "verdict": "PASS",
+  "checks": {
+    "TA_BUSY": true,
+    "PS tex instructions": true,
+    "GPUBusyCycles": true,
+    "B_d_ta_busy": true,
+    "B_d_gpu_busy_cycles": true,
+    "C_d_tex": true,
+    "C_d_ta_busy": true,
+    "C_d_gpu_busy_cycles": true,
+    "C_marginal": true
+  },
+  "historical": {
+    "A": {
+      "ta_busy": 88700482,
+      "gpu_busy_cycles": 1189003,
+      "ps_tex": 6111703,
+      "source": "O5 tcp_ta / O4 resp / O5 stage_tex, s_base"
+    },
+    "B": {
+      "d_ta_busy": -3.5,
+      "d_gpu_busy_cycles": -2.63,
+      "source": "O5 tcp_ta + O4 resp, s_point vs s_base"
+    },
+    "C": {
+      "d_ta_busy": -61.57,
+      "d_gpu_busy_cycles": -60.2,
+      "d_tex": -68.05,
+      "marginal_cycles_per_instr": 13.13,
+      "source": "O6, L32 vs L128"
+    }
+  },
+  "criteria": {
+    "arm_A": "aggregate work counters (TA_BUSY, SQ_PS INSTS_TEX_LOAD) within +-2 % of the historical baseline; GPUBusyCycles within +-5 %. Work counters are exact, timing is not.",
+    "arm_B": "delta(s_point vs s_base) must keep its sign and land within max(1.0 percentage point, 50 % of the historical effect) of the historical delta, on TA_BUSY and GPUBusyCycles.",
+    "arm_C": "delta(L32 vs L128) must keep its sign and land within 5 percentage points of the historical delta on TA_BUSY, GPUBusyCycles and the texture instruction dose; and the implied marginal cost must stay inside O6's preregistered [10, 19] cycles band.",
+    "statistic": "32 samples per run, 3 independent processes per variant per set, order interleaved then reversed then interleaved, exactly as in O4/O6.",
+    "verdict": "CLEAN_REPLICATION = PASS only if all three arms meet their criterion. Old and new measurements are never pooled; a divergence is investigated, not averaged away.",
+    "environment": "verified idle before measuring: no browser, no Discord, no game, no encoder; total GPU utilisation 1.69 % (desktop compositor only), live CPU under 0.5 %."
+  },
+  "measured": {
+    "ta_busy": 88701626.0,
+    "ps_tex": 6112391.5,
+    "gpu_busy_cycles": 1186279.5,
+    "gpu_time": 793700.0,
+    "gpu_time_per_process": [
+      793700.0,
+      711300.0,
+      796880.0
+    ]
+  }
+}

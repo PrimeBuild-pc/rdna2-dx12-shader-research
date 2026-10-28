@@ -1,0 +1,117 @@
+{
+  "checked": "every non-superseded cycle: build records against their manifest's preregistered bytecode, and every run against the build record it claims",
+  "cycles": {
+    "24_phase2o_build_gate": {
+      "builds": 0,
+      "runs": 0,
+      "problems": []
+    },
+    "24_phase2o_build_gate_FAILED_A_01": {
+      "builds": 0,
+      "runs": 0,
+      "problems": []
+    },
+    "24_phase2o_build_gate_FAILED_prepare_01": {
+      "builds": 0,
+      "runs": 0,
+      "problems": []
+    },
+    "27_o2_counters": {
+      "builds": 1,
+      "runs": 9,
+      "problems": []
+    },
+    "27_o2_counters_FAILED_build_01": {
+      "builds": 0,
+      "runs": 0,
+      "problems": []
+    },
+    "28_o3_material_ablation": {
+      "builds": 4,
+      "runs": 18,
+      "problems": []
+    },
+    "29_o4_sampler": {
+      "builds": 5,
+      "runs": 23,
+      "problems": []
+    },
+    "30_o5_memory": {
+      "builds": 4,
+      "runs": 42,
+      "problems": []
+    },
+    "31_o6_lightcount": {
+      "builds": 4,
+      "runs": 36,
+      "problems": []
+    },
+    "32_clean_replication": {
+      "builds": 4,
+      "runs": 31,
+      "problems": []
+    },
+    "33_2p_shadelights": {
+      "builds": 3,
+      "runs": 27,
+      "problems": []
+    },
+    "34_2p_earlyout": {
+      "builds": 4,
+      "runs": 32,
+      "problems": []
+    },
+    "35_2p_cycle3": {
+      "builds": 3,
+      "runs": 33,
+      "problems": []
+    },
+    "36_2p_cycle4": {
+      "builds": 4,
+      "runs": 32,
+      "problems": []
+    },
+    "37_2p_cycle5": {
+      "builds": 4,
+      "runs": 32,
+      "problems": []
+    },
+    "38_2p_cycle6": {
+      "builds": 3,
+      "runs": 24,
+      "problems": []
+    },
+    "39_2p_cycle7": {
+      "builds": 3,
+      "runs": 24,
+      "problems": []
+    },
+    "40_2q_fullprecision": {
+      "builds": 8,
+      "runs": 0,
+      "problems": []
+    },
+    "41_2q_cycle2": {
+      "builds": 2,
+      "runs": 0,
+      "problems": []
+    },
+    "42_2q_replication": {
+      "builds": 3,
+      "runs": 30,
+      "problems": []
+    },
+    "43_2r_workload": {
+      "builds": 1,
+      "runs": 5,
+      "problems": []
+    },
+    "44_2r_cycle2": {
+      "builds": 4,
+      "runs": 24,
+      "problems": []
+    }
+  },
+  "total_problems": 0,
+  "problems": []
+}

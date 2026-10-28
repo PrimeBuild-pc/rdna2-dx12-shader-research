@@ -1,0 +1,265 @@
+{
+  "experiment_id": "P_20260907_000419",
+  "created_at": "2026-09-07T00:04:20.759470+02:00",
+  "phase": "2P",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419",
+  "workspace_owner_experiment_id": "P_20260907_000419",
+  "inherits_workspace_from": null,
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_files": [
+    "MiniEngine/Model/Shaders/Lighting.hlsli"
+  ],
+  "transforms": {
+    "fresnel5": {
+      "kind": "alu_only",
+      "equivalence": "x^5 by repeated multiplication instead of exp2(5*log2(x)). Mathematically identical, including at x = 0 (log2(0) = -inf, exp2(-inf) = 0). Not bit-identical: the multiply form is the more accurate of the two, so the image is compared with a tolerance, not by hash.",
+      "texture_work": "unchanged by construction - no sample, load or address is touched"
+    },
+    "shadowskip": {
+      "kind": "texture_and_alu",
+      "equivalence": "the original returns shadow * lit. When lit is exactly zero the product is zero for any finite shadow, and GetShadowConeLight returns the square of a SampleCmpLevelZero result, which is finite and non-negative; when lit is non-zero the identical product is computed, and float multiplication is commutative and exact. So the surviving path is bit-identical and the skipped path returns the value it would have produced.",
+      "texture_work": "reduced, data-dependently: the four matrix loads, the matrix multiply, the rcp and the shadow-map sample are skipped for lights whose cone or distance falloff is zero at that pixel. The dose is measured, not assumed."
+    },
+    "falloffskip": {
+      "kind": "alu_only_dynamic",
+      "equivalence": "ApplyPointLight returns distanceFalloff * ApplyLightCommon(...) and ApplyConeLight returns (coneFalloff * distanceFalloff) * ApplyLightCommon(...). When that scalar factor is exactly zero the product is zero for any finite ApplyLightCommon result, and every term in it is finite: nDotH and nDotL are saturated into [0,1], pow(x, gloss) with x in [0,1] and gloss > 0 is in [0,1], and the albedo and light colours come from textures and the light buffer. max(0, ...) also normalises -0 to +0, so the comparison is exact. The non-zero path is untouched.",
+      "texture_work": "unchanged: no sample or load is skipped, only arithmetic. The shadow-map sample of the shadowed-cone path happens before this point in the unmodified code, so this transformation cannot reach it."
+    },
+    "ndotlskip": {
+      "kind": "alu_only_dynamic",
+      "equivalence": "ApplyLightCommon returns nDotL * lightColor * (...). nDotL is a saturated dot product, so it is exactly zero for every light at or behind the surface, and the product is then zero for any finite right-hand side. Computing nDotL first and returning early skips the half-vector normalise, both pow() calls and the Fresnel term for those lights. The surviving path computes exactly the same expression in the same order.",
+      "texture_work": "unchanged: arithmetic only"
+    },
+    "scalar": {
+      "kind": "wave_scalarisation",
+      "equivalence": "the engine's own SCALAR_BRANCH path. It runs the same three loops over the same tile light list in the same order; the only difference is that when every lane of a wave shares a tile - which a wave covering an 8x8 pixel block inside a 16x16 tile usually does - the tile offset is read once with WaveReadLaneFirst and the loop becomes uniform. The divergent case falls back to code identical to the original. Accumulation order is unchanged, so the image must be bit-identical; if it is not, that is the finding.",
+      "texture_work": "unchanged in count; what changes is whether the loads can be scalar"
+    },
+    "stack3_scalar": {
+      "kind": "final_candidate",
+      "equivalence": "stack3 and the SCALAR_BRANCH path together.",
+      "texture_work": "as stack3, with the same scalarisation opportunity"
+    },
+    "stack4_scalar": {
+      "kind": "final_candidate_not_bit_identical",
+      "equivalence": "stack3_scalar plus ndotlskip, which in P2 changed two pixels by one ULP. Judged under the same ULP rule.",
+      "texture_work": "as stack3_scalar"
+    }
+  },
+  "transform_edits": {
+    "fresnel5": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float fresnel = pow(1.0 - saturate(dot(lightDir, halfVec)), 5.0);",
+        "    float f1 = 1.0 - saturate(dot(lightDir, halfVec));\n    float f2 = f1 * f1;\n    float fresnel = f2 * f2 * f1;"
+      ]
+    ],
+    "shadowskip": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n\n    return shadow * ApplyConeLight(\n",
+        "    float3 lit = ApplyConeLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        coneAngles\n        );\n}\n",
+        "        coneAngles\n        );\n\n    if (!any(lit != 0.0))\n        return 0.0;\n\n    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    return GetShadowConeLight(lightIndex, shadowCoord.xyz) * lit;\n}\n"
+      ]
+    ],
+    "falloffskip": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return distanceFalloff * ApplyLightCommon(\n",
+        "    if (distanceFalloff == 0.0)\n        return 0.0;\n\n    return distanceFalloff * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return (coneFalloff * distanceFalloff) * ApplyLightCommon(\n",
+        "    float atten = coneFalloff * distanceFalloff;\n    if (atten == 0.0)\n        return 0.0;\n\n    return atten * ApplyLightCommon(\n"
+      ]
+    ],
+    "ndotlskip": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float3 halfVec = normalize(lightDir - viewDir);\n    float nDotH = saturate(dot(halfVec, normal));\n\n    FSchlick( diffuseColor, specularColor, lightDir, halfVec );\n\n    float specularFactor = specularMask * pow(nDotH, gloss) * (gloss + 2) / 8;\n\n    float nDotL = saturate(dot(normal, lightDir));\n\n    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n",
+        "    float nDotL = saturate(dot(normal, lightDir));\n    if (nDotL == 0.0)\n        return 0.0;\n\n    float3 halfVec = normalize(lightDir - viewDir);\n    float nDotH = saturate(dot(halfVec, normal));\n\n    FSchlick( diffuseColor, specularColor, lightDir, halfVec );\n\n    float specularFactor = specularMask * pow(nDotH, gloss) * (gloss + 2) / 8;\n\n    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n"
+      ]
+    ],
+    "scalar": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "#if 0 // SM6.0\n#define _WAVE_OP\n#endif\n",
+        "#if 1 // SM6.0\n#define _WAVE_OP\n#endif\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "//# define BIT_MASK\n# define BIT_MASK_SORTED\n//# define SCALAR_LOOP\n//# define SCALAR_BRANCH\n",
+        "//# define BIT_MASK\n//# define BIT_MASK_SORTED\n//# define SCALAR_LOOP\n# define SCALAR_BRANCH\n"
+      ]
+    ],
+    "stack3_scalar": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float fresnel = pow(1.0 - saturate(dot(lightDir, halfVec)), 5.0);",
+        "    float f1 = 1.0 - saturate(dot(lightDir, halfVec));\n    float f2 = f1 * f1;\n    float fresnel = f2 * f2 * f1;"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n\n    return shadow * ApplyConeLight(\n",
+        "    float3 lit = ApplyConeLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        coneAngles\n        );\n}\n",
+        "        coneAngles\n        );\n\n    if (!any(lit != 0.0))\n        return 0.0;\n\n    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    return GetShadowConeLight(lightIndex, shadowCoord.xyz) * lit;\n}\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return distanceFalloff * ApplyLightCommon(\n",
+        "    if (distanceFalloff == 0.0)\n        return 0.0;\n\n    return distanceFalloff * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return (coneFalloff * distanceFalloff) * ApplyLightCommon(\n",
+        "    float atten = coneFalloff * distanceFalloff;\n    if (atten == 0.0)\n        return 0.0;\n\n    return atten * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "#if 0 // SM6.0\n#define _WAVE_OP\n#endif\n",
+        "#if 1 // SM6.0\n#define _WAVE_OP\n#endif\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "//# define BIT_MASK\n# define BIT_MASK_SORTED\n//# define SCALAR_LOOP\n//# define SCALAR_BRANCH\n",
+        "//# define BIT_MASK\n//# define BIT_MASK_SORTED\n//# define SCALAR_LOOP\n# define SCALAR_BRANCH\n"
+      ]
+    ],
+    "stack4_scalar": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float fresnel = pow(1.0 - saturate(dot(lightDir, halfVec)), 5.0);",
+        "    float f1 = 1.0 - saturate(dot(lightDir, halfVec));\n    float f2 = f1 * f1;\n    float fresnel = f2 * f2 * f1;"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n\n    return shadow * ApplyConeLight(\n",
+        "    float3 lit = ApplyConeLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        coneAngles\n        );\n}\n",
+        "        coneAngles\n        );\n\n    if (!any(lit != 0.0))\n        return 0.0;\n\n    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    return GetShadowConeLight(lightIndex, shadowCoord.xyz) * lit;\n}\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return distanceFalloff * ApplyLightCommon(\n",
+        "    if (distanceFalloff == 0.0)\n        return 0.0;\n\n    return distanceFalloff * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return (coneFalloff * distanceFalloff) * ApplyLightCommon(\n",
+        "    float atten = coneFalloff * distanceFalloff;\n    if (atten == 0.0)\n        return 0.0;\n\n    return atten * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "#if 0 // SM6.0\n#define _WAVE_OP\n#endif\n",
+        "#if 1 // SM6.0\n#define _WAVE_OP\n#endif\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "//# define BIT_MASK\n# define BIT_MASK_SORTED\n//# define SCALAR_LOOP\n//# define SCALAR_BRANCH\n",
+        "//# define BIT_MASK\n//# define BIT_MASK_SORTED\n//# define SCALAR_LOOP\n# define SCALAR_BRANCH\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float3 halfVec = normalize(lightDir - viewDir);\n    float nDotH = saturate(dot(halfVec, normal));\n\n    FSchlick( diffuseColor, specularColor, lightDir, halfVec );\n\n    float specularFactor = specularMask * pow(nDotH, gloss) * (gloss + 2) / 8;\n\n    float nDotL = saturate(dot(normal, lightDir));\n\n    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n",
+        "    float nDotL = saturate(dot(normal, lightDir));\n    if (nDotL == 0.0)\n        return 0.0;\n\n    float3 halfVec = normalize(lightDir - viewDir);\n    float nDotH = saturate(dot(halfVec, normal));\n\n    FSchlick( diffuseColor, specularColor, lightDir, halfVec );\n\n    float specularFactor = specularMask * pow(nDotH, gloss) * (gloss + 2) / 8;\n\n    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n"
+      ]
+    ]
+  },
+  "expected_bytecode": {
+    "base": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "falloffskip": "65b1569758c0a1c5c96937c949acdf1d83487767571c605c2248e90b1fc89149",
+    "fresnel5": "ff92e6680b1dac88a2c3af5ff2a285d40a036f9300cffe2b961cb5f7a6ad91f2",
+    "ndotlskip": "9c4a75b7b6fb928aca069ab5108813fcf4f2e9cad99ab3a0b59f81a02c2f8a38",
+    "scalar": "3778c0fea10920b07b78e4e484d6b7c152b1dda01c84527d822afa8dd98206fd",
+    "shadowskip": "a581387feff69a7eb92ac65ed48173aabb1e070a302d758c6e0a919b4630476d",
+    "stack3_scalar": "e02177c10114d31a30102b405285262ac6aab68b091b85edb988d1b91307f9bc",
+    "stack4_scalar": "62f4048577a09d51fc232fcf44ab1a07178ffd9282d66878128068a588d352f0"
+  },
+  "expected_artifact": {
+    "base": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\base\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+      "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+      "custom_hash": "52CE6C5E64AB2E82",
+      "bytecode_bytes": 12612
+    },
+    "falloffskip": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\falloffskip\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "4aad2bb40f98b6566e8eeda88bd793ee2ffd824d1a42163373045c985cdca1e3",
+      "bytecode_sha256": "65b1569758c0a1c5c96937c949acdf1d83487767571c605c2248e90b1fc89149",
+      "custom_hash": "F5D885B49518B360",
+      "bytecode_bytes": 12720
+    },
+    "fresnel5": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\fresnel5\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "4d61164783e368c66efeb9236f659cfc0ec6bfcb9c15e38776d0d4e49b9ef4b1",
+      "bytecode_sha256": "ff92e6680b1dac88a2c3af5ff2a285d40a036f9300cffe2b961cb5f7a6ad91f2",
+      "custom_hash": "497475102E01A389",
+      "bytecode_bytes": 12540
+    },
+    "ndotlskip": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\ndotlskip\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "40742772995f807e9ded8745aa625d1d85f152936eaadb13f34a9edaa4457a55",
+      "bytecode_sha256": "9c4a75b7b6fb928aca069ab5108813fcf4f2e9cad99ab3a0b59f81a02c2f8a38",
+      "custom_hash": "5A3B871532CF1409",
+      "bytecode_bytes": 12856
+    },
+    "scalar": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\scalar\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "0c30cb8cbe925fcc4d61a5207f792dab461cb05bfb4b1748dcc1b9eebb57b2c1",
+      "bytecode_sha256": "3778c0fea10920b07b78e4e484d6b7c152b1dda01c84527d822afa8dd98206fd",
+      "custom_hash": "9A38099F5B13AA89",
+      "bytecode_bytes": 15144
+    },
+    "shadowskip": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\shadowskip\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "2b9ab60f65e161846a4ec430850535f112971f8e47876d7e72087677b75f58b1",
+      "bytecode_sha256": "a581387feff69a7eb92ac65ed48173aabb1e070a302d758c6e0a919b4630476d",
+      "custom_hash": "3EEEF5D26C22E733",
+      "bytecode_bytes": 12672
+    },
+    "stack3_scalar": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\stack3_scalar\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "d5f5d637b85ca9b309206dc6681347160c231a4d3382b9c6ad422bc9a85cfa56",
+      "bytecode_sha256": "e02177c10114d31a30102b405285262ac6aab68b091b85edb988d1b91307f9bc",
+      "custom_hash": "B37467CCBE61E5C9",
+      "bytecode_bytes": 15420
+    },
+    "stack4_scalar": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\40_2q_fullprecision\\preregistered\\stack4_scalar\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "2fc4126cab2670713114c25930369fb30ddf0e454d7489dc863af346e9fdc41a",
+      "bytecode_sha256": "62f4048577a09d51fc232fcf44ab1a07178ffd9282d66878128068a588d352f0",
+      "custom_hash": "74888284D554FF59",
+      "bytecode_bytes": 15944
+    }
+  },
+  "compiler_already_does": [],
+  "ablation_kind": "optimisation candidates - semantics preserving, image quality unchanged",
+  "preregistered_criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image. The rule that decides is the `correctness_rule` field of this manifest and nothing else. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, AT LEAST 3 and preferably 5 independent processes per variant, order counterbalanced. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND every paired process delta is negative, AND correctness passes. N95 here is the largest of the pairwise differences between the base processes, not a statistical percentile, and those pairs are not independent of each other.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build.",
+    "correctness_rule": "ulp1_0.05pct",
+    "correctness_rule_text": "every differing channel differs by at most 1 ULP of its stored R11G11B10 representation, at most 0.05 % of channels differ at all, and no channel is non-finite. One ULP is the smallest change this render target can represent, so this admits a different rounding and nothing more."
+  },
+  "workspace_budget_bytes": 8000000000
+}

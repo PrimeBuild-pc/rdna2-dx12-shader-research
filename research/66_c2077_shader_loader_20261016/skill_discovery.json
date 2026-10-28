@@ -1,0 +1,39 @@
+[
+  {
+    "provider": "https://www.skillsdirectory.com/api/registry?q=",
+    "result": {
+      "registry": "skillsdirectory",
+      "version": "1.0.0",
+      "skills": [],
+      "pagination": {
+        "total": 0,
+        "limit": 3,
+        "offset": 0,
+        "hasMore": false
+      }
+    }
+  },
+  {
+    "provider": "https://skills.sh/api/search?q=",
+    "result": {
+      "query": "reshade shader replacement",
+      "searchType": "semantic",
+      "searchVersion": "algolia",
+      "skills": [],
+      "count": 0,
+      "duration_ms": 274,
+      "timings_ms": {
+        "rate_limit": 24.81633099995088,
+        "flags": 1.319554999936372,
+        "visibility": 22.996749999932945,
+        "retrieval": 272.69441999995615,
+        "algolia_processing": 205,
+        "repositories": 0.009124999982304871,
+        "ranking": 0.02174700004979968,
+        "search": 274,
+        "total": 299.0608979999088
+      },
+      "provider_duration_ms": 272.69441999995615
+    }
+  }
+]

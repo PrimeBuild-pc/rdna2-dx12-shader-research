@@ -1,0 +1,43 @@
+{
+  "workload": "D3D12DynamicIndexing",
+  "region": "the whole Draw cities region: every city mesh, one draw each",
+  "medians_ns": {
+    "ablate_ps": [
+      106520.0,
+      95280.0,
+      95280.0
+    ],
+    "base": [
+      95600.0,
+      95600.0,
+      95640.0,
+      95640.0,
+      95600.0
+    ]
+  },
+  "threshold_pct": 1.0,
+  "verdicts": {
+    "ablate_ps": {
+      "median_pct": -0.33472803347280333,
+      "per_process": [
+        11.37599330823923,
+        -0.37641154328732745,
+        -0.33472803347280333
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "ablate_ps_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 670548,
+        "max_abs_delta": 251,
+        "differing_fraction": 0.18189778645833332,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    }
+  }
+}

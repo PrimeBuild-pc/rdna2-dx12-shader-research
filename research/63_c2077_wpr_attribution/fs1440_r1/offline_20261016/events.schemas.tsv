@@ -1,0 +1,253 @@
+1	MSNT_SystemTrace	PerfInfo	SampleProf	0	2	46	InstructionPointer:0:16:1:8	ThreadId:0:8:1:4	Count:0:6:1:2	Reserved:0:6:1:2
+2	UNDECODABLE	1168
+3	MSNT_SystemTrace	Thread	DCStart	0	3	3	ProcessId:0:8:1:4	TThreadId:0:8:1:4	StackBase:0:16:1:8	StackLimit:0:16:1:8	UserStackBase:0:16:1:8	UserStackLimit:0:16:1:8	Affinity:0:16:1:8	Win32StartAddr:0:16:1:8	TebBase:0:16:1:8	SubProcessTag:0:8:1:4	BasePriority:0:4:1:1	PagePriority:0:4:1:1	IoPriority:0:4:1:1	ThreadFlags:0:4:1:1
+4	MSNT_SystemTrace	Thread	ReadyThread	0	2	50	TThreadId:0:8:1:4	AdjustReason:0:3:1:1	AdjustIncrement:0:3:1:1	Flag:0:3:1:1	Reserved:0:3:1:1
+5	MSNT_SystemTrace	Image	DCStart	0	3	3	ImageBase:0:16:1:8	ImageSize:0:16:1:8	ProcessId:0:8:1:4	ImageChecksum:0:8:1:4	TimeDateStamp:0:8:1:4	SignatureLevel:0:4:1:1	SignatureType:0:4:1:1	Reserved0:0:6:1:2	DefaultBase:0:16:1:8	Reserved1:0:8:1:4	Reserved2:0:8:1:4	Reserved3:0:8:1:4	Reserved4:0:8:1:4	FileName:0:1:1:0
+6	UNDECODABLE	1168
+7	UNDECODABLE	1168
+8	MSNT_SystemTrace	Thread	Start	0	3	1	ProcessId:0:8:1:4	TThreadId:0:8:1:4	StackBase:0:16:1:8	StackLimit:0:16:1:8	UserStackBase:0:16:1:8	UserStackLimit:0:16:1:8	Affinity:0:16:1:8	Win32StartAddr:0:16:1:8	TebBase:0:16:1:8	SubProcessTag:0:8:1:4	BasePriority:0:4:1:1	PagePriority:0:4:1:1	IoPriority:0:4:1:1	ThreadFlags:0:4:1:1
+9	MSNT_SystemTrace	Thread	SetPriority	0	3	48	ThreadId:0:8:1:4	OldPriority:0:4:1:1	NewPriority:0:4:1:1	Reserved:0:6:1:2
+10	MSNT_SystemTrace	Thread	SetBasePriority	0	3	49	ThreadId:0:8:1:4	OldPriority:0:4:1:1	NewPriority:0:4:1:1	Reserved:0:6:1:2
+11	MSNT_SystemTrace	Thread	SetName	0	2	72	ProcessId:0:8:1:4	ThreadId:0:8:1:4	ThreadName:0:1:1:0
+12	Microsoft-Windows-DxgKrnl	PagingOpMapApertureSegment2	Info 	510	0	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	SegmentId:0:8:1:4	OffsetInPages:0:10:1:8	NumberOfPages:0:10:1:8	Flags:0:8:1:4	EvictionResource:0:13:1:4
+13	Microsoft-Windows-DxgKrnl	ApertureMapping	Info 	51	0	0	hDevice:0:16:1:8	hAllocationGlobalHandle:0:16:1:8	size:0:10:1:8	bTemporary:0:13:1:4
+14	Microsoft-Windows-DxgKrnl	Profiler	Start 	105	0	1	Function:0:8:1:4
+15	Microsoft-Windows-DxgKrnl	Profiler	Stop 	106	0	2	Function:0:8:1:4
+16	Microsoft-Windows-DxgKrnl	PagingOpUpdatePageTable	Info 	309	1	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	PageTableLevel:0:8:1:4	PageTableAddress:0:10:1:8	SegmentId:0:8:1:4	NumPageTableUpdateEntries:0:8:1:4	PageTableEntries:0:16:1:8	PageTableEntries64KB:0:16:1:8	StartIndex:0:8:1:4	Flags:0:8:1:4	DriverProtection:0:10:1:8	AllocationOffsetInBytes:0:10:1:8	hProcess:0:16:1:8	UpdateMode:0:8:1:4	FirstPteVirtualAddress:0:10:1:8	PageTableObject:0:16:1:8
+17	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Start 	207	0	1	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4
+18	Microsoft-Windows-DxgKrnl	PagingOpFlushTlb	Info 	310	0	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	RootPageTableSegmentId:0:8:1:4	RootPageTableSegmentOffset:0:10:1:8	hProcess:0:16:1:8	StartVirtualAddress:0:10:1:8	EndVirtualAddress:0:10:1:8
+19	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Stop 	208	0	2	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4
+20	Microsoft-Windows-DxgKrnl	QueuePacket	Start 	178	1	1	hContext:0:16:1:8	PacketType:0:8:1:4	SubmitSequence:0:8:1:4	DmaBufferSize:0:10:1:8	AllocationListSize:0:8:1:4	PatchLocationListSize:0:8:1:4	bPresent:0:13:1:4	hDmaBuffer:0:16:1:8	pQueuePacket:0:16:1:8	ProgressFenceValue:0:10:1:8
+21	Microsoft-Windows-DxgKrnl	EtwVersion	Stop 	164	0	2	Version:0:8:1:4	Flags:0:10:1:8	Level:0:8:1:4
+22	Microsoft-Windows-DxgKrnl	DmaPacket	Stop 	176	0	2	hContext:0:16:1:8	PacketType:0:8:1:4	uliCompletionId:0:10:1:8	ulQueueSubmitSequence:0:8:1:4	bPreempted:0:13:1:4
+23	Microsoft-Windows-DxgKrnl	Process	DCStart 	491	0	3	DxgProcess:0:16:1:8	ProcessId:0:16:1:8	HostProcessHandle:0:8:1:4	ProcessFlags:0:8:1:4
+24	Microsoft-Windows-DxgKrnl	WorkerThread	Stop 	19	0	2	pDxgAdapter:0:16:1:8	EventId:0:8:1:4
+25	Microsoft-Windows-DxgKrnl	QueuePacket	Stop 	180	1	2	hContext:0:16:1:8	PacketType:0:8:1:4	SubmitSequence:0:8:1:4	bPreempted:0:13:1:4	bTimeouted:0:13:1:4	pQueuePacket:0:16:1:8
+26	Microsoft-Windows-DxgKrnl	VidSchiCompleteSignalCommmand	Info 	552	0	0	ObjectCount:0:8:1:4	VidSchSyncObjectArray:4:16:0:8	DxgSyncObjectArray:4:16:0:8	FenceValues:4:10:0:8	AlwaysSignaled:4:13:0:4	Flags:0:8:1:4	pCpuEvent:0:16:1:8	pGuestCpuEvent:0:16:1:8
+27	Microsoft-Windows-DxgKrnl	QueuePacket	Start 	245	3	1	hContext:0:16:1:8	SubmitSequence:0:8:1:4	Flags:0:8:1:4	ObjectCount:0:8:1:4	ObjectArray:4:16:3:8	FenceValue:4:10:3:8	pQueuePacket:0:16:1:8	DxgSyncObjectArray:4:16:3:8
+28	Microsoft-Windows-DxgKrnl	AttemptPreemption	Info 	22	0	0	hContext:0:16:1:8	AttemptResult:0:8:1:4
+29	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Start 	205	0	1	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4
+30	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Stop 	206	0	2	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4
+31	Microsoft-Windows-DxgKrnl	QueuePacket	Info 	179	0	0	hContext:0:16:1:8	PacketType:0:8:1:4	SubmitSequence:0:8:1:4
+32	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	257	0	0	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4	State:0:8:1:4
+33	Microsoft-Windows-DxgKrnl	DmaPacket	Start 	175	1	1	hContext:0:16:1:8	hQueuePacketContext:0:16:1:8	PacketType:0:8:1:4	uliSubmissionId:0:10:1:8	ulQueueSubmitSequence:0:8:1:4	pDmaBuffer:0:16:1:8	QuantumStatus:0:8:1:4
+34	Microsoft-Windows-DxgKrnl	GetDeviceState	Info 	182	0	0	hDevice:0:16:1:8	DeviceState:0:8:1:4
+35	Microsoft-Windows-DxgKrnl	DmaPacket	Info 	177	1	0	hContext:0:16:1:8	PacketType:0:8:1:4	uliCompletionId:0:10:1:8	ulQueueSubmitSequence:0:8:1:4	InterruptType:0:8:1:4	QuantumStatus:0:8:1:4	FaultedVirtualAddress:0:10:1:8	PageFaultFlags:0:8:1:4	FaultedProcessHandle:0:16:1:8
+36	Microsoft-Windows-DxgKrnl	VidMmProcessCommitmentChange	Info 	371	0	0	Commitment:0:10:1:8	OldCommitment:0:10:1:8	pDxgAdapter:0:16:1:8	ProcessId:0:8:1:4	PhysicalAdapterIndex:0:6:1:2	MemorySegmentGroup:0:4:1:1
+37	Microsoft-Windows-DxgKrnl	PageInAllocation	Info 	73	2	0	hAllocationHandle:0:16:1:8
+38	Microsoft-Windows-DxgKrnl	AllocationFault	Info 	71	2	0	pVidMmGlobalAlloc:0:16:1:8	Reason:0:8:1:4
+39	Microsoft-Windows-DxgKrnl	WaitForSynchronizationObjectFromGpu	Info 	295	0	0	hContext:0:16:1:8	ObjectCount:0:8:1:4	ObjectArray:4:16:1:8	MonitoredFenceValue:4:10:1:8
+40	Microsoft-Windows-DxgKrnl	Render	Info 	169	0	0	pDmaBuffer:0:16:1:8
+41	Microsoft-Windows-DxgKrnl	ReserveResource	Start 	67	0	1	SegmentId:0:8:1:4	hAllocationGlobalHandle:0:16:1:8	MinAddress:0:10:1:8	MaxAddress:0:10:1:8	NoEvict:0:13:1:4	TrimmingPriorityLimit:0:8:1:4	Restriction:0:8:1:4	ProcessCommittedState:0:8:1:4
+42	Microsoft-Windows-DxgKrnl	TotalBytesResidentInSegment	Info 	274	0	0	DxgAdapter:0:16:1:8	SegmentId:0:8:1:4	TotalBytesResident:0:10:1:8
+43	Microsoft-Windows-DxgKrnl	ReserveResource	Stop 	68	0	2	Status:0:8:1:4
+44	Microsoft-Windows-DxgKrnl	ReferenceWrittenPrimaries	Info 	305	1	0	hContext:0:16:1:8	SubmitSequence:0:8:1:4	uiNbWrittenPrimaries:0:8:1:4	WrittenPrimaries:4:16:2:8	pQueuePacket:0:16:1:8
+45	Microsoft-Windows-DxgKrnl	LockAllocationBackingStore	Info 	364	0	0	hProcessId:0:10:1:8	hVidMmGlobalAlloc:0:10:1:8	PageCount:0:8:1:4	Pages:4:10:2:8
+46	Microsoft-Windows-DxgKrnl	SignalSynchronizationObjectFromGpu	Info 	294	1	0	ContextCount:0:8:1:4	hContext:4:16:0:8	Flags:0:8:1:4	ObjectCount:0:8:1:4	ObjectArray:4:16:3:8	MonitoredFenceValue:4:10:3:8	InternalFlagsFlags:0:20:1:4
+47	Microsoft-Windows-DxgKrnl	WaitForSynchronizationObjectFromCpu	Info 	297	0	0	hDevice:0:16:1:8	ObjectCount:0:8:1:4	ObjectArray:4:16:1:8	MonitoredFenceValue:4:10:1:8	hAsyncEvent:0:16:1:8	Flags:0:8:1:4
+48	Microsoft-Windows-DxgKrnl	UnwaitCpuWaiter	Info 	300	1	0	Event:0:16:1:8	WaitConditionCount:0:8:1:4	FenceValues:4:10:1:8	SyncObjects:4:16:1:8	Flags:0:8:1:4	DxgSyncObjects:4:16:1:8
+49	Microsoft-Windows-DxgKrnl	PresentHistoryDetailed	Start 	215	2	1	hAdapter:0:16:1:8	Token:0:16:1:8	Model:0:8:1:4	TokenSize:0:8:1:4	TokenData:0:10:1:8	Flags:0:20:1:4	CustomDuration:0:8:1:4	ScrollRect.left:0:8:1:4	ScrollRect.right:0:8:1:4	ScrollRect.top:0:8:1:4	ScrollRect.bottom:0:8:1:4	ScrollOffset.X:0:8:1:4	ScrollOffset.Y:0:8:1:4	DirtyRectCount:0:8:1:4	Left:4:7:13:4	Right:4:7:13:4	Top:4:7:13:4	Bottom:4:7:13:4	SourceRect.left:0:8:1:4	SourceRect.right:0:8:1:4	SourceRect.top:0:8:1:4	SourceRect.bottom:0:8:1:4	DestWidth:0:8:1:4	DestHeight:0:8:1:4	TargetRect.left:0:8:1:4	TargetRect.right:0:8:1:4	TargetRect.top:0:8:1:4	TargetRect.bottom:0:8:1:4	VmBusChannel:0:16:1:8
+50	Microsoft-Windows-DxgKrnl	Present	Info 	184	1	0	hContext:0:8:1:4	hWindow:0:16:1:8	VidPnSourceId:0:8:1:4	FlipInterval:0:8:1:4	Flags:0:8:1:4	ReturnStatus:0:8:1:4	hSrcAllocHandle:0:16:1:8	hDstAllocHandle:0:16:1:8
+51	Microsoft-Windows-DxgKrnl	IndependentFlip	Info 	266	3	0	hContext:0:16:1:8	SubmitSequence:0:8:1:4	VidPnSourceId:0:8:1:4	FlipToAllocation:0:16:1:8	FlipInterval:0:8:1:4	PlaneIndex:0:8:1:4	SwapChainIndex:0:8:1:4	CompositionSurfaceLuid:0:10:1:8	BindId:0:10:1:8	PresentCount:0:8:1:4	FlipTrueImmediate:0:8:1:4	VmBusChannel:0:16:1:8	Duration:0:8:1:4	PresentAtQpc:0:21:1:8	SuppressVSync:0:13:1:4
+52	Microsoft-Windows-DxgKrnl	DdiSetVidPnMultiPlaneOverlay3	Start 	527	0	1	pDxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	InputFlags:0:8:1:4	OutputFlags:0:8:1:4
+53	Microsoft-Windows-DxgKrnl	DdiSetVidPnMultiPlaneOverlay3	Stop 	528	0	2	pDxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	InputFlags:0:8:1:4	OutputFlags:0:8:1:4
+54	Microsoft-Windows-DxgKrnl	MMIOFlipMultiPlaneOverlay3	Info 	386	8	0	pDxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	PlaneCount:0:8:1:4	PresentId:4:10:2:8	InputFlags:0:8:1:4	OutputFlags:0:8:1:4	PostCompositionSrcRect.left:0:7:1:4	PostCompositionSrcRect.right:0:7:1:4	PostCompositionSrcRect.top:0:7:1:4	PostCompositionSrcRect.bottom:0:7:1:4	PostCompositionDstRect.left:0:7:1:4	PostCompositionDstRect.right:0:7:1:4	PostCompositionDstRect.top:0:7:1:4	PostCompositionDstRect.bottom:0:7:1:4	HDRMetaDataSpecified:0:13:1:4	HDRMetaDataType:0:8:1:4	FlipDoNotFlip:0:13:1:4	FlipIntervalTarget:0:7:1:4	Duration:0:8:1:4	ThisFlipEarliestIdealTimeQpc:0:21:1:8	TargetFlipTimeQpc:0:21:1:8	TargetFlipTimeDeltaMs:0:8:1:4	LayerIndex:4:8:2:4	FlipSubmitSequence:0:8:1:4	FlipPresentId:0:8:1:4
+55	Microsoft-Windows-DxgKrnl	MMIOFlipMultiPlaneOverlay	Info 	259	3	0	pDxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	LayerIndex:0:8:1:4	FlipSubmitSequence:0:10:1:8	FlipToDriverAllocation:0:16:1:8	FlipToPhysicalAddress:0:10:1:8	FlipToSegmentId:0:8:1:4	FlipPresentId:0:8:1:4	FlipPhysicalAdapterMask:0:8:1:4	SrcRect.left:0:7:1:4	SrcRect.right:0:7:1:4	SrcRect.top:0:7:1:4	SrcRect.bottom:0:7:1:4	DstRect.left:0:7:1:4	DstRect.right:0:7:1:4	DstRect.top:0:7:1:4	DstRect.bottom:0:7:1:4	ClipRect.left:0:7:1:4	ClipRect.right:0:7:1:4	ClipRect.top:0:7:1:4	ClipRect.bottom:0:7:1:4	ColorSpace:0:8:1:4	FlipEntryStatusAfterFlip:0:8:1:4	Enabled:0:13:1:4	SDRWhiteLevel:0:8:1:4	DirtyRectCount:0:8:1:4
+56	Microsoft-Windows-DxgKrnl	MMIOFlipMultiPlaneOverlayDirtyRect	Info 	437	0	0	FinalEvent:0:13:1:4	RectCount:0:8:1:4	Left:4:7:1:4	Right:4:7:1:4	Top:4:7:1:4	Bottom:4:7:1:4
+57	Microsoft-Windows-DxgKrnl	PresentHistory	Info 	172	2	0	hAdapter:0:16:1:8	Token:0:16:1:8	Model:0:8:1:4	TokenSize:0:8:1:4	TokenData:0:10:1:8	Flags:0:20:1:4	CustomDuration:0:8:1:4	VmBusChannel:0:16:1:8
+58	Microsoft-Windows-DxgKrnl	VidSchSignalSyncObjectsFromGpuImmediate	Info 	551	0	0	ObjectCount:0:8:1:4	VidSchSyncObjectArray:4:16:0:8	DxgSyncObjectArray:4:16:0:8	FenceValues:4:10:0:8	AlwaysSignaled:4:13:0:4
+59	Microsoft-Windows-DxgKrnl	PresentHistory	Stop 	173	2	2	hAdapter:0:16:1:8	Token:0:16:1:8	Model:0:8:1:4	TokenSize:0:8:1:4	TokenData:0:10:1:8	Flags:0:20:1:4	CustomDuration:0:8:1:4	VmBusChannel:0:16:1:8
+60	Microsoft-Windows-DxgKrnl	VSyncSmoothenedTime	Info 	502	1	0	VidPnSourceId:0:8:1:4	DpcFrameNumber:0:10:1:8	OriginalDpcFrameTime:0:10:1:8	SmoothenedDpcFrameTime:0:10:1:8	SmoothenedDpcFrameTime100ns:0:10:1:8	FrameTimeDeltaIn100ns:0:9:1:8	SampleCount:0:8:1:4
+61	Microsoft-Windows-DxgKrnl	VSyncSmoothenedPeriod	Info 	507	0	0	VidPnSourceId:0:8:1:4	SmoothenedPeriodQpc:0:10:1:8	CurrentModeRefreshPeriodQpc:0:10:1:8	HwPresentDurationQpc:0:10:1:8
+62	Microsoft-Windows-DxgKrnl	SignalSynchronizationObjectImmediate	Info 	462	0	0	Flags:0:8:1:4	Object:0:16:1:8	MonitoredFenceValue:0:10:1:8
+63	Microsoft-Windows-DxgKrnl	WorkerThread	Start 	18	0	1	pDxgAdapter:0:16:1:8	EventId:0:8:1:4
+64	Microsoft-Windows-DxgKrnl	PagingOpSysmemCommit	Info 	313	0	0	pDxgAdapter:0:16:1:8	hAllocationGlobalHandle:0:16:1:8	SegmentId:0:8:1:4
+65	Microsoft-Windows-DxgKrnl	MonitoredFence	DCStart 	293	0	3	hAdapter:0:16:1:8	hSyncObject:0:16:1:8	Reason:0:8:1:4	Flags:0:8:1:4	SharedHandle:0:16:1:8	InitialValue:0:10:1:8
+66	Microsoft-Windows-DxgKrnl	Fence	DCStart 	95	0	3	hAdapter:0:16:1:8	hSyncObject:0:16:1:8	Reason:0:8:1:4	Flags:0:8:1:4	SharedHandle:0:16:1:8	InitialValue:0:10:1:8
+67	Microsoft-Windows-DxgKrnl	ReportSyncObject	Start 	1070	2	1	pSyncObject:0:16:1:8	KMTHandle:0:16:1:8	pDxgDevice:0:16:1:8	pDxgSyncObject:0:16:1:8
+68	Microsoft-Windows-DxgKrnl	Semaphore	DCStart 	91	0	3	hAdapter:0:16:1:8	hSyncObject:0:16:1:8	Reason:0:8:1:4	Flags:0:8:1:4	SharedHandle:0:16:1:8	MaxCount:0:8:1:4	InitialCount:0:8:1:4
+69	Microsoft-Windows-DxgKrnl	PagingPreparation	Stop 	282	0	2	pDmaBuffer:0:16:1:8
+70	MSNT_SystemTrace	Thread	End	0	3	2	ProcessId:0:8:1:4	TThreadId:0:8:1:4	StackBase:0:16:1:8	StackLimit:0:16:1:8	UserStackBase:0:16:1:8	UserStackLimit:0:16:1:8	Affinity:0:16:1:8	Win32StartAddr:0:16:1:8	TebBase:0:16:1:8	SubProcessTag:0:8:1:4	BasePriority:0:4:1:1	PagePriority:0:4:1:1	IoPriority:0:4:1:1	ThreadFlags:0:4:1:1
+71	Microsoft-Windows-DxgKrnl	PagingQueuePacket	Info 	324	0	0	PagingQueue:0:16:1:8	PagingQueuePacket:0:16:1:8	SequenceId:0:10:1:8
+72	Microsoft-Windows-DxgKrnl	PagingPreparation	Start 	281	0	1	pDmaBuffer:0:16:1:8
+73	Microsoft-Windows-DxgKrnl	MarkAllocation	Info 	72	0	0	hAllocationHandle:0:16:1:8
+74	Microsoft-Windows-DxgKrnl	PagingQueuePacket	Stop 	325	0	2	PagingQueue:0:16:1:8	PagingQueuePacket:0:16:1:8	SequenceId:0:10:1:8	ExecutionTime100ns:0:10:1:8
+75	Microsoft-Windows-DxgKrnl	ExtendedProfiler	Start 	107	0	1	Function:0:8:1:4	Src:0:8:1:4	Dst:0:8:1:4	SrcWidth:0:8:1:4	SrcHeight:0:8:1:4	DstWidth:0:8:1:4	DstHeight:0:8:1:4	Accelerated:0:13:1:4	SolidColor:0:13:1:4	Reserved:32:8:3:4
+76	Microsoft-Windows-DxgKrnl	PagingQueuePacket	Start 	323	1	1	DxgAdapter:0:16:1:8	PagingQueue:0:16:1:8	PagingQueuePacket:0:16:1:8	SequenceId:0:10:1:8	VidMmOpType:0:8:1:4	PagingQueueType:0:8:1:4
+77	Microsoft-Windows-DxgKrnl	ExtendedProfiler	Info 	344	0	0	Function:0:8:1:4	Src:0:8:1:4	Dst:0:8:1:4	SrcWidth:0:8:1:4	SrcHeight:0:8:1:4	DstWidth:0:8:1:4	DstHeight:0:8:1:4	Accelerated:0:13:1:4	SolidColor:0:13:1:4	Reserved:32:8:3:4
+78	Microsoft-Windows-DxgKrnl	ExtendedProfiler	Stop 	108	0	2	Function:0:8:1:4	Src:0:8:1:4	Dst:0:8:1:4	SrcWidth:0:8:1:4	SrcHeight:0:8:1:4	DstWidth:0:8:1:4	DstHeight:0:8:1:4	Accelerated:0:13:1:4	SolidColor:0:13:1:4	Reserved:32:8:3:4
+79	Microsoft-Windows-DxgKrnl	EvictAllocation	Info 	74	0	0	hGlobalAllocationHandle:0:16:1:8
+80	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	228	0	0	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4	Latency:0:10:1:8
+81	Microsoft-Windows-DxgKrnl	VSyncInterrupt	Info 	181	0	0	pDxgAdapter:0:16:1:8	VidPnTargetId:0:8:1:4	ScannedPhysicalAddress:0:10:1:8
+82	Microsoft-Windows-DxgKrnl	VSyncDPC	Info 	17	0	0	pDxgAdapter:0:16:1:8	VidPnTargetId:0:8:1:4	ScannedPhysicalAddress:0:10:1:8	VidPnSourceId:0:8:1:4	FrameNumber:0:8:1:4	FrameQPCTime:0:9:1:8	hFlipDevice:0:16:1:8	FlipType:0:8:1:4	FlipFenceId:0:10:1:8
+83	Microsoft-Windows-DxgKrnl	VSyncDPCMultiPlane	Info 	273	4	0	pDxgAdapter:0:16:1:8	PlaneCount:0:8:1:4	PresentIdOrPhysicalAddress:4:10:1:8	VidPnSourceId:0:8:1:4	FrameNumber:0:8:1:4	FlipEntryCount:0:8:1:4	FlipSubmitSequence:4:10:5:8	FlipQueues:0:8:1:4	FlipQueueIntervalTarget:4:8:7:4	NonBoostedVsyncFrame:0:13:1:4	InterruptTargetPresentId:4:10:1:8
+84	Microsoft-Windows-DxgKrnl	DWMVsyncSignal	Info 	319	0	0	DWMCount:0:8:1:4	VsyncCount:0:8:1:4	VsyncFlag:0:8:1:4	VsyncWaiters:0:8:1:4	VsyncType:0:8:1:4
+85	Microsoft-Windows-DxgKrnl	VSyncWaiterChange	Info 	514	0	0	pDxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	NewVSyncWaiterCount:0:8:1:4
+86	Microsoft-Windows-DxgKrnl	RenderKm	Info 	170	0	0	pDmaBuffer:0:16:1:8
+87	Microsoft-Windows-DxgKrnl	ReferenceAllocations	Info 	43	0	0	hContext:0:16:1:8	pDmaBuffer:0:16:1:8	uiNbAllocations:0:8:1:4	Allocations:4:16:2:8	Write:4:13:2:4
+88	Microsoft-Windows-DxgKrnl	RenderGdi	Info 	461	0	0	DxgContext:0:16:1:8	DmaBufferVirtualAddress:0:10:1:8	AllocationCount:0:8:1:4
+89	Microsoft-Windows-DxgKrnl	RenderGdiAlloc	Info 	466	0	0	DxgAllocation:0:16:1:8	DriverHandle:0:16:1:8	WriteOperation:0:8:1:4	GpuVirtualAddress:0:10:1:8
+90	Microsoft-Windows-DxgKrnl	PatchLocationList	Info 	45	0	0	hContext:0:16:1:8	pDmaBuffer:0:16:1:8	PatchLocationCount:0:8:1:4	PatchLocationAllocationIndex:4:8:2:4	PatchLocationSlotId:4:8:2:4	PatchLocationReserved:4:8:2:4	PatchLocationDriverId:4:8:2:4	PatchLocationAllocationOffset:4:8:2:4	PatchLocationPatchOffset:4:8:2:4	PatchLocationSplitOffset:4:8:2:4
+91	Microsoft-Windows-DxgKrnl	ResetSmoother	Info 	506	0	0	CurrentSmoothenedVSyncPeriodQpc:0:10:1:8	NewDefaultVSyncPeriodQpc:0:10:1:8
+92	Microsoft-Windows-DxgKrnl	VSyncSmoothenedReset	Info 	529	0	0	VidPnSourceId:0:8:1:4
+93	Microsoft-Windows-DxgKrnl	DWMVsyncCountWait	Info 	318	0	0	DWMCount:0:8:1:4	VsyncCount:0:8:1:4	VsyncFlag:0:8:1:4	VsyncWaiters:0:8:1:4	VsyncType:0:8:1:4
+94	Microsoft-Windows-DxgKrnl	FlushScheduler	Info 	360	0	0	pDxgAdapter:0:16:1:8	FlushSchedulerReason:0:8:1:4	VidPnSourceId:0:8:1:4
+95	Microsoft-Windows-DxgKrnl	Adapter	DCStart 	26	0	3	pDeviceObject:0:16:1:8	pDxgAdapter:0:16:1:8	NbVidPnSources:0:8:1:4	HighestAcceptableAddress:0:10:1:8	MaxSlotId:0:8:1:4	ApertureSegmentCommitLimit:0:10:1:8	MaxPointerWidth:0:8:1:4	MaxPointerHeight:0:8:1:4	InterruptMessageNumber:0:8:1:4	NumberOfSwizzlingRanges:0:8:1:4	MaxOverlays:0:8:1:4	MaxQueuedFlipOnVSync:0:8:1:4	PointerCaps:0:8:1:4	GammaRampCaps:0:8:1:4	PresentationCaps:0:8:1:4	AlignmentShift:0:4:1:1	MaxTextureWidthShift:0:4:1:1	MaxTextureHeightShift:0:4:1:1	Reserved:0:4:1:1	FlipCaps:0:8:1:4	SchedulingCaps:0:8:1:4	ReservedMemoryManagementCaps:0:8:1:4	PagingNode:0:8:1:4	NbAsymetricProcessingNodes:0:8:1:4	ReservedTopology:4:8:23:4	NumPowerComponents:0:8:1:4	AdapterType:0:8:1:4	pMiniportContext:0:16:1:8	VirtualGpuLuid:0:10:1:8
+96	Microsoft-Windows-DxgKrnl	DpiReportAdapter	Info 	110	1	0	pDxgAdapter:0:16:1:8	ConfigSpaceSize:0:8:1:4	ConfigSpace:4:4:1:1	ChainUid:0:8:1:4	NumberOfLinksInChain:0:8:1:4	LeadLink:0:13:1:4	BusType:0:8:1:4	VendorID:0:8:1:4	DeviceID:0:8:1:4	SubVendorID:0:8:1:4	SubSystemID:0:8:1:4	RevisionID:0:8:1:4	AdapterLuid:0:10:1:8
+97	Microsoft-Windows-DxgKrnl	Brightness	Info 	275	0	0	DeviceObject:0:16:1:8	OldBrightness:0:8:1:4	NewBrightness:0:8:1:4	Result:0:8:1:4
+98	Microsoft-Windows-DxgKrnl	BacklightOptimizationLevel	Info 	276	0	0	DeviceObject:0:16:1:8	OldOptimizationLevel:0:8:1:4	NewOptimizationLevel:0:8:1:4	Result:0:8:1:4
+99	Microsoft-Windows-DxgKrnl	Device	DCStart 	29	2	3	hProcessId:0:16:1:8	pDxgAdapter:0:16:1:8	ClientType:0:8:1:4	hDevice:0:16:1:8	RequestVSync:0:13:1:4	DisableGpuTimeout:0:13:1:4	hThunkHandle:0:8:1:4	DxgProcess:0:16:1:8	HostDeviceHandle:0:8:1:4	VirtualGpu:0:16:1:8
+100	Microsoft-Windows-DxgKrnl	Context	DCStart 	32	0	3	hDevice:0:16:1:8	NodeOrdinal:0:8:1:4	EngineAffinity:0:8:1:4	DmaBufferSize:0:8:1:4	DmaBufferSegmentSet:0:8:1:4	DmaBufferPrivateDataSize:0:8:1:4	AllocationListSize:0:8:1:4	PatchLocationListSize:0:8:1:4	Flags:0:8:1:4	hContext:0:16:1:8	ContextHandle:0:16:1:8	ParentDxgContext:0:16:1:8
+101	Microsoft-Windows-DxgKrnl	ChangePriority	Info 	21	2	0	hContext:0:16:1:8	PublicPriority:0:8:1:4	SchedulingPriority:0:8:1:4	KnownProcessBoostEnabled:0:13:1:4	HighPriorityRunsToCompletion:0:13:1:4	IgnoreGpuPriorityChange:0:13:1:4	SmallQuantumEnabled:0:13:1:4
+102	Microsoft-Windows-DxgKrnl	ChangeInProcessPriority	Info 	239	0	0	hContext:0:16:1:8	OldPriority:0:7:1:4	NewPriority:0:7:1:4
+103	Microsoft-Windows-DxgKrnl	AssociateDxgSchedulerObject	Info 	433	1	0	pDxgObject:0:16:1:8	pSchObject:0:16:1:8	hKmdHandle:0:16:1:8	hOsHandle:0:16:1:8
+104	Microsoft-Windows-DxgKrnl	AdapterAllocation	DCStart 	35	3	3	hProcessId:0:16:1:8	hDevice:0:16:1:8	pDxgAdapter:0:16:1:8	Flags:0:8:1:4	allocSize:0:10:1:8	ulAlignment:0:8:1:4	dwReadSegment:0:8:1:4	dwWriteSegment:0:8:1:4	PreferredSegment:0:8:1:4	HintedBank:0:8:1:4	dwEvictionSegment:0:8:1:4	Priority:0:8:1:4	hVidMmGlobalAlloc:0:16:1:8	hDxgGlobalAlloc:0:16:1:8	hDxgSharedResource:0:16:1:8	UsageVersion:0:8:1:4	UsageFlags:0:8:1:4	Format:0:8:1:4	SwizzledFormat:0:8:1:4	ByteOffset:0:8:1:4	Width:0:8:1:4	Height:0:8:1:4	Pitch:0:8:1:4	Depth:0:8:1:4	SlicePitch:0:8:1:4	BackingStoreWasPinned:0:13:1:4	pSectionObject:0:16:1:8	PhysicalAdapterIndex:0:6:1:2	PageTableOrDirectory:0:13:1:4
+105	Microsoft-Windows-DxgKrnl	DeviceAllocation	DCStart 	38	2	3	hProcessId:0:16:1:8	hDevice:0:16:1:8	pDxgAdapter:0:16:1:8	hVidMmAlloc:0:16:1:8	hVidMmGlobalAlloc:0:16:1:8	hDxgResource:0:16:1:8	hDxgSharedResource:0:16:1:8	hThunkAllocation:0:16:1:8	hThunkResource:0:16:1:8	PrivateRuntimeResourceHandle:0:16:1:8	pVirtualAddress:0:16:1:8	hProcessAllocDetails:0:16:1:8	hOtherPartitionHandle:0:8:1:4
+106	Microsoft-Windows-DxgKrnl	ReportSegment	Info 	78	1	0	ulSegmentId:0:8:1:4	pDxgAdapter:0:16:1:8	BaseAddress:0:10:1:8	CpuTranslatedAddress:0:10:1:8	Size:0:10:1:8	NbOfBanks:0:8:1:4	Flags:0:8:1:4	CommitLimit:0:10:1:8	SystemMemoryEndAddress:0:16:1:8	MemorySegmentGroup:0:4:1:1
+107	Microsoft-Windows-DxgKrnl	ReportCommittedGlobalAllocation	DCStart 	227	0	3	hGlobalAllocationHandle:0:16:1:8	ulSegmentId:0:8:1:4	SegmentOffset:0:10:1:8
+108	Microsoft-Windows-DxgKrnl	AddDmaBuffer	Start 	76	0	1	hContext:0:16:1:8	pDxgAdapter:0:16:1:8	pDmaBuffer:0:16:1:8	DmaSize:0:10:1:8	AllocationListSize:0:10:1:8	PatchLocationListSize:0:10:1:8	hAllocationGlobalHandle:0:16:1:8
+109	Microsoft-Windows-DxgKrnl	ReportCommittedAllocation	Info 	80	0	0	hProcessId:0:16:1:8	hDevice:0:16:1:8	hAllocationHandle:0:16:1:8	Pinned:0:13:1:4	EvictionResource:0:13:1:4	Size:0:10:1:8	ulSegmentId:0:8:1:4	SegmentOffset:0:10:1:8
+110	Microsoft-Windows-DxgKrnl	VidMmProcessBudgetChange	Info 	366	0	0	NewBudget:0:10:1:8	OldBudget:0:10:1:8	pDxgAdapter:0:16:1:8	ProcessId:0:8:1:4	PhysicalAdapterIndex:0:6:1:2	NewPriorityBand:0:4:1:1	OldPriorityBand:0:4:1:1	NewVisibilityState:0:4:1:1	OldVisibilityState:0:4:1:1	MemorySegmentGroup:0:4:1:1
+111	Microsoft-Windows-DxgKrnl	VidMmProcessUsageChange	Info 	367	0	0	NewUsage:0:10:1:8	OldUsage:0:10:1:8	pDxgAdapter:0:16:1:8	ProcessId:0:8:1:4	PhysicalAdapterIndex:0:6:1:2	MemorySegmentGroup:0:4:1:1
+112	Microsoft-Windows-DxgKrnl	AdapterFeatureState	Info 	519	0	0	pDxgAdapter:0:16:1:8	FeatureId:0:8:1:4	Enabled:0:13:1:4	DriverSupportState:0:8:1:4
+113	Microsoft-Windows-DxgKrnl	NodeMetadata	Info 	250	0	0	pDxgAdapter:0:16:1:8	NodeOrdinal:0:8:1:4	EngineType:0:8:1:4	FriendlyName:0:1:1:0
+114	Microsoft-Windows-DxgKrnl	BltQueueWakeReason	Info 	1142	2	0	AdapterLuid:0:10:1:8	BltQueueWakeReason:0:8:1:4	VSyncWork:0:13:1:4	UpdateModeWork:0:13:1:4	FlushWork:0:13:1:4
+115	Microsoft-Windows-DxgKrnl	FlushPresentReferencesAndDisableOverlays	Info 	428	0	0	pDxgAdapter:0:16:1:8	SourceMaskFlushHwAndAbortSwQueue:0:8:1:4	SourceMaskFlushHwAndKeepSwQueue:0:8:1:4	SourceMaskDisableAllPlanes:0:8:1:4	SourceMaskSuspendScheduler:0:8:1:4
+116	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	222	0	0	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4	ComponentType:0:8:1:4	ComponentTypeId:0:8:1:4	NumberOfIdleStates:0:8:1:4	ControlGuid:0:15:1:16	Name:0:1:1:0	Flags:0:8:1:4	CurrentFState:0:8:1:4	CurrentLatencyTolerance:0:10:1:8
+117	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	223	0	0	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4	FState:0:8:1:4	NominalPower:0:8:1:4	TransitionLatency:0:10:1:8	ResidencyRequirement:0:10:1:8
+118	Microsoft-Windows-DxgKrnl	VSyncTimeStatistics	Info 	503	0	0	VsyncState:0:8:1:4	VSyncOnTotalTimeMs:0:10:1:8	VSyncOffKeepPhaseTotalTimeMs:0:10:1:8	VSyncOffNoPhaseTotalTimeMs:0:10:1:8
+119	Microsoft-Windows-DxgKrnl	DdiControlInterrupt2	Info 	458	0	0	VidPnSourceId:0:8:1:4	VsyncState:0:8:1:4	LastFrameTime:0:10:1:8
+120	Microsoft-Windows-DxgKrnl	VSync	Stop 	248	0	2	hAdapter:0:16:1:8
+121	Microsoft-Windows-DxgKrnl	SetDisplayMode	Info 	102	0	0	pDxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	Width:0:8:1:4	Height:0:8:1:4	Format:0:8:1:4	RefreshRate.Numerator:0:8:1:4	RefreshRate.Denominator:0:8:1:4	ScanLineOrdering:0:8:1:4	Orientation:0:8:1:4	DisplayFixedOutput:0:8:1:4	Flags:0:8:1:4	NumSamples:0:8:1:4	NumQualityLevels:0:8:1:4
+122	Microsoft-Windows-DxgKrnl	VidMmMakeResident	DCStart 	374	0	3	pVidMmAlloc:0:16:1:8	ResidencyCount:0:8:1:4
+123	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	258	0	0
+124	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	209	0	0	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4	State:0:8:1:4
+125	Microsoft-Windows-DxgKrnl	ReportOfferAllocation	Info 	189	0	0	hGlobalAllocationHandle:0:16:1:8	State:0:4:1:1	Priority:0:4:1:1
+126	Microsoft-Windows-DxgKrnl	ReportMarkedGlobalAllocation	DCStart 	391	0	3	hGlobalAllocationHandle:0:16:1:8	ulSegmentId:0:8:1:4	SegmentOffset:0:10:1:8
+127	Microsoft-Windows-DxgKrnl	ProcessAllocationDetails	Start 	288	0	1	ProcessId:0:8:1:4	Handle:0:16:1:8	Size:0:10:1:8	hProcessAlloc:0:16:1:8
+128	Microsoft-Windows-DxgKrnl	ResumeSchedulerForVidPnSource	Info 	429	0	0	pDxgAdapter:0:16:1:8	SourceMaskResumeScheduler:0:8:1:4
+129	Microsoft-Windows-DxgKrnl	VidSchiSignalSynchronizationObjectFromCpu	Info 	550	0	0	ObjectCount:0:8:1:4	VidSchSyncObjectArray:4:16:0:8	DxgSyncObjectArray:4:16:0:8	FenceValues:4:10:0:8	AlwaysSignaled:4:13:0:4
+130	Microsoft-Windows-DxgKrnl	SignalSynchronizationObjectFromCpu	Info 	296	0	0	hDevice:0:16:1:8	ObjectCount:0:8:1:4	ObjectArray:4:16:1:8	MonitoredFenceValue:4:10:1:8
+131	Microsoft-Windows-DxgKrnl	VSync	Start 	247	0	1	hAdapter:0:16:1:8
+132	Microsoft-Windows-DXGI	Factory	DCStart 	3	0	3	pIDXGIFactory:0:16:1:8	Mode:0:8:1:4	BlockedAdapters:0:8:1:4	PnPID:4:1:2:0	DriverVersion:4:1:2:0	EffectsPreference:0:10:1:8
+133	Microsoft-Windows-DXGI	Adapter	DCStart 	6	0	3	pIDXGIAdapter:0:16:1:8	pIDXGIFactory:0:16:1:8	KMTAdapterHandle:0:8:1:4	ThunkDLLHandle:0:16:1:8	SharedResources:0:13:1:4
+134	Microsoft-Windows-DXGI	Output	DCStart 	9	0	3	pIDXGIOutput:0:16:1:8	pIDXGIAdapter:0:16:1:8	VidPnSourceID:0:8:1:4	GDIDeviceName:0:1:1:0
+135	Microsoft-Windows-DXGI	SwapChain	DCStart 	12	0	3	pIDXGISwapChain:0:16:1:8	pIDXGIFactory:0:16:1:8	pIDXGIDevice:0:16:1:8	pIDXGIOutput:0:16:1:8	UserBackbufferCount:0:4:1:1	BackbufferCount:0:4:1:1	ppBackBuffers:4:16:5:8	pPrimary:0:16:1:8	pProxyPrimary:0:16:1:8	Width:0:8:1:4	Height:0:8:1:4	RefreshNumerator:0:8:1:4	RefreshDenominator:0:8:1:4	Format:0:8:1:4	ScanlineOrdering:0:8:1:4	Scaling:0:8:1:4	SampleCount:0:8:1:4	SampleQuality:0:8:1:4	Usage:0:8:1:4	OutputWindow:0:16:1:8	Windowed:0:13:1:4	SwapEffect:0:8:1:4	Flags:0:8:1:4	Redirected:0:13:1:4	LogicalSurfaceHandle:0:10:1:8	BindId:0:10:1:8	BackbufferHandles:4:16:5:8	BackbufferEventHandles:4:16:5:8	FenceHandle:0:16:1:8	FenceValue:0:10:1:8	ActualBufferCount:0:4:1:1	ActualSwapEffect:0:8:1:4	WinFlipProxyBufferCount:0:4:1:1	HybridPresentMode:0:8:1:4	ScanoutEligible:0:13:1:4	CrossAdapterTierSupport:0:8:1:4	CASOFallbackReason:0:8:1:4	ProxyWidth:0:8:1:4	ProxyHeight:0:8:1:4	ProxyFormat:0:8:1:4	EffectsEnabledMask:0:20:1:4	WinSwapEffectUpgradeReason:0:8:1:4	GameConfigStoreApp:0:13:1:4	GameConfigUserApp:0:13:1:4	InternalDisplay:0:4:1:1	PluggedIn:0:4:1:1
+136	Microsoft-Windows-DXGI	JournalEntry	Info 	70	0	0	Index:0:8:1:4	Code:0:20:1:4	ThreadId:0:8:1:4	Message:0:2:1:0
+137	Microsoft-Windows-DxgKrnl	Blit	Info 	166	0	0	hwnd:0:16:1:8	pDmaBuffer:0:16:1:8	PresentHistoryToken:0:10:1:8	hSourceAllocation:0:16:1:8	hDestAllocation:0:16:1:8	bSubmit:0:13:1:4	bRedirectedPresent:0:13:1:4	Flags:0:8:1:4	Source.Left:0:7:1:4	Source.Right:0:7:1:4	Source.Top:0:7:1:4	Source.Bottom:0:7:1:4	Dest.Left:0:7:1:4	Dest.Right:0:7:1:4	Dest.Top:0:7:1:4	Dest.Bottom:0:7:1:4	SubRectCount:0:8:1:4
+138	Microsoft-Windows-DxgKrnl	BlitRect	Info 	167	0	0	pDmaBuffer:0:16:1:8	FinalEvent:0:13:1:4	RectCount:0:8:1:4	Left:4:7:2:4	Right:4:7:2:4	Top:4:7:2:4	Bottom:4:7:2:4
+139	Microsoft-Windows-DXGI	Output	Start 	7	0	1	pIDXGIOutput:0:16:1:8	pIDXGIAdapter:0:16:1:8	VidPnSourceID:0:8:1:4	GDIDeviceName:0:1:1:0
+140	Microsoft-Windows-DXGI	Output	Stop 	8	0	2	pIDXGIOutput:0:16:1:8	pIDXGIAdapter:0:16:1:8	VidPnSourceID:0:8:1:4	GDIDeviceName:0:1:1:0
+141	Microsoft-Windows-DxgKrnl	FlipMultiPlaneOverlay	Info 	252	0	0	VidPnSourceId:0:8:1:4	LayerIndex:0:8:1:4	Enabled:0:8:1:4	hAllocation:0:16:1:8	Flags:0:8:1:4	SrcRect.left:0:7:1:4	SrcRect.right:0:7:1:4	SrcRect.top:0:7:1:4	SrcRect.bottom:0:7:1:4	DstRect.left:0:7:1:4	DstRect.right:0:7:1:4	DstRect.top:0:7:1:4	DstRect.bottom:0:7:1:4	ClipRect.left:0:7:1:4	ClipRect.right:0:7:1:4	ClipRect.top:0:7:1:4	ClipRect.bottom:0:7:1:4	Rotation:0:8:1:4	Blend:0:8:1:4	NumFilters:0:8:1:4	ColorSpace:0:8:1:4	HDRMetaDataType:0:8:1:4	SDRWhiteLevel:0:8:1:4
+142	Microsoft-Windows-DxgKrnl	PresentMultiPlaneOverlay	Info 	251	2	0	hContext:0:8:1:4	VidPnSourceId:0:8:1:4	PresentCount:0:8:1:4	FlipInterval:0:8:1:4	Flags:0:20:1:4	PresentPlaneCount:0:8:1:4	Duration:0:8:1:4	ReturnStatus:0:8:1:4
+143	Microsoft-Windows-DxgKrnl	YieldConditionEvaluation	Info 	359	0	0	pDxgAdapter:0:16:1:8	YieldCondition:0:8:1:4	Parameter0:0:10:1:8	Parameter1:0:10:1:8	Parameter2:0:10:1:8	Parameter3:0:10:1:8
+144	Microsoft-Windows-DXGI	Present	Start 	42	0	1	pIDXGISwapChain:0:16:1:8	Flags:0:8:1:4	SyncInterval:0:8:1:4	DirtyRects:0:8:1:4	ScrollRects:0:8:1:4
+145	Microsoft-Windows-DxgKrnl	QueuePacket	Start 	244	2	1	hContext:0:16:1:8	SubmitSequence:0:8:1:4	Flags:0:8:1:4	hSyncObject:0:16:1:8	FenceValue:0:10:1:8	pQueuePacket:0:16:1:8	DxgSyncObject:0:16:1:8
+146	Microsoft-Windows-DxgKrnl	UnwaitQueuePacket	Info 	238	0	0	QueuePacket:0:16:1:8	hContext:0:16:1:8
+147	Microsoft-Windows-DXGI	Adapter	Stop 	5	0	2	pIDXGIAdapter:0:16:1:8	pIDXGIFactory:0:16:1:8	KMTAdapterHandle:0:8:1:4	ThunkDLLHandle:0:16:1:8	SharedResources:0:13:1:4
+148	Microsoft-Windows-DXGI	Profile	Start 	40	0	1	Event:0:8:1:4
+149	Microsoft-Windows-DXGI	Factory	Stop 	2	0	2	pIDXGIFactory:0:16:1:8	Mode:0:8:1:4	BlockedAdapters:0:8:1:4	PnPID:4:1:2:0	DriverVersion:4:1:2:0	EffectsPreference:0:10:1:8
+150	Microsoft-Windows-DXGI	Profile	Stop 	41	0	2	Event:0:8:1:4
+151	Microsoft-Windows-DxgKrnl	PendingFlipsForThisEntry	Info 	516	0	0	VidPnSourceId:0:8:1:4	FlipQueuePlaneIndex:0:8:1:4	ThisFlipSubmitSequence:0:8:1:4	Reason:0:8:1:4	StallEntryFlipSubmitSequence:0:8:1:4	FlipMmIoPendingMask:0:8:1:4	FlipPassivePendingMask:0:8:1:4	HwQueuePendingFlips:0:8:1:4	HwQueuePendingFlipsPlaneIndex:0:8:1:4
+152	Microsoft-Windows-DXGI	Present	Stop 	43	0	2	Result:0:8:1:4
+153	Microsoft-Windows-DxgKrnl	BlockThread	Info 	103	0	0	Reason:0:8:1:4
+154	Microsoft-Windows-DXGI	Factory	Info 	73	0	0	pIDXGIFactory:0:16:1:8	ReparentingOccurred:0:13:1:4	DecidingFactor:0:8:1:4	GpuPreference:0:8:1:4	Message:0:8:1:4
+155	Microsoft-Windows-DXGI	Factory	Start 	1	0	1	pIDXGIFactory:0:16:1:8	Mode:0:8:1:4	BlockedAdapters:0:8:1:4	PnPID:4:1:2:0	DriverVersion:4:1:2:0	EffectsPreference:0:10:1:8
+156	Microsoft-Windows-DXGI	Adapter	Start 	4	0	1	pIDXGIAdapter:0:16:1:8	pIDXGIFactory:0:16:1:8	KMTAdapterHandle:0:8:1:4	ThunkDLLHandle:0:16:1:8	SharedResources:0:13:1:4
+157	MSNT_SystemTrace	Image	Load	0	3	10	ImageBase:0:16:1:8	ImageSize:0:16:1:8	ProcessId:0:8:1:4	ImageChecksum:0:8:1:4	TimeDateStamp:0:8:1:4	SignatureLevel:0:4:1:1	SignatureType:0:4:1:1	Reserved0:0:6:1:2	DefaultBase:0:16:1:8	Reserved1:0:8:1:4	Reserved2:0:8:1:4	Reserved3:0:8:1:4	Reserved4:0:8:1:4	FileName:0:1:1:0
+158	MSNT_SystemTrace	Image	UnLoad	0	3	2	ImageBase:0:16:1:8	ImageSize:0:16:1:8	ProcessId:0:8:1:4	ImageChecksum:0:8:1:4	TimeDateStamp:0:8:1:4	SignatureLevel:0:4:1:1	SignatureType:0:4:1:1	Reserved0:0:6:1:2	DefaultBase:0:16:1:8	Reserved1:0:8:1:4	Reserved2:0:8:1:4	Reserved3:0:8:1:4	Reserved4:0:8:1:4	FileName:0:1:1:0
+159	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Start 	232	0	1
+160	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	235	0	0
+161	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Stop 	233	0	2
+162	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Info 	234	0	0
+163	Microsoft-Windows-DxgKrnl	Process	Start 	471	0	1	DxgProcess:0:16:1:8	ProcessId:0:16:1:8	HostProcessHandle:0:8:1:4	ProcessFlags:0:8:1:4
+164	Microsoft-Windows-DxgKrnl	AdapterAllocation	Start 	33	3	1	hProcessId:0:16:1:8	hDevice:0:16:1:8	pDxgAdapter:0:16:1:8	Flags:0:8:1:4	allocSize:0:10:1:8	ulAlignment:0:8:1:4	dwReadSegment:0:8:1:4	dwWriteSegment:0:8:1:4	PreferredSegment:0:8:1:4	HintedBank:0:8:1:4	dwEvictionSegment:0:8:1:4	Priority:0:8:1:4	hVidMmGlobalAlloc:0:16:1:8	hDxgGlobalAlloc:0:16:1:8	hDxgSharedResource:0:16:1:8	UsageVersion:0:8:1:4	UsageFlags:0:8:1:4	Format:0:8:1:4	SwizzledFormat:0:8:1:4	ByteOffset:0:8:1:4	Width:0:8:1:4	Height:0:8:1:4	Pitch:0:8:1:4	Depth:0:8:1:4	SlicePitch:0:8:1:4	BackingStoreWasPinned:0:13:1:4	pSectionObject:0:16:1:8	PhysicalAdapterIndex:0:6:1:2	PageTableOrDirectory:0:13:1:4
+165	Microsoft-Windows-DxgKrnl	CddStandardAllocation	Info 	287	0	0	pDxgAdapterAllocation:0:16:1:8	Flags:0:8:1:4	Width:0:8:1:4	Height:0:8:1:4	Format:0:8:1:4	GdiSurfaceType:0:8:1:4	GdiSurfaceFlags:0:8:1:4	Pitch:0:8:1:4
+166	Microsoft-Windows-DxgKrnl	DeviceAllocation	Start 	36	2	1	hProcessId:0:16:1:8	hDevice:0:16:1:8	pDxgAdapter:0:16:1:8	hVidMmAlloc:0:16:1:8	hVidMmGlobalAlloc:0:16:1:8	hDxgResource:0:16:1:8	hDxgSharedResource:0:16:1:8	hThunkAllocation:0:16:1:8	hThunkResource:0:16:1:8	PrivateRuntimeResourceHandle:0:16:1:8	pVirtualAddress:0:16:1:8	hProcessAllocDetails:0:16:1:8	hOtherPartitionHandle:0:8:1:4
+167	Microsoft-Windows-DxgKrnl	PagingQueuePacket	Start 	322	1	1	DxgDevice:0:16:1:8	PagingQueue:0:16:1:8	PagingQueuePacket:0:16:1:8	SequenceId:0:10:1:8	VidMmOpType:0:8:1:4	Alloc:0:16:1:8	PagingQueueType:0:8:1:4
+168	Microsoft-Windows-DxgKrnl	Fence	Start 	92	0	1	hAdapter:0:16:1:8	hSyncObject:0:16:1:8	Reason:0:8:1:4	Flags:0:8:1:4	SharedHandle:0:16:1:8	InitialValue:0:10:1:8
+169	Microsoft-Windows-DxgKrnl	ReportSyncObject	Info 	1069	2	0	pSyncObject:0:16:1:8	KMTHandle:0:16:1:8	pDxgDevice:0:16:1:8	pDxgSyncObject:0:16:1:8
+170	Microsoft-Windows-DxgKrnl	MakeResident	Start 	338	0	1	pPagingQueue:0:16:1:8	pSyncObject:0:16:1:8	NumAllocations:0:8:1:4	Flags:0:8:1:4
+171	Microsoft-Windows-DxgKrnl	VidMmMakeResident	Info 	320	0	0	pVidMmAlloc:0:16:1:8	ResidencyCount:0:8:1:4
+172	Microsoft-Windows-DxgKrnl	MakeResident	Stop 	339	0	2	Status:0:8:1:4	NumBytesToTrim:0:10:1:8	PagingFenceValue:0:10:1:8
+173	Microsoft-Windows-DxgKrnl	MemoryTransfer	Info 	50	0	0	hProcessId:0:16:1:8	hAllocationGlobalHandle:0:16:1:8	pDmaBuffer:0:16:1:8	offset:0:10:1:8	size:0:10:1:8	uiType:0:8:1:4
+174	Microsoft-Windows-DxgKrnl	PagingOpVirtualFill	Info 	307	1	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	AllocationOffset:0:10:1:8	FillSize:0:10:1:8	FillPattern:0:8:1:4	SegmentId:0:8:1:4	DestinationVirtualAddress:0:10:1:8	SegmentOffset:0:10:1:8
+175	Microsoft-Windows-DxgKrnl	ResetBackingStore	Info 	242	0	0	hGlobalAllocationHandle:0:16:1:8	cPages:0:8:1:4	RemoveFromWorkingSet:0:13:1:4	Succeeded:0:13:1:4
+176	Microsoft-Windows-DxgKrnl	CommitPageTable	Info 	523	0	0	VidMmAlloc:0:16:1:8	SegmentId:0:8:1:4	SegmentOffset:0:10:1:8
+177	MSNT_SystemTrace	Thread	SetPagePriority	0	3	51	ThreadId:0:8:1:4	OldPriority:0:4:1:1	NewPriority:0:4:1:1	Reserved:0:6:1:2
+178	Microsoft-Windows-DxgKrnl	Unlock	Info 	341	0	0	pAlloc:0:16:1:8
+179	Microsoft-Windows-DxgKrnl	TerminateAllocation	Info 	39	0	0	hVidMmAlloc:0:16:1:8
+180	Microsoft-Windows-DxgKrnl	PagingOpUnmapApertureSegment	Info 	59	0	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	SegmentId:0:8:1:4	OffsetInPages:0:10:1:8	NumberOfPages:0:10:1:8	EvictionResource:0:13:1:4
+181	Microsoft-Windows-DxgKrnl	ApertureUnmapping	Info 	52	0	0	hDevice:0:16:1:8	hAllocationGlobalHandle:0:16:1:8	size:0:10:1:8	bTemporary:0:13:1:4
+182	Microsoft-Windows-DxgKrnl	UnlockAllocationBackingStore	Info 	365	0	0	hVidMmGlobalAlloc:0:10:1:8
+183	Microsoft-Windows-DxgKrnl	PagingOpDiscard	Info 	55	0	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	Flags:0:8:1:4	SegmentId:0:8:1:4	SegmentOffset:0:10:1:8
+184	Microsoft-Windows-DxgKrnl	DeviceAllocation	Stop 	37	2	2	hProcessId:0:16:1:8	hDevice:0:16:1:8	pDxgAdapter:0:16:1:8	hVidMmAlloc:0:16:1:8	hVidMmGlobalAlloc:0:16:1:8	hDxgResource:0:16:1:8	hDxgSharedResource:0:16:1:8	hThunkAllocation:0:16:1:8	hThunkResource:0:16:1:8	PrivateRuntimeResourceHandle:0:16:1:8	pVirtualAddress:0:16:1:8	hProcessAllocDetails:0:16:1:8	hOtherPartitionHandle:0:8:1:4
+185	Microsoft-Windows-DxgKrnl	AdapterAllocation	Stop 	34	3	2	hProcessId:0:16:1:8	hDevice:0:16:1:8	pDxgAdapter:0:16:1:8	Flags:0:8:1:4	allocSize:0:10:1:8	ulAlignment:0:8:1:4	dwReadSegment:0:8:1:4	dwWriteSegment:0:8:1:4	PreferredSegment:0:8:1:4	HintedBank:0:8:1:4	dwEvictionSegment:0:8:1:4	Priority:0:8:1:4	hVidMmGlobalAlloc:0:16:1:8	hDxgGlobalAlloc:0:16:1:8	hDxgSharedResource:0:16:1:8	UsageVersion:0:8:1:4	UsageFlags:0:8:1:4	Format:0:8:1:4	SwizzledFormat:0:8:1:4	ByteOffset:0:8:1:4	Width:0:8:1:4	Height:0:8:1:4	Pitch:0:8:1:4	Depth:0:8:1:4	SlicePitch:0:8:1:4	BackingStoreWasPinned:0:13:1:4	pSectionObject:0:16:1:8	PhysicalAdapterIndex:0:6:1:2	PageTableOrDirectory:0:13:1:4
+186	Microsoft-Windows-DxgKrnl	ProcessAllocationDetails	Stop 	289	0	2	ProcessId:0:8:1:4	Handle:0:16:1:8	Size:0:10:1:8	hProcessAlloc:0:16:1:8
+187	Microsoft-Windows-DxgKrnl	SetProcessStatus	Info 	329	0	0	EProcess:0:16:1:8	ProcessStatus:0:8:1:4
+188	Microsoft-Windows-DxgKrnl	DpiDispatchCreate	Start 	122	0	1	DeviceObject:0:16:1:8	Status:0:8:1:4
+189	Microsoft-Windows-DxgKrnl	DpiDispatchCreate	Stop 	123	0	2	DeviceObject:0:16:1:8	Status:0:8:1:4
+190	Microsoft-Windows-DxgKrnl	DpiDispatchClose	Start 	124	0	1	DeviceObject:0:16:1:8	Status:0:8:1:4
+191	Microsoft-Windows-DxgKrnl	DpiDispatchClose	Stop 	125	0	2	DeviceObject:0:16:1:8	Status:0:8:1:4
+192	Microsoft-Windows-DXGI	SetFullscreenState	Start 	49	0	1	pIDXGISwapChain:0:16:1:8	OldWindowed:0:13:1:4	pOldOutput:0:16:1:8	pOldPrimary:0:16:1:8	pOldProxyPrimary:0:16:1:8	OldWinFlipProxyBufferCount:0:4:1:1	OldSwapEffect:0:8:1:4
+193	Microsoft-Windows-DxgKrnl	IndependentFlipTransition	Info 	267	1	0	Entering:0:13:1:4	compositionSurfaceLuid:0:10:1:8	VidPnSourceId:0:8:1:4	Plane:0:8:1:4	ApprovedPresentDuration:0:8:1:4	PendingIndependentFlip:0:13:1:4	bindId:0:10:1:8	RequestedByDwm:0:13:1:4	confirmationCookie:0:10:1:8
+194	Microsoft-Windows-DxgKrnl	DisplayConfigPlaneChange	Info 	416	0	0	pDxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	PlaneIndex:0:8:1:4	Enabled:0:13:1:4	Flags:0:8:1:4	SrcRect.left:0:8:1:4	SrcRect.top:0:8:1:4	SrcRect.right:0:8:1:4	SrcRect.bottom:0:8:1:4	DstRect.left:0:8:1:4	DstRect.top:0:8:1:4	DstRect.right:0:8:1:4	DstRect.bottom:0:8:1:4	ClipRect.left:0:8:1:4	ClipRect.top:0:8:1:4	ClipRect.right:0:8:1:4	ClipRect.bottom:0:8:1:4	Blend:0:8:1:4	ColorSpace:0:8:1:4	SDRWhiteLevel:0:8:1:4
+195	Microsoft-Windows-DxgKrnl	DdiSetTargetAdjustedColorimetry	Start 	1103	0	1	MiniportDeviceContext:0:16:1:8	TargetId:0:8:1:4	Status:0:8:1:4
+196	Microsoft-Windows-DxgKrnl	DdiSetTargetAdjustedColorimetry	Stop 	1104	0	2	MiniportDeviceContext:0:16:1:8	TargetId:0:8:1:4	Status:0:8:1:4
+197	Microsoft-Windows-DxgKrnl	SetPointerPosition	Info 	109	0	0	DxgAdapter:0:16:1:8	VidPnSourceId:0:8:1:4	X:0:8:1:4	Y:0:8:1:4	Flags:0:8:1:4
+198	Microsoft-Windows-DxgKrnl	DpiDispatchInternalIoctl	Start 	132	0	1	DeviceObject:0:16:1:8	StackLocationSize:0:6:1:2	StackLocation:2:14:1:1	Status:0:8:1:4
+199	Microsoft-Windows-DxgKrnl	DpiDispatchInternalIoctl	Stop 	133	0	2	DeviceObject:0:16:1:8	Status:0:8:1:4
+200	Microsoft-Windows-DxgKrnl	DpiDispatchIoctl	Start 	130	0	1	DeviceObject:0:16:1:8	StackLocationSize:0:6:1:2	StackLocation:2:14:1:1	Status:0:8:1:4
+201	Microsoft-Windows-DxgKrnl	DpiDispatchIoctl	Stop 	131	0	2	DeviceObject:0:16:1:8	Status:0:8:1:4
+202	Microsoft-Windows-DxgKrnl	WaitForVerticalBlankEventInternal	Info 	496	0	0	BoostedVSyncFreqEligible:0:13:1:4	IsNonBoostedVsyncFrame:0:13:1:4
+203	Microsoft-Windows-DXGI	SetFullscreenState	Stop 	50	0	2	pIDXGISwapChain:0:16:1:8	ReturnValue:0:8:1:4	NewWindowed:0:13:1:4	pNewOutput:0:16:1:8	pNewPrimary:0:16:1:8	pNewProxyPrimary:0:16:1:8	NewWinFlipProxyBufferCount:0:4:1:1	NewSwapEffect:0:8:1:4
+204	Microsoft-Windows-DxgKrnl	ReclaimAllocation	Info 	190	0	0	hAllocationHandle:0:16:1:8	Priority:0:4:1:1	State:0:4:1:1
+205	Microsoft-Windows-DxgKrnl	OfferAllocation	Info 	187	0	0	hAllocationHandle:0:16:1:8
+206	Microsoft-Windows-DxgKrnl	OfferAllocation	Start 	186	0	1	hAllocationHandle:0:16:1:8	Priority:0:4:1:1
+207	Microsoft-Windows-DxgKrnl	OfferAllocation	Stop 	188	0	2	hGlobalAllocationHandle:0:16:1:8
+208	Microsoft-Windows-DxgKrnl	PresentHistory	Start 	171	2	1	hAdapter:0:16:1:8	Token:0:16:1:8	Model:0:8:1:4	TokenSize:0:8:1:4	TokenData:0:10:1:8	Flags:0:20:1:4	CustomDuration:0:8:1:4	VmBusChannel:0:16:1:8
+209	Microsoft-Windows-DXGI	ResizeBuffers	Start 	45	0	1	pIDXGISwapchain:0:16:1:8	OldUserBackbufferCount:0:4:1:1	OldBackbufferCount:0:4:1:1	ppOldBackBuffers:4:16:2:8	pOldPrimary:0:16:1:8	pOldProxyPrimary:0:16:1:8	OldWidth:0:8:1:4	OldHeight:0:8:1:4	OldFormat:0:8:1:4	OldFlags:0:8:1:4	OldRedirected:0:13:1:4	OldLogicalSurfaceHandle:0:10:1:8	OldBackbufferHandles:4:16:2:8	OldFenceHandle:0:16:1:8	OldFenceValue:0:10:1:8	OldActualbufferCount:0:4:1:1	OldWinFlipProxyBufferCount:0:4:1:1	HybridPresentMode:0:8:1:4	ScanoutEligible:0:13:1:4	CrossAdapterTierSupport:0:8:1:4	CASOFallbackReason:0:8:1:4	OldProxyWidth:0:8:1:4	OldProxyHeight:0:8:1:4	OldProxyFormat:0:8:1:4	EffectsEnabledMask:0:20:1:4
+210	Microsoft-Windows-DXGI	GetMultiplaneOverlayCaps	Info 	59	0	0	pIDXGIOutput:0:16:1:8	MaxPlanes:0:8:1:4	OverlayMaxRGBPlanes:0:8:1:4	OverlayMaxYUVPlanes:0:8:1:4	OverlayCaps:0:8:1:4	PanelFitterMaxRGBPlanes:0:8:1:4	PanelFitterCaps:0:8:1:4
+211	Microsoft-Windows-DXGI	UnBindBackBuffersFromDwm	Info 	72	0	0	pIDXGISwapchain:0:16:1:8	KeepExistingContent:0:13:1:4
+212	Microsoft-Windows-DxgKrnl	TransferAllocationOwnership	Info 	373	0	0	hVidmmGlobalAlloc:0:16:1:8	OldOwnerPid:0:8:1:4	NewOwnerPid:0:8:1:4
+213	Microsoft-Windows-DxgKrnl	EvictPageTable	Info 	524	0	0	VidMmAlloc:0:16:1:8
+214	Microsoft-Windows-DXGI	CreateDirectFlipResource	Info 	63	0	0	pIDXGISwapChain:0:16:1:8	Width:0:8:1:4	Height:0:8:1:4	DXGIFormat:0:8:1:4
+215	Microsoft-Windows-DxgKrnl	PagingOpNotifyResidency	Info 	312	0	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	SegmentId:0:8:1:4	SegmentOffset:0:10:1:8	Flags:0:8:1:4
+216	Microsoft-Windows-DxgKrnl	VidMmEvict	Info 	321	0	0	pVidMmAlloc:0:16:1:8	ResidencyCount:0:8:1:4
+217	Microsoft-Windows-DxgKrnl	MonitoredFence	Start 	290	0	1	hAdapter:0:16:1:8	hSyncObject:0:16:1:8	Reason:0:8:1:4	Flags:0:8:1:4	SharedHandle:0:16:1:8	InitialValue:0:10:1:8
+218	Microsoft-Windows-DXGI	BindBackBuffersToDwm	Info 	71	0	0	pIDXGISwapchain:0:16:1:8	BackbufferCount:0:4:1:1	BackbufferHandles:4:16:1:8
+219	Microsoft-Windows-DXGI	DWMRedirection	Info 	53	0	0	pIDXGISwapChain:0:16:1:8	NewRedirected:0:13:1:4
+220	Microsoft-Windows-DXGI	ResizeBuffers	Stop 	46	0	2	pIDXGISwapChain:0:16:1:8	ReturnValue:0:8:1:4	NewUserBackbufferCount:0:4:1:1	NewBackbufferCount:0:4:1:1	ppNewBackBuffers:4:16:3:8	pNewPrimary:0:16:1:8	pNewProxyPrimary:0:16:1:8	NewWidth:0:8:1:4	NewHeight:0:8:1:4	NewFormat:0:8:1:4	NewFlags:0:8:1:4	NewRedirected:0:13:1:4	NewLogicalSurfaceHandle:0:10:1:8	NewBackbufferHandles:4:16:3:8	NewFenceHandle:0:16:1:8	NewFenceValue:0:10:1:8	NewActualbufferCount:0:4:1:1	NewWinFlipProxyBufferCount:0:4:1:1	HybridPresentMode:0:8:1:4	ScanoutEligible:0:13:1:4	CrossAdapterTierSupport:0:8:1:4	CASOFallbackReason:0:8:1:4	NewProxyWidth:0:8:1:4	NewProxyHeight:0:8:1:4	NewProxyFormat:0:8:1:4	EffectsEnabledMask:0:20:1:4
+221	Microsoft-Windows-DXGI	SetColorSpace1	Info 	69	0	0	pIDXGISwapchain:0:16:1:8	ColorSpace:0:8:1:4
+222	Microsoft-Windows-DxgKrnl	MonitoredFence	Stop 	292	0	2	hAdapter:0:16:1:8	hSyncObject:0:16:1:8	Reason:0:8:1:4	Flags:0:8:1:4	SharedHandle:0:16:1:8	InitialValue:0:10:1:8
+223	Microsoft-Windows-DxgKrnl	CreateSyncPoint	Info 	298	0	0	hDevice:0:16:1:8	SyncPointId:0:10:1:8	ContextCount:0:8:1:4	ContextArray:4:16:2:8	SubmissionIdArray:4:10:2:8
+224	Microsoft-Windows-DxgKrnl	RetireSyncPoint	Info 	299	0	0	hDevice:0:16:1:8	SyncPointId:0:10:1:8
+225	Microsoft-Windows-DxgKrnl	VidMmDereferenceObjectAsync	Start 	277	0	1	Object:0:16:1:8
+226	Microsoft-Windows-DxgKrnl	VidMmDereferenceObjectAsync	Stop 	278	0	2	Object:0:16:1:8
+227	Microsoft-Windows-DxgKrnl	PagingOpVirtualTransfer	Info 	306	1	0	pDxgAdapter:0:16:1:8	hDmaBuffer:0:16:1:8	ContinueNextBuffer:0:13:1:4	hAllocationGlobalHandle:0:16:1:8	AllocationOffset:0:10:1:8	TransferSize:0:10:1:8	SourceSegmentId:0:8:1:4	DestinationSegmentId:0:8:1:4	SourceVirtualAddress:0:10:1:8	DestinationVirtualAddress:0:10:1:8	SourcePageTable:0:10:1:8	TransferDirection:0:8:1:4	TransferFlags:0:8:1:4	DestinationPageTable:0:10:1:8	SourceSegmentOffset:0:10:1:8	DestinationSegmentOffset:0:10:1:8
+228	Microsoft-Windows-DXGI	SwapChain	Stop 	11	0	2	pIDXGISwapChain:0:16:1:8	pIDXGIFactory:0:16:1:8	pIDXGIDevice:0:16:1:8	pIDXGIOutput:0:16:1:8	UserBackbufferCount:0:4:1:1	BackbufferCount:0:4:1:1	ppBackBuffers:4:16:5:8	pPrimary:0:16:1:8	pProxyPrimary:0:16:1:8	Width:0:8:1:4	Height:0:8:1:4	RefreshNumerator:0:8:1:4	RefreshDenominator:0:8:1:4	Format:0:8:1:4	ScanlineOrdering:0:8:1:4	Scaling:0:8:1:4	SampleCount:0:8:1:4	SampleQuality:0:8:1:4	Usage:0:8:1:4	OutputWindow:0:16:1:8	Windowed:0:13:1:4	SwapEffect:0:8:1:4	Flags:0:8:1:4	Redirected:0:13:1:4	LogicalSurfaceHandle:0:10:1:8	BindId:0:10:1:8	BackbufferHandles:4:16:5:8	BackbufferEventHandles:4:16:5:8	FenceHandle:0:16:1:8	FenceValue:0:10:1:8	ActualBufferCount:0:4:1:1	ActualSwapEffect:0:8:1:4	WinFlipProxyBufferCount:0:4:1:1	HybridPresentMode:0:8:1:4	ScanoutEligible:0:13:1:4	CrossAdapterTierSupport:0:8:1:4	CASOFallbackReason:0:8:1:4	ProxyWidth:0:8:1:4	ProxyHeight:0:8:1:4	ProxyFormat:0:8:1:4	EffectsEnabledMask:0:20:1:4	WinSwapEffectUpgradeReason:0:8:1:4	GameConfigStoreApp:0:13:1:4	GameConfigUserApp:0:13:1:4	InternalDisplay:0:4:1:1	PluggedIn:0:4:1:1
+229	Microsoft-Windows-DxgKrnl	Unlock	Info 	42	0	0	hDevice:0:16:1:8	hAllocationHandle:0:16:1:8	dwFlags:0:8:1:4
+230	Microsoft-Windows-DxgKrnl	Context	Stop 	31	0	2	hDevice:0:16:1:8	NodeOrdinal:0:8:1:4	EngineAffinity:0:8:1:4	DmaBufferSize:0:8:1:4	DmaBufferSegmentSet:0:8:1:4	DmaBufferPrivateDataSize:0:8:1:4	AllocationListSize:0:8:1:4	PatchLocationListSize:0:8:1:4	Flags:0:8:1:4	hContext:0:16:1:8	ContextHandle:0:16:1:8	ParentDxgContext:0:16:1:8
+231	Microsoft-Windows-DxgKrnl	Device	Stop 	28	2	2	hProcessId:0:16:1:8	pDxgAdapter:0:16:1:8	ClientType:0:8:1:4	hDevice:0:16:1:8	RequestVSync:0:13:1:4	DisableGpuTimeout:0:13:1:4	hThunkHandle:0:8:1:4	DxgProcess:0:16:1:8	HostDeviceHandle:0:8:1:4	VirtualGpu:0:16:1:8
+232	Microsoft-Windows-DxgKrnl	Process	Stop 	473	0	2	DxgProcess:0:16:1:8	ProcessId:0:16:1:8	HostProcessHandle:0:8:1:4	ProcessFlags:0:8:1:4
+233	MSNT_SystemTrace	Thread	SetIoPriority	0	3	52	ThreadId:0:8:1:4	OldPriority:0:4:1:1	NewPriority:0:4:1:1	Reserved:0:6:1:2
+234	Microsoft-Windows-DxgKrnl	VidSchMarkDeviceAsError	Info 	467	0	0	DxgDevice:0:16:1:8	FromUserMode:0:13:1:4	Reason:0:8:1:4
+235	Microsoft-Windows-DxgKrnl	VidSchiSyncObjectSetToAlwaysSignaled	Info 	553	0	0	VidSchSyncObject:0:16:1:8	DxgSyncObject:0:16:1:8	AlwaysSignaled:0:13:1:4
+236	Microsoft-Windows-DxgKrnl	YieldStartAdapter	Info 	354	0	0	pDxgAdapter:0:16:1:8	YieldingPriority:0:8:1:4	YieldBudget:0:10:1:8
+237	Microsoft-Windows-DxgKrnl	YieldSetExpirationTimer	Info 	357	0	0	pDxgAdapter:0:16:1:8
+238	Microsoft-Windows-DxgKrnl	YieldStartNode	Info 	355	0	0	pDxgAdapter:0:16:1:8	NodeOrdinal:0:8:1:4	YieldExpirationInterval:0:10:1:8	YieldTimerExpirationInterval:0:10:1:8
+239	Microsoft-Windows-DxgKrnl	YieldStopNode	Info 	356	0	0	pDxgAdapter:0:16:1:8	NodeOrdinal:0:8:1:4
+240	Microsoft-Windows-DxgKrnl	YieldCancelExpirationTimer	Info 	358	0	0	pDxgAdapter:0:16:1:8
+241	Microsoft-Windows-DXGI	FindClosestMatchingMode	Start 	51	0	1	pIDXGIOutput:0:16:1:8	WidthToMatch:0:8:1:4	HeightToMatch:0:8:1:4	RefreshNumeratorToMatch:0:8:1:4	RefreshDenominatorToMatch:0:8:1:4	FormatToMatch:0:8:1:4	ScanlineOrderingToMatch:0:8:1:4	ScalingToMatch:0:8:1:4
+242	Microsoft-Windows-DXGI	FindClosestMatchingMode	Stop 	52	0	2	pIDXGIOutput:0:16:1:8	ReturnValue:0:8:1:4	WidthResult:0:8:1:4	HeightResult:0:8:1:4	RefreshNumeratorResult:0:8:1:4	RefreshDenominatorResult:0:8:1:4	FormatResult:0:8:1:4	ScanlineOrderingResult:0:8:1:4	ScalingResult:0:8:1:4
+243	Microsoft-Windows-DxgKrnl	SetAllocationPriority	Info 	46	0	0	hAllocationHandle:0:16:1:8	Priority:0:8:1:4
+244	Microsoft-Windows-DxgKrnl	SignalSynchronizationObject2	Info 	230	1	0	ContextCount:0:8:1:4	hContext:4:16:0:8	ObjectCount:0:8:1:4	ObjectArray:4:16:2:8	Flags:0:8:1:4	FenceValue:0:10:1:8	InternalFlags:0:20:1:4
+245	Microsoft-Windows-DxgKrnl	WaitForSynchronizationObject2	Info 	231	0	0	hContext:0:16:1:8	ObjectCount:0:8:1:4	ObjectArray:4:16:1:8	FenceValue:0:10:1:8
+246	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Start 	203	0	1	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4	State:0:8:1:4
+247	Microsoft-Windows-DxgKrnl	RuntimePowerManagement	Stop 	204	0	2	AdapterHandle:0:16:1:8	ComponentIndex:0:8:1:4
+248	Microsoft-Windows-DxgKrnl	PagingOpSysmemUncommit	Info 	314	0	0	pDxgAdapter:0:16:1:8	hAllocationGlobalHandle:0:16:1:8	SegmentId:0:8:1:4
+249	Microsoft-Windows-DxgKrnl	Fence	Stop 	94	0	2	hAdapter:0:16:1:8	hSyncObject:0:16:1:8	Reason:0:8:1:4	Flags:0:8:1:4	SharedHandle:0:16:1:8	InitialValue:0:10:1:8
+250	MSNT_SystemTrace	Thread	DCEnd	0	3	4	ProcessId:0:8:1:4	TThreadId:0:8:1:4	StackBase:0:16:1:8	StackLimit:0:16:1:8	UserStackBase:0:16:1:8	UserStackLimit:0:16:1:8	Affinity:0:16:1:8	Win32StartAddr:0:16:1:8	TebBase:0:16:1:8	SubProcessTag:0:8:1:4	BasePriority:0:4:1:1	PagePriority:0:4:1:1	IoPriority:0:4:1:1	ThreadFlags:0:4:1:1
+251	MSNT_SystemTrace	Image	KernelBase	0	2	33	ImageBase:0:16:1:8
+252	MSNT_SystemTrace	Image	HypercallPage	0	2	34	HypercallPageVa:0:16:1:8
+253	MSNT_SystemTrace	Image	DCEnd	0	3	4	ImageBase:0:16:1:8	ImageSize:0:16:1:8	ProcessId:0:8:1:4	ImageChecksum:0:8:1:4	TimeDateStamp:0:8:1:4	SignatureLevel:0:4:1:1	SignatureType:0:4:1:1	Reserved0:0:6:1:2	DefaultBase:0:16:1:8	Reserved1:0:8:1:4	Reserved2:0:8:1:4	Reserved3:0:8:1:4	Reserved4:0:8:1:4	FileName:0:1:1:0

@@ -1,0 +1,18 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody\\src\\packages\\Microsoft.Direct3D.DXC.1.8.2505.32\\build\\native\\bin\\x64\\dxc.exe",
+    "-nologo",
+    "-Tps_6_0",
+    "-EPSMain",
+    "-Fo",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\preregistered\\ablate_ps\\shader_mesh_dynamic_indexing_pixel.cso",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\preregistered\\ablate_ps\\shader_mesh_dynamic_indexing_pixel.hlsl"
+  ],
+  "command_line": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody\\src\\packages\\Microsoft.Direct3D.DXC.1.8.2505.32\\build\\native\\bin\\x64\\dxc.exe -nologo -Tps_6_0 -EPSMain -Fo \"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\preregistered\\ablate_ps\\shader_mesh_dynamic_indexing_pixel.cso\" \"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\preregistered\\ablate_ps\\shader_mesh_dynamic_indexing_pixel.hlsl\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\preregistered\\ablate_ps",
+  "requested_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody\\src\\packages\\Microsoft.Direct3D.DXC.1.8.2505.32\\build\\native\\bin\\x64\\dxc.exe",
+  "executable_sha256": "ce11bb02f6027055e0b9f8c062d13b14f373c876a16557a4fa744314117d31e7",
+  "pid": 13992,
+  "actual_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody\\src\\packages\\Microsoft.Direct3D.DXC.1.8.2505.32\\build\\native\\bin\\x64\\dxc.exe",
+  "returncode": 0
+}

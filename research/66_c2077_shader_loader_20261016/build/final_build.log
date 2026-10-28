@@ -1,0 +1,10 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.10.3
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+c2077_shader_addon.cpp
+   Creating library research\66_c2077_shader_loader_20261016\build\shader_lab_test.lib and object research\66_c2077_shader_loader_20261016\build\shader_lab_test.exp
+Shader lab guards/descriptor cloning/negative host selfcheck PASS
+c2077_shader_addon.cpp
+   Creating library research\66_c2077_shader_loader_20261016\build\shader_lab.lib and object research\66_c2077_shader_loader_20261016\build\shader_lab.exp

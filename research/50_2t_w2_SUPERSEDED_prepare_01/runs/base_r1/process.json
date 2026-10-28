@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\base\\D3D12Multithreading.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\base\\D3D12Multithreading.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\base",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\base\\D3D12Multithreading.exe",
+  "executable_sha256": "e5a560c9f1ebe07e32a9ae763b5625ea07e0b3c749f17250f822aad4cdf33c92",
+  "pid": 14568,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\base\\D3D12Multithreading.exe",
+  "returncode": 0
+}

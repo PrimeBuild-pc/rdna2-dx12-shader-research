@@ -1,0 +1,23 @@
+{
+  "variant": "rsqrt_dist",
+  "rep": 3,
+  "pid": 14068,
+  "summary": {
+    "pid": 14068,
+    "warmup": 150,
+    "frames": 300,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 84640.0,
+    "region0_min_ns": 82800.0,
+    "region0_max_ns": 146600.0,
+    "region0_p95_ns": 88120.0,
+    "region1_median_ns": 0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "5dfe44206ff3d912734e6beabbd52ee8bb586a76ffb547e73c35770700c57227",
+  "shaders": {
+    "shaders_VSMain.cso": "90b16f8a6ab0897f9fb32555de4b08f1725a85479f7cf2decc4fa1ffbbb7cea9",
+    "shaders_PSMain.cso": "49f3af95ee23a3289ab299791c11b144ba000c56ee4e3e7a55d1a35831de71df"
+  }
+}

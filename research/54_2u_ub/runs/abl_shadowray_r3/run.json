@@ -1,0 +1,22 @@
+{
+  "variant": "abl_shadowray",
+  "rep": 3,
+  "pid": 13796,
+  "summary": {
+    "pid": 13796,
+    "warmup": 200,
+    "frames": 500,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 845040.0,
+    "region0_min_ns": 781360.0,
+    "region0_max_ns": 1366480.0,
+    "region0_p95_ns": 923880.0,
+    "region1_median_ns": 0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "63aae4588550af823cd2265cbfa6a4e3c9c1daf61aeee72fa4f34797d94ceb3e",
+  "shaders": {
+    "Raytracing.dxil": "8b514c74bf87923bd11b95fd3de188a16de6948491cc283d1a50b986496398bc"
+  }
+}

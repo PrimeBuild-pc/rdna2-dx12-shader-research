@@ -1,0 +1,1000 @@
+     15 +    x = np.fromfile(a, dtype='<f4').resha
+         pe(-1, 4)[:, :3]
+     16 +    y = np.fromfile(b, dtype='<f4').resha
+         pe(-1, 4)[:, :3]
+     17 +    finite = np.isfinite(x) & np.isfinite
+         (y)
+     18 +    bits_x, bits_y = x.view(np.uint32), y
+         .view(np.uint32)
+     19 +    ulp = np.where(finite, np.abs(mono_i3
+         2(x) - mono_i32(y)), 0)
+     20 +    d = np.where(finite, np.abs(y.astype(
+         np.float64) - x.astype(np.float64)), 0)
+     21 +    rel = np.where(finite, d / np.maximum
+         (np.abs(x.astype(np.float64)), np.finfo(n
+         p.float32).tiny), 0)
+     22 +    return dict(values=x.size, differing=
+         int(np.count_nonzero(bits_x != bits_y)),
+     23 +                max_ulp=int(ulp.max()), m
+         ax_abs=float(d.max()), max_rel=float(rel.
+         max()),
+     24 +                negzero_x=int(np.count_no
+         nzero((x == 0) & np.signbit(x))),
+     25 +                negzero_y=int(np.count_no
+         nzero((y == 0) & np.signbit(y))),
+     26 +                nonfinite_x=int(np.count_
+         nonzero(~np.isfinite(x))),
+     27 +                nonfinite_y=int(np.count_
+         nonzero(~np.isfinite(y))))
+     28 +
+     29 +def check_q1():
+     30 +    q = ROOT/'research/40_2q_fullprecisio
+         n'
+     31 +    pairs = {}
+     32 +    base = q/'runs/base_fp32_r1/color.bin
+         '
+     33 +    for name in ['base_fp32_r2','scalar_f
+         p32_r1','fresnel5_fp32_r1','shadowskip_fp
+         32_r1',
+     34 +                 'falloffskip_fp32_r1','n
+         dotlskip_fp32_r1','stack3_scalar_fp32_r1'
+         ,'stack4_scalar_fp32_r1']:
+     35 +        pairs[name] = fp32_pair(base, q/'
+         runs'/name/'color.bin')
+     36 +    m = json.loads((q/'experiment_manifes
+         t.json').read_text())
+     37 +    hashes = {}
+     38 +    for name, expected in m['expected_byt
+         ecode'].items():
+     39 +        build = json.loads((q/f'build_{na
+         me}.json').read_text())
+     40 +        run = json.loads((q/'runs'/f'{nam
+         e}_fp32_r1'/'process.json').read_text())
+     41 +        hashes[name] = dict(manifest_eq_b
+         uild=(expected == build['bytecode_sha256'
+         ]),
+     42 +                            build_bytecod
+         e=build['bytecode_sha256'],
+     43 +                            exe_current=(
+         sha(build['executable']) == build['execut
+         able_sha256']),
+     44 +                            process_exit=
+         run.get('exit_code'))
+     45 +    return pairs, hashes
+     46 +
+     47 +def check_r2():
+     48 +    q = ROOT/'research/44_2r_cycle2'
+     49 +    m = json.loads((q/'experiment_manifes
+         t.json').read_text())
+     50 +    hashes = {}
+     51 +    for name, expected in m['expected_byt
+         ecode'].items():
+     52 +        if name == 'unroll4':
+     53 +            continue
+     54 +        build = json.loads((q/f'build_{na
+         me}.json').read_text())
+     55 +        run = json.loads((q/'runs'/f'{nam
+         e}_r1'/'run.json').read_text())
+     56 +        hashes[name] = dict(manifest_eq_b
+         uild=(expected == build['cs_sha256']),
+     57 +                            build_eq_run=
+         (build['cs_sha256'] == run['cs_sha256']),
+     58 +                            exe_current=(
+         sha(build['executable']) == build['execut
+         able_sha256']))
+     59 +    a = np.fromfile(q/'runs/base_r101/par
+         ticles.bin', dtype='<f4').reshape(-1,8)
+     60 +    b = np.fromfile(q/'runs/mass_hoist_r1
+         01/particles.bin', dtype='<f4').reshape(-
+         1,8)
+     61 +    bits_a, bits_b = a.view(np.uint32), b
+         .view(np.uint32)
+     62 +    finite = np.isfinite(a) & np.isfinite
+         (b)
+     63 +    ulp = np.where(finite, np.abs(mono_i3
+         2(a)-mono_i32(b)), 0)
+     64 +    d = np.where(finite, np.abs(b.astype(
+         np.float64)-a.astype(np.float64)), 0)
+     65 +    rel = np.where(finite & (a != 0), d/n
+         p.maximum(np.abs(a.astype(np.float64)), n
+         p.finfo(np.float32).tiny), 0)
+     66 +    comps = ['pos.x','pos.y','pos.z','pos
+         .w','vel.x','vel.y','vel.z','vel.w']
+     67 +    bycomp = {c:dict(diff=int(np.count_no
+         nzero(bits_a[:,i] != bits_b[:,i])),
+     68 +                     max_ulp=int(ulp[:,i]
+         .max()), max_rel=float(rel[:,i].max()), m
+         ax_abs=float(d[:,i].max()))
+     69 +              for i,c in enumerate(comps)
+         }
+     70 +    idx = np.unravel_index(np.argmax(rel)
+         , rel.shape)
+     71 +    one = dict(total_diff=int(np.count_no
+         nzero(bits_a != bits_b)), max_ulp=int(ulp
+         .max()),
+     72 +               max_rel=float(rel.max()),
+         max_abs=float(d.max()), max_rel_at=[int(i
+         dx[0]), comps[idx[1]]],
+     73 +               base_value=float(a[idx]),
+         hoist_value=float(b[idx]), by_component=b
+         ycomp)
+     74 +    return hashes, one, a, b
+     75 +
+     76 +def approx_condition(a, particle_indices)
+         :
+     77 +    # One-step output lets us approximate
+         ly undo pos += vel*0.1. Initial velocity
+         is known.
+     78 +    vel = a[:,4:7].astype(np.float64)
+     79 +    pos = a[:,:3].astype(np.float64) - ve
+         l * 0.1
+     80 +    soft = (0.00125)**2
+     81 +    out = {}
+     82 +    for j in particle_indices:
+     83 +        r = pos - pos[j]
+     84 +        inv3 = (np.sum(r*r, axis=1) + sof
+         t) ** -1.5
+     85 +        terms = r * inv3[:,None]
+     86 +        # 10000 is not a multiple of 128:
+          baseline subtracts 112 phantom bodies at
+          origin.
+     87 +        rp = -pos[j]
+     88 +        phantom = rp * ((np.dot(rp,rp)+so
+         ft) ** -1.5) * -112.0
+     89 +        s = terms.sum(axis=0) + phantom
+     90 +        denom = np.abs(s)
+     91 +        k_comp = np.divide(np.abs(terms).
+         sum(axis=0)+np.abs(phantom), denom,
+     92 +                           out=np.full(3,
+         np.inf), where=denom!=0)
+     93 +        k_vec = (np.linalg.norm(terms,axi
+         s=1).sum()+np.linalg.norm(phantom))/np.li
+         nalg.norm(s)
+     94 +        out[int(j)] = dict(k_component=k_
+         comp.tolist(), k_vector=float(k_vec), sum
+         =s.tolist())
+     95 +    return out
+     96 +
+     97 +if __name__ == '__main__':
+     98 +    pairs, qhash = check_q1()
+     99 +    rhash, one, a, b = check_r2()
+    100 +    # Inspect particles containing the la
+         rgest per-component relative discrepancy.
+    101 +    candidates = set()
+    102 +    for i in [0,1,2,4,5,6,7]:
+    103 +        denom=np.maximum(np.abs(a[:,i].as
+         type(np.float64)),np.finfo(np.float32).ti
+         ny)
+    104 +        candidates.add(int(np.argmax(np.a
+         bs(b[:,i].astype(np.float64)-a[:,i].astyp
+         e(np.float64))/denom)))
+    105 +    result = dict(q1_pairs=pairs,q1_hashe
+         s=qhash,r2_hashes=rhash,one_step=one,
+    106 +                  approx_condition=approx
+         _condition(a, sorted(candidates)))
+    107 +    print(json.dumps(result, indent=2))
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\codex_audi
+  │ t_2qr.py'
+  └ {
+      "q1_pairs": {
+    … +302 lines (ctrl + t to view transcript)
+      }
+    }
+
+• Edited ~\AppData\Local\Temp\codex_audit_2qr.py
+(+36 -1)
+      3  import numpy as np
+      4 +import ctypes
+      5
+        ⋮
+     97
+     98 +def regenerate_positions():
+     99 +    crt = ctypes.CDLL('ucrtbase.dll')
+    100 +    out=[]
+    101 +    for center in (200.0, -200.0):
+    102 +        crt.srand(0)
+    103 +        for _ in range(5000):
+    104 +            d=np.array([400.0,400.0,400.0
+         ],dtype=np.float32)
+    105 +            while np.float32(np.dot(d,d))
+          > np.float32(160000.0):
+    106 +                d=np.array([np.float32(((
+         crt.rand()%10000)-5000)/5000.0)*np.float3
+         2(400.0)
+    107 +                            for _ in rang
+         e(3)],dtype=np.float32)
+    108 +            d[0]=np.float32(d[0]+np.float
+         32(center))
+    109 +            out.append(d)
+    110 +    return np.asarray(out,dtype=np.float3
+         2)
+    111 +
+    112 +def exactish_condition(a, particle_indice
+         s):
+    113 +    pos=regenerate_positions().astype(np.
+         float64)
+    114 +    # Confirm reconstruction against the
+         recorded one-step state.
+    115 +    inferred=a[:,:3].astype(np.float64)-a
+         [:,4:7].astype(np.float64)*0.1
+    116 +    check=float(np.max(np.abs(pos-inferre
+         d)))
+    117 +    soft=(0.00125)**2
+    118 +    out={}
+    119 +    for j in particle_indices:
+    120 +        r=pos-pos[j]
+    121 +        inv3=(np.sum(r*r,axis=1)+soft)**-
+         1.5
+    122 +        terms=r*inv3[:,None]
+    123 +        rp=-pos[j]
+    124 +        phantom=rp*((np.dot(rp,rp)+soft)*
+         *-1.5)*-112.0
+    125 +        s=terms.sum(axis=0)+phantom
+    126 +        k=(np.abs(terms).sum(axis=0)+np.a
+         bs(phantom))/np.abs(s)
+    127 +        out[int(j)]=dict(k_component=k.to
+         list(),k_vector=float((np.linalg.norm(ter
+         ms,axis=1).sum()+np.linalg.norm(phantom))
+         /np.linalg.norm(s)))
+    128 +    return check,out
+    129 +
+    130  if __name__ == '__main__':
+        ⋮
+    137          candidates.add(int(np.argmax(np.a
+         bs(b[:,i].astype(np.float64)-a[:,i].astyp
+         e(np.float64))/denom)))
+    138 +    recon, exactish=exactish_condition(a,
+         sorted(candidates))
+    139      result = dict(q1_pairs=pairs,q1_hashe
+         s=qhash,r2_hashes=rhash,one_step=one,
+    106 -                  approx_condition=approx
+         _condition(a, sorted(candidates)))
+    140 +                  approx_condition=approx
+         _condition(a, sorted(candidates)),
+    141 +                  regenerated_position_ma
+         x_error_vs_inferred=recon, regenerated_co
+         ndition=exactish)
+    142      print(json.dumps(result, indent=2))
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\codex_audi
+  │ t_2qr.py'
+  └ {
+      "q1_pairs": {
+    … +353 lines (ctrl + t to view transcript)
+      }
+    }
+
+• Edited ~\AppData\Local\Temp\codex_audit_2qr.py
+(+24 -1)
+    129
+    130 +def all_conditions():
+    131 +    pos=regenerate_positions().astype(np.
+         float64)
+    132 +    soft=(0.00125)**2
+    133 +    maxima=[0.0,0.0,0.0]
+    134 +    where=[None,None,None]
+    135 +    kvals=[]
+    136 +    for lo in range(0,len(pos),64):
+    137 +        p=pos[lo:lo+64]
+    138 +        r=pos[None,:,:]-p[:,None,:]
+    139 +        inv3=(np.sum(r*r,axis=2)+soft)**-
+         1.5
+    140 +        terms=r*inv3[:,:,None]
+    141 +        rp=-p
+    142 +        phantom=rp*(np.sum(rp*rp,axis=1)+
+         soft)[:,None]**-1.5*-112.0
+    143 +        sums=terms.sum(axis=1)+phantom
+    144 +        kk=(np.abs(terms).sum(axis=1)+np.
+         abs(phantom))/np.abs(sums)
+    145 +        kvals.append(kk)
+    146 +        for c in range(3):
+    147 +            z=int(np.argmax(kk[:,c]))
+    148 +            if kk[z,c]>maxima[c]: maxima[
+         c],where[c]=float(kk[z,c]),lo+z
+    149 +    k=np.concatenate(kvals,axis=0)
+    150 +    return dict(maxima=maxima,where=where
+         ,p50=np.median(k,axis=0).tolist(),p99=np.
+         percentile(k,99,axis=0).tolist())
+    151 +
+    152  if __name__ == '__main__':
+        ⋮
+    162                    approx_condition=approx
+         _condition(a, sorted(candidates)),
+    141 -                  regenerated_position_ma
+         x_error_vs_inferred=recon, regenerated_co
+         ndition=exactish)
+    163 +                  regenerated_position_ma
+         x_error_vs_inferred=recon, regenerated_co
+         ndition=exactish,
+    164 +                  all_condition=all_condi
+         tions())
+    165      print(json.dumps(result, indent=2))
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\codex_audi
+  │ t_2qr.py' | Select-String -Pattern
+  │ … +1 lines
+  └
+    >   "all_condition": {
+    … +11 lines (ctrl + t to view transcript)
+            3.033933916645677,
+
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\codex_audi
+  │ t_2qr.py' | Select-String -Pattern
+  │ … +1 lines
+  └
+    >   "all_condition": {
+    … +21 lines (ctrl + t to view transcript)
+      }
+
+
+• Edited ~\AppData\Local\Temp\codex_audit_2qr.py
+(+6 -0)
+    22      rel = np.where(finite, d / np.maximum(
+        np.abs(x.astype(np.float64)), np.finfo(np.
+        float32).tiny), 0)
+    23 +    nz=np.finfo(np.float32).tiny
+    24 +    symden=np.maximum(np.maximum(np.abs(x.
+        astype(np.float64)),np.abs(y.astype(np.flo
+        at64))),nz)
+    25      return dict(values=x.size, differing=i
+        nt(np.count_nonzero(bits_x != bits_y)),
+    26                  max_ulp=int(ulp.max()), ma
+        x_abs=float(d.max()), max_rel=float(rel.ma
+        x()),
+    27 +                max_symmetric_rel=float((d
+        /symden).max()),
+    28 +                base_zero_variant_nonzero=
+        int(np.count_nonzero((x==0)&(y!=0))),
+    29 +                subnormal_x=int(np.count_n
+        onzero((np.abs(x)>0)&(np.abs(x)<nz))),
+    30 +                subnormal_y=int(np.count_n
+        onzero((np.abs(y)>0)&(np.abs(y)<nz))),
+    31                  negzero_x=int(np.count_non
+        zero((x == 0) & np.signbit(x))),
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\codex_audi
+  │ t_2qr.py' | Select-String -Pattern
+  │ … +1 lines
+  └
+    >     "stack3_scalar_fp32_r1": {
+    … +18 lines (ctrl + t to view transcript)
+            "max_ulp": 7,
+
+
+• Explored
+  └ Read isa_report.json
+
+• Searching the web
+
+• Searched the web for site:gpuopen.com RDNA2
+  occupancy VGPR allocation granularity wave64
+  1024 VGPR SIMD ...
+
+• Searching the web
+
+• Searched the web
+
+• Ran $files=@('research/33_2p_shadelights/isa/
+  │ base/
+  │ gfx1030_isa_pixel.txt','research/33_2p_shade
+  │ … +7 lines
+  └ FILE research/33_2p_shadelights/isa/base/
+    gfx1030_isa_pixel.txt
+    … +137 lines (ctrl + t to view transcript)
+    13:  s_version     UC_VERSION_GFX10 |
+    UC_VERSION_W64_BIT   // 000000000000: B0802004
+
+• Searching the web
+
+• Searched the web for site:gpuopen.com RDNA2
+  performance guide wave64 8 waves SIMD VGPR
+  allocation ...
+
+• Ran $files=@('research/40_2q_fullprecision/runs/
+  │ base_fp32_r1/
+  │ capture.json','research/40_2q_fullprecision/
+  │ … +9 lines
+  └ FILE research/40_2q_fullprecision/runs/
+    base_fp32_r1/capture.json
+    … +72 lines (ctrl + t to view transcript)
+    ":1920,"height":1080,"row_pitch":30720,"stored
+    _row_bytes":30720,"padding_stored":false}
+
+• Ran Get-Content -LiteralPath
+  │ 'research/41_2q_cycle2/preregistered/
+  │ contract_canary/Output/Model/
+  │ … +4 lines
+  └ #if 0
+    ;
+    … +19 lines (ctrl + t to view transcript)
+    ; -------------------- ----- ------ --------
+    -------- ------- ------
+
+• Ran rg -n -i -C 3 'IsNaN|IsInf|1\.000000e\+30|
+  │ 1e30|isSpecialFloat|Saturate|
+  │ dx\.op\.isSpecial' 'research/41_2q_cycle2/
+  │ … +2 lines
+  └ 227-  %71 = call float @dx.op.unary.f32(i32
+    84, float %67)  ; DerivCoarseY(value)
+    … +317 lines (ctrl + t to view transcript)
+    @dx.op.rawBufferLoad.i32(i32,
+    %dx.types.Handle, i32, i32, i8, i32) #2
+
+• Ran rg -n -C 15 'NbProbe::|target|Begin\(|End\(|
+  │ Collect|DumpParticles|m_particleBuffers|
+  │ Dispatch' 'C:
+  │ … +3 lines
+  └ tools/nb_probe.h-33-    inline bool Enabled()
+    { return getenv("NB_DIR") != nullptr; }
+    … +384 lines (ctrl + t to view transcript)
+    pCommandList->Barrier(_countof(EndUAVBufBarrie
+    rGroups), EndUAVBufBarrierGroups);
+
+• Searching the web
+
+• Searched the web for site:learn.microsoft.com/
+  en-us/windows/win32/direct3dhlsl saturate HLSL
+  NaN ...
+
+• Ran rg -n -C 6 'counter|order|ordine|r1|r2|
+  │ base.*mass|mass.*base|run ' research/
+  │ OVERNIGHT_SESSION_LOG.md
+  │ … +5 lines
+  └ research/44_2r_cycle2/
+    experiment_manifest.json-1-{
+    … +156 lines (ctrl + t to view transcript)
+    07-Sep-26 00:52:36 mass_hoist_r102
+
+
+• Edited ~\AppData\Local\Temp\codex_audit_2qr.py
+(+12 -11)
+     94          rp = -pos[j]
+     95 -        phantom = rp * ((np.dot(rp,rp)+so
+         ft) ** -1.5) * -112.0
+     96 -        s = terms.sum(axis=0) + phantom
+     95 +        phantom_one = rp * ((np.dot(rp,rp
+         )+soft) ** -1.5)
+     96 +        # 112 out-of-range reads act as b
+         odies at zero, then one -112 correction c
+         ancels them.
+     97 +        s = terms.sum(axis=0)
+     98          denom = np.abs(s)
+     98 -        k_comp = np.divide(np.abs(terms).
+         sum(axis=0)+np.abs(phantom), denom,
+     99 +        k_comp = np.divide(np.abs(terms).
+         sum(axis=0)+224.0*np.abs(phantom_one), de
+         nom,
+    100                             out=np.full(3,
+         np.inf), where=denom!=0)
+    100 -        k_vec = (np.linalg.norm(terms,axi
+         s=1).sum()+np.linalg.norm(phantom))/np.li
+         nalg.norm(s)
+    101 +        k_vec = (np.linalg.norm(terms,axi
+         s=1).sum()+224.0*np.linalg.norm(phantom_o
+         ne))/np.linalg.norm(s)
+    102          out[int(j)] = dict(k_component=k_
+         comp.tolist(), k_vector=float(k_vec), sum
+         =s.tolist())
+        ⋮
+    130          rp=-pos[j]
+    130 -        phantom=rp*((np.dot(rp,rp)+soft)*
+         *-1.5)*-112.0
+    131 -        s=terms.sum(axis=0)+phantom
+    132 -        k=(np.abs(terms).sum(axis=0)+np.a
+         bs(phantom))/np.abs(s)
+    133 -        out[int(j)]=dict(k_component=k.to
+         list(),k_vector=float((np.linalg.norm(ter
+         ms,axis=1).sum()+np.linalg.norm(phantom))
+         /np.linalg.norm(s)))
+    131 +        phantom_one=rp*((np.dot(rp,rp)+so
+         ft)**-1.5)
+    132 +        s=terms.sum(axis=0)
+    133 +        k=(np.abs(terms).sum(axis=0)+224.
+         0*np.abs(phantom_one))/np.abs(s)
+    134 +        out[int(j)]=dict(k_component=k.to
+         list(),k_vector=float((np.linalg.norm(ter
+         ms,axis=1).sum()+224.0*np.linalg.norm(pha
+         ntom_one))/np.linalg.norm(s)))
+    135      return check,out
+        ⋮
+    148          rp=-p
+    148 -        phantom=rp*(np.sum(rp*rp,axis=1)+
+         soft)[:,None]**-1.5*-112.0
+    149 -        sums=terms.sum(axis=1)+phantom
+    150 -        kk=(np.abs(terms).sum(axis=1)+np.
+         abs(phantom))/np.abs(sums)
+    149 +        phantom_one=rp*(np.sum(rp*rp,axis
+         =1)+soft)[:,None]**-1.5
+    150 +        sums=terms.sum(axis=1)
+    151 +        kk=(np.abs(terms).sum(axis=1)+224
+         .0*np.abs(phantom_one))/np.abs(sums)
+    152          kvals.append(kk)
+
+⚠ Skill descriptions were shortened to fit the
+  skills context budget. Codex can still see every
+  skill, but some descriptions are shorter.
+  Disable unused skills or plugins to leave more
+  room for the rest.
+
+• Context compacted
+
+↳ Hook · PONYTAIL:FULL
+
+──────────────────────────────────────────────────
+
+• Ho trovato un possibile falso negativo
+  sostanziale nella canary: il sentinella può
+  essere annullato proprio dalla moltiplicazione
+  per zero che dovrebbe denunciare. Completo ora
+  il controllo numerico del condizionamento e la
+  provenienza dei binari.
+
+• Ran python "$env:TEMP\codex_audit_2qr.py"
+  └ {
+      "q1_pairs": {
+    … +407 lines (ctrl + t to view transcript)
+      }
+    }
+
+• Explored
+  └ Read task_gatecheck.md
+
+• Ran rg -n "pow\(|double|fpext|fptrunc|
+  │ dx.op.unary.f32|slots_raw|values_swept|def
+  │ compare_fp32|denom =|ordered|float3 v =|
+  │ … +9 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +1756 lines (ctrl + t to view transcript)
+    iledShaders\ParticlePS.h" /Vn "g_pParticlePS"
+    -HV 2021 Shaders\ParticlePS.hlsl  (TaskId:149)
+
+• Ran $files = @('research/41_2q_cycle2/
+  │ source_revisions/
+  │ contract_canary_Lighting.hlsli','research/44
+  │ … +15 lines
+  └ FILE research/41_2q_cycle2/source_revisions/
+    contract_canary_Lighting.hlsli
+    … +274 lines (ctrl + t to view transcript)
+    215:           "nan %u, inf %u/%u, -0 %u,
+    zero-mismatch %u\n",
+
+• Ran $f='research/41_2q_cycle2/source_revisions/
+  │ contract_canary_Lighting.hlsli'; $i=0;
+  │ Get-Content -LiteralPath $f | ForEach-Object
+  │ … +2 lines
+  └ 150:        lightDir,
+    151:        lightColor
+    … +87 lines (ctrl + t to view transcript)
+    235:    float3    normal,            //
+    World-space normal
+
+• Ran rg -n "zero_mismatch|zero mismatch|8388608|
+  │ 1065353217|denorm|subnormal|2\^-25|1e5|
+  │ conditioning|occupancy|wave/SIMD|bucket"
+  │ … +9 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +411 lines (ctrl + t to view transcript)
+    "g_pLanczosFast24CS" -HV 2021
+    Shaders\LanczosFast24CS.hlsl  (TaskId:132)
+
+• Ran Get-Content -LiteralPath
+  │ 'research/44_2r_cycle2/
+  │ conditioning_measured.json'; Get-Content
+  │ … +4 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +97 lines (ctrl + t to view transcript)
+      "max_ulp_vs_base": 3
+    }
+
+• Ran $f='research/OVERNIGHT_FINAL_REPORT.md';
+  │ $i=0; Get-Content -LiteralPath $f |
+  │ ForEach-Object { $i++; if (($i -ge 50 -and
+  │ … +3 lines
+  └ 50:Determinism first: two independent
+    processes of the base build produce
+    … +168 lines (ctrl + t to view transcript)
+    380:upstream sources, all of which are
+    preserved.
+
+• Ran $f='research/PHASE_2P_WORKLOG.md'; $i=0;
+  │ Get-Content -LiteralPath $f | ForEach-Object
+  │ { $i++; if ($i -ge 260 -and $i -le 310)
+  │ … +1 lines
+  └ 260:The gain **shrinks but survives**. Its
+    size is content-dependent — as the adversarial
+    … +63 lines (ctrl + t to view transcript)
+    Same lights, same arithmetic, same
+    accumulation order.
+
+──────────────────────────────────────────────────
+
+• Il controllo 2R separa due cose che il report
+  tendeva a fondere: la trasformazione algebrica è
+  corretta, ma “condizionamento ≈10⁵” non descrive
+  il caso peggiore osservato; è al massimo un
+  estremo raro per componente. Verifico l’ultima
+  parte contro la documentazione RDNA2, perché il
+  conteggio “9 wave64/SIMD” è sospetto.
+
+• Searching the web
+
+• Searched the web for
+  https://gpuopen.com/wp-content/uploads/2019/08/R
+DNA_Shader_ISA_7July2019.pdf
+
+• Searching the web
+
+• Searched the web for site:gpuopen.com RDNA2 VGPR
+  allocation granularity wave64 8 4 ...
+
+• Searching the web
+
+• Searched the web
+
+• Searching the web
+
+• Searched the web for 'wave64'
+
+• Ran rg --files research/41_2q_cycle2
+  │ research/42_2q_replication
+  │ research/43_2r_workload
+  │ … +3 lines
+  └
+    research/43_2r_workload\runs\base_r5\process.j
+    … +124 lines (ctrl + t to view transcript)
+    calar.2\msbuild.json
+
+
+• Ran Get-Content -LiteralPath
+  │ 'research/41_2q_cycle2/
+  │ experiment_manifest.json'; Get-Content
+  │ … +6 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +285 lines (ctrl + t to view transcript)
+    0592c4c83437d48e613"
+    }
+
+• Ran rg -n "def compare_particles|max_rel|denom|x
+  │ == 0|N95|pairwise" tools/run_2r.py
+  │ research/44_2r_cycle2/
+  │ … +3 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +49 lines (ctrl + t to view transcript)
+    max_ulp={c['max_ulp']}
+    max_rel={c['max_rel']:.3e}"
+
+• Ran $f='tools/run_2r.py'; $i=0; Get-Content
+  │ -LiteralPath $f | ForEach-Object { $i++; if
+  │ ($i -ge 382 -and $i -le 435) { "${i}:$_" } }
+  └ 382:def compare_particles(a_tag, b_tag):
+    383:    import numpy as np
+    … +59 lines (ctrl + t to view transcript)
+    [i]) / data["base"][i] * 100 for i in
+    range(k)]
+
+• Ran Get-Content -LiteralPath
+  │ 'research/42_2q_replication/
+  │ frame_replication.json'; Get-Content
+  │ … +3 lines
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +206 lines (ctrl + t to view transcript)
+    clock/power effect. The two are never mixed."
+    }
+
+• Ran $f='research/44_2r_cycle2/source_revisions/
+  │ mass_hoist_nBodyGravityCS.hlsl'; $i=0;
+  │ Get-Content -LiteralPath $f | ForEach-Object
+  │ … +2 lines
+  └ 25:    float3 r = bj.xyz - bi.xyz;
+    26:
+    … +29 lines (ctrl + t to view transcript)
+    54:
+    55:[numthreads(blocksize, 1, 1)]
+
+──────────────────────────────────────────────────
+
+• Ho ricalcolato i dati con uno script
+  indipendente in %TEMP%; nessun file del progetto
+  è stato modificato e non ho eseguito build o
+  applicazioni GPU.
+
+  1. ULP e sweep esaustivo — REGGE CON RISERVA
+
+  - Verificato dai dati: i numeri dell’immagine
+    FP32 reggono. Su 6.220.800 canali RGB:
+      - stack3_scalar: max 7 ULP, max relativo
+        4,331269e-7;
+
+      - stack4_scalar: max 7 ULP, max relativo
+        4,374270e-7;
+
+      - base/base e base/scalar: byte-identici;
+      - nessun NaN, Inf, subnormale, zero con
+        variante non-zero o -0 nelle catture.
+
+  - Verificato nel DXIL: il pow(x,5) dello sweep è
+    realmente Log → ×5 → Exp, non una sequenza di
+    moltiplicazioni (sweep disassembly
+    (research/40_2q_fullprecision/sweep/
+    sweep_dxil_disassembly.txt:87)). Anche l’ISA
+    dell’app contiene v_log_f32/v_exp_f32: il
+    confronto non è vuoto.
+
+  - Verificato nel riferimento: x viene esteso a
+    double, moltiplicato in FP64 e poi convertito
+    in FP32 (reference disassembly
+    (research/40_2q_fullprecision/sweep/
+    sweep_ref_dxil_disassembly.txt:97)). Non viene
+    degradato a FP32.
+
+  - Giudizio: chiamarlo “valore vero” è
+    leggermente troppo forte. È un ottimo
+    riferimento FP64, ma non un oracolo esatto:
+    resta possibile il rarissimo double rounding,
+    e l’ultimo fmul double porta il flag fast. Un
+    oracolo intero/MPFR sarebbe necessario per
+    certificare formalmente il limite esatto di 3
+    ULP. La superiorità macroscopica rispetto agli
+    8.388.608 ULP di pow resta comunque solida.
+
+  - La metrica ULP dello sweep è corretta perché
+    tutti i risultati sono finiti e non negativi:
+    per essi asuint(float) è monotono e
+    InterlockedMax è valido. compare_fp32() usa
+    correttamente una mappa monotona anche per i
+    negativi e tratta separatamente gli zeri con
+    segno.
+
+  - Difetto dormiente: l’errore relativo di
+    compare_fp32() usa max(|base|, FLT_MIN),
+    quindi non è una misura relativa sensata per
+    subnormali ed è asimmetrico. Qui non altera il
+    risultato perché le immagini non contengono
+    subnormali né mismatch da zero.
+
+  - Il dominio è sufficiente ma non “esattamente
+    il dominio raggiungibile”: _sat produce [0,1]
+    e mappa NaN a zero, come documentato da
+    Microsoft
+
+    (https://learn.microsoft.com/en-us/windows/win
+32/direct3dhlsl/saturate),
+    ma 1-saturate(y) non può generare tutti i
+    float positivi sotto circa 2^-24. Lo sweep di
+    tutti i float [0,1] è quindi un sovrainsieme
+    conservativo. I sette zero_mismatch, tutti
+    sotto 2^-25, sono osservazioni reali dello
+    sweep ma non raggiungibili da quella
+    espressione in FSchlick; inoltre il compile
+    non fissa la modalità denormale, quindi sono
+    dipendenti dalla modalità scelta dal driver
+    (DXC denorm mode
+
+    (https://github.com/microsoft/DirectXShaderCom
+piler/wiki/Denorm-Mode)).
+
+  - Problema di provenienza: il sweep.cpp attuale
+    scrive sempre slots_raw, ma i primi
+    sweep_result.json non li contengono. Quei
+    risultati provengono quindi da una versione
+    precedente dell’host. Mancano SHA del CSO/EXE,
+    versione DXC e legame crittografico con il
+    DXIL salvato. ref_full.json, invece, contiene
+    anche il contatore di visite corretto:
+    1.065.353.217.
+
+  2. Canary del data contract — ROTTO
+
+  - Verificato: la canary è nel bytecode
+    compilato. Manifest e build concordano sullo
+    SHA, il blob cresce da 12.612 a 14.044 byte e
+    il DXIL contiene controlli IsNaN/IsInf, branch
+    e il valore 1e30. Non risulta eliminata dal
+    front-end.
+
+  - Falso negativo decisivo: il sentinella viene
+    inserito dentro il valore successivamente
+    moltiplicato per zero.
+      - falloffskip: ApplyLightCommon() può
+        restituire 1e30, ma il baseline esegue
+        distanceFalloff * ApplyLightCommon(...).
+        Se distanceFalloff==0, il sentinella torna
+        zero.
+
+      - shadowskip: shadow=1e30 viene poi
+        moltiplicato per lit; se lit==0, il
+        sentinella scompare.
+
+      - Sono precisamente i percorsi che gli
+        early-out evitano. Quindi “ogni violazione
+        diventa un pixel 1e30” è falso.
+
+  - ndotlskip non è coperto rigorosamente: viene
+    controllato il prodotto finale nDotL*RHS, non
+    RHS = lightColor*(...). Con nDotL=0, un RHS
+    negativo finito può produrre -0, che né v<0 né
+    la successiva aritmetica garantiscono di
+    conservare.
+
+  - La canary non controlla direttamente tutti i
+    distanceFalloff, coneFalloff, atten, RHS
+    intermedi o segni di zero; inoltre un frame
+    della scena a frame 140 dimostra al massimo il
+    contratto osservato lì, non “ogni luce di ogni
+    pixel” in generale.
+
+  - La build base è il posto giusto per osservare
+    i calcoli che le trasformazioni salterebbero,
+    ma non copre nuovi valori prodotti dalle
+    trasformazioni stesse, inclusa la diversa
+    approssimazione Fresnel.
+
+  3. Conditioning in 2R — ROTTO nella formulazione
+     citata; regge l’assenza di un errore
+     algebrico
+
+  - Verificato: non trovo un errore nella
+    trasformazione. mass è comune anche al termine
+    correttivo con particles=-tooManyParticles;
+    accel *= mass è dopo tale correzione e prima
+    di entrambi gli usi: aggiornamento della
+    velocità e length(accel) scritto in velo.w
+    (shader (research/44_2r_cycle2/
+    source_revisions/
+    mass_hoist_nBodyGravityCS.hlsl:89)). In
+    aritmetica esatta la trasformazione è
+    equivalente.
+
+  - Ricalcolo indipendente dopo un passo:
+      - 32.336/80.000 valori differenti;
+      - max 164.301 ULP;
+      - max relativo 1,062853%, su velo.x della
+        particella 4230;
+
+      - max assoluto 8,392334e-4, su velo.w.
+
+  - La frase “condizionamento ≈10⁵” non segue da
+    164.301 ULP. Quel massimo è su una componente
+    di velocità quasi zero. Ricostruendo le
+    posizioni iniziali e calcolando Σ|termine|/|
+    Σtermine|:
+      - mediana per componente circa 3;
+      - p99 circa 127–166;
+      - massimi rari 1,30e5 / 1,29e4 / 1,17e5;
+      - per il caso del massimo errore relativo,
+        particella 4230: κx≈1,06e4, ma
+        condizionamento vettoriale soltanto
+        ≈15,35.
+
+  - Inoltre non sono semplicemente “10.000 forze”:
+    vengono accumulati 112 contributi fantasma
+    dall’origine e poi un contributo correttivo
+    pesato -112. Questa cancellazione artificiale
+    aumenta il condizionamento.
+
+  - Il report stesso contiene già l’errata
+    corretta: amplificazione osservata circa 20
+    epsilon in mediana e 425 epsilon al massimo
+    (report (research/
+    OVERNIGHT_FINAL_REPORT.md:220)). Quindi regge
+    “reassociazione numericamente non equivalente,
+    non bug di trasformazione”; non regge la
+    quantificazione generale κ≈10⁵.
+
+  - Per chiudere causalmente la diagnosi
+    servirebbe emulare i due esatti ordini FP32 o
+    ricalcolarli con un accumulatore esatto/FP64 e
+    correlare errore e condizionamento per
+    particella. velo.w conserva solo |accel|, non
+    le tre componenti.
+
+  4. Occupancy in 2P — REGGE CON RISERVA
+
+  - Verificato nell’ISA RGA: tutti sono wave64;
+    base alloca 64 VGPR, mentre fresnel5,
+    shadowskip, stack3 e stack3_scalar allocano
+    56. La granularità wave64 di 8 VGPR su GFX10.3
+    rende coerente il calcolo 8 contro 9 wave
+    teoriche per SIMD.
+
+  - stack3_scalar con 62 SGPR non introduce un
+    limite SGPR: su RDNA gli SGPR per wave hanno
+    allocazione fissa e sono sufficienti a
+    riempire gli slot. Non risulta LDS statico o
+    scratch. AMD distingue però esplicitamente
+    occupancy teorica e misurata; per un pixel
+    shader anche interpolanti, primitiva,
+    disponibilità delle wave e launch rate possono
+    limitare quella reale (AMD, Occupancy
+    explained
+
+    (https://gpuopen.com/learn/occupancy-explained
+/)).
+
+  - Il confronto nello stesso bucket falsifica
+    bene la spiegazione forte “il guadagno è
+    soltanto il salto di allocazione VGPR”:
+    fresnel5 e stack3 hanno lo stesso tetto
+    teorico ma guadagni molto diversi.
+
+  - Non falsifica un contributo dell’occupancy:
+    ogni confronto contro base include comunque il
+    salto teorico 8→9, mentre durata delle wave,
+    divergenza, lancio e occupancy raggiunta
+    cambiano con gli early-out. “Stesso bucket”
+    significa stesso massimo statico, non stessa
+    occupancy misurata né uguale capacità
+    effettiva di nascondere latenza.
+
+  - SGPR probabilmente non limita e gli
+    interpolanti non cambiano, ma soltanto una
+    cattura RGP/PIX con occupancy e limiter per il
+    draw può verificarlo. L’esperimento causale
+    migliore sarebbe portare davvero base e stack
+    allo stesso bucket di 64 VGPR mantenendo
+    invariato il corpo ISA, oppure forzare solo i
+    metadati di allocazione se il driver lo
+    consente.
+
+  Altri rilievi
+
+  - Non ho trovato binari applicativi stale nei
+    gate controllati: manifest/build/EXE
+    coincidono per tutte le varianti Q1 e R2 e per
+    la canary Q2. Il vero buco di provenienza è il
+    microbenchmark sweep.
+
+  - La cattura R32 modifica formato RTV e PSO:
+    dimostra il comportamento del diagnostic build
+    sulla scena/frame misurati, non formalmente
+    quello di ogni compilazione backend del pass
+    R11G11B10.
+
+  - run_2r.py assegna errore relativo zero quando
+    il baseline è zero e la variante non lo è. Non
+    altera il massimo a un passo, che ha baseline
+    non-zero, ma può nascondere altri massimi
+    relativi.
+
+  - “N95” è il massimo dei confronti A/A, non un
+    percentile; i confronti condividono gli stessi
+    processi e non sono indipendenti. È una soglia
+    empirica conservativa, non inferenza
+    statistica al 95%.
+
+  - In 2Q replication anche Z PrePass e SSAO
+    migliorano di circa 3–4%; questo prova un
+    confondente clock/power comune. Il report lo
+    sottrae dal frame come stima, correttamente
+    etichettata, ma i delta non corretti non sono
+    effetti causali puri.
+
+  Esperimento singolo più informativo: rifare la
+  canary con un UAV out-of-band e contatori
+  atomici separati per ogni contratto, scritti
+  prima della moltiplicazione per zero e mai
+  reinseriti nel colore; verificarne il DXIL e
+  provarla su più frame/scene più alcuni input
+  patologici costruiti. È prioritario perché
+  l’attuale canary può silenziare esattamente le
+  violazioni che dovrebbe rilevare.
+
+─ Worked for 15m 09s ─────────────────────────────
+
+
+› Ask Codex to do anything
+
+  gpt-5.6-sol high · ~\Downloads\driver mod

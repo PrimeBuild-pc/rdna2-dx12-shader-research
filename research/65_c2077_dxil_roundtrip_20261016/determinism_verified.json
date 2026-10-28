@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "canary_sha256": "9da6f87440e40e8d42a4f6bc2afba073a6675d0ddffec91805426142a4e085db",
+  "exact_source_occurrences": [
+    {
+      "copy": "shader_final.cache",
+      "offset": 69985495
+    }
+  ],
+  "compilation_references": 1,
+  "recorded_command": "determinism_r2.json"
+}

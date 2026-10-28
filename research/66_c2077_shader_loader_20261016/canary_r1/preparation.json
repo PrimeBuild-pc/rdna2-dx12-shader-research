@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "utc": "2026-10-16T20:56:24.317028+00:00",
+  "result": "CANARY_ARMED_RUNTIME_PENDING",
+  "operator_confirmation": "chiuso, immagine normale",
+  "control_last_snapshot": {
+    "schema": 1,
+    "experiment": "C2077-SHADER-LOADER-001",
+    "pid": 5396,
+    "event": "heartbeat",
+    "mode": "control",
+    "dx12_pipeline_inits": 5360,
+    "matched_original": 5,
+    "cloned_pipelines": 5,
+    "clone_failures": 0,
+    "bound_calls": 1044,
+    "presents": 87017
+  },
+  "control_visual_check": "qualitative operator report, not quantitative image equivalence",
+  "processes_before": [],
+  "mode": "canary",
+  "mode_file_sha256": "ad90a1644e6c624fe73d94a6b3707345dd2817d45c986bfd808b3d2dfaea4a69",
+  "immutable_payloads_unchanged": true,
+  "game_started_by_agent": false,
+  "canary_runtime_tested": false,
+  "canary_bytecode_sha256": "9da6f87440e40e8d42a4f6bc2afba073a6675d0ddffec91805426142a4e085db"
+}

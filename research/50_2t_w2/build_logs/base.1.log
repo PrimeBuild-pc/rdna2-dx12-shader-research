@@ -1,0 +1,17 @@
+
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(561,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\Lorenzo\AppData\Local\Temp\claude\T_W2_20260907_014458\src\D3D12Multithreading.vcxproj]
+  shaders.hlsl
+  Performing Custom Build Tools
+  stdafx.cpp
+  Win32Application.cpp
+  Camera.cpp
+  D3D12Multithreading.cpp
+  DXSample.cpp
+  FrameResource.cpp
+  Main.cpp
+     Creating library bin\x64\Release\D3D12Multithreading.lib and object bin\x64\Release\D3D12Multithreading.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 618 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  D3D12Multithreading.vcxproj -> C:\Users\Lorenzo\AppData\Local\Temp\claude\T_W2_20260907_014458\src\bin\x64\Release\D3D12Multithreading.exe

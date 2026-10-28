@@ -1,0 +1,224 @@
+{
+  "base": {
+    "stats": {
+      "shaderStageMask": 32,
+      "resourceUsage.numUsedVgprs": 61,
+      "resourceUsage.numUsedSgprs": 54,
+      "resourceUsage.ldsSizePerLocalWorkGroup": 65536,
+      "resourceUsage.ldsUsageSizeInBytes": 0,
+      "resourceUsage.scratchMemUsageInBytes": 0,
+      "numPhysicalVgprs": 1024,
+      "numPhysicalSgprs": 2048,
+      "numAvailableVgprs": 256,
+      "numAvailableSgprs": 104
+    },
+    "isa": {
+      "total_instructions": 553,
+      "loops": [
+        {
+          "first_line": 274,
+          "last_line": 346,
+          "instructions": 72,
+          "vmem": 3,
+          "transcendental": 7,
+          "est_valu_cycles": 180,
+          "top": {
+            "v_mul_f32": 20,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 10,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "v_log_f32": 2,
+            "v_exp_f32": 2
+          }
+        },
+        {
+          "first_line": 361,
+          "last_line": 441,
+          "instructions": 80,
+          "vmem": 5,
+          "transcendental": 7,
+          "est_valu_cycles": 192,
+          "top": {
+            "v_mul_f32": 22,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 13,
+            "s_waitcnt": 4,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "buffer_load_dwordx3": 2,
+            "v_log_f32": 2
+          }
+        },
+        {
+          "first_line": 456,
+          "last_line": 563,
+          "instructions": 107,
+          "vmem": 10,
+          "transcendental": 8,
+          "est_valu_cycles": 242,
+          "top": {
+            "v_mul_f32": 27,
+            "v_fmac_f32": 25,
+            "v_fma_f32": 13,
+            "s_waitcnt": 6,
+            "buffer_load_dwordx4": 5,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "s_clause": 2
+          }
+        }
+      ]
+    },
+    "bytecode": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6"
+  },
+  "fresnel5": {
+    "stats": {
+      "shaderStageMask": 32,
+      "resourceUsage.numUsedVgprs": 56,
+      "resourceUsage.numUsedSgprs": 54,
+      "resourceUsage.ldsSizePerLocalWorkGroup": 65536,
+      "resourceUsage.ldsUsageSizeInBytes": 0,
+      "resourceUsage.scratchMemUsageInBytes": 0,
+      "numPhysicalVgprs": 1024,
+      "numPhysicalSgprs": 2048,
+      "numAvailableVgprs": 256,
+      "numAvailableSgprs": 104
+    },
+    "isa": {
+      "total_instructions": 554,
+      "loops": [
+        {
+          "first_line": 275,
+          "last_line": 347,
+          "instructions": 72,
+          "vmem": 3,
+          "transcendental": 5,
+          "est_valu_cycles": 168,
+          "top": {
+            "v_mul_f32": 22,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 10,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "buffer_load_dword": 1,
+            "s_clause": 1
+          }
+        },
+        {
+          "first_line": 362,
+          "last_line": 442,
+          "instructions": 80,
+          "vmem": 5,
+          "transcendental": 5,
+          "est_valu_cycles": 180,
+          "top": {
+            "v_mul_f32": 24,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 13,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "buffer_load_dwordx3": 2,
+            "v_add_nc_u32": 1
+          }
+        },
+        {
+          "first_line": 458,
+          "last_line": 564,
+          "instructions": 106,
+          "vmem": 10,
+          "transcendental": 6,
+          "est_valu_cycles": 228,
+          "top": {
+            "v_mul_f32": 29,
+            "v_fmac_f32": 25,
+            "v_fma_f32": 13,
+            "s_waitcnt": 5,
+            "buffer_load_dwordx4": 5,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "s_clause": 2
+          }
+        }
+      ]
+    },
+    "bytecode": "ff92e6680b1dac88a2c3af5ff2a285d40a036f9300cffe2b961cb5f7a6ad91f2"
+  },
+  "shadowskip": {
+    "stats": {
+      "shaderStageMask": 32,
+      "resourceUsage.numUsedVgprs": 54,
+      "resourceUsage.numUsedSgprs": 54,
+      "resourceUsage.ldsSizePerLocalWorkGroup": 65536,
+      "resourceUsage.ldsUsageSizeInBytes": 0,
+      "resourceUsage.scratchMemUsageInBytes": 0,
+      "numPhysicalVgprs": 1024,
+      "numPhysicalSgprs": 2048,
+      "numAvailableVgprs": 256,
+      "numAvailableSgprs": 104
+    },
+    "isa": {
+      "total_instructions": 570,
+      "loops": [
+        {
+          "first_line": 274,
+          "last_line": 346,
+          "instructions": 72,
+          "vmem": 3,
+          "transcendental": 7,
+          "est_valu_cycles": 180,
+          "top": {
+            "v_mul_f32": 20,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 10,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "v_log_f32": 2,
+            "v_exp_f32": 2
+          }
+        },
+        {
+          "first_line": 361,
+          "last_line": 441,
+          "instructions": 80,
+          "vmem": 5,
+          "transcendental": 7,
+          "est_valu_cycles": 192,
+          "top": {
+            "v_mul_f32": 22,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 13,
+            "s_waitcnt": 4,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "buffer_load_dwordx3": 2,
+            "v_log_f32": 2
+          }
+        },
+        {
+          "first_line": 456,
+          "last_line": 581,
+          "instructions": 124,
+          "vmem": 10,
+          "transcendental": 8,
+          "est_valu_cycles": 276,
+          "top": {
+            "v_mul_f32": 32,
+            "v_fmac_f32": 22,
+            "v_fma_f32": 13,
+            "s_waitcnt": 6,
+            "buffer_load_dwordx4": 5,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "v_cmp_neq_f32": 3
+          }
+        }
+      ]
+    },
+    "bytecode": "a581387feff69a7eb92ac65ed48173aabb1e070a302d758c6e0a919b4630476d"
+  }
+}

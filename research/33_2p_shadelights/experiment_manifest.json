@@ -1,0 +1,86 @@
+{
+  "experiment_id": "P_20260906_200700",
+  "created_at": "2026-09-06T20:07:00.869593+02:00",
+  "phase": "2P",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_files": [
+    "MiniEngine/Model/Shaders/Lighting.hlsli"
+  ],
+  "transforms": {
+    "fresnel5": {
+      "kind": "alu_only",
+      "equivalence": "x^5 by repeated multiplication instead of exp2(5*log2(x)). Mathematically identical, including at x = 0 (log2(0) = -inf, exp2(-inf) = 0). Not bit-identical: the multiply form is the more accurate of the two, so the image is compared with a tolerance, not by hash.",
+      "texture_work": "unchanged by construction - no sample, load or address is touched"
+    },
+    "shadowskip": {
+      "kind": "texture_and_alu",
+      "equivalence": "the original returns shadow * lit. When lit is exactly zero the product is zero for any finite shadow, and GetShadowConeLight returns the square of a SampleCmpLevelZero result, which is finite and non-negative; when lit is non-zero the identical product is computed, and float multiplication is commutative and exact. So the surviving path is bit-identical and the skipped path returns the value it would have produced.",
+      "texture_work": "reduced, data-dependently: the four matrix loads, the matrix multiply, the rcp and the shadow-map sample are skipped for lights whose cone or distance falloff is zero at that pixel. The dose is measured, not assumed."
+    }
+  },
+  "transform_edits": {
+    "fresnel5": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float fresnel = pow(1.0 - saturate(dot(lightDir, halfVec)), 5.0);",
+        "    float f1 = 1.0 - saturate(dot(lightDir, halfVec));\n    float f2 = f1 * f1;\n    float fresnel = f2 * f2 * f1;"
+      ]
+    ],
+    "shadowskip": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n\n    return shadow * ApplyConeLight(\n",
+        "    float3 lit = ApplyConeLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        coneAngles\n        );\n}\n",
+        "        coneAngles\n        );\n\n    if (!any(lit != 0.0))\n        return 0.0;\n\n    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    return GetShadowConeLight(lightIndex, shadowCoord.xyz) * lit;\n}\n"
+      ]
+    ]
+  },
+  "expected_bytecode": {
+    "base": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "fresnel5": "ff92e6680b1dac88a2c3af5ff2a285d40a036f9300cffe2b961cb5f7a6ad91f2",
+    "shadowskip": "a581387feff69a7eb92ac65ed48173aabb1e070a302d758c6e0a919b4630476d"
+  },
+  "expected_artifact": {
+    "base": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\33_2p_shadelights\\preregistered\\base\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+      "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+      "custom_hash": "52CE6C5E64AB2E82",
+      "bytecode_bytes": 12612
+    },
+    "fresnel5": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\33_2p_shadelights\\preregistered\\fresnel5\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "4d61164783e368c66efeb9236f659cfc0ec6bfcb9c15e38776d0d4e49b9ef4b1",
+      "bytecode_sha256": "ff92e6680b1dac88a2c3af5ff2a285d40a036f9300cffe2b961cb5f7a6ad91f2",
+      "custom_hash": "497475102E01A389",
+      "bytecode_bytes": 12540
+    },
+    "shadowskip": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\33_2p_shadelights\\preregistered\\shadowskip\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "2b9ab60f65e161846a4ec430850535f112971f8e47876d7e72087677b75f58b1",
+      "bytecode_sha256": "a581387feff69a7eb92ac65ed48173aabb1e070a302d758c6e0a919b4630476d",
+      "custom_hash": "3EEEF5D26C22E733",
+      "bytecode_bytes": 12672
+    }
+  },
+  "compiler_already_does": [],
+  "ablation_kind": "optimisation candidates - semantics preserving, image quality unchanged",
+  "preregistered_criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image decoded to float32. Accept only if the maximum relative channel error over all 1920x1080x3 channels is <= 1e-3 and no channel is non-finite. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, 3 independent processes per variant, order interleaved and reversed. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND all three paired process deltas are negative, AND correctness passes.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build."
+  },
+  "workspace_budget_bytes": 8000000000
+}

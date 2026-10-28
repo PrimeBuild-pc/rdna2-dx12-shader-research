@@ -1,0 +1,41 @@
+scope,stage,hash,shader,bytes,source,calls_per_frame,pso_name
+Analyze depth volumes,CS,1FE5BB95C1842690,AoRender1CS,8268,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoRender1CS.hlsl,2.9900,SSAO: Render 1 CS
+Analyze depth volumes,CS,14DF1727DF2F8EC5,AoRender2CS,8220,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoRender2CS.hlsl,1.9933,SSAO: Render 2 CS
+Blur and upsample,CS,60B1FE816019DF14,AoBlurUpsamplePreMinBlendOutCS,7880,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoBlurUpsamplePreMinBlendOutCS.hlsl,1.9933,SSAO: Blur Upsample Blend High Q. CS
+Blur and upsample,CS,739ECB3B4E5B9045,AoBlurUpsampleCS,7536,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoBlurUpsampleCS.hlsl,0.9967,SSAO: Blur Upsample Final Low Q. CS
+Compute Depth Bounds,CS,2EA515872DC7C9BB,ParticleDepthBoundsCS,6852,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleDepthBoundsCS.hlsl,0.9967,Particles: Particle Depth Bounds CS
+Culling & Sorting,CS,409856C9135A26A5,ParticleBinCullingCS,6556,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleBinCullingCS.hlsl,0.9967,Particles: Particle Bin Culling CS
+Culling & Sorting,CS,C3774EF546B251FE,ParticleLargeBinCullingCS,7756,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleLargeBinCullingCS.hlsl,0.9967,Particles: Particle Large Bin Culling CS
+Culling & Sorting,CS,01A05B36901C3F83,ParticleTileCullingCS,8344,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleTileCullingCS.hlsl,0.9967,Particles: Particle Tile Culling CS
+Cutout,VS,72FC6DFF560ADEB3,DepthViewerVS,4428,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/DepthViewerVS.hlsl,4.9833,Sponza: Depth PSO
+Cutout,PS,75762DD6DE3758BB,DepthViewerPS,4080,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/DepthViewerPS.hlsl,4.9833,Sponza: Depth PSO
+Decompress and downsample,CS,FE9EF9D2D9DA5A57,AoPrepareDepthBuffers1CS,5520,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoPrepareDepthBuffers1CS.hlsl,0.9967,SSAO: Depth Prepare 1 CS
+Decompress and downsample,CS,709DF5FD60500AE0,AoPrepareDepthBuffers2CS,4096,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoPrepareDepthBuffers2CS.hlsl,0.9967,SSAO: Depth Prepare 2 CS
+FillLightGrid,CS,08A5EC3BCB572DAF,FillLightGridCS_16,9000,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/FillLightGridCS_16.hlsl,0.9967,Fill Light Grid 16 CS
+Generate Bloom,CS,A649DABB4FFBCE60,BloomExtractAndDownsampleHdrCS,5756,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/BloomExtractAndDownsampleHdrCS.hlsl,0.9967,Post Effects: Bloom Extract and Downsample HDR CS
+Generate Bloom,CS,4ADC288D1E9E34C2,BlurCS,7148,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/BlurCS.hlsl,0.9967,Post Effects: Blur CS
+Generate Bloom,CS,9797605188EB5795,DownsampleBloomAllCS,5692,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DownsampleBloomAllCS.hlsl,0.9967,Post Effects: Downsample Bloom 4 CS
+Generate Bloom,CS,DAEBC1E71C97C178,UpsampleAndBlurCS,8152,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/UpsampleAndBlurCS.hlsl,3.9867,Post Effects: Upsample and Blur CS
+Generate Camera Velocity,CS,ECC69F23DD0755D4,CameraVelocityCS,4744,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/CameraVelocityCS.hlsl,0.9967,Motion Blur: Camera Velocity Linear Z CS
+HDR Tone Mapping,CS,997D7E5FB78C8678,ToneMap2CS,5252,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ToneMap2CS.hlsl,0.9967,Post Effects: Tone Map  CS
+MotionBlur,CS,96D586392C4CBC9A,MotionBlurFinalPassCS,5884,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/MotionBlurFinalPassCS.hlsl,0.9967,Motion Blur: Motion Blur Final Pass CS
+MotionBlur,CS,91849C85B1949AC5,MotionBlurPrePassCS,5084,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/MotionBlurPrePassCS.hlsl,0.9967,Motion Blur: Motion Blur Pre-Pass CS
+Opaque,VS,72FC6DFF560ADEB3,DepthViewerVS,4428,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/DepthViewerVS.hlsl,28.9033,Sponza: Depth PSO
+Particle Update,CS,74D9294886C4AFD0,ParticleDispatchIndirectArgsCS,3304,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleDispatchIndirectArgsCS.hlsl,2.9900,Particles: Particle Dispatch Indirect Args CS
+Particle Update,CS,F8134B43EC3FE3E8,ParticleFinalDispatchIndirectArgsCS,3404,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleFinalDispatchIndirectArgsCS.hlsl,0.9967,Particles: Particle Final Dispatch Indirect Args CS
+Particle Update,CS,AFA864444DD00D4E,ParticleSpawnCS,5880,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleSpawnCS.hlsl,2.9900,Particles: Particle Spawn CS
+Particle Update,CS,5C5AA264591D29A0,ParticleUpdateCS,7372,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleUpdateCS.hlsl,2.9900,Particles: Particle Update CS
+Present,VS,EBD93B9E00119FCE,ScreenQuadPresentVS,3312,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ScreenQuadPresentVS.hlsl,0.9967,Core: BlendUI
+Present,PS,E61C6605451F791C,CompositeSDRPS,4484,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/CompositeSDRPS.hlsl,0.9967,Core: BlendUI
+Render Color,VS,B09918C0BF7589DA,ModelViewerVS,6480,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/ModelViewerVS.hlsl,28.9033,Sponza: Depth PSO
+Render Color,PS,52CE6C5E64AB2E82,ModelViewerPS,12612,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/ModelViewerPS.hlsl,28.9033,Sponza: Depth PSO
+Render Shadow Map,VS,72FC6DFF560ADEB3,DepthViewerVS,4428,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/DepthViewerVS.hlsl,4.9833,Sponza: Depth PSO
+Render Shadow Map,PS,75762DD6DE3758BB,DepthViewerPS,4080,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Model/Shaders/DepthViewerPS.hlsl,4.9833,Sponza: Depth PSO
+Render UI,VS,B5D330D21CDA8EF8,TextVS,4624,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/TextVS.hlsl,0.9967,Text Render: Text R8G8B8A8_UNORM PSO
+Render UI,PS,1CB931589FB57FBD,TextShadowPS,4700,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/TextShadowPS.hlsl,0.9967,Text Render: Text R8G8B8A8_UNORM PSO
+Resolve Image,CS,3D6A43D142A32195,TemporalBlendCS,10472,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/TemporalBlendCS.hlsl,0.9967,TAA: Temporal Blend CS
+Sharpen or Copy Image,CS,B5C2A2C949D75849,SharpenTAACS,5552,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/SharpenTAACS.hlsl,0.9967,TAA: Sharpen TAA CS
+Tiled Rendering,CS,E86EE397C7B4833F,ParticleTileRenderSlowDynamic2CS,10256,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleTileRenderSlowDynamic2CS.hlsl,0.9967,Unnamed Compute PSO
+Tiled Rendering,CS,AB44F2991E7992AE,ParticleTileRenderFastDynamic2CS,8472,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleTileRenderFastDynamic2CS.hlsl,0.9967,Unnamed Compute PSO
+Update Exposure,CS,DC7678C6F92312FE,AdaptExposureCS,5868,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AdaptExposureCS.hlsl,0.9967,Post Effects: Adapt Exposure CS
+Update Exposure,CS,46C01EDF60CCF835,GenerateHistogramCS,4396,C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/GenerateHistogramCS.hlsl,0.9967,Post Effects: Generate Histogram CS

@@ -1,0 +1,9 @@
+{
+  "variant": "base",
+  "set": "resp",
+  "rep": 1,
+  "pid": 13064,
+  "samples": 32,
+  "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "executable_sha256": "7893f57fd1eaba1f68b316a137aa5a17f8ed81f644f43e28a67fef3670678817"
+}

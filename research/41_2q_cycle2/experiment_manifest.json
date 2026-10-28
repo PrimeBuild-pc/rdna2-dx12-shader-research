@@ -1,0 +1,75 @@
+{
+  "experiment_id": "P_20260907_003018",
+  "created_at": "2026-09-07T00:30:19.268025+02:00",
+  "phase": "2P",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419",
+  "workspace_owner_experiment_id": "P_20260907_000419",
+  "inherits_workspace_from": "research/40_2q_fullprecision",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_files": [
+    "MiniEngine/Model/Shaders/Lighting.hlsli"
+  ],
+  "transforms": {
+    "contract_canary": {
+      "kind": "contract_probe",
+      "equivalence": "not a candidate. It computes exactly what the baseline computes and only adds a detector: every value the early-out transformations assume to be finite and non-negative is checked, and a violation is turned into 1e30. The verdict is read from the maximum of the full-precision capture.",
+      "texture_work": "unchanged"
+    }
+  },
+  "transform_edits": {
+    "contract_canary": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n",
+        "    float3 v = nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n    if (any(isnan(v)) || any(isinf(v)) || any(v < 0.0) ||\n        any(isnan(lightColor)) || any(isinf(lightColor)) || any(lightColor < 0.0) ||\n        isnan(specularFactor) || isinf(specularFactor) || specularFactor < 0.0)\n        v = float3(1e30, 1e30, 1e30);\n    return v;\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float result = lightShadowArrayTex.SampleCmpLevelZero(\n        shadowSampler, float3(shadowCoord.xy, lightIndex), shadowCoord.z);\n    return result * result;\n",
+        "    float result = lightShadowArrayTex.SampleCmpLevelZero(\n        shadowSampler, float3(shadowCoord.xy, lightIndex), shadowCoord.z);\n    float sq = result * result;\n    if (isnan(sq) || isinf(sq) || sq < 0.0)\n        sq = 1e30;\n    return sq;\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n",
+        "    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n    if (!isfinite(shadowCoord.w) || shadowCoord.w == 0.0)\n        shadow = 1e30;\n"
+      ]
+    ]
+  },
+  "expected_bytecode": {
+    "base": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "contract_canary": "d85ff8a431d151d84cbec2945c669609060771bf706e1ec9fb5b5b7edc1852ff"
+  },
+  "expected_artifact": {
+    "base": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\41_2q_cycle2\\preregistered\\base\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+      "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+      "custom_hash": "52CE6C5E64AB2E82",
+      "bytecode_bytes": 12612
+    },
+    "contract_canary": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\41_2q_cycle2\\preregistered\\contract_canary\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "92151a81cc831906bb86330d09797d68acbb068b2ca6a2e07a9e47c38e4fb9e0",
+      "bytecode_sha256": "d85ff8a431d151d84cbec2945c669609060771bf706e1ec9fb5b5b7edc1852ff",
+      "custom_hash": "22D4D22FCC0DF7E0",
+      "bytecode_bytes": 14044
+    }
+  },
+  "compiler_already_does": [],
+  "ablation_kind": "optimisation candidates - semantics preserving, image quality unchanged",
+  "preregistered_criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image. The rule that decides is the `correctness_rule` field of this manifest and nothing else. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, AT LEAST 3 and preferably 5 independent processes per variant, order counterbalanced. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND every paired process delta is negative, AND correctness passes. N95 here is the largest of the pairwise differences between the base processes, not a statistical percentile, and those pairs are not independent of each other.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build.",
+    "correctness_rule": "ulp1_0.05pct",
+    "correctness_rule_text": "every differing channel differs by at most 1 ULP of its stored R11G11B10 representation, at most 0.05 % of channels differ at all, and no channel is non-finite. One ULP is the smallest change this render target can represent, so this admits a different rounding and nothing more."
+  },
+  "workspace_budget_bytes": 8000000000
+}

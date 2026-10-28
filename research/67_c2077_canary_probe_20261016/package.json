@@ -1,0 +1,10 @@
+{
+  "experiment": "C2077-SHADER-PROBE-001",
+  "file": "C2077ShaderProbe.addon64",
+  "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492",
+  "bytes": 329216,
+  "source_sha256": "19ee10ca726ca10ddeb30f817d943774132c020a006082bf80ca6820af18fa44",
+  "sdk_commit": "18deaa52de0c425a78b329e9cb3c497281cd00ec",
+  "header_sha256": "fdc83567fb44cd3f18c3cefe6cd09ea44c193abc037ac45418dfb389e4cb2db4",
+  "read_only_gpu_api_source_check": true
+}

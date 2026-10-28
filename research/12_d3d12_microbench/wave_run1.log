@@ -1,0 +1,16 @@
+GPU: AMD Radeon RX 6950 XT (vendor 0x1002, VRAM 16337 MB)
+timestamp frequency: 100000000 Hz
+buffer SRV inizializzato con dati noti
+  s2_alu_base                med    56960.0 ns  mean    57188.6  p95    58805.0  CV  1.295%
+  s2_alu_w32                 med    56970.0 ns  mean    57274.6  p95    59508.0  CV  1.761%
+  s2_alu_w64                 med    66120.0 ns  mean    66148.2  p95    66134.0  CV  0.202%
+  s3_mem_base                med   121285.0 ns  mean   121314.6  p95   121539.0  CV  0.127%
+  s3_mem_w32                 med   121375.0 ns  mean   121380.6  p95   121577.0  CV  0.088%
+  s3_mem_w64                 med   143425.0 ns  mean   143399.6  p95   143576.0  CV  0.091%
+  s4_pressure_base           med    79400.0 ns  mean    79278.4  p95    86754.0  CV  6.357%
+  s4_pressure_w32            med    78620.0 ns  mean    78988.2  p95    88632.0  CV  6.860%
+  s4_pressure_w64            med    85250.0 ns  mean    85058.2  p95    87739.0  CV  2.761%
+  s5_divergent_base          med     6825.0 ns  mean     6823.6  p95     6839.0  CV  0.109%
+  s5_divergent_w32           med    35430.0 ns  mean    35426.4  p95    35486.0  CV  0.097%
+  s5_divergent_w64           med    40830.0 ns  mean    41038.6  p95    41405.0  CV  2.270%
+scritto wave_run1.csv

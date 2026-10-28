@@ -1,0 +1,16 @@
+{
+  "command": [
+    "C:\\Program Files\\Intel\\PresentMon\\PresentMonConsoleApplication\\PresentMon-2.6.0-x64.exe",
+    "--etl_file",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\c2077_fs1440_attribution-run1-20260908-222856-633.etl",
+    "--process_id",
+    "16316",
+    "--output_file",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016\\pm_relative.csv",
+    "--v2_metrics",
+    "--no_console_stats"
+  ],
+  "pid": 15228,
+  "exe_sha256": "b2a706bc6ad475749e3b7e3409263aa1e6906d45bdcf993f6dbc0f660188f1af",
+  "started": 1792150913.950055
+}

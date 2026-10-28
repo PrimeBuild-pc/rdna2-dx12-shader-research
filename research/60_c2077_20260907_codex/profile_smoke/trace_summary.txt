@@ -1,0 +1,24 @@
+Number of Processors : 16
+CPU Speed            : 3400 MHz
+OS Version           : 10.00.00.00
+OS Build Number      : 26200
+Clock type           : PerfCounter
+Boot time            : 2026/09/08:11:28:44.5000000
+Native Pointer Size  : 8 (64bit)
+Start time (UTC)     : 2026/09/08:11:36:47.1330973
+End time (UTC)       : 2026/09/08:11:36:54.9820293  (+         0:00:00:07.8489320)
+Total # Lost Buffers : 0
+Total # Lost Events  : 0
+
+Number of Traces     : 1
+
+Trace name: research\60_c2077_20260907_codex\profile_smoke\c2077_profile_smoke-run1-20260908-133643.etl
+    Log file mode        : Sequential Relogged
+    Pointer size         : 8 (64bit)
+    Start time (UTC)     : 2026/09/08:11:36:47.1330973
+    End time (UTC)       : 2026/09/08:11:36:54.9820293  (+         0:00:00:07.8489320)
+    Start time (Local)   : 2026/09/08:13:36:47.1330973
+    End time (Local)     : 2026/09/08:13:36:54.9820293
+    # Lost Buffers       : 0
+    # Lost Events        : 0
+

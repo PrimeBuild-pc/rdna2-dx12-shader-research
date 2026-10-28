@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\light_dir_norm\\D3D12Multithreading.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\light_dir_norm\\D3D12Multithreading.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\light_dir_norm",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\light_dir_norm\\D3D12Multithreading.exe",
+  "executable_sha256": "037f1ca6a093bead0ec061b0fa513a34cce40e284f3c2170d4250c47194a2388",
+  "pid": 18244,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\50_2t_w2\\builds\\light_dir_norm\\D3D12Multithreading.exe",
+  "returncode": 0
+}

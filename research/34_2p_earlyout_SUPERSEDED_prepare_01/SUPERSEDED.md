@@ -1,0 +1,1 @@
+Il manifest non registrava che il workspace era ereditato dal ciclo P1, e il gate di build rifiutava di conseguenza ogni build (workspace name != experiment_id). Il gate funzionava: e' la registrazione a mancare. Nessuna build, nessuna misura da questo tentativo. Rifatto con 'workspace_owner_experiment_id' e 'inherits_workspace_from' nel manifest.

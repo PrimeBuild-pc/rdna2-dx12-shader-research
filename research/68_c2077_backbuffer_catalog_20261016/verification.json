@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-16T23:23:44.154528+00:00",
+  "result": "PASS_READONLY_CATALOG_PREPARATION",
+  "mode": "observe",
+  "installed_hash_verified": true,
+  "source_hash_verified": true,
+  "host_shaderlab_unchanged": true,
+  "old_probe_archived_removed": true,
+  "offline_index_verified": true,
+  "local_links_checked": 85,
+  "processes": [],
+  "catalog_runtime_tested": false,
+  "gpu_visual_proof": false,
+  "performance_claim": false,
+  "loader_tool_sha256": "bf36d410484cbe34caea046cc527131388defe490bc8299db8edb93d3af0e544"
+}

@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-09-07T17:11:03.265258+02:00",
+  "avg_fps": 95.99,
+  "min_fps": 81.52,
+  "max_fps": 115.49,
+  "duration_s": 64.25,
+  "frames": 6167,
+  "ray_tracing": false,
+  "frame_generation": false,
+  "upscaling": false,
+  "source": "result.png",
+  "screenshot_sha256": "a4a498ee6729d8af253c1927b256a1e32c8f0d7e79a9c785382ab93cf41a86be",
+  "raw_sha256": "071faabcb4a1b1a7168cf7be19e5016ac5c5cbf3a9f1ef91679f685b00bd32f0"
+}

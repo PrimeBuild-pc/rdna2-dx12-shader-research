@@ -1,0 +1,4065 @@
+[
+ {
+  "name": "BitonicIndirectArgsCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/Libraries/D3D12RaytracingFallback/src/BitonicIndirectArgsCS.hlsl",
+  "entry": "main",
+  "tg": [
+   22,
+   1,
+   1
+  ],
+  "tg_total": 22,
+  "dxil_sha": "40967f82b96c6feb",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "Constants",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_IndirectArgsBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1809,
+  "dims": [
+   47662,
+   1,
+   1
+  ],
+  "binds": "b1,b0,u0=rw.byte",
+  "probe_ns": 2361560.0
+ },
+ {
+  "name": "BitonicInnerSortCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/Libraries/D3D12RaytracingFallback/src/BitonicInnerSortCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "tg_total": 1024,
+  "dxil_sha": "5d320c1483fc27f2",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_SortBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_IndexBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3178,
+  "dims": [
+   1024,
+   1,
+   1
+  ],
+  "binds": "b1,u0=rw.byte,u1=rw.byte",
+  "probe_ns": 166600.0
+ },
+ {
+  "name": "BitonicOuterSortCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/Libraries/D3D12RaytracingFallback/src/BitonicOuterSortCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "tg_total": 1024,
+  "dxil_sha": "61cfb8276c7a9d2b",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "Constants",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_SortBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_IndexBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1378,
+  "dims": [
+   1024,
+   1,
+   1
+  ],
+  "binds": "b1,b0,u0=rw.byte,u1=rw.byte",
+  "probe_ns": 14720.0
+ },
+ {
+  "name": "BitonicPreSortCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/Libraries/D3D12RaytracingFallback/src/BitonicPreSortCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "tg_total": 1024,
+  "dxil_sha": "1f312e88e8c54422",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_SortBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_IndexBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3535,
+  "dims": [
+   1024,
+   1,
+   1
+  ],
+  "binds": "b1,u0=rw.byte,u1=rw.byte",
+  "probe_ns": 725960.0
+ },
+ {
+  "name": "DynamicIndexTest_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/Libraries/D3D12RaytracingFallback/src/DynamicIndexTest.hlsl",
+  "entry": "main",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "tg_total": 1,
+  "dxil_sha": "acbd0ee2e8c798a1",
+  "bindings": [
+   {
+    "name": "outputBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 710,
+  "dims": [
+   65535,
+   1,
+   1
+  ],
+  "binds": "u0=rw.byte",
+  "probe_ns": 394600.0
+ },
+ {
+  "name": "AdaptExposureCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AdaptExposureCS.hlsl",
+  "entry": "main",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "6af429a007c98f0d",
+  "bindings": [
+   {
+    "name": "cb0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "Histogram",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Exposure",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3430,
+  "dims": [
+   4096,
+   1,
+   1
+  ],
+  "binds": "b1,t0=ro.byte,u0=rw.struct",
+  "probe_ns": 66080.0
+ },
+ {
+  "name": "AoPrepareDepthBuffers1CS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoPrepareDepthBuffers1CS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "28446084891a7581",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Depth",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearZ",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "DS2x",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "DS2xAtlas",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2darray",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "DS4x",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "DS4xAtlas",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2darray",
+    "reg": "u",
+    "slot": 4,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1880,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,t0=2d.f32,u0=2d.f32,u1=2d.f32,u2=2darray.f32,u3=2d.f32,u4=2darray.f32",
+  "probe_ns": 176240.0
+ },
+ {
+  "name": "AoPrepareDepthBuffers2CS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AoPrepareDepthBuffers2CS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "f25ce627d8b79f05",
+  "bindings": [
+   {
+    "name": "DS4x",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "DS8x",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "DS8xAtlas",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2darray",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "DS16x",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "DS16xAtlas",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2darray",
+    "reg": "u",
+    "slot": 3,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1306,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,u0=2d.f32,u1=2darray.f32,u2=2d.f32,u3=2darray.f32",
+  "probe_ns": 129120.0
+ },
+ {
+  "name": "ApplyBloomCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ApplyBloomCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "f8b915b05fc3f6d7",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Bloom",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "SrcColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutLuma",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1428,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,t2=2d.f32,u0=2d.u32,u1=2d.f32",
+  "probe_ns": 106080.0
+ },
+ {
+  "name": "AverageLumaCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/AverageLumaCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "fc611b558e706821",
+  "bindings": [
+   {
+    "name": "InputBuf",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Result",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1504,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,u0=rw.struct",
+  "probe_ns": 37720.0
+ },
+ {
+  "name": "Bitonic32InnerSortCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/Bitonic32InnerSortCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "tg_total": 1024,
+  "dxil_sha": "882b2fa7ed4f4d2c",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_CounterBuffer",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_SortBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3470,
+  "dims": [
+   1024,
+   1,
+   1
+  ],
+  "binds": "b1,t0=ro.byte,u0=rw.byte",
+  "probe_ns": 86720.0
+ },
+ {
+  "name": "Bitonic32OuterSortCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/Bitonic32OuterSortCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "tg_total": 1024,
+  "dxil_sha": "927a6575c4644e2b",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "Constants",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_CounterBuffer",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_SortBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1464,
+  "dims": [
+   1024,
+   1,
+   1
+  ],
+  "binds": "b1,b0,t0=ro.byte,u0=rw.byte",
+  "probe_ns": 16120.0
+ },
+ {
+  "name": "Bitonic32PreSortCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/Bitonic32PreSortCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "tg_total": 1024,
+  "dxil_sha": "f4a824fb0cb31e46",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_CounterBuffer",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_SortBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3932,
+  "dims": [
+   1024,
+   1,
+   1
+  ],
+  "binds": "b1,t0=ro.byte,u0=rw.byte",
+  "probe_ns": 406280.0
+ },
+ {
+  "name": "BitonicIndirectArgsCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/BitonicIndirectArgsCS.hlsl",
+  "entry": "main",
+  "tg": [
+   22,
+   1,
+   1
+  ],
+  "tg_total": 22,
+  "dxil_sha": "c30e4ebfd742ee30",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "Constants",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_CounterBuffer",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_IndirectArgsBuffer",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1795,
+  "dims": [
+   47662,
+   1,
+   1
+  ],
+  "binds": "b1,b0,t0=ro.byte,u0=rw.byte",
+  "probe_ns": 2362640.0
+ },
+ {
+  "name": "BloomExtractAndDownsampleHdrCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/BloomExtractAndDownsampleHdrCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "78d34ba31d2390cb",
+  "bindings": [
+   {
+    "name": "cb0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BiLinearClamp",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "SourceTex",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Exposure",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "BloomResult",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LumaResult",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3844,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,t1=ro.struct,u0=2d.f32,u1=2d.u32",
+  "probe_ns": 79200.0
+ },
+ {
+  "name": "BloomExtractAndDownsampleLdrCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/BloomExtractAndDownsampleLdrCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "0981cb1ded95bc6f",
+  "bindings": [
+   {
+    "name": "cb0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BiLinearClamp",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "SourceTex",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BloomResult",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3202,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,u0=2d.f32",
+  "probe_ns": 61560.0
+ },
+ {
+  "name": "BlurCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/BlurCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "f2d397d2c6e81ccb",
+  "bindings": [
+   {
+    "name": "InputBuf",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Result",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 4616,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,u0=2d.f32",
+  "probe_ns": 84080.0
+ },
+ {
+  "name": "CameraMotionBlurPrePassCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/CameraMotionBlurPrePassCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "c022b7b72969569f",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "DepthBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "PrepBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "VelocityBuffer",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2469,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b1,t0=2d.f32,t1=2d.f32,u0=2d.f32,u1=2d.u32",
+  "probe_ns": 265840.0
+ },
+ {
+  "name": "CameraVelocityCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/CameraVelocityCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "cea794308bbe8b29",
+  "bindings": [
+   {
+    "name": "CBuffer",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "DepthBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "VelocityBuffer",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1591,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b1,t0=2d.f32,u0=2d.u32",
+  "probe_ns": 66360.0
+ },
+ {
+  "name": "CopyBackPostBufferCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/CopyBackPostBufferCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "09274d1f5472040e",
+  "bindings": [
+   {
+    "name": "PostBuffer",
+    "type": "texture",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "SceneColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 715,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.u32,u0=2d.f32",
+  "probe_ns": 66720.0
+ },
+ {
+  "name": "DebugDrawHistogramCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DebugDrawHistogramCS.hlsl",
+  "entry": "main",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "45b026a09e7a4d03",
+  "bindings": [
+   {
+    "name": "Histogram",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Exposure",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "ColorBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2657,
+  "dims": [
+   4096,
+   1,
+   1
+  ],
+  "binds": "t0=ro.byte,t1=ro.struct,u0=2d.f32",
+  "probe_ns": 151560.0
+ },
+ {
+  "name": "DebugLuminanceHdrCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DebugLuminanceHdrCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "2a1a2e6ba303ac22",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Exposure",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Bloom",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "SrcColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutLuma",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1544,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=ro.struct,t1=2d.f32,t2=2d.f32,u0=2d.u32,u1=2d.f32",
+  "probe_ns": 102680.0
+ },
+ {
+  "name": "DebugLuminanceLdrCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DebugLuminanceLdrCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "489c5bb9e874a3e5",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Bloom",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "SrcColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutLuma",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1473,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,t2=2d.f32,u0=2d.u32,u1=2d.f32",
+  "probe_ns": 102720.0
+ },
+ {
+  "name": "DebugSSAOCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DebugSSAOCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "ef90240073f240a9",
+  "bindings": [
+   {
+    "name": "SsaoBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 648,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,u0=2d.f32",
+  "probe_ns": 69000.0
+ },
+ {
+  "name": "DoFCombineCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFCombineCS.hlsl",
+  "entry": "main",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "0db5a82fe2096eb6",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BilinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "DoFColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "DoFAlphaBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "TileClass",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "LNFullDepth",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 4,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1788,
+  "dims": [
+   64,
+   64,
+   1
+  ],
+  "binds": "b0,s2,t0=2d.f32,t1=2d.f32,t2=2d.f32,t3=2d.f32,t4=ro.struct,u0=2d.u32",
+  "probe_ns": 40480.0
+ },
+ {
+  "name": "DoFDebugBlueCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFDebugBlueCS.hlsl",
+  "entry": "main",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "4ebc2cfcc7c98081",
+  "bindings": [
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 5,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 798,
+  "dims": [
+   64,
+   64,
+   1
+  ],
+  "binds": "t5=ro.struct,u0=2d.f32",
+  "probe_ns": 320.0
+ },
+ {
+  "name": "DoFDebugGreenCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFDebugGreenCS.hlsl",
+  "entry": "main",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "63fb1bc4c50ee332",
+  "bindings": [
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 5,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 798,
+  "dims": [
+   64,
+   64,
+   1
+  ],
+  "binds": "t5=ro.struct,u0=2d.f32",
+  "probe_ns": 280.0
+ },
+ {
+  "name": "DoFDebugRedCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFDebugRedCS.hlsl",
+  "entry": "main",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "c51d648f370c128a",
+  "bindings": [
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 5,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 798,
+  "dims": [
+   64,
+   64,
+   1
+  ],
+  "binds": "t5=ro.struct,u0=2d.f32",
+  "probe_ns": 280.0
+ },
+ {
+  "name": "DoFMedianFilterCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFMedianFilterCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "7456cb2fbfeed367",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ClampSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "InputColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "InputAlpha",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "OutputColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputAlpha",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 4155,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s1,t0=2d.f32,t1=2d.f32,t2=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 43640.0
+ },
+ {
+  "name": "DoFMedianFilterFixupCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFMedianFilterFixupCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "d10d1340492fad8a",
+  "bindings": [
+   {
+    "name": "InputColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "InputAlpha",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "OutputColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputAlpha",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 974,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,t1=2d.f32,t2=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 32600.0
+ },
+ {
+  "name": "DoFPass1CS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFPass1CS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "0a221649df589587",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ClampSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "LNDepthBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "TileClass",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2057,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s1,t0=2d.f32,u0=2d.f32",
+  "probe_ns": 60320.0
+ },
+ {
+  "name": "DoFPass2CS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFPass2CS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "5e175378f40efff9",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "PresortBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "TileClass",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "OutputColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputAlpha",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 5413,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,t0=2d.f32,t1=2d.f32,t2=2d.f32,t3=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 109200.0
+ },
+ {
+  "name": "DoFPass2FastCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFPass2FastCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "ab4b00fabe475e2b",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "TileClass",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "OutputColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputAlpha",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3157,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,t0=2d.f32,t2=2d.f32,t3=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 57760.0
+ },
+ {
+  "name": "DoFPass2FixupCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFPass2FixupCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "e7df3f05f0159317",
+  "bindings": [
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "OutputColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputAlpha",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1045,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,t3=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 32600.0
+ },
+ {
+  "name": "DoFPreFilterCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFPreFilterCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "0032f1ef203a779d",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ClampSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "LNDepthBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "PresortBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 4464,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s1,t0=2d.f32,t2=2d.f32,t3=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 83920.0
+ },
+ {
+  "name": "DoFPreFilterFastCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFPreFilterFastCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "73eb7fbd20b48473",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ClampSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "BilinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "LNDepthBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "PresortBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3397,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s1,s2,t0=2d.f32,t2=2d.f32,t3=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 67160.0
+ },
+ {
+  "name": "DoFPreFilterFixupCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFPreFilterFixupCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "08dd6b522775912a",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "PointSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BilinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "LNDepthBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "PresortBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutputBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1256,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,s2,t0=2d.f32,t2=2d.f32,t3=ro.struct,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 47760.0
+ },
+ {
+  "name": "DoFTilePassCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFTilePassCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "de7481043d11c33e",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ClampSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "InputClass",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "TileClass",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w+cnt",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "FastQueue",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w+cnt",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3600,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s1,t0=2d.f32,u0=2d.f32,u1=rwcnt.struct,u2=rwcnt.struct",
+  "probe_ns": 67320.0
+ },
+ {
+  "name": "DoFTilePassFixupCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DoFTilePassFixupCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "58d0112b09000356",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "ClampSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "InputClass",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "FixupQueue",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w+cnt",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1747,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s1,t0=2d.f32,u0=rwcnt.struct",
+  "probe_ns": 32640.0
+ },
+ {
+  "name": "DownsampleBloomAllCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DownsampleBloomAllCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "b3cc09f624664bdd",
+  "bindings": [
+   {
+    "name": "cb0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BiLinearClamp",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BloomBuf",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Result1",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Result2",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "Result3",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "Result4",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 3,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2211,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,u0=2d.f32,u1=2d.f32,u2=2d.f32,u3=2d.f32",
+  "probe_ns": 63640.0
+ },
+ {
+  "name": "DownsampleBloomCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/DownsampleBloomCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "0b2540e8c0cebeac",
+  "bindings": [
+   {
+    "name": "cb0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BiLinearClamp",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BloomBuf",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Result1",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Result2",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1902,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,u0=2d.f32,u1=2d.f32",
+  "probe_ns": 36640.0
+ },
+ {
+  "name": "ExtractLumaCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ExtractLumaCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "76fdedc7be82f4a2",
+  "bindings": [
+   {
+    "name": "cb0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "BiLinearClamp",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "SourceTex",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Exposure",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "LumaResult",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2219,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,t1=ro.struct,u0=2d.u32",
+  "probe_ns": 60880.0
+ },
+ {
+  "name": "FXAAResolveWorkQueueCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/FXAAResolveWorkQueueCS.hlsl",
+  "entry": "main",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "1c5d141cbfbc8732",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "IndirectParams",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "WorkQueue",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "WorkCounts",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1668,
+  "dims": [
+   16384,
+   1,
+   1
+  ],
+  "binds": "b0,u0=rw.byte,u1=rw.byte,u2=rw.byte",
+  "probe_ns": 104760.0
+ },
+ {
+  "name": "GenerateHistogramCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/GenerateHistogramCS.hlsl",
+  "entry": "main",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "523f59fde5e4844c",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LumaBuf",
+    "type": "texture",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Histogram",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1533,
+  "dims": [
+   64,
+   64,
+   1
+  ],
+  "binds": "b0,t0=2d.u32,u0=rw.byte",
+  "probe_ns": 0.0
+ },
+ {
+  "name": "LinearizeDepthCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/LinearizeDepthCS.hlsl",
+  "entry": "main",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "tg_total": 256,
+  "dxil_sha": "a9bcd1329483e0b3",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Depth",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearZ",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 823,
+  "dims": [
+   64,
+   64,
+   1
+  ],
+  "binds": "b0,t0=2d.f32,u0=2d.f32",
+  "probe_ns": 87120.0
+ },
+ {
+  "name": "MotionBlurFinalPassCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/MotionBlurFinalPassCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "f61afd0c1a0cadff",
+  "bindings": [
+   {
+    "name": "c0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "VelocityBuffer",
+    "type": "texture",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "PrepBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3156,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s2,t0=2d.u32,t1=2d.f32,u0=2d.f32",
+  "probe_ns": 103600.0
+ },
+ {
+  "name": "MotionBlurPrePassCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/MotionBlurPrePassCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "255358b902769801",
+  "bindings": [
+   {
+    "name": "ColorBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "VelocityBuffer",
+    "type": "texture",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "PrepBuffer",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1498,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,t1=2d.u32,u0=2d.f32",
+  "probe_ns": 112040.0
+ },
+ {
+  "name": "ParticleBinCullingCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleBinCullingCS.hlsl",
+  "entry": "main",
+  "tg": [
+   4,
+   4,
+   1
+  ],
+  "tg_total": 16,
+  "dxil_sha": "a554f54f38f9c4ce",
+  "bindings": [
+   {
+    "name": "CBChangesPerView",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_VisibleParticles",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_LargeBinParticles",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_LargeBinCounters",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "g_BinParticles",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_BinCounters",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2827,
+  "dims": [
+   256,
+   256,
+   1
+  ],
+  "binds": "b1,b0,t0=ro.struct,t1=ro.struct,t2=ro.byte,u0=rw.struct,u1=rw.byte",
+  "probe_ns": 1395160.0
+ },
+ {
+  "name": "ParticleDepthBoundsCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleDepthBoundsCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "ef498156f8c4232a",
+  "bindings": [
+   {
+    "name": "CBChangesPerView",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "gSampPointClamp",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "g_Input",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_Output8",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_Output16",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_Output32",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3556,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b1,s2,t0=2d.f32,u0=2d.u32,u1=2d.u32,u2=2d.u32",
+  "probe_ns": 43920.0
+ },
+ {
+  "name": "ParticleDispatchIndirectArgsCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleDispatchIndirectArgsCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "tg_total": 1,
+  "dxil_sha": "212662421238b31f",
+  "bindings": [
+   {
+    "name": "g_ParticleInstance",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_NumThreadGroups",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 697,
+  "dims": [
+   65535,
+   1,
+   1
+  ],
+  "binds": "t0=ro.byte,u1=rw.byte",
+  "probe_ns": 133400.0
+ },
+ {
+  "name": "ParticleFinalDispatchIndirectArgsCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleFinalDispatchIndirectArgsCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "tg_total": 1,
+  "dxil_sha": "60c7ecc8e6d79701",
+  "bindings": [
+   {
+    "name": "g_FinalInstanceCounter",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_NumThreadGroups",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_DrawIndirectArgs",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 868,
+  "dims": [
+   65535,
+   1,
+   1
+  ],
+  "binds": "t0=ro.byte,u0=rw.byte,u1=rw.byte",
+  "probe_ns": 263920.0
+ },
+ {
+  "name": "ParticleLargeBinCullingCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleLargeBinCullingCS.hlsl",
+  "entry": "main",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "335179f527c9ed91",
+  "bindings": [
+   {
+    "name": "CBChangesPerView",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_VertexBuffer",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_VertexCount",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_LargeBinParticles",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_LargeBinCounters",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_VisibleParticles",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w+cnt",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3670,
+  "dims": [
+   16384,
+   1,
+   1
+  ],
+  "binds": "b1,b0,t0=ro.struct,t1=ro.byte,u0=rw.struct,u1=rw.byte,u2=rwcnt.struct",
+  "probe_ns": 3500000.0
+ },
+ {
+  "name": "ParticlePreSortCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticlePreSortCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "tg_total": 1024,
+  "dxil_sha": "fb4998a16b023bb6",
+  "bindings": [
+   {
+    "name": "CBChangesPerView",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_VertexBuffer",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_VertexCount",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_SortBuffer",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_DrawIndirectArgs",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 3197,
+  "dims": [
+   1024,
+   1,
+   1
+  ],
+  "binds": "b1,t0=ro.struct,t1=ro.byte,u0=rw.struct,u1=rw.byte",
+  "probe_ns": 507920.0
+ },
+ {
+  "name": "ParticleSortIndirectArgsCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleSortIndirectArgsCS.hlsl",
+  "entry": "main",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "tg_total": 1,
+  "dxil_sha": "9dc7ad48aa5cfd4b",
+  "bindings": [
+   {
+    "name": "g_DispatchIndirectArgs",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_DrawIndirectArgs",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 932,
+  "dims": [
+   65535,
+   1,
+   1
+  ],
+  "binds": "u0=rw.byte,u1=rw.byte",
+  "probe_ns": 344760.0
+ },
+ {
+  "name": "ParticleSpawnCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleSpawnCS.hlsl",
+  "entry": "main",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "31c9a4959a03c44a",
+  "bindings": [
+   {
+    "name": "EmissionProperties",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "g_ResetData",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_OutputBuffer",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w+cnt",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1589,
+  "dims": [
+   16384,
+   1,
+   1
+  ],
+  "binds": "b2,t0=ro.struct,u2=rwcnt.struct",
+  "probe_ns": 65760.0
+ },
+ {
+  "name": "ParticleTileRenderCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleTileRenderCS.hlsl",
+  "entry": "main",
+  "tg": [
+   2,
+   2,
+   1
+  ],
+  "tg_total": 4,
+  "dxil_sha": "831a278a40f4ab2d",
+  "bindings": [
+   {
+    "name": "CBChangesPerView",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "gSampLinearBorder",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "gSampPointClamp",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "g_VisibleParticles",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_HitMask",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_TexArray",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2darray",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "g_SortedParticles",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 4,
+    "count": "1"
+   },
+   {
+    "name": "g_InputDepthBuffer",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "g_DrawPackets",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 5,
+    "count": "1"
+   },
+   {
+    "name": "g_TileDepthBounds",
+    "type": "texture",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 7,
+    "count": "1"
+   },
+   {
+    "name": "g_OutputColorBuffer",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 7429,
+  "dims": [
+   512,
+   512,
+   1
+  ],
+  "binds": "b1,s0,s2,t0=ro.struct,t1=ro.byte,t2=2darray.f32,t4=ro.struct,t3=2d.f32,t5=ro.struct,t7=2d.u32,u0=2d.u32",
+  "probe_ns": 0.0
+ },
+ {
+  "name": "ParticleUpdateCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ParticleUpdateCS.hlsl",
+  "entry": "main",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "63f7e50eb07fefde",
+  "bindings": [
+   {
+    "name": "EmissionProperties",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_ResetData",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_InputBuffer",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "g_VertexBuffer",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w+cnt",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_OutputBuffer",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w+cnt",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2971,
+  "dims": [
+   16384,
+   1,
+   1
+  ],
+  "binds": "b2,b0,t0=ro.struct,t1=ro.struct,u0=rwcnt.struct,u2=rwcnt.struct",
+  "probe_ns": 33040.0
+ },
+ {
+  "name": "ResolveTAACS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ResolveTAACS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "c8bf334d295eb7fd",
+  "bindings": [
+   {
+    "name": "TemporalColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutColor",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 730,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "t0=2d.f32,u0=2d.f32",
+  "probe_ns": 70040.0
+ },
+ {
+  "name": "TemporalBlendCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/TemporalBlendCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "8a49d615571ac0ad",
+  "bindings": [
+   {
+    "name": "CB1",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "LinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "VelocityBuffer",
+    "type": "texture",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "InColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "InTemporal",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "CurDepth",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "PreDepth",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 4,
+    "count": "1"
+   },
+   {
+    "name": "OutTemporal",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 7270,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b1,s0,t0=2d.u32,t1=2d.f32,t2=2d.f32,t3=2d.f32,t4=2d.f32,u0=2d.f32",
+  "probe_ns": 125200.0
+ },
+ {
+  "name": "ToneMapCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/ToneMapCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "aed2b0a50dd5f12c",
+  "bindings": [
+   {
+    "name": "CB0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearSampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Exposure",
+    "type": "texture",
+    "fmt": "struct",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "Bloom",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "SrcColor",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "DstColor",
+    "type": "UAV",
+    "fmt": "u32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "OutLuma",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 2087,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=ro.struct,t1=2d.f32,t2=2d.f32,u0=2d.u32,u1=2d.f32",
+  "probe_ns": 104840.0
+ },
+ {
+  "name": "UpsampleAndBlurCS_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/dxs/MiniEngine/Core/Shaders/UpsampleAndBlurCS.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "9f73d6bfa474d454",
+  "bindings": [
+   {
+    "name": "cb0",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LinearBorder",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "HigherResBuf",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "LowerResBuf",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "Result",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 5908,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s1,t0=2d.f32,t1=2d.f32,u0=2d.f32",
+  "probe_ns": 91400.0
+ },
+ {
+  "name": "computeskinning_MainCS",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/ffx/Kits/Cauldron2/dx12/framework/shaders/computeskinning.hlsl",
+  "entry": "MainCS",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "eb977c473b7fa833",
+  "bindings": [
+   {
+    "name": "CBBones",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "CBStrides",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "positions",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "normals",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "weights",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 2,
+    "count": "1"
+   },
+   {
+    "name": "joints",
+    "type": "texture",
+    "fmt": "byte",
+    "dim": "r/o",
+    "reg": "t",
+    "slot": 3,
+    "count": "1"
+   },
+   {
+    "name": "currentSkinnedPositions",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "prevSkinnedPositions",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 1,
+    "count": "1"
+   },
+   {
+    "name": "currentSkinnedNormals",
+    "type": "UAV",
+    "fmt": "byte",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 2,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 4358,
+  "dims": [
+   16384,
+   1,
+   1
+  ],
+  "binds": "b0,b1,t0=ro.byte,t1=ro.byte,t2=ro.byte,t3=ro.byte,u0=rw.byte,u1=rw.byte,u2=rw.byte",
+  "probe_ns": 147640.0
+ },
+ {
+  "name": "fpslimiter_CSMain",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/ffx/Kits/Cauldron2/dx12/framework/shaders/fpslimiter.hlsl",
+  "entry": "CSMain",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "tg_total": 32,
+  "dxil_sha": "1ac9fc37a49317af",
+  "bindings": [
+   {
+    "name": "cb",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "DataBuffer",
+    "type": "UAV",
+    "fmt": "struct",
+    "dim": "r/w",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1496,
+  "dims": [
+   32768,
+   1,
+   1
+  ],
+  "binds": "b0,u0=rw.struct",
+  "probe_ns": 0.0
+ },
+ {
+  "name": "debug_overlay_main",
+  "path": "C:/Users/Lorenzo/AppData/Local/Temp/claude/src/ffx/Samples/Denoisers/FidelityFX_Denoiser/dx12/shaders/debug_overlay.hlsl",
+  "entry": "main",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "tg_total": 64,
+  "dxil_sha": "e7730a8625bd683e",
+  "bindings": [
+   {
+    "name": "Constants",
+    "type": "cbuffer",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "cb",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_linear_sampler",
+    "type": "sampler",
+    "fmt": "NA",
+    "dim": "NA",
+    "reg": "s",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_input_debug_view",
+    "type": "texture",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "t",
+    "slot": 0,
+    "count": "1"
+   },
+   {
+    "name": "g_output_target",
+    "type": "UAV",
+    "fmt": "f32",
+    "dim": "2d",
+    "reg": "u",
+    "slot": 0,
+    "count": "1"
+   }
+  ],
+  "src_bytes": 1818,
+  "dims": [
+   128,
+   128,
+   1
+  ],
+  "binds": "b0,s0,t0=2d.f32,u0=2d.f32",
+  "probe_ns": 72440.0
+ }
+]

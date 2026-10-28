@@ -1,0 +1,408 @@
+{
+  "label": "harness_validation",
+  "session": "56_capture_validation",
+  "target_process": "D3D12RaytracingProceduralGeometry.exe",
+  "requested_seconds": 20,
+  "delay_seconds": 0,
+  "elapsed_seconds": 20.12,
+  "presentmon": "C:\\Program Files\\Intel\\PresentMon\\PresentMonConsoleApplication\\PresentMon-2.5.1-x64.exe",
+  "presentmon_returncode": 0,
+  "rows_in_csv": 11030,
+  "command": [
+    "C:\\Program Files\\Intel\\PresentMon\\PresentMonConsoleApplication\\PresentMon-2.5.1-x64.exe",
+    "--process_name",
+    "D3D12RaytracingProceduralGeometry.exe",
+    "--timed",
+    "20",
+    "--output_file",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\56_capture_validation\\harness_validation\\presentmon.csv",
+    "--v2_metrics",
+    "--no_console_stats",
+    "--qpc_time_ms",
+    "--terminate_on_proc_exit",
+    "--terminate_after_timed",
+    "--stop_existing_session"
+  ],
+  "launched_by_this_tool": false,
+  "invasiveness": "ETW consumer only: no injection, no hooking, no file or registry change, no modification of the target process",
+  "before": {
+    "when": "before",
+    "timestamp": "2026-09-07T12:53:08.350883+02:00",
+    "gpu": {
+      "Name": "AMD Radeon RX 6950 XT",
+      "DriverVersion": "32.0.21045.5002",
+      "DriverDate": "/Date(1786924800000)/",
+      "VideoModeDescription": "2560 x 1440 x 4294967296 colors",
+      "CurrentRefreshRate": 360,
+      "AdapterRAM": 4293918720
+    },
+    "os": {
+      "Caption": "Microsoft Windows 11 Pro",
+      "Version": "10.0.26200",
+      "BuildNumber": "26200",
+      "FreePhysicalMemoryKB": 23292248
+    },
+    "power_plan": {
+      "scheme": "Power Scheme GUID: c0ae4f83-b24f-4216-ab0b-b94722f1e8dd  (zoic's ultimate performance(amd))"
+    },
+    "busy_processes": [
+      {
+        "Name": "MsMpEng",
+        "Id": 4548,
+        "CPU": 319.078125,
+        "WorkingSet64": 420909056
+      },
+      {
+        "Name": "herdr",
+        "Id": 5916,
+        "CPU": 278.890625,
+        "WorkingSet64": 62300160
+      },
+      {
+        "Name": "herdr",
+        "Id": 5832,
+        "CPU": 157.703125,
+        "WorkingSet64": 28561408
+      },
+      {
+        "Name": "claude",
+        "Id": 2196,
+        "CPU": 157.546875,
+        "WorkingSet64": 739790848
+      },
+      {
+        "Name": "dwm",
+        "Id": 2028,
+        "CPU": 147.953125,
+        "WorkingSet64": 536113152
+      },
+      {
+        "Name": "System",
+        "Id": 4,
+        "CPU": 133.75,
+        "WorkingSet64": 9736192
+      },
+      {
+        "Name": "conhost",
+        "Id": 7848,
+        "CPU": 75.8125,
+        "WorkingSet64": 22020096
+      },
+      {
+        "Name": "vmmem",
+        "Id": 11000,
+        "CPU": 71.15625,
+        "WorkingSet64": 0
+      },
+      {
+        "Name": "pcssagent",
+        "Id": 4428,
+        "CPU": 69.578125,
+        "WorkingSet64": 222998528
+      },
+      {
+        "Name": "EVO",
+        "Id": 6056,
+        "CPU": 56.15625,
+        "WorkingSet64": 23035904
+      },
+      {
+        "Name": "codex",
+        "Id": 2968,
+        "CPU": 42.453125,
+        "WorkingSet64": 258076672
+      },
+      {
+        "Name": "D3D12RaytracingProceduralGeometry",
+        "Id": 11540,
+        "CPU": 36.765625,
+        "WorkingSet64": 57737216
+      },
+      {
+        "Name": "SearchIndexer",
+        "Id": 12988,
+        "CPU": 25.796875,
+        "WorkingSet64": 43700224
+      },
+      {
+        "Name": "svchost",
+        "Id": 2568,
+        "CPU": 14.625,
+        "WorkingSet64": 17121280
+      },
+      {
+        "Name": "explorer",
+        "Id": 4396,
+        "CPU": 12.484375,
+        "WorkingSet64": 213913600
+      },
+      {
+        "Name": "lsass",
+        "Id": 1600,
+        "CPU": 8.390625,
+        "WorkingSet64": 36241408
+      },
+      {
+        "Name": "OpenConsole",
+        "Id": 9788,
+        "CPU": 7.46875,
+        "WorkingSet64": 11755520
+      },
+      {
+        "Name": "csrss",
+        "Id": 1428,
+        "CPU": 5.71875,
+        "WorkingSet64": 7274496
+      },
+      {
+        "Name": "svchost",
+        "Id": 1860,
+        "CPU": 4.53125,
+        "WorkingSet64": 16883712
+      },
+      {
+        "Name": "codex",
+        "Id": 2016,
+        "CPU": 4.046875,
+        "WorkingSet64": 179036160
+      },
+      {
+        "Name": "codex",
+        "Id": 2660,
+        "CPU": 3.921875,
+        "WorkingSet64": 172822528
+      },
+      {
+        "Name": "vmwp",
+        "Id": 11252,
+        "CPU": 3.734375,
+        "WorkingSet64": 25714688
+      },
+      {
+        "Name": "svchost",
+        "Id": 3452,
+        "CPU": 3.390625,
+        "WorkingSet64": 19435520
+      },
+      {
+        "Name": "codex",
+        "Id": 2880,
+        "CPU": 3.375,
+        "WorkingSet64": 184696832
+      },
+      {
+        "Name": "node",
+        "Id": 15344,
+        "CPU": 3.3125,
+        "WorkingSet64": 107433984
+      }
+    ],
+    "amd_cache": {
+      "DxCache": {
+        "files": 80,
+        "bytes": 3014656,
+        "newest_mtime": 1788775342.9292152
+      },
+      "DxcCache": {
+        "files": 117,
+        "bytes": 966553600,
+        "newest_mtime": 1788777820.7092621
+      },
+      "DX9Cache": {
+        "files": 14,
+        "bytes": 233472,
+        "newest_mtime": 1788540443.6505153
+      }
+    }
+  },
+  "after": {
+    "when": "after",
+    "timestamp": "2026-09-07T12:53:33.698499+02:00",
+    "gpu": {
+      "Name": "AMD Radeon RX 6950 XT",
+      "DriverVersion": "32.0.21045.5002",
+      "DriverDate": "/Date(1786924800000)/",
+      "VideoModeDescription": "2560 x 1440 x 4294967296 colors",
+      "CurrentRefreshRate": 360,
+      "AdapterRAM": 4293918720
+    },
+    "os": {
+      "Caption": "Microsoft Windows 11 Pro",
+      "Version": "10.0.26200",
+      "BuildNumber": "26200",
+      "FreePhysicalMemoryKB": 23270552
+    },
+    "power_plan": {
+      "scheme": "Power Scheme GUID: c0ae4f83-b24f-4216-ab0b-b94722f1e8dd  (zoic's ultimate performance(amd))"
+    },
+    "busy_processes": [
+      {
+        "Name": "MsMpEng",
+        "Id": 4548,
+        "CPU": 319.421875,
+        "WorkingSet64": 418672640
+      },
+      {
+        "Name": "herdr",
+        "Id": 5916,
+        "CPU": 280.375,
+        "WorkingSet64": 62300160
+      },
+      {
+        "Name": "herdr",
+        "Id": 5832,
+        "CPU": 158.65625,
+        "WorkingSet64": 28311552
+      },
+      {
+        "Name": "claude",
+        "Id": 2196,
+        "CPU": 158.328125,
+        "WorkingSet64": 757481472
+      },
+      {
+        "Name": "dwm",
+        "Id": 2028,
+        "CPU": 154.34375,
+        "WorkingSet64": 536100864
+      },
+      {
+        "Name": "System",
+        "Id": 4,
+        "CPU": 136.921875,
+        "WorkingSet64": 9736192
+      },
+      {
+        "Name": "conhost",
+        "Id": 7848,
+        "CPU": 76.3125,
+        "WorkingSet64": 22020096
+      },
+      {
+        "Name": "vmmem",
+        "Id": 11000,
+        "CPU": 71.28125,
+        "WorkingSet64": 0
+      },
+      {
+        "Name": "pcssagent",
+        "Id": 4428,
+        "CPU": 69.796875,
+        "WorkingSet64": 222998528
+      },
+      {
+        "Name": "EVO",
+        "Id": 6056,
+        "CPU": 56.546875,
+        "WorkingSet64": 23035904
+      },
+      {
+        "Name": "codex",
+        "Id": 2968,
+        "CPU": 42.453125,
+        "WorkingSet64": 258076672
+      },
+      {
+        "Name": "D3D12RaytracingProceduralGeometry",
+        "Id": 11540,
+        "CPU": 38.921875,
+        "WorkingSet64": 57737216
+      },
+      {
+        "Name": "SearchIndexer",
+        "Id": 12988,
+        "CPU": 26,
+        "WorkingSet64": 44314624
+      },
+      {
+        "Name": "svchost",
+        "Id": 2568,
+        "CPU": 14.671875,
+        "WorkingSet64": 17068032
+      },
+      {
+        "Name": "explorer",
+        "Id": 4396,
+        "CPU": 12.546875,
+        "WorkingSet64": 213913600
+      },
+      {
+        "Name": "lsass",
+        "Id": 1600,
+        "CPU": 8.390625,
+        "WorkingSet64": 36356096
+      },
+      {
+        "Name": "OpenConsole",
+        "Id": 9788,
+        "CPU": 7.46875,
+        "WorkingSet64": 11792384
+      },
+      {
+        "Name": "csrss",
+        "Id": 1428,
+        "CPU": 5.765625,
+        "WorkingSet64": 7278592
+      },
+      {
+        "Name": "svchost",
+        "Id": 1860,
+        "CPU": 4.546875,
+        "WorkingSet64": 17018880
+      },
+      {
+        "Name": "codex",
+        "Id": 2016,
+        "CPU": 4.046875,
+        "WorkingSet64": 179036160
+      },
+      {
+        "Name": "codex",
+        "Id": 2660,
+        "CPU": 3.921875,
+        "WorkingSet64": 172822528
+      },
+      {
+        "Name": "vmwp",
+        "Id": 11252,
+        "CPU": 3.75,
+        "WorkingSet64": 25681920
+      },
+      {
+        "Name": "svchost",
+        "Id": 3452,
+        "CPU": 3.421875,
+        "WorkingSet64": 19435520
+      },
+      {
+        "Name": "codex",
+        "Id": 2880,
+        "CPU": 3.375,
+        "WorkingSet64": 184696832
+      },
+      {
+        "Name": "node",
+        "Id": 15344,
+        "CPU": 3.3125,
+        "WorkingSet64": 107433984
+      }
+    ],
+    "amd_cache": {
+      "DxCache": {
+        "files": 80,
+        "bytes": 3014656,
+        "newest_mtime": 1788775342.9292152
+      },
+      "DxcCache": {
+        "files": 117,
+        "bytes": 966553600,
+        "newest_mtime": 1788777820.7092621
+      },
+      "DX9Cache": {
+        "files": 14,
+        "bytes": 233472,
+        "newest_mtime": 1788540443.6505153
+      }
+    }
+  }
+}

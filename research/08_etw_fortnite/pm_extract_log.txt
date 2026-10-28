@@ -1,0 +1,9 @@
+=== research/08_etw_fortnite/raw/fortnite-run1-20260904-025033.etl -> research/08_etw_fortnite/raw/fortnite-run1-20260904-025033-presentmon.csv
+Started recording.
+  !! nessun output
+=== research/08_etw_fortnite/raw/fortnite-run2-20260904-025413.etl -> research/08_etw_fortnite/raw/fortnite-run2-20260904-025413-presentmon.csv
+Started recording.
+  !! nessun output
+=== research/08_etw_fortnite/raw/fortnite-run3-20260904-025720.etl -> research/08_etw_fortnite/raw/fortnite-run3-20260904-025720-presentmon.csv
+Started recording.
+  !! nessun output

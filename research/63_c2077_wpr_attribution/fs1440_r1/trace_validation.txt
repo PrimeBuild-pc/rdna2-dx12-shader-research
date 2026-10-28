@@ -1,0 +1,24 @@
+Number of Processors : 16
+CPU Speed            : 3400 MHz
+OS Version           : 10.00.00.00
+OS Build Number      : 26200
+Clock type           : PerfCounter
+Boot time            : 2026/09/08:11:28:44.5000000
+Native Pointer Size  : 8 (64bit)
+Start time (UTC)     : 2026/09/08:20:29:00.8681606
+End time (UTC)       : 2026/09/08:20:31:58.0908015  (+         0:00:02:57.2226409)
+Total # Lost Buffers : 0
+Total # Lost Events  : 0
+
+Number of Traces     : 1
+
+Trace name: research/63_c2077_wpr_attribution/fs1440_r1/c2077_fs1440_attribution-run1-20260908-222856-633.etl
+    Log file mode        : Sequential Relogged
+    Pointer size         : 8 (64bit)
+    Start time (UTC)     : 2026/09/08:20:29:00.8681606
+    End time (UTC)       : 2026/09/08:20:31:58.0908015  (+         0:00:02:57.2226409)
+    Start time (Local)   : 2026/09/08:22:29:00.8681606
+    End time (Local)     : 2026/09/08:22:31:58.0908015
+    # Lost Buffers       : 0
+    # Lost Events        : 0
+

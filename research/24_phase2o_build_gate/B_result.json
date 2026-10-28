@@ -1,0 +1,65 @@
+{
+  "stage": "B",
+  "status": "PASS",
+  "build": {
+    "header": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O1_20260906_010146\\build\\B.1\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+    "header_sha256": "a6f21c25299fa133211b86d47ba522f3f02be26cc988baab3a1e10b896eaad4b",
+    "bytecode_sha256": "f226996fb66cd174d93f8310a95e55efd741adae7b4d83099f707958631930c7",
+    "custom_hash": "863C3DDA7C0BCD9A",
+    "bytecode_bytes": 12616,
+    "executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O1_20260906_010146\\build\\B.1\\Output\\ModelViewer\\ModelViewer.exe",
+    "executable_sha256": "575e3e715c62e0e64ae89d28c80c383d6fa3b7981bb75d6e56d0234fd7e2f250",
+    "source_sha256": "af81c33f772d387cb483d40e49f44fd8d7c3694f94ecf96bbab612fc65da98ef"
+  },
+  "runs": [
+    {
+      "tag": "B",
+      "pid": 9400,
+      "draws": 34,
+      "image": {
+        "pid": 9400,
+        "frame_index": 140,
+        "target": "g_SceneColorBuffer/SV_Target0",
+        "capture_point": "after Render Color, before particles/post-effects",
+        "dxgi_format": 26,
+        "format_name": "R11G11B10_FLOAT",
+        "width": 1920,
+        "height": 1080,
+        "row_pitch": 7680,
+        "stored_row_bytes": 7680,
+        "padding_stored": false
+      },
+      "image_sha256": "949c08cc8cdb2d671dce94873e3d578f577cdbb8b4543ed7585051f66ab9c5bf",
+      "runtime_custom_hash": "863C3DDA7C0BCD9A"
+    }
+  ],
+  "image_diff": {
+    "pair": [
+      "A",
+      "B"
+    ],
+    "changed_pixels": 2073557,
+    "changed_fraction": 0.9999792631172839,
+    "max_channel_ulp": [
+      741,
+      0,
+      0
+    ],
+    "positive_channel_fraction": [
+      0.9999792631172839,
+      0.0,
+      0.0
+    ],
+    "changed_channel_fraction": [
+      0.9999792631172839,
+      0.0,
+      0.0
+    ],
+    "median_decoded_delta_dark": [
+      0.124267578125,
+      0.0,
+      0.0
+    ]
+  },
+  "baseline_spread": 0.0
+}

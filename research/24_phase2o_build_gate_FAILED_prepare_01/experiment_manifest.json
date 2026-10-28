@@ -1,0 +1,27 @@
+{
+  "experiment_id": "O1_20260906_003712",
+  "created_at": "2026-09-06T00:37:12.660818+02:00",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O1_20260906_003712",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "historical_custom_hash": "52CE6C5E64AB2E82",
+  "sequence": [
+    "A",
+    "B",
+    "A2"
+  ],
+  "capture_frame_index": 7,
+  "canary": "mrt.Color = colorSum + float3(0.125, 0.0, 0.0);",
+  "workload": "Sponza 1920x1080; 8 rendered frames per process; no performance verdict",
+  "configuration": "Profile/x64/v145",
+  "oracle_policy": {
+    "baseline_max_channel_ulp": 1,
+    "baseline_max_changed_pixel_fraction": 0.0001,
+    "canary_min_changed_pixel_fraction": 0.1,
+    "finite_only": true
+  },
+  "gpu_perf_api": false,
+  "timing_export": false,
+  "workspace_budget_bytes": 8000000000,
+  "source_modification_policy": "instrumented copy only; original clone and build unchanged"
+}

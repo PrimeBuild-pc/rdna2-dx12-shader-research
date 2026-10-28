@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\43_2r_workload\\builds\\base\\D3D12nBodyGravity.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\43_2r_workload\\builds\\base\\D3D12nBodyGravity.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\43_2r_workload\\builds\\base",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\43_2r_workload\\builds\\base\\D3D12nBodyGravity.exe",
+  "executable_sha256": "373c161b67153d532545f00858ec6bebb5083a0683a087edcee634bfb4d89860",
+  "pid": 3916,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\43_2r_workload\\builds\\base\\D3D12nBodyGravity.exe",
+  "returncode": 0
+}

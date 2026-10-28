@@ -1,0 +1,22 @@
+{
+  "variant": "abl_phong",
+  "rep": 3,
+  "pid": 1496,
+  "summary": {
+    "pid": 1496,
+    "warmup": 200,
+    "frames": 500,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 1492380.0,
+    "region0_min_ns": 1358480.0,
+    "region0_max_ns": 1788680.0,
+    "region0_p95_ns": 1729040.0,
+    "region1_median_ns": 0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "6533f989f3d868bc800809400be710e7498029ddb385ccfee4c663a741164840",
+  "shaders": {
+    "Raytracing.dxil": "b71048da306b781fa61519f28d30597f048ce72199d0ba38acd410e74b52f1c4"
+  }
+}

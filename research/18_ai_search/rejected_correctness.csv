@@ -1,0 +1,6 @@
+name,shader,dataset,lvl,max_rel,rms_rel,div,bad
+trig__unroll4,trig,0,fuori_tolleranza,4.447e-04,2.425e-04,0,1
+trig__unroll4,trig,5,fuori_tolleranza,4.447e-04,2.425e-04,0,1
+trig__unroll4,trig,8,fuori_tolleranza,4.447e-04,2.425e-04,0,1
+trig__unroll4,trig,12,fuori_tolleranza,4.447e-04,2.425e-04,0,1
+trig__unroll4,trig,17,fuori_tolleranza,4.447e-04,2.425e-04,0,1

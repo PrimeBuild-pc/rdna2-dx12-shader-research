@@ -1,0 +1,168 @@
+Diagnosi chiusa. Ho localizzato la finestra a mano dai timestamp QPC.
+
+## Il mapping era corretto; il difetto è nel controllo a blocchi
+
+`benchmark_2026-09-08_21-08-37` è la run giusta (1280×720, `windowMode` 2, dentro la finestra di cattura 21:08:06–21:11:03). Ho trovato la finestra del benchmark dentro il CSV senza usare la correlazione:
+
+| | |
+|---|---|
+| prima riga | **6416** (QPC 27615576.4577, ft 4.6158) |
+| ultima riga | **18357** (QPC 27679834.8393, ft 6.9018, `DisplayedTime` 110.01 → fine benchmark) |
+| conteggio | 18357 − 6416 + 1 = **11942** = esattamente `frameNumber` nativo ✓ |
+| durata QPC | 64258.38 ms su 11941 intervalli; attesa da `sum(y) − y[-1]` ≈ 64260.3 ms → **scarto 1.9 ms (0.003%)** ✓ |
+| ft medio | 64258.38/11941 = **5.3813 ms** vs nativo 5.3815 ms ✓ |
+
+Quindi **la traccia è completa**: nessun evento ETW perso, nessun present in eccesso, nessun disallineamento reale. Il frame-for-frame esiste ed è a offset **6416**.
+
+**Causa del fallimento:** `size = min(1000, len(y) // 3)` è un conteggio **fisso di frame**, quindi una finestra temporale che si accorcia al salire degli FPS — 8.9 s a 1440p, 6.1 s a 1080p, **5.4 s a 720p**. Il rumore di pacing fra `MsBetweenPresents` e il frame time interno del gioco è ~costante in ms assoluti, quindi pesa sempre di più su frame sempre più corti. Si vede nei dati già acquisiti: correlazioni di blocco 0.875/0.946/0.888 a 1440p → **0.783**/0.849/0.839 a 1080p. A 720p un blocco è finito su un picco rivale. Il controllo si indebolisce esattamente dove servirebbe più forte.
+
+Non è un falso positivo da aggirare abbassando una soglia: è il controllo dimensionato male.
+
+## Patch — `tools/c2077_native.py`
+
+Due modifiche. Blocchi come **frazione della traccia** (invariante alla risoluzione, e i tre blocchi ora coprono tutto invece del 25%), e un **localizzatore indipendente** che non usa correlazione — quello che ho appena fatto a mano.
+
+**`match()`, righe 15-28** → aggiungi il margine del picco:
+```python
+def match(x, y, guard=50):
+    if len(y) < 2 or len(x) < len(y) or not np.isfinite(x).all() or not np.isfinite(y).all():
+        raise ValueError("Incomplete or nonfinite frame trace")
+    n = len(y)
+    s = np.r_[0, np.cumsum(x)]
+    q = np.r_[0, np.cumsum(x * x)]
+    variance = np.maximum(q[n:] - q[:-n] - (s[n:] - s[:-n]) ** 2 / n, 0)
+    den = np.sqrt(variance * np.sum((y - y.mean()) ** 2))
+    r = np.divide(np.correlate(x, y - y.mean(), mode="valid"), den,
+                  out=np.full(len(x) - n + 1, -np.inf), where=den > 0)
+    if not np.isfinite(r).any():
+        raise ValueError("No identifiable frame pattern")
+    a = int(np.argmax(r))
+    rival = np.r_[r[:max(0, a - guard)], r[a + guard + 1:]]
+    rival = rival[np.isfinite(rival)]
+    return a, float(r[a]), (float(r[a] - rival.max()) if rival.size else None)
+```
+
+**Nuova funzione**, subito dopo `match`:
+```python
+def qpc_locator(d, n, target_ms):
+    """Localizza la finestra col tempo assoluto QPC invece che con la forma della traccia.
+
+    Non condivide nessuna ipotesi col pattern matching: cerca l'unica finestra di n righe
+    consecutive la cui durata combacia con quella dichiarata dal gioco. Se i due metodi
+    concordano, l'allineamento non dipende piu' dalla correlazione.
+    """
+    if "CPUStartQPCTime" not in d.columns:
+        return None, None
+    q = pd.to_numeric(d["CPUStartQPCTime"], errors="coerce").to_numpy(float)
+    if not np.isfinite(q).all():
+        return None, None
+    span = q[n - 1:] - q[:len(q) - n + 1]
+    b = int(np.argmin(np.abs(span - target_ms)))
+    return b, float(span[b] - target_ms)
+```
+
+**`analyze()`, sostituisci righe 47-55** (da `a, correlation = match(x, y)` fino al `raise` dei blocchi):
+```python
+    a, correlation, margin = match(x, y)
+    # ponytail: frame-for-frame matching requires a complete trace; dropped ETW events fail closed.
+    # Il blocco era min(1000, len(y)//3): un CONTEGGIO fisso di frame, quindi una finestra
+    # temporale che si accorcia al salire degli FPS (8.9 s a 1440p, 5.4 s a 720p) proprio dove il
+    # jitter di pacing pesa di piu' su frame piu' corti. A 720p il controllo si e' rotto da solo su
+    # una traccia completa e allineabile. Un terzo della traccia e' invariante alla risoluzione e i
+    # tre blocchi la coprono tutta senza sovrapporsi.
+    checks = []
+    size = len(y) // 3
+    for offset in (0, len(y) // 2 - size // 2, len(y) - size):
+        pos, score, block_margin = match(x, y[offset:offset + size])
+        checks.append(dict(native_offset=offset, presentmon_row=pos, correlation=score,
+                           peak_margin=block_margin))
+        if pos - offset != a:
+            raise ValueError(f"Independent block alignment disagrees: {checks}")
+    qpc_row, qpc_delta_ms = qpc_locator(d, len(y), float(y.sum() - y[-1]))
+    if qpc_row is not None and abs(qpc_row - a) > 2:
+        raise ValueError(f"QPC locator {qpc_row} disagrees with pattern match {a}")
+```
+
+**Righe 56-64** (finestra e cross-check FPS — questo è il fix D2, serve perché il localizzatore QPC usa la stessa definizione di durata):
+```python
+    w = d.iloc[a:a + len(y)].copy().reset_index(drop=True)
+    w["TimeInSeconds"] -= w.TimeInSeconds.iloc[0]
+    ft = w[FT].to_numpy(float)
+    # n frame coprono n intervalli. TimeInSeconds[-1] ne conta n-1 e gonfiava avg_fps di +1/n
+    # (0.0139% a 7220 frame): esattamente la dimensione del vecchio "accordo" col risultato nativo.
+    dur = float(ft.sum()) / 1000.0
+    fps = len(w) / dur
+    delta = 100 * (fps / game["averageFps"] - 1)
+    if abs(delta) > 0.05 or abs(dur - game["time"]) > 0.5:
+        raise ValueError(f"Duration/FPS cross-check failed: delta {delta:.4f}%, dur {dur:.4f}s")
+```
+
+**Blocco `alignment=` (righe 79-81):**
+```python
+                  alignment=dict(first_row=a, last_row=a+len(y)-1, correlation=correlation,
+                                 peak_margin=margin, block_checks=checks, block_size=size,
+                                 qpc_locator_row=qpc_row, qpc_locator_delta_ms=qpc_delta_ms,
+                                 game_fps_delta_pct=delta, game_duration_delta_s=dur-game["time"],
+                                 duration_basis="sum of the window's n frame intervals"),
+```
+
+**Firma e `__main__`** — serve `--out-name` per riverificare le 3 run già analizzate senza toccarle:
+```python
+def analyze(run, native, out_name="native_analysis"):
+    dest = run / out_name
+```
+```python
+    ap.add_argument("--out-name", default="native_analysis")
+    args = ap.parse_args()
+    if args.run and args.native:
+        analyze(args.run, args.native, args.out_name)
+```
+
+**In `selfcheck()`**, dopo riga 101:
+```python
+    assert match(x, x[173:773])[2] > 0.1, match(x, x[173:773])
+```
+
+## Comandi (questi non posso eseguirli io: ho solo tool di lettura)
+
+```
+! python -B tools/c2077_native.py
+```
+```
+! python -B tools/c2077_native.py "research/62_c2077_fullscreen_scaling/fs720_r1" "C:\Users\Lorenzo\Documents\CD Projekt Red\Cyberpunk 2077\benchmarkResults\benchmark_2026-09-08_21-08-37"
+```
+
+**Predizione falsificabile:** `first_row` = **6416**, `last_row` = 18357, `qpc_locator_row` = 6416, `duration_s` ≈ 64.2657, `avg_fps` ≈ 185.82. Se esce altro, la mia diagnosi è sbagliata e va rifatta.
+
+Poi riverifica le altre 3 col controllo più forte (non sovrascrive nulla):
+```
+! $m=[ordered]@{fs1440_r1="21-00-10";fs1080_r1="21-05-02";fs1440_r2="21-12-24"}; foreach($k in $m.Keys){ python -B tools/c2077_native.py "research/62_c2077_fullscreen_scaling/$k" "C:\Users\Lorenzo\Documents\CD Projekt Red\Cyberpunk 2077\benchmarkResults\benchmark_2026-09-08_$($m[$k])" --out-name native_analysis_v2 }
+```
+
+E il riepilogo dei quattro:
+```
+! foreach($k in "fs1440_r1","fs1080_r1","fs720_r1","fs1440_r2"){ $p="research/62_c2077_fullscreen_scaling/$k/native_analysis_v2/analysis.json"; if(-not(Test-Path $p)){$p="research/62_c2077_fullscreen_scaling/$k/native_analysis/analysis.json"}; $j=Get-Content $p -Raw|ConvertFrom-Json; "{0,-10} row {1,6} ft {2,6:N3}  GPUBusy {3,6:N3}  CPUBusy {4,6:N3}  GPUWait {5,5:N3}  CPUWait {6,5:N3}" -f $k,$j.alignment.first_row,$j.full_benchmark.ft_avg_ms,$j.signals.MsGPUBusy.mean_ms,$j.signals.MsCPUBusy.mean_ms,$j.signals.MsGPUWait.mean_ms,$j.signals.MsCPUWait.mean_ms }
+```
+
+## Intanto: CPUBusy/GPUBusy delle 3 run già analizzate
+
+| run | Mpx | ft | GPUBusy | CPUBusy | GPUWait | CPUWait |
+|---|---:|---:|---:|---:|---:|---:|
+| `fs1440_r1` | 3.686 | 8.899 | 8.775 | 8.743 | 0.099 | 0.156 |
+| `fs1440_r2` | 3.686 | 8.936 | 8.801 | 8.780 | 0.108 | 0.156 |
+| `fs1080_r1` | 2.074 | 6.099 | **5.854** | **5.939** | **0.196** | 0.160 |
+
+Tre segnali convergenti a 1080p: **CPUBusy supera GPUBusy** per la prima volta (5.939 > 5.854), **GPUWait raddoppia** (0.196 vs 0.099) mentre CPUWait resta piatta a 0.156. È la firma di un limite non-GPU che si avvicina.
+
+`CPUBusy` però scala coi pixel quasi quanto `GPUBusy` (1.750 vs 1.819 ms/Mpx): conferma l'avvertenza già nel report — CPUBusy assorbe il pacing e non misura da solo il percorso critico CPU. Il segnale portante è **GPUBusy**, che è lavoro GPU vero:
+
+> GPUBusy = 2.083 + 1.819 · Mpx → **costo GPU fisso 2.08 ms**, costo GPU per-pixel a 1440p **6.71 ms (75%)**
+
+Estrapolato a 720p: **GPUBusy previsto 3.76 ms** contro un frametime misurato di **5.38 ms**. Se il modello regge, a 720p la GPU è ferma ~30% del frame e il limitatore è altro: **C ≈ 5.38 ms ≈ 186 FPS**, di natura CPU/driver.
+
+Le tre predizioni pre-registrate per fs720_r1, da confrontare con l'output:
+- `MsGPUBusy` ≈ **3.76 ms** (GPU lineare → C non è GPU) — se invece esce ≈5.2 ms la GPU satura anche a 720p e la conclusione si ribalta
+- `MsCPUBusy` ≈ **5.22 ms** (agganciato a ft − CPUWait, quindi *fuori* dalla retta 1.75 ms/Mpx che predirebbe 3.92): è la rottura che identifica il muro
+- `MsGPUWait` in ulteriore crescita sopra 0.196 ms
+
+Se escono così, a 1440p sei GPU-bound con headroom fino al muro CPU/driver a ~186 FPS — cioè **+65% teorico** — e il lavoro shader-side ha senso. Lancia i comandi e chiudo il verdetto.

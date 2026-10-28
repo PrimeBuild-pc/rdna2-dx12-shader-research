@@ -1,0 +1,22 @@
+{
+  "variant": "base",
+  "rep": 15,
+  "pid": 15728,
+  "summary": {
+    "pid": 15728,
+    "warmup": 400,
+    "frames": 2000,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 1512020.0,
+    "region0_min_ns": 1374640.0,
+    "region0_max_ns": 2218360.0,
+    "region0_p95_ns": 1741480.0,
+    "region1_median_ns": 0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "dc71ab2990237e38daaa80856659a78e3385d6ae43c8448e96ad10d7c67156ca",
+  "shaders": {
+    "Raytracing.dxil": "31fc8d869d84a1cdb28b98badba803e33cfd65f867c2382e7749d1a226030f68"
+  }
+}

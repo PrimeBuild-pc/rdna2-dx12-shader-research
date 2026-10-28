@@ -1,0 +1,23 @@
+{
+  "variant": "base",
+  "rep": 1,
+  "pid": 8216,
+  "summary": {
+    "pid": 8216,
+    "warmup": 150,
+    "frames": 300,
+    "timestamp_frequency": 100000000,
+    "region0_median_ns": 480.0,
+    "region0_min_ns": 440.0,
+    "region0_max_ns": 1520.0,
+    "region0_p95_ns": 1480.0,
+    "region1_median_ns": 0,
+    "region2_median_ns": 0,
+    "region3_median_ns": 0
+  },
+  "target_sha256": "912f6bd6e6dac948727f40fd952170950d354525912765fa5cc69af4db96b907",
+  "shaders": {
+    "MeshletMS.cso": "d98e1c3bb5ccfad8ff88781ba31f1670db061b1f4f6b2bd69fb7cbb73bd4b107",
+    "MeshletPS.cso": "1aad4482cca0147f241d8ea495e5b1d03a056720ae941245f36595e9472eae09"
+  }
+}

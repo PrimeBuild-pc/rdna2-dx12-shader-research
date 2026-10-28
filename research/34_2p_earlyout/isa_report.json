@@ -1,0 +1,298 @@
+{
+  "base": {
+    "stats": {
+      "shaderStageMask": 32,
+      "resourceUsage.numUsedVgprs": 61,
+      "resourceUsage.numUsedSgprs": 54,
+      "resourceUsage.ldsSizePerLocalWorkGroup": 65536,
+      "resourceUsage.ldsUsageSizeInBytes": 0,
+      "resourceUsage.scratchMemUsageInBytes": 0,
+      "numPhysicalVgprs": 1024,
+      "numPhysicalSgprs": 2048,
+      "numAvailableVgprs": 256,
+      "numAvailableSgprs": 104
+    },
+    "isa": {
+      "total_instructions": 553,
+      "loops": [
+        {
+          "first_line": 274,
+          "last_line": 346,
+          "instructions": 72,
+          "vmem": 3,
+          "transcendental": 7,
+          "est_valu_cycles": 180,
+          "top": {
+            "v_mul_f32": 20,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 10,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "v_log_f32": 2,
+            "v_exp_f32": 2
+          }
+        },
+        {
+          "first_line": 361,
+          "last_line": 441,
+          "instructions": 80,
+          "vmem": 5,
+          "transcendental": 7,
+          "est_valu_cycles": 192,
+          "top": {
+            "v_mul_f32": 22,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 13,
+            "s_waitcnt": 4,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "buffer_load_dwordx3": 2,
+            "v_log_f32": 2
+          }
+        },
+        {
+          "first_line": 456,
+          "last_line": 563,
+          "instructions": 107,
+          "vmem": 10,
+          "transcendental": 8,
+          "est_valu_cycles": 242,
+          "top": {
+            "v_mul_f32": 27,
+            "v_fmac_f32": 25,
+            "v_fma_f32": 13,
+            "s_waitcnt": 6,
+            "buffer_load_dwordx4": 5,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "s_clause": 2
+          }
+        }
+      ]
+    },
+    "bytecode": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6"
+  },
+  "combo": {
+    "stats": {
+      "shaderStageMask": 32,
+      "resourceUsage.numUsedVgprs": 55,
+      "resourceUsage.numUsedSgprs": 54,
+      "resourceUsage.ldsSizePerLocalWorkGroup": 65536,
+      "resourceUsage.ldsUsageSizeInBytes": 0,
+      "resourceUsage.scratchMemUsageInBytes": 0,
+      "numPhysicalVgprs": 1024,
+      "numPhysicalSgprs": 2048,
+      "numAvailableVgprs": 256,
+      "numAvailableSgprs": 104
+    },
+    "isa": {
+      "total_instructions": 571,
+      "loops": [
+        {
+          "first_line": 275,
+          "last_line": 347,
+          "instructions": 72,
+          "vmem": 3,
+          "transcendental": 5,
+          "est_valu_cycles": 168,
+          "top": {
+            "v_mul_f32": 22,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 10,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "buffer_load_dword": 1,
+            "s_clause": 1
+          }
+        },
+        {
+          "first_line": 362,
+          "last_line": 442,
+          "instructions": 80,
+          "vmem": 5,
+          "transcendental": 5,
+          "est_valu_cycles": 180,
+          "top": {
+            "v_mul_f32": 24,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 13,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "buffer_load_dwordx3": 2,
+            "v_add_nc_u32": 1
+          }
+        },
+        {
+          "first_line": 458,
+          "last_line": 582,
+          "instructions": 123,
+          "vmem": 10,
+          "transcendental": 6,
+          "est_valu_cycles": 262,
+          "top": {
+            "v_mul_f32": 34,
+            "v_fmac_f32": 22,
+            "v_fma_f32": 13,
+            "s_waitcnt": 5,
+            "buffer_load_dwordx4": 5,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "v_cmp_neq_f32": 3
+          }
+        }
+      ]
+    },
+    "bytecode": "93b85dc4029574875cefd84db3b3c9076d9cc5648857ab851a36c04905cff618"
+  },
+  "falloffskip": {
+    "stats": {
+      "shaderStageMask": 32,
+      "resourceUsage.numUsedVgprs": 56,
+      "resourceUsage.numUsedSgprs": 54,
+      "resourceUsage.ldsSizePerLocalWorkGroup": 65536,
+      "resourceUsage.ldsUsageSizeInBytes": 0,
+      "resourceUsage.scratchMemUsageInBytes": 0,
+      "numPhysicalVgprs": 1024,
+      "numPhysicalSgprs": 2048,
+      "numAvailableVgprs": 256,
+      "numAvailableSgprs": 104
+    },
+    "isa": {
+      "total_instructions": 590,
+      "loops": [
+        {
+          "first_line": 274,
+          "last_line": 357,
+          "instructions": 82,
+          "vmem": 3,
+          "transcendental": 7,
+          "est_valu_cycles": 200,
+          "top": {
+            "v_mul_f32": 23,
+            "v_fmac_f32": 10,
+            "v_fma_f32": 10,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "v_mov_b32": 3,
+            "v_add_f32": 3
+          }
+        },
+        {
+          "first_line": 372,
+          "last_line": 464,
+          "instructions": 91,
+          "vmem": 5,
+          "transcendental": 7,
+          "est_valu_cycles": 214,
+          "top": {
+            "v_mul_f32": 25,
+            "v_fma_f32": 13,
+            "v_fmac_f32": 10,
+            "s_waitcnt": 4,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "v_mov_b32": 3,
+            "v_add_f32": 3
+          }
+        },
+        {
+          "first_line": 481,
+          "last_line": 599,
+          "instructions": 117,
+          "vmem": 10,
+          "transcendental": 8,
+          "est_valu_cycles": 262,
+          "top": {
+            "v_mul_f32": 29,
+            "v_fmac_f32": 25,
+            "v_fma_f32": 13,
+            "s_waitcnt": 6,
+            "buffer_load_dwordx4": 5,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "v_mov_b32": 3
+          }
+        }
+      ]
+    },
+    "bytecode": "65b1569758c0a1c5c96937c949acdf1d83487767571c605c2248e90b1fc89149"
+  },
+  "ndotlskip": {
+    "stats": {
+      "shaderStageMask": 32,
+      "resourceUsage.numUsedVgprs": 56,
+      "resourceUsage.numUsedSgprs": 46,
+      "resourceUsage.ldsSizePerLocalWorkGroup": 65536,
+      "resourceUsage.ldsUsageSizeInBytes": 0,
+      "resourceUsage.scratchMemUsageInBytes": 0,
+      "numPhysicalVgprs": 1024,
+      "numPhysicalSgprs": 2048,
+      "numAvailableVgprs": 256,
+      "numAvailableSgprs": 104
+    },
+    "isa": {
+      "total_instructions": 607,
+      "loops": [
+        {
+          "first_line": 287,
+          "last_line": 369,
+          "instructions": 81,
+          "vmem": 3,
+          "transcendental": 7,
+          "est_valu_cycles": 198,
+          "top": {
+            "v_mul_f32": 22,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 10,
+            "v_sub_f32": 4,
+            "s_waitcnt": 3,
+            "v_rsq_f32": 3,
+            "v_mov_b32": 3,
+            "s_mov_b64": 2
+          }
+        },
+        {
+          "first_line": 390,
+          "last_line": 481,
+          "instructions": 90,
+          "vmem": 5,
+          "transcendental": 7,
+          "est_valu_cycles": 212,
+          "top": {
+            "v_mul_f32": 24,
+            "v_fmac_f32": 13,
+            "v_fma_f32": 13,
+            "s_waitcnt": 4,
+            "v_sub_f32": 4,
+            "v_rsq_f32": 3,
+            "v_mov_b32": 3,
+            "buffer_load_dwordx3": 2
+          }
+        },
+        {
+          "first_line": 499,
+          "last_line": 621,
+          "instructions": 121,
+          "vmem": 10,
+          "transcendental": 8,
+          "est_valu_cycles": 270,
+          "top": {
+            "v_mul_f32": 31,
+            "v_fmac_f32": 25,
+            "v_fma_f32": 13,
+            "v_sub_f32": 7,
+            "s_waitcnt": 5,
+            "buffer_load_dwordx4": 5,
+            "v_rsq_f32": 3,
+            "v_mov_b32": 3
+          }
+        }
+      ]
+    },
+    "bytecode": "9c4a75b7b6fb928aca069ab5108813fcf4f2e9cad99ab3a0b59f81a02c2f8a38"
+  }
+}

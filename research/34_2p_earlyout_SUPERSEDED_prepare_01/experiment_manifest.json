@@ -1,0 +1,116 @@
+{
+  "experiment_id": "P_20260906_201428",
+  "created_at": "2026-09-06T20:14:28.809655+02:00",
+  "phase": "2P",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_files": [
+    "MiniEngine/Model/Shaders/Lighting.hlsli"
+  ],
+  "transforms": {
+    "combo": {
+      "kind": "alu_and_texture",
+      "equivalence": "the two P1 transformations applied together; each is argued and measured separately in cycle P1. Their combined effect is measured here, never assumed to be the sum.",
+      "texture_work": "as shadowskip"
+    },
+    "falloffskip": {
+      "kind": "alu_only_dynamic",
+      "equivalence": "ApplyPointLight returns distanceFalloff * ApplyLightCommon(...) and ApplyConeLight returns (coneFalloff * distanceFalloff) * ApplyLightCommon(...). When that scalar factor is exactly zero the product is zero for any finite ApplyLightCommon result, and every term in it is finite: nDotH and nDotL are saturated into [0,1], pow(x, gloss) with x in [0,1] and gloss > 0 is in [0,1], and the albedo and light colours come from textures and the light buffer. max(0, ...) also normalises -0 to +0, so the comparison is exact. The non-zero path is untouched.",
+      "texture_work": "unchanged: no sample or load is skipped, only arithmetic. The shadow-map sample of the shadowed-cone path happens before this point in the unmodified code, so this transformation cannot reach it."
+    },
+    "ndotlskip": {
+      "kind": "alu_only_dynamic",
+      "equivalence": "ApplyLightCommon returns nDotL * lightColor * (...). nDotL is a saturated dot product, so it is exactly zero for every light at or behind the surface, and the product is then zero for any finite right-hand side. Computing nDotL first and returning early skips the half-vector normalise, both pow() calls and the Fresnel term for those lights. The surviving path computes exactly the same expression in the same order.",
+      "texture_work": "unchanged: arithmetic only"
+    }
+  },
+  "transform_edits": {
+    "combo": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float fresnel = pow(1.0 - saturate(dot(lightDir, halfVec)), 5.0);",
+        "    float f1 = 1.0 - saturate(dot(lightDir, halfVec));\n    float f2 = f1 * f1;\n    float fresnel = f2 * f2 * f1;"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n\n    return shadow * ApplyConeLight(\n",
+        "    float3 lit = ApplyConeLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        coneAngles\n        );\n}\n",
+        "        coneAngles\n        );\n\n    if (!any(lit != 0.0))\n        return 0.0;\n\n    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    return GetShadowConeLight(lightIndex, shadowCoord.xyz) * lit;\n}\n"
+      ]
+    ],
+    "falloffskip": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return distanceFalloff * ApplyLightCommon(\n",
+        "    if (distanceFalloff == 0.0)\n        return 0.0;\n\n    return distanceFalloff * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return (coneFalloff * distanceFalloff) * ApplyLightCommon(\n",
+        "    float atten = coneFalloff * distanceFalloff;\n    if (atten == 0.0)\n        return 0.0;\n\n    return atten * ApplyLightCommon(\n"
+      ]
+    ],
+    "ndotlskip": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float3 halfVec = normalize(lightDir - viewDir);\n    float nDotH = saturate(dot(halfVec, normal));\n\n    FSchlick( diffuseColor, specularColor, lightDir, halfVec );\n\n    float specularFactor = specularMask * pow(nDotH, gloss) * (gloss + 2) / 8;\n\n    float nDotL = saturate(dot(normal, lightDir));\n\n    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n",
+        "    float nDotL = saturate(dot(normal, lightDir));\n    if (nDotL == 0.0)\n        return 0.0;\n\n    float3 halfVec = normalize(lightDir - viewDir);\n    float nDotH = saturate(dot(halfVec, normal));\n\n    FSchlick( diffuseColor, specularColor, lightDir, halfVec );\n\n    float specularFactor = specularMask * pow(nDotH, gloss) * (gloss + 2) / 8;\n\n    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n"
+      ]
+    ]
+  },
+  "expected_bytecode": {
+    "base": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "combo": "93b85dc4029574875cefd84db3b3c9076d9cc5648857ab851a36c04905cff618",
+    "falloffskip": "65b1569758c0a1c5c96937c949acdf1d83487767571c605c2248e90b1fc89149",
+    "ndotlskip": "9c4a75b7b6fb928aca069ab5108813fcf4f2e9cad99ab3a0b59f81a02c2f8a38"
+  },
+  "expected_artifact": {
+    "base": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\34_2p_earlyout\\preregistered\\base\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+      "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+      "custom_hash": "52CE6C5E64AB2E82",
+      "bytecode_bytes": 12612
+    },
+    "combo": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\34_2p_earlyout\\preregistered\\combo\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "f6d5164a9ee9c1a686597e5ae81da777f73706e8aed598bcc1b1d4e6befdb214",
+      "bytecode_sha256": "93b85dc4029574875cefd84db3b3c9076d9cc5648857ab851a36c04905cff618",
+      "custom_hash": "D8B87F57B627BA37",
+      "bytecode_bytes": 12600
+    },
+    "falloffskip": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\34_2p_earlyout\\preregistered\\falloffskip\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "4aad2bb40f98b6566e8eeda88bd793ee2ffd824d1a42163373045c985cdca1e3",
+      "bytecode_sha256": "65b1569758c0a1c5c96937c949acdf1d83487767571c605c2248e90b1fc89149",
+      "custom_hash": "F5D885B49518B360",
+      "bytecode_bytes": 12720
+    },
+    "ndotlskip": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\34_2p_earlyout\\preregistered\\ndotlskip\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "40742772995f807e9ded8745aa625d1d85f152936eaadb13f34a9edaa4457a55",
+      "bytecode_sha256": "9c4a75b7b6fb928aca069ab5108813fcf4f2e9cad99ab3a0b59f81a02c2f8a38",
+      "custom_hash": "5A3B871532CF1409",
+      "bytecode_bytes": 12856
+    }
+  },
+  "compiler_already_does": [],
+  "ablation_kind": "optimisation candidates - semantics preserving, image quality unchanged",
+  "preregistered_criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image decoded to float32. Accept only if the maximum relative channel error over all 1920x1080x3 channels is <= 1e-3 and no channel is non-finite. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, 3 independent processes per variant, order interleaved and reversed. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND all three paired process deltas are negative, AND correctness passes.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build."
+  },
+  "workspace_budget_bytes": 8000000000
+}

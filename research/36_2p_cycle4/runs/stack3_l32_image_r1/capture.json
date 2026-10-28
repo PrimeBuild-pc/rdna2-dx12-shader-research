@@ -1,0 +1,21 @@
+{
+  "variant": "stack3_l32",
+  "rep": 1,
+  "pid": 9796,
+  "draws": 34,
+  "image": {
+    "pid": 9796,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 26,
+    "format_name": "R11G11B10_FLOAT",
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 7680,
+    "stored_row_bytes": 7680,
+    "padding_stored": false
+  },
+  "image_sha256": "a65a50bdaf754c9ed7273a18c0706182c7d8bf485949d9642e134bd4cc4ee479",
+  "bytecode_sha256": "1340b189445df2a9c11809c6184884c21d4850f820b012eea5ef3f3a3f8f60c9"
+}

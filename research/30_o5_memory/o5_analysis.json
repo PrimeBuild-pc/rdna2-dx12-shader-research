@@ -1,0 +1,228 @@
+{
+  "experiment_id": "O5_20260906_184151",
+  "criteria": {
+    "A_question": "what fraction of the texture instructions issued inside the Render Color scope comes from the vertex stage rather than the pixel stage",
+    "A_prediction": "< 1 %. ModelViewerVS.hlsl contains no Texture object and no Sample call, so the vertex stage should issue zero texture instructions.",
+    "A_consequence": "if the vertex share exceeds 5 %, every texture ratio in O2, O3 and O4 that divided a whole-block TA counter by SQ_PS INSTS_TEX_LOAD is biased and must be restated with the corrected denominator.",
+    "A_caveat": "the PS and VS masks of one SQ event cannot share a hardware pass, so this comparison is inherently cross-pass. O2 established that aggregate work counters are reproducible across passes and that INSTS_TEX_LOAD carries an emulation band of +-0.4 %; both are reported alongside the result.",
+    "B_question": "is the texture addresser's busy time work, or waiting on the L0 cache",
+    "B_metric": "sum over the 80 CUs of TCP_PERF_SEL_TCP_TA_REQ_STALL divided by the sum of TA_PERF_SEL_TA_BUSY, both read in the same single pass",
+    "B_bands": "stall/busy >= 30 % -> the addresser is predominantly held back by the L0 vector cache, so the 94 % TexUnitBusy of 2N is a cache symptom; <= 10 % -> the L0 cache is not what keeps the addresser busy; in between -> inconclusive and O6 must discriminate. Bands fixed before any measurement.",
+    "B_unit_caveat": "TCP and TA counters are cycle counters of two different blocks. Their ratio is treated as an indicator, not an identity, unless the sampler intervention moves it in the direction its meaning predicts.",
+    "C_question": "where do the texture fetches land - L0, L1, L2 or DRAM",
+    "C_metrics": "hit rate at each level (1 - miss/req), DRAM read bytes computed as 32*EA_RDREQ_32B + 64*EA_RDREQ_64B + 96*EA_RDREQ_96B + 128*EA_RDREQ_128B, and misses per pixel-stage texture instruction",
+    "D_intervention": "the four O4 sampler builds are a memory-traffic lever at byte-identical bytecode: point filtering reads one texel per quad where bilinear reads four. Dose = TCP REQ and L0 misses; response = TA_BUSY and the stall ratio. A cache-bound pass must show the stall ratio fall when the traffic falls.",
+    "statistic": "median over >= 32 samples per run, >= 3 independent processes for the baseline profile, order interleaved; work counters are reported with their across-process spread and no single-run value is used alone",
+    "timing_source": "GPUTime and GPUBusyCycles are NOT re-measured here. Mixing a derived counter into a raw set costs an extra pass, and O4 already measured them on these exact executables. O4's response table is the timing reference and is cited as such.",
+    "o6_rule": "O6 replicates or falsifies whichever cause O5 ranks first, with a fresh fixed-bytecode intervention chosen to make that cause's prediction fail if it is wrong. The intervention is written down before it is run."
+  },
+  "A_vs_share_pct": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "A": {
+    "1": {
+      "ps_tex": 6111702.5,
+      "vs_tex": 0.0,
+      "ps_waves": 39185.0,
+      "vs_waves": 0.0
+    },
+    "2": {
+      "ps_tex": 6112419.5,
+      "vs_tex": 0.0,
+      "ps_waves": 39184.0,
+      "vs_waves": 0.0
+    },
+    "3": {
+      "ps_tex": 6110085.0,
+      "vs_tex": 0.0,
+      "ps_waves": 39163.5,
+      "vs_waves": 0.0
+    }
+  },
+  "B_stall_over_busy_pct": 0.23579860459045418,
+  "B": {
+    "s_base": {
+      "1": {
+        "stall": 208951.0,
+        "req": 55403333.0,
+        "miss": 1300815.0,
+        "ta_busy": 88694605.5
+      },
+      "2": {
+        "stall": 209154.5,
+        "req": 55402529.0,
+        "miss": 1293891.5,
+        "ta_busy": 88731250.0
+      },
+      "3": {
+        "stall": 214492.0,
+        "req": 55403525.0,
+        "miss": 1299197.0,
+        "ta_busy": 88700482.5
+      },
+      "median": {
+        "stall": 209154.5,
+        "req": 55403333.0,
+        "miss": 1299197.0,
+        "ta_busy": 88700482.5
+      }
+    },
+    "s_aniso1": {
+      "1": {
+        "stall": 166450.0,
+        "req": 50486647.0,
+        "miss": 1173300.5,
+        "ta_busy": 86406986.5
+      },
+      "2": {
+        "stall": 165483.5,
+        "req": 50486806.5,
+        "miss": 1174511.5,
+        "ta_busy": 86299986.5
+      },
+      "3": {
+        "stall": 168260.0,
+        "req": 50487381.0,
+        "miss": 1173329.5,
+        "ta_busy": 86290363.5
+      },
+      "median": {
+        "stall": 166450.0,
+        "req": 50486806.5,
+        "miss": 1173329.5,
+        "ta_busy": 86299986.5
+      }
+    },
+    "s_point": {
+      "1": {
+        "stall": 162132.5,
+        "req": 48641126.5,
+        "miss": 912842.0,
+        "ta_busy": 85629318.0
+      },
+      "2": {
+        "stall": 158422.5,
+        "req": 48641821.5,
+        "miss": 913098.5,
+        "ta_busy": 85693340.5
+      },
+      "3": {
+        "stall": 158614.5,
+        "req": 48642666.5,
+        "miss": 912433.5,
+        "ta_busy": 85586055.5
+      },
+      "median": {
+        "stall": 158614.5,
+        "req": 48641821.5,
+        "miss": 912842.0,
+        "ta_busy": 85629318.0
+      }
+    },
+    "s_bilinear": {
+      "1": {
+        "stall": 158043.5,
+        "req": 48878615.0,
+        "miss": 942514.0,
+        "ta_busy": 85602065.0
+      },
+      "2": {
+        "stall": 162789.5,
+        "req": 48880420.5,
+        "miss": 941731.5,
+        "ta_busy": 85626434.0
+      },
+      "3": {
+        "stall": 159125.0,
+        "req": 48879938.5,
+        "miss": 939697.0,
+        "ta_busy": 85560326.5
+      },
+      "median": {
+        "stall": 159125.0,
+        "req": 48879938.5,
+        "miss": 941731.5,
+        "ta_busy": 85602065.0
+      }
+    }
+  },
+  "C": {
+    "s_base": {
+      "gl1c_req": 1765866.5,
+      "gl1c_miss": 838376.5,
+      "gl2c_req": 851743.0,
+      "gl2c_miss": 498506.5,
+      "dram_read_bytes": 31884272.0,
+      "ta_busy_dram": 88718451.5,
+      "_spread": {
+        "gl1c_req": 0.19155140127674522,
+        "gl1c_miss": 0.21504483378826386,
+        "gl2c_req": 0.1961943152931826,
+        "gl2c_miss": 0.043229573441461874,
+        "dram_read_bytes": 0.003964332383008704,
+        "ta_busy_dram": 0.055489650801410446
+      }
+    },
+    "s_aniso1": {
+      "gl1c_req": 1644180.5,
+      "gl1c_miss": 774283.5,
+      "gl2c_req": 787649.5,
+      "gl2c_miss": 478681.0,
+      "dram_read_bytes": 29453392.0,
+      "ta_busy_dram": 86348771.5,
+      "_spread": {
+        "gl1c_req": 0.18017245729453743,
+        "gl1c_miss": 0.05520882928009409,
+        "gl2c_req": 0.05147949051173533,
+        "gl2c_miss": 0.01932338892550468,
+        "dram_read_bytes": 0.009180621392260247,
+        "ta_busy_dram": 0.2022511067702548
+      }
+    },
+    "s_point": {
+      "gl1c_req": 1356680.0,
+      "gl1c_miss": 718129.0,
+      "gl2c_req": 731501.0,
+      "gl2c_miss": 465365.0,
+      "dram_read_bytes": 28728688.0,
+      "ta_busy_dram": 85654017.0,
+      "_spread": {
+        "gl1c_req": 0.41444136918384084,
+        "gl1c_miss": 0.1391027258886867,
+        "gl2c_req": 0.1368332059520963,
+        "gl2c_miss": 0.04985730495478458,
+        "dram_read_bytes": 0.03519587450888668,
+        "ta_busy_dram": 0.14819190529448242
+      }
+    },
+    "s_bilinear": {
+      "gl1c_req": 1407747.5,
+      "gl1c_miss": 742128.5,
+      "gl2c_req": 755487.0,
+      "gl2c_miss": 473197.0,
+      "dram_read_bytes": 28717936.0,
+      "ta_busy_dram": 85601927.0,
+      "_spread": {
+        "gl1c_req": 0.42264959214124803,
+        "gl1c_miss": 0.1648810169279191,
+        "gl2c_req": 0.16150207738470287,
+        "gl2c_miss": 0.01827930138552878,
+        "dram_read_bytes": 0.05008983482798033,
+        "ta_busy_dram": 0.08150805854086311
+      }
+    }
+  },
+  "D": {
+    "ps_tex_instructions": 6111702.5,
+    "ta_busy_cycles_per_tex_instruction": 14.513219925217237,
+    "tcp_requests_per_tex_instruction": 9.065122688808888,
+    "l0_misses_per_tex_instruction": 0.21257530123562132,
+    "ta_busy_per_cu": 1108756.03125,
+    "ta_duty_cycle_pct": 93.2509027521377,
+    "dram_read_MB": 31.884272,
+    "dram_read_GB_per_s": 39.632407706650085,
+    "l2_misses_x64B_MB": 31.904416
+  }
+}

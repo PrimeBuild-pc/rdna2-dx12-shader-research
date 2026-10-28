@@ -1,0 +1,4 @@
+Started recording.
+Stopped recording.
+warning: a trace session named "PresentMon" is already running and it will be stopped.
+         Use --session_name with a different name to start a new session.

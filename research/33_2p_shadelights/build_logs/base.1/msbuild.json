@@ -1,0 +1,22 @@
+{
+  "args": [
+    "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\MiniEngine\\ModelViewer\\ModelViewer.vcxproj",
+    "-t:Build",
+    "-p:Configuration=Profile",
+    "-p:Platform=x64",
+    "-p:PlatformToolset=v145",
+    "-p:O1BuildRoot=C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\base.1",
+    "-p:VcpkgManifestInstall=false",
+    "-m:4",
+    "-v:normal",
+    "-flp:logfile=C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\33_2p_shadelights\\build_logs\\base.1\\msbuild_diagnostic.log;verbosity=diagnostic"
+  ],
+  "command_line": "\"C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe\" C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\MiniEngine\\ModelViewer\\ModelViewer.vcxproj -t:Build -p:Configuration=Profile -p:Platform=x64 -p:PlatformToolset=v145 -p:O1BuildRoot=C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\build\\base.1 -p:VcpkgManifestInstall=false -m:4 -v:normal \"-flp:logfile=C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\33_2p_shadelights\\build_logs\\base.1\\msbuild_diagnostic.log;verbosity=diagnostic\"",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260906_200700\\MiniEngine",
+  "requested_executable": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+  "executable_sha256": "602be585e4d4a233071ef8730ecec43522c0db4afbf5b93553b7b260c5bfb7ff",
+  "pid": 6284,
+  "actual_executable": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+  "returncode": 0
+}

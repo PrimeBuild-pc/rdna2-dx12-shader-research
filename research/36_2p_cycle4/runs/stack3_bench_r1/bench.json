@@ -1,0 +1,10 @@
+{
+  "variant": "stack3",
+  "rep": 1,
+  "pid": 2832,
+  "frames": 1000,
+  "warm": 300,
+  "scopes": 32,
+  "frame_image_sha256": "42633b31c2d85c16fe5b9c4b5178e935119faa4a3cba6fec2cfb68f5fd4592fa",
+  "bytecode_sha256": "1340b189445df2a9c11809c6184884c21d4850f820b012eea5ef3f3a3f8f60c9"
+}

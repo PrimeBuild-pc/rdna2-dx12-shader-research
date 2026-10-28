@@ -1,0 +1,9 @@
+{
+  "variant": "mat2",
+  "set": "sq_ps",
+  "rep": 1,
+  "pid": 20276,
+  "samples": 32,
+  "bytecode_sha256": "ad6aadb609ad38ff99fc67de4a7e6e786d17e75609fea2a3084ee2ef67c98a71",
+  "executable_sha256": "5a12fb7e8a23e93395ea94d0365fd57a9e64883fbc1ed7d08dfe45dcc3094f2e"
+}

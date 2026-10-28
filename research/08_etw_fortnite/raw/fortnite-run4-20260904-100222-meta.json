@@ -1,0 +1,18 @@
+{
+    "run":  4,
+    "tag":  "fortnite",
+    "process":  "FortniteClient-Win64-Shipping.exe",
+    "started_utc":  "2026-09-04T08:02:35.7189953Z",
+    "preroll_s":  10,
+    "capture_s":  60,
+    "profint_100ns":  2441,
+    "etl":  "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\08_etw_fortnite\\raw\\fortnite-run4-20260904-100222.etl",
+    "presentmon":  "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\08_etw_fortnite\\raw\\fortnite-run4-20260904-100222-presentmon.csv",
+    "presentmon_rows":  24696,
+    "background":  "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\08_etw_fortnite\\raw\\fortnite-run4-20260904-100222-background.csv",
+    "presentmon_session":  "fnetw",
+    "wpr_profiles":  "CPU,GPU (filemode)",
+    "driver_version":  "32.0.21045.5002",
+    "os_build":  "10.0.26200",
+    "hags":  2
+}

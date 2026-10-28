@@ -1,0 +1,3 @@
+RDHS cache parser/repacker selfcheck PASS
+Shader experiment pure selfcheck PASS
+C2077-DXIL-CANARY-001 PASS_OFFLINE; game/runtime not tested

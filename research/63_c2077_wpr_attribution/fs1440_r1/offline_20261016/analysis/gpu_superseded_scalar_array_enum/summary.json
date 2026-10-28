@@ -1,0 +1,317 @@
+{
+  "window_qpc": [
+    324665928518,
+    325308369370
+  ],
+  "duration_ms": 64244.0852,
+  "target_adapters": [
+    "0xffff9a8c8a21a000"
+  ],
+  "diagnostic_counts": {
+    "zero_sequence_nonwork_dma": 11520,
+    "unwait_without_active_wait_packet": 52932,
+    "unmapped_packet_context": 18
+  },
+  "node_diagnostics": [
+    {
+      "adapter": "0xffff9a8c8a21a000",
+      "node": 0,
+      "counts": {
+        "completion_without_start": 2
+      },
+      "anomaly_events": [
+        [
+          324660935401,
+          "completion_without_start",
+          [
+            18446716594466680288,
+            7019261,
+            22298258
+          ]
+        ],
+        [
+          324660935573,
+          "completion_without_start",
+          [
+            18446716594466680288,
+            7019265,
+            22298259
+          ]
+        ]
+      ],
+      "max_dma_depth": 3,
+      "unfinished_dma": 0
+    },
+    {
+      "adapter": "0xffff9a8c8a21a000",
+      "node": 2,
+      "counts": {},
+      "anomaly_events": [],
+      "max_dma_depth": 1,
+      "unfinished_dma": 0
+    },
+    {
+      "adapter": "0xffff9a8c8a21a000",
+      "node": 1,
+      "counts": {},
+      "anomaly_events": [],
+      "max_dma_depth": 2,
+      "unfinished_dma": 0
+    },
+    {
+      "adapter": "0xffff9a8c8a21a000",
+      "node": 5,
+      "counts": {},
+      "anomaly_events": [],
+      "max_dma_depth": 0,
+      "unfinished_dma": 0
+    },
+    {
+      "adapter": "0xffff9a8c8a21a000",
+      "node": 4,
+      "counts": {},
+      "anomaly_events": [],
+      "max_dma_depth": 7,
+      "unfinished_dma": 0
+    }
+  ],
+  "all_event_counts": [
+    {
+      "task": "QueuePacket",
+      "opcode": "Info",
+      "n": 619450
+    },
+    {
+      "task": "QueuePacket",
+      "opcode": "Start",
+      "n": 565927
+    },
+    {
+      "task": "QueuePacket",
+      "opcode": "Stop",
+      "n": 565922
+    },
+    {
+      "task": "SignalSynchronizationObjectFromGpu",
+      "opcode": "Info",
+      "n": 327816
+    },
+    {
+      "task": "WaitForSynchronizationObjectFromGpu",
+      "opcode": "Info",
+      "n": 154081
+    },
+    {
+      "task": "DmaPacket",
+      "opcode": "Info",
+      "n": 143960
+    },
+    {
+      "task": "DmaPacket",
+      "opcode": "Stop",
+      "n": 143959
+    },
+    {
+      "task": "DmaPacket",
+      "opcode": "Start",
+      "n": 143959
+    },
+    {
+      "task": "WaitForSynchronizationObjectFromCpu",
+      "opcode": "Info",
+      "n": 90233
+    },
+    {
+      "task": "VidSchiSignalSynchronizationObjectFromCpu",
+      "opcode": "Info",
+      "n": 85422
+    },
+    {
+      "task": "SignalSynchronizationObjectFromCpu",
+      "opcode": "Info",
+      "n": 85422
+    },
+    {
+      "task": "UnwaitQueuePacket",
+      "opcode": "Info",
+      "n": 56503
+    },
+    {
+      "task": "VSyncDPC",
+      "opcode": "Info",
+      "n": 25305
+    },
+    {
+      "task": "SignalSynchronizationObjectImmediate",
+      "opcode": "Info",
+      "n": 5304
+    },
+    {
+      "task": "SignalSynchronizationObject2",
+      "opcode": "Info",
+      "n": 19
+    },
+    {
+      "task": "WaitForSynchronizationObject2",
+      "opcode": "Info",
+      "n": 19
+    },
+    {
+      "task": "Device",
+      "opcode": "DCStart",
+      "n": 0
+    },
+    {
+      "task": "Context",
+      "opcode": "DCStart",
+      "n": 0
+    },
+    {
+      "task": "NodeMetadata",
+      "opcode": "Info",
+      "n": 0
+    },
+    {
+      "task": "Context",
+      "opcode": "Stop",
+      "n": 0
+    },
+    {
+      "task": "Device",
+      "opcode": "Stop",
+      "n": 0
+    }
+  ],
+  "target_event_counts": [
+    {
+      "task": "QueuePacket",
+      "opcode": "Info",
+      "n": 484543
+    },
+    {
+      "task": "QueuePacket",
+      "opcode": "Start",
+      "n": 436393
+    },
+    {
+      "task": "QueuePacket",
+      "opcode": "Stop",
+      "n": 436388
+    },
+    {
+      "task": "WaitForSynchronizationObjectFromGpu",
+      "opcode": "Info",
+      "n": 149839
+    },
+    {
+      "task": "DmaPacket",
+      "opcode": "Info",
+      "n": 93451
+    },
+    {
+      "task": "DmaPacket",
+      "opcode": "Stop",
+      "n": 93450
+    },
+    {
+      "task": "DmaPacket",
+      "opcode": "Start",
+      "n": 93450
+    },
+    {
+      "task": "UnwaitQueuePacket",
+      "opcode": "Info",
+      "n": 52932
+    },
+    {
+      "task": "WaitForSynchronizationObject2",
+      "opcode": "Info",
+      "n": 19
+    }
+  ],
+  "queue_start_layouts": [
+    {
+      "id": 245,
+      "version": 3,
+      "layout": "wait",
+      "n": 362635
+    },
+    {
+      "id": 178,
+      "version": 1,
+      "layout": "dma",
+      "n": 146783
+    },
+    {
+      "id": 244,
+      "version": 2,
+      "layout": "signal",
+      "n": 56503
+    }
+  ],
+  "ownership_checks": [
+    {
+      "event_pid": 16316,
+      "context_owner_pid": 16316,
+      "n": 436393
+    }
+  ],
+  "target_preemptions": {
+    "dma": 2714,
+    "queue": 0
+  },
+  "target_timeouts": {
+    "queue": 0
+  },
+  "interrupt_types": {
+    "1": 136483,
+    "2": 3637
+  },
+  "target_dma_fifo_union_ms": 48678.8322,
+  "target_dma_fifo_union_pct": 75.7716948547973,
+  "queue_start_to_stop": {
+    "n": 436388,
+    "mean_ms": 2.843690323061129,
+    "p50_ms": 1.9292,
+    "p95_ms": 6.5653,
+    "p99_ms": 8.746126,
+    "max_ms": 17.1674
+  },
+  "queue_start_to_dma_enqueue": {
+    "n": 93450,
+    "mean_ms": 1.95195096094168,
+    "p50_ms": 0.79175,
+    "p95_ms": 5.660865000000001,
+    "p99_ms": 7.6061949999999765,
+    "max_ms": 15.9884
+  },
+  "queue_start_to_inferred_running": {
+    "n": 93452,
+    "mean_ms": 2.264473974874802,
+    "p50_ms": 0.9999,
+    "p95_ms": 6.053744999999999,
+    "p99_ms": 8.07752900000001,
+    "max_ms": 16.874
+  },
+  "dma_interrupt_to_stop": {
+    "n": 93450,
+    "mean_ms": 0.04877193258426966,
+    "p50_ms": 0.035,
+    "p95_ms": 0.1276,
+    "p99_ms": 0.2017,
+    "max_ms": 0.5256
+  },
+  "wait_queue_start_to_stop": {
+    "n": 287416,
+    "mean_ms": 2.8775673918640576,
+    "p50_ms": 2.0475,
+    "p95_ms": 6.578425,
+    "p99_ms": 8.759569999999995,
+    "max_ms": 17.1643
+  },
+  "wait_queue_start_to_unwait": {
+    "n": 0
+  },
+  "target_cpu_signal_events": 85422,
+  "limits": "DMA FIFO bounds are scheduler evidence, not hardware occupancy or shader execution timestamps. Empty-with-pending includes fence dependencies and scheduling; empty-without-pending does not prove a game CPU bottleneck. CPU/GPU fence signals are preserved, not equated to wait satisfaction."
+}

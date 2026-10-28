@@ -1,0 +1,72 @@
+{
+  "experiment_id": "O3_20260906_015944",
+  "created_at": "2026-09-06T01:59:45.228029+02:00",
+  "cycle": "O3",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O3_20260906_015944",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "variants": {
+    "mat0": [],
+    "mat1": [
+      "spec"
+    ],
+    "mat2": [
+      "spec",
+      "normal"
+    ],
+    "mat3": [
+      "spec",
+      "normal",
+      "diffuse"
+    ]
+  },
+  "expected_bytecode": {
+    "mat0": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "mat1": "fb2f2aa22d567860752e1ae974d35c1ce87fe881bcbf8596c6ff444615c778e1",
+    "mat2": "ad6aadb609ad38ff99fc67de4a7e6e786d17e75609fea2a3084ee2ef67c98a71",
+    "mat3": "655ed4a53ff72b4e91dc0ddaa2053a5052ce4aa44ed5d643a8caf9bbd7c62f54"
+  },
+  "expected_artifacts": {
+    "mat0": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\28_o3_material_ablation\\preregistered\\mat0\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+      "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+      "custom_hash": "52CE6C5E64AB2E82",
+      "bytecode_bytes": 12612
+    },
+    "mat1": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\28_o3_material_ablation\\preregistered\\mat1\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "e198efb3800413d86ab3ff916cc3227b977c16024fda795014ccda96bd44d29b",
+      "bytecode_sha256": "fb2f2aa22d567860752e1ae974d35c1ce87fe881bcbf8596c6ff444615c778e1",
+      "custom_hash": "F5456A08628CFF0B",
+      "bytecode_bytes": 12504
+    },
+    "mat2": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\28_o3_material_ablation\\preregistered\\mat2\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "b25f8d52157b840b20c19c6ce23f0c18fa8989d977baf18dd84d373ff85282e6",
+      "bytecode_sha256": "ad6aadb609ad38ff99fc67de4a7e6e786d17e75609fea2a3084ee2ef67c98a71",
+      "custom_hash": "422B5C76E36517E5",
+      "bytecode_bytes": 12040
+    },
+    "mat3": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\28_o3_material_ablation\\preregistered\\mat3\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "9c624ff81a14020b91d2911c456fb8e3f03783885499699d1180a25833dd09ec",
+      "bytecode_sha256": "655ed4a53ff72b4e91dc0ddaa2053a5052ce4aa44ed5d643a8caf9bbd7c62f54",
+      "custom_hash": "B03C5F67ACB6631F",
+      "bytecode_bytes": 11268
+    }
+  },
+  "ablation_kind": "diagnostic_only - the rendered image is expected to differ; no variant here is ever an accepted optimisation",
+  "preregistered_criteria": {
+    "dose": "PS INSTS_TEX_LOAD and the aniso-1 quad total, both relative to mat0. The emulated SQ counters carry +-0.4% (measured in O2); the TA quad counters are exact.",
+    "response_mechanistic": "sum of TA_BUSY over the 80 CUs",
+    "response_outcome": "GPUTime of the Render Color sample",
+    "statistic": "median over >=32 samples per run, >=3 independent processes per variant, process order interleaved across variants",
+    "threshold": "a GPUTime change counts only if |delta| > max(2%, 3 x N95), with N95 the 95th percentile of |delta| between independent mat0 runs (A/A control)",
+    "confounder": "delta INSTS_VALU and INST_CYCLES_VALU are recorded, not assumed: replacing a sample with a constant also removes dependent ALU",
+    "conclusion_rule": "material texture sampling is on the critical path of Render Color if GPUTime falls monotonically with dose AND the largest dose exceeds the threshold AND that is replicated with reversed order. Otherwise it is not the limiter, and the measured effect bounds how much it could contribute."
+  },
+  "workspace_budget_bytes": 8000000000
+}

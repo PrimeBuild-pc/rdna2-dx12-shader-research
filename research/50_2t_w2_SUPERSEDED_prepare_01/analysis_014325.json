@@ -1,0 +1,13 @@
+{
+  "workload": "D3D12Multithreading",
+  "region": "whole frame: shadow pass + shadowed scene, all worker lists",
+  "medians_ns": {
+    "base": [
+      84960.0,
+      84880.0,
+      85340.0
+    ]
+  },
+  "threshold_pct": 1.62143108917871,
+  "verdicts": {}
+}

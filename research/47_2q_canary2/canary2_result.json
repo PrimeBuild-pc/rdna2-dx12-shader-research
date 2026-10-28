@@ -1,0 +1,19 @@
+{
+  "canary_version": 2,
+  "out_of_band": "the violation mask is set before any multiplication and applied to colorSum once at the end of ShadeLights, so a zero factor cannot silence it",
+  "pixels": 2073600,
+  "fired_pixels": 0,
+  "fired": false,
+  "max_red": 56.3287467956543,
+  "base_max": 56.3287467956543,
+  "bits_seen": [],
+  "per_contract": {
+    "ApplyLightCommon RHS (ndotlskip factor)": 0,
+    "ApplyLightCommon result": 0,
+    "distanceFalloff": 0,
+    "coneFalloff / atten": 0,
+    "shadow term": 0,
+    "shadowCoord.w non-finite or zero": 0,
+    "negative zero": 0
+  }
+}

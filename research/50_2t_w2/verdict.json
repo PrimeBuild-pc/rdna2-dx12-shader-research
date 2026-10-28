@@ -1,0 +1,15 @@
+{
+  "workload": "D3D12Multithreading",
+  "verdict": "MISS",
+  "aa_n95_pct": 0.96,
+  "acceptance_threshold_pct": 2.88,
+  "transformations": 3,
+  "accepted": 0,
+  "detail": {
+    "rsqrt_dist": "-1.03 % (4/4 negative) but the byte-exact image changed; also below the 2.88 % acceptance threshold, so the verdict does not depend on the correctness rule",
+    "light_dir_norm": "image identical, but only -0.37 % with one process positive: rejected on performance",
+    "both": "-1.22 %, image changed, still below threshold"
+  },
+  "note": "the hypotheses came from this workload's own ISA (372 instructions, 3 v_sqrt + 7 v_rcp + 9 v_rsq: lengths taken and then divided by, not fused into rsqrt). They did remove the arithmetic they targeted; the pass simply does not spend enough time there.",
+  "image_delta": "rsqrt_dist and both differ from the baseline on 2 bytes out of 3 686 400, each by one least significant bit of 255 - the same rounding class phase 2Q characterised. Under 2P's ULP rule they would pass correctness; under this phase's preregistered byte-exact rule they do not. The verdict is unchanged either way, because both are also below the 2.88 % acceptance threshold."
+}

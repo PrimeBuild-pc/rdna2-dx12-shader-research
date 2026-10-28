@@ -1,0 +1,189 @@
+{
+  "workload": "D3D12Raytracing / ProceduralGeometry",
+  "region": "the DispatchRays call: the whole raytracing pass",
+  "medians_ns": {
+    "abl_phong": [
+      1484400.0,
+      1490800.0,
+      1492380.0
+    ],
+    "abl_reflection": [
+      1093140.0,
+      1095100.0,
+      1096800.0
+    ],
+    "abl_shadowray": [
+      840640.0,
+      842820.0,
+      845040.0
+    ],
+    "ablate_ch": [
+      312680.0,
+      313140.0,
+      313820.0
+    ],
+    "base": [
+      1495600.0,
+      1496760.0,
+      1503920.0,
+      1487780.0,
+      1497940.0,
+      1495840.0,
+      1507840.0,
+      1498360.0,
+      1496300.0,
+      1500640.0,
+      1503600.0,
+      1504860.0
+    ],
+    "hitpos_reuse": [
+      1493420.0,
+      1498140.0,
+      1499840.0,
+      1503740.0
+    ],
+    "shadow_tmax": [
+      1462780.0,
+      1466360.0,
+      1470400.0,
+      1473540.0
+    ]
+  },
+  "threshold_pct": 4.017866084483345,
+  "verdicts": {
+    "abl_phong": {
+      "median_pct": -0.903908033699614,
+      "per_process": [
+        -0.903908033699614,
+        -0.4766546056584376,
+        -1.0253077249575553
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "abl_phong_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 2370193,
+        "max_abs_delta": 213,
+        "differing_fraction": 0.6429560004340278,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "abl_reflection": {
+      "median_pct": -26.89293296126681,
+      "per_process": [
+        -27.02377932360442,
+        -26.89293296126681,
+        -26.676649909081185
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "abl_reflection_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 1939305,
+        "max_abs_delta": 221,
+        "differing_fraction": 0.5260701497395833,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "abl_shadowray": {
+      "median_pct": -43.507326986843516,
+      "per_process": [
+        -43.49702240922717,
+        -43.65573858166648,
+        -43.507326986843516
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "abl_shadowray_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 197622,
+        "max_abs_delta": 201,
+        "differing_fraction": 0.0536083984375,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "ablate_ch": {
+      "median_pct": -79.02048347416836,
+      "per_process": [
+        -78.98345185444084,
+        -79.06594288159161,
+        -79.02048347416836
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "ablate_ch_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 2369308,
+        "max_abs_delta": 255,
+        "differing_fraction": 0.6427159288194444,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "hitpos_reuse": {
+      "median_pct": -0.09158189206871674,
+      "per_process": [
+        -0.19247477110205172,
+        0.12296999264853305,
+        -0.2500665070497473,
+        0.009310986964618248
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "hitpos_reuse_r1"
+        ],
+        "identical": true,
+        "bytes": 3686400,
+        "differing": 0,
+        "max_abs_delta": 0,
+        "differing_fraction": 0.0,
+        "passed": true
+      },
+      "final": "REJECTED (performance)"
+    },
+    "shadow_tmax": {
+      "median_pct": -2.182807700916607,
+      "per_process": [
+        -2.3745962252062256,
+        -2.284358673632583,
+        -2.0151402068450794,
+        -2.0812567282006302
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "shadow_tmax_r1"
+        ],
+        "identical": true,
+        "bytes": 3686400,
+        "differing": 0,
+        "max_abs_delta": 0,
+        "differing_fraction": 0.0,
+        "passed": true
+      },
+      "final": "REJECTED (performance)"
+    }
+  }
+}

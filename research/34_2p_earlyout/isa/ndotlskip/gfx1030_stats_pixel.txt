@@ -1,0 +1,12 @@
+Statistics:
+    - shaderStageMask                           = 32
+    - resourceUsage.numUsedVgprs                = 56
+    - resourceUsage.numUsedSgprs                = 46
+    - resourceUsage.ldsSizePerLocalWorkGroup    = 65536
+    - resourceUsage.ldsUsageSizeInBytes         = 0
+    - resourceUsage.scratchMemUsageInBytes      = 0
+    - numPhysicalVgprs                          = 1024
+    - numPhysicalSgprs                          = 2048
+    - numAvailableVgprs                         = 256
+    - numAvailableSgprs                         = 104
+

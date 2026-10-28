@@ -1,0 +1,29 @@
+[
+  {
+    "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593936547692.jsonl",
+    "snapshot": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\canary_r1\\live_snapshot_1\\runtime-14612-134366593936547692.jsonl",
+    "utc": "2026-10-16T21:26:14.423893+00:00",
+    "requested_bytes": 439,
+    "bytes": 439,
+    "sha256": "0ea13d774042d987933cae57a74fa31dc94711224f61d1e72267edeea0231702",
+    "live": true
+  },
+  {
+    "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\C2077ShaderLab\\runtime-14612-134366593937887710.jsonl",
+    "snapshot": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\canary_r1\\live_snapshot_1\\runtime-14612-134366593937887710.jsonl",
+    "utc": "2026-10-16T21:26:14.438893+00:00",
+    "requested_bytes": 9560,
+    "bytes": 9560,
+    "sha256": "7dbae7afec2ca8c46b07990bc4d7788b09c2599ea6c04fe315d5f6ed65ba1393",
+    "live": true
+  },
+  {
+    "source": "E:\\GOG\\Cyberpunk 2077\\bin\\x64\\ReShade.log",
+    "snapshot": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\66_c2077_shader_loader_20261016\\canary_r1\\live_snapshot_1\\ReShade.log",
+    "utc": "2026-10-16T21:26:14.456893+00:00",
+    "requested_bytes": 34228,
+    "bytes": 34228,
+    "sha256": "d53264d366deec305d349d39bebc0eff985bac88a0d75b35ec96bec05166aeb3",
+    "live": true
+  }
+]

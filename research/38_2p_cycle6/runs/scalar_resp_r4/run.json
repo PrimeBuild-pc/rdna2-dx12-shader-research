@@ -1,0 +1,9 @@
+{
+  "variant": "scalar",
+  "set": "resp",
+  "rep": 4,
+  "pid": 8292,
+  "samples": 32,
+  "bytecode_sha256": "3778c0fea10920b07b78e4e484d6b7c152b1dda01c84527d822afa8dd98206fd",
+  "executable_sha256": "10ba0fa1aaabdb1b1c6dca6bc657087af096dadc8a3ceaa3223493e260049ece"
+}

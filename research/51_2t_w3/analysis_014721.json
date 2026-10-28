@@ -1,0 +1,13 @@
+{
+  "workload": "D3D12MeshShaders / MeshletRender",
+  "region": "the whole draw: mesh-shader dispatches over the model",
+  "medians_ns": {
+    "base": [
+      480.0,
+      480.0,
+      480.0
+    ]
+  },
+  "threshold_pct": 1.0,
+  "verdicts": {}
+}

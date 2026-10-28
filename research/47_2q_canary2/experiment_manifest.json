@@ -1,0 +1,145 @@
+{
+  "experiment_id": "P_20260907_012213",
+  "created_at": "2026-09-07T01:22:13.328066+02:00",
+  "phase": "2P",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\P_20260907_000419",
+  "workspace_owner_experiment_id": "P_20260907_000419",
+  "inherits_workspace_from": "research/40_2q_fullprecision",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\dxs",
+  "dxc_selected": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+  "configuration": "Profile/x64/v145",
+  "first_frame": 140,
+  "patched_files": [
+    "MiniEngine/Model/Shaders/Lighting.hlsli"
+  ],
+  "transforms": {
+    "canary2": {
+      "kind": "contract_probe_v2",
+      "equivalence": "not a candidate. It computes what the baseline computes and adds a violation mask that is set before any multiplication and applied to colorSum once, after every light. The green channel carries the mask, so a firing canary identifies which contract failed.",
+      "texture_work": "unchanged"
+    }
+  },
+  "transform_edits": {
+    "canary2": [
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "void FSchlick( inout float3 specular, inout float3 diffuse, float3 lightDir, float3 halfVec )\n",
+        "// Phase 2Q canary v2: one bit per contract the early-outs depend on.\nuint CanaryScalar(float x, uint bit)\n{\n    uint v = 0;\n    if (isnan(x) || isinf(x) || x < 0.0) v |= bit;\n    if (asuint(x) == 0x80000000u) v |= 64u;\n    return v;\n}\nuint CanaryVector(float3 x, uint bit)\n{\n    uint v = 0;\n    if (any(isnan(x)) || any(isinf(x)) || any(x < 0.0)) v |= bit;\n    if (any(asuint(x) == 0x80000000u)) v |= 64u;\n    return v;\n}\n\nvoid FSchlick( inout float3 specular, inout float3 diffuse, float3 lightDir, float3 halfVec )\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float3\tlightColor\t\t// Radiance of directional light\n    )\n{\n    float3 halfVec = normalize(lightDir - viewDir);\n",
+        "    float3\tlightColor,\t\t// Radiance of directional light\n    inout uint viol\n    )\n{\n    float3 halfVec = normalize(lightDir - viewDir);\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    return nDotL * lightColor * (diffuseColor + specularFactor * specularColor);\n",
+        "    float3 rhs = lightColor * (diffuseColor + specularFactor * specularColor);\n    viol |= CanaryVector(rhs, 1u);\n    float3 outv = nDotL * rhs;\n    viol |= CanaryVector(outv, 2u);\n    return outv;\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float shadow = GetDirectionalShadow(shadowCoord, ShadowMap);\n\n    return shadow * ApplyLightCommon(\n",
+        "    float shadow = GetDirectionalShadow(shadowCoord, ShadowMap);\n    uint directionalViol = 0;   // not part of the early-out contract\n\n    return shadow * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        normal,\n        viewDir,\n        lightDir,\n        lightColor\n        );\n}\n\nfloat3 ApplyPointLight(\n",
+        "        normal,\n        viewDir,\n        lightDir,\n        lightColor,\n        directionalViol\n        );\n}\n\nfloat3 ApplyPointLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float3\tlightColor\t\t// Radiance of directional light\n    )\n{\n    float3 lightDir = lightPos - worldPos;\n    float lightDistSq = dot(lightDir, lightDir);\n    float invLightDist = rsqrt(lightDistSq);\n    lightDir *= invLightDist;\n\n    // modify 1/d^2 * R^2 to fall off at a fixed radius\n    // (R/d)^2 - d/R = [(1/d^2) - (1/R^2)*(d/R)] * R^2\n    float distanceFalloff = lightRadiusSq * (invLightDist * invLightDist);\n    distanceFalloff = max(0, distanceFalloff - rsqrt(distanceFalloff));\n\n    return distanceFalloff * ApplyLightCommon(\n",
+        "    float3\tlightColor,\t\t// Radiance of directional light\n    inout uint viol\n    )\n{\n    float3 lightDir = lightPos - worldPos;\n    float lightDistSq = dot(lightDir, lightDir);\n    float invLightDist = rsqrt(lightDistSq);\n    lightDir *= invLightDist;\n\n    float distanceFalloff = lightRadiusSq * (invLightDist * invLightDist);\n    distanceFalloff = max(0, distanceFalloff - rsqrt(distanceFalloff));\n    viol |= CanaryScalar(distanceFalloff, 4u);\n\n    return distanceFalloff * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float3\tconeDir,\n    float2\tconeAngles\n    )\n{\n",
+        "    float3\tconeDir,\n    float2\tconeAngles,\n    inout uint viol\n    )\n{\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float coneFalloff = dot(-lightDir, coneDir);\n    coneFalloff = saturate((coneFalloff - coneAngles.y) * coneAngles.x);\n\n    return (coneFalloff * distanceFalloff) * ApplyLightCommon(\n",
+        "    float coneFalloff = dot(-lightDir, coneDir);\n    coneFalloff = saturate((coneFalloff - coneAngles.y) * coneAngles.x);\n    viol |= CanaryScalar(distanceFalloff, 4u);\n    viol |= CanaryScalar(coneFalloff, 8u);\n    viol |= CanaryScalar(coneFalloff * distanceFalloff, 8u);\n\n    return (coneFalloff * distanceFalloff) * ApplyLightCommon(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    float4x4 shadowTextureMatrix,\n    uint\tlightIndex\n    )\n{\n    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n",
+        "    float4x4 shadowTextureMatrix,\n    uint\tlightIndex,\n    inout uint viol\n    )\n{\n    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));\n    if (isnan(shadowCoord.w) || isinf(shadowCoord.w) || shadowCoord.w == 0.0)\n        viol |= 32u;\n    shadowCoord.xyz *= rcp(shadowCoord.w);\n    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);\n    viol |= CanaryScalar(shadow, 16u);\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    lightData.color\n",
+        "    lightData.color, \\\n    viol\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "#define CONE_LIGHT_ARGS \\\n    POINT_LIGHT_ARGS, \\\n    lightData.coneDir, \\\n    lightData.coneAngles\n",
+        "#define CONE_LIGHT_ARGS \\\n    diffuseAlbedo, \\\n    specularAlbedo, \\\n    specularMask, \\\n    gloss, \\\n    normal, \\\n    viewDir, \\\n    worldPos, \\\n    lightData.pos, \\\n    lightData.radiusSq, \\\n    lightData.color, \\\n    lightData.coneDir, \\\n    lightData.coneAngles, \\\n    viol\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "#define SHADOWED_LIGHT_ARGS \\\n    CONE_LIGHT_ARGS, \\\n    lightData.shadowTextureMatrix, \\\n    lightIndex\n",
+        "#define SHADOWED_LIGHT_ARGS \\\n    diffuseAlbedo, \\\n    specularAlbedo, \\\n    specularMask, \\\n    gloss, \\\n    normal, \\\n    viewDir, \\\n    worldPos, \\\n    lightData.pos, \\\n    lightData.radiusSq, \\\n    lightData.color, \\\n    lightData.coneDir, \\\n    lightData.coneAngles, \\\n    lightData.shadowTextureMatrix, \\\n    lightIndex, \\\n    viol\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        lightDir,\n        lightColor\n        );\n}\n\nfloat3 ApplyConeLight(\n",
+        "        lightDir,\n        lightColor,\n        viol\n        );\n}\n\nfloat3 ApplyConeLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        lightDir,\n        lightColor\n        );\n}\n\nfloat3 ApplyConeShadowedLight(\n",
+        "        lightDir,\n        lightColor,\n        viol\n        );\n}\n\nfloat3 ApplyConeShadowedLight(\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        coneDir,\n        coneAngles\n        );\n}\n",
+        "        coneDir,\n        coneAngles,\n        viol\n        );\n}\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "    uint lightBitMaskGroups[4] = { 0, 0, 0, 0 };\n",
+        "    uint viol = 0;\n    uint lightBitMaskGroups[4] = { 0, 0, 0, 0 };\n"
+      ],
+      [
+        "MiniEngine/Model/Shaders/Lighting.hlsli",
+        "        colorSum += ApplyConeShadowedLight(SHADOWED_LIGHT_ARGS);\n    }\n#endif\n}\n",
+        "        colorSum += ApplyConeShadowedLight(SHADOWED_LIGHT_ARGS);\n    }\n#endif\n    // Out of band: the mask is never multiplied by anything, so a violation on a\n    // path an early-out would skip cannot be silenced by a zero factor.\n    if (viol != 0)\n        colorSum = float3(1e30, (float)viol, 1e30);\n}\n"
+      ]
+    ]
+  },
+  "expected_bytecode": {
+    "base": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "canary2": "14873f2796b41fb64d39db6a8a659071341ca7bb50f18d69b26cd562209caf05"
+  },
+  "expected_artifact": {
+    "base": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\47_2q_canary2\\preregistered\\base\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+      "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+      "custom_hash": "52CE6C5E64AB2E82",
+      "bytecode_bytes": 12612
+    },
+    "canary2": {
+      "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\47_2q_canary2\\preregistered\\canary2\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+      "header_sha256": "bb69adf20ddbcacd1279c90fcd745d3a95135c6ac748fe8280f38a674afbea21",
+      "bytecode_sha256": "14873f2796b41fb64d39db6a8a659071341ca7bb50f18d69b26cd562209caf05",
+      "custom_hash": "8F6F9532DAAA83CC",
+      "bytecode_bytes": 14464
+    }
+  },
+  "compiler_already_does": [],
+  "ablation_kind": "optimisation candidates - semantics preserving, image quality unchanged",
+  "preregistered_criteria": {
+    "principle": "no transformation is accepted on fewer instructions, fewer VGPRs, smaller DXIL, shorter ISA or a microbenchmark. The judge is Render Color in the real workload.",
+    "quality": "image quality must not be reduced. No variant may remove a light, a PCF tap, a texture, a mip level or precision. Every transformation here is an algebraic or control-flow rewrite that computes the same thing.",
+    "correctness": "the captured Render Color image (R11G11B10, 1920x1080, frame 140) is compared against the base build's image. The rule that decides is the `correctness_rule` field of this manifest and nothing else. Baseline-vs-baseline is measured first, from two independent processes, to establish that the capture is deterministic before any variant is judged against it.",
+    "performance": "paired against `base`, AT LEAST 3 and preferably 5 independent processes per variant, order counterbalanced. Primary outcome GPUBusyCycles of the Render Color sample; GPUTime reported but not decisive (2O measured its N95 at 1.3-14 %). A variant is ACCEPTED only if the median delta is <= -max(1.0 %, 3 x N95) with N95 from the base A/A control measured in this cycle, AND every paired process delta is negative, AND correctness passes. N95 here is the largest of the pairwise differences between the base processes, not a statistical percentile, and those pairs are not independent of each other.",
+    "counters": "SQ_PS INSTS_VALU / INST_CYCLES_VALU (the ALU dose) and TA_BUSY + TCP (the texture dose) are measured for every variant, so what moved is known rather than guessed.",
+    "alu_vs_texture": "`fresnel5` changes ALU work only, with the texture instruction count fixed by construction. It is therefore the mirror of cycle O4, which changed texture work at fixed ALU. Together they can rank the two saturated units - the question 2O could not answer.",
+    "thresholds_fixed_before": "yes - written into this manifest by prepare, before any build.",
+    "correctness_rule": "ulp1_0.05pct",
+    "correctness_rule_text": "every differing channel differs by at most 1 ULP of its stored R11G11B10 representation, at most 0.05 % of channels differ at all, and no channel is non-finite. One ULP is the smallest change this render target can represent, so this admits a different rounding and nothing more."
+  },
+  "workspace_budget_bytes": 8000000000
+}

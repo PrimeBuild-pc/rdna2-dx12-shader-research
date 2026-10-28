@@ -1,0 +1,14 @@
+
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppBuild.targets(561,5): warning MSB8029: The Intermediate directory or Output directory cannot reside under the Temporary directory as it could lead to issues with incremental build. [C:\Users\Lorenzo\AppData\Local\Temp\claude\T_W3_20260907_014646\src\MeshletRender\D3D12MeshletRender.vcxproj]
+  MeshletMS.hlsl
+  MeshletPS.hlsl
+  stdafx.cpp
+  D3D12MeshletRender.cpp
+  DXSample.cpp
+  Main.cpp
+  Model.cpp
+C:\Users\Lorenzo\AppData\Local\Temp\claude\T_W3_20260907_014646\src\MeshletRender\D3D12MeshletRender.cpp(14,10): error C1083: Cannot open include file: 'TProbe.h': No such file or directory [C:\Users\Lorenzo\AppData\Local\Temp\claude\T_W3_20260907_014646\src\MeshletRender\D3D12MeshletRender.vcxproj]
+  (compiling source file '/D3D12MeshletRender.cpp')
+  
+  SimpleCamera.cpp
+  Win32Application.cpp

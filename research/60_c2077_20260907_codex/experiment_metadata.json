@@ -1,0 +1,159 @@
+{
+  "created": "2026-09-07T17:01:39.311400+02:00",
+  "session": "60_c2077_20260907_codex",
+  "status": "baseline_pending",
+  "historical_capture": "research/60_c2077/bench_r1 (preserved, not pooled)",
+  "screenshots": [
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 132616.png",
+      "sha256": "882b6b3ced70c4c4e99279b3eade9c2c015651f4421654ae100375a121f64f37"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 132937.png",
+      "sha256": "437ef580433bae92e7553897f7a11e7f4b7702e6af743fed51cd0a2621470452"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 133306.png",
+      "sha256": "d391ba0fa368eb53cc7f5c343f4e7b0c3e9b1b486af8ca4697479fa7246b2076"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 133646.png",
+      "sha256": "499879927884775853279af90ce6139d3291dac4c564dc3be4e4bded6276b38f"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 134050.png",
+      "sha256": "dfd7e58e001178c90ee151b949f5899cd3fb4b82b03388b698dd6d59b66bc5f1"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 134752.png",
+      "sha256": "c4a07b72410067a29b96aa5b86e3b7763050a7d49754d5e1fb4318d135cbb986"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 142018.png",
+      "sha256": "c0703a218980820bc953acb16c33065aed3ba4a6b6f8a077c157890fb8b7e879"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 142026.png",
+      "sha256": "5c1a5d8d2294cc16b789b39955db048fb5054d4926906c0d0238ba37028344ac"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 142033.png",
+      "sha256": "75a90480afb3bec1374ac4fb0cd86d73e7e6070bdaac517623dace1f89be59ed"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 142039.png",
+      "sha256": "5b45d7744ff3cc6c931b6dd11e546de306600f00e12a7a99da35c9f7115e185d"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 142043.png",
+      "sha256": "18022f2d6dbc0d3459963824aff725959bc4a4fed5208996e1f9dd0b834a72f7"
+    },
+    {
+      "path": "C:\\Users\\Lorenzo\\Pictures\\Screenshots\\Screenshot 2026-09-07 142222.png",
+      "sha256": "e2d4f3866a9bf361a7ae6eaaef274e29dd89fbf553aec7cd56c42e928cf3a1e3"
+    }
+  ],
+  "superposition": {
+    "version": "1.1",
+    "preset": "4K Optimized",
+    "api": "DirectX",
+    "resolution": [
+      3840,
+      2160
+    ],
+    "runs": [
+      {
+        "screenshot_time": "132616",
+        "score": 17166,
+        "min_fps": 102.41,
+        "avg_fps": 128.4,
+        "max_fps": 157.69
+      },
+      {
+        "screenshot_time": "132937",
+        "score": 17139,
+        "min_fps": 108.54,
+        "avg_fps": 128.2,
+        "max_fps": 157.43
+      },
+      {
+        "screenshot_time": "133306",
+        "score": 17124,
+        "min_fps": 108.03,
+        "avg_fps": 128.09,
+        "max_fps": 157.4
+      },
+      {
+        "screenshot_time": "133646",
+        "score": 17130,
+        "min_fps": 105.21,
+        "avg_fps": 128.12,
+        "max_fps": 157.39
+      },
+      {
+        "screenshot_time": "134050",
+        "score": 17133,
+        "min_fps": 106.6,
+        "avg_fps": 128.15,
+        "max_fps": 157.85
+      }
+    ],
+    "score_mean": 17138.4,
+    "score_cv_pct": 0.09539578905922638
+  },
+  "steel_nomad": {
+    "pre_score": 4184,
+    "pre_fps": 41.85,
+    "pre_screenshot": "134752",
+    "post_score": null,
+    "historical_score_references": [
+      4139,
+      4137
+    ],
+    "historical_comparability_gate_pct": 0.5,
+    "historical_comparability": "FAIL: >0.5%; no historical pooling or causal gain claim"
+  },
+  "cyberpunk": {
+    "version": "2.31",
+    "distribution": "GOG, single-player per user",
+    "resolution": [
+      2560,
+      1440
+    ],
+    "window_mode": "Windowed Borderless",
+    "vsync": false,
+    "fps_cap": false,
+    "preset": "Custom",
+    "textures": "High",
+    "ray_tracing": false,
+    "path_tracing": false,
+    "upscaling": false,
+    "frame_generation": false,
+    "crowd": "High",
+    "fov": 100,
+    "film_grain": false,
+    "chromatic_aberration": false,
+    "depth_of_field": false,
+    "lens_flare": false,
+    "motion_blur": false,
+    "vignette": false,
+    "contact_shadows": true,
+    "improved_facial_lighting_geometry": true,
+    "anisotropy": 16,
+    "advanced_quality": "All shown High: local/cascade/distant shadows, volumetrics, decals, SSR, SSS, AO, color precision, mirrors, LOD",
+    "prior_screenshot_run": {
+      "avg_fps": 113.26,
+      "min_fps": 95.95,
+      "max_fps": 136.5,
+      "duration_s": 64.25,
+      "frames": 7277,
+      "included_in_new_baseline": false
+    }
+  },
+  "settings_sha256": "f26e59eaf9dedd486c5417e2bdcb1c0de8840a3dbb0dbe69d454617b4aa36f01",
+  "tool_hashes": {
+    "tools/capture_game.py": "52b9d630e1885356977f5559f6aef8b5e92311b607bde8f08c56f1a62c73f4aa",
+    "tools/pmparse.py": "90ba7d96c4c3a7dfd0fcd481e318d7fadb51de091c032b100c21688f68e3bc01",
+    "tools/c2077.py": "fa0d8a16bbc7f47072e020fd644abbc692b66ef690628dfaf3bb5c6a1341d8c4"
+  }
+}

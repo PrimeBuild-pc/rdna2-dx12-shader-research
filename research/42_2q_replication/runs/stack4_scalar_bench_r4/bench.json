@@ -1,0 +1,10 @@
+{
+  "variant": "stack4_scalar",
+  "rep": 4,
+  "pid": 15112,
+  "frames": 1000,
+  "warm": 300,
+  "scopes": 32,
+  "frame_image_sha256": "e2c5b82008f5806d7cd801040b3cabf069c866c3d429bb28fa94fc2de95853ec",
+  "bytecode_sha256": "62f4048577a09d51fc232fcf44ab1a07178ffd9282d66878128068a588d352f0"
+}

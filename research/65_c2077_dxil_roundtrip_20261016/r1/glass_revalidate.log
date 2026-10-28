@@ -1,0 +1,10 @@
+CreateUtils_hresult=0x00000000
+LoadFile_hresult=0x00000000
+InputBlob_hresult=0x00000000
+CreateExternalValidator_hresult=0x00000000
+Validate_hresult=0x00000000
+GetStatus_hresult=0x00000000
+GetErrorBuffer_hresult=0x00000000
+validation_status_hresult=0x00000000
+GetResult_hresult=0x00000000
+status=PASS assembled=0 input_bytes=23042 object_bytes=23042 validated_bytes=23042

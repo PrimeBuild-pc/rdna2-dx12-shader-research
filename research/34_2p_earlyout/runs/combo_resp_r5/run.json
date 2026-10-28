@@ -1,0 +1,9 @@
+{
+  "variant": "combo",
+  "set": "resp",
+  "rep": 5,
+  "pid": 13980,
+  "samples": 32,
+  "bytecode_sha256": "93b85dc4029574875cefd84db3b3c9076d9cc5648857ab851a36c04905cff618",
+  "executable_sha256": "bccd17aa86c84675fece31efef91f8632d2e7be1809012d043b998fc2d66afea"
+}

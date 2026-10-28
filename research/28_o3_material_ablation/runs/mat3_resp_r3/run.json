@@ -1,0 +1,9 @@
+{
+  "variant": "mat3",
+  "set": "resp",
+  "rep": 3,
+  "pid": 11928,
+  "samples": 32,
+  "bytecode_sha256": "655ed4a53ff72b4e91dc0ddaa2053a5052ce4aa44ed5d643a8caf9bbd7c62f54",
+  "executable_sha256": "5fd9efe8794aeca609a4ce0ac9ed6502f59c4859c8451abfae65ded96ab81860"
+}

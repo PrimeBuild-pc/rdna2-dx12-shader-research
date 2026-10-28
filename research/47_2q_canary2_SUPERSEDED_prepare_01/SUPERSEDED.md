@@ -1,0 +1,1 @@
+prepare 1: la canary v2 non compilava (le chiamate interne a ApplyLightCommon/ApplyConeLight non passavano il flag). Il gate ha fermato tutto alla precompilazione offline: nessuna build, nessuna misura.

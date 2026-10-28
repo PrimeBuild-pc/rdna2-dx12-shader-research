@@ -1,0 +1,13 @@
+{
+  "variant": "base",
+  "executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\55_2u_uc\\builds\\base\\D3D12HDR.exe",
+  "executable_sha256": "0e24306375397abb190731cc620654223e0e0ca4b6a1361eae219339bad48aef",
+  "shaders": {
+    "gradientPS.cso": "8a838bd0e3c1f8b02c0a0384d9cf5471adfef4aa0ad36b9d6caf7e0f982bdd95",
+    "gradientVS.cso": "f89c069dcbbd1dd61d3858d51b3a264d55fb76d50e812ed2aefe23ac4e2ebd46",
+    "palettePS.cso": "a29450635ff6959ec14b1d939aad01d537f53b7cc5f1068f2e732a2858cd6763",
+    "paletteVS.cso": "ced58c66d4a2552cc8856ae77135c718f255c90efcf4af67449d7896efcda30a",
+    "presentPS.cso": "a02b3b8547ed9a34700eecb6958e54d5eaea221a9301733cc673c992d98981de",
+    "presentVS.cso": "ced58c66d4a2552cc8856ae77135c718f255c90efcf4af67449d7896efcda30a"
+  }
+}

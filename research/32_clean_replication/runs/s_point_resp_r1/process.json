@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_point.1\\Output\\ModelViewer\\ModelViewer.exe"
+  ],
+  "command_line": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_point.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\MiniEngine\\ModelViewer",
+  "requested_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_point.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "executable_sha256": "3b9a8fc9ccf476ade4ec5637d424dcfe072c1417c08a6a2298ea0d67e21db47c",
+  "pid": 12456,
+  "actual_executable": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230\\build\\s_point.1\\Output\\ModelViewer\\ModelViewer.exe",
+  "returncode": 0
+}

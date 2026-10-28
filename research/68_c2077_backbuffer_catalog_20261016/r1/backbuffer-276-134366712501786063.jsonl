@@ -1,0 +1,2 @@
+{"schema":1,"experiment":"C2077-BACKBUFFER-PROBE-001","pid":276,"event":"loaded_exe_guard_pass","known_buffers":0,"known_pixel_psos":0,"all_draw_callbacks":0,"rt_binds":0,"bb_rt_binds":0,"queue_submissions":0,"bundle_calls_on_bb":0,"candidates":0}
+{"schema":1,"experiment":"C2077-BACKBUFFER-PROBE-001","pid":276,"event":"unloaded","known_buffers":0,"known_pixel_psos":0,"all_draw_callbacks":0,"rt_binds":0,"bb_rt_binds":0,"queue_submissions":0,"bundle_calls_on_bb":0,"candidates":0}

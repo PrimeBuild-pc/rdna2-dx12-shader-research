@@ -1,0 +1,28 @@
+{
+  "pid": 6828,
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "tools/capture_etw.ps1",
+    "-Process",
+    "Cyberpunk2077.exe",
+    "-Tag",
+    "c2077_fs1440_attribution",
+    "-Run",
+    "1",
+    "-Seconds",
+    "150",
+    "-PreRoll",
+    "20",
+    "-ValidateSeconds",
+    "3",
+    "-PreserveSamplingInterval",
+    "-PresentMonSession",
+    "c2077_fs1440_attribution_r1",
+    "-OutDir",
+    "research\\63_c2077_wpr_attribution\\fs1440_r1"
+  ],
+  "log": "research\\63_c2077_wpr_attribution\\capture_r1.log",
+  "started_unix": 1788899336.2843726
+}

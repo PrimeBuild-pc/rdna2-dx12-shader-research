@@ -1,0 +1,62 @@
+[
+  {
+    "command": [
+      "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016\\etl_extract.exe",
+      "--selfcheck"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Lorenzo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-B",
+      "tools/c2077_etw_offline.py",
+      "--selfcheck"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Lorenzo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-B",
+      "tools/c2077_gpu_queue.py",
+      "--selfcheck"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Lorenzo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-B",
+      "tools/c2077_etw_check.py",
+      "research\\63_c2077_wpr_attribution\\fs1440_r1\\offline_20261016"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Lorenzo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-B",
+      "tools/etw_analyze.py",
+      "--selfcheck"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "C:\\Users\\Lorenzo\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-B",
+      "tools/c2077_native.py"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "pwsh",
+      "-NoProfile",
+      "-File",
+      "tools/test_capture_etw.ps1"
+    ],
+    "exit": 0
+  }
+]

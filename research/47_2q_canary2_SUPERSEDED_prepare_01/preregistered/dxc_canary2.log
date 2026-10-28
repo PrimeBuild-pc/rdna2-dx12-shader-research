@@ -1,0 +1,20 @@
+In file included from C:\Users\Lorenzo\Downloads\driver mod\research\47_2q_canary2\preregistered\canary2\Shaders\ModelViewerPS.hlsl:14:
+C:\Users\Lorenzo\Downloads\driver mod\research\47_2q_canary2\preregistered\canary2\Shaders/Lighting.hlsli:193:30: error: no matching function for call to 'ApplyLightCommon'
+    return distanceFalloff * ApplyLightCommon(
+                             ^~~~~~~~~~~~~~~~
+C:\Users\Lorenzo\Downloads\driver mod\research\47_2q_canary2\preregistered\canary2\Shaders/Lighting.hlsli:113:8: note: candidate function not viable: requires 9 arguments, but 8 were provided
+float3 ApplyLightCommon(
+       ^
+C:\Users\Lorenzo\Downloads\driver mod\research\47_2q_canary2\preregistered\canary2\Shaders/Lighting.hlsli:237:46: error: no matching function for call to 'ApplyLightCommon'
+    return (coneFalloff * distanceFalloff) * ApplyLightCommon(
+                                             ^~~~~~~~~~~~~~~~
+C:\Users\Lorenzo\Downloads\driver mod\research\47_2q_canary2\preregistered\canary2\Shaders/Lighting.hlsli:113:8: note: candidate function not viable: requires 9 arguments, but 8 were provided
+float3 ApplyLightCommon(
+       ^
+C:\Users\Lorenzo\Downloads\driver mod\research\47_2q_canary2\preregistered\canary2\Shaders/Lighting.hlsli:274:21: error: no matching function for call to 'ApplyConeLight'
+    return shadow * ApplyConeLight(
+                    ^~~~~~~~~~~~~~
+C:\Users\Lorenzo\Downloads\driver mod\research\47_2q_canary2\preregistered\canary2\Shaders/Lighting.hlsli:205:8: note: candidate function not viable: requires 13 arguments, but 12 were provided
+float3 ApplyConeLight(
+       ^
+

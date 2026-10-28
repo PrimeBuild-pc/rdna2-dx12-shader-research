@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/crosire/reshade/18deaa52de0c425a78b329e9cb3c497281cd00ec/source/d3d12/d3d12_command_list.cpp",
+    "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\d3d12\\d3d12_command_list.cpp",
+    "sha256": "b8922823d804c14000e92695f644f04ec967bfbe003bbb2990bf606efe1b60ef"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/crosire/reshade/18deaa52de0c425a78b329e9cb3c497281cd00ec/source/d3d12/d3d12_impl_command_list.cpp",
+    "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\d3d12\\d3d12_impl_command_list.cpp",
+    "sha256": "1432203032430e9db5bf9207b9dab4e48cb9f13da415d8b830eb6f0a15dc0487"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/crosire/reshade/18deaa52de0c425a78b329e9cb3c497281cd00ec/source/d3d12/d3d12_pipeline_library.cpp",
+    "path": "research\\66_c2077_shader_loader_20261016\\sources\\reshade-6.8.0\\source\\d3d12\\d3d12_pipeline_library.cpp",
+    "sha256": "c2c3b0b45dad8aefa3ade17fd3527ee4e548a558ac2cf658ee9ff7f4f6934145"
+  }
+]

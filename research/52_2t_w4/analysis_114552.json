@@ -1,0 +1,13 @@
+{
+  "workload": "D3D12VariableRateShading / ShadowsFogScatteringSquidScene",
+  "region": "whole GPU frame: shadow pass, refraction pass, scene pass on all worker lists, postprocess",
+  "medians_ns": {
+    "base": [
+      152080.0,
+      151920.0,
+      152040.0
+    ]
+  },
+  "threshold_pct": 1.0,
+  "verdicts": {}
+}

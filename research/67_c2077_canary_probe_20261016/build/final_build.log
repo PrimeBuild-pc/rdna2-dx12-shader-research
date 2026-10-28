@@ -1,0 +1,10 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.11.0
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+c2077_shader_probe.cpp
+   Creating library research\67_c2077_canary_probe_20261016\build\probe_test.lib and object research\67_c2077_canary_probe_20261016\build\probe_test.exp
+Readonly probe state/overwrite/reset/submit/bundle/masks/host guards selfcheck PASS
+c2077_shader_probe.cpp
+   Creating library research\67_c2077_canary_probe_20261016\build\probe.lib and object research\67_c2077_canary_probe_20261016\build\probe.exp

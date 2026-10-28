@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\ablate_ch\\D3D12RaytracingProceduralGeometry.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\ablate_ch\\D3D12RaytracingProceduralGeometry.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\ablate_ch",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\ablate_ch\\D3D12RaytracingProceduralGeometry.exe",
+  "executable_sha256": "106ce69677ea7a14b06a9c8d1b3d6fd4025447689b13cd822bd07c18ad5e2194",
+  "pid": 11800,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\ablate_ch\\D3D12RaytracingProceduralGeometry.exe",
+  "returncode": 0
+}

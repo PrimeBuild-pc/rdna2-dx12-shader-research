@@ -1,0 +1,500 @@
+  └ == research\34_2p_earlyout ==
+    == research\35_2p_cycle3 ==
+
+• Searching the web
+
+• Searched the web for site:learn.microsoft.com/
+  en-us/windows/win32/direct3dhlsl dx-graphics-
+  hlsl-max NaN signed zero ...
+
+• Ran Get-Content -LiteralPath
+  │ 'research\PHASE_2P_WORKLOG.md' |
+  │ Select-Object -Skip 108 -First 105
+  └ ## Cycle P2 — the same idea further up the
+    call chain, and the stack · cycle 3/10
+    … +72 lines (ctrl + t to view transcript)
+    its −9.76 % is reported only as an
+    observation.
+
+⚠ Heads up, you have less than 10% of your weekly
+  limit left. Run /status for a breakdown.
+
+• Ran Get-Content -LiteralPath
+  │ 'research\PHASE_2P_WORKLOG.md' |
+  │ Select-Object -Skip 190 -First 120
+  └ (no output)
+
+• Ran Get-Content -LiteralPath
+  │ 'research\PHASE_2P_WORKLOG.md' |
+  │ Select-Object -Skip 168 -First 90
+  └ ### Verdict
+
+    … +5 lines (ctrl + t to view transcript)
+    its −9.76 % is reported only as an
+    observation.
+
+• Ran Get-Item -LiteralPath
+  │ 'research\35_2p_cycle3\experiment_manifest.j
+  │ son','research\35_2p_cycle3\analysis_203048.
+  │ … +4 lines
+  └
+    Name                     CreationTime
+    … +8 lines (ctrl + t to view transcript)
+    9/6/2026 8:30:06 PM    826
+
+
+• Ran foreach($d in
+  │ 'research\34_2p_earlyout','research\35_2p_cy
+  │ cle3'){"== $d =="; Get-ChildItem
+  │ … +5 lines
+  └ == research\34_2p_earlyout ==
+    build_base:
+    … +33 lines (ctrl + t to view transcript)
+    exe=831869fe9e93df598b41b96e6556034621aa9fa303
+    9f7cbacd689867232fec60
+
+• Ran rg -n -C 6 'source_sha256|build_.*json|
+  │ write_json\(.*build' 'tools/run_2p.py'
+  │ 'tools/buildv.py'
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +99 lines (ctrl + t to view transcript)
+    each transformation actually changed (sq_ps, 1
+    pass, median of runs)")
+
+• Ran Get-Content -LiteralPath
+  │ 'research\34_2p_earlyout\instrumented_source
+  │ _hashes.csv' -TotalCount 40; Get-Content
+  │ … +6 lines
+  └ path,sha256
+    C:
+    … +122 lines (ctrl + t to view transcript)
+      "returncode": 0
+    }
+
+• Ran foreach($d in
+  │ 'research\34_2p_earlyout','research\35_2p_cy
+  │ cle3'){ $m=Get-Content -LiteralPath
+  │ … +12 lines
+  └ == research\34_2p_earlyout ==
+    base prereg=True built=True
+    … +5 lines (ctrl + t to view transcript)
+    stack3 prereg=True built=True
+    stack4 prereg=True built=True
+
+• Ran Get-Content -LiteralPath 'tools\buildv.py' |
+  │ Select-Object -First 90
+  └ """Fail-closed O1 build gate. No legacy/
+    incremental/Rebuild fallback.
+    … +92 lines (ctrl + t to view transcript)
+    missing")
+        return data
+
+⚠ Heads up, you have less than 10% of your 5h
+  limit left. Run /status for a breakdown.
+
+• Edited ~\AppData\Local\Temp\p23_codex_audit.py
+(+12 -0)
+      3  import json
+      4 +import re
+      5  import statistics
+        ⋮
+     65
+     66 +def header_bytecode(path):
+     67 +    text = path.read_text(encoding="utf-8
+         -sig")
+     68 +    match = re.search(r"g_pModelViewerPS\
+         s*\[\s*\]\s*=\s*\{(.*?)\}\s*;", text, re.
+         S)
+     69 +    assert match
+     70 +    tokens = re.findall(r"0x([0-9A-Fa-f]{
+         2})", match.group(1))
+     71 +    return bytes(int(x, 16) for x in toke
+         ns)
+     72 +
+     73  def audit_experiment(rel, variants):
+        ⋮
+    108          checks["expected_bytecode"] = bui
+         ld["bytecode_sha256"] == manifest["expect
+         ed_bytecode"][variant]
+    109 +        for label, header in (("prereg",
+         Path(expected["header"])), ("built", Path
+         (build["header"]))):
+    110 +            data = header_bytecode(header
+         )
+    111 +            checks[label + "_header_file"
+         ] = hashlib.sha256(header.read_bytes()).h
+         exdigest() == expected["header_sha256"]
+    112 +            checks[label + "_bytecode"] =
+          hashlib.sha256(data).hexdigest() == expe
+         cted["bytecode_sha256"] and len(data) ==
+         expected["bytecode_bytes"]
+    113          print(" ", variant, checks)
+
+• Ran python 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\p23_codex_
+  │ audit.py' 'C:\Users\Lorenzo\Downloads\driver
+  │ … +2 lines
+  └
+    == research\34_2p_earlyout ==
+    … +29 lines (ctrl + t to view transcript)
+    'built_bytecode': True}
+
+
+• Ran Get-Content -LiteralPath 'tools\run_2p.py' |
+  │ Select-Object -Skip 520 -First 65
+  └           flush=True)
+
+    … +66 lines (ctrl + t to view transcript)
+    FIELDS = {"GPUBusyCycles": ("resp",
+    r"GPUBusyCycles"),
+
+• Ran Get-Content -LiteralPath 'tools\run_2p.py' |
+  │ Select-Object -Skip 660 -First 45
+  └     tags = {p.name for p in (OUT /
+    "runs").glob("*_image_r*")}
+    … +46 lines (ctrl + t to view transcript)
+
+    if __name__ == "__main__":
+
+• Ran rg -n -C 12 'schedule|orders|order|
+  │ RESP_REPS|response|range\(1, 6\)|
+  │ counterbalanced|collect' 'tools/run_2p.py'
+  └ 🔍 Verifica degli aggiornamenti di
+    PowerShell...
+    … +114 lines (ctrl + t to view transcript)
+    r"SQ_PS\d_PERF_SEL_WAVES")}
+    592-
+
+• Ran Get-Content -LiteralPath 'tools\run_2p.py' |
+  │ Select-Object -Skip 450 -First 75
+  └     G.require(a["bytecode_sha256"] ==
+    m["expected_bytecode"][label],
+    … +75 lines (ctrl + t to view transcript)
+    --------------------------------- correctness
+
+
+• Ran python -c "import statistics as s;
+  │ a=[741424,743667,742081.5,739032,742482];
+  │ b=[718902,719983.5,718021,718758,719010.5];
+  │ … +2 lines
+  └ [-3.0376680549860757, -3.18469153532428,
+    -3.242298858009529, -2.743318286623586,
+    -3.161221416815496] -3.161221416815496
+
+──────────────────────────────────────────────────
+
+• 1. Ricalcolo e gate di build
+      - [Verificato dai CSV] Dose: mediana di 32
+        sample, poi mediana di 3 processi SQ.
+        Risposta: mediana di 32 sample, delta
+        appaiato contro base, poi mediana di 5
+        processi.
+          - falloffskip: tex −13,873%; VALU instr
+            −40,625%; VALU cycles −44,630%; wave
+            −0,130%; GPUBusyCycles −27,5929%;
+            TA_BUSY −25,639%; GPUTime −23,546%.
+
+          - ndotlskip: tex −6,141%; VALU instr
+            −11,138%; VALU cycles −15,753%; wave
+            −0,119%; GPUBusyCycles −9,7637%.
+
+          - combo: tex −20,287%; VALU cycles
+            −9,326%; GPUBusyCycles −7,3181%.
+
+          - stack3: tex −34,099%; VALU instr
+            −44,917%; VALU cycles −49,593%; wave
+            −0,152%; GPUBusyCycles −37,5055%;
+            TA_BUSY −37,130%; GPUTime −32,651%.
+
+          - stack4: tex −34,870%; VALU instr
+            −45,233%; VALU cycles −50,348%; wave
+            −0,287%; GPUBusyCycles −39,4222%;
+            TA_BUSY −39,236%.
+
+      - [Verificato] Immagini: falloffskip, combo
+        e stack3 sono byte-identiche; ndotlskip
+        differisce su 2 pixel/2 canali, massimo 1
+        ULP; stack4 su 3 pixel/3 canali, massimo 1
+        ULP. I due baseline sono identici.
+
+      - [Verificato] Tutti gli hash header/
+        bytecode, custom hash e dimensioni nei
+        build_*.json coincidono con i manifest; ho
+        estratto nuovamente il bytecode dagli
+        header e ricalcolato SHA-256. Anche
+        isa_report.json e gli eseguibili
+        registrati da ogni run corrispondono.
+
+      - [Difetto documentale] Entrambi i manifest
+        dicono ancora “3 processi” e “tutti e tre
+        negativi”, mentre la risposta ne usa 5. I
+        dati sono migliori del minimo e tutti e
+        cinque sono negativi, ma la pre-
+        registrazione dei 5 non è dimostrata dal
+        manifest.
+
+      - [Difetto documentale] Il worklog termina a
+        P2: P3 non vi è ancora registrato. Inoltre
+        source_sha256 nei build è uguale perché
+        identifica ModelViewerPS.hlsl, non
+        l’include modificato Lighting.hlsli; la
+        provenienza dell’include è nei dependency
+        log, quindi non è un mismatch ma è poco
+        evidente.
+
+  2. Equivalenza rigorosa di falloffskip
+      - [Verificato per questo workload] gloss
+        parte da 128 e AntiAliasSpecular lo
+        mantiene fra 1 e 128; nDotH/nDotL sono
+        saturati; quindi pow(nDotH,gloss) è finito
+        in [0,1]. specularMask e albedo provengono
+        dalle texture Sponza, specularColor è 0,56
+        e le luci generate hanno colore finito,
+        non negativo e ≤3. Con questi input,
+        ApplyLightCommon è finito e non negativo.
+
+      - Normalizzazioni degeneri possono generare
+        NaN, ma i relativi dot passano da
+        saturate, che converte NaN in zero.
+        saturate
+
+        (https://learn.microsoft.com/en-us/windows
+/win32/direct3dhlsl/saturate),
+        pow
+
+        (https://learn.microsoft.com/en-us/windows
+/win32/direct3dhlsl/dx-graphics-hlsl-pow).
+
+      - [Verificato] Se worldPos==lightPos,
+        rsqrt(0)=Inf: nel point light
+        distanceFalloff diventa +Inf, non NaN,
+        quindi ==0 è falso e il percorso originale
+        viene mantenuto. Nel cone light 0*Inf può
+        rendere atten NaN; anche qui NaN==0 è
+        falso e non si salta.
+
+      - Se un input precedente produce NaN
+        nell’espressione del falloff, max(0,NaN)
+        restituisce lo zero finito posto come
+        primo operando, quindi il ramo può essere
+        preso. Semantica HLSL di max
+
+        (https://learn.microsoft.com/en-us/windows
+/win32/direct3dhlsl/dx-graphics-hlsl-max).
+
+      - [Giudizio] La frase “0*X==0 per ogni X
+        finito” non basta per equivalenza bitwise:
+        se X fosse negativo si potrebbe ottenere
+        -0, mentre il ramo restituisce +0. Se X
+        fosse Inf/NaN, l’originale produrrebbe
+        NaN. Nel workload corrente X è limitato,
+        finito e non negativo; come trasformazione
+        generale su buffer/materiali arbitrari,
+        l’equivalenza non è provata.
+
+      - Verdetto: equivalente sotto il contratto
+        degli input correnti e per il target
+        unsigned R11G11B10; non universalmente
+        IEEE-esatta.
+
+  3. Credibilità del −37,5%
+      - [Verificato] È un effetto reale del
+        percorso shader: bytecode/eseguibile
+        cambiano, le wave restano quasi costanti,
+        le istruzioni statiche dei loop aumentano
+        259→305→341, mentre le istruzioni
+        dinamicamente eseguite crollano. Non è uno
+        shader accidentalmente accorciato o un
+        pass saltato.
+
+      - [Giudizio] Il meccanismo è però fortemente
+        content-dependent. Il light grid opera a
+        granularità di tile: include molte luci
+        che intersecano il tile ma non
+        contribuiscono al singolo pixel.
+        falloffskip monetizza precisamente questa
+        sovrainclusione. Con luci grandi, poche
+        luci o clustering più preciso, il guadagno
+        può ridursi drasticamente.
+
+      - Le wave non sono identiche: −0,13%
+        falloffskip, −0,15% stack3, −0,29% stack4;
+        troppo poco per spiegare il risultato. Non
+        esiste invece un counter indipendente dei
+        pixel coperti.
+
+      - L’immagine identica prova lo stesso output
+        R11G11B10 per questa scena/frame. Non
+        prova generalità su altre scene, né
+        uguaglianza degli intermedi float32.
+
+  4. VGPR e occupancy
+      - [Verificato] L’ISA alloca, non solo usa:
+          - base: 61 usati → 64 allocati
+          - stack3: 55 → 56
+          - stack4: 47 → 48
+
+      - Con 1024 VGPR fisici per SIMD e wave64 che
+        consuma il doppio: floor(1024/(2×VGPR)) dà
+        teoricamente 8→9→10 wave/SIMD, cioè
+        50%→56,25%→62,5% dei 16 slot RDNA2. AMD
+        conferma che RDNA2 dispone di 16 slot/SIMD
+        e che occupancy e VGPR vanno verificati
+        sul profilo reale. AMD Occupancy Explained
+
+        (https://gpuopen.com/learn/occupancy-expla
+ined/),
+        architettura RDNA
+
+        (https://gpuopen.com/wp-content/uploads/20
+20/11/RDNA_Architecture_public-1.pdf).
+
+      - [Giudizio] L’occupancy può contribuire in
+        modo sostanziale, ma non spiega da sola il
+        calo del conteggio dinamico di VALU/
+        texture: il lavoro saltato è reale. Non è
+        possibile ripartire onestamente il −37,5%
+        fra meno lavoro e latency hiding usando
+        solo questi dati.
+
+      - Indizio: stack4 porta 9→10 wave teoriche e
+        migliora ancora del 3,16% rispetto a
+        stack3, mentre i counter dinamici calano
+        poco. È compatibile con un contributo
+        occupancy, non lo dimostra.
+
+      - Per separarlo servono RGP con occupancy
+        effettiva e PSLimitedByVgpr, più una
+        variante stack3 semanticamente identica ma
+        forzata nuovamente a 64 VGPR, verificata
+        nell’ISA.
+
+  5. Criterio ULP di P3
+      - [Verificato] P2 mantiene correttamente
+        ndotlskip come rifiutato. Il manifest P3
+        con ulp1_0.05pct è timestampato circa tre
+        minuti prima del primo run P3; il codice
+        usa effettivamente quella chiave.
+
+      - [Giudizio] È una correzione sequenziale
+        onesta, non una riqualificazione post-hoc
+        del risultato P2. Il precedente
+        max_rel<=1e-3 era di fatto un test di
+        identità binaria su R11G11B10, perché un
+        singolo passo rappresentabile vale circa
+        1,6% per R/G.
+
+      - La soglia massima di 1 ULP è ragionevole;
+        il limite dello 0,05% è relativamente
+        largo — circa 3.110 canali — rispetto ai
+        soli 3 osservati. Chiamerei quindi stack4
+        “equivalente entro l’oracolo ULP
+        preregistrato”, non “esattamente
+        equivalente”.
+
+      - Il manifest P3 conserva anche il vecchio
+        testo max_rel<=1e-3: l’esplicito
+        correctness_rule prevale nel codice, ma il
+        documento è internamente incoerente.
+
+  6. Statistica e ordine
+      - [Verificato] N95/threshold GPUBusyCycles:
+        P2 0,599% / 1,797%; P3 0,415% / 1,244%.
+        Gli effetti sono enormemente superiori e
+        tutti i 5 delta sono negativi.
+
+      - L’ordine è ampiamente controbilanciato, ma
+        non casuale né perfettamente bilanciato;
+        con 5 blocchi ciò è inevitabile. Nessuna
+        variante occupa sempre la stessa
+        posizione.
+
+      - [Giudizio] I 10 confronti A/A non sono
+        indipendenti: sono combinazioni degli
+        stessi 5 processi. “N95” è quindi il
+        massimo range pairwise, non una stima
+        statistica affidabile del 95° percentile.
+
+      - Cinque segni su cinque danno p=0,03125
+        unilaterale, prima di correzioni per
+        varianti/cicli adattivi. Più importante,
+        gli intervalli dei delta sono
+        strettissimi.
+
+      - I processi vengono eseguiti a pochi
+        secondi di distanza: sono indipendenti
+        come processi, non come stati termici. Il
+        controbilanciamento mitiga la deriva; non
+        elimina autocorrelazione, cache e
+        temperatura. Le grosse escursioni di
+        GPUTime, assenti in GPUBusyCycles,
+        confermano che la scelta della metrica
+        primaria era corretta.
+
+  7. Sei cicli rimanenti
+      - [Giudizio] Priorità:
+          - Misurare branch-hit e lane-mask
+            separatamente per point/cone/shadowed:
+            quante valutazioni e quante lane
+            vengono realmente saltate.
+
+          - Replicare stack3 su almeno tre regimi
+            preregistrati: poche/larghe luci,
+            molte/piccole luci, diverso tile size
+            o camera. È il test decisivo di
+            generalità.
+
+          - Fare un ciclo occupancy: stack3
+            riportato a 64 VGPR e/o base
+            ristrutturata a 56, con ISA verificata
+            e profilo RGP.
+
+          - Stress di correttezza con luce
+            coincidente, normali zero, colori
+            negativi/non finiti e target R32F
+            diagnostico.
+
+          - Misurare l’impatto end-to-end sul
+            frame, non soltanto Render Color.
+
+          - Solo dopo, valutare se stack4 vale il
+            margine aggiuntivo del 3,16% e la
+            semantica non bit-identica.
+
+      - Non vale la pena: altre micro-
+        ottimizzazioni guidate dal numero statico
+        di istruzioni, più sample nello stesso
+        processo, altri stack senza bracci
+        isolati, o ulteriori conclusioni da
+        TA_BUSY come counter di puro lavoro.
+
+  Verdetto: il −37,5% di stack3 è un risultato
+  principale solido per questa scena e questo
+  hardware. La parte sovradimensionata sarebbe
+  presentarlo come guadagno generale o attribuirlo
+  interamente agli early-out: il lavoro dinamico
+  diminuisce davvero, ma contenuto e salto di
+  occupancy restano co-cause non separate.
+
+⚠ Heads up, you have less than 5% of your 5h limit
+  left. Run /status for a breakdown.
+
+─ Worked for 11m 21s ─────────────────────────────
+
+
+  Approaching rate limits
+  Switch to gpt-5.6-luna for lower credit usage?
+
+› 1. Switch to gpt-5.6-luna      Fast and
+                                 affordable
+                                 agentic coding
+                                 model.
+  2. Keep current model
+  3. Keep current model (never … Hide future
+                                 rate limit
+                                 reminders about
+                                 switching
+                                 models.
+
+  Press enter to confirm or esc to go back

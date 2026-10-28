@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\65_c2077_dxil_roundtrip_20261016\\dxil_roundtrip.exe",
+    "assemble",
+    "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\65_c2077_dxil_roundtrip_20261016\\r1\\bad_opcode.ll",
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\65_c2077_dxil_roundtrip_20261016\\r1\\bad_opcode.dxil"
+  ],
+  "exit": 1,
+  "executable_sha256": "a1907b9a54f3d43e352fd695ce2c011fde7d380541b418b690759ddf90b9986b"
+}

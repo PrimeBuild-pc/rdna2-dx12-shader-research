@@ -1,0 +1,438 @@
+diff --git a/MiniEngine/Core/BitonicSort.cpp b/MiniEngine/Core/BitonicSort.cpp
+index 38878c4..c6f321c 100644
+--- a/MiniEngine/Core/BitonicSort.cpp
++++ b/MiniEngine/Core/BitonicSort.cpp
+@@ -13,6 +13,7 @@
+ 
+ #include "pch.h"
+ #include "BitonicSort.h"
++#include "EngineProfiling.h"
+ #include "RootSignature.h"
+ #include "PipelineState.h"
+ #include "CommandContext.h"
+@@ -94,6 +95,9 @@ void BitonicSort::Sort(
+ 
+     ASSERT(ElementSizeBytes == 4 || ElementSizeBytes == 8, "Invalid key-index list for bitonic sort");
+ 
++    // Phase 2L: scope dedicato, per sapere quanto pesa DAVVERO il sort nel frame
++    ScopedTimer _prof2L(L"Bitonic Sort", Context);
++
+     Context.SetRootSignature(s_RootSignature);
+ 
+     // This controls two things.  It is a key that will sort to the end, and it is a mask used to
+diff --git a/MiniEngine/Core/CommandContext.cpp b/MiniEngine/Core/CommandContext.cpp
+index afe55ab..c3cf9e7 100644
+--- a/MiniEngine/Core/CommandContext.cpp
++++ b/MiniEngine/Core/CommandContext.cpp
+@@ -13,6 +13,7 @@
+ 
+ #include "pch.h"
+ #include "CommandContext.h"
++#include "GpaProfiler.h"
+ #include "ColorBuffer.h"
+ #include "DepthBuffer.h"
+ #include "GraphicsCore.h"
+@@ -81,6 +82,8 @@ CommandContext& CommandContext::Begin( const std::wstring ID )
+     NewContext->SetID(ID);
+     if (ID.length() > 0)
+         EngineProfiling::BeginBlock(ID, NewContext);
++
++    GpaProfiler::OnContextBegin(NewContext);
+     return *NewContext;
+ }
+ 
+@@ -138,6 +141,8 @@ uint64_t CommandContext::Finish( bool WaitForCompletion )
+     if (m_ID.length() > 0)
+         EngineProfiling::EndBlock(this);
+ 
++    GpaProfiler::OnContextFinish(this);
++
+     ASSERT(m_CurrentAllocator != nullptr);
+ 
+     CommandQueue& Queue = g_CommandManager.GetQueue(m_Type);
+diff --git a/MiniEngine/Core/CommandContext.h b/MiniEngine/Core/CommandContext.h
+index ec5b566..c77d495 100644
+--- a/MiniEngine/Core/CommandContext.h
++++ b/MiniEngine/Core/CommandContext.h
+@@ -17,6 +17,7 @@
+ #include "CommandListManager.h"
+ #include "Color.h"
+ #include "PipelineState.h"
++#include "ShaderInventory.h"
+ #include "RootSignature.h"
+ #include "GpuBuffer.h"
+ #include "Texture.h"
+@@ -345,6 +346,7 @@ inline void CommandContext::SetPipelineState( const PSO& PSO )
+         return;
+ 
+     m_CommandList->SetPipelineState(PipelineState);
++    ShaderInventory::SetPSO(&PSO);
+     m_CurPipelineState = PipelineState;
+ }
+ 
+@@ -554,6 +556,7 @@ inline void ComputeContext::Dispatch( size_t GroupCountX, size_t GroupCountY, si
+     m_DynamicViewDescriptorHeap.CommitComputeRootDescriptorTables(m_CommandList);
+     m_DynamicSamplerDescriptorHeap.CommitComputeRootDescriptorTables(m_CommandList);
+     m_CommandList->Dispatch((UINT)GroupCountX, (UINT)GroupCountY, (UINT)GroupCountZ);
++    ShaderInventory::RecordDispatch((uint32_t)GroupCountX, (uint32_t)GroupCountY, (uint32_t)GroupCountZ);
+ }
+ 
+ inline void ComputeContext::Dispatch1D( size_t ThreadCountX, size_t GroupSizeX )
+@@ -689,6 +692,7 @@ inline void GraphicsContext::DrawInstanced(UINT VertexCountPerInstance, UINT Ins
+     m_DynamicViewDescriptorHeap.CommitGraphicsRootDescriptorTables(m_CommandList);
+     m_DynamicSamplerDescriptorHeap.CommitGraphicsRootDescriptorTables(m_CommandList);
+     m_CommandList->DrawInstanced(VertexCountPerInstance, InstanceCount, StartVertexLocation, StartInstanceLocation);
++    ShaderInventory::RecordDraw(VertexCountPerInstance, InstanceCount, false);
+ }
+ 
+ inline void GraphicsContext::DrawIndexedInstanced(UINT IndexCountPerInstance, UINT InstanceCount, UINT StartIndexLocation,
+@@ -698,6 +702,7 @@ inline void GraphicsContext::DrawIndexedInstanced(UINT IndexCountPerInstance, UI
+     m_DynamicViewDescriptorHeap.CommitGraphicsRootDescriptorTables(m_CommandList);
+     m_DynamicSamplerDescriptorHeap.CommitGraphicsRootDescriptorTables(m_CommandList);
+     m_CommandList->DrawIndexedInstanced(IndexCountPerInstance, InstanceCount, StartIndexLocation, BaseVertexLocation, StartInstanceLocation);
++    ShaderInventory::RecordDraw(IndexCountPerInstance, InstanceCount, true);
+ }
+ 
+ inline void GraphicsContext::ExecuteIndirect(CommandSignature& CommandSig,
+@@ -731,6 +736,7 @@ inline void ComputeContext::ExecuteIndirect(CommandSignature& CommandSig,
+ 
+ inline void ComputeContext::DispatchIndirect( GpuBuffer& ArgumentBuffer, uint64_t ArgumentBufferOffset )
+ {
++    ShaderInventory::RecordDispatchIndirect();
+     ExecuteIndirect(Graphics::DispatchIndirectCommandSignature, ArgumentBuffer, ArgumentBufferOffset);
+ }
+ 
+diff --git a/MiniEngine/Core/Core.vcxproj b/MiniEngine/Core/Core.vcxproj
+index 6fa3ef4..96fdf1e 100644
+--- a/MiniEngine/Core/Core.vcxproj
++++ b/MiniEngine/Core/Core.vcxproj
+@@ -1,4 +1,4 @@
+-﻿<?xml version="1.0" encoding="utf-8"?>
++<?xml version="1.0" encoding="utf-8"?>
+ <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   <Import Project="..\..\Packages\Microsoft.Direct3D.D3D12.1.618.3\build\native\Microsoft.Direct3D.D3D12.props" Condition="Exists('..\..\Packages\Microsoft.Direct3D.D3D12.1.618.3\build\native\Microsoft.Direct3D.D3D12.props')" />
+   <ItemGroup Label="ProjectConfigurations">
+@@ -92,6 +92,8 @@
+     <ClInclude Include="DescriptorHeap.h" />
+     <ClInclude Include="GpuBuffer.h" />
+     <ClInclude Include="EngineProfiling.h" />
++    <ClInclude Include="ShaderInventory.h" />
++    <ClInclude Include="GpaProfiler.h" />
+     <ClInclude Include="EsramAllocator.h" />
+     <ClInclude Include="FileUtility.h" />
+     <ClInclude Include="FXAA.h" />
+@@ -162,6 +164,8 @@
+     <ClCompile Include="DynamicDescriptorHeap.cpp" />
+     <ClCompile Include="DescriptorHeap.cpp" />
+     <ClCompile Include="EngineProfiling.cpp" />
++    <ClCompile Include="ShaderInventory.cpp" />
++    <ClCompile Include="GpaProfiler.cpp" />
+     <ClCompile Include="EngineTuning.cpp" />
+     <ClCompile Include="FileUtility.cpp" />
+     <ClCompile Include="FXAA.cpp" />
+@@ -449,7 +453,7 @@
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+   <ItemDefinitionGroup>
+     <ClCompile>
+-      <AdditionalIncludeDirectories>..\..\Packages\WinPixEventRuntime.1.0.210209001\Include\WinPixEventRuntime;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>C:\Users\Lorenzo\AppData\Local\Temp\claude\gpa\4_4\include;..\..\Packages\WinPixEventRuntime.1.0.210209001\Include\WinPixEventRuntime;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+       <PreprocessorDefinitions>_GAMING_DESKTOP;__WRL_NO_DEFAULT_LIB__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+     </ClCompile>
+   </ItemDefinitionGroup>
+diff --git a/MiniEngine/Core/Display.cpp b/MiniEngine/Core/Display.cpp
+index fdd499c..84bd80d 100644
+--- a/MiniEngine/Core/Display.cpp
++++ b/MiniEngine/Core/Display.cpp
+@@ -63,7 +63,10 @@ namespace
+     uint64_t s_FrameIndex = 0;
+     int64_t s_FrameStartTick = 0;
+ 
+-    BoolVar s_EnableVSync("Timing/VSync", true);
++    // Phase 2L: in modalita' benchmark il VSync e' disattivo (la GPU non deve restare
++    // ferma fra i frame, o i clock oscillano), ma il passo temporale resta fisso a 1/60
++    // per mantenere il carico deterministico. Vedi anche piu' sotto.
++    BoolVar s_EnableVSync("Timing/VSync", getenv("ME_BENCH_FRAMES") == nullptr);
+     BoolVar s_LimitTo30Hz("Timing/Limit To 30Hz", false);
+     BoolVar s_DropRandomFrames("Timing/Drop Random Frames", false);
+ }
+@@ -512,6 +515,12 @@ void Display::Present(void)
+                 s_FrameTime += (1.0f / 60.0f);
+         }
+     }
++    else if (getenv("ME_BENCH_FRAMES") != nullptr)
++    {
++        // Phase 2L: passo fisso anche senza VSync, cosi' il lavoro per frame non dipende
++        // da quanto e' andata veloce la GPU nel frame precedente.
++        s_FrameTime = 1.0f / 60.0f;
++    }
+     else
+     {
+         // When running free, keep the most recent total frame time as the time step for
+diff --git a/MiniEngine/Core/EngineProfiling.cpp b/MiniEngine/Core/EngineProfiling.cpp
+index 6dde9ff..2eedba4 100644
+--- a/MiniEngine/Core/EngineProfiling.cpp
++++ b/MiniEngine/Core/EngineProfiling.cpp
+@@ -19,6 +19,8 @@
+ #include "GameInput.h"
+ #include "GpuTimeManager.h"
+ #include "CommandContext.h"
++#include "ShaderInventory.h"
++#include "GpaProfiler.h"
+ #include <vector>
+ #include <unordered_map>
+ #include <array>
+@@ -318,6 +320,12 @@ public:
+         m_CpuTime.RecordStat(FrameIndex, 1000.0f * (float)SystemTime::TimeBetweenTicks(m_StartTick, m_EndTick));
+         m_GpuTime.RecordStat(FrameIndex, 1000.0f * m_GpuTimer.GetTime());
+ 
++        // Phase 2L: StatHistory media solo sugli ultimi 64 frame. Per l'A/B serve la media
++        // su TUTTI i frame misurati, altrimenti la finestra corta domina il rumore.
++        m_GpuSum += 1000.0 * m_GpuTimer.GetTime();
++        m_CpuSum += 1000.0 * SystemTime::TimeBetweenTicks(m_StartTick, m_EndTick);
++        ++m_Samples;
++
+         for (auto node : m_Children)
+             node->GatherTimes(FrameIndex);
+ 
+@@ -336,6 +344,42 @@ public:
+         }
+     }
+ 
++    // Phase 2L: azzera l'accumulo dopo il warm-up
++    void ResetAccum()
++    {
++        m_GpuSum = 0.0; m_CpuSum = 0.0; m_Samples = 0;
++        for (auto node : m_Children)
++            node->ResetAccum();
++    }
++
++    static void ResetAll() { sm_RootScope.ResetAccum(); }
++
++    // Phase 2L: scrive nome, profondita', ms medi GPU/CPU per ogni scope dell'albero
++    void DumpNode(FILE* f, int depth)
++    {
++        if (m_Parent != nullptr)
++        {
++            char buf[256]; size_t n = 0;
++            wcstombs_s(&n, buf, sizeof(buf), m_Name.c_str(), sizeof(buf) - 1);
++            fprintf(f, "%s,%d,%.6f,%.6f,%.6f,%.6f,%u\n", buf, depth,
++                    m_Samples ? m_GpuSum / m_Samples : 0.0,
++                    m_Samples ? m_CpuSum / m_Samples : 0.0,
++                    (double)m_GpuTime.GetAvg(), (double)m_CpuTime.GetAvg(), m_Samples);
++        }
++        for (auto node : m_Children)
++            node->DumpNode(f, depth + 1);
++    }
++
++    static void DumpCSV(const char* path, unsigned frames)
++    {
++        FILE* f = nullptr;
++        if (fopen_s(&f, path, "w") != 0 || !f) return;
++        fprintf(f, "scope,depth,gpu_ms_mean,cpu_ms_mean,gpu_ms_win64,cpu_ms_win64,samples\n");
++        sm_RootScope.DumpNode(f, 0);
++        fprintf(f, "__FRAMES__,0,0,0,0,0,%u\n", frames);
++        fclose(f);
++    }
++
+     static void PushProfilingMarker( const wstring& name, CommandContext* Context );
+     static void PopProfilingMarker( CommandContext* Context );
+     static void Update( void );
+@@ -395,6 +439,9 @@ private:
+     unordered_map<wstring, NestedTimingTree*> m_LUT;
+     int64_t m_StartTick;
+     int64_t m_EndTick;
++    double m_GpuSum = 0.0;
++    double m_CpuSum = 0.0;
++    uint32_t m_Samples = 0;
+     StatHistory m_CpuTime;
+     StatHistory m_GpuTime;
+     bool m_IsExpanded;
+@@ -446,6 +493,16 @@ namespace EngineProfiling
+         NestedTimingTree::PopProfilingMarker(Context);
+     }
+ 
++    void DumpCSV(const char* path, unsigned frames)
++    {
++        NestedTimingTree::DumpCSV(path, frames);
++    }
++
++    void ResetAccum()
++    {
++        NestedTimingTree::ResetAll();
++    }
++
+     bool IsPaused()
+     {
+         return Paused;
+@@ -501,12 +558,16 @@ namespace EngineProfiling
+ void NestedTimingTree::PushProfilingMarker( const wstring& name, CommandContext* Context )
+ {
+     sm_CurrentNode = sm_CurrentNode->GetChild(name);
++    ShaderInventory::PushScope(sm_CurrentNode->m_Name.c_str());
+     sm_CurrentNode->StartTiming(Context);
++    GpaProfiler::BeginScope(sm_CurrentNode->m_Name.c_str(), Context);
+ }
+ 
+ void NestedTimingTree::PopProfilingMarker( CommandContext* Context )
+ {
++    GpaProfiler::EndScope(sm_CurrentNode->m_Name.c_str(), Context);
+     sm_CurrentNode->StopTiming(Context);
++    ShaderInventory::PopScope();
+     sm_CurrentNode = sm_CurrentNode->m_Parent;
+ }
+ 
+diff --git a/MiniEngine/Core/EngineProfiling.h b/MiniEngine/Core/EngineProfiling.h
+index 4fcf92e..815adc0 100644
+--- a/MiniEngine/Core/EngineProfiling.h
++++ b/MiniEngine/Core/EngineProfiling.h
+@@ -29,6 +29,10 @@ namespace EngineProfiling
+     void DisplayPerfGraph(GraphicsContext& Text);
+     void Display(TextContext& Text, float x, float y, float w, float h);
+     bool IsPaused();
++
++    // Phase 2L: esporta l'albero dei timer GPU/CPU in CSV (nome, profondita', ms medi)
++    void DumpCSV(const char* path, unsigned frames);
++    void ResetAccum();
+ }
+ 
+ #ifdef RELEASE
+diff --git a/MiniEngine/Core/GameCore.cpp b/MiniEngine/Core/GameCore.cpp
+index 3e72e3e..2de0d82 100644
+--- a/MiniEngine/Core/GameCore.cpp
++++ b/MiniEngine/Core/GameCore.cpp
+@@ -13,6 +13,10 @@
+ 
+ #include "pch.h"
+ #include "GameCore.h"
++#include "EngineProfiling.h"
++#include "ShaderInventory.h"
++#include "GpaProfiler.h"
++#include "ReadbackBuffer.h"
+ #include "GraphicsCore.h"
+ #include "SystemTime.h"
+ #include "GameInput.h"
+@@ -133,6 +137,15 @@ namespace GameCore
+ 
+         ShowWindow( g_hWnd, nCmdShow/*SW_SHOWDEFAULT*/ );
+ 
++        // Phase 2L: modalita' benchmark headless. Con ME_BENCH_FRAMES l'applicazione gira
++        // per warm-up + N frame senza input, poi esporta il profilo GPU per pass ed esce.
++        const char* benchFrames = getenv("ME_BENCH_FRAMES");
++        const unsigned benchWarm = getenv("ME_BENCH_WARM") ? (unsigned)atoi(getenv("ME_BENCH_WARM")) : 300;
++        const unsigned benchTotal = benchFrames ? benchWarm + (unsigned)atoi(benchFrames) : 0;
++        unsigned frameCount = 0;
++        ShaderInventory::Enabled = (benchFrames != nullptr);
++        GpaProfiler::Initialize(g_CommandManager.GetCommandQueue());
++
+         do
+         {
+             MSG msg = {};
+@@ -148,9 +161,54 @@ namespace GameCore
+ 
+             if (done)
+                 break;
++
++            if (benchTotal != 0)
++            {
++                if (frameCount == benchWarm)
++                {
++                    EngineProfiling::ResetAccum();   // il warm-up non entra nella media
++                    ShaderInventory::Reset();
++                }
++                ShaderInventory::NextFrame();
++                if (frameCount > benchWarm) { GpaProfiler::EndFrame(); GpaProfiler::BeginFrame(); }
++                if (++frameCount >= benchTotal)
++                    break;
++            }
+         }
+         while (UpdateApplication(app));	// Returns false to quit loop
+ 
++        if (benchFrames != nullptr)
++        {
++            const char* csv = getenv("ME_BENCH_CSV");
++            EngineProfiling::DumpCSV(csv ? csv : "profile.csv", (unsigned)atoi(benchFrames));
++            if (const char* inv = getenv("ME_BENCH_INV"))
++                ShaderInventory::Dump(inv);
++            if (const char* g = getenv("ME_GPA_CSV"))
++                GpaProfiler::Dump(g);
++
++            // Phase 2L: dump del color buffer finale, per il confronto A/B dell'immagine.
++            // Verifica la correttezza a livello di frame, non solo del singolo shader.
++            if (const char* img = getenv("ME_BENCH_IMG"))
++            {
++                ReadbackBuffer rb;
++                rb.Create(L"BenchReadback", Graphics::g_SceneColorBuffer.GetWidth() *
++                          Graphics::g_SceneColorBuffer.GetHeight(), 8);
++                CommandContext& ctx = CommandContext::Begin(L"BenchDump");
++                uint32_t rowPitch = ctx.ReadbackTexture(rb, Graphics::g_SceneColorBuffer);
++                ctx.Finish(true);
++                void* p = rb.Map();
++                FILE* f = nullptr;
++                if (fopen_s(&f, img, "wb") == 0 && f)
++                {
++                    const uint32_t h = Graphics::g_SceneColorBuffer.GetHeight();
++                    fwrite(p, 1, (size_t)rowPitch * h, f);
++                    fclose(f);
++                }
++                rb.Unmap();
++                rb.Destroy();
++            }
++        }
++
+         TerminateApplication(app);
+         Graphics::Shutdown();
+         return 0;
+diff --git a/MiniEngine/Core/PipelineState.cpp b/MiniEngine/Core/PipelineState.cpp
+index da05e96..40b92b4 100644
+--- a/MiniEngine/Core/PipelineState.cpp
++++ b/MiniEngine/Core/PipelineState.cpp
+@@ -117,6 +117,9 @@ void GraphicsPSO::SetInputLayout( UINT NumElements, const D3D12_INPUT_ELEMENT_DE
+ 
+ void GraphicsPSO::Finalize()
+ {
++    HashStage(0, m_PSODesc.VS.pShaderBytecode, m_PSODesc.VS.BytecodeLength);
++    HashStage(1, m_PSODesc.PS.pShaderBytecode, m_PSODesc.PS.BytecodeLength);
++
+     // Make sure the root signature is finalized first
+     m_PSODesc.pRootSignature = m_RootSignature->GetSignature();
+     ASSERT(m_PSODesc.pRootSignature != nullptr);
+@@ -160,6 +163,8 @@ void GraphicsPSO::Finalize()
+ 
+ void ComputePSO::Finalize()
+ {
++    HashStage(2, m_PSODesc.CS.pShaderBytecode, m_PSODesc.CS.BytecodeLength);
++
+     // Make sure the root signature is finalized first
+     m_PSODesc.pRootSignature = m_RootSignature->GetSignature();
+     ASSERT(m_PSODesc.pRootSignature != nullptr);
+diff --git a/MiniEngine/Core/PipelineState.h b/MiniEngine/Core/PipelineState.h
+index a73bcd0..37ab538 100644
+--- a/MiniEngine/Core/PipelineState.h
++++ b/MiniEngine/Core/PipelineState.h
+@@ -45,8 +45,26 @@ public:
+ 
+     ID3D12PipelineState* GetPipelineStateObject( void ) const { return m_PSO; }
+ 
++    // Phase 2M: servono all'inventario degli shader realmente eseguiti
++    const wchar_t* GetName( void ) const { return m_Name; }
++    uint64_t GetShaderHash( int stage ) const { return m_ShaderHash[stage]; }   // 0=VS 1=PS 2=CS
++    size_t   GetShaderSize( int stage ) const { return m_ShaderSize[stage]; }
++
+ protected:
+ 
++    // FNV-1a del bytecode, calcolato in Finalize
++    void HashStage( int stage, const void* p, size_t n )
++    {
++        uint64_t h = 1469598103934665603ull;
++        const unsigned char* b = (const unsigned char*)p;
++        for (size_t i = 0; p && i < n; ++i) { h ^= b[i]; h *= 1099511628211ull; }
++        m_ShaderHash[stage] = p ? h : 0;
++        m_ShaderSize[stage] = p ? n : 0;
++    }
++
++    uint64_t m_ShaderHash[3] = { 0, 0, 0 };
++    size_t   m_ShaderSize[3] = { 0, 0, 0 };
++
+     const wchar_t* m_Name;
+ 
+     const RootSignature* m_RootSignature;

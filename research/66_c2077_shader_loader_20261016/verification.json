@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "utc": "2026-10-16T18:14:41.498665+00:00",
+  "result": "PASS_INSTALL_OFFLINE_FILESYSTEM",
+  "runtime_tested": false,
+  "game_processes": [],
+  "runtime_logs": [],
+  "mode": "control",
+  "installed_files": [
+    {
+      "path": "C2077ShaderLab\\C2077ShaderLab.addon64",
+      "bytes": 345088,
+      "sha256": "c8d32fbd94f09e4732f2bb77870f9e4290bca2ab9a7d59944124c09abe161176"
+    },
+    {
+      "path": "C2077ShaderLab\\mode.txt",
+      "bytes": 8,
+      "sha256": "2e7f1f7a9dd3f82765d297d667234b91f8a68fa534bc7e6a6a04c77ffee12376"
+    },
+    {
+      "path": "C2077ShaderLab\\preset.ini",
+      "bytes": 55,
+      "sha256": "9ee7d2f1d02e614504a94fa620faf4d22346266a057639c1baee5f698f234aad"
+    },
+    {
+      "path": "dxgi.dll",
+      "bytes": 5592064,
+      "sha256": "0cee63f9c9f13f3ac909c5b4903f4dbb4b719a7ab3b4f13b0deaf83c814b94f7"
+    },
+    {
+      "path": "ReShade.ini",
+      "bytes": 625,
+      "sha256": "f274c185d3c8ea3e124d72a1ed3d19be6ec5b69b028ebd39ca0f3229eea343b3"
+    }
+  ],
+  "preexisting_files_verified": 84,
+  "original_engine_caches_exe_verified": true,
+  "embedded_payloads_verified": true,
+  "windows_cng_exe_hash_verified": true,
+  "cng_sdk_macro": "0x00000041",
+  "cng_status": 0,
+  "addon_x64_exports_verified": true,
+  "pinned_sdk_sources_verified": true,
+  "markdown_links_verified": 52,
+  "loader_tool_sha256": "415e439122363b3574a7d035f4322248bdd053e7fb2e4cbdcd7cc06248da39ec",
+  "package_sha256": "5936eb516a44e1d88723a6ee6262bc94cf325bd03724126c9a18ae56fa438967",
+  "current_reshade_environment": {},
+  "limits": [
+    "Host NotSigned, installer chain untrusted locally; no trust/security settings changed",
+    "No runtime loading, PSO acceptance, draw execution, marker, image or performance proven",
+    "Current driver differs from historical benchmark baseline"
+  ]
+}

@@ -1,0 +1,22 @@
+scope,gpu_ms,pct_frame,calls_per_frame,shaders
+Render Color,0.52023,48.709,28.9,PS:ModelViewerPS; VS:ModelViewerVS
+Resolve Image,0.10174,9.526,1.0,CS:TemporalBlendCS
+HDR Tone Mapping,0.05575,5.22,1.0,CS:ToneMap2CS
+Render Shadow Map,0.04846,4.537,4.98,PS:DepthViewerPS; VS:DepthViewerVS
+Culling & Sorting,0.04744,4.442,2.99,CS:ParticleBinCullingCS; CS:ParticleLargeBinCullingCS; CS:ParticleTileCullingCS
+Sharpen or Copy Image,0.03487,3.265,1.0,CS:SharpenTAACS
+Opaque,0.0319,2.986,28.9,VS:DepthViewerVS
+Blur and upsample,0.02675,2.504,2.99,CS:AoBlurUpsampleCS; CS:AoBlurUpsamplePreMinBlendOutCS
+FillLightGrid,0.02648,2.48,1.0,CS:FillLightGridCS_16
+Generate Bloom,0.02561,2.398,6.98,CS:BloomExtractAndDownsampleHdrCS; CS:BlurCS; CS:DownsampleBloomAllCS; CS:UpsampleAndBlurCS
+Decompress and downsample,0.02555,2.393,1.99,CS:AoPrepareDepthBuffers1CS; CS:AoPrepareDepthBuffers2CS
+MotionBlur,0.02506,2.346,1.99,CS:MotionBlurFinalPassCS; CS:MotionBlurPrePassCS
+Analyze depth volumes,0.02483,2.325,4.98,CS:AoRender1CS; CS:AoRender2CS
+Particle Update,0.02396,2.243,9.97,CS:ParticleDispatchIndirectArgsCS; CS:ParticleFinalDispatchIndirectArgsCS; CS:ParticleSpawnCS; CS:ParticleUpdateCS
+Present,0.02245,2.102,1.0,PS:CompositeSDRPS; VS:ScreenQuadPresentVS
+Render UI,0.01226,1.148,1.0,PS:TextShadowPS; VS:TextVS
+Update Exposure,0.01224,1.146,1.99,CS:AdaptExposureCS; CS:GenerateHistogramCS
+Compute Depth Bounds,0.00907,0.849,1.0,CS:ParticleDepthBoundsCS
+Cutout,0.00791,0.74,4.98,PS:DepthViewerPS; VS:DepthViewerVS
+Tiled Rendering,0.00564,0.528,1.99,CS:ParticleTileRenderFastDynamic2CS; CS:ParticleTileRenderSlowDynamic2CS
+Generate Camera Velocity,0.00244,0.229,1.0,CS:CameraVelocityCS

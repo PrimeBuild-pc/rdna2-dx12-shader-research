@@ -1,0 +1,110 @@
+{
+  "workload": "D3D12VariableRateShading / ShadowsFogScatteringSquidScene",
+  "region": "whole GPU frame: shadow pass, refraction pass, scene pass on all worker lists, postprocess",
+  "medians_ns": {
+    "ablate_ps": [
+      125320.0,
+      125280.0,
+      125500.0
+    ],
+    "base": [
+      152080.0,
+      151920.0,
+      152040.0,
+      150280.0,
+      150240.0,
+      150080.0,
+      150140.0,
+      150240.0,
+      150360.0,
+      150240.0,
+      150380.0,
+      150360.0,
+      150740.0,
+      150520.0
+    ],
+    "gather_pcf": [
+      149840.0,
+      149560.0,
+      149600.0,
+      149600.0
+    ],
+    "zeroskip_shadow": [
+      150600.0,
+      150620.0,
+      150720.0,
+      150680.0
+    ]
+  },
+  "threshold_pct": 1.316401834984376,
+  "verdicts": {
+    "ablate_ps": {
+      "median_pct": -16.586794462193826,
+      "per_process": [
+        -16.586794462193826,
+        -16.679968076616124,
+        -16.53365256717212
+      ],
+      "performance_accepted": true,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "ablate_ps_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 2665880,
+        "max_abs_delta": 98,
+        "differing_fraction": 0.7231662326388889,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "gather_pcf": {
+      "median_pct": -0.3397468688073079,
+      "per_process": [
+        -0.2927867979771094,
+        -0.45260915867944623,
+        -0.31982942430703626,
+        -0.3596643133075796
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "gather_pcf_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 129,
+        "max_abs_delta": 41,
+        "differing_fraction": 3.4993489583333335e-05,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "zeroskip_shadow": {
+      "median_pct": 0.12629710818164008,
+      "per_process": [
+        0.1462960500066498,
+        0.17291832934291035,
+        -0.013267878466233248,
+        0.10629816635663034
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "zeroskip_shadow_r1"
+        ],
+        "identical": true,
+        "bytes": 3686400,
+        "differing": 0,
+        "max_abs_delta": 0,
+        "differing_fraction": 0.0,
+        "passed": true
+      },
+      "final": "REJECTED (performance)"
+    }
+  }
+}

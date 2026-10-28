@@ -1,0 +1,115 @@
+{
+  "experiment_id": "O2_20260906_014011",
+  "criteria": {
+    "frame_identity": "a single-pass set must give identical values on every sampled frame; any counter varying by more than 0.1% fails the identity claim",
+    "cross_pass": "TA_BUSY totals from the 1-pass set and the multi-pass set must agree within the frame-to-frame spread measured above",
+    "aggregation": "sum(TA_i_BUSY) == TexUnitBusyCycles exactly, and CPF_PERF_SEL_CPF_STAT_BUSY == GPUBusyCycles exactly",
+    "note": "no ablation, no performance verdict, no shader change in this cycle"
+  },
+  "frame_identity": [
+    {
+      "tag": "sq_ps",
+      "counters": 32,
+      "judged": 32,
+      "excluded_nondeterministic": 0,
+      "bit_identical_across_samples": 12,
+      "worst_counter": "SQ_PS0_PERF_SEL_INSTS_SALU",
+      "worst_spread": 0.00626935464087776,
+      "passes_criterion": false
+    },
+    {
+      "tag": "ta_busy",
+      "counters": 80,
+      "judged": 80,
+      "excluded_nondeterministic": 0,
+      "bit_identical_across_samples": 0,
+      "worst_counter": "TA18_PERF_SEL_TA_BUSY",
+      "worst_spread": 0.03873210558202661,
+      "passes_criterion": false
+    },
+    {
+      "tag": "crosspass",
+      "counters": 85,
+      "judged": 85,
+      "excluded_nondeterministic": 0,
+      "bit_identical_across_samples": 0,
+      "worst_counter": "GPUTime",
+      "worst_spread": 0.19922814982973894,
+      "passes_criterion": false
+    },
+    {
+      "tag": "aniso",
+      "counters": 721,
+      "judged": 721,
+      "excluded_nondeterministic": 0,
+      "bit_identical_across_samples": 321,
+      "worst_counter": "TA15_PERF_SEL_ANISO_8_CYCLE_QUADS",
+      "worst_spread": 0.6452020202020202,
+      "passes_criterion": false
+    }
+  ],
+  "cross_pass": {
+    "one_pass_median": 89032254.5,
+    "multi_pass_median": 88646506.0,
+    "relative_difference": 0.004332682601000518,
+    "frame_noise": 0.01720016593302975,
+    "passes_criterion": true
+  },
+  "aggregation": {
+    "sum(TA_i_BUSY) vs TexUnitBusyCycles": {
+      "exact": false,
+      "max_relative": 0.9873284506975141,
+      "mine": 88646506.0,
+      "sdk": 1124256.0,
+      "raw_counters": 80
+    },
+    "CPF_STAT_BUSY vs GPUBusyCycles": {
+      "exact": true,
+      "max_relative": 0.0,
+      "mine": 1188712.0,
+      "sdk": 1188712.0,
+      "raw_counters": 1
+    },
+    "TexUnitBusy_formula": {
+      "sdk_value": 94.62701697920937,
+      "sum(TA_BUSY)/GPUBusyCycles*100": {
+        "value": 7456.21901768554,
+        "relative": 0.9873089810325096
+      },
+      "mean over 80 CUs / GPUBusyCycles*100": {
+        "value": 93.20273772106924,
+        "relative": 0.01505150752509785
+      },
+      "max(TA_BUSY)/GPUBusyCycles*100": {
+        "value": 94.62701697920937,
+        "relative": 0.0
+      }
+    }
+  },
+  "baseline": {
+    "PERF_SEL_WAVES": 39213.5,
+    "PERF_SEL_WAVES_32": 0.0,
+    "PERF_SEL_INSTS_VALU": 71015448.0,
+    "PERF_SEL_INST_CYCLES_VALU": 183167994.5,
+    "PERF_SEL_ITEM_CYCLES_VALU": 4943027896.0,
+    "PERF_SEL_INSTS_SALU": 6296225.5,
+    "PERF_SEL_INSTS_TEX_LOAD": 6115386.0,
+    "PERF_SEL_INSTS_TEX_STORE": 0.0,
+    "TA_BUSY_sum": 89032254.5,
+    "TA_BUSY_per_cu_mean": 1112895.0125,
+    "TA_BUSY_per_cu_min": 1084291.5,
+    "TA_BUSY_per_cu_max": 1127503.0,
+    "ta_busy_cycles_per_ps_tex_instruction": 14.558730143935314,
+    "aniso_1_quads": 9937801.0,
+    "aniso_2_quads": 884028.0,
+    "aniso_4_quads": 268862.0,
+    "aniso_6_quads": 89707.0,
+    "aniso_8_quads": 44056.0,
+    "aniso_10_quads": 0.0,
+    "aniso_12_quads": 0.0,
+    "aniso_14_quads": 0.0,
+    "aniso_16_quads": 0.0,
+    "aniso_mean_samples_per_quad": 1.218054348122412,
+    "TexAveAnisotropy_sdk": 1.218054348122412
+  }
+}

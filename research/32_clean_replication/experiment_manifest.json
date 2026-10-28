@@ -1,0 +1,50 @@
+{
+  "experiment_id": "R_20260906_195446",
+  "cycle": "R",
+  "created_at": "2026-09-06T19:54:46.797183+02:00",
+  "purpose": "clean-room replication of the three decisive Phase 2O performance results",
+  "reuses_builds_from": {
+    "s_base": "research\\29_o4_sampler",
+    "s_point": "research\\29_o4_sampler",
+    "L128": "research\\31_o6_lightcount",
+    "L32": "research\\31_o6_lightcount"
+  },
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\O4_20260906_021230",
+  "expected_bytecode": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+  "expected_artifact": {
+    "header": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\29_o4_sampler\\preregistered\\A\\Output\\Model\\CompiledShaders\\ModelViewerPS.h",
+    "header_sha256": "6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53",
+    "bytecode_sha256": "3fbca1dd9c36c42db409491b5f8316ebc9930d32780e29acdeaf900515bc74c6",
+    "custom_hash": "52CE6C5E64AB2E82",
+    "bytecode_bytes": 12612
+  },
+  "first_frame": 140,
+  "historical_values": {
+    "A": {
+      "ta_busy": 88700482,
+      "gpu_busy_cycles": 1189003,
+      "ps_tex": 6111703,
+      "source": "O5 tcp_ta / O4 resp / O5 stage_tex, s_base"
+    },
+    "B": {
+      "d_ta_busy": -3.5,
+      "d_gpu_busy_cycles": -2.63,
+      "source": "O5 tcp_ta + O4 resp, s_point vs s_base"
+    },
+    "C": {
+      "d_ta_busy": -61.57,
+      "d_gpu_busy_cycles": -60.2,
+      "d_tex": -68.05,
+      "marginal_cycles_per_instr": 13.13,
+      "source": "O6, L32 vs L128"
+    }
+  },
+  "preregistered_criteria": {
+    "arm_A": "aggregate work counters (TA_BUSY, SQ_PS INSTS_TEX_LOAD) within +-2 % of the historical baseline; GPUBusyCycles within +-5 %. Work counters are exact, timing is not.",
+    "arm_B": "delta(s_point vs s_base) must keep its sign and land within max(1.0 percentage point, 50 % of the historical effect) of the historical delta, on TA_BUSY and GPUBusyCycles.",
+    "arm_C": "delta(L32 vs L128) must keep its sign and land within 5 percentage points of the historical delta on TA_BUSY, GPUBusyCycles and the texture instruction dose; and the implied marginal cost must stay inside O6's preregistered [10, 19] cycles band.",
+    "statistic": "32 samples per run, 3 independent processes per variant per set, order interleaved then reversed then interleaved, exactly as in O4/O6.",
+    "verdict": "CLEAN_REPLICATION = PASS only if all three arms meet their criterion. Old and new measurements are never pooled; a divergence is investigated, not averaged away.",
+    "environment": "verified idle before measuring: no browser, no Discord, no game, no encoder; total GPU utilisation 1.69 % (desktop compositor only), live CPU under 0.5 %."
+  }
+}

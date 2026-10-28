@@ -1,0 +1,22 @@
+{
+  "variant": "mass_hoist",
+  "rep": 102,
+  "pid": 9748,
+  "iters": 1,
+  "warm": 0,
+  "summary": {
+    "pid": 9748,
+    "warmup": 0,
+    "recorded": 1,
+    "timestamp_frequency": 100000000,
+    "dispatch_ns_median": 155640.0,
+    "dispatch_ns_mean": 155640.0,
+    "dispatch_ns_min": 155640.0,
+    "dispatch_ns_max": 155640.0,
+    "dispatch_ns_p05": 155640.0,
+    "dispatch_ns_p95": 155640.0,
+    "particle_bytes": 320000
+  },
+  "particles_sha256": "2a87bebba7db01bd9d47f7f786f050ee753976906a06e788549113beef2fb59d",
+  "cs_sha256": "b6bbbb2063ab787eb7c71e0e432947a5ff65d912b4483291949aacdb603de0a8"
+}

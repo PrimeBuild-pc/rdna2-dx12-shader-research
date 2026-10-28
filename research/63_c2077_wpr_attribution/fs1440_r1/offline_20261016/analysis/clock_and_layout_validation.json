@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "raw_qpc_frequency_hz": 10000000,
+  "origin_qpc": 324166830818,
+  "qpc_to_etl_us": "(raw_qpc - 324166830818) / 10; xperf display rounds to whole us",
+  "probe_crosschecks": {
+    "sample": {
+      "native": 1276,
+      "xperf": 1276,
+      "native_only": 0,
+      "xperf_only": 0
+    },
+    "cswitch": {
+      "native": 51340,
+      "xperf": 51340,
+      "native_only": 0,
+      "xperf_only": 0
+    },
+    "ready": {
+      "native": 26314,
+      "xperf": 26314,
+      "native_only": 0,
+      "xperf_only": 0
+    }
+  },
+  "dxgi_anchor_events": 10,
+  "native_window_presentmon_rows": 5304,
+  "contiguous_qpc_matches_to_dxgi_present_stop": 5304,
+  "exact_timestamp_matches": 0,
+  "cross_session_stop_minus_online_ticks": {
+    "min": -129,
+    "median": -3,
+    "max": -2
+  },
+  "nearest_alternative_min_us": 8819.9,
+  "interval_error_max_us": 12.6,
+  "window_qpc": [
+    324665928518,
+    325308369370
+  ],
+  "window_etl_us": [
+    49909770.0,
+    114153855.2
+  ],
+  "wait_reason_labels": {
+    "0": [
+      "Executive"
+    ],
+    "6": [
+      "UserRequest"
+    ],
+    "31": [
+      "WrDispatchInt"
+    ],
+    "27": [
+      "WrResource"
+    ],
+    "37": [
+      "WrAlertByThreadId"
+    ],
+    "15": [
+      "WrQueue"
+    ],
+    "4": [
+      "DelayExecution"
+    ],
+    "33": [
+      "WrYieldExecution"
+    ],
+    "23": [
+      "WrProcessInSwap"
+    ],
+    "9": [
+      "WrPageIn"
+    ],
+    "13": [
+      "WrUserRequest"
+    ],
+    "32": [
+      "WrPreempted"
+    ],
+    "17": [
+      "WrLpcReply"
+    ],
+    "38": [
+      "WrDeferredPreempt"
+    ],
+    "28": [
+      "WrPushLock"
+    ],
+    "5": [
+      "Suspended"
+    ],
+    "16": [
+      "WrLpcReceive"
+    ],
+    "22": [
+      "WrTerminated"
+    ],
+    "34": [
+      "WrFastMutex"
+    ],
+    "8": [
+      "WrFreePage"
+    ]
+  },
+  "old_state_labels": {
+    "2": [
+      "Running"
+    ],
+    "5": [
+      "Waiting"
+    ],
+    "1": [
+      "Ready"
+    ],
+    "3": [
+      "Standby"
+    ],
+    "9": [
+      "<out of range>"
+    ],
+    "7": [
+      "DeferredReady"
+    ],
+    "4": [
+      "Terminated"
+    ]
+  },
+  "ready_flags_vs_xperf": {
+    "0": {
+      "": 23844
+    },
+    "1": {
+      "InDPC": 1587
+    },
+    "8": {
+      "": 877
+    },
+    "2": {
+      "": 5
+    },
+    "3": {
+      "InDPC": 1
+    }
+  },
+  "limitation": "PresentMon CPUStart corresponds to the previous Present stop. Online and WPR timestamps are not bit-identical; this verifies clocks/window with reported cross-session residuals, not exact event identity or hardware GPU timestamp precision."
+}

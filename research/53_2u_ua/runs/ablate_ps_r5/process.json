@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\builds\\ablate_ps\\D3D12DynamicIndexing.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\builds\\ablate_ps\\D3D12DynamicIndexing.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\builds\\ablate_ps",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\builds\\ablate_ps\\D3D12DynamicIndexing.exe",
+  "executable_sha256": "6b5e01037b1a987b8dee6ab04dec3809f2d11e2563bb82a61837b8627a8d698b",
+  "pid": 2304,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\53_2u_ua\\builds\\ablate_ps\\D3D12DynamicIndexing.exe",
+  "returncode": 0
+}

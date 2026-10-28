@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+
+# Binaries and raw traces are never committed (see data/README.md)
+*.etl
+*.pdb
+*.obj
+*.lib
+*.exp
+*.exe
+*.dll
+*.cso
+*.dxil
+*.cache
+*.symcache
+*.addon64
+
+# Large files distributed via the GitHub Release (unzip at repo root)
+/research/08_etw_fortnite/raw/fortnite-run4-20260904-100222-presentmon.csv
+/research/60_c2077/bench_r1/presentmon.csv
+/research/60_c2077_20260907_codex/bench_r1/presentmon.csv
+/research/60_c2077_20260907_codex/bench_r2/presentmon.csv
+/research/60_c2077_20260907_codex/bench_r4/presentmon.csv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu/dma_fifo_spans.csv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu/empty_intervals.csv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu/wait_packets.json
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu_superseded_scalar_array_enum/dma_fifo_spans.csv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu_superseded_scalar_array_enum/empty_intervals.csv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu_superseded_scalar_array_enum/wait_packets.json
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu_superseded_wait_pointer_lifetime/dma_fifo_spans.csv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu_superseded_wait_pointer_lifetime/empty_intervals.csv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/gpu_superseded_wait_pointer_lifetime/wait_packets.json
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/analysis/probe_raw.json
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/events.tsv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/events_v2.tsv
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/schema_probe.txt
+/research/63_c2077_wpr_attribution/fs1440_r1/offline_20261016/stacks_retry_profile.html
+/research/63_c2077_wpr_attribution/smoke/wpa_expanded/CPU_Usage_(Precise)_By_Process.csv
+/research/64_c2077_shader_access_20261016/probe_results.json
+/research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212226.csv
+/research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212334.csv
+/research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212440.csv
+/research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212547.csv
+/research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212653.csv
+/research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212801.csv
+/research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212907.csv

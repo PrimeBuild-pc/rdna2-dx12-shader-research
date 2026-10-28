@@ -1,0 +1,15 @@
+{
+  "set": "sq_ps",
+  "tag": "sq_ps",
+  "pid": 20272,
+  "samples": 8,
+  "session": {
+    "counters": "32",
+    "passes": "1",
+    "samples_per_pass": "8",
+    "first_frame": "140"
+  },
+  "rows": 256,
+  "executable_sha256": "94566a1b0a50eceb178d21033bedb364ba8daa8905ad89cff86309d68df905ba",
+  "shader_custom_hash": "52CE6C5E64AB2E82"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/WolvenKit/WolvenKit/4d1716b1755dcadead2815b3ec356fa61f30861c/WolvenKit.RED4/Archive/IO/ShaderCacheReader.cs",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\ShaderCacheReader.cs",
+    "sha256": "f7873eb2176d8785ce5043a44bc01cbc12b6d478b32432923310df2c5c0c5568"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/WolvenKit/WolvenKit/4d1716b1755dcadead2815b3ec356fa61f30861c/WolvenKit.RED4/Archive/Shaders/Shader.cs",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\Shader.cs",
+    "sha256": "25daa2919ff4d085d5f11283b34405e760220588bb38b21a8f1f2ed4144c6baf"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/WolvenKit/WolvenKit/4d1716b1755dcadead2815b3ec356fa61f30861c/WolvenKit.RED4/Archive/Shaders/ShaderStructs.cs",
+    "path": "research\\65_c2077_dxil_roundtrip_20261016\\sources\\ShaderStructs.cs",
+    "sha256": "89dd4fad29304474276da34094a93bb78ff0a2db898929b16ac6053b02110d57"
+  }
+]

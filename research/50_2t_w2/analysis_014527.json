@@ -1,0 +1,102 @@
+{
+  "workload": "D3D12Multithreading",
+  "region": "whole frame: shadow pass + shadowed scene, all worker lists",
+  "medians_ns": {
+    "base": [
+      84960.0,
+      85300.0,
+      85780.0,
+      85600.0
+    ],
+    "both": [
+      84280.0,
+      84360.0,
+      84640.0,
+      84400.0
+    ],
+    "light_dir_norm": [
+      85160.0,
+      85020.0,
+      85200.0,
+      85240.0
+    ],
+    "rsqrt_dist": [
+      84340.0,
+      84560.0,
+      84640.0,
+      84580.0
+    ]
+  },
+  "threshold_pct": 2.881574323532857,
+  "verdicts": {
+    "both": {
+      "median_pct": -1.215487040240622,
+      "per_process": [
+        -0.800376647834275,
+        -1.1019929660023446,
+        -1.3289811144788994,
+        -1.4018691588785046
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "both_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 2,
+        "max_abs_delta": 1,
+        "differing_fraction": 5.425347222222222e-07,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    },
+    "light_dir_norm": {
+      "median_pct": -0.3744069857895717,
+      "per_process": [
+        0.23540489642184556,
+        -0.32825322391559203,
+        -0.6761482863138261,
+        -0.4205607476635514
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "light_dir_norm_r1"
+        ],
+        "identical": true,
+        "bytes": 3686400,
+        "differing": 0,
+        "max_abs_delta": 0,
+        "differing_fraction": 0.0,
+        "passed": true
+      },
+      "final": "REJECTED (performance)"
+    },
+    "rsqrt_dist": {
+      "median_pct": -1.0295575812689681,
+      "per_process": [
+        -0.7297551789077212,
+        -0.8675263774912074,
+        -1.3289811144788994,
+        -1.191588785046729
+      ],
+      "performance_accepted": false,
+      "correctness": {
+        "pair": [
+          "base_r1",
+          "rsqrt_dist_r1"
+        ],
+        "identical": false,
+        "bytes": 3686400,
+        "differing": 2,
+        "max_abs_delta": 1,
+        "differing_fraction": 5.425347222222222e-07,
+        "passed": false
+      },
+      "final": "REJECTED (correctness)"
+    }
+  }
+}

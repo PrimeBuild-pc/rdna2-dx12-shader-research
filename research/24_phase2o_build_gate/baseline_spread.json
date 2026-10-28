@@ -1,0 +1,61 @@
+{
+  "spread": 0.0,
+  "diffs": [
+    {
+      "pair": [
+        "A",
+        "A_repeat1"
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_channel_ulp": [
+        0,
+        0,
+        0
+      ],
+      "positive_channel_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "changed_channel_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "median_decoded_delta_dark": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "pair": [
+        "A",
+        "A_repeat2"
+      ],
+      "changed_pixels": 0,
+      "changed_fraction": 0.0,
+      "max_channel_ulp": [
+        0,
+        0,
+        0
+      ],
+      "positive_channel_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "changed_channel_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "median_decoded_delta_dark": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

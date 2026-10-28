@@ -1,0 +1,22 @@
+{
+  "variant": "stack3_scalar",
+  "rep": 1,
+  "pid": 4568,
+  "draws": 34,
+  "image": {
+    "pid": 4568,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 2,
+    "format_name": "R32G32B32A32_FLOAT",
+    "bytes_per_pixel": 16,
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 30720,
+    "stored_row_bytes": 30720,
+    "padding_stored": false
+  },
+  "image_sha256": "dba34c5c26771dfd560b6939fd8ac6e32daee4f49376a66de88b43adc3d2ca39",
+  "bytecode_sha256": "e02177c10114d31a30102b405285262ac6aab68b091b85edb988d1b91307f9bc"
+}

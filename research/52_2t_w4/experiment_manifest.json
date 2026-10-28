@@ -1,0 +1,237 @@
+{
+  "experiment_id": "T_W4_20260907_015637",
+  "created_at": "2026-09-07T01:56:38.083341+02:00",
+  "phase": "2T",
+  "workload": "w4",
+  "workload_name": "D3D12VariableRateShading / ShadowsFogScatteringSquidScene",
+  "workspace": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\T_W4_20260907_015637",
+  "original_source": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\t2\\D3D12VariableRateShading",
+  "dxc": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\src\\nbody\\src\\packages\\Microsoft.Direct3D.DXC.1.8.2505.32\\build\\native\\bin\\x64\\dxc.exe",
+  "msbuild": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "configuration": "Release/x64/v145",
+  "regions": {
+    "0": "whole GPU frame: shadow pass, refraction pass, scene pass on all worker lists, postprocess",
+    "1": "postprocess pass alone",
+    "2": "scene pass, all worker lists",
+    "3": "refraction pass alone"
+  },
+  "primary_region": 0,
+  "expected_bytecode": {
+    "base": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "38a3891b012948731c1c912276f3b4247198e45c1538145288ec4058b0081054",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "886d0b8ae298f129b34e1e1cb872d424941455bdb168f37551c15bcc680407b7"
+    },
+    "gather_pcf": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "a78ffd9eab144d0f4ffa8f9aacf8c371eca70abcbfe6a7efff29c381d8220605",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "57cd15bfaecfe79e46adf6cc90e82192744ac48963286e3c28c1d67383fa4ff9"
+    },
+    "ablate_ps": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "6221279a432c76406cc90f9890109606e29571ee261862ef2594880bb8b4b1ee",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "886d0b8ae298f129b34e1e1cb872d424941455bdb168f37551c15bcc680407b7"
+    },
+    "zeroskip_shadow": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "e12070a3ca569fbf0c088a0a78f67d6f7ee5c3f301b299da7cff69e2403e1b69",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "886d0b8ae298f129b34e1e1cb872d424941455bdb168f37551c15bcc680407b7"
+    },
+    "abl_lightmath": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "d6f67875b6ef4368f9ed0a6dd7ad230dd3f07ad5c053f3471222efced451ac0f",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "886d0b8ae298f129b34e1e1cb872d424941455bdb168f37551c15bcc680407b7"
+    },
+    "abl_normalmap": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "0a31bde2908ddb3b66714a767bef623fec9ba72d4a3323567f9cf17a6888e87d",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "886d0b8ae298f129b34e1e1cb872d424941455bdb168f37551c15bcc680407b7"
+    },
+    "abl_shadow": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "cb278d3cbb0e71f34e2fc594b68d7b152f13c7b3fe1ba0f546c5218692831e88",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "886d0b8ae298f129b34e1e1cb872d424941455bdb168f37551c15bcc680407b7"
+    },
+    "abl_shadow_taps": {
+      "ShadowsAndScenePass_VSMain.cso": "631321c4cd9c5ce8dfbada90e6c0cdebeb58f72be24febb1c7cd3a863f4b5084",
+      "ShadowsAndScenePass_PSMain.cso": "1e399aa4f6f87bbcac862dd43d5f3f0dce468b6416e65518ca4134eec78ef698",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "5b094b3707534a875a9e4cd4672b20ad4e639b0a87b887162740200cd42aecf9"
+    },
+    "vs_lightspace": {
+      "ShadowsAndScenePass_VSMain.cso": "49500c30dc28e7ba0d36afa4a950afc22369ae20d418b7bac3cff9411e7791cd",
+      "ShadowsAndScenePass_PSMain.cso": "640b12ef5c97d43bec321078d3e8efd069a39af9dad9a966b8e522f87aeb60cb",
+      "PostprocessPass_VSMain.cso": "ccdba2ffd040a9bfa4c863ea3c68a88deb5ccd45c8f0a0fe64a816885bfbd397",
+      "PostprocessPass_PSMain.cso": "8ae9a935a5db1a9d10ae1af92cbb143f1590a07b2cb007aee51d1068ac2caa3a",
+      "Glass_VSMain.cso": "80942516db145dc033208b72e63fb25f71552c555814887d9cdb9d610b6a9fc5",
+      "Glass_PSMain.cso": "886d0b8ae298f129b34e1e1cb872d424941455bdb168f37551c15bcc680407b7"
+    }
+  },
+  "transforms": {
+    "gather_pcf": {
+      "kind": "texture_instruction_reduction",
+      "equivalence": "the same four texels, read by one instruction instead of four and assigned to the same components, so every arithmetic operation downstream is unchanged. Exact if and only if the half-texel-offset address selects the same quad as the four original addresses; that is what the byte-exact oracle tests. The sampler is POINT, so no filtering is being replaced.",
+      "expectation": "6 image_sample down to 3 image instructions in the pixel shader"
+    },
+    "ablate_ps": {
+      "kind": "diagnostic_upper_bound",
+      "candidate": false,
+      "equivalence": "none: the image is deliberately different. This measures a ceiling, not a candidate.",
+      "expectation": "the largest speed-up any change to this shader's body could produce"
+    },
+    "zeroskip_shadow": {
+      "kind": "early_out_on_exact_zero",
+      "pattern_provenance": "transferred from phase 2P, not derived from w4's ISA alone; counted separately in the report for that reason",
+      "equivalence": "0 * x == 0 for every finite x, so the result is bit-identical wherever the shadow term is finite. Where it would not be, the images differ and the byte-exact oracle rejects: the rule is not being assumed away.",
+      "expectation": "the shadow block skipped on every wave whose lanes are all unlit"
+    },
+    "abl_lightmath": {
+      "kind": "diagnostic_block",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "removes the length, the reciprocal, the two falloffs and the N.L dot"
+    },
+    "abl_normalmap": {
+      "kind": "diagnostic_block",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "removes 1 image_sample, 3 rsq and the 3x3 tangent-to-world transform"
+    },
+    "abl_shadow": {
+      "kind": "diagnostic_block",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "removes 4 image_sample and roughly 60 VALU"
+    },
+    "abl_shadow_taps": {
+      "kind": "diagnostic_block",
+      "candidate": false,
+      "equivalence": "none: diagnostic",
+      "expectation": "removes 4 image_sample, keeps both 4x4 transforms and the divide"
+    },
+    "vs_lightspace": {
+      "kind": "hoist_uniform_transform_to_vertex_stage",
+      "targets_block": "shadow address math",
+      "block_share_of_ceiling_pct": 58,
+      "predicted_delta_pct": [
+        -3.0,
+        -1.8
+      ],
+      "predicted_correctness": "FAIL tier A and tier B: the shadow depth test is a hard comparison and interpolating the light-space position flips it on boundary pixels",
+      "equivalence": "mathematically identical: the composition of two uniform matrices applied to a position that is itself linearly interpolated. Not bitwise identical, and the difference lands on a hard comparison.",
+      "expectation": "two 4x4 transforms out of the pixel shader, four interpolants in"
+    }
+  },
+  "transform_edits": {
+    "gather_pcf": [
+      [
+        "src/Common.hlsli",
+        "        vShadowDepths.x = shadowMap.Sample(sampleClamp, vShadowTexCoord).x;\n        vShadowDepths.y = shadowMap.Sample(sampleClamp, vShadowTexCoord + float2(vTexelUnits.x, 0.0f)).x;\n        vShadowDepths.z = shadowMap.Sample(sampleClamp, vShadowTexCoord + float2(0.0f, vTexelUnits.y)).x;\n        vShadowDepths.w = shadowMap.Sample(sampleClamp, vShadowTexCoord + vTexelUnits).x;\n",
+        "        // One gather4 in place of four point samples of the same 2x2 texel quad.\n        // Gather's footprint is the bilinear footprint of its address, the quad starting at\n        // floor(uv*dims - 0.5); offsetting the address by half a texel makes that quad start\n        // at floor(uv*dims), which is the texel the first point sample reads. Gather returns\n        // (-,+), (+,+), (+,-), (-,-) in x, y, z, w.\n        float4 vGathered = shadowMap.Gather(sampleClamp, vShadowTexCoord + 0.5f * vTexelUnits);\n        vShadowDepths.x = vGathered.w;\n        vShadowDepths.y = vGathered.z;\n        vShadowDepths.z = vGathered.x;\n        vShadowDepths.w = vGathered.y;\n"
+      ]
+    ],
+    "ablate_ps": [
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "    float4 diffuseColor = diffuseMap.Sample(sampleWrap, input.uv);\n    float3 pixelNormal = CalcPerPixelNormal(input.uv, input.normal, input.tangent);\n    float4 totalLight = ambientColor;\n\n    for (int i = 0; i < NUM_LIGHTS; i++)\n    {\n        float4 lightPass = CalcLightingColor(lights[i].position, lights[i].direction, lights[i].color, lights[i].falloff, input.worldpos.xyz, pixelNormal);\n        if (sampleShadowMap && i == 0)\n        {\n            lightPass *= CalcUnshadowedAmountPCF2x2(i, input.worldpos);\n        }\n        totalLight += lightPass;\n    }\n\n    return diffuseColor * saturate(totalLight);\n",
+        "    float4 diffuseColor = diffuseMap.Sample(sampleWrap, input.uv);\n    return diffuseColor;\n"
+      ]
+    ],
+    "zeroskip_shadow": [
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "        if (sampleShadowMap && i == 0)\n",
+        "        if (sampleShadowMap && i == 0 && any(lightPass != 0.0f))\n"
+      ]
+    ],
+    "abl_lightmath": [
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "        float4 lightPass = CalcLightingColor(lights[i].position, lights[i].direction, lights[i].color, lights[i].falloff, input.worldpos.xyz, pixelNormal);\n",
+        "        float4 lightPass = lights[i].color * saturate(pixelNormal.y);\n"
+      ]
+    ],
+    "abl_normalmap": [
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "    float3 pixelNormal = CalcPerPixelNormal(input.uv, input.normal, input.tangent);\n",
+        "    float3 pixelNormal = normalize(input.normal);\n"
+      ]
+    ],
+    "abl_shadow": [
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "        if (sampleShadowMap && i == 0)\n        {\n            lightPass *= CalcUnshadowedAmountPCF2x2(i, input.worldpos);\n        }\n",
+        ""
+      ]
+    ],
+    "abl_shadow_taps": [
+      [
+        "src/Common.hlsli",
+        "        vShadowDepths.x = shadowMap.Sample(sampleClamp, vShadowTexCoord).x;\n        vShadowDepths.y = shadowMap.Sample(sampleClamp, vShadowTexCoord + float2(vTexelUnits.x, 0.0f)).x;\n        vShadowDepths.z = shadowMap.Sample(sampleClamp, vShadowTexCoord + float2(0.0f, vTexelUnits.y)).x;\n        vShadowDepths.w = shadowMap.Sample(sampleClamp, vShadowTexCoord + vTexelUnits).x;\n",
+        "        vShadowDepths = (float4)saturate(vLightSpaceDepth);\n"
+      ]
+    ],
+    "vs_lightspace": [
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "    float3 normal : NORMAL;\n    float3 tangent : TANGENT;\n",
+        "    float3 normal : NORMAL;\n    float3 tangent : TANGENT;\n    float4 lightspacepos : TEXCOORD1;\n"
+      ],
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "    result.uv = uv;\n    result.normal = normal;\n    result.tangent = tangent;\n",
+        "    result.uv = uv;\n    result.normal = normal;\n    result.tangent = tangent;\n\n    // lights[0].view and lights[0].projection are uniform for the whole draw, so this is a\n    // linear function of the world position and perspective-correct interpolation reproduces it\n    // at every pixel - to within floating-point rounding, which is the whole question.\n    result.lightspacepos = mul(mul(result.worldpos, lights[0].view), lights[0].projection);\n"
+      ],
+      [
+        "src/ShadowsAndScenePass.hlsl",
+        "            lightPass *= CalcUnshadowedAmountPCF2x2(i, input.worldpos);\n",
+        "            lightPass *= CalcUnshadowedAmountPCF2x2LightSpace(input.lightspacepos);\n"
+      ],
+      [
+        "src/Common.hlsli",
+        "float4 CalcUnshadowedAmountPCF2x2(int lightIndex, float4 vPosWorld)\n{\n    // Compute pixel position in light space.\n    float4 vLightSpacePos = vPosWorld;\n    vLightSpacePos = mul(vLightSpacePos, lights[lightIndex].view);\n    vLightSpacePos = mul(vLightSpacePos, lights[lightIndex].projection);\n\n    vLightSpacePos.xyz /= vLightSpacePos.w;\n",
+        "float4 CalcUnshadowedAmountPCF2x2LightSpace(float4 vLightSpacePos);\n\nfloat4 CalcUnshadowedAmountPCF2x2(int lightIndex, float4 vPosWorld)\n{\n    float4 vLightSpacePos = vPosWorld;\n    vLightSpacePos = mul(vLightSpacePos, lights[lightIndex].view);\n    vLightSpacePos = mul(vLightSpacePos, lights[lightIndex].projection);\n    return CalcUnshadowedAmountPCF2x2LightSpace(vLightSpacePos);\n}\n\nfloat4 CalcUnshadowedAmountPCF2x2LightSpace(float4 vLightSpacePos)\n{\n    vLightSpacePos.xyz /= vLightSpacePos.w;\n"
+      ]
+    ]
+  },
+  "preregistered_criteria": {
+    "provenance": "every build is gated on the preregistered SHA-256 of every shader the project compiles; the pristine sources are restored on every exit path",
+    "correctness": "the sample's own render target after a fixed frame count, compared byte for byte against the baseline's. Baseline vs baseline must be identical first or nothing is judged against it",
+    "performance": "median of the primary timestamp region, several independent processes, counterbalanced order, paired against base",
+    "acceptance": "median <= -max(1 %, 3 x N95) from this workload's own A/A control, every paired process negative, and correctness passing"
+  },
+  "preregistered_at": {
+    "gather_pcf": "2026-09-07T11:50:45.245285+02:00",
+    "ablate_ps": "2026-09-07T11:52:29.274880+02:00",
+    "zeroskip_shadow": "2026-09-07T11:55:10.359811+02:00",
+    "abl_lightmath": "2026-09-07T12:11:56.663338+02:00",
+    "abl_normalmap": "2026-09-07T12:11:56.843154+02:00",
+    "abl_shadow": "2026-09-07T12:11:57.017577+02:00",
+    "abl_shadow_taps": "2026-09-07T12:11:57.191734+02:00",
+    "vs_lightspace": "2026-09-07T12:16:15.758880+02:00"
+  }
+}

@@ -1,0 +1,17 @@
+process,module,samples,pct_of_process,pct_of_trace,bucket,est_ms_per_s_of_one_core
+dwm.exe,ntoskrnl.exe,166,66.4,66.4,os_kernel,21.3266
+dwm.exe,dwmcore.dll,29,11.6,11.6,app_or_other,3.7257
+dwm.exe,dxgkrnl.sys,9,3.6,3.6,os_kernel,1.1563
+dwm.exe,ntdll.dll,8,3.2,3.2,os_usermode,1.0278
+dwm.exe,amdxx64.dll,8,3.2,3.2,amd_driver,1.0278
+dwm.exe,d3d11.dll,6,2.4,2.4,d3d_runtime,0.7708
+dwm.exe,CoreMessaging.dll,4,1.6,1.6,app_or_other,0.5139
+dwm.exe,d2d1.dll,4,1.6,1.6,app_or_other,0.5139
+dwm.exe,Unknown,3,1.2,1.2,app_or_other,0.3854
+dwm.exe,ddisplay.dll,3,1.2,1.2,app_or_other,0.3854
+dwm.exe,dxgmms2.sys,3,1.2,1.2,os_kernel,0.3854
+dwm.exe,win32kbase.sys,2,0.8,0.8,os_kernel,0.2569
+dwm.exe,ucrtbase.dll,2,0.8,0.8,app_or_other,0.2569
+dwm.exe,iorate.sys,1,0.4,0.4,os_kernel,0.1285
+dwm.exe,KernelBase.dll,1,0.4,0.4,os_usermode,0.1285
+dwm.exe,combase.dll,1,0.4,0.4,app_or_other,0.1285

@@ -1,0 +1,19 @@
+{
+  "scope": "independent Python ctypes verification harness, not the addon",
+  "initial_probe": {
+    "handle": "0x31",
+    "requested_digest_bytes": 32,
+    "status": "0xc000000d",
+    "result": "FAIL: incorrect literal selected SHA1, not SHA256"
+  },
+  "correction_evidence": {
+    "header": "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/shared/bcrypt.h",
+    "line": 1022,
+    "BCRYPT_SHA256_ALG_HANDLE": "0x00000041",
+    "abc_probe_status": "0x0",
+    "abc_sha256": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+  },
+  "addon_affected": false,
+  "reason": "C++ addon already uses the SDK BCRYPT_SHA256_ALG_HANDLE macro, not the mistaken Python literal. No addon/package changes required.",
+  "game_started": false
+}

@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\51_2t_w3\\builds\\base\\D3D12MeshletRender.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\51_2t_w3\\builds\\base\\D3D12MeshletRender.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\51_2t_w3\\builds\\base",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\51_2t_w3\\builds\\base\\D3D12MeshletRender.exe",
+  "executable_sha256": "4466d1b19520e4029f88626d407a6fd94c3044a27b851f5a8d94399a04d9f8b3",
+  "pid": 16788,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\51_2t_w3\\builds\\base\\D3D12MeshletRender.exe",
+  "returncode": 0
+}

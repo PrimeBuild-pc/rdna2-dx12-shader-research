@@ -1,0 +1,18 @@
+{
+  "args": [
+    "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+    "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\T_UC_20260907_124331\\src\\D3D12HDR.vcxproj",
+    "/p:Configuration=Release",
+    "/p:Platform=x64",
+    "/p:PlatformToolset=v145",
+    "/v:minimal",
+    "/nologo"
+  ],
+  "command_line": "\"C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe\" C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\T_UC_20260907_124331\\src\\D3D12HDR.vcxproj /p:Configuration=Release /p:Platform=x64 /p:PlatformToolset=v145 /v:minimal /nologo",
+  "cwd": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\T_UC_20260907_124331\\src",
+  "requested_executable": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "executable_sha256": "70838f9b80e04f79f2699e34f1ca8966e42c9a39a0383678c75bef459ec5a098",
+  "pid": 6052,
+  "actual_executable": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+  "returncode": 0
+}

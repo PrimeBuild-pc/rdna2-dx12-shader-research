@@ -1,0 +1,3800 @@
+{
+ "AdaptExposureCS_main__all_unroll": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "AdaptExposureCS_main__L0_unroll": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "AdaptExposureCS_main__all_loop": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "0a47da7f70e876a6",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "AdaptExposureCS_main__L0_loop": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "AdaptExposureCS_main__all_unroll4": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "8a2a5c6d937a52f3",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "AdaptExposureCS_main__L0_unroll4": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "AdaptExposureCS_main__wave32": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "329c511d56576f71",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "AdaptExposureCS_main__wave64": {
+  "shader": "AdaptExposureCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "a9de74790bc2b43b",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "AoPrepareDepthBuffers1CS_main__wave32": {
+  "shader": "AoPrepareDepthBuffers1CS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "a5794864e45b4b77",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "AoPrepareDepthBuffers1CS_main__wave64": {
+  "shader": "AoPrepareDepthBuffers1CS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7f83412714067da1",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "AoPrepareDepthBuffers2CS_main__wave32": {
+  "shader": "AoPrepareDepthBuffers2CS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "276650741080dff5",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "AoPrepareDepthBuffers2CS_main__wave64": {
+  "shader": "AoPrepareDepthBuffers2CS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "38f1a35b36849ee9",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ApplyBloomCS_main__wave32": {
+  "shader": "ApplyBloomCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "f864477e63bb0d46",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ApplyBloomCS_main__wave64": {
+  "shader": "ApplyBloomCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "bb4f78e1756b9de9",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "AverageLumaCS_main__wave32": {
+  "shader": "AverageLumaCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "ca9013a1bde2201b",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "AverageLumaCS_main__wave64": {
+  "shader": "AverageLumaCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "80679a8e053498b8",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "Bitonic32InnerSortCS_main__all_unroll": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "Bitonic32InnerSortCS_main__L0_unroll": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "Bitonic32InnerSortCS_main__all_loop": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "5f09ff690563969e",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32InnerSortCS_main__L0_loop": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "Bitonic32InnerSortCS_main__all_unroll4": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "aab2dc52d6286a0b",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32InnerSortCS_main__L0_unroll4": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "Bitonic32InnerSortCS_main__wave32": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "8377d201d9c02c88",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32InnerSortCS_main__wave64": {
+  "shader": "Bitonic32InnerSortCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "762433b82e676080",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32OuterSortCS_main__wave32": {
+  "shader": "Bitonic32OuterSortCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "97863ee31f3cb828",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32OuterSortCS_main__wave64": {
+  "shader": "Bitonic32OuterSortCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7832493bd44707ba",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32OuterSortCS_main__tg32x1": {
+  "shader": "Bitonic32OuterSortCS_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "08f4c1dd4cc5077d",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "Bitonic32OuterSortCS_main__tg128x1": {
+  "shader": "Bitonic32OuterSortCS_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "2095cb27b440a2c4",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "Bitonic32OuterSortCS_main__tg256x1": {
+  "shader": "Bitonic32OuterSortCS_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "1b00362da920c8a9",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "Bitonic32PreSortCS_main__all_unroll": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "Bitonic32PreSortCS_main__L0_unroll": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "Bitonic32PreSortCS_main__L1_unroll": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "L1_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "Bitonic32PreSortCS_main__all_loop": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "196ddde4912b3f49",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32PreSortCS_main__L0_loop": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "L0_loop",
+  "status": "dup_dxil",
+  "dup_of": "all_loop"
+ },
+ "Bitonic32PreSortCS_main__L1_loop": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "L1_loop",
+  "status": "dup_dxil",
+  "dup_of": "default"
+ },
+ "Bitonic32PreSortCS_main__all_unroll4": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "6c8419b6225fc917",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32PreSortCS_main__L0_unroll4": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_dxil",
+  "dup_of": "all_unroll4"
+ },
+ "Bitonic32PreSortCS_main__L1_unroll4": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "L1_unroll4",
+  "status": "dup_dxil",
+  "dup_of": "default"
+ },
+ "Bitonic32PreSortCS_main__wave32": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "b476c1c9cc5438fb",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "Bitonic32PreSortCS_main__wave64": {
+  "shader": "Bitonic32PreSortCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "028c7dfce9499aeb",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicIndirectArgsCS_main__all_unroll": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "all_unroll",
+  "status": "dxc_fail",
+  "log": " Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat this as warning.\n        uint CompleteGroups = (List"
+ },
+ "BitonicIndirectArgsCS_main__L0_unroll": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll"
+ },
+ "BitonicIndirectArgsCS_main__all_loop": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "bb37dc51dd039d41",
+  "tg": [
+   22,
+   1,
+   1
+  ],
+  "dims": [
+   47662,
+   1,
+   1
+  ]
+ },
+ "BitonicIndirectArgsCS_main__L0_loop": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "BitonicIndirectArgsCS_main__all_unroll4": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "4e1fc71f2e2fdc53",
+  "tg": [
+   22,
+   1,
+   1
+  ],
+  "dims": [
+   47662,
+   1,
+   1
+  ]
+ },
+ "BitonicIndirectArgsCS_main__L0_unroll4": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "BitonicIndirectArgsCS_main__wave32": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "1d9135045bbb017a",
+  "tg": [
+   22,
+   1,
+   1
+  ],
+  "dims": [
+   47662,
+   1,
+   1
+  ]
+ },
+ "BitonicIndirectArgsCS_main__wave64": {
+  "shader": "BitonicIndirectArgsCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "2ea4ff0848d39637",
+  "tg": [
+   22,
+   1,
+   1
+  ],
+  "dims": [
+   47662,
+   1,
+   1
+  ]
+ },
+ "BitonicInnerSortCS_main__all_unroll": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "BitonicInnerSortCS_main__L0_unroll": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "BitonicInnerSortCS_main__all_loop": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "48042c20e9bb79a5",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicInnerSortCS_main__L0_loop": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "BitonicInnerSortCS_main__all_unroll4": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "0117a6a681184f6f",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicInnerSortCS_main__L0_unroll4": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "BitonicInnerSortCS_main__wave32": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "feddb995f9536ea0",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicInnerSortCS_main__wave64": {
+  "shader": "BitonicInnerSortCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "07f43e401445ee01",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicOuterSortCS_main__wave32": {
+  "shader": "BitonicOuterSortCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "2f34c5634ca920b8",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicOuterSortCS_main__wave64": {
+  "shader": "BitonicOuterSortCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "3a16ccdf27396515",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicOuterSortCS_main__tg32x1": {
+  "shader": "BitonicOuterSortCS_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "bc2134a2c5359375",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "BitonicOuterSortCS_main__tg128x1": {
+  "shader": "BitonicOuterSortCS_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "4fbc8366cfd42d9f",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "BitonicOuterSortCS_main__tg256x1": {
+  "shader": "BitonicOuterSortCS_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "852f7b6f14200b41",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "BitonicPreSortCS_main__all_unroll": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "BitonicPreSortCS_main__L0_unroll": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "BitonicPreSortCS_main__L1_unroll": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "L1_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "BitonicPreSortCS_main__all_loop": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "29ab2fdc5343783b",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicPreSortCS_main__L0_loop": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "L0_loop",
+  "status": "dxc_fail",
+  "log": "oop. Loop bound could not be deduced at compile time. Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat"
+ },
+ "BitonicPreSortCS_main__L1_loop": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "L1_loop",
+  "status": "ok",
+  "dxil_sha": "96090fda8a5a9467",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicPreSortCS_main__all_unroll4": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "b5daf75531413846",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicPreSortCS_main__L0_unroll4": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_dxil",
+  "dup_of": "all_unroll4"
+ },
+ "BitonicPreSortCS_main__L1_unroll4": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "L1_unroll4",
+  "status": "ok",
+  "dxil_sha": "e20c710a747a2298",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicPreSortCS_main__wave32": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "11e7aab133d86593",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BitonicPreSortCS_main__wave64": {
+  "shader": "BitonicPreSortCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "5eb366bdf3be2376",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleHdrCS_main__wave32": {
+  "shader": "BloomExtractAndDownsampleHdrCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "34098cdca26e8088",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleHdrCS_main__wave64": {
+  "shader": "BloomExtractAndDownsampleHdrCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "6db857fc4a3ab56e",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleHdrCS_main__tg16x16": {
+  "shader": "BloomExtractAndDownsampleHdrCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "8b28c2c985d8b76a",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleHdrCS_main__tg32x8": {
+  "shader": "BloomExtractAndDownsampleHdrCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "c5f609d42cebe2e8",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleLdrCS_main__wave32": {
+  "shader": "BloomExtractAndDownsampleLdrCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "22f727d6cfa24436",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleLdrCS_main__wave64": {
+  "shader": "BloomExtractAndDownsampleLdrCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7439ee454ab891bc",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleLdrCS_main__tg16x16": {
+  "shader": "BloomExtractAndDownsampleLdrCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "75154a167d958902",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "BloomExtractAndDownsampleLdrCS_main__tg32x8": {
+  "shader": "BloomExtractAndDownsampleLdrCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "050eebb93ff1641d",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "BlurCS_main__wave32": {
+  "shader": "BlurCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "0b5204bd026abe1c",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "BlurCS_main__wave64": {
+  "shader": "BlurCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "fb016495e7626ad9",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "CameraMotionBlurPrePassCS_main__wave32": {
+  "shader": "CameraMotionBlurPrePassCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "f722a385ea84b11b",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "CameraMotionBlurPrePassCS_main__wave64": {
+  "shader": "CameraMotionBlurPrePassCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "e0372caf714edeb1",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "CameraVelocityCS_main__wave32": {
+  "shader": "CameraVelocityCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "41f96e1ca45e449d",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "CameraVelocityCS_main__wave64": {
+  "shader": "CameraVelocityCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "6595d7e2a5b9f31c",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "CameraVelocityCS_main__tg16x16": {
+  "shader": "CameraVelocityCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "4be9b2e14bf51fc0",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "CameraVelocityCS_main__tg32x8": {
+  "shader": "CameraVelocityCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "250c4573b83a6d07",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "CopyBackPostBufferCS_main__wave32": {
+  "shader": "CopyBackPostBufferCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "1fa3020ececa6083",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "CopyBackPostBufferCS_main__wave64": {
+  "shader": "CopyBackPostBufferCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "3fe3b714b9a3e64b",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "CopyBackPostBufferCS_main__tg16x16": {
+  "shader": "CopyBackPostBufferCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "cc8f3fc921d4a259",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "CopyBackPostBufferCS_main__tg32x8": {
+  "shader": "CopyBackPostBufferCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "5b4d84a0481b77c9",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "DebugDrawHistogramCS_main__all_unroll": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "all_unroll",
+  "status": "ok",
+  "dxil_sha": "e6ae4e7ee11cb357",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "DebugDrawHistogramCS_main__L0_unroll": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll"
+ },
+ "DebugDrawHistogramCS_main__all_loop": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "35d13e286aae76da",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "DebugDrawHistogramCS_main__L0_loop": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "DebugDrawHistogramCS_main__all_unroll4": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "all_unroll4",
+  "status": "dup_dxil",
+  "dup_of": "all_unroll"
+ },
+ "DebugDrawHistogramCS_main__L0_unroll4": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "DebugDrawHistogramCS_main__wave32": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "5e18f8b0546f4fa3",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "DebugDrawHistogramCS_main__wave64": {
+  "shader": "DebugDrawHistogramCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7d00abcb7a20941a",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "DebugLuminanceHdrCS_main__wave32": {
+  "shader": "DebugLuminanceHdrCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "52642e34bb7e574c",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DebugLuminanceHdrCS_main__wave64": {
+  "shader": "DebugLuminanceHdrCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "43623fc3a3c015ce",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DebugLuminanceHdrCS_main__tg16x16": {
+  "shader": "DebugLuminanceHdrCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "889cee8714a75816",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "DebugLuminanceHdrCS_main__tg32x8": {
+  "shader": "DebugLuminanceHdrCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "f9a1bac14e99231d",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "DebugLuminanceLdrCS_main__wave32": {
+  "shader": "DebugLuminanceLdrCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "f18ddb35290585db",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DebugLuminanceLdrCS_main__wave64": {
+  "shader": "DebugLuminanceLdrCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7becf31b04f808dc",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DebugLuminanceLdrCS_main__tg16x16": {
+  "shader": "DebugLuminanceLdrCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "3ba2f070c35540ab",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "DebugLuminanceLdrCS_main__tg32x8": {
+  "shader": "DebugLuminanceLdrCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "6dfa32e8e36853fc",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "DebugSSAOCS_main__wave32": {
+  "shader": "DebugSSAOCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "4608c702905ac6c4",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DebugSSAOCS_main__wave64": {
+  "shader": "DebugSSAOCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "c9cf143081d1c20d",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DebugSSAOCS_main__tg16x16": {
+  "shader": "DebugSSAOCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "bc5e818f642c6fe2",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "DebugSSAOCS_main__tg32x8": {
+  "shader": "DebugSSAOCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "32fa3b78c477466c",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "DoFCombineCS_main__wave32": {
+  "shader": "DoFCombineCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "b8eb86e02ccb18a7",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "DoFCombineCS_main__wave64": {
+  "shader": "DoFCombineCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7daf8c73b5721bfa",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "DoFMedianFilterCS_main__wave32": {
+  "shader": "DoFMedianFilterCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "23a65fee5c30d65a",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFMedianFilterCS_main__wave64": {
+  "shader": "DoFMedianFilterCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "622377e5955a0d20",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFMedianFilterFixupCS_main__wave32": {
+  "shader": "DoFMedianFilterFixupCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "a9e6822b769e98f0",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFMedianFilterFixupCS_main__wave64": {
+  "shader": "DoFMedianFilterFixupCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "3582751dec6f5178",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass1CS_main__all_unroll": {
+  "shader": "DoFPass1CS_main",
+  "tf": "all_unroll",
+  "status": "ok",
+  "dxil_sha": "e477411fa3dd32fd",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass1CS_main__L0_unroll": {
+  "shader": "DoFPass1CS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll"
+ },
+ "DoFPass1CS_main__all_loop": {
+  "shader": "DoFPass1CS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "bde40b7296217208",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass1CS_main__L0_loop": {
+  "shader": "DoFPass1CS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "DoFPass1CS_main__all_unroll4": {
+  "shader": "DoFPass1CS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "65cdc3feb93a8cae",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass1CS_main__L0_unroll4": {
+  "shader": "DoFPass1CS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "DoFPass1CS_main__wave32": {
+  "shader": "DoFPass1CS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "f93569806f7d6a6f",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass1CS_main__wave64": {
+  "shader": "DoFPass1CS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "711d388802217fa2",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__all_unroll": {
+  "shader": "DoFPass2CS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "DoFPass2CS_main__L0_unroll": {
+  "shader": "DoFPass2CS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "DoFPass2CS_main__L1_unroll": {
+  "shader": "DoFPass2CS_main",
+  "tf": "L1_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "DoFPass2CS_main__all_loop": {
+  "shader": "DoFPass2CS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "137ffd5e61d5d8d7",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__L0_loop": {
+  "shader": "DoFPass2CS_main",
+  "tf": "L0_loop",
+  "status": "ok",
+  "dxil_sha": "7aa8ee7b87700dea",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__L1_loop": {
+  "shader": "DoFPass2CS_main",
+  "tf": "L1_loop",
+  "status": "ok",
+  "dxil_sha": "5a533bafb8d63159",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__all_unroll4": {
+  "shader": "DoFPass2CS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "9ab9fb7cc7c85aca",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__L0_unroll4": {
+  "shader": "DoFPass2CS_main",
+  "tf": "L0_unroll4",
+  "status": "ok",
+  "dxil_sha": "c2fe6fe6c635f969",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__L1_unroll4": {
+  "shader": "DoFPass2CS_main",
+  "tf": "L1_unroll4",
+  "status": "ok",
+  "dxil_sha": "0183177874e005ae",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__wave32": {
+  "shader": "DoFPass2CS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "b9acf45f9cb3bbca",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2CS_main__wave64": {
+  "shader": "DoFPass2CS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "82175249e1de3091",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__all_unroll": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "DoFPass2FastCS_main__L0_unroll": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "DoFPass2FastCS_main__L1_unroll": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "L1_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "DoFPass2FastCS_main__all_loop": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "13c1597ac9432d3b",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__L0_loop": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "L0_loop",
+  "status": "ok",
+  "dxil_sha": "dc5f8c09034a13f9",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__L1_loop": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "L1_loop",
+  "status": "ok",
+  "dxil_sha": "357941b0e8d8be94",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__all_unroll4": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "a9e3fcaf6901cfdd",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__L0_unroll4": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "L0_unroll4",
+  "status": "ok",
+  "dxil_sha": "7a316b904d423dc8",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__L1_unroll4": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "L1_unroll4",
+  "status": "ok",
+  "dxil_sha": "a0bd3b5ff2c5d927",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__wave32": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "0056dff0cb941540",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FastCS_main__wave64": {
+  "shader": "DoFPass2FastCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "5ad4cfbce2741e10",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FixupCS_main__wave32": {
+  "shader": "DoFPass2FixupCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "80852675b6e18517",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPass2FixupCS_main__wave64": {
+  "shader": "DoFPass2FixupCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "d9ccee30128524b6",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPreFilterCS_main__wave32": {
+  "shader": "DoFPreFilterCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "5f8297016b37d1ab",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPreFilterCS_main__wave64": {
+  "shader": "DoFPreFilterCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "880e64e31f8591b9",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPreFilterFastCS_main__wave32": {
+  "shader": "DoFPreFilterFastCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "5a30a34bd3381553",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPreFilterFastCS_main__wave64": {
+  "shader": "DoFPreFilterFastCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7db15b47a176f9b9",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPreFilterFixupCS_main__wave32": {
+  "shader": "DoFPreFilterFixupCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "65e50a112c431811",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFPreFilterFixupCS_main__wave64": {
+  "shader": "DoFPreFilterFixupCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "75df2a34fbf1de5d",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFTilePassCS_main__wave32": {
+  "shader": "DoFTilePassCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "1551c6d86db95154",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFTilePassCS_main__wave64": {
+  "shader": "DoFTilePassCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "d299841aa0b37ee7",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFTilePassFixupCS_main__wave32": {
+  "shader": "DoFTilePassFixupCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "81923b0c222818d3",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DoFTilePassFixupCS_main__wave64": {
+  "shader": "DoFTilePassFixupCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "16543f7df5d68a6b",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DownsampleBloomAllCS_main__wave32": {
+  "shader": "DownsampleBloomAllCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "e4e4a65452aa33fa",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DownsampleBloomAllCS_main__wave64": {
+  "shader": "DownsampleBloomAllCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "41b894cf3efe149c",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DownsampleBloomCS_main__wave32": {
+  "shader": "DownsampleBloomCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "3c9c6999f04316c7",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DownsampleBloomCS_main__wave64": {
+  "shader": "DownsampleBloomCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "57b3989b440b4ae8",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "DynamicIndexTest_main__all_unroll": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "all_unroll",
+  "status": "ok",
+  "dxil_sha": "3e7bda98a47761c9",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "DynamicIndexTest_main__L0_unroll": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll"
+ },
+ "DynamicIndexTest_main__all_loop": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "50c7d033b6c95369",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "DynamicIndexTest_main__L0_loop": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "DynamicIndexTest_main__all_unroll4": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "all_unroll4",
+  "status": "dup_dxil",
+  "dup_of": "all_unroll"
+ },
+ "DynamicIndexTest_main__L0_unroll4": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "DynamicIndexTest_main__wave32": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "c493be1b0edecdc2",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "DynamicIndexTest_main__wave64": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "5b67ec2c01d3a244",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "DynamicIndexTest_main__tg32x1": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "f1e888ad1db839f4",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "DynamicIndexTest_main__tg128x1": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "9223530933f1e506",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "DynamicIndexTest_main__tg256x1": {
+  "shader": "DynamicIndexTest_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "d72878521e1cd7b1",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "ExtractLumaCS_main__wave32": {
+  "shader": "ExtractLumaCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "8c24f113f626ae70",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ExtractLumaCS_main__wave64": {
+  "shader": "ExtractLumaCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "110be94fda50e62e",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ExtractLumaCS_main__tg16x16": {
+  "shader": "ExtractLumaCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "880afede0f2421c8",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "ExtractLumaCS_main__tg32x8": {
+  "shader": "ExtractLumaCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "4bcfa094c5b9786e",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "FXAAResolveWorkQueueCS_main__wave32": {
+  "shader": "FXAAResolveWorkQueueCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "8f2fb6fff3fb2e56",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "FXAAResolveWorkQueueCS_main__wave64": {
+  "shader": "FXAAResolveWorkQueueCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "642b3ade4b3eb327",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "LinearizeDepthCS_main__wave32": {
+  "shader": "LinearizeDepthCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "d0c864978367c852",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "LinearizeDepthCS_main__wave64": {
+  "shader": "LinearizeDepthCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "90654307fda696f2",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "MotionBlurFinalPassCS_main__all_unroll": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "all_unroll",
+  "status": "dxc_fail",
+  "log": "plicit count. Use '-HV 2016' to treat this as warning.\n            accum += PrepBuffer.SampleLevel(LinearSampler, uv1 +="
+ },
+ "MotionBlurFinalPassCS_main__L0_unroll": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll"
+ },
+ "MotionBlurFinalPassCS_main__all_loop": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "78de8fb0613e99fd",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "MotionBlurFinalPassCS_main__L0_loop": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "MotionBlurFinalPassCS_main__all_unroll4": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "3e7eee4ec60da2c1",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "MotionBlurFinalPassCS_main__L0_unroll4": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "MotionBlurFinalPassCS_main__wave32": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "c8b39e6e5b66d0ee",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "MotionBlurFinalPassCS_main__wave64": {
+  "shader": "MotionBlurFinalPassCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "b7d5a062d283477d",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "MotionBlurPrePassCS_main__wave32": {
+  "shader": "MotionBlurPrePassCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "2ab6d0e12a0fc991",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "MotionBlurPrePassCS_main__wave64": {
+  "shader": "MotionBlurPrePassCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "143888699f6e0b55",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ParticleBinCullingCS_main__all_unroll": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "all_unroll",
+  "status": "dxc_fail",
+  "log": " at compile time. Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat this as warning.\n                ui"
+ },
+ "ParticleBinCullingCS_main__L0_unroll": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "L0_unroll",
+  "status": "dxc_fail",
+  "log": "l(n)] to give an explicit count. Use '-HV 2016' to treat this as warning.\n        uint SortKey = g_LargeBinParticles[Lar"
+ },
+ "ParticleBinCullingCS_main__L1_unroll": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "L1_unroll",
+  "status": "dxc_fail",
+  "log": "d at compile time. Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat this as warning.\n            for ("
+ },
+ "ParticleBinCullingCS_main__all_loop": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "9def029e329e1664",
+  "tg": [
+   4,
+   4,
+   1
+  ],
+  "dims": [
+   256,
+   256,
+   1
+  ]
+ },
+ "ParticleBinCullingCS_main__L0_loop": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "L0_loop",
+  "status": "ok",
+  "dxil_sha": "cf6dfd6c20be3e6f",
+  "tg": [
+   4,
+   4,
+   1
+  ],
+  "dims": [
+   256,
+   256,
+   1
+  ]
+ },
+ "ParticleBinCullingCS_main__L1_loop": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "L1_loop",
+  "status": "ok",
+  "dxil_sha": "b47427845631092d",
+  "tg": [
+   4,
+   4,
+   1
+  ],
+  "dims": [
+   256,
+   256,
+   1
+  ]
+ },
+ "ParticleBinCullingCS_main__all_unroll4": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "23156f464745f835",
+  "tg": [
+   4,
+   4,
+   1
+  ],
+  "dims": [
+   256,
+   256,
+   1
+  ]
+ },
+ "ParticleBinCullingCS_main__L0_unroll4": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "L0_unroll4",
+  "status": "ok",
+  "dxil_sha": "a884a54b39059a6e",
+  "tg": [
+   4,
+   4,
+   1
+  ],
+  "dims": [
+   256,
+   256,
+   1
+  ]
+ },
+ "ParticleBinCullingCS_main__L1_unroll4": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "L1_unroll4",
+  "status": "ok",
+  "dxil_sha": "5e6a2728da5d40d4",
+  "tg": [
+   4,
+   4,
+   1
+  ],
+  "dims": [
+   256,
+   256,
+   1
+  ]
+ },
+ "ParticleBinCullingCS_main__wave32": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "wave32",
+  "status": "no_change"
+ },
+ "ParticleBinCullingCS_main__wave64": {
+  "shader": "ParticleBinCullingCS_main",
+  "tf": "wave64",
+  "status": "no_change"
+ },
+ "ParticleDepthBoundsCS_main__wave32": {
+  "shader": "ParticleDepthBoundsCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "0e4d5b7351ecc456",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ParticleDepthBoundsCS_main__wave64": {
+  "shader": "ParticleDepthBoundsCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "b18392137823ea71",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ParticleDispatchIndirectArgsCS_main__wave32": {
+  "shader": "ParticleDispatchIndirectArgsCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "3cb608c8429d52ea",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "ParticleDispatchIndirectArgsCS_main__wave64": {
+  "shader": "ParticleDispatchIndirectArgsCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "4856ef9add4ccc6b",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "ParticleDispatchIndirectArgsCS_main__tg32x1": {
+  "shader": "ParticleDispatchIndirectArgsCS_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "30fef48eb1ad3123",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "ParticleDispatchIndirectArgsCS_main__tg128x1": {
+  "shader": "ParticleDispatchIndirectArgsCS_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "b4db0a5691fd3584",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "ParticleDispatchIndirectArgsCS_main__tg256x1": {
+  "shader": "ParticleDispatchIndirectArgsCS_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "248968a4b4e7050b",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "ParticleFinalDispatchIndirectArgsCS_main__wave32": {
+  "shader": "ParticleFinalDispatchIndirectArgsCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "ecb6ce73e8e6666a",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "ParticleFinalDispatchIndirectArgsCS_main__wave64": {
+  "shader": "ParticleFinalDispatchIndirectArgsCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "f937d1f68a15fe3a",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "ParticleFinalDispatchIndirectArgsCS_main__tg32x1": {
+  "shader": "ParticleFinalDispatchIndirectArgsCS_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "762e53f7d0b0bdfb",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "ParticleFinalDispatchIndirectArgsCS_main__tg128x1": {
+  "shader": "ParticleFinalDispatchIndirectArgsCS_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "05d8a0ec841dad36",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "ParticleFinalDispatchIndirectArgsCS_main__tg256x1": {
+  "shader": "ParticleFinalDispatchIndirectArgsCS_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "1c0304afd45c5104",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__all_unroll": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "all_unroll",
+  "status": "dxc_fail",
+  "log": "ed at compile time. Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat this as warning.\n            uint"
+ },
+ "ParticleLargeBinCullingCS_main__L0_unroll": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "L0_unroll",
+  "status": "dxc_fail",
+  "log": "mpile time. Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat this as warning.\n        for (uint x = Mi"
+ },
+ "ParticleLargeBinCullingCS_main__L1_unroll": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "L1_unroll",
+  "status": "dxc_fail",
+  "log": "ed at compile time. Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat this as warning.\n            uint"
+ },
+ "ParticleLargeBinCullingCS_main__all_loop": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "0e68e14a129b1458",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__L0_loop": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "L0_loop",
+  "status": "ok",
+  "dxil_sha": "c9388c36a7701072",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__L1_loop": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "L1_loop",
+  "status": "ok",
+  "dxil_sha": "941519c8b109b384",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__all_unroll4": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "3e24e0436246c293",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__L0_unroll4": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "L0_unroll4",
+  "status": "ok",
+  "dxil_sha": "9914830897027146",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__L1_unroll4": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "L1_unroll4",
+  "status": "ok",
+  "dxil_sha": "26bcc5b81cb5759c",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__wave32": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "ac7d1e31c6a54a05",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__wave64": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "2dfb281205bbfecd",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__tg32x1": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "4edf6634f23dec2f",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__tg128x1": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "63df348c1b242f0c",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "ParticleLargeBinCullingCS_main__tg256x1": {
+  "shader": "ParticleLargeBinCullingCS_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "55988cdac5c68649",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "ParticlePreSortCS_main__all_unroll": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "all_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "ParticlePreSortCS_main__L0_unroll": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "ParticlePreSortCS_main__L1_unroll": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "L1_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "default"
+ },
+ "ParticlePreSortCS_main__all_loop": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "28fef283922d5400",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "ParticlePreSortCS_main__L0_loop": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "L0_loop",
+  "status": "dup_dxil",
+  "dup_of": "all_loop"
+ },
+ "ParticlePreSortCS_main__L1_loop": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "L1_loop",
+  "status": "dup_dxil",
+  "dup_of": "default"
+ },
+ "ParticlePreSortCS_main__all_unroll4": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "70a4a906d6d9f855",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "ParticlePreSortCS_main__L0_unroll4": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_dxil",
+  "dup_of": "all_unroll4"
+ },
+ "ParticlePreSortCS_main__L1_unroll4": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "L1_unroll4",
+  "status": "dup_dxil",
+  "dup_of": "default"
+ },
+ "ParticlePreSortCS_main__wave32": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "8807d7509a07b8fe",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "ParticlePreSortCS_main__wave64": {
+  "shader": "ParticlePreSortCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "f9f1bc0f135feb09",
+  "tg": [
+   1024,
+   1,
+   1
+  ],
+  "dims": [
+   1024,
+   1,
+   1
+  ]
+ },
+ "ParticleSortIndirectArgsCS_main__wave32": {
+  "shader": "ParticleSortIndirectArgsCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "6ba071402eb255df",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "ParticleSortIndirectArgsCS_main__wave64": {
+  "shader": "ParticleSortIndirectArgsCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "51666c26c6f7f99f",
+  "tg": [
+   1,
+   1,
+   1
+  ],
+  "dims": [
+   65535,
+   1,
+   1
+  ]
+ },
+ "ParticleSpawnCS_main__wave32": {
+  "shader": "ParticleSpawnCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "28b5290048ca744d",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleSpawnCS_main__wave64": {
+  "shader": "ParticleSpawnCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "a1b9f979b7297b95",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleSpawnCS_main__tg32x1": {
+  "shader": "ParticleSpawnCS_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "a4255079e0b8318a",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "ParticleSpawnCS_main__tg128x1": {
+  "shader": "ParticleSpawnCS_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "71b39b81152447c2",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "ParticleSpawnCS_main__tg256x1": {
+  "shader": "ParticleSpawnCS_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "52b5635f936f0c83",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "ParticleUpdateCS_main__wave32": {
+  "shader": "ParticleUpdateCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "5b872db26f4bf326",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleUpdateCS_main__wave64": {
+  "shader": "ParticleUpdateCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "43d48a230353cc74",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "ParticleUpdateCS_main__tg32x1": {
+  "shader": "ParticleUpdateCS_main",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "9d6c0e0b731cbdf8",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "ParticleUpdateCS_main__tg128x1": {
+  "shader": "ParticleUpdateCS_main",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "a916275f107cbcff",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "ParticleUpdateCS_main__tg256x1": {
+  "shader": "ParticleUpdateCS_main",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "14e187834129964a",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "ResolveTAACS_main__wave32": {
+  "shader": "ResolveTAACS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "396278c4be3604ec",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ResolveTAACS_main__wave64": {
+  "shader": "ResolveTAACS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "ea5390c5fe6cbfcc",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ResolveTAACS_main__tg16x16": {
+  "shader": "ResolveTAACS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "d843a764983069f2",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "ResolveTAACS_main__tg32x8": {
+  "shader": "ResolveTAACS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "8327fc8fa5e411c6",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "TemporalBlendCS_main__all_unroll": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "all_unroll",
+  "status": "dxc_fail",
+  "log": "p. Loop bound could not be deduced at compile time. Use [unroll(n)] to give an explicit count. Use '-HV 2016' to treat t"
+ },
+ "TemporalBlendCS_main__L0_unroll": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "L0_unroll",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll"
+ },
+ "TemporalBlendCS_main__all_loop": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "all_loop",
+  "status": "ok",
+  "dxil_sha": "5ec75477b7fd5b89",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "TemporalBlendCS_main__L0_loop": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "L0_loop",
+  "status": "dup_hlsl",
+  "dup_of": "all_loop"
+ },
+ "TemporalBlendCS_main__all_unroll4": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "all_unroll4",
+  "status": "ok",
+  "dxil_sha": "af5eeb3646492e56",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "TemporalBlendCS_main__L0_unroll4": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "L0_unroll4",
+  "status": "dup_hlsl",
+  "dup_of": "all_unroll4"
+ },
+ "TemporalBlendCS_main__wave32": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "055c65b697463525",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "TemporalBlendCS_main__wave64": {
+  "shader": "TemporalBlendCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "b986bdd6884982ac",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ToneMapCS_main__wave32": {
+  "shader": "ToneMapCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "762a0e7f95e6f3ae",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ToneMapCS_main__wave64": {
+  "shader": "ToneMapCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "7bc5fba146c3ec22",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "ToneMapCS_main__tg16x16": {
+  "shader": "ToneMapCS_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "df86f4eb944ac5e0",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "ToneMapCS_main__tg32x8": {
+  "shader": "ToneMapCS_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "183b1ce44505b901",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ },
+ "UpsampleAndBlurCS_main__wave32": {
+  "shader": "UpsampleAndBlurCS_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "acb52e69cd3dfde2",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "UpsampleAndBlurCS_main__wave64": {
+  "shader": "UpsampleAndBlurCS_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "61e7e650c60610d6",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "computeskinning_MainCS__wave32": {
+  "shader": "computeskinning_MainCS",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "91d1cf1f116aa47a",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "computeskinning_MainCS__wave64": {
+  "shader": "computeskinning_MainCS",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "ef5161911400020b",
+  "tg": [
+   64,
+   1,
+   1
+  ],
+  "dims": [
+   16384,
+   1,
+   1
+  ]
+ },
+ "computeskinning_MainCS__tg32x1": {
+  "shader": "computeskinning_MainCS",
+  "tf": "tg32x1",
+  "status": "ok",
+  "dxil_sha": "93f51ab6f7f27758",
+  "tg": [
+   32,
+   1,
+   1
+  ],
+  "dims": [
+   32768,
+   1,
+   1
+  ]
+ },
+ "computeskinning_MainCS__tg128x1": {
+  "shader": "computeskinning_MainCS",
+  "tf": "tg128x1",
+  "status": "ok",
+  "dxil_sha": "eb290f2f8ee04d40",
+  "tg": [
+   128,
+   1,
+   1
+  ],
+  "dims": [
+   8192,
+   1,
+   1
+  ]
+ },
+ "computeskinning_MainCS__tg256x1": {
+  "shader": "computeskinning_MainCS",
+  "tf": "tg256x1",
+  "status": "ok",
+  "dxil_sha": "724d9e756dc80d9a",
+  "tg": [
+   256,
+   1,
+   1
+  ],
+  "dims": [
+   4096,
+   1,
+   1
+  ]
+ },
+ "debug_overlay_main__wave32": {
+  "shader": "debug_overlay_main",
+  "tf": "wave32",
+  "status": "ok",
+  "dxil_sha": "961a5363ba52df33",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "debug_overlay_main__wave64": {
+  "shader": "debug_overlay_main",
+  "tf": "wave64",
+  "status": "ok",
+  "dxil_sha": "f3d5a6da5ae032d8",
+  "tg": [
+   8,
+   8,
+   1
+  ],
+  "dims": [
+   128,
+   128,
+   1
+  ]
+ },
+ "debug_overlay_main__tg16x16": {
+  "shader": "debug_overlay_main",
+  "tf": "tg16x16",
+  "status": "ok",
+  "dxil_sha": "0227736de8a1c430",
+  "tg": [
+   16,
+   16,
+   1
+  ],
+  "dims": [
+   64,
+   64,
+   1
+  ]
+ },
+ "debug_overlay_main__tg32x8": {
+  "shader": "debug_overlay_main",
+  "tf": "tg32x8",
+  "status": "ok",
+  "dxil_sha": "f096de8816794cd9",
+  "tg": [
+   32,
+   8,
+   1
+  ],
+  "dims": [
+   32,
+   128,
+   1
+  ]
+ }
+}

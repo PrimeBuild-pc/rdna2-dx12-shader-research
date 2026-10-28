@@ -1,0 +1,135 @@
+process,pid,tid,samples,pct_of_process,thread_start,context_switches_in,top_modules
+FortniteClient-Win64-Shipping.exe,2980,7080,632329,22.103,"Unknown""!0x00007ff605c883ee",37508,"ntoskrnl.exe:531003; Unknown"":35193; dxgkrnl.sys:13965; amdxc64.dll:13438; dxgmms2.sys:10785; EasyAntiCheat_EOS.sys:7753"
+FortniteClient-Win64-Shipping.exe,2980,12440,435299,15.216,"Unknown""!0x00007ff604d30000",152273,"Unknown"":341268; ntoskrnl.exe:63627; ntdll.dll:6662; EasyAntiCheat_EOS.sys:5657; ucrtbase.dll:4492; vcruntime140.dll:4274"
+FortniteClient-Win64-Shipping.exe,2980,15168,311208,10.878,"Unknown""!0x00007ff605c883ee",82853,"Unknown"":102392; amdxc64.dll:83658; ntoskrnl.exe:76680; D3D12Core.dll:19851; ntdll.dll:6707; vcruntime140.dll:4530"
+FortniteClient-Win64-Shipping.exe,2980,15568,274996,9.612,"Unknown""!0x00007ff605c883ee",299359,"Unknown"":200253; ntoskrnl.exe:55888; EasyAntiCheat_EOS.sys:4919; vcruntime140.dll:3910; amdxc64.dll:2374; ntdll.dll:2159"
+FortniteClient-Win64-Shipping.exe,2980,14608,247353,8.646,"Unknown""!0x00007ff605c883ee",341367,"Unknown"":169856; ntoskrnl.exe:58142; EasyAntiCheat_EOS.sys:5237; vcruntime140.dll:4055; amdxc64.dll:2491; ntdll.dll:2264"
+FortniteClient-Win64-Shipping.exe,2980,17916,216090,7.553,"Unknown""!0x00007ff605c883ee",118417,"Unknown"":154989; ntoskrnl.exe:40919; vcruntime140.dll:6850; ntdll.dll:4943; EasyAntiCheat_EOS.sys:2672; ucrtbase.dll:1845"
+FortniteClient-Win64-Shipping.exe,2980,9532,181184,6.333,"Unknown""!0x00007ff605c883ee",183471,"ntoskrnl.exe:146480; Unknown"":16317; amdkmdag.sys:4519; EasyAntiCheat_EOS.sys:4487; dxgkrnl.sys:3414; D3D12Core.dll:1720"
+FortniteClient-Win64-Shipping.exe,2980,15952,71754,2.508,"Unknown""!0x000001d62492eeb4",308,"Unknown"":70431; ntoskrnl.exe:1098; amdkmdag.sys:62; win32kfull.sys:54; dxgmms2.sys:33; EasyAntiCheat_EOS.sys:27"
+FortniteClient-Win64-Shipping.exe,2980,14424,59505,2.08,"Unknown""!0x00007ff6210a82e0",487,"Unknown"":53054; ntoskrnl.exe:5950; EasyAntiCheat_EOS.sys:372; amdkmdag.sys:45; dxgmms2.sys:32; USBXHCI.SYS:17"
+FortniteClient-Win64-Shipping.exe,2980,18272,34395,1.202,"Unknown""!0x00007ff605c883ee",56271,"Unknown"":23492; ntoskrnl.exe:8556; EasyAntiCheat_EOS.sys:1047; ntdll.dll:327; vcruntime140.dll:266; amdkmdag.sys:183"
+FortniteClient-Win64-Shipping.exe,2980,7244,34377,1.202,"Unknown""!0x00007ff605c883ee",54818,"Unknown"":22061; ntoskrnl.exe:9786; EasyAntiCheat_EOS.sys:1014; ntdll.dll:336; amdkmdag.sys:323; vcruntime140.dll:245"
+FortniteClient-Win64-Shipping.exe,2980,13344,32786,1.146,"Unknown""!0x00007ff605c883ee",53372,"Unknown"":23188; ntoskrnl.exe:7505; EasyAntiCheat_EOS.sys:950; ntdll.dll:340; vcruntime140.dll:234; amdkmdag.sys:120"
+FortniteClient-Win64-Shipping.exe,2980,15808,30819,1.077,"Unknown""!0x00007ff605c883ee",55611,"Unknown"":21219; ntoskrnl.exe:7586; EasyAntiCheat_EOS.sys:1030; ntdll.dll:299; vcruntime140.dll:215; amdkmdag.sys:98"
+FortniteClient-Win64-Shipping.exe,2980,15956,30713,1.074,"Unknown""!0x00007ff605c883ee",54399,"Unknown"":21604; ntoskrnl.exe:7190; EasyAntiCheat_EOS.sys:1006; ntdll.dll:334; vcruntime140.dll:213; ucrtbase.dll:86"
+FortniteClient-Win64-Shipping.exe,2980,15604,30441,1.064,"Unknown""!0x00007ff605c883ee",54964,"Unknown"":20828; ntoskrnl.exe:7567; EasyAntiCheat_EOS.sys:1001; ntdll.dll:324; vcruntime140.dll:226; KernelBase.dll:96"
+FortniteClient-Win64-Shipping.exe,2980,14404,30009,1.049,"Unknown""!0x00007ff605c883ee",57196,"Unknown"":19330; ntoskrnl.exe:8486; EasyAntiCheat_EOS.sys:1009; ntdll.dll:303; vcruntime140.dll:228; amdkmdag.sys:152"
+FortniteClient-Win64-Shipping.exe,2980,17732,29665,1.037,"Unknown""!0x00007ff605c883ee",58814,"Unknown"":19652; ntoskrnl.exe:7873; EasyAntiCheat_EOS.sys:1041; ntdll.dll:345; vcruntime140.dll:247; amdkmdag.sys:135"
+FortniteClient-Win64-Shipping.exe,2980,4432,28599,1.0,"Unknown""!0x00007ff605c883ee",57355,"Unknown"":18911; ntoskrnl.exe:7674; EasyAntiCheat_EOS.sys:979; ntdll.dll:330; vcruntime140.dll:236; amdkmdag.sys:103"
+FortniteClient-Win64-Shipping.exe,2980,11984,27897,0.975,"Unknown""!0x00007ff605c883ee",59995,"Unknown"":17011; ntoskrnl.exe:8658; EasyAntiCheat_EOS.sys:1048; ntdll.dll:354; vcruntime140.dll:209; amdkmdag.sys:161"
+FortniteClient-Win64-Shipping.exe,2980,14288,27830,0.973,"Unknown""!0x00007ff605c883ee",62550,"Unknown"":16494; ntoskrnl.exe:9020; EasyAntiCheat_EOS.sys:1095; ntdll.dll:322; vcruntime140.dll:227; amdkmdag.sys:127"
+FortniteClient-Win64-Shipping.exe,2980,8184,26288,0.919,"Unknown""!0x00007ff605c883ee",58420,"Unknown"":16792; ntoskrnl.exe:7431; EasyAntiCheat_EOS.sys:1108; ntdll.dll:331; vcruntime140.dll:225; KernelBase.dll:93"
+FortniteClient-Win64-Shipping.exe,2980,1148,24893,0.87,"Unknown""!0x00007ff605c883ee",17271,"Unknown"":14462; ntoskrnl.exe:7442; vcruntime140.dll:1316; ntdll.dll:647; EasyAntiCheat_EOS.sys:427; ucrtbase.dll:232"
+FortniteClient-Win64-Shipping.exe,2980,11056,15721,0.55,"Unknown""!0x00007ff6210a2760",479,"Unknown"":8953; EasyAntiCheat_EOS.sys:3625; ntoskrnl.exe:3055; ntdll.dll:43; user32.dll:17; amdkmdag.sys:9"
+FortniteClient-Win64-Shipping.exe,2980,14376,6835,0.239,ucrtbase.dll!0x00007ffab946cd00,43617,"ntoskrnl.exe:4553; EasyAntiCheat_EOS.sys:646; Unknown"":467; ntdll.dll:436; CChromaEditorLibrary64.dll:252; msvcp140.dll:150"
+FortniteClient-Win64-Shipping.exe,2980,6192,3214,0.112,"Unknown""!0x00007ff605c883ee",2027,"Unknown"":2202; ntoskrnl.exe:788; EasyAntiCheat_EOS.sys:70; ucrtbase.dll:64; ntdll.dll:35; vcruntime140.dll:25"
+FortniteClient-Win64-Shipping.exe,2980,1812,2440,0.085,"Unknown""!0x00007ff605c883ee",1477,"Unknown"":1511; ntoskrnl.exe:731; EasyAntiCheat_EOS.sys:63; ucrtbase.dll:47; amdkmdag.sys:23; ntdll.dll:18"
+FortniteClient-Win64-Shipping.exe,2980,17020,2388,0.083,"Unknown""!0x00007ff605c883ee",8567,"ntoskrnl.exe:1673; Unknown"":301; EasyAntiCheat_EOS.sys:139; AudioSes.dll:84; ntdll.dll:56; vcruntime140.dll:44"
+FortniteClient-Win64-Shipping.exe,2980,4076,1767,0.062,"Unknown""!0x00007ff605c883ee",12568,"ntoskrnl.exe:1225; Unknown"":297; EasyAntiCheat_EOS.sys:180; ntdll.dll:30; kernel32.dll:14; KernelBase.dll:12"
+FortniteClient-Win64-Shipping.exe,2980,15220,1634,0.057,ucrtbase.dll!0x00007ffab94d5ac0,191,"ntoskrnl.exe:956; Unknown"":349; ntdll.dll:109; EasyAntiCheat_EOS.sys:103; KernelBase.dll:33; devobj.dll:28"
+FortniteClient-Win64-Shipping.exe,2980,4556,1271,0.044,"Unknown""!0x00007ff605c883ee",9782,"ntoskrnl.exe:933; EasyAntiCheat_EOS.sys:159; Unknown"":134; ntdll.dll:27; KernelBase.dll:16; dxgmms2.sys:2"
+FortniteClient-Win64-Shipping.exe,2980,2616,972,0.034,EOSSDK-Win64-Shipping.dll!0x00007ffa79624e94,3465,"ntoskrnl.exe:399; EOSSDK-Win64-Shipping.dll:247; Unknown"":195; EasyAntiCheat_EOS.sys:67; ntdll.dll:39; KernelBase.dll:9"
+FortniteClient-Win64-Shipping.exe,2980,4868,863,0.03,"Unknown""!0x00007ff605c883ee",1166,"Unknown"":390; ntoskrnl.exe:335; EasyAntiCheat_EOS.sys:34; ntdll.dll:30; tcpip.sys:18; afd.sys:15"
+FortniteClient-Win64-Shipping.exe,2980,13044,696,0.024,"Unknown""!0x00007ff6210a9b80",146,"Unknown"":437; ntoskrnl.exe:229; EasyAntiCheat_EOS.sys:19; ntdll.dll:9; amdkmdag.sys:1; USBXHCI.SYS:1"
+FortniteClient-Win64-Shipping.exe,2980,6556,628,0.022,"Unknown""!0x00007ff6210a1ec0",20,"EasyAntiCheat_EOS.sys:584; ntoskrnl.exe:28; Unknown"":16"
+FortniteClient-Win64-Shipping.exe,2980,18060,607,0.021,"Unknown""!0x00007ff605c883ee",4218,"ntoskrnl.exe:435; Unknown"":93; EasyAntiCheat_EOS.sys:53; ntdll.dll:16; kernel32.dll:4; KernelBase.dll:3"
+FortniteClient-Win64-Shipping.exe,2980,2788,450,0.016,EOSSDK-Win64-Shipping.dll!0x00007ffa7a9ab000,2536,"ntoskrnl.exe:290; Unknown"":64; EasyAntiCheat_EOS.sys:35; EOSSDK-Win64-Shipping.dll:28; KernelBase.dll:18; ntdll.dll:8"
+FortniteClient-Win64-Shipping.exe,2980,17232,439,0.015,EOSSDK-Win64-Shipping.dll!0x00007ffa7a9ab000,2661,"ntoskrnl.exe:311; EasyAntiCheat_EOS.sys:42; Unknown"":38; EOSSDK-Win64-Shipping.dll:15; ntdll.dll:10; tcpip.sys:4"
+FortniteClient-Win64-Shipping.exe,2980,18260,306,0.011,"Unknown""!0x00007ff605c883ee",2299,"ntoskrnl.exe:222; Unknown"":40; EasyAntiCheat_EOS.sys:37; ntdll.dll:3; kernel32.dll:2; KernelBase.dll:2"
+FortniteClient-Win64-Shipping.exe,2980,11912,202,0.007,"Unknown""!0x00007ff605c883ee",633,"ntoskrnl.exe:122; Unknown"":21; EasyAntiCheat_EOS.sys:18; win32kfull.sys:14; win32kbase.sys:11; win32k.sys:5"
+FortniteClient-Win64-Shipping.exe,2980,16048,180,0.006,"Unknown""!0x00007ff605c883ee",858,"ntoskrnl.exe:131; Unknown"":22; EasyAntiCheat_EOS.sys:18; ntdll.dll:6; KernelBase.dll:3"
+FortniteClient-Win64-Shipping.exe,2980,17112,157,0.005,"Unknown""!0x00007ff604d312a0",775,"ntoskrnl.exe:69; Unknown"":66; EasyAntiCheat_EOS.sys:13; ntdll.dll:9"
+FortniteClient-Win64-Shipping.exe,2980,3496,140,0.005,"Unknown""!0x00007ff605c883ee",680,"ntoskrnl.exe:95; Unknown"":24; EasyAntiCheat_EOS.sys:15; ntdll.dll:2; dxgkrnl.sys:1; USBXHCI.SYS:1"
+FortniteClient-Win64-Shipping.exe,2980,8424,132,0.005,"Unknown""!0x00007ff605c883ee",578,"ntoskrnl.exe:94; Unknown"":13; Ntfs.sys:8; EasyAntiCheat_EOS.sys:8; ntdll.dll:6; storport.sys:2"
+FortniteClient-Win64-Shipping.exe,2980,6704,130,0.005,"Unknown""!0x00007ff605c883ee",854,"ntoskrnl.exe:93; Unknown"":15; EasyAntiCheat_EOS.sys:14; ntdll.dll:3; KernelBase.dll:2; dxgmms2.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,5632,116,0.004,dsound.dll!0x00007ffa9bdddc90,215,"ntoskrnl.exe:80; Unknown"":13; EasyAntiCheat_EOS.sys:8; win32kfull.sys:3; dsound.dll:3; win32kbase.sys:3"
+FortniteClient-Win64-Shipping.exe,2980,10452,82,0.003,"Unknown""!0x000001d6248620d4",58,"Unknown"":55; ntoskrnl.exe:16; sechost.dll:6; EasyAntiCheat_EOS.sys:3; ntdll.dll:1; win32kfull.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,15412,66,0.002,"Unknown""!0x000001d62492eeb4",431,"ntoskrnl.exe:43; sechost.dll:13; Unknown"":7; EasyAntiCheat_EOS.sys:3"
+FortniteClient-Win64-Shipping.exe,2980,4816,63,0.002,"Unknown""!0x00007ff60e205eb1",432,"ntoskrnl.exe:42; EasyAntiCheat_EOS.sys:10; Unknown"":7; ntdll.dll:3; KernelBase.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,6940,57,0.002,"Unknown""!0x00007ff605c883ee",345,"ntoskrnl.exe:36; Unknown"":14; EasyAntiCheat_EOS.sys:7"
+FortniteClient-Win64-Shipping.exe,2980,12344,42,0.001,"Unknown""!0x00007ff621096020",19,"Unknown"":19; ntoskrnl.exe:16; EasyAntiCheat_EOS.sys:6; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,7308,42,0.001,ucrtbase.dll!0x00007ffab946cd00,173,"ntoskrnl.exe:30; Unknown"":5; EasyAntiCheat_EOS.sys:4; ntdll.dll:3"
+FortniteClient-Win64-Shipping.exe,2980,14120,33,0.001,"Unknown""!0x00007ff605c883ee",173,"ntoskrnl.exe:25; ntdll.dll:3; EasyAntiCheat_EOS.sys:3; KernelBase.dll:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,9620,33,0.001,dxgi.dll!0x00007ffab5de6a60,178,"ntoskrnl.exe:16; EasyAntiCheat_EOS.sys:6; ntdll.dll:3; dxgi.dll:3; win32kbase.sys:2; Unknown"":2"
+FortniteClient-Win64-Shipping.exe,2980,2308,32,0.001,"Unknown""!0x00007ff60fc8d42e",174,"ntoskrnl.exe:22; EasyAntiCheat_EOS.sys:5; Unknown"":4; KernelBase.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,9212,32,0.001,"Unknown""!0x00007ff60a69d7f0",174,"ntoskrnl.exe:26; EasyAntiCheat_EOS.sys:3; Unknown"":2; KernelBase.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,15600,21,0.001,EOSSDK-Win64-Shipping.dll!0x00007ffa7a9ab000,173,"ntoskrnl.exe:13; EasyAntiCheat_EOS.sys:4; Unknown"":2; ntdll.dll:1; EOSSDK-Win64-Shipping.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,8280,21,0.001,"Unknown""!0x00007ff605c883ee",49,"ntoskrnl.exe:11; Unknown"":6; EasyAntiCheat_EOS.sys:3; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,12252,19,0.001,"Unknown""!0x00007ff605c883ee",2,"ntoskrnl.exe:13; ntdll.dll:2; Unknown"":2; wdmaud2.drv:1; EasyAntiCheat_EOS.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,17756,18,0.001,"Unknown""!0x00007ff605c883ee",46,"ntoskrnl.exe:9; Unknown"":8; ucrtbase.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,13996,18,0.001,"Unknown""!0x00007ff605c883ee",29,"ntoskrnl.exe:13; FLTMGR.SYS:2; Ntfs.sys:1; Unknown"":1; dxgkrnl.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,15124,18,0.001,"Unknown""!0x00007ff605c883ee",28,"ntoskrnl.exe:7; Unknown"":7; EasyAntiCheat_EOS.sys:3; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,16716,17,0.001,"Unknown""!0x00007ff605c883ee",5,"ntoskrnl.exe:12; Unknown"":1; EasyAntiCheat_EOS.sys:1; ws2_32.dll:1; afd.sys:1; nlansp_c.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,16392,17,0.001,"Unknown""!0x00007ff605c883ee",2,"ntoskrnl.exe:8; Unknown"":2; EasyAntiCheat_EOS.sys:1; crypt32.dll:1; ntdll.dll:1; WdNisDrv.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,2724,16,0.001,"Unknown""!0x00007ff62109f0c0",4,"Unknown"":16"
+FortniteClient-Win64-Shipping.exe,2980,13752,15,0.001,"Unknown""!0x000001d6248620d4",16,"ntoskrnl.exe:11; Unknown"":3; EasyAntiCheat_EOS.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,5668,15,0.001,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:8; EasyAntiCheat_EOS.sys:1; shlwapi.dll:1; Unknown"":1; afd.sys:1; fse.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,15728,13,0.0,"Unknown""!0x00007ff605c883ee",92,ntoskrnl.exe:9; EasyAntiCheat_EOS.sys:3; win32k.sys:1
+FortniteClient-Win64-Shipping.exe,2980,13456,13,0.0,"Unknown""!0x00007ff62109d670",4,"Unknown"":7; ntoskrnl.exe:4; ntdll.dll:1; EasyAntiCheat_EOS.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,2164,13,0.0,"Unknown""!0x00007ff605c883ee",4,ntoskrnl.exe:4; fse.sys:2; ntdll.dll:2; audientusbaudio.sys:1; CChromaEditorLibrary64.dll:1; dxgkrnl.sys:1
+FortniteClient-Win64-Shipping.exe,2980,11980,12,0.0,"Unknown""!0x00007ff604d31530",5,"ntoskrnl.exe:10; win32k.sys:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,14644,12,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:9; EasyAntiCheat_EOS.sys:1; ntdll.dll:1; Wdf01000.sys:1
+FortniteClient-Win64-Shipping.exe,2980,6660,11,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:8; amdkmdag.sys:1; EasyAntiCheat_EOS.sys:1; NETIO.SYS:1
+FortniteClient-Win64-Shipping.exe,2980,5464,11,0.0,"Unknown""!0x00007ff60f25c480",2,"ntoskrnl.exe:5; EasyAntiCheat_EOS.sys:1; ucrtbase.dll:1; Unknown"":1; rpcrt4.dll:1; bfs.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,1756,11,0.0,"Unknown""!0x00007ff60f25c480",3,"ntoskrnl.exe:5; ntdll.dll:3; EasyAntiCheat_EOS.sys:1; Unknown"":1; amdkmdag.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,6428,11,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:6; gdi32full.dll:1; ntdll.dll:1; fse.sys:1; tcpip.sys:1; amdihk64.dll:1
+FortniteClient-Win64-Shipping.exe,2980,2256,10,0.0,ntdll.dll!0x00007ffabba302d0,30,"ntoskrnl.exe:6; Unknown"":2; EasyAntiCheat_EOS.sys:1; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,15080,10,0.0,"Unknown""!0x00007ff605c883ee",2,"ntoskrnl.exe:4; EasyAntiCheat_EOS.sys:1; kernel32.dll:1; Unknown"":1; afd.sys:1; fse.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,16992,10,0.0,"Unknown""!0x00007ff605c883ee",3,"Unknown"":2; ntoskrnl.exe:2; EasyAntiCheat_EOS.sys:1; ole32.dll:1; twinapi.appcore.dll:1; NETIO.SYS:1"
+FortniteClient-Win64-Shipping.exe,2980,17828,10,0.0,"Unknown""!0x00007ff605c883ee",2,"ntoskrnl.exe:2; ntdll.dll:2; NETIO.SYS:2; Unknown"":2; EasyAntiCheat_EOS.sys:1; imagehlp.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,11556,9,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:3; ntdll.dll:1; schannel.dll:1; fse.sys:1; EasyAntiCheat_EOS.sys:1; tcpip.sys:1
+FortniteClient-Win64-Shipping.exe,2980,10916,9,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:3; Unknown"":2; winhttp.dll:1; ws2_32.dll:1; wtsapi32.dll:1; EasyAntiCheat_EOS.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,9616,9,0.0,"Unknown""!0x00007ff605c883ee",3,ntdll.dll:2; KernelBase.dll:2; EasyAntiCheat_EOS.sys:1; ExplorerFrame.dll:1; NETIO.SYS:1; ndis.sys:1
+FortniteClient-Win64-Shipping.exe,2980,16592,9,0.0,ucrtbase.dll!0x00007ffab946cd00,2,"ntoskrnl.exe:4; ntdll.dll:2; Unknown"":2; amdxc64.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,13072,8,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:6; msmpeg2vdec.dll:1; mfc140u.dll:1
+FortniteClient-Win64-Shipping.exe,2980,14732,8,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:5; ntdll.dll:2; tcpip.sys:1
+FortniteClient-Win64-Shipping.exe,2980,5512,8,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:3; ntdll.dll:2; EasyAntiCheat_EOS.sys:1; Windows.ApplicationModel.dll:1; NETIO.SYS:1
+FortniteClient-Win64-Shipping.exe,2980,2384,8,0.0,"Unknown""!0x00007ff605c883ee",3,"Unknown"":2; ntdll.dll:2; EasyAntiCheat_EOS.sys:1; GfeSDK.dll:1; ntoskrnl.exe:1; CChromaEditorLibrary64.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,13908,8,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:4; EasyAntiCheat_EOS.sys:1; MpOAV.dll:1; Unknown"":1; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,13448,8,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:4; EasyAntiCheat_EOS.sys:1; mfplat.dll:1; NETIO.SYS:1; ntdll.dll:1
+FortniteClient-Win64-Shipping.exe,2980,9204,8,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:4; Unknown"":1; dbghelp.dll:1; tcpip.sys:1; KernelBase.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,13188,8,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:2; Unknown"":2; EasyAntiCheat_EOS.sys:1; D3D12Core.dll:1; fse.sys:1; tcpip.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,13008,8,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:3; EasyAntiCheat_EOS.sys:2; Unknown"":2; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,13660,8,0.0,"Unknown""!0x00007ff605c883ee",2,"Unknown"":2; ntoskrnl.exe:2; ntdll.dll:1; DXGIDebug.dll:1; NETIO.SYS:1; winhttp.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,11156,7,0.0,"Unknown""!0x00007ff605c883ee",3,"ntdll.dll:2; Unknown"":2; EasyAntiCheat_EOS.sys:1; mfc140u.dll:1; ntoskrnl.exe:1"
+FortniteClient-Win64-Shipping.exe,2980,6740,7,0.0,"Unknown""!0x00007ff605c883ee",2,"ntoskrnl.exe:2; Unknown"":1; kernel32.dll:1; EasyAntiCheat_EOS.sys:1; NETIO.SYS:1; msvcrt.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,2776,7,0.0,"Unknown""!0x00007ff605c883ee",3,"Unknown"":3; GfeSDK.dll:1; NETIO.SYS:1; ntoskrnl.exe:1; crypt32.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,12472,7,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:2; ntdll.dll:1; onnxruntime.dll:1; EasyAntiCheat_EOS.sys:1; tcpip.sys:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,15084,7,0.0,"Unknown""!0x000001d62492eeb4",6,ntoskrnl.exe:7
+FortniteClient-Win64-Shipping.exe,2980,17584,7,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:3; ntdll.dll:1; InputHost.dll:1; Unknown"":1; onnxruntime.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,15436,7,0.0,"Unknown""!0x00007ff605c883ee",3,"Unknown"":2; ntoskrnl.exe:2; EasyAntiCheat_EOS.sys:1; dbghelp.dll:1; tcpip.sys:1"
+FortniteClient-Win64-Shipping.exe,2980,6452,7,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:3; ntdll.dll:2; ws2_32.dll:1; schannel.dll:1
+FortniteClient-Win64-Shipping.exe,2980,16396,7,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:4; EasyAntiCheat_EOS.sys:1; setupapi.dll:1; ntdll.dll:1
+FortniteClient-Win64-Shipping.exe,2980,12200,7,0.0,"Unknown""!0x00007ff605c883ee",3,ntdll.dll:3; ntoskrnl.exe:3; EasyAntiCheat_EOS.sys:1
+FortniteClient-Win64-Shipping.exe,2980,15120,7,0.0,"Unknown""!0x00007ff605c883ee",3,"ntdll.dll:2; ntoskrnl.exe:2; EasyAntiCheat_EOS.sys:1; UIAutomationCore.dll:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,16400,7,0.0,"Unknown""!0x00007ff605c883ee",3,"EasyAntiCheat_EOS.sys:2; crypt32.dll:1; Windows.StateRepositoryClient.dll:1; afd.sys:1; Ndu.sys:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,14908,7,0.0,"Unknown""!0x00007ff605c883ee",3,"Unknown"":2; gdi32full.dll:1; amdenc64.dll:1; tcpip.sys:1; ntoskrnl.exe:1; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,8076,7,0.0,"Unknown""!0x00007ff605c883ee",3,ntoskrnl.exe:3; vcruntime140_1.dll:1; ntdll.dll:1; NETIO.SYS:1; UIAutomationCore.dll:1
+FortniteClient-Win64-Shipping.exe,2980,11316,7,0.0,"Unknown""!0x00007ff605c883ee",3,EasyAntiCheat_EOS.sys:2; atiadlxx.dll:1; mswsock.dll:1; ntoskrnl.exe:1; fse.sys:1; opengl32.dll:1
+FortniteClient-Win64-Shipping.exe,2980,15768,7,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:3; ntdll.dll:1; NETIO.SYS:1; Unknown"":1; setupapi.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,13612,7,0.0,"Unknown""!0x00007ff605c883ee",3,"ntdll.dll:3; ntoskrnl.exe:2; kernel32.dll:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,17824,7,0.0,"Unknown""!0x000001d62492eeb4",40,"ntoskrnl.exe:6; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,10584,7,0.0,"Unknown""!0x00007ff605c883ee",0,"ntoskrnl.exe:3; EasyAntiCheat_EOS.sys:1; dbghelp.dll:1; Unknown"":1; NETIO.SYS:1"
+FortniteClient-Win64-Shipping.exe,2980,17856,6,0.0,"Unknown""!0x00007ff605c883ee",3,"ntoskrnl.exe:2; ntdll.dll:1; msacm32.dll:1; NETIO.SYS:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,8008,6,0.0,"Unknown""!0x00007ff605c883ee",3,"Unknown"":3; kernel32.dll:1; NETIO.SYS:1; ntdll.dll:1"
+FortniteClient-Win64-Shipping.exe,2980,10852,4,0.0,D3D12Core.dll!0x00007ffa7c3656a0,2,ntoskrnl.exe:4
+FortniteClient-Win64-Shipping.exe,2980,1492,4,0.0,"Unknown""!0x00007ff605c883ee",4,"ntoskrnl.exe:2; Unknown"":2"
+FortniteClient-Win64-Shipping.exe,2980,17456,2,0.0,ntdll.dll!0x00007ffabba302d0,2,ntoskrnl.exe:1; EasyAntiCheat_EOS.sys:1
+FortniteClient-Win64-Shipping.exe,2980,4136,2,0.0,crypt32.dll!0x00007ffab8dbb4a0,3,"ntdll.dll:1; Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,6856,2,0.0,GameInputRedist.dll!0x00007ffa2f0ab110,6,rpcrt4.dll:1; ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,10844,2,0.0,crypt32.dll!0x00007ffab8dbb4a0,2,EasyAntiCheat_EOS.sys:1; ntdll.dll:1
+FortniteClient-Win64-Shipping.exe,2980,17680,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,1652,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,15104,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,12244,1,0.0,EOSSDK-Win64-Shipping.dll!0x00007ffa79624e94,2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,6900,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,12308,1,0.0,GameInputRedist.dll!0x00007ffa2f12cc70,2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,6240,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,3280,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,13300,1,0.0,"Unknown""!0x00007ff605c883ee",11,"Unknown"":1"
+FortniteClient-Win64-Shipping.exe,2980,13524,1,0.0,combase.dll!0x00007ffaba0a4a70,6,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,9088,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,8088,1,0.0,"Unknown""!0x00007ff605c883ee",2,ntoskrnl.exe:1
+FortniteClient-Win64-Shipping.exe,2980,9308,1,0.0,EOSSDK-Win64-Shipping.dll!0x00007ffa7a9ab000,2,EasyAntiCheat_EOS.sys:1
+FortniteClient-Win64-Shipping.exe,2980,15856,1,0.0,mswsock.dll!0x00007ffab7e46a70,5,"Unknown"":1"

@@ -1,0 +1,81 @@
+{
+  "workload": "D3D12Raytracing / D3D12RaytracingProceduralGeometry",
+  "phase": "2U",
+  "verdict": "MISS",
+  "closed_as": "PERFORMANCE_BELOW_THRESHOLD",
+  "selection": {
+    "preregistered_name": "D3D12Raytracing, a family",
+    "chosen_inside_it": "ProceduralGeometry, by directory name and the family readme only: analytic and signed-distance intersection shaders are evaluated per ray, so it does real per-frame shader work",
+    "excluded": "the SER and OMM samples, by the preregistered criterion that a workload must not need a hardware feature this RX 6950 XT lacks"
+  },
+  "baseline": {
+    "region0_dispatchrays_ns": 1498200,
+    "aa_pairwise_median_pct": 0.39,
+    "aa_pairwise_max_pct": 1.34,
+    "acceptance_threshold_pct": 4.02,
+    "oracle": "the raytracing output copied to the back buffer, byte-identical across 12 base processes",
+    "note": "the largest GPU pass in the project so far: 1.5 ms in one DispatchRays, ten times W4's whole frame"
+  },
+  "ceiling_probe": {
+    "variant": "ablate_ch",
+    "what": "both closest-hit shaders return the material albedo immediately; primary-ray traversal and every intersection shader stay",
+    "delta_pct": -79.02,
+    "per_process_pct": [-78.98, -79.07, -79.02],
+    "gate": "3 %, preregistered",
+    "result": "PASSES by a wide margin"
+  },
+  "ceiling_decomposition": {
+    "abl_shadowray": {"delta_pct": -43.51, "what": "the shadow TraceRay per hit", "share_of_ceiling_pct": 55},
+    "abl_reflection": {"delta_pct": -26.89, "what": "the recursive reflection TraceRay", "share_of_ceiling_pct": 34},
+    "abl_phong": {"delta_pct": -0.90, "what": "the Phong evaluation itself", "share_of_ceiling_pct": 1},
+    "reading": "the pass is secondary ray work, not arithmetic. Shading maths is 1 % of the ceiling, so any candidate that only removes ALU is known to be pointless here before it is built - which is what the decomposition is for"
+  },
+  "transformations": 2,
+  "accepted": 0,
+  "detail": {
+    "shadow_tmax": {
+      "from": "the workload's own source: the shadow ray is aimed at the light, so nothing beyond the light can shadow the point, yet its TMax is 10000 and with ACCEPT_FIRST_HIT_AND_END_SEARCH an unshadowed ray walks the structure out to 10000 before giving up",
+      "predicted_delta_pct": [-20.0, -5.0],
+      "predicted_correctness": "tier A PASS",
+      "measured_delta_pct": -2.18,
+      "per_process_pct": [-2.37, -2.28, -2.02, -2.08],
+      "correctness": "TIER A PASS - byte-identical image",
+      "correctness_control": "abl_shadowray, measured in the previous cycle, pins the shadow result to false everywhere and its image differs from the baseline. The oracle is therefore demonstrably sensitive to this flag, so a byte-identical result is evidence and not silence",
+      "equivalence_class": "CONDITIONAL, not algebraic. The image is unchanged if and only if no geometry lies between the light and t = 10000 along any shadow ray - a property of this scene, the same class as the data contract phase 2P measured. Declared as such before the build",
+      "residual_blind_spot": "a violation on a pixel whose shading is afterwards replaced entirely by the distance falloff would not show in the oracle",
+      "verdict": "REJECTED (performance): the preregistered threshold is 4.02 %",
+      "replication": {
+        "why": "disclosed: it was run because the result was a near miss, not for an independent reason",
+        "protocol": "2000 measured frames per process instead of 500, 400 warm-up, 6 base and 6 variant processes interleaved, applied identically to both arms",
+        "aa_pairwise_median_pct": 0.337,
+        "aa_pairwise_max_pct": 0.919,
+        "threshold_pct": 2.76,
+        "measured_delta_pct": -1.81,
+        "per_process_pct": [-1.62, -1.79, -2.03, -1.42, -2.66, -1.83],
+        "separation": "complete - every shadow_tmax process (1481.3 to 1490.5 us) is faster than every base process (1510.0 to 1523.9 us)",
+        "verdict": "REJECTED (performance) again. The finer protocol did not rescue it, so the disclosure costs nothing and the rule was not bent"
+      },
+      "what_this_is": "a real, byte-exact, completely separated 1.8 to 2.2 % improvement that the preregistered acceptance rule rejects. The rule asks for three times the worst A/A pair, which on a workload with 0.3 % median run-to-run noise means roughly 3 %, so only large structural wins can ever be accepted. That is a property of the rule, stated here rather than fixed after the fact"
+    },
+    "hitpos_reuse": {
+      "from": "the sample computes HitWorldPosition() three or four times per closest-hit shader and carries a comment saying that is deliberate: 'PERFORMANCE TIP: it is recommended to avoid values carry over across TraceRay() calls'. This is a test of that documented claim",
+      "predicted_delta_pct": [0.0, 2.0],
+      "predicted_correctness": "tier A PASS, bit-exact by construction",
+      "measured_delta_pct": -0.09,
+      "per_process_pct": [-0.19, 0.12, -0.25, 0.01],
+      "correctness": "TIER A PASS - byte-identical image, as predicted",
+      "verdict": "REJECTED (performance): inside the noise, and not even consistently signed",
+      "reading": "the tip's tradeoff is not measurable here. Removing three redundant evaluations of HitWorldPosition() neither helps nor, as the tip warns, hurts - at least not in a pass whose cost is 99 % ray work"
+    }
+  },
+  "stage_failed": "performance threshold; profiling, hypothesis generation and correctness all succeeded",
+  "cost": "3 cycles: harness generalisation and baseline, ceiling decomposition, two candidates plus a replication",
+  "harness_defects_the_gate_caught": [
+    "shader sources were staged by basename, so an include with a subdirectory (util\\HlslCompat.h) could not resolve and two aux files sharing a basename would have collided silently. Fixed: sources are staged by their path relative to the primary shader's directory, which is identical to the old behaviour whenever they all sit in one directory",
+    "instrumentation decoded every source as UTF-8; this sample's C++ contains a Windows-1252 apostrophe. Fixed: instrumentation now reads and writes bytes, so a file it only inserts a line into keeps its exact encoding, BOM and line endings",
+    "instrumentation anchors were matched in one line-ending form only. Both instrumentation and transforms now go through the same matcher, which tries the anchor as written, falls back to CRLF, and refuses an anchor that would match in both",
+    "the probe header was copied next to the workload's main file only, so an instrumented file in a subdirectory could not include it. Fixed: it is copied next to every file the edits touch",
+    "the build ran with a hard-coded 'src' working directory. Fixed: it runs in the project's own directory"
+  ],
+  "provenance_note": "verified before any of this workload was measured: the Windows SDK 10.0.26100.0 dxc.exe with -T lib_6_3 -HV 2021 -Zpr reproduces MSBuild's FXC task output byte for byte (42124 bytes, sha256 31fc8d86...). The gate reads the DXIL back out of the generated header, located by its array name rather than by the first '=' in the file, because the header also contains the disassembly inside an #if 0 block"
+}

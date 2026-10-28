@@ -1,0 +1,97 @@
+path,bytes,sha256
+C:\Users\Lorenzo\AppData\Local\Temp\claude\gpa\4_4\bin\GPUPerfAPIDX12-x64.dll,2984712,71fa3f450e9bbd8952b735ca9009434c030c49da82f015fe475ca914871803a1
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Build\x64\Profile\Output\Model\CompiledShaders\ModelViewerPS.h,131771,6a1a0da226377c46b23b4c26271ba0b237d115eb695adae10c32532541020f53
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Build\x64\Profile\Output\ModelViewer\ModelViewer.exe,2368000,86c325255ecd88151da3e06fc282d1c3eb15b65c8a6be512be9e6fcebc3a22b9
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\CommandContext.cpp,22964,08e3f49b048b51ac5ab63726b0b59aba0d708221f0f237d028e04febbd805f86
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\CommandContext.h,34258,c15a08421d546b706b883c8f20af34f0c8673842d024ff782a6435de06522ddb
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\Core.vcxproj,24109,9b4c661bc3fbfb87a5e63f2a27939c0ff6cbca1c220781890fc744483d7d94e1
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\Display.cpp,21877,a8e6f263dd8ae5d68248586544ea0e8f509fd9d4cb44f76848e9628dc7e1ade8
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\EngineProfiling.cpp,19649,c68884e6e8055b85c3d29f77fb67c0ff05bcc368900582f5f567d22fb84e320f
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\GameCore.cpp,8243,2d21eb907b9e06f42926ae88055456965e186e51145284dde0bf02bb9133d311
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\GpaProfiler.cpp,10813,26dc7743456687119acf3041496d08ab37f91b061c39ac438586df1f73c7875a
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\GpaProfiler.h,1039,23472035c823768fa0596716eaebc836c5389ff18a03b38125e5d9dc3e06b370
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\PipelineState.cpp,6630,b715165dad09558d408dc89327eba9cb0622145b4eeec7fa7a38df18c49cbe21
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\PipelineState.h,5103,87509586bef433c01608863cb747a9120bf4267176c03c5ccf56084a7d461230
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\ShaderInventory.cpp,5165,5d6f3d71af5fad8b6dfc67cba8b717c02bc8589a6142f085c7ee375b2010cb08
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Core\ShaderInventory.h,1230,35b12ec812841776f9a5329bc1d44c61e05efffa303f1768787a9642714c02e4
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Model\Shaders\Common.hlsli,2630,c3326f23bf642ce24249886100b4cb333b538a6b5c3ffcc628be61f3bf8f17a1
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Model\Shaders\LightGrid.hlsli,1007,dec26c66a77becf58b79c012a6973ba43c7e5e041fe1210fde36123f165e720f
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Model\Shaders\Lighting.hlsli,21220,e37cf80345290194d697e69e24f3a0bc4a82f269aa9c41a7e360438fdf10e557
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\Model\Shaders\ModelViewerPS.hlsl,2511,980f212bfc53480b2917664bdc5d114bf80a3aac125d10592c4c83437d48e613
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\ModelViewer\GPUPerfAPICounters-x64.dll,3753744,dc500ea35d7a96f5075782baf82d6b2f1bff92eb2133062a77aa4ffb7a651348
+C:\Users\Lorenzo\AppData\Local\Temp\claude\src\dxs\MiniEngine\ModelViewer\GPUPerfAPIDX12-x64.dll,2984712,71fa3f450e9bbd8952b735ca9009434c030c49da82f015fe475ca914871803a1
+C:\Users\Lorenzo\Downloads\driver mod\CLAUDE.md,4009,5450c527c6b31aa709f3c37fbb6f77fb10bed596e4904bfbc36ff82cdc66bda0
+C:\Users\Lorenzo\Downloads\driver mod\PLAN.md,45208,3020ca75bb2e38f7a2af1b0ee0c8d23303540cf1fa89fa92126be5b3df4f6c0f
+C:\Users\Lorenzo\Downloads\driver mod\research\00_inventory\software_versions.md,4359,b90202b595acef7d321e51dc9d5ab59370953c2c93f4fae85da8fa26ff69dd2a
+C:\Users\Lorenzo\Downloads\driver mod\research\01_driver_map\component_analysis.md,14887,6f2806f72acee2965d8d5a71b53607d7b9ff37a8f0783932cbb0ba1e873023c7
+C:\Users\Lorenzo\Downloads\driver mod\research\04_benchmarks\analysis\baseline_comparison.md,7302,6e499bf5bdf8e505902efd4f8cd11d81b00ced31cf67b94e7f27c4c8705ef987
+C:\Users\Lorenzo\Downloads\driver mod\research\04_benchmarks\analysis\fortnite_baseline.md,12045,faf4a625e1b246c30c412c5b5821d4c803850ffb23ea26a4b2f159ca165bbb54
+C:\Users\Lorenzo\Downloads\driver mod\research\04_benchmarks\analysis\METHOD.md,7312,34863fe6f4f94dba05c6bba91476d78f10c52cee6953a74da78a985432366922
+C:\Users\Lorenzo\Downloads\driver mod\research\04_benchmarks\analysis\steelnomad_baseline.md,8922,97a242c7daa4dc2514b73efe481e14488fef628bdb4f880ced87eab94f030787
+C:\Users\Lorenzo\Downloads\driver mod\research\08_etw_fortnite\fortnite_etw_analysis.md,8349,cacf7b3d98f85c9dc95ef3a24e4738fbcba7df4a2ca99290016a51694627d51f
+C:\Users\Lorenzo\Downloads\driver mod\research\08_etw_fortnite\PROCEDURE.md,2987,8f656a86fdf93896ffc94ebb752c72683be9094adc06496e99afcc5151cb219a
+C:\Users\Lorenzo\Downloads\driver mod\research\08_etw_fortnite\RESULTS.md,6912,00ac6967f9a633e11b370e125b71d3f13b12da105062b0896dfe5f0389fc7de0
+C:\Users\Lorenzo\Downloads\driver mod\research\09_umd_settings\umd_settings_analysis.md,13091,3bdc3981d723a0c623968f694e9afb85f49eb7874f52a41601f2b9a2eae6b7b6
+C:\Users\Lorenzo\Downloads\driver mod\research\10_sc_probe\PHASE_2_STATIC.md,8542,e417aa2a73c166ed092db78239deccd93befd639d4b6cd291d24dc8f48403373
+C:\Users\Lorenzo\Downloads\driver mod\research\10_sc_probe\PHASE_2A_RESULTS.md,8292,13064e6014b3aab6c45b4c0e2e29e76e126b6bfe52b3201fd234a18b3b12a1bb
+C:\Users\Lorenzo\Downloads\driver mod\research\11_compiler_experiments\PHASE_2E_RESULTS.md,9747,4329629eaa7a28c725d5bb27211df8949b7521dc02cec2bb3c31e2c2a5d74cd4
+C:\Users\Lorenzo\Downloads\driver mod\research\12_d3d12_microbench\AMDEXT_RECON.md,4615,94a5bafdd633711862bc7bda3bd5610d01b37ae665e8330656abce208aedd51b
+C:\Users\Lorenzo\Downloads\driver mod\research\12_d3d12_microbench\bench.exe,249856,aa7fca495b11e8f1aeaa59e1fa1f3028a37ec71226e005e64f94d91e500d8ff6
+C:\Users\Lorenzo\Downloads\driver mod\research\12_d3d12_microbench\variance_report.md,7794,ac27c5963bf4b5c63d3cafec18b2bbfe17b13e73555d9f229904957722badd33
+C:\Users\Lorenzo\Downloads\driver mod\research\13_scoptions_static\SCOPTIONS_OBSERVED.md,4907,11f0ba8439d734194a7e3c51c5e7268db6ff02b615a249e1a1ef708bfdc203d2
+C:\Users\Lorenzo\Downloads\driver mod\research\14_optimizer\PHASE_2G_RESULTS.md,6457,f3c88a06a1d457f2a653e4fdf63c4e1d0fd40c032f55ecd497cddc23a8805762
+C:\Users\Lorenzo\Downloads\driver mod\research\15_robustness\PHASE_2H_RESULTS.md,15286,1ab3c6dc9455eaf5439ca664cddeb9b942b9c698a6aedb9e662b4dff01248e56
+C:\Users\Lorenzo\Downloads\driver mod\research\15_robustness\PHASE_2I_DESIGN.md,7727,ae821bd04631fdfa133098787f8c5d1ba0d2e8249db567e82ca12df4c7ef246f
+C:\Users\Lorenzo\Downloads\driver mod\research\18_ai_search\best_variants.md,10766,13368c8807b2c8b1e6ef5e23cd5e233a37cd9924fc24a4c0af21aca8977a2ec8
+C:\Users\Lorenzo\Downloads\driver mod\research\19_predictor\predictor_vs_random.md,8898,ece6e3e3db6aca64f2cec752a20d17241b16e954ec771910af6f07210c8c2483
+C:\Users\Lorenzo\Downloads\driver mod\research\20_real\bench2.exe,228352,3585c0d3ccc66988e585e5ab08cb02e0c5050e725743b2bc887aeac6ec726189
+C:\Users\Lorenzo\Downloads\driver mod\research\20_real\PHASE_2L_DESIGN.md,6341,02909091ea429fa0f7a328a0fe886f36dd785f8bbf274db3a436ad04d4f75942
+C:\Users\Lorenzo\Downloads\driver mod\research\20_real\REAL_GENERALIZATION.md,10779,22caf6eb1e2277d94c5abfc913332655738418fd4d3ce37abee9b5051a4b4d28
+C:\Users\Lorenzo\Downloads\driver mod\research\21_workload\PHASE_2L_RESULTS.md,11215,fd9644d7e7afe84400f316221851df38083ebac0d798f54c4937c1cbe4990a31
+C:\Users\Lorenzo\Downloads\driver mod\research\22_runtime\PHASE_2M_RESULTS.md,9167,6c28fbb4b19a3e46d2f3a9e36f6df7090b87e0e41082b3facc3a692e436d2e5e
+C:\Users\Lorenzo\Downloads\driver mod\research\23_bottleneck\PHASE_2N_RESULTS.md,9394,8f54263c61940ced38e8c97fa0f1ccc4994dbfa0bdadc8a6e95a6a5c8e101e89
+C:\Users\Lorenzo\Downloads\driver mod\research\PHASE_1_5_DECISION_GATE.md,6442,c9812e9fa715d0024655204cdb87eaef681aa3c92ff6ca1cc0f7feebe14bae82
+C:\Users\Lorenzo\Downloads\driver mod\research\PHASE_1_STATUS.md,13192,4d8e4a6ef11d6a09960299ee0b62dea4f961eee5000f701a63fb1f3cdcdc29d2
+C:\Users\Lorenzo\Downloads\driver mod\tools\ab2l.py,8760,2d3046121214ff86a5907ad189c3a36ca68b49396b44e89c75a5fbc9035ddd3e
+C:\Users\Lorenzo\Downloads\driver mod\tools\ab2m.py,7925,8137d4ae589c06f2bcd4ec37db794afc63aa8a54cee32b5385bbfd4f026798a0
+C:\Users\Lorenzo\Downloads\driver mod\tools\ai_search.py,28665,0af3896b587e531e0f8db9e271fd91113aa90f999ae5085aa716973b71e8e1f3
+C:\Users\Lorenzo\Downloads\driver mod\tools\analyze.py,8461,6f6d5e6d0273d61794261e00bb4ad07265b1f9b49219da334e36eeebabd79fc8
+C:\Users\Lorenzo\Downloads\driver mod\tools\bench_selfcheck.py,6337,84284c02d2b767285f4327987d1865f8e3db656c68a128f42886ed2faa2e863a
+C:\Users\Lorenzo\Downloads\driver mod\tools\buildv.py,2218,e12a7c6e092b11ba107b782abb77810e71ee9d46e4a0f59914b5deaa43a62def
+C:\Users\Lorenzo\Downloads\driver mod\tools\capture_etw.ps1,10885,c945ddbaf256118a70da6c820dac40a38eb37c70ce2af5a14f5b72eecabeac5e
+C:\Users\Lorenzo\Downloads\driver mod\tools\classify.py,8213,d4e24cedb6b91e108c586e719bad7b5cb86c924459001a63a5236d37b8a33d07
+C:\Users\Lorenzo\Downloads\driver mod\tools\corpus.py,15414,82f05f61723d639e80721a99fcf73e1e07acd56e42150ea6868884e8283b3166
+C:\Users\Lorenzo\Downloads\driver mod\tools\corpus2j.py,3924,65015e8f38f7cb9b13c234ac672cbc45ab9c6dae0a2db24ada9107c126046291
+C:\Users\Lorenzo\Downloads\driver mod\tools\cpu_ref.py,2758,5692095ab0e8a7bd95609a51ff16af0df3019e63e820bd2e253acdb76550281b
+C:\Users\Lorenzo\Downloads\driver mod\tools\drivermap.py,7980,3c4de46b06331dbda434cc21f368005aafbc00913f7403d1a87d60be463cf9fc
+C:\Users\Lorenzo\Downloads\driver mod\tools\etw_analyze.py,9386,89a9b04062c7b6d254443e2c2f96bc19f76df94501a6aa4d7fb15a55ac81a271
+C:\Users\Lorenzo\Downloads\driver mod\tools\etw_kernel_probe.py,2336,b1af1c970b681966fb792ecc82bed2e505933cd8ca2d35d3774c5c104ef1aac4
+C:\Users\Lorenzo\Downloads\driver mod\tools\eval2j.py,7642,0e0bec422ed689058bb8b3ffb1452a78e096db2c45b1d846ac73eb34ab86a15b
+C:\Users\Lorenzo\Downloads\driver mod\tools\fn_probe.py,870,e46c1e0302ee20a4a76952fef76f6a843abc33cf724256911c1ace1ddee7387d
+C:\Users\Lorenzo\Downloads\driver mod\tools\fn_probe2.py,916,1b2c5133ccccbe4af20c867030e7847e71586c85722e9c82672e06e198780ebd
+C:\Users\Lorenzo\Downloads\driver mod\tools\gpa2n.py,4292,31a3c49679c878f39eac6d28cb1f1a5bb8f37c25291a0f6053d17f27fa8762db
+C:\Users\Lorenzo\Downloads\driver mod\tools\harvest2k.py,5398,c9d4a7f0fc9a0e2f51b2547318668ccb24b826e78f6da018f6f70e0f1abac596
+C:\Users\Lorenzo\Downloads\driver mod\tools\hlsl_tf.py,5423,b2a166ebe3d319956b9e76c8d744a6c1a7d5f7e5b08d6850dbecec96050dbe6c
+C:\Users\Lorenzo\Downloads\driver mod\tools\inventory.py,4686,5a099d9f7a0eee369a76c87013bc9208e73d65042773f7b5910be99bd2d50975
+C:\Users\Lorenzo\Downloads\driver mod\tools\ir2j.py,15733,9c461e19ccdcafc9ce19352879edb115e6e705434936041da595d8c7ada29099
+C:\Users\Lorenzo\Downloads\driver mod\tools\isa_mem.py,3336,e10caf026a3f2977bb6a95f074601230db8fc1bd72f4cfd185e370db19d7a8ec
+C:\Users\Lorenzo\Downloads\driver mod\tools\map2m.py,3652,ddc3c7069a1a66c8e2cefd732db1cf53755a7e93ef77e5a32aacf2a3848ead1d
+C:\Users\Lorenzo\Downloads\driver mod\tools\measure2k.py,13304,f66cee973a2cdfb1b884382a0e3b0e21083145cb09decc1be914bc6ac6c921c0
+C:\Users\Lorenzo\Downloads\driver mod\tools\opt_loop.py,11225,369f7127b90a01d1b5885a61a9611005a044a05f15c6e53913b8f9f9b79b3d82
+C:\Users\Lorenzo\Downloads\driver mod\tools\pm_from_etl.sh,681,0e3efa905df3d231d64ed9fd908c978e823a9d9fd0712d902902933d93ce5901
+C:\Users\Lorenzo\Downloads\driver mod\tools\pmparse.py,6995,618a20ea32a4e6caee1f8d86296b2e0462d497060f156778586baf8bcc477e1a
+C:\Users\Lorenzo\Downloads\driver mod\tools\pred2j.py,7956,8e61984cceb9da0f96301b5e5fd8a7ac67f9744ed5498658edc3db42bb29a6ed
+C:\Users\Lorenzo\Downloads\driver mod\tools\real2k.py,13269,039e83c1ac148b6aab4d31a9d4569b9a2242e2cc83fa907aa5329403a16e82c5
+C:\Users\Lorenzo\Downloads\driver mod\tools\robust.py,7098,38d2d79ec48add97efdb1fc413ddd56d1de39e9a3bf6c0e0e556428ef6104891
+C:\Users\Lorenzo\Downloads\driver mod\tools\run2j.py,16383,6d45b3d87bfe178ff2edbf7f821c089bc22f1ab5dd058ac686b05789c28a670d
+C:\Users\Lorenzo\Downloads\driver mod\tools\run2l.py,4243,cc35aaf9ce0bce641a861adf6b2c4a84ef750c4e8377446f41097b3c0a3b703b
+C:\Users\Lorenzo\Downloads\driver mod\tools\run_etw_batch.sh,522,ef02eae957632cda9a3a4f09d558ccc30c0fe547babe685e9194356a3192cf8b
+C:\Users\Lorenzo\Downloads\driver mod\tools\sc_canary.sh,1258,a9d00c640f81ea743845a3577afd37a6da1d166b0f28b433dc53685c03012c4f
+C:\Users\Lorenzo\Downloads\driver mod\tools\sc_lab.py,8638,fc4e51e0576429bf27fde29f0c3f89b55c6cdcd2c91dbe9115756a4396145a4a
+C:\Users\Lorenzo\Downloads\driver mod\tools\sc_try.sh,523,d5528e1477bd6adfba07da30e055f5902853d77c0ba1e6433c05e509cdbd72d8
+C:\Users\Lorenzo\Downloads\driver mod\tools\sn_probe.py,720,9bbc65c5c10c568029a208cbefdb9b0af2e0c10c316289d083def8b972e3a7b2
+C:\Users\Lorenzo\Downloads\driver mod\tools\survey.py,681,cd1ce2a1e269483838fc40458dbb416856af6a06708523ca85198c272ef5b3f4
+C:\Users\Lorenzo\Downloads\driver mod\tools\umd_func.py,3304,984d310dfb37709db55cfa244311c22c1ad55bf297c48f597c29b1fa2f976108
+C:\Users\Lorenzo\Downloads\driver mod\tools\umd_static.py,4684,c99a71a38180d61f4469cf38af04bd9b8019745fb30c0ec5adfb6cef4caf3d06
+C:\Users\Lorenzo\Downloads\driver mod\tools\validate.py,1832,4221e5f1ae373f73b93e85958b089f7128b9e14fa4a5fccf22dcc1a1beba50e5
+C:\Users\Lorenzo\Downloads\driver mod\tools\xref_fast.py,3921,c0cd10dc6a2235337f0d100ddaea78f3d1dd22f538586a62143370784c9b5f3e

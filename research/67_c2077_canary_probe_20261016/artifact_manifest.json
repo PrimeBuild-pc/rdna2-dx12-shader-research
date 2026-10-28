@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\artifact_manifest_before_phase68.json",
+      "bytes": 7845,
+      "sha256": "fa37f9c7712d2472e378981c6578bfa1419dc6f209d22a72e2ab44e97b757c24"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\artifact_manifest_pre_r1.json",
+      "bytes": 5325,
+      "sha256": "4fedd7f7c582c984f38cbed7b6f940bee7a2e4cb2c301f023ace32ce96d537c3"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\build.log",
+      "bytes": 729,
+      "sha256": "30ab0075689d35cafd58e07958020baf665b63b82092930841eed492fbd16f9a"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\final_build.log",
+      "bytes": 729,
+      "sha256": "30ab0075689d35cafd58e07958020baf665b63b82092930841eed492fbd16f9a"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\loader_selfcheck.log",
+      "bytes": 68,
+      "sha256": "5dc2ae0e92367004baa9874fe6d5b632f28aa67ca29855a4c15a0d8dfb493226"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\pe_review.txt",
+      "bytes": 10510,
+      "sha256": "a48fefed5755a570ab5614512048c107da20e4e7d99189d57f3390998198b38b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe.exp",
+      "bytes": 1039,
+      "sha256": "0fc652b2c38d23345f4bef1c06262a22e1933b9ab8ac713b3ee4f9fdc7f56087"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe.lib",
+      "bytes": 2424,
+      "sha256": "7ce27f104130a3f3a8bcf60221848edb5f86dd26b9403d3cb42a7673753a8f57"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe.obj",
+      "bytes": 767365,
+      "sha256": "8dbaa4e421c140dd94e5336a6b2c4b1a9955aee07022948f7cae7c7be97739d3"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.exe",
+      "bytes": 359936,
+      "sha256": "f8e8e1c2c53db4bb17c1c6d8c7116df9888c5be161388d107f7649458a040a5d"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.exp",
+      "bytes": 1034,
+      "sha256": "7fdbeeb0880adb6c647b5609d5a5e7e8d15633dee23340b864338a323426b998"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.lib",
+      "bytes": 2216,
+      "sha256": "3ca29f452340fd22a2dc87b76aaf4266a0ee9705c7ee7d79679cab9eb601315f"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build\\probe_test.obj",
+      "bytes": 781499,
+      "sha256": "a02357f6be1d1a2fdfd6d2b0dcebcd03d36e632df429a6e986cafdc596b3d317"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\build.cmd",
+      "bytes": 843,
+      "sha256": "62680bc0aa6c5fe720f7d2fe79ad61165a68a2ba249ec33642dd7829e36c362f"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\deployment.json",
+      "bytes": 655,
+      "sha256": "5fcafc3bb9a476056ede0b3beded3b9f3412bbc19963c3ec36b6981e3df4c0fc"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\environment.json",
+      "bytes": 166,
+      "sha256": "50d22e5c686d19c9cec954e46815710834d7cd2b44b3aeda25246f2efc3ef8ab"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\frozen_before\\c2077_shader_loader.py",
+      "bytes": 11778,
+      "sha256": "415e439122363b3574a7d035f4322248bdd053e7fb2e4cbdcd7cc06248da39ec"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\frozen_before\\deployment.json",
+      "bytes": 15637,
+      "sha256": "c8d7690b630e40f728d84728d972453a203cf9db0a23cdaa40c39d0bce83ed6b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\package.json",
+      "bytes": 466,
+      "sha256": "7357482048a5408a29e5107cffe7392f114b03f747a92c3d6764c067f4f9ccef"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\payload\\C2077ShaderProbe.addon64",
+      "bytes": 329216,
+      "sha256": "944b9fdfd92113e873fb3925e167b83a6441fb23b49f930ec75357e05641a492"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\PREREGISTRATION.md",
+      "bytes": 4574,
+      "sha256": "1169e3906bb758cc7b81165d97ba76ff8e278378d64b0f9b2da337e88c260de9"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\after_view\\probe-11348-134366633064138541.jsonl",
+      "bytes": 779,
+      "sha256": "32498216e2352e457b5571e83ece066b1e57d40c7623b4af6c3dc986e2b8f70a"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\after_view\\probe-11348-134366633066223538.jsonl",
+      "bytes": 82442,
+      "sha256": "42326c943e0e3d3882a62c272f2c7a3b5c3d393660b2f5514a5da9e2087a4c4d"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\after_view\\ReShade.log",
+      "bytes": 38994,
+      "sha256": "080f1e7da6aecac3af4147d42f7fe04d4f755927f0ad6d320845cf6a251d3fb5"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\after_view\\result.json",
+      "bytes": 2559,
+      "sha256": "c9ad123281856d2a51803062a0c4b9c710219c6ace5fd160ce508599b992017d"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\after_view\\runtime-11348-134366633063428551.jsonl",
+      "bytes": 439,
+      "sha256": "5abe94878da8ad34b632af76267ff6e5fcb60cdf006a2ebafac8078dd9ee468b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\after_view\\runtime-11348-134366633065553540.jsonl",
+      "bytes": 43795,
+      "sha256": "3d6be61fb0d530f4f8217c5812090ecf5ffb5f9e8bac2356a8dfdbe5012c9308"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\after_view\\status.json",
+      "bytes": 3980,
+      "sha256": "8ca5d4ef450c5fbd58f5f109f83dc2be4a512449f74dc3bebff698fbfe7673e3"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\closed\\probe-11348-134366633064138541.jsonl",
+      "bytes": 779,
+      "sha256": "32498216e2352e457b5571e83ece066b1e57d40c7623b4af6c3dc986e2b8f70a"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\closed\\probe-11348-134366633066223538.jsonl",
+      "bytes": 82442,
+      "sha256": "42326c943e0e3d3882a62c272f2c7a3b5c3d393660b2f5514a5da9e2087a4c4d"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\closed\\ReShade.log",
+      "bytes": 38994,
+      "sha256": "080f1e7da6aecac3af4147d42f7fe04d4f755927f0ad6d320845cf6a251d3fb5"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\closed\\runtime-11348-134366633063428551.jsonl",
+      "bytes": 439,
+      "sha256": "5abe94878da8ad34b632af76267ff6e5fcb60cdf006a2ebafac8078dd9ee468b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\closed\\runtime-11348-134366633065553540.jsonl",
+      "bytes": 43795,
+      "sha256": "3d6be61fb0d530f4f8217c5812090ecf5ffb5f9e8bac2356a8dfdbe5012c9308"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\closed\\snapshots.json",
+      "bytes": 1721,
+      "sha256": "41c615efc793935d347110b1e4305a956bd5bc29b5d13c48c9f89f37366b5deb"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\partial_analysis.json",
+      "bytes": 2423,
+      "sha256": "485dda9cc355710ef7514a5db03940fe3221d7bd7d5245dd9ccc7a804b3f8548"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\probe-11348-134366633064138541.jsonl",
+      "bytes": 779,
+      "sha256": "32498216e2352e457b5571e83ece066b1e57d40c7623b4af6c3dc986e2b8f70a"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\probe-11348-134366633066223538.jsonl",
+      "bytes": 16710,
+      "sha256": "0e540feff393811c6ef6749827a23d1558d263776e0a1d11bd37635179a70b34"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\ReShade.log",
+      "bytes": 33175,
+      "sha256": "797766565e2011606e7bd2af2037f02b869c7c9ef660e00b1d1f08a641b2b927"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\RESULT.md",
+      "bytes": 2862,
+      "sha256": "518fdd02018c9cb6a7d776882b9933b2284e0347c2bc0742f047d8b87622ff22"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\runtime-11348-134366633063428551.jsonl",
+      "bytes": 439,
+      "sha256": "5abe94878da8ad34b632af76267ff6e5fcb60cdf006a2ebafac8078dd9ee468b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\runtime-11348-134366633065553540.jsonl",
+      "bytes": 7516,
+      "sha256": "6eca7a05bdb1f9019a83767db72bceeaece69ca2503b3ad7e8b91458740bbc8b"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\snapshots.json",
+      "bytes": 1802,
+      "sha256": "bfe6e192f6f28b64eddf6d66ba8d9dbfaa4552a75f457525e3f1049a1925e1ee"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\status.json",
+      "bytes": 4086,
+      "sha256": "f6b1f909311b4cef8bc519145d03af16da104df69d60746ed890cc864b670f0d"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\status_after_metadata_review.json",
+      "bytes": 4087,
+      "sha256": "3fd1a2e631a686ad6d7804ef43283f938844ab09a578314c9a2d5875402f1331"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\r1\\verification.json",
+      "bytes": 316,
+      "sha256": "85e18b451fc7ddaa6adafe1c4f87e6abe86c10fe5eb8f9460dae1b6686f4c376"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\STATUS.md",
+      "bytes": 3946,
+      "sha256": "5d5091b4685e925ff956f6cea7c9e79a71513406484a3b29a370d921d7b44f96"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\status_before_manual_run.json",
+      "bytes": 2057,
+      "sha256": "cf2c4880bbf8db4c896983f62ed0fa950957937543670f79afe7f03cea701112"
+    },
+    {
+      "path": "research\\67_c2077_canary_probe_20261016\\verification.json",
+      "bytes": 618,
+      "sha256": "81d822a33b41ac45c6c20eb6dbcf16a004e7763a20e1e15e2890b5408d333454"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 25945,
+      "sha256": "e1519f996007bebcad4594c2e6a68a3a5e614c24fed38dbce4d53a8ad28452d0"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 105380,
+      "sha256": "2003c85b976aebeeb92fb05b8501b3d850e69766e3fdb1735198d15aecc3c370"
+    },
+    {
+      "path": "tools\\c2077_shader_loader.py",
+      "bytes": 13475,
+      "sha256": "bf36d410484cbe34caea046cc527131388defe490bc8299db8edb93d3af0e544"
+    },
+    {
+      "path": "tools\\c2077_shader_probe.cpp",
+      "bytes": 13786,
+      "sha256": "19ee10ca726ca10ddeb30f817d943774132c020a006082bf80ca6820af18fa44"
+    },
+    {
+      "path": "research\\66_c2077_shader_loader_20261016\\deployment.json",
+      "bytes": 16954,
+      "sha256": "a22f4e95c30d802bf09297dc88e39c0c5531d2a667f9df3386bca0a80e9179ac"
+    }
+  ]
+}

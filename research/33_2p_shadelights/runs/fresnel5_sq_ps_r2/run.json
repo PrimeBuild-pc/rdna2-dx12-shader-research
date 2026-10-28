@@ -1,0 +1,9 @@
+{
+  "variant": "fresnel5",
+  "set": "sq_ps",
+  "rep": 2,
+  "pid": 4900,
+  "samples": 32,
+  "bytecode_sha256": "ff92e6680b1dac88a2c3af5ff2a285d40a036f9300cffe2b961cb5f7a6ad91f2",
+  "executable_sha256": "15ea5c728fa0ef781da5ee49ad7e1f78c59eb3c5593af0856b0d31e0c71d3ad5"
+}

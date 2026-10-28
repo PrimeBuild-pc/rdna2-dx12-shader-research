@@ -1,0 +1,8 @@
+10,000,000 input rows
+Traceback (most recent call last):
+  File "C:\Users\Lorenzo\Downloads\driver mod\tools\c2077_etw_offline.py", line 319, in <module>
+    cpu(args)
+  File "C:\Users\Lorenzo\Downloads\driver mod\tools\c2077_etw_offline.py", line 243, in cpu
+    images.update(d['ProcessId'], d['ImageBase'], d['ImageSize'], d['FileName'], op in ('End', 'Unload'))
+                  ~^^^^^^^^^^^^^
+KeyError: 'ProcessId'

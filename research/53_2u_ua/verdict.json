@@ -1,0 +1,35 @@
+{
+  "workload": "D3D12DynamicIndexing",
+  "phase": "2U",
+  "verdict": "MISS",
+  "closed_as": "NO_HEADROOM",
+  "baseline": {
+    "region0_draw_cities_ns": 95620,
+    "aa_n95_pct": 0.04,
+    "acceptance_threshold_pct": 1.0,
+    "oracle": "back buffer after 200 warm-up plus 500 frames, byte-identical across 8 base processes"
+  },
+  "hot_shader": {
+    "name": "shader_mesh_dynamic_indexing_pixel / PSMain",
+    "bytecode_sha256_prefix": "ad6c6b0d",
+    "body": "two texture samples and a multiply, six lines of HLSL"
+  },
+  "ceiling_probe": {
+    "variant": "ablate_ps",
+    "what": "the whole pixel shader body replaced by a constant expression of the interpolated uv",
+    "delta_region0_pct": -0.38,
+    "per_process_pct": [11.38, -0.38, -0.33, -0.38, -0.38, -0.46],
+    "gate": "3 % of the primary region, preregistered",
+    "result": "FAILS the gate: deleting the entire pixel shader is worth 0.38 % of the pass, so no source-level change to it can matter. The workload is bound by the 100 draw calls of the city grid, not by shading"
+  },
+  "transformations": 0,
+  "accepted": 0,
+  "stage_failed": "ceiling gate, before any hypothesis",
+  "cost": "1 cycle: pristine copy, instrumentation, gated build, baseline, ceiling probe",
+  "anomaly": {
+    "what": "ablate_ps rep 1 came out 11.8 % slower than its own five other processes",
+    "checked": "every variant measured in 2T and 2U was tested for the same effect. No other r1 deviates by more than 0.3 % from its own r2+ median; the one other apparent case, 52_2t_w4/base at +1.04 %, is the cross-session drift already found and fixed by temporal pairing",
+    "consequence": "no earlier verdict is affected. The preregistered acceptance rule requires every paired process to be negative, so an outlier of this kind on a real candidate would produce a false rejection. The rule is not being changed after the fact; the protocol from here on is that a candidate showing one such outlier is re-run with more processes and both sets are reported",
+    "cause": "not established. It is not shader compilation - 200 warm-up frames precede the measured window and the region is a GPU timestamp median over 500 frames. A power or clock state on a GPU that had been idle is the likelier explanation, and it is recorded as unexplained rather than guessed"
+  }
+}

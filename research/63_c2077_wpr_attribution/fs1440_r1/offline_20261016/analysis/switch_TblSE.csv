@@ -1,0 +1,4 @@
+function name,exclusivehits,totalpercent,inclusivehits,base,limit,size
+ntkrnlmp.exe!SwapContext,6757132,98.31%,6873056,0x006b4410,0x006b4aa4,0x00000694
+ntkrnlmp.exe!KeExpandKernelStackAndCalloutInternal,115930,1.69%,115930,0x00232540,0x00232699,0x00000159
+ntkrnlmp.exe!KiCommitThreadWait,136,0.00%,6826667,0x00315900,0x00315ea5,0x000005a5

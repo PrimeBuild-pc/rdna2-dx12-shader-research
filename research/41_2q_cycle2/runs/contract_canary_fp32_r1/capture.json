@@ -1,0 +1,22 @@
+{
+  "variant": "contract_canary",
+  "rep": 1,
+  "pid": 8884,
+  "draws": 34,
+  "image": {
+    "pid": 8884,
+    "frame_index": 140,
+    "target": "g_SceneColorBuffer/SV_Target0",
+    "capture_point": "after Render Color, before particles/post-effects",
+    "dxgi_format": 2,
+    "format_name": "R32G32B32A32_FLOAT",
+    "bytes_per_pixel": 16,
+    "width": 1920,
+    "height": 1080,
+    "row_pitch": 30720,
+    "stored_row_bytes": 30720,
+    "padding_stored": false
+  },
+  "image_sha256": "33f1cf2ed60a6341fee5bc1b3a61451b8ce1770a28882c5eaa31ff6720dfe17b",
+  "bytecode_sha256": "d85ff8a431d151d84cbec2945c669609060771bf706e1ec9fb5b5b7edc1852ff"
+}

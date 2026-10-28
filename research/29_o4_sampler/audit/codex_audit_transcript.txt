@@ -1,0 +1,400 @@
+    viewport, scissor);
+
+• Ran $path = 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\claude\O4_
+  │ 20260906_021230\MiniEngine\ModelViewer\Model
+  │ … +2 lines
+  └
+        m_MainScissor.left = 0;
+    … +112 lines (ctrl + t to view transcript)
+        TemporalEffects::ResolveImage(gfxContext);
+
+
+• Ran rg -n "LEGACY_RENDERER|m_ModelInst|Sponza"
+  │ "C:
+  │ \Users\Lorenzo\AppData\Local\Temp\claude\O4_
+  │ … +5 lines
+  └ C:
+    \Users\Lorenzo\AppData\Local\Temp\claude\O4_20
+    … +112 lines (ctrl + t to view transcript)
+    er.vcxproj:360:    <CopyFileToFolders
+    Include="Sponza\particles.json">
+
+• Ran $path = 'C:
+  │ \Users\Lorenzo\AppData\Local\Temp\claude\O4_
+  │ 20260906_021230\MiniEngine\ModelViewer\Model
+  │ … +2 lines
+  └     if (getenv("ME_O1_DIR") ||
+    getenv("ME_O2_DIR")) {
+    … +55 lines (ctrl + t to view transcript)
+
+        Renderer::Shutdown();
+
+• Ran $j = python -B
+  │ "$env:TEMP\o4_independent_audit_codex\recalc
+  │ _o4.py" "C:\Users\Lorenzo\Downloads\driver
+  │ … +10 lines
+  └ ParserError:
+    Line |
+    … +4 lines (ctrl + t to view transcript)
+    ~
+         | An empty pipe element is not allowed.
+
+• Ran $j = python -B
+  │ "$env:TEMP\o4_independent_audit_codex\recalc
+  │ _o4.py" "C:\Users\Lorenzo\Downloads\driver
+  │ … +10 lines
+  └
+    variant    rep   GPUTime GPUBusyCycles
+    … +24 lines (ctrl + t to view transcript)
+    1.47
+
+
+• Edited
+~\AppData\Local\Temp\o4_independent_audit_codex\re
+calc_o4.py (+20 -1)
+     15  def read_run(name):
+     16 -    path = RUNS / name / "gpa_results.csv
+         "
+     16 +    return read_path(RUNS / name / "gpa_r
+         esults.csv", name)
+     17 +
+     18 +
+     19 +def read_path(path, name):
+     20      rows = {}
+        ⋮
+    120
+    121 +o3_runs = ROOT / "research" / "28_o3_mate
+         rial_ablation" / "runs"
+    122 +o3 = {}
+    123 +for variant in ("mat0", "mat3"):
+    124 +    per_process = []
+    125 +    for rep in (1, 2, 3):
+    126 +        samples = read_path(o3_runs / f"{
+         variant}_resp_r{rep}" / "gpa_results.csv"
+         ,
+    127 +                            f"{variant}_r
+         esp_r{rep}")
+    128 +        assert len(samples) == 32
+    129 +        per_process.append(median([ta_sum
+         (s, "TA_BUSY") for s in samples]))
+    130 +    o3[variant] = median(per_process)
+    131 +report["o3_ta_busy"] = {
+    132 +    "mat0": o3["mat0"],
+    133 +    "mat3": o3["mat3"],
+    134 +    "mat3_delta_pct": percent(o3["mat3"],
+          o3["mat0"]),
+    135 +}
+    136 +
+    137  print(json.dumps(report, indent=2, sort_k
+         eys=True))
+
+• Ran $j = python -B
+  │ "$env:TEMP\o4_independent_audit_codex\recalc
+  │ _o4.py" "C:\Users\Lorenzo\Downloads\driver
+  │ … +2 lines
+  └ {
+      "mat0": 88771763.0,
+      "mat3": 76422288.0,
+      "mat3_delta_pct": -13.911490075960298
+    }
+
+• Ran $base =
+  │ 'research\29_o4_sampler\source_revisions\s_b
+  │ ase_Renderer.cpp'; foreach ($v in
+  │ … +5 lines
+  └ DIFF s_aniso1
+    diff --git "a/research\\29_o4_sampler\
+    … +44 lines (ctrl + t to view transcript)
+    D3D12_FILTER_MIN_MAG_LINEAR_MIP_POINT;
+
+
+• Ran $manifest = Get-Content -Raw
+  │ research\29_o4_sampler\experiment_manifest.j
+  │ son | ConvertFrom-Json; $issues = @();
+  │ … +25 lines
+  └ {
+      "runs": 23,
+      "issues": 0,
+      "detail": ""
+    }
+
+• Ran Get-ChildItem -LiteralPath
+  │ research\29_o4_sampler\runs -Directory |
+  │ Sort-Object Name | Select-Object
+  │ … +1 lines
+  └ s_aniso1_aniso_r1
+    s_aniso1_resp_r1
+    … +19 lines (ctrl + t to view transcript)
+    s_point_resp_r3
+    s_point_sq_ps_r1
+
+• Edited
+~\AppData\Local\Temp\o4_independent_audit_codex\re
+calc_o4.py (+6 -0)
+    55      buckets = {k: median(values) for k, va
+        lues in per_sample_buckets.items()}
+    56 +    mip_buckets = {
+    57 +        k: median([ta_sum(sample, f"MIP_{k
+        }_CYCLE_QUADS") for sample in samples])
+    58 +        for k in (1, 2)
+    59 +    }
+    60      cycles_per_sample = [
+       ⋮
+    70          "median_tex_ave_anisotropy": media
+        n([s["TexAveAnisotropy"] for s in samples]
+        ),
+    71 +        "mip_buckets": mip_buckets,
+    72 +        "mip_cycles": mip_buckets[1] + 2 *
+         mip_buckets[2],
+    73      }
+
+• Ran $j = python -B
+  │ "$env:TEMP\o4_independent_audit_codex\recalc
+  │ _o4.py" "C:\Users\Lorenzo\Downloads\driver
+  │ … +10 lines
+  └ ParserError:
+    Line |
+    … +3 lines (ctrl + t to view transcript)
+    ~
+         | An empty pipe element is not allowed.
+
+• Ran $j = python -B
+  │ "$env:TEMP\o4_independent_audit_codex\recalc
+  │ _o4.py" "C:\Users\Lorenzo\Downloads\driver
+  │ … +11 lines
+  └ [
+      {
+    … +33 lines (ctrl + t to view transcript)
+      }
+    ]
+
+• Ran rg -n "response_outcome|threshold|
+  │ bidirectional|conclusion_rule"
+  │ research/29_o4_sampler/
+  │ … +23 lines
+  └ 31:    "response_outcome": "GPUTime and
+    GPUBusyCycles of the Render Color sample",
+    … +76 lines (ctrl + t to view transcript)
+    132:the build gate enforces it. Instruction
+    count, ALU and scheduling are then fixed by
+
+• Ran rg -n -F 'n95["GPUTime"]' tools/
+  │ o4_analyse.py; rg -n -F 'threshold =' tools/
+  │ o4_analyse.py
+  └ 105:    threshold = max(2.0, 3 *
+    n95["GPUTime"])
+    … +2 lines (ctrl + t to view transcript)
+    106:    print(f"\n   preregistered threshold =
+    max(2%, 3 x N95[GPUTime]) = {threshold:.2f}%")
+
+──────────────────────────────────────────────────
+
+• La verifica di implementazione chiude così:
+  nello scope GPA “Render Color” il pixel shader
+  attivo usa s10 solo per diffuse/normal/specular,
+  ma lo stesso s10 è usato prima anche nei pass
+  cutout depth/shadow; questi non entrano
+  direttamente nei contatori del sample, però
+  possono cambiare lo stato caldo di cache/
+  residenza. Nessun contatore memoria/cache è
+  stato raccolto, quindi questa componente non è
+  separabile dai dati O4.
+
+• Ran git status --short
+  └ fatal: not a git repository (or any of the
+    parent directories): .git
+
+──────────────────────────────────────────────────
+
+• Esito: i calcoli numerici reggono; alcune
+  interpretazioni forti no. Nessun file del
+  progetto modificato; ricalcolo con script stdlib
+  indipendente in %TEMP%
+  \o4_independent_audit_codex\recalc_o4.py.
+
+  1. Dose e risposta
+      - Verificato: 8 sample per dose, 32 sample ×
+        3 processi per risposta; somma sulle 80 TA
+        e doppia mediana corretta. Mediana dei
+        cicli per sample e somma dei bucket
+        mediani coincidono.
+
+      - Istogrammi, ordine
+        k=1/2/4/6/8/10/12/14/16:
+          - s_base: 9 937 801 / 884 028 / 268
+            862 / 89 707 / 44 056 / 0 / 0 / 0 / 0
+            → 13 671 995 cicli.
+
+          - s_aniso16: 9 937 753 / 884 028 / 268
+            856 / 89 701 / 22 517 / 9 387 / 3
+            526 / 2 579 / 6 039 → 13 768 487,
+            +0,706%.
+
+          - s_aniso1: solo k=1: 11 217 188 →
+            −17,955%.
+
+          - s_point: solo k=1: 11 222 924 →
+            −17,913%.
+
+          - s_bilinear: solo k=1: 11 218 699 →
+            −17,944%.
+
+      - Risposta finale TA_BUSY / GPUTime /
+        GPUBusyCycles:
+          - s_base: 88 769 501,5 / 804 500 / 1 189
+            003.
+
+          - s_aniso1: −2,735% / −2,312% / −2,202%.
+          - s_aniso16: +0,099% / −0,184% /
+            +0,252%.
+
+          - s_point: −3,503% / −2,864% / −2,631%.
+          - s_bilinear: −3,536% / −2,521% /
+            −2,784%.
+
+      - Giudizio: o4_analysis.json è riprodotto.
+        Unica differenza irrilevante: per
+        GPUBusyCycles ottengo N95 0,3165%, contro
+        0,3155%, perché lo script usa un
+        denominatore dipendente dall’ordine della
+        coppia. Arrotondato resta 0,32%.
+
+  2. Soglia e dichiarazione dell’effetto
+      - Verificato: il manifest nomina entrambe le
+        outcome ma non associa N95 a una metrica;
+        la scelta di GPUTime compare solo
+        successivamente in tools/
+        o4_analyse.py:105, non nella
+        preregistrazione research/29_o4_sampler/
+        experiment_manifest.json:31.
+
+      - Con N95 per metrica:
+          - GPUTime: soglia 3,904% → nessuna
+            variante passa.
+
+          - GPUBusyCycles: soglia 2,000% → tutte
+            le tre varianti verso il basso
+            passano.
+
+          - TA_BUSY: soglia 2,000% → tutte
+            passano.
+
+      - Giudizio: la lettura onesta è: riduzione
+        preregistrata di GPUBusyCycles e TA_BUSY;
+        miglioramento di GPUTime suggestivo ma non
+        confermato. Non è cherry-picking se si
+        applica la stessa formula separatamente a
+        entrambe le outcome e si riportano
+        entrambi gli esiti. Se serve un unico
+        verdetto co-primary conservativo, occorre
+        richiedere che passino entrambe: quindi
+        inconclusivo/no effect dichiarabile sul
+        tempo.
+
+      - Inoltre “N95” è solo il massimo scarto fra
+        tre mediane di processo, non una stima
+        statisticamente solida del 95º percentile.
+
+  3. Bidirezionalità
+      - Verificato: s_aniso16 aumenta la dose solo
+        dello 0,706%, contro circa −17,9% degli
+        altri bracci. La risposta attesa scalando
+        quella osservata verso il basso sarebbe
+        circa 0,1%, sotto il rumore; i suoi delta
+        sono infatti sostanzialmente nulli.
+
+      - Giudizio: concordo: la bidirezionalità è
+        formalmente positiva ma sperimentalmente
+        inefficace. Cadono:
+          - la prova bidirezionale contro
+            artefatti one-sided;
+
+          - una stima credibile della pendenza;
+          - conclusioni su linearità, simmetria o
+            saturazione;
+
+          - l’uso del null di s_aniso16 per
+            falsificare l’ipotesi.
+
+        Rimane l’evidenza unidirezionale dei
+        bracci di riduzione.
+
+  4. Confronto O3/O4
+      - Verificato indipendentemente dai CSV O3:
+        mat3 dà TA_BUSY −13,911%; s_point dà
+        −3,503%. Il rapporto descrittivo è 25,18%.
+
+      - Giudizio: la decomposizione “25%
+        filtraggio / 75% resto” non è causalmente
+        valida. Assume additività e comparabilità
+        non misurate. O3 rimuove anche ALU e
+        dipendenze — il rapporto O3 lo ammette
+        esplicitamente
+        research/28_o3_material_ablation/
+        PHASE_2O_O3_RESULTS.md:46 — mentre O4
+        cambia tap, mip, cache e traffico. Il 25%
+        è solo un confronto fra due interventi
+        diversi, non una partizione del costo.
+
+  5. Artefatti ulteriori
+      - Sampler condiviso — verificato:
+        defaultSampler s10 è usato dai tre sample
+        materiali, ma anche da DepthViewerPS per
+        gli alpha-test dei pass cutout depth/
+        shadow e da SkyboxPS. Questi pass sono
+        fuori dallo scope GPA “Render Color”, ma
+        possono cambiare lo stato caldo della
+        cache prima della misura.
+
+      - Secondo sampler modificato — verificato:
+        CubeMapSamplerDesc viene copiato dal
+        sampler modificato e installato come s12
+        research/29_o4_sampler/source_revisions/
+        s_point_Renderer.cpp:80. ModelViewerPS non
+        usa s12, quindi non entra direttamente nel
+        sample corrente, ma l’affermazione globale
+        “cambia solo il sampler materiali” è
+        falsa.
+
+      - Mip/cache — verificato: point e bilinear
+        usano entrambi MIP_POINT. I quads MIP a 2
+        cicli passano da 535 302 a zero; s_aniso1
+        sale invece a 1 282 689. I cicli MIP
+        cambiano +6,29% per aniso1 e circa −4,6%
+        per point/bilinear. La dose non è quindi
+        monodimensionale.
+
+      - Giudizio: senza contatori TCP/TCC/cache/
+        memoria, O4 misura il costo complessivo
+        del percorso sampler, non il solo lavoro
+        matematico del filtro. Anche il medesimo
+        DXIL non garantisce ISA nativa identica:
+        il driver vede la root signature e gli
+        static sampler durante la creazione della
+        PSO.
+
+      - ANISO_1 +12,9% — verificato e atteso: il
+        totale dei quads varia meno dello 0,07%;
+        sono i quads dei bucket superiori che
+        migrano in k=1. Non indica più sample.
+        Rafforza la dose misurata, mentre
+        sconsiglia di interpretare isolatamente
+        quel singolo bucket.
+
+      - Outlier verificato: s_aniso16 processo 1
+        ha GPUTime 720 620 contro circa 803–805
+        mila negli altri due, con GPUBusyCycles
+        quasi invariato. Il rapporto cicli/tempo è
+        circa 1,65 contro 1,48: compatibile con un
+        regime di clock/DVFS diverso, ma la causa
+        non è misurata. La mediana lo assorbe,
+        però spiega perché GPUTime sia la metrica
+        meno stabile.
+
+─ Worked for 10m 19s ─────────────────────────────
+
+
+› Ask Codex to do anything
+
+  gpt-5.6-sol high · ~\Downloads\driver mod

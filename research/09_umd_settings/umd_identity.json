@@ -1,0 +1,29 @@
+{
+ "analysed_copy": "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\C--Users-Lorenzo-Downloads-driver-mod\\78136534-9317-43c0-8e46-3ba47ceffcdb\\scratchpad\\umd\\amdxc64.dll",
+ "live_path": "C:\\WINDOWS\\System32\\DriverStore\\FileRepository\\u0203303.inf_amd64_e5876a26758f154c\\B026363\\amdxc64.dll",
+ "size": 82422960,
+ "sha256": "6aaade81651ffcdd19849fb3355aca5e4e7de5392a2120927e6defffb529b4b4",
+ "file_version": "8.18.10.0500",
+ "file_description": "AMD DX12 UMD",
+ "product": "Advanced Micro Devices, Inc. Radeon DirectX 12 Driver",
+ "signature": "Signed - Advanced Micro Devices",
+ "driverstore": "u0203303.inf_amd64_e5876a26758f154c / B026363",
+ "kmd_driver_version": "32.0.21045.5002",
+ "evidence_source": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e968-e325-11ce-bfc1-08002be10318}\\0000 -> UserModeDriverName[3]",
+ "note": "il package 26.9.1 del progetto e' una revisione diversa (u0203729/B026432, sha256 6c42f438...)",
+ "exports_undecorated": {
+  "AmdExtD3DCreateInterface": "0x148490",
+  "AmdGetDxcModuleHandle": "0x1bd810",
+  "D3D12OpenCompilerDDI": "0x1bd920",
+  "DxcExternalFunc1": "0x1bda30",
+  "GetSettingsBlobsAll": "0x1bda40",
+  "GetSettingsBlobsAllDecoded": "0x14dd90",
+  "OpenAdapter12": "0x1bd820",
+  "OpenShimInterface": "0x168830"
+ },
+ "notable_sections": [
+  ".detourc",
+  ".detourd"
+ ],
+ "sc_option_count": 272
+}

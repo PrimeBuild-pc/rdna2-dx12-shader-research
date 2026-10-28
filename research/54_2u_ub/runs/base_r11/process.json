@@ -1,0 +1,12 @@
+{
+  "args": [
+    "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\base\\D3D12RaytracingProceduralGeometry.exe"
+  ],
+  "command_line": "\"C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\base\\D3D12RaytracingProceduralGeometry.exe\"",
+  "cwd": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\base",
+  "requested_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\base\\D3D12RaytracingProceduralGeometry.exe",
+  "executable_sha256": "b2604339122a31bb1f4d8b9f83338afe3899b6a131dbd8c97bb53a0bbfb13c98",
+  "pid": 3680,
+  "actual_executable": "C:\\Users\\Lorenzo\\Downloads\\driver mod\\research\\54_2u_ub\\builds\\base\\D3D12RaytracingProceduralGeometry.exe",
+  "returncode": 0
+}

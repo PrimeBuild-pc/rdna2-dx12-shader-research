@@ -1,0 +1,37 @@
+{
+  "workload": "D3D12HDR",
+  "phase": "2U",
+  "verdict": "MISS",
+  "closed_as": "NO_HEADROOM",
+  "baseline": {
+    "region0_whole_scene_ns": 76360,
+    "region1_present_pass_ns": 52720,
+    "present_pass_share_of_scene_pct": 69,
+    "aa_n95_pct": 0.21,
+    "acceptance_threshold_pct": 1.0
+  },
+  "hot_shader": {
+    "name": "presentPS / PSMain",
+    "bytecode_sha256_prefix": "a02b3b85",
+    "body": "two texture fetches, then Rec.709 to sRGB, or Rec.709 to Rec.2020 followed by the ST.2084 curve"
+  },
+  "ceiling_probe": {
+    "variant": "ablate_present",
+    "what": "the whole colour-transform chain removed; the two texture fetches kept",
+    "delta_region0_pct": 0.22,
+    "per_process_pct": [0.16, 0.03, 0.29, 0.52],
+    "delta_region1_present_pass_pct": -0.46,
+    "gate": "3 %, preregistered",
+    "result": "FAILS the gate, and in the direction that settles it: deleting every colour conversion in the shader leaves the present pass within half a percent. The pass is 69 % of the frame and is not limited by its arithmetic - it is a full-screen pass over two texture fetches"
+  },
+  "transformations": 0,
+  "accepted": 0,
+  "stage_failed": "ceiling gate, before any hypothesis",
+  "cost": "1 cycle",
+  "oracle_note": {
+    "observed": "the very first process of the session produced a different image from the five that followed: 12 pixels of 921 600, all inside one horizontal band at y 655-664, max delta 22. Runs 2 through 9 are byte-identical to each other, and all four ablate_present processes are byte-identical to each other",
+    "rule": "the preregistered oracle rule requires baseline processes to be identical to each other, so this workload's oracle is recorded as having FAILED that test on its first process",
+    "consequence": "none for this verdict, which was decided by the ceiling gate before any transformation. Had a transformation been attempted here, it would have carried this caveat",
+    "pattern": "the same shape as U-A's 11.8 % timing outlier on its first process - both are first-process-of-a-build effects whose cause is not established, and both are recorded rather than explained away"
+  }
+}

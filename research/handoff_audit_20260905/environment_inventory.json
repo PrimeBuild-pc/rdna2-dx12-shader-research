@@ -1,0 +1,77 @@
+{
+    "observed_at":  "2026-09-05T16:40:31.3844704+02:00",
+    "gpu":  [
+                {
+                    "Name":  "AMD Radeon RX 6950 XT",
+                    "DriverVersion":  "32.0.21045.5002",
+                    "PNPDeviceID":  "PCI\\VEN_1002\u0026DEV_73A5\u0026SUBSYS_05041043\u0026REV_C0\\6\u0026E5C6FD0\u00260\u002600000019"
+                }
+            ],
+    "cpu":  [
+                {
+                    "Name":  "AMD Ryzen 7 5800X3D 8-Core Processor           "
+                }
+            ],
+    "system":  {
+                   "TotalPhysicalMemory":  34277306368
+               },
+    "os":  {
+               "Caption":  "Microsoft Windows 11 Pro",
+               "Version":  "10.0.26200",
+               "BuildNumber":  "26200"
+           },
+    "tools":  [
+                  {
+                      "path":  "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
+                      "file_version":  "18.9.1.35102",
+                      "product_version":  "18.9.1+a81b4352504b9e097b512a9d615e8c56d013f595",
+                      "sha256":  "602BE585E4D4A233071EF8730ECEC43522C0DB4AFBF5B93553B7B260C5BFB7FF"
+                  },
+                  {
+                      "path":  "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+                      "file_version":  "1.8.2502.11",
+                      "product_version":  "1.8.2502.11 (239921522)",
+                      "sha256":  "854D5F29DBBE25B584942855E65D673DB3164F7F68E20FB784BE9CD747D14814"
+                  },
+                  {
+                      "path":  "C:\\Users\\Lorenzo\\AppData\\Local\\Temp\\claude\\gpa\\4_4\\bin\\GPUPerfAPIDX12-x64.dll",
+                      "file_version":  "4.4.0.5",
+                      "product_version":  "4.4.0.5",
+                      "sha256":  "71FA3F450E9BBD8952B735CA9009434C030C49DA82F015FE475CA914871803A1"
+                  },
+                  {
+                      "path":  "C:\\Program Files\\Intel\\PresentMon\\PresentMonConsoleApplication\\PresentMon-2.5.1-x64.exe",
+                      "file_version":  null,
+                      "product_version":  null,
+                      "sha256":  "9BEC3083069F58F911E6A512F4806DB51A27BD096103087BC1D05EF54C80A191"
+                  }
+              ],
+    "named_background_snapshot":  [
+                                      {
+                                          "ProcessName":  "PresentMonService",
+                                          "Id":  4460
+                                      }
+                                  ],
+    "disks":  [
+                  {
+                      "Name":  "C",
+                      "Free":  163374571520,
+                      "Used":  335653228544
+                  },
+                  {
+                      "Name":  "D",
+                      "Free":  236955906048,
+                      "Used":  264782462976
+                  },
+                  {
+                      "Name":  "E",
+                      "Free":  242014314496,
+                      "Used":  256449351680
+                  },
+                  {
+                      "Name":  "G",
+                      "Free":  null,
+                      "Used":  0
+                  }
+              ]
+}

@@ -89,11 +89,13 @@ was run on 8 more workloads, each named before it was opened:
 
 ```mermaid
 xychart-beta horizontal
-    title "Best correct candidate per workload (% faster on the target pass)"
+    title "Best correct candidate (% faster)"
     x-axis ["MiniEngine ModelViewer", "D3D12Raytracing ProceduralGeometry", "D3D12Multithreading", "D3D12nBodyGravity", "D3D12VariableRateShading"]
-    y-axis "% faster" -5 --> 45
-    bar [41.6, 2.18, 0.22, 0.0, -0.13]
+    y-axis "% faster on the target pass" 0 --> 45
+    bar [41.6, 2.18, 0.22, 0, 0]
 ```
+
+Bars below 0 are shown as 0 (VRS was 0.13% slower). Full numbers:
 
 | Workload | Best *correct* candidate | Verdict |
 |---|---:|---|

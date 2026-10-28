@@ -89,6 +89,7 @@ Reports are mostly in Italian. Look for `STATUS.md`, `RESULT*.md`, `PHASE_*_RESU
 | `67_c2077_canary_probe_20261016/` | Observer probe: glass PSO not bound to draws in the session. |
 | `68_c2077_backbuffer_catalog_20261016/` | Back-buffer probe; selected full-screen shader `1642c9e5…`. |
 | `69_c2077_visible_canary_20261017/` | Preregistration only. **Next step.** |
+| `c2077_native_benchmark_results_extra/` | Three raw native benchmark outputs saved at cleanup time (not tied to a phase folder). |
 
 ## Top-level reports in `research/`
 

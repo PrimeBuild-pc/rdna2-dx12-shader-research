@@ -1,0 +1,185 @@
+{
+  "schema": 1,
+  "archived": "2026-10-28",
+  "human_guide": "docs/REBUILD.md",
+  "release": {
+    "tag": "v1.0-archive",
+    "repo": "PrimeBuild-pc/rdna2-dx12-shader-research",
+    "assets": {
+      "large-measurement-data.zip": "1c63bcd9456de9ff32156485e70f8fa9ee16bea5946939f99ac2e8363cb3ccbb",
+      "wpr-etw-event-exports.zip": "8308dc3b551745c3f1dc3ced348e0ee30f37bfd57f7f488f60c5f31b5160c5b1",
+      "oracle-frame-dumps.7z": "a37373227e76d4d0405d712a52049a0ceb405bed4b99e0036a58232a2942dd56",
+      "msbuild-diagnostic-logs.7z": "c711aa37792157a7e8429b3058869ac91fdd49e1314c9e6c4372a56c8cca0975",
+      "extra-analysis-data.7z": "cda2eb155bfa6a25aa7456b3d459621afef781648190ce1faf3da93dd8a77aae"
+    },
+    "extract_to": "repository root",
+    "file_hashes": "data/manifests/release_data_files.csv"
+  },
+  "hardware": {
+    "gpu": "AMD Radeon RX 6950 XT (Navi 21, PCI 1002:73A5 rev C0)",
+    "cpu": "AMD Ryzen 7 5800X3D",
+    "ram_gb": 32,
+    "board": "X570",
+    "os": "Windows 11 Pro 25H2 build 26200",
+    "hags": true,
+    "display": "2560x1440"
+  },
+  "drivers": [
+    {
+      "version": "32.0.21045.5002",
+      "adrenalin": "26.8.1",
+      "used_for": "all September 2026 measurements (phases 1-2U, 60-63)"
+    },
+    {
+      "version": "32.0.21045.11001",
+      "used_for": "phases 64-68 (October 2026)"
+    },
+    {
+      "version": "32.0.21045.16010",
+      "adrenalin": "26.10.1",
+      "used_for": "state at archive time; adds FSR 4.1 on RX 6000"
+    }
+  ],
+  "driver_package_analysed": {
+    "file": "whql-amd-software-adrenalin-edition-26.9.1-win11-a.exe",
+    "bytes": 986362744,
+    "sha256": "b06cd91e9a22078d7f10b7a19530e0bdb51214b10693da2577fd3f0617db2bdb",
+    "note": "not the installed driver"
+  },
+  "tools": [
+    {
+      "name": "Python",
+      "version": "3.11",
+      "install": "pip install -r requirements.txt",
+      "packages": {
+        "pefile": "2024.8.26",
+        "lief": "1.0.0",
+        "capstone": "5.0.7"
+      }
+    },
+    {
+      "name": "PowerShell",
+      "version": "7",
+      "install": "winget install Microsoft.PowerShell"
+    },
+    {
+      "name": "PresentMon",
+      "version": "2.5.1",
+      "url": "https://github.com/GameTechDev/PresentMon/releases"
+    },
+    {
+      "name": "Windows SDK (DXC, dxil.dll, WPT: wpr/xperf/WPA)",
+      "version": "10.0.26100.0",
+      "dxcompiler": "1.8.2502.11",
+      "url": "https://developer.microsoft.com/windows/downloads/windows-sdk/"
+    },
+    {
+      "name": "Visual Studio Build Tools",
+      "msvc": "14.51.36231",
+      "platform_toolset": "v145"
+    },
+    {
+      "name": "Radeon Developer Tool Suite",
+      "version": "2026-05-28-1806",
+      "components": {
+        "RGA": "2.14.2",
+        "RGP": "2.7",
+        "RDP": "3.5.0",
+        "RMV": "1.15",
+        "RGD": "1.6.3",
+        "RRA": "1.11"
+      },
+      "url": "https://gpuopen.com/tools/"
+    },
+    {
+      "name": "GPUPerfAPI",
+      "version": "4.4.5",
+      "url": "https://github.com/GPUOpen-Tools/gpu_performance_api/releases"
+    },
+    {
+      "name": "Ghidra",
+      "version": "12.1.3",
+      "build": "20260817",
+      "optional": true,
+      "url": "https://github.com/NationalSecurityAgency/ghidra/releases"
+    },
+    {
+      "name": "Process Monitor",
+      "version": "4.1",
+      "url": "https://learn.microsoft.com/sysinternals/downloads/procmon"
+    },
+    {
+      "name": "Sigcheck",
+      "version": "2.91",
+      "url": "https://learn.microsoft.com/sysinternals/downloads/sigcheck"
+    },
+    {
+      "name": "ReShade (Full Add-on, x64)",
+      "version": "6.8.0",
+      "url": "https://reshade.me",
+      "setup_sha256": "afe4c8f13048306307983b8b3d41d5bf00a86820440b0e57dea10950e1176445",
+      "sdk_commit": "18deaa52de0c425a78b329e9cb3c497281cd00ec",
+      "restriction": "Cyberpunk 2077 single-player only; never in games with anti-cheat"
+    }
+  ],
+  "sources": [
+    {
+      "name": "DirectX-Graphics-Samples",
+      "url": "https://github.com/microsoft/DirectX-Graphics-Samples",
+      "commit": "213dd4fd4918ea009dd8f35adee1aff1f2ecaba4",
+      "patch": "preserved_temp_claude_20260909/dxs-tracked-changes.patch",
+      "extra_files": "preserved_temp_claude_20260909/dxs-untracked/"
+    },
+    {
+      "name": "FidelityFX-SDK",
+      "url": "https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK",
+      "commit": "60f4ea81909200d8542eca14dccb2628b763a9a3"
+    }
+  ],
+  "games": [
+    {
+      "name": "Cyberpunk 2077",
+      "store": "GOG",
+      "version_measured": "2.31",
+      "current_version_at_archive": "2.5",
+      "shader_caches": {
+        "engine/shader_final.cache": "339145371a3b5aaa08eb4ef82d558f445b632e28603ee0f3b4860270dfc3ccfa",
+        "engine/staticshader_final.cache": "bff160947aba8df144200247adc39b44c26322360628d875f7c7218ad26c59ff"
+      },
+      "benchmark_settings": "2560x1440 fullscreen (windowMode 2), ray tracing off, upscaling off, frame generation off"
+    },
+    {
+      "name": "Fortnite",
+      "store": "Epic",
+      "mode": "DX12 Performance Mode",
+      "restriction": "anti-cheat: passive capture only"
+    },
+    {
+      "name": "3DMark Steel Nomad",
+      "test": "DX12 v1"
+    }
+  ],
+  "data_to_regenerate": [
+    {
+      "what": "Cyberpunk WPR CPU+GPU trace (.etl)",
+      "how": "research/C2077_OPERATOR_PROCEDURE.md + tools/capture_etw.ps1, then tools/c2077_native.py, tools/etl_extract.cpp, tools/c2077_etw_offline.py, tools/c2077_gpu_queue.py"
+    },
+    {
+      "what": "Cyberpunk baseline on current game/driver",
+      "how": "5 manual runs of the built-in benchmark with PresentMon (tools/capture_game.py), parse with tools/pmparse.py"
+    },
+    {
+      "what": "Shader cache copies and extracted DXIL",
+      "how": "copy engine/*.cache from own install, run research/64_c2077_shader_access_20261016/probe_containers.py"
+    },
+    {
+      "what": "MiniEngine variant builds",
+      "how": "tools/buildv.py with the preregistered bytecode SHA-256 of each phase"
+    }
+  ],
+  "original_paths": {
+    "project_root": "C:\\Users\\Lorenzo\\Downloads\\driver mod",
+    "cyberpunk": "E:\\GOG\\Cyberpunk 2077",
+    "presentmon_captures": "C:\\Users\\Lorenzo\\Documents\\PresentMon\\Captures"
+  }
+}

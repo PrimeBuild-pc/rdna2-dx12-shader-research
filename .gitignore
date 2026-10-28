@@ -45,3 +45,8 @@ __pycache__/
 /research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212653.csv
 /research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212801.csv
 /research/fortnite_DX12_PerformanceMode/pmcap-FortniteClient-Win64-Shipping.exe-260903-212907.csv
+
+# Also in the release archives
+*.bin
+msbuild_diagnostic.log
+*.jsonl.gz

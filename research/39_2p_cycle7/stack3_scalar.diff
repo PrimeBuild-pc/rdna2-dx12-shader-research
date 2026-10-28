@@ -1,0 +1,68 @@
+--- a/MiniEngine/Model/Shaders/Lighting.hlsli
++++ b/MiniEngine/Model/Shaders/Lighting.hlsli
+@@ -49,5 +49,7 @@
+ void FSchlick( inout float3 specular, inout float3 diffuse, float3 lightDir, float3 halfVec )
+ {
+-    float fresnel = pow(1.0 - saturate(dot(lightDir, halfVec)), 5.0);
++    float f1 = 1.0 - saturate(dot(lightDir, halfVec));
++    float f2 = f1 * f1;
++    float fresnel = f2 * f2 * f1;
+     specular = lerp(specular, 1, fresnel);
+     diffuse = lerp(diffuse, 0, fresnel);
+@@ -168,4 +170,7 @@
+     distanceFalloff = max(0, distanceFalloff - rsqrt(distanceFalloff));
+ 
++    if (distanceFalloff == 0.0)
++        return 0.0;
++
+     return distanceFalloff * ApplyLightCommon(
+         diffuseColor,
+@@ -208,5 +213,9 @@
+     coneFalloff = saturate((coneFalloff - coneAngles.y) * coneAngles.x);
+ 
+-    return (coneFalloff * distanceFalloff) * ApplyLightCommon(
++    float atten = coneFalloff * distanceFalloff;
++    if (atten == 0.0)
++        return 0.0;
++
++    return atten * ApplyLightCommon(
+         diffuseColor,
+         specularColor,
+@@ -237,9 +246,5 @@
+     )
+ {
+-    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));
+-    shadowCoord.xyz *= rcp(shadowCoord.w);
+-    float shadow = GetShadowConeLight(lightIndex, shadowCoord.xyz);
+-
+-    return shadow * ApplyConeLight(
++    float3 lit = ApplyConeLight(
+         diffuseColor,
+         specularColor,
+@@ -255,8 +260,15 @@
+         coneAngles
+         );
++
++    if (!any(lit != 0.0))
++        return 0.0;
++
++    float4 shadowCoord = mul(shadowTextureMatrix, float4(worldPos, 1.0));
++    shadowCoord.xyz *= rcp(shadowCoord.w);
++    return GetShadowConeLight(lightIndex, shadowCoord.xyz) * lit;
+ }
+ 
+ // options for F+ variants and optimizations
+-#if 0 // SM6.0
++#if 1 // SM6.0
+ #define _WAVE_OP
+ #endif
+@@ -267,7 +279,7 @@
+ // choose one of these:
+ //# define BIT_MASK
+-# define BIT_MASK_SORTED
++//# define BIT_MASK_SORTED
+ //# define SCALAR_LOOP
+-//# define SCALAR_BRANCH
++# define SCALAR_BRANCH
+ 
+ // enable to amortize latency of vector read in exchange for additional VGPRs being held

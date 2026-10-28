@@ -1,4 +1,20 @@
-# rdna2-dx12-shader-research
+<p align="center">
+  <img src="docs/assets/banner.svg" alt="RDNA2 · DX12 Shader Research — pixel-art banner with a graphics card icon" width="100%">
+</p>
+
+<p align="center">
+  <img alt="Status: paused" src="https://img.shields.io/badge/status-paused-orange?style=flat-square">
+  <a href="https://github.com/PrimeBuild-pc/rdna2-dx12-shader-research/releases/tag/v1.0-archive"><img alt="Release" src="https://img.shields.io/github/v/release/PrimeBuild-pc/rdna2-dx12-shader-research?style=flat-square&label=data%20archive"></a>
+  <a href="LICENSE"><img alt="Code license: MIT" src="https://img.shields.io/badge/code-MIT-blue?style=flat-square"></a>
+  <a href="LICENSE-DOCS"><img alt="Docs and data license: CC BY 4.0" src="https://img.shields.io/badge/docs%20%26%20data-CC%20BY%204.0-lightgrey?style=flat-square"></a>
+  <br>
+  <img alt="GPU: Radeon RX 6950 XT (RDNA2)" src="https://img.shields.io/badge/GPU-RX%206950%20XT%20(RDNA2)-ED1C24?style=flat-square&logo=amd&logoColor=white">
+  <img alt="API: DirectX 12" src="https://img.shields.io/badge/API-DirectX%2012-107C10?style=flat-square">
+  <img alt="OS: Windows 11" src="https://img.shields.io/badge/OS-Windows%2011-0078D4?style=flat-square">
+  <img alt="Top language" src="https://img.shields.io/github/languages/top/PrimeBuild-pc/rdna2-dx12-shader-research?style=flat-square">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/PrimeBuild-pc/rdna2-dx12-shader-research?style=flat-square">
+</p>
+
 
 **Where does a DX12 game waste GPU time on an AMD RDNA2 card, and can any of it be won back
 without touching the driver?** This is a two-month, evidence-first research log on a
@@ -172,6 +188,7 @@ list of open problems is in [docs/ROADMAP.md](docs/ROADMAP.md).
 | [PLAN.md](PLAN.md) | The full phase-by-phase plan and dated log (English translation). |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | What is left to do, ranked. |
 | [docs/PHASES.md](docs/PHASES.md) | Index of every `research/NN_*` folder with a one-line summary. |
+| [docs/REBUILD.md](docs/REBUILD.md) | Every tool, version, driver and source commit, plus how to regenerate the data that is not published. |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Environment, tools, ground rules, how to run the self-checks. |
 | `research/` | One folder per phase: preregistrations, raw CSV/JSON, build logs, verdicts, reports. |
 | `tools/` | Python/PowerShell/C++ tooling: capture, parsing, build gates, analysis, the ReShade add-on. |
@@ -191,11 +208,10 @@ To keep it legal and cloneable, these were **excluded** (every file is listed wi
 - AMD driver package/installer, Radeon Developer Tool Suite, Ghidra, Sysinternals tools.
 - Cyberpunk 2077 shader caches, extracted DXIL/disassembly, and any payload derived from them.
 - ReShade binaries and source copies, third-party SDK DLLs, PDBs, compiled shaders, executables.
-- The 21 GB WPR `.etl` traces.
-- Verbose MSBuild diagnostic logs.
+- The 21 GB WPR `.etl` traces (they record the whole original machine; recapture them as described in [docs/REBUILD.md](docs/REBUILD.md)).
 
-Large **text** data (PresentMon CSVs, ETW event exports) is attached to the
-[GitHub Release](https://github.com/PrimeBuild-pc/rdna2-dx12-shader-research/releases) as zip files. See [data/README.md](data/README.md).
+Large data (PresentMon CSVs, ETW event exports, frame dumps used as oracles, build logs) is attached to the
+[GitHub Release](https://github.com/PrimeBuild-pc/rdna2-dx12-shader-research/releases) as five archives. See [data/README.md](data/README.md). To rebuild the rest, see [docs/REBUILD.md](docs/REBUILD.md).
 
 ## Hardware and software
 

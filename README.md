@@ -35,8 +35,8 @@ flowchart LR
     F --> G["2T–2U<br/>Hit rate on 8 more<br/>workloads: 0 hits"]
     G --> H["60–63<br/>Cyberpunk baseline,<br/>scaling, WPR"]
     H --> I["64–69<br/>Cyberpunk shader<br/>access + canary"]
-    style C fill:#eee,stroke:#999
-    style G fill:#eee,stroke:#999
+    style C fill:#eee,stroke:#999,color:#000
+    style G fill:#eee,stroke:#999,color:#000
     style I stroke-dasharray: 5 5
 ```
 
@@ -155,7 +155,7 @@ flowchart TD
     D --> E["67: probe — that glass PSO was not<br/>bound to any draw in the observed session"]
     E --> F["68: read-only back-buffer probe<br/>finds full-screen pass: PSO 243,<br/>shader 1642c9e5…, 27,928 draws"]
     F --> G["69: canary on that shader<br/>PREREGISTERED, NOT BUILT"]
-    style D fill:#fdd,stroke:#c66
+    style D fill:#fdd,stroke:#c66,color:#000
     style G stroke-dasharray: 5 5
 ```
 
